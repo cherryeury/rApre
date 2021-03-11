@@ -1,0 +1,14 @@
+	-	script	BREAKEQUIP	-1,{
+
+end;
+
+
+OnPCDieEvent:
+if ( rand(1,2) == 1) { if (getequipid(EQI_HAND_R) > 0) { breakequip(EQI_HAND_R);}}
+if ( rand(3,4) == 3) { if (getequipid(EQI_HAND_L) > 0) { breakequip(EQI_HAND_L);}}
+if ( rand(5,6) == 5) { if (getequipid(EQI_ARMOR) > 0) { breakequip(EQI_ARMOR);}}
+if ( rand(7,8) == 7) { if (getequipid(EQI_GARMENT) > 0) { breakequip(EQI_GARMENT);}}
+if ( rand(9,10) == 9) { if (getequipid(EQI_SHOES) > 0) { breakequip(EQI_SHOES);}}
+if ( rand(11,12) == 11) { if (getequipid(EQI_HEAD_TOP) > 0) { breakequip(EQI_HEAD_TOP);}}
+
+}

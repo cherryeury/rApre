@@ -1,0 +1,239 @@
+moc_para01,40,38,5	script	High-HG Enchanter	10242,{
+	mes "[^FF6600Enchanter Cat^000000]";
+	mes "Hello, I am Lala.";
+	mes "I can enchant option to your high class old headgears.";
+	mes "At the cost of 50 silvervines.";
+	next;
+	mes "[^FF6600Enchanter Cat^000000]";
+	mes "So, how can i help you ?";
+	next;
+	switch( select( "Enchantable List.:Enchant Headgears.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Enchanter Cat^000000]";
+		mes "Here's the list.";
+		mes "You can't buy anything, this is just an example.";
+		mes "The gears must have slots exactly like these to get enchanted.";
+		callshop "pvpshop1",	1;	end;
+	
+	case 2:
+	mes "[^FF6600Enchanter Cat^000000]";
+    mes "I can enchant any of the headgear listed.";
+	mes "Interested ?";	
+	next;
+	switch( select( "Yes Enchant My Headgear.:Cancel." ) ) {
+		case 1: // Enchant Forged Headgear
+			if( countitem( 6417 ) < 50 ) {
+			mes "[^FF6600Enchanter Cat^000000]";			
+			mes "You don't even have enough silvervines.";
+			mes "Comeback when you have at least 50 silvervines";
+			close;
+			}		
+			mes .n$;
+			mes "To apply an random property to a headgear, you need to have it equipped in your head.";
+			mes "Also be warned, that what you get and with which value is completely random!";
+			next;
+			mes "[^FF6600Enchanter Cat^000000]";
+			mes "First, let's see what you have equipped...:";
+			next;
+			set .@part,EQI_HEAD_TOP; // Save equip location
+			mes "[^FF6600Enchanter Cat^000000]";
+			if(!getequipid(.@part)) {
+				mes "You don't have anything equipped!";
+				close;
+			}
+			
+switch(getequipid(.@part)) {
+	case 5007: // Grand Circlet
+
+	case 5081: // crown of mistress	
+	case 5123: // Ulle's Hat
+	case 5002: // Jewel Crown
+		
+	case 5160: // majestic goat
+	case 5161: // spiky band
+	case 5165: // crown
+	case 5164: // tiara
+	case 5166: // sphinx
+	case 5808: // Dark Bacilium
+	case 5171: // Valkyrie helm	
+	case 5094: // Orc Hero Helm
+	set .@Type$,"M";
+	break;
+	
+	default:
+	mes "This headgear in the list isn't there.";
+	mes	"please be sure to equip one in your head and come back again.";
+	close;
+	
+}
+
+mes "Equipped Headgear: "+getitemname(getequipid(.@part));	
+mes "You wanna enchant this one ?";
+mes "Remember, it will cost you 50 silvervine.";
+next;
+switch( select( "Yes.:Cancel." ) ) {
+case 2:
+mes "[^FF6600Enchanter Cat^000000]";
+mes "Oh, Okay,.";
+mes "Come back here when you hold the right weapon.";
+close;
+
+case 1:
+break;
+}
+
+set .@ropt1,getequiprandomoption(.@part,0,ROA_ID);
+set .@ropt2,getequiprandomoption(.@part,1,ROA_ID);
+set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
+if(.@ropt1 || .@ropt2 || .@ropt2) {
+	mes "[^FF6600Enchanter Cat^000000]";
+	mes "This Headgear already has bonus properties applied.";
+	mes "To do a re-enchant, you need to add 5.000.000 zeny.";
+	mes "Is it okay ?";
+	next;
+	switch( select( "Cancel.:Yes" ) ) {
+	case 1:
+		mes "[^FF6600Enchanter Cat^000000]";
+		mes "Okay then.";
+		close;	
+	case 2:
+		if(Zeny<5000000){
+		mes "[^FF6600Enchanter Cat^000000]";
+		mes "You don't have enough zeny for this";
+		close;
+		}
+		mes "[^FF6600Enchanter Cat^000000]";
+		mes "Be careful! if by any chance you accidentaly canceled after this agreement, i won't give your zeny back!";
+		mes "Hehehe.";
+		next;
+		switch( select( "Cancel.:Take my zeny." ) ) {
+			case 1:
+				mes "[^FF6600Enchanter Cat^000000]";
+				mes "Oh ? Okay.";
+				close;
+				
+			case 2:
+				mes "[^FF6600Enchanter Cat^000000]";
+				mes "Okay, i'll take your zeny now!";
+				set Zeny,Zeny-5000000;
+				break;	
+		}	
+	
+	}
+}
+// Randomize each Option Slot:
+// Random Option 1
+set .@Opt1,rand(getarraysize(getd(".RandOpt1_"+.@Type$)));
+if(getd(".RandOpt1_"+.@Type$+"_MinV["+.@Opt1+"]") != getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]"))
+	set .@Opt1_V,rand(getd(".RandOpt1_"+.@Type$+"_MinV["+.@Opt1+"]"),getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]"));
+else 
+	set .@Opt1_V,getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]");
+	
+// Random Option 2
+set .@Opt2,rand(getarraysize(getd(".RandOpt2_"+.@Type$)));
+if(getd(".RandOpt2_"+.@Type$+"_MinV["+.@Opt2+"]") != getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]"))
+	set .@Opt2_V,rand(getd(".RandOpt2_"+.@Type$+"_MinV["+.@Opt2+"]"),getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]"));
+else 
+	set .@Opt2_V,getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]");
+	
+// Random Option 3
+set .@Opt3,rand(getarraysize(getd(".RandOpt3_"+.@Type$)));
+if(getd(".RandOpt3_"+.@Type$+"_MinV["+.@Opt3+"]") != getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]"))
+	set .@Opt3_V,rand(getd(".RandOpt3_"+.@Type$+"_MinV["+.@Opt3+"]"),getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]"));
+else 
+	set .@Opt3_V,getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]");
+
+// Random Option 4
+set .@Opt4,rand(getarraysize(getd(".RandOpt4_"+.@Type$)));
+if(getd(".RandOpt4_"+.@Type$+"_MinV["+.@Opt4+"]") != getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]"))
+	set .@Opt4_V,rand(getd(".RandOpt4_"+.@Type$+"_MinV["+.@Opt4+"]"),getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]"));
+else 
+	set .@Opt4_V,getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]");
+
+// Random Option 5
+set .@Opt5,rand(getarraysize(getd(".RandOpt5_"+.@Type$)));
+if(getd(".RandOpt5_"+.@Type$+"_MinV["+.@Opt5+"]") != getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]"))
+	set .@Opt5_V,rand(getd(".RandOpt5_"+.@Type$+"_MinV["+.@Opt5+"]"),getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]"));
+else 
+	set .@Opt5_V,getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]");
+
+// Apply options to equipped Headgears
+	delitem 6417,50;
+setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0);
+setrandomoption(.@part,1,getd(".RandOpt2_"+.@Type$+"["+.@Opt2+"]"),.@Opt2_V,0);
+setrandomoption(.@part,2,getd(".RandOpt3_"+.@Type$+"["+.@Opt3+"]"),.@Opt3_V,0);
+setrandomoption(.@part,3,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0);
+setrandomoption(.@part,4,getd(".RandOpt5_"+.@Type$+"["+.@Opt5+"]"),.@Opt5_V,0);
+next;
+mes "[^FF6600Enchanter Cat^000000]";
+mes "Random bonus properties have been applied on your \""+getitemname(getequipid(.@part))+"\" successfully.";
+end;
+
+OnInit:
+set .n$,"[^FF6600Enchanter Cat^000000]";
+// ========= Random Option Slot 1 ========= 
+// - Physical
+
+setarray .RandOpt1_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1000 of Damage lost from size penalties					
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_M_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt1_M_MaxV[0],4,4,4,4,4,4;
+
+// ========= Random Option Slot 2 ========= 
+
+setarray .RandOpt2_M[0],
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXSPAMOUNT,						// MP
+						RDMOPT_VAR_ATKPERCENT,						// Atk%
+						RDMOPT_VAR_MAGICATKPERCENT,					// Matk%
+						RDMOPT_VAR_ATTPOWER,						// atk
+						RDMOPT_VAR_ATTMPOWER,						// matk
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// Flee
+						RDMOPT_HEAL_VALUE,							// Heal
+						RDMOPT_DEC_SPELL_CAST_TIME,					// vct
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// hit
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// Flee
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// Crit
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET,			// Long Range
+						RDMOPT_MDAMAGE_PROPERTY_WATER_TARGET,		// matk water
+						RDMOPT_MDAMAGE_PROPERTY_FIRE_TARGET,		// matk fire
+						RDMOPT_MDAMAGE_PROPERTY_WIND_TARGET,		// matk wind
+						RDMOPT_MDAMAGE_PROPERTY_GROUND_TARGET,		// matk ground
+						RDMOPT_VAR_ITEMDEFPOWER,					// Def
+						RDMOPT_HEAL_MODIFY_PERCENT,					// Restoration Modify
+						RDMOPT_VAR_MDEFPOWER;						// Mdeff
+					    // ToDo: // Recover 1000 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_M_MinV[0],100,20,1,1,10,10,10,3,3,1,5,5,5,3,3,5,5,5,5,10,3,5;
+setarray .RandOpt2_M_MaxV[0],300,60,5,5,20,20,30,5,5,1,10,20,20,6,5,10,10,10,10,50,5,15;
+end;
+		}	
+case 3:
+	mes "[^FF6600Enchanter Cat^000000]";
+	mes "Okay then ..";
+	close;
+		}
+	}	
+	
+
+
+-	pointshop	pvpshop1	1_F_MARIA	,High-Class,5081:100,5094:100,5002:100,5007:100,5160:100,5161:100,5165:100,5164:100,5166:100,5123:100,5808:100,5171:100
+
+new_1-1,155,56,5	script	kjshfksdfhx	1_F_MARIA,{
+	callshop "pvpshop1", 1;
+	end;
+}

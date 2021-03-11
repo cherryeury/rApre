@@ -1,0 +1,49 @@
+moc_para01,35,20,5	script	Money Changer	100,{
+mes "[^FF6600Money Changer^000000]";
+mes "Hello, I am Rudy the money changer.";
+mes "I can trade your zeny into cash shop point !.";
+mes "Wanna try?";
+next;
+switch( select( "Yeah!.:Cancel." ) ) {
+case 1:
+	mes "[^FF6600Money Changer^000000]";
+	mes "I can trade 1 ^FF6600Cash Point^000000, for 1.000.000 Zeny.";
+	mes "So, how many do you wish to trade ?";
+	mes "If you've changed your mind, just input '0.'";
+	next;
+	while(1) {
+		input .@input;
+		if (.@input == 0) {
+			mes "[^FF6600Money Changer^000000]";
+			mes "Deal has";
+			mes "been canceled.";
+			mes "Farewell.";
+			close;
+		}
+		else if ((.@input < 0) || (.@input > 500)) {
+			mes "[^FF6600Money Changer^000000]";
+			mes "You can trade 500, er less.";
+			next;
+		}
+		else {
+			break;
+		}
+	}
+	if (zeny < (1000000*.@input)) {
+		mes "[^FF6600Money Changer^000000]";
+		mes "You don't have enough zeny.";
+		close;
+	}
+
+	set #CASHPOINTS, #CASHPOINTS + .@input; // Zeny coin
+	set Zeny, Zeny - 1000000*.@input; // Zeny bag
+	mes "[^FF6600Money Changer^000000]";
+	mes "Thank you ! Your cash point has been added.";
+	close;			
+	
+case 2:
+	mes "[^FF6600Money Changer^000000]";
+	mes "K dude.";
+	close;	
+	}
+}

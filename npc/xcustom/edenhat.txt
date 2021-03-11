@@ -1,0 +1,350 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update HG-Maker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+moc_para01,33,173,5	script	Weapon Box Seller	10242,{
+function Add; function Chk; function Slot; function A_An;
+if (checkweight(21016,1) == 0) {
+	mes "[^FF6600Ellen^000000]";
+    mes "You're carrying too much stuffs , make some space and come back to me later";
+        close;	
+	}
+
+	
+	mes "[^FF6600Ellen^000000]";
+	mes "Hello, I am Ellen.";
+	mes "I'm selling nice weapons for you.";	
+	mes "Do you still want to see the list?";
+	next;
+	switch( select( "Yes.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Ellen^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 	
+	mes "[^FF6600Ellen^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFYou can't buy from catalogue.^000000";
+		mes "The number in this catalogue show the odds of getting the item.";
+		mes "From weapon box.";
+	callshop "edenhatmaker"+.@i,1;
+	npcshopattach "edenhatmaker"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "edenhatmaker"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Ellen^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000: ~ ^777777Cancel^000000")) {
+			case 1:			
+				if (@qe0) { 
+					mes "[^FF6600Ellen^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Ellen^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				getitem .@q[0],.@q[1];
+				specialeffect2 699;
+					mes "[^FF6600Ellen^000000]";
+					mes "Here's your item.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Ellen^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<variable>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,0;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Buy Advanced Weapon Box.";
+	setarray .Shops$[2],"Catalogue and Odds.";
+//	setarray .Shops$[3],"Lower HG Preview.";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+		Add(1,12623,1,1,0,6797,5,6417,30); // Advanced Weapon Box
+		Add(2,1230,1,1,1); // Ice_Pick
+		Add(2,1231,1,1,1); // Bazerald
+		Add(2,1132,1,1,1); // Edge
+		Add(2,1185,1,1,1); // Violet_Fear
+		Add(2,1186,1,1,1); // Death_Guidance
+		Add(2,1261,1,1,1); // Infiltrator
+		Add(2,1266,1,1,1); // Infiltrator_
+		Add(2,1366,1,1,1); // Light Epsilon
+		Add(2,1370,1,1,1); // Doom_Slayer
+		Add(2,1371,1,1,1); // Doom_Slayer_
+		Add(2,1376,1,1,1); // Heart_Breaker
+		Add(2,1377,1,1,1); // Hurricane_Fury
+		Add(2,1422,1,1,1); // Hunting_Spear
+		Add(2,1528,1,1,1); // Grand_Cross
+		Add(2,1540,1,1,1); // Grand_Cross_
+		Add(2,1565,1,1,1); // Ledger of Death
+		Add(2,1636,1,1,1); // Thorn_Staff
+		Add(2,1637,1,1,1); // Eraser
+		Add(2,1814,1,1,1); // Berserk
+		Add(2,1816,1,1,1); // Berserk_
+		Add(2,1920,1,1,1); // Berserk_Guitar
+		Add(2,1985,1,1,1); // Rose_Vine
+		Add(2,2000,1,1,1); // Destruction_Rod
+		Add(2,1476,1,1,1); // Crescent_Scythe_
+		Add(2,1290,1,1,1); // Agent_Katar
+		Add(2,1291,1,1,1); // Guillotine_Katar
+		Add(2,1392,1,1,1); // Ygnus_Stale
+		Add(2,1393,1,1,1); // End_Sektura
+		Add(2,1435,1,1,1); // Cannon_Spear
+		Add(2,1584,1,1,1); // Chilly_Spell_Book
+		Add(2,1659,1,1,1); // Recovery_Light
+		Add(2,13069,1,1,1); // Aztoe_Nail
+		Add(2,13070,1,1,1); // Scarletto_Nail
+		Add(2,16017,1,1,1); // Bloody_Cross
+		Add(2,18109,1,1,1); // Catapult
+		Add(2,18110,1,1,1); // Big_CrossBow
+		Add(2,18111,1,1,1); // Creeper_Bow
+		sleep 10;
+		Add(2,1130,1,2,1); // Nagan
+		Add(2,1137,1,2,1); // Excalibur
+		Add(2,1165,1,2,1); // Masamune
+		Add(2,1169,1,2,1); // Executioner
+		Add(2,1175,1,2,1); // Altas_Weapon
+		Add(2,1179,1,2,1); // Executioner__
+		Add(2,1196,1,2,1); // Chrome_Metal_Two-Hand_Sword
+		Add(2,1223,1,2,1); // Forturn_Sword
+		Add(2,1228,1,2,1); // Combat_Knife
+		Add(2,1234,1,2,1); // Moonlight_Dagger
+		Add(2,1265,1,2,1); // Bloody_Roar
+		Add(2,1268,1,2,1); // Wild_Beast_Claw
+		Add(2,1269,1,2,1); // Inverse_Scale
+		Add(2,1363,1,2,1); // Bloody_Axe
+		Add(2,1369,1,2,1); // Guillotine
+		Add(2,1387,1,2,1); // Giant_Axe
+		Add(2,1415,1,2,1); // Brocca
+		Add(2,1421,1,2,1); // Battle_Hook
+		Add(2,1433,1,2,1); // Imperial_Spear
+		Add(2,1484,1,2,1); // Cardo
+		Add(2,1523,1,2,1); // Spike
+		Add(2,1538,1,2,1); // Spike_
+		Add(2,1654,1,2,1); // Mental_Stick
+		Add(2,1719,1,2,1); // Bow_Of_Roguemaster
+		Add(2,1720,1,2,1); // Bow_Of_Rudra
+		Add(2,1722,1,2,1); // Ballista
+		Add(2,1727,1,2,1); // Balistar_
+		Add(2,1830,1,2,1); // Sura's Rampage
+		Add(2,1930,1,2,1); // Green_Whistle
+		Add(2,1984,1,2,1); // Stem_Whip
+		Add(2,13431,1,2,1); // Chrome_Metal_Sword
+		sleep 10;
+		Add(2,1224,1,4,1); // Sword_Breaker		
+		Add(2,1189,1,5,1); // Krasnaya
+		Add(2,1227,1,5,1); // Weeder_Knife
+		Add(2,1229,1,5,1); // Kitchen_Knife
+		Add(2,1232,1,5,1); // Assasin_Dagger
+		Add(2,1233,1,5,1); // Exorciser
+		Add(2,1235,1,5,1); // Azoth
+		Add(2,1236,1,5,1); // Sucsamad
+		Add(2,1237,1,5,1); // Grimtooth
+		Add(2,1240,1,5,1); // Princess_Knife
+		Add(2,1241,1,5,1); // Cursed_Dagger
+		Add(2,1242,1,5,1); // Counter_Dagger
+		Add(2,1244,1,5,1); // Holy_Dagger
+		Add(2,1263,1,5,1); // Unholy_Touch
+		Add(2,1270,1,5,1); // Drill_Katar
+		Add(2,1271,1,5,1); // Blood_Tears
+		Add(2,1284,1,5,1); // Krishna
+		Add(2,1285,1,5,1); // Chakram
+		Add(2,1305,1,5,1); // Cleaver
+		Add(2,1311,1,5,1); // Vecer_Axe
+		Add(2,1364,1,5,1); // Great_Axe
+		Add(2,1365,1,5,1); // Sabbath
+		Add(2,1367,1,5,1); // Slaughter
+		Add(2,1368,1,5,1); // Tomahawk
+		Add(2,1385,1,5,1); // Bradium_Stonehammer
+		Add(2,1413,1,5,1); // Gungnir
+		Add(2,1414,1,5,1); // Gelerdria
+		Add(2,1416,1,5,1); // Tjungkuletti
+		Add(2,1418,1,5,1); // Gungnir_
+		Add(2,1420,1,5,1); // Long_Horn
+		Add(2,1466,1,5,1); // Crescent_Scythe
+		Add(2,1467,1,5,1); // Bill_Guisarme
+		Add(2,1468,1,5,1); // Zephyrus
+		Add(2,1469,1,5,1); // Longinus's_Spear
+		Add(2,1470,1,5,1); // Brionac
+		Add(2,1471,1,5,1); // Hell_Fire
+		Add(2,1473,1,5,1); // Wizardy_Staff
+		Add(2,1474,1,5,1); // Gae_Bolg
+		Add(2,1477,1,5,1); // Spectral_Spear
+		Add(2,1478,1,5,1); // Ahlspiess
+		Add(2,1479,1,5,1); // Spectral_Spear_
+		Add(2,1480,1,5,1); // Gae_Bolg_
+		Add(2,1481,1,5,1); // Zephyrus_
+		Add(2,1524,1,5,1); // Golden_Mace
+		Add(2,1525,1,5,1); // Long_Mace
+		Add(2,1527,1,5,1); // Quadrille
+		Add(2,1539,1,5,1); // Golden_Mace_
+		Add(2,1541,1,5,1); // Nemesis
+		Add(2,1557,1,5,1); // Book_Of_The_Apocalypse
+		Add(2,1558,1,5,1); // Girl's_Diary
+		Add(2,1559,1,5,1); // Legacy_Of_Dragon
+		Add(2,1561,1,5,1); // Hardcover_Book
+		Add(2,1562,1,5,1); // Battlefield_Textbook
+		Add(2,1616,1,5,1); // Wing Staff
+		Add(2,1629,1,5,1); // Gentleman's Staff
+		Add(2,1631,1,5,1); // Holy_Stick
+		Add(2,1643,1,5,1); // Dead_Tree_Cane
+		Add(2,1724,1,5,1); // Dragon_Wing
+		Add(2,1725,1,5,1); // Bow_Of_Minstrel
+		Add(2,1737,1,5,1); // Ixion_Wing
+		Add(2,1740,1,5,1); // Nepenthes_Bow
+		Add(2,1741,1,5,1); // Cursed_Lyre
+		Add(2,1745,1,5,1); // Falken_Blitz
+		Add(2,1813,1,5,1); // Kaiser_Knuckle
+		Add(2,1815,1,5,1); // Claw_Of_Garm
+		Add(2,1913,1,5,1); // Electronic_Guitar
+		Add(2,1918,1,5,1); // Oriental_Lute
+		Add(2,1922,1,5,1); // Oriental_Lute_
+		Add(2,1926,1,5,1); // Harp_Of_Nepenthes
+		Add(2,1962,1,5,1); // Lariat_Whip
+		Add(2,1963,1,5,1); // Rapture_Rose
+		Add(2,1964,1,5,1); // Chemeti_Whip
+		Add(2,1969,1,5,1); // Blade_Whip
+		Add(2,1970,1,5,1); // Queen's_Whip
+		Add(2,1972,1,5,1); // Electric_Eel
+		Add(2,1973,1,5,1); // Sea_Witch_Foot
+		Add(2,1974,1,5,1); // Carrot_Whip
+		Add(2,1976,1,5,1); // Queen's_Whip_
+		Add(2,1979,1,5,1); // Stem_Of_Nepenthes
+		Add(2,2001,1,5,1); // Divine_Cross
+		Add(2,2004,1,5,1); // Kronos
+		Add(2,2005,1,5,1); // Dea_Staff
+		Add(2,13046,1,5,1); // Krieg
+		Add(2,13047,1,5,1); // Weihna
+		Add(2,13061,1,5,1); // Black_Wing
+		Add(2,13421,1,5,1); // Ruber
+		Add(2,16000,1,5,1); // Erde
+		Add(2,16001,1,5,1); // Red_Square_Bag
+		Add(2,16010,1,5,1); // Red_Ether_Bag
+		Add(2,18103,1,5,1); // Mystic_Bow
+		Add(2,1526,1,5,1); // Slash
+		sleep 10;
+		Add(2,1131,1,7,1); // Ice_Falchon
+		Add(2,1133,1,7,1); // Fire_Brand
+		Add(2,1134,1,7,1); // Caesar's Sword
+		Add(2,1135,1,7,1); // Cutlas
+		Add(2,1136,1,7,1); // Solar_Sword
+		Add(2,1138,1,7,1); // Mysteltainn
+		Add(2,1139,1,7,1); // Tirfing
+		Add(2,1140,1,7,1); // Byeollungum
+		Add(2,1141,1,7,1); // Immaterial_Sword
+		Add(2,1148,1,7,1); // Star_Dust_Blade
+		Add(2,1164,1,7,1); // Muramasa
+		Add(2,1166,1,7,1); // Dragon_Slayer
+		Add(2,1167,1,7,1); // Schweizersabel
+		Add(2,1168,1,7,1); // Zweihander
+		Add(2,1170,1,7,1); // Katzbalger
+		Add(2,1171,1,7,1); // Zweihander_
+		Add(2,1176,1,7,1); // Muscle_Cutter
+		Add(2,1178,1,7,1); // Schweizersabel_
+		Add(2,1180,1,7,1); // Dragon_Slayer_
+		Add(2,1181,1,7,1); // Tae_Goo_Lyeon
+		Add(2,1182,1,7,1); // Bloody_Eater
+		Add(2,1188,1,7,1); // Veteran_Sword
+
+	
+//	Add(2,5548,1,100000,0,748,100000,7293,100000,6241,1); // Witherless rose
+//	Add(2,18937,1,100000,0,32246,100000,4369,10,6241,5,6417,100); // Memories of lovers
+
+
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "edenhatmaker"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	edenhatmaker1	-1,909:-1
+-	shop	edenhatmaker2	-1,909:-1

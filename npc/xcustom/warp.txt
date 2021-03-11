@@ -1,0 +1,64 @@
+moc_para01,35,23,3	script	Kafra Teleportation#eden	4_F_DRKAFRA01,{
+	cutin "kafra_do01", 2;
+	mes "[Kafra Employee]";
+	mes "Welcome.";
+	mes "The Kafra services are always on your side.";
+	next;
+	mes "[Kafra Employee]";
+	mes "To reward adventurer support, the Kafra Corporation in cooperation with the Eden Group provides free services for ^ff0000Beginner Adventurers Below Level 11^000000.";
+	next;
+	if (BaseLevel > 10) {
+		mes "[Kafra Employee]";
+		mes "We do not offer free teleportation services for adventurers ^ff0000above level 10^000000.";
+		mes "Search for Kafra Teleportation services in the city.";
+		close3;
+	}
+	mes "[Kafra Employee]";
+	mes "Please choose your destination.";
+	next;
+	switch( select( "Prontera", "Geffen", "Payon", "Morocc","Cancel.") ) {
+	case 1:
+		mes "[Kafra Employee]";
+		mes "Prontera";
+		mes "Prontera is a central of midgard, the capital city.";
+		next;
+		callsub( S_Zone );
+		warp "prontera",150,150;
+		end;
+	case 2:
+		mes "[Kafra Employee]";
+		mes "Geffen";
+		mes "Geffen the magical city..";
+		next;
+		callsub( S_Zone );
+		warp "geffen",150,150;
+		end;
+	case 3:
+		mes "[Kafra Employee]";
+		mes "Payon";
+		mes "Payon is the place where archer guild reside.";
+		next;
+		callsub( S_Zone );
+		warp "payon",150,150;
+		end;
+	case 4:
+		mes "[Kafra Employee]";
+		mes "Morocc";
+		mes "Morocc is a place full of sands, who knows what's waiting for you there..?";
+		next;
+		callsub( S_Zone );
+		warp "morocc",150,150;
+		end;
+	case 5:
+		callfunc( "F_KafEnd",0,0 );
+	}
+S_Zone:
+	switch( select( "I wish to go.", "I want to stay." ) ) {
+	case 1:
+		return;
+	case 2:
+		mes "[Kafra Employee]";
+		mes "Want to check out our other services?";
+		close3;
+	}	
+}

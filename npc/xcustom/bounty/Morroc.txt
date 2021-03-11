@@ -1,0 +1,69 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Morocc
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+morocc,134,101,5	script	Bounty Board 1-20#moc	837,{
+	callfunc "F_Bounty_Board", 1, 20, 4, 1,
+		1113,	62775,		2997,	2220,	// DROPS
+		1049,	62776,		6993,	5217,	// PICKY
+		1050,	62777,		7992,	5994,	// PICKY SHELL
+		1107,	62774,		9990,	7548,	// BABY DESERT WOLF
+		1001,	62778,		11988,	8991;	// SCORPION
+	end;
+}
+
+morocc,136,101,5	script	Bounty Board 21-40#moc2	837,{
+	callfunc "F_Bounty_Board", 21, 40, 4, 1,
+		1005,	62782,	15984,		17982,	// FARMILIAR
+		1097,	62779,	19980,		22533,	// ANT_EGG
+		1105,	62781,	22977,		25863,	// DENIRO
+		1160,	62783,	23976,		26973,	// PIERE
+		1095,	62780,	23976,		26973;	// Andre
+	end;
+}
+
+morocc,138,101,5	script	Bounty Board 41-60#moc3	837,{
+	callfunc "F_Bounty_Board", 41, 60, 4, 1,
+		1032,	62888,	45954,		51837,	// VERIT
+		1041,	62887,	53946,		60828,	// MUMMY
+		1058,	62785,	49950,		56277,	// METALLER
+		1149,	62786,	60384,		66822,	// MINOROUS
+		1029,	62784,	58941,		66267;	// ISIS
+	end;
+}
+
+morocc,140,101,5	script	Bounty Board 61-80#moc4	837,{
+	callfunc "F_Bounty_Board", 61, 80, 4, 1,
+		1040,	62832,	 59940,		 67488,	// GOLEM
+		1165,	62836,	 69486,		 78255,	// SAND_MAN
+		1127,	62833,	 70152,		 78810,	// HODE
+		1178,	62837,	130758,		106560,	// ZEROM
+		1140,	62834,	 85914,		 96792,	// MARDUK
+		1154,	62835,	107892,		132534;	// PASANA
+	end;
+}
+morocc,142,101,5	script	Bounty Board 121-140#moc4	837,{
+	callfunc "F_Bounty_Board", 121, 140, 4, 1,
+		2355,	62840,	 230214,		 174381,	// N VERIT
+		2353,	62838,	 244311,		 212010,	// NIGHTMARE MINO
+		2356,	62839,	 355311,		 300144;	// N MIMIC
+		
+	end;
+}
+

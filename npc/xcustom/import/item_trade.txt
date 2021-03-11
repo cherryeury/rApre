@@ -1,0 +1,75 @@
+// Item Trade Restrictions Database
+// Defines special trade rules for individual items.
+//
+// Structure of Database:
+// Item ID, TradeMask,Group Level Override
+//
+// Legend for 'TradeMask' field (bitmask):
+// 1   - item can't be dropped
+// 2   - item can't be traded (nor vended)
+// 4   - wedded partner can override restriction 2
+// 8   - item can't be sold to npcs
+// 16  - item can't be placed in the cart
+// 32  - item can't be placed in the storage
+// 64  - item can't be placed in the guild storage
+// 128 - item can't be attached to mail
+// 256 - item can't be auctioned
+//
+// Example:
+// 1161,67,50
+//	Balmung cannot be dropped, traded, or placed in Guild Storage (1+2+64).
+//	Only groups of group-level 50 and up can override this setting.
+
+1243,499,100	// Novice_Knife
+2112,499,100	// Novice_Guard
+2352,499,100	// Novice_Plate
+2393,498,100	// N_Adventurer's_Suit
+2414,498,100	// Novice_Boots
+2510,498,100	// Novice_Hood
+2766,499,100	// Swordman_Figure
+2819,499,100	// Swordman_Manual
+2820,499,100	// Thief_Manual
+2821,499,100	// Acolyte_Manual
+2822,499,100	// Archer_Manual
+2823,499,100	// Merchant_Manual
+2824,499,100	// Mage_Manual
+2940,499,100	// Ninja_Manual
+2941,499,100	// Gunslinger_Manual
+2942,499,100	// Taekwon_Manual
+5099,1,100	// Cat_Hat
+5142,1,100	// Crescent_Helm
+5143,1,100	// Kabuki_Mask
+5147,507,100	// Baseball_Cap
+5187,1,100	// Twin_Ribbon
+5340,1,100	// Deprotai_Doll_Hat
+5341,1,100	// Claris_Doll_Hat
+5342,1,100	// Sorin_Doll_Hat
+5343,1,100	// Tayelin_Doll_Hat
+5344,1,100	// Binit_Doll_Hat
+5345,1,100	// Debril_Doll_Hat
+5375,1,100	// Orc_Hero_Headdress
+6155,507,100	// D_Eden_Group_Card
+6988,507,100	// C_Eden_Group_Card
+6989,507,100	// B_Eden_Group_Card
+6990,475,100	// A_Eden_Group_Card
+6991,475,100	// S_Eden_Group_Card
+7416,511,100	// E_Eden_Group_Card
+11025,499,100	// Swordman_Manual_
+11028,499,100	// Thief_Manual_
+11031,499,100	// Acolyte_Manual_
+11034,499,100	// Archer_Manual_
+11037,499,100	// Merchant_Manual_
+11040,499,100	// Mage_Manual_
+12480,475,100	// Eden_Food_Box_Vol_1
+12481,475,100	// Eden_Food_Box_Vol_2
+12482,475,100	// Eden_Food_Box_Vol_3
+12483,475,100	// Eden_Food_Box_Vol_4
+12484,475,100	// Eden_Food_Box_Vol_5
+13023,507,100	// Asura_C
+13118,499,100	// Tiny_Flame
+17523,507,100	// Holy_Egg_
+18595,1,100	// Horn_Of_Ancient
+19238,507,100	// Poring_Village_Leek_
+19239,507,100	// Poring_Village_Carrot_
+19943,1,100	// Costume_Judge_Hat
+30001,507,100	// Rainbow_Scarf

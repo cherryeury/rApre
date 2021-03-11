@@ -1,0 +1,48 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Rachel
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+rachel,87,73,5	script	Bounty Board 81-100#ver1	837,{
+	callfunc "F_Bounty_Board", 81, 100, 12, 2,
+		1782,	62918,		187701,		211122,	// ROWEEN
+		1776,	62919,		202797,		151959,	// SIROMA		
+		1030,	62917,		177822,		133422;	// ANACONDAQ
+	end;
+	}
+	
+rachel,89,73,5	script	Bounty Board 101-120#ver1	837,{
+	callfunc "F_Bounty_Board", 101, 120, 12, 2,
+		1781,	62921,		149850,		112443,	// DROSERA
+		1680,	62922,		210900,		158175,	// HILL_WIND_1	
+		1106,	62920,		199800,		149850,	// DESERT_WOLF
+		1775,	62924,		215784,		161838,	// SNOWIER
+		1777,	62923,		302364,		293484;	// ICE_TITAN
+	end;
+	}	
+
+rachel,91,73,5	script	Bounty Board 121-140#ver1	837,{
+	callfunc "F_Bounty_Board", 121, 140, 12, 2,
+		1773,	62927,		417138,		312909,	// HODREMLIN
+		1771,	62930,		359640,		269730,	// VANBERK
+		1772,	62928,		383616,		287712,	// ISILLA
+		1774,	62929,		444999,		333666,	// SEEKER		
+		1770,	62926,		409950,		307248,	// ECHIO		
+		1769,	62925,		436563,		327339;	// AGAV
+	end;
+	}		

@@ -1,0 +1,29 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Verus
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+verus04,146,244,5	script	Bounty Board 151-170#ver1	837,{
+	callfunc "F_Bounty_Board", 151, 170, 12, 2,
+		3256,	62935,		444999,		333666,	// ZOMBIE_H
+		3247,	62931,		1145250,	1154700,	// CENERE_G
+		3255,	62934,		383616,		287712,	// GHOUL_H
+		3248,	62933,		417138,		312909,	// REPAIR_ROBOT_T
+		3249,	62932,		2200686,	307248;	// EXPLORATION_ROVER_T
+	end;
+	}		

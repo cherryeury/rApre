@@ -1,0 +1,62 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2019 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Item Random Option Database
+###########################################################################
+#
+# Item Random Option Settings
+#
+###########################################################################
+# - Id          Item Random Option ID matching the ID defined in enumvar.lub in the client.
+#   Option      Item Random Option constant.
+#   Script      Bonus script used for option.
+###########################################################################
+
+Header:
+  Type: RANDOM_OPTION_DB
+  Version: 1
+
+Body:
+  - Id: 401
+    Option: VAR_ALLSTATS
+    Script: |
+      bonus bAllstats,getrandomoptinfo(ROA_VALUE);
+  - Id: 222
+    Option: ADDSKILLMDAMAGE_WATER
+    Script: |
+      bonus2 bMagicEle,Ele_Water,getrandomoptinfo(ROA_VALUE);
+  - Id: 223
+    Option: ADDSKILLMDAMAGE_GROUND
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Earth,getrandomoptinfo(ROA_VALUE);
+  - Id: 224
+    Option: ADDSKILLMDAMAGE_FIRE
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Fire,getrandomoptinfo(ROA_VALUE);
+  - Id: 225
+    Option: ADDSKILLMDAMAGE_WIND
+    Script: |
+      bonus2 bMagicAtkEle,Ele_Wind,getrandomoptinfo(ROA_VALUE);
+  - Id: 406
+    Option: DEF_MAGIC
+    Script: |
+      bonus bMagicAtkDef,getrandomoptinfo(ROA_VALUE);
+  - Id: 407
+    Option: DEF_LONG
+    Script: |
+      bonus bLongAtkDef,getrandomoptinfo(ROA_VALUE);        

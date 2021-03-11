@@ -1,0 +1,522 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update HG-Upgrader By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+prontera,147,172,5	script	Silvervine Cat	10242,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "Hello, I am Silvervine Cat.";
+	mes "I sell and buy anything that related with Silvervines !.";
+	mes "What can i do for you ?";
+	next;
+	switch( select( "Shop.:Information.:MVP drops to Silvervine.:Silvervine to Zeny.:Cancel." ) ) {
+case 1:
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "Okay! Which one ?";
+	break;
+case 2: 	
+	mes "[^FF6600Silvervine Cat^000000]";
+    mes "Silvervines is love, silvervines is life !";
+	mes "We cats from malangdo really love silvervines !";
+	next;
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "MVP has 100% chance to drop 10 silvervines.";
+	mes " ";
+	mes "Some mini bosses have 1% chance to drop a silvervine.";
+	mes "These are the bosses.";
+	next;
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "Angeling, ArchAngeling, Cat'O Ninetails, Deviling, DragonFly, Eclipse, Ghostring, Mastering, Maya Purple, Toad, Vagabond Wolf, Vocal.";
+   	next;
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "You can also trade certain MVP items with silvervine !";
+	mes "and yeah, that's all !";
+	close;	
+	
+case 3:
+		mes "[^FF6600Silvervine Cat^000000]";
+		mes "I can trade mvp dropped items for silvervines.";
+		next;
+		mes "[^FF6600Silvervine Cat^000000]";
+		mes "So, do you have anything to trade?";
+		next;
+		switch(select("Piece of queen's wing.:Mother's Nightmare.:Ba Gua.:Young Twig.:Baphomet Doll.:Osiris Doll.:Darked Scale Piece.:Broken Crown.:Gemstone.:Broken Pharaoh Emblem . Masque of tutankhamen.:Fragment of Rossata Stone.:Tiger's Footskin . Tiger Skin.:Ice Scale.:Will of Red Darkness.:Cancel.")) {
+	case 1:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 2 Piece of queen's wing for 1 Silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(6326) < 2) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 6326,2; // piece of queen's wing
+						getitem 6417,1; // silvervine
+						close;
+					
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;
+			}
+	case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Mother's Nightmare for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7020) < 3) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 7020,3; // mother
+						getitem 6417,1; // silvervine
+						close;
+					
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 3:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Ba Gua for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7169) < 3) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 7169,3; // ba gua
+						getitem 6417,1; // silvervine
+						close;
+					
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}		
+	case 4:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Young Twig for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7018) < 3) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 7018,3; // young twig
+						getitem 6417,1; // silvervine
+						close;
+					
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}			
+	case 5:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Baphomet Doll for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(750) < 3) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 750,3; // baphomet doll
+						getitem 6417,1; // silvervine
+						close;
+					
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}		
+	case 6:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Osiris Doll for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(751) < 3) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 751,3; // osiris doll
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 7:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 1 Darked Scale Piece for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(6091) < 1) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 6091,1; // dsp
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+			
+	case 8:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 2 Broken Crown for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7754) < 2) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 7754,2; // broken crown
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 9:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 5 Gemstones for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7300) < 5) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					}
+						mes "Wonderful, come again !";
+						delitem 7300,5; // broken crown
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}			
+	case 10:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 3 Broken pharaoh emblem and Masque of tutankhamen for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+				if (countitem(7113) < 3 && countitem (7114) < 3 ) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+						}
+				
+						mes "Wonderful, come again !";
+						delitem 7113,3; // Broken pharaoh
+						delitem 7114,3; // Masque
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 11:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 5 Fragment of Rossata Stone for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(7211) < 5) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+					
+						mes "Wonderful, come again !";
+						delitem 7211,5; // Rosseta Stone
+						getitem 6417,1; // silvervine
+						close;
+						}
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 12:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 1 Tiger's Footskin and 5 Tiger Skin for 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+					if (countitem(1030) < 1 && countitem (1029) < 5) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+						}
+						mes "Wonderful, come again !";
+						delitem 1030,1; // Tiger footskin
+						delitem 1029,5; // Tiger skin
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}	
+	case 13:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 1 Ice scale For 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+						if (countitem(7562) < 1) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;
+						}
+						mes "Wonderful, come again !";
+						delitem 7562,1; // Ice Scale
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}
+	case 14:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I'll trade 2 Will of Red Darkness For 1 silvervine";
+				next;
+				switch(select("Trade.:Cancel.")) {
+				case 1:
+				if (countitem(7566) < 2) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You don't have the items!";
+						close;	
+					}
+						mes "Wonderful, come again !";
+						delitem 7566,2; // Will of Red Darkness
+						getitem 6417,1; // silvervine
+						close;
+				case 2:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;			
+			}			
+	case 15:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Okay, see you again soon.";
+				close;	
+			}
+case 4:
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "I can trade 1 of your silvervine, for 100.000 Zeny.";
+				mes "So, how many do you wish to trade ? If you've changed your mind, just input '0.'";
+				next;
+				while(1) {
+					input .@input;
+					if (.@input == 0) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "Deal has";
+						mes "been canceled.";
+						mes "Farewell.";
+						close;
+					}
+					else if ((.@input < 0) || (.@input > 500)) {
+						mes "[^FF6600Silvervine Cat^000000]";
+						mes "You can trade 500, er less.";
+						next;
+					}
+					else {
+						break;
+					}
+				}
+				if (countitem (6417) < .@input) {
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "You don't have enough silvervine.";
+					close;
+				}
+				if (checkweight(670,.@input*2) == 0) {
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "Uhh.. It seems that you don't have enough space. Try to put your stuffs in the storage first.";
+					close;
+				}
+				delitem 6417,.@input; // Silvervine
+				getitem 670,.@input*2; // Zeny bag
+				mes "[^FF6600Silvervine Cat^000000]";
+				mes "Thank you ! Here's your money.";
+				close;			
+case 5: 	
+	mes "[^FF6600Silvervine Cat^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFYou can only select one item at a time.^000000";
+	callshop "silvervine"+.@i,1;
+	npcshopattach "silvervine"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "silvervine"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Silvervine Cat^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	addtimer 1000, strnpcinfo(1)+"::OnEnd";
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				getitem .@q[0],.@q[1];
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "Here, it's yours now!.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Silvervine Cat^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnEnd:
+	if (@qe6) { atcommand "@changelook 3 "+@qe3; atcommand "@changelook 1 "+@qe4; atcommand "@changelook 2 "+@qe5; }
+	for(set .@i,0; .@i<7; set .@i,.@i+1) setd "@qe"+.@i,0;
+	end;
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<variable>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Silvervines Shop";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(1,6396,1,10000000,0,6417,100); // Spiritual Auger
+	
+	
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "silvervine"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	silvervine1	-1,909:-1

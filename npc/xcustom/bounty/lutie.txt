@@ -1,0 +1,31 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Lutie
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+xmas,118,126,3	script	Bounty Board 21-40#xmas1	837,{
+	callfunc "F_Bounty_Board", 21, 40, 1, 1,
+		1265,	62874,	 25974,		 29304,	// Cookie
+		1246,	62875,	 31302,		 35187,	// COOKIE_XMAS
+		1242,	62876,	 31302,		 35187,	// MARIN
+		1249,	62877,	 31968,		 35964,	// MYSTCASE
+		1248,	62875,	 31968,		 35964;	// CRUISER
+		
+		
+	end;
+}

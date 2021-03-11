@@ -1,0 +1,952 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update Costumemaker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+payon,236,199,3	script	Leablem#1	86,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Leablem^000000]";
+	mes "Hello, I am Leablem.";
+	mes "I can enchant sockets to your weapons.";
+	next;
+	mes "[^FF6600Leablem^000000]";
+	mes "I'm different now, i can do this without fail.";	
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:Buy Coin.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Leablem^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 
+	mes "[^FF6600Leablem^000000]";
+	mes	"Alright, here's what i'm selling.";
+	callshop "coin_shop",1; end;	
+case 3: 	
+	mes "[^FF6600Leablem^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFSelect one item at a time.^000000";
+	callshop "pocketenchant"+.@i,1;
+	npcshopattach "pocketenchant"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "pocketenchant"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Leablem^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Leablem^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Leablem^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				setarray .@OptID[0],ATTR_TOLERACE_ALL;
+				setarray .@OptVal[0],1;
+				setarray .@OptParam[0],0;
+				getitem3 .@q[0],.@q[1],1,1,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;	
+				specialeffect2 699;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<vLeablemble>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Class C";
+	setarray .Shops$[2],"Class B";
+	setarray .Shops$[3],"Class A";
+	setarray .Shops$[4],"Class S";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(1,1461,1,8000,0,1460,4,1010,40,6797,8); // trident
+	Add(1,1951,1,8000,0,1950,4,1010,40,6797,8); // rope
+	Add(1,1902,1,8000,0,1901,4,1010,40,6797,8); // violin
+	Add(1,1569,1,8000,0,1554,4,1010,40,6797,8); // book mother e
+	Add(1,1568,1,8000,0,1553,4,1010,40,6797,8); // book of billows
+	Add(1,1571,1,8000,0,1556,4,1010,40,6797,8); // book of gust wind
+	Add(1,1570,1,8000,0,1555,4,1010,40,6797,8); // book of blazing
+	
+	Add(2,1114,1,8000,0,1113,4,984,4,6797,8); // scimitiar 	
+	Add(2,1309,1,8000,0,1304,4,984,4,6797,8); // orcish axe
+	Add(2,1408,1,8000,0,1407,5,1010,50,6797,8); // Pike
+	Add(2,1520,1,12000,0,1519,5,1010,50,6797,12); // chain
+	Add(2,1220,1,12000,0,1219,5,984,5,999,25,6797,12); // gladius 
+	Add(2,1716,1,12000,0,1714,5,984,10,999,25,6797,12); // gakkung
+	Add(2,1128,1,12000,0,1123,5,984,10,999,25,6797,12); // haedonggum	
+	Add(2,1906,1,12000,0,1905,5,1011,50,6797,12); // lute	
+	Add(2,1955,1,12000,0,1954,5,1011,50,6797,12); // wire whip
+	Add(2,1802,1,12000,0,1801,5,1010,50,6797,12); // waghnak;
+	Add(2,1715,1,12000,0,1713,5,984,10,999,25,6797,12); // Arbalest
+	Add(2,1538,1,12000,0,1523,5,984,5,6797,12); // spike
+
+	Add(3,1727,1,20000,0,1722,5,984,25,999,50,6797,20); // ballista
+	Add(3,1532,1,20000,0,1522,5,984,10,999,50,6797,20); // stunner
+	Add(3,1816,1,20000,0,1814,5,984,25,999,50,6797,20); // berserk
+	Add(3,1172,1,20000,0,1163,5,984,25,999,50,6797,20); // claymore
+	Add(3,13030,1,20000,0,13001,5,984,10,6797,20); // dragon killer
+	Add(3,1276,1,20000,0,1257,4,984,8,6797,20); // k o quaking
+	Add(3,1277,1,20000,0,1258,4,984,8,6797,20); // k o r blaze
+	Add(3,1275,1,20000,0,1256,4,984,8,6797,20); // k o f icicle
+	Add(3,1278,1,20000,0,1259,4,984,8,6797,20); // k o p wind p
+	sleep 10;
+	Add(3,1149,1,20000,0,1129,5,984,10,999,50,6797,20); // flamberge
+	Add(3,1726,1,25000,0,1718,5,984,10,999,50,6797,25); // hunter bow
+	Add(3,1620,1,25000,0,1619,5,984,25,999,50,6797,25); // survivor rod
+	Add(3,1178,1,25000,0,1167,5,984,10,6797,25); // schweizersabel
+	Add(3,1539,1,25000,0,1524,5,984,10,6797,25); // golden mace
+	Add(3,1922,1,25000,0,1918,5,984,10,6797,25); // oriental lute
+	Add(3,1976,1,25000,0,1970,5,984,10,6797,25); // queen whip
+	Add(3,1479,1,30000,0,1477,6,984,12,6797,30); // spectral spear
+	Add(3,1480,1,30000,0,1474,6,984,12,6797,30); // gae bolg
+	Add(3,1266,1,35000,0,1261,5,984,25,999,50,6797,35); // infiltrator
+	Add(3,1171,1,40000,0,1168,5,984,25,999,50,6797,40); // zweihander	
+	
+	
+	
+	Add(4,1418,1,100000,0,1413,10,6240,5,999,100,6797,100); // gungnir
+	Add(4,13016,1,100000,0,1239,10,6240,5,999,100,6797,100); // poison knife
+	Add(4,5162,1,100000,0,5017,10,6240,5,999,100,6797,100); // sucsamad
+	Add(4,5163,1,100000,0,5019,10,6240,5,999,100,6797,100); // ginnungagap
+	Add(4,5165,1,100000,0,2235,10,6240,5,999,100,6797,100); // cutlus
+	Add(4,5164,1,100000,0,2234,10,6240,5,999,100,6797,100); // crescent scythe
+	sleep 10;
+	Add(4,2360,1,100000,0,2343,10,6240,5,999,100,6797,100); // zephyrus
+	Add(4,2622,1,100000,0,2602,10,6240,5,999,100,6797,100); // mail breaker
+	Add(4,2601,1,100000,0,2621,10,6240,5,999,100,6797,100); // dragon slayer
+	Add(4,2671,1,100000,0,2619,10,6240,5,999,100,6797,100); // assassin dagger
+	Add(4,2373,1,100000,0,2327,10,6240,5,999,100,6797,100); // grand cross
+	Add(4,2128,1,100000,0,2111,10,6240,5,999,100,6797,100); // executioner
+	Add(4,5161,1,200000,0,2258,10,6240,5,999,100,6797,200); // ice pick
+	Add(4,5053,1,200000,0,5166,10,6240,5,999,100,6797,200); // survivor rod
+	
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "pocketenchant"+.@i,909;
+		npcshopdelitem "pocketenchant2"+.@i,909;
+		npcshopdelitem "pocketenchant3"+.@i,909;
+		npcshopdelitem "pocketenchant4"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	pocketenchant1	-1,909:-1
+-	shop	pocketenchant2	-1,909:-1
+-	shop	pocketenchant3	-1,909:-1
+-	shop	pocketenchant4	-1,909:-1
+
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update Costumemaker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+lighthalzen,96,137,3	script	Leablem#2	86,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Leablem^000000]";
+	mes "Hello, I am Leablem.";
+	mes "I can enchant sockets to your weapons.";
+	next;
+	mes "[^FF6600Leablem^000000]";
+	mes "I'm different now, i can do this without fail.";	
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:Buy Coin.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Leablem^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 
+	mes "[^FF6600Leablem^000000]";
+	mes	"Alright, here's what i'm selling.";
+	callshop "coin_shop",1; end;	
+case 3: 	
+	mes "[^FF6600Leablem^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFSelect one item at a time.^000000";
+	callshop "locketenchant"+.@i,1;
+	npcshopattach "locketenchant"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "locketenchant"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Leablem^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Leablem^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Leablem^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				setarray .@OptID[0],RDMOPT_VAR_ALLSTATS;
+				setarray .@OptVal[0],1;
+				setarray .@OptParam[0],0;
+				getitem3 .@q[0],.@q[1],1,1,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;	
+				specialeffect2 699;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<vLeablemble>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Class C";
+	setarray .Shops$[2],"Class B";
+	setarray .Shops$[3],"Class A";
+	setarray .Shops$[4],"Class S";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(1,1461,1,8000,0,1460,4,1010,40,6797,8); // trident
+	Add(1,1951,1,8000,0,1950,4,1010,40,6797,8); // rope
+	Add(1,1902,1,8000,0,1901,4,1010,40,6797,8); // violin
+	Add(1,1569,1,8000,0,1554,4,1010,40,6797,8); // book mother e
+	Add(1,1568,1,8000,0,1553,4,1010,40,6797,8); // book of billows
+	Add(1,1571,1,8000,0,1556,4,1010,40,6797,8); // book of gust wind
+	Add(1,1570,1,8000,0,1555,4,1010,40,6797,8); // book of blazing
+	
+	Add(2,1114,1,8000,0,1113,4,984,4,6797,8); // scimitiar 	
+	Add(2,1309,1,8000,0,1304,4,984,4,6797,8); // orcish axe
+	Add(2,1408,1,8000,0,1407,5,1010,50,6797,8); // Pike
+	Add(2,1520,1,12000,0,1519,5,1010,50,6797,12); // chain
+	Add(2,1220,1,12000,0,1219,5,984,5,999,25,6797,12); // gladius 
+	Add(2,1716,1,12000,0,1714,5,984,10,999,25,6797,12); // gakkung
+	Add(2,1128,1,12000,0,1123,5,984,10,999,25,6797,12); // haedonggum	
+	Add(2,1906,1,12000,0,1905,5,1011,50,6797,12); // lute	
+	Add(2,1955,1,12000,0,1954,5,1011,50,6797,12); // wire whip
+	Add(2,1802,1,12000,0,1801,5,1010,50,6797,12); // waghnak;
+	Add(2,1715,1,12000,0,1713,5,984,10,999,25,6797,12); // Arbalest
+	Add(2,1538,1,12000,0,1523,5,984,5,6797,12); // spike
+
+	Add(3,1727,1,20000,0,1722,5,984,25,999,50,6797,20); // ballista
+	Add(3,1532,1,20000,0,1522,5,984,10,999,50,6797,20); // stunner
+	Add(3,1816,1,20000,0,1814,5,984,25,999,50,6797,20); // berserk
+	Add(3,1172,1,20000,0,1163,5,984,25,999,50,6797,20); // claymore
+	Add(3,13030,1,20000,0,13001,5,984,10,6797,20); // dragon killer
+	Add(3,1276,1,20000,0,1257,4,984,8,6797,20); // k o quaking
+	Add(3,1277,1,20000,0,1258,4,984,8,6797,20); // k o r blaze
+	Add(3,1275,1,20000,0,1256,4,984,8,6797,20); // k o f icicle
+	Add(3,1278,1,20000,0,1259,4,984,8,6797,20); // k o p wind p
+	sleep 10;
+	Add(3,1149,1,20000,0,1129,5,984,10,999,50,6797,20); // flamberge
+	Add(3,1726,1,25000,0,1718,5,984,10,999,50,6797,25); // hunter bow
+	Add(3,1620,1,25000,0,1619,5,984,25,999,50,6797,25); // survivor rod
+	Add(3,1178,1,25000,0,1167,5,984,10,6797,25); // schweizersabel
+	Add(3,1539,1,25000,0,1524,5,984,10,6797,25); // golden mace
+	Add(3,1922,1,25000,0,1918,5,984,10,6797,25); // oriental lute
+	Add(3,1976,1,25000,0,1970,5,984,10,6797,25); // queen whip
+	Add(3,1479,1,30000,0,1477,6,984,12,6797,30); // spectral spear
+	Add(3,1480,1,30000,0,1474,6,984,12,6797,30); // gae bolg
+	Add(3,1266,1,35000,0,1261,5,984,25,999,50,6797,35); // infiltrator
+	Add(3,1171,1,40000,0,1168,5,984,25,999,50,6797,40); // zweihander	
+	
+	
+	
+	Add(4,1418,1,100000,0,1413,10,6240,5,999,100,6797,100); // gungnir
+	Add(4,13016,1,100000,0,1239,10,6240,5,999,100,6797,100); // poison knife
+	Add(4,5162,1,100000,0,5017,10,6240,5,999,100,6797,100); // sucsamad
+	Add(4,5163,1,100000,0,5019,10,6240,5,999,100,6797,100); // ginnungagap
+	Add(4,5165,1,100000,0,2235,10,6240,5,999,100,6797,100); // cutlus
+	Add(4,5164,1,100000,0,2234,10,6240,5,999,100,6797,100); // crescent scythe
+	sleep 10;
+	Add(4,2360,1,100000,0,2343,10,6240,5,999,100,6797,100); // zephyrus
+	Add(4,2622,1,100000,0,2602,10,6240,5,999,100,6797,100); // mail breaker
+	Add(4,2601,1,100000,0,2621,10,6240,5,999,100,6797,100); // dragon slayer
+	Add(4,2671,1,100000,0,2619,10,6240,5,999,100,6797,100); // assassin dagger
+	Add(4,2373,1,100000,0,2327,10,6240,5,999,100,6797,100); // grand cross
+	Add(4,2128,1,100000,0,2111,10,6240,5,999,100,6797,100); // executioner
+	Add(4,5161,1,200000,0,2258,10,6240,5,999,100,6797,200); // ice pick
+	Add(4,5053,1,200000,0,5166,10,6240,5,999,100,6797,200); // survivor rod
+
+
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "locketenchant"+.@i,909;
+		npcshopdelitem "locketenchant2"+.@i,909;
+		npcshopdelitem "locketenchant3"+.@i,909;
+		npcshopdelitem "locketenchant4"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	locketenchant1	-1,909:-1
+-	shop	locketenchant2	-1,909:-1
+-	shop	locketenchant3	-1,909:-1
+-	shop	locketenchant4	-1,909:-1
+
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update Costumemaker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+prt_in,22,60,6	script	Leablem#3	86,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Leablem^000000]";
+	mes "Hello, I am Leablem.";
+	mes "I can enchant sockets to your weapons.";
+	next;
+	mes "[^FF6600Leablem^000000]";
+	mes "I'm different now, i can do this without fail.";	
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:Buy Coin.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Leablem^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 
+	mes "[^FF6600Leablem^000000]";
+	mes	"Alright, here's what i'm selling.";
+	callshop "coin_shop",1; end;	
+case 3: 	
+	mes "[^FF6600Leablem^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFSelect one item at a time.^000000";
+	callshop "mocketenchant"+.@i,1;
+	npcshopattach "mocketenchant"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "mocketenchant"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Leablem^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Leablem^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Leablem^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				setarray .@OptID[0],RDMOPT_VAR_ALLSTATS;
+				setarray .@OptVal[0],1;
+				setarray .@OptParam[0],0;
+				getitem3 .@q[0],.@q[1],1,1,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;	
+				specialeffect2 699;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<vLeablemble>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Class C";
+	setarray .Shops$[2],"Class B";
+	setarray .Shops$[3],"Class A";
+	setarray .Shops$[4],"Class S";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(1,1461,1,8000,0,1460,4,1010,40,6797,8); // trident
+	Add(1,1951,1,8000,0,1950,4,1010,40,6797,8); // rope
+	Add(1,1902,1,8000,0,1901,4,1010,40,6797,8); // violin
+	Add(1,1569,1,8000,0,1554,4,1010,40,6797,8); // book mother e
+	Add(1,1568,1,8000,0,1553,4,1010,40,6797,8); // book of billows
+	Add(1,1571,1,8000,0,1556,4,1010,40,6797,8); // book of gust wind
+	Add(1,1570,1,8000,0,1555,4,1010,40,6797,8); // book of blazing
+	
+	Add(2,1114,1,8000,0,1113,4,984,4,6797,8); // scimitiar 	
+	Add(2,1309,1,8000,0,1304,4,984,4,6797,8); // orcish axe
+	Add(2,1408,1,8000,0,1407,5,1010,50,6797,8); // Pike
+	Add(2,1520,1,12000,0,1519,5,1010,50,6797,12); // chain
+	Add(2,1220,1,12000,0,1219,5,984,5,999,25,6797,12); // gladius 
+	Add(2,1716,1,12000,0,1714,5,984,10,999,25,6797,12); // gakkung
+	Add(2,1128,1,12000,0,1123,5,984,10,999,25,6797,12); // haedonggum	
+	Add(2,1906,1,12000,0,1905,5,1011,50,6797,12); // lute	
+	Add(2,1955,1,12000,0,1954,5,1011,50,6797,12); // wire whip
+	Add(2,1802,1,12000,0,1801,5,1010,50,6797,12); // waghnak;
+	Add(2,1715,1,12000,0,1713,5,984,10,999,25,6797,12); // Arbalest
+	Add(2,1538,1,12000,0,1523,5,984,5,6797,12); // spike
+
+	Add(3,1727,1,20000,0,1722,5,984,25,999,50,6797,20); // ballista
+	Add(3,1532,1,20000,0,1522,5,984,10,999,50,6797,20); // stunner
+	Add(3,1816,1,20000,0,1814,5,984,25,999,50,6797,20); // berserk
+	Add(3,1172,1,20000,0,1163,5,984,25,999,50,6797,20); // claymore
+	Add(3,13030,1,20000,0,13001,5,984,10,6797,20); // dragon killer
+	Add(3,1276,1,20000,0,1257,4,984,8,6797,20); // k o quaking
+	Add(3,1277,1,20000,0,1258,4,984,8,6797,20); // k o r blaze
+	Add(3,1275,1,20000,0,1256,4,984,8,6797,20); // k o f icicle
+	Add(3,1278,1,20000,0,1259,4,984,8,6797,20); // k o p wind p
+	sleep 10;
+	Add(3,1149,1,20000,0,1129,5,984,10,999,50,6797,20); // flamberge
+	Add(3,1726,1,25000,0,1718,5,984,10,999,50,6797,25); // hunter bow
+	Add(3,1620,1,25000,0,1619,5,984,25,999,50,6797,25); // survivor rod
+	Add(3,1178,1,25000,0,1167,5,984,10,6797,25); // schweizersabel
+	Add(3,1539,1,25000,0,1524,5,984,10,6797,25); // golden mace
+	Add(3,1922,1,25000,0,1918,5,984,10,6797,25); // oriental lute
+	Add(3,1976,1,25000,0,1970,5,984,10,6797,25); // queen whip
+	Add(3,1479,1,30000,0,1477,6,984,12,6797,30); // spectral spear
+	Add(3,1480,1,30000,0,1474,6,984,12,6797,30); // gae bolg
+	Add(3,1266,1,35000,0,1261,5,984,25,999,50,6797,35); // infiltrator
+	Add(3,1171,1,40000,0,1168,5,984,25,999,50,6797,40); // zweihander	
+	
+	
+	
+	Add(4,1418,1,100000,0,1413,10,6240,5,999,100,6797,100); // gungnir
+	Add(4,13016,1,100000,0,1239,10,6240,5,999,100,6797,100); // poison knife
+	Add(4,5162,1,100000,0,5017,10,6240,5,999,100,6797,100); // sucsamad
+	Add(4,5163,1,100000,0,5019,10,6240,5,999,100,6797,100); // ginnungagap
+	Add(4,5165,1,100000,0,2235,10,6240,5,999,100,6797,100); // cutlus
+	Add(4,5164,1,100000,0,2234,10,6240,5,999,100,6797,100); // crescent scythe
+	sleep 10;
+	Add(4,2360,1,100000,0,2343,10,6240,5,999,100,6797,100); // zephyrus
+	Add(4,2622,1,100000,0,2602,10,6240,5,999,100,6797,100); // mail breaker
+	Add(4,2601,1,100000,0,2621,10,6240,5,999,100,6797,100); // dragon slayer
+	Add(4,2671,1,100000,0,2619,10,6240,5,999,100,6797,100); // assassin dagger
+	Add(4,2373,1,100000,0,2327,10,6240,5,999,100,6797,100); // grand cross
+	Add(4,2128,1,100000,0,2111,10,6240,5,999,100,6797,100); // executioner
+	Add(4,5161,1,200000,0,2258,10,6240,5,999,100,6797,200); // ice pick
+	Add(4,5053,1,200000,0,5166,10,6240,5,999,100,6797,200); // survivor rod
+	
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "mocketenchant"+.@i,909;
+		npcshopdelitem "mocketenchant2"+.@i,909;
+		npcshopdelitem "mocketenchant3"+.@i,909;
+		npcshopdelitem "mocketenchant4"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	mocketenchant1	-1,909:-1
+-	shop	mocketenchant2	-1,909:-1
+-	shop	mocketenchant3	-1,909:-1
+-	shop	mocketenchant4	-1,909:-1
+
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update Costumemaker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+morocc,270,159,3	script	Leablem#7	86,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Leablem^000000]";
+	mes "Hello, I am Leablem.";
+	mes "I can enchant sockets to your weapons.";
+	next;
+	mes "[^FF6600Leablem^000000]";
+	mes "I'm different now, i can do this without fail.";	
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:Buy Coin.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Leablem^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 
+	mes "[^FF6600Leablem^000000]";
+	mes	"Alright, here's what i'm selling.";
+	callshop "coin_shop",1; end;	
+case 3: 	
+	mes "[^FF6600Leablem^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFSelect one item at a time.^000000";
+	callshop "7ocketenchant"+.@i,1;
+	npcshopattach "7ocketenchant"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "7ocketenchant"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Leablem^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Leablem^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Leablem^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				setarray .@OptID[0],RDMOPT_VAR_ALLSTATS;
+				setarray .@OptVal[0],1;
+				setarray .@OptParam[0],0;
+				getitem3 .@q[0],.@q[1],1,1,0,0,0,0,0,.@OptID,.@OptVal,.@OptParam;	
+				specialeffect2 699;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<vLeablemble>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Class C";
+	setarray .Shops$[2],"Class B";
+	setarray .Shops$[3],"Class A";
+	setarray .Shops$[4],"Class S";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(1,1461,1,8000,0,1460,4,1010,40,6797,8); // trident
+	Add(1,1951,1,8000,0,1950,4,1010,40,6797,8); // rope
+	Add(1,1902,1,8000,0,1901,4,1010,40,6797,8); // violin
+	Add(1,1569,1,8000,0,1554,4,1010,40,6797,8); // book mother e
+	Add(1,1568,1,8000,0,1553,4,1010,40,6797,8); // book of billows
+	Add(1,1571,1,8000,0,1556,4,1010,40,6797,8); // book of gust wind
+	Add(1,1570,1,8000,0,1555,4,1010,40,6797,8); // book of blazing
+	
+	Add(2,1114,1,8000,0,1113,4,984,4,6797,8); // scimitiar 	
+	Add(2,1309,1,8000,0,1304,4,984,4,6797,8); // orcish axe
+	Add(2,1408,1,8000,0,1407,5,1010,50,6797,8); // Pike
+	Add(2,1520,1,12000,0,1519,5,1010,50,6797,12); // chain
+	Add(2,1220,1,12000,0,1219,5,984,5,999,25,6797,12); // gladius 
+	Add(2,1716,1,12000,0,1714,5,984,10,999,25,6797,12); // gakkung
+	Add(2,1128,1,12000,0,1123,5,984,10,999,25,6797,12); // haedonggum	
+	Add(2,1906,1,12000,0,1905,5,1011,50,6797,12); // lute	
+	Add(2,1955,1,12000,0,1954,5,1011,50,6797,12); // wire whip
+	Add(2,1802,1,12000,0,1801,5,1010,50,6797,12); // waghnak;
+	Add(2,1715,1,12000,0,1713,5,984,10,999,25,6797,12); // Arbalest
+	Add(2,1538,1,12000,0,1523,5,984,5,6797,12); // spike
+
+	Add(3,1727,1,20000,0,1722,5,984,25,999,50,6797,20); // ballista
+	Add(3,1532,1,20000,0,1522,5,984,10,999,50,6797,20); // stunner
+	Add(3,1816,1,20000,0,1814,5,984,25,999,50,6797,20); // berserk
+	Add(3,1172,1,20000,0,1163,5,984,25,999,50,6797,20); // claymore
+	Add(3,13030,1,20000,0,13001,5,984,10,6797,20); // dragon killer
+	Add(3,1276,1,20000,0,1257,4,984,8,6797,20); // k o quaking
+	Add(3,1277,1,20000,0,1258,4,984,8,6797,20); // k o r blaze
+	Add(3,1275,1,20000,0,1256,4,984,8,6797,20); // k o f icicle
+	Add(3,1278,1,20000,0,1259,4,984,8,6797,20); // k o p wind p
+	sleep 10;
+	Add(3,1149,1,20000,0,1129,5,984,10,999,50,6797,20); // flamberge
+	Add(3,1726,1,25000,0,1718,5,984,10,999,50,6797,25); // hunter bow
+	Add(3,1620,1,25000,0,1619,5,984,25,999,50,6797,25); // survivor rod
+	Add(3,1178,1,25000,0,1167,5,984,10,6797,25); // schweizersabel
+	Add(3,1539,1,25000,0,1524,5,984,10,6797,25); // golden mace
+	Add(3,1922,1,25000,0,1918,5,984,10,6797,25); // oriental lute
+	Add(3,1976,1,25000,0,1970,5,984,10,6797,25); // queen whip
+	Add(3,1479,1,30000,0,1477,6,984,12,6797,30); // spectral spear
+	Add(3,1480,1,30000,0,1474,6,984,12,6797,30); // gae bolg
+	Add(3,1266,1,35000,0,1261,5,984,25,999,50,6797,35); // infiltrator
+	Add(3,1171,1,40000,0,1168,5,984,25,999,50,6797,40); // zweihander	
+	
+	
+	
+	Add(4,1418,1,100000,0,1413,10,6240,5,999,100,6797,100); // gungnir
+	Add(4,13016,1,100000,0,1239,10,6240,5,999,100,6797,100); // poison knife
+	Add(4,5162,1,100000,0,5017,10,6240,5,999,100,6797,100); // sucsamad
+	Add(4,5163,1,100000,0,5019,10,6240,5,999,100,6797,100); // ginnungagap
+	Add(4,5165,1,100000,0,2235,10,6240,5,999,100,6797,100); // cutlus
+	Add(4,5164,1,100000,0,2234,10,6240,5,999,100,6797,100); // crescent scythe
+	sleep 10;
+	Add(4,2360,1,100000,0,2343,10,6240,5,999,100,6797,100); // zephyrus
+	Add(4,2622,1,100000,0,2602,10,6240,5,999,100,6797,100); // mail breaker
+	Add(4,2601,1,100000,0,2621,10,6240,5,999,100,6797,100); // dragon slayer
+	Add(4,2671,1,100000,0,2619,10,6240,5,999,100,6797,100); // assassin dagger
+	Add(4,2373,1,100000,0,2327,10,6240,5,999,100,6797,100); // grand cross
+	Add(4,2128,1,100000,0,2111,10,6240,5,999,100,6797,100); // executioner
+	Add(4,5161,1,200000,0,2258,10,6240,5,999,100,6797,200); // ice pick
+	Add(4,5053,1,200000,0,5166,10,6240,5,999,100,6797,200); // survivor rod
+	
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "7ocketenchant"+.@i,909;
+		npcshopdelitem "7ocketenchant2"+.@i,909;
+		npcshopdelitem "7ocketenchant3"+.@i,909;
+		npcshopdelitem "7ocketenchant4"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	7ocketenchant1	-1,909:-1
+-	shop	7ocketenchant2	-1,909:-1
+-	shop	7ocketenchant3	-1,909:-1
+-	shop	7ocketenchant4	-1,909:-1

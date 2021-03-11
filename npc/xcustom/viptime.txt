@@ -1,0 +1,12 @@
+-	script	VIP_TIME	-1,{
+OnPCLoginEvent:
+		if (vip_status(1)) {
+			set .@Timer, vip_status(2);
+			dispbottom "=============================================";
+			dispbottom "Account Status : VIP Account";
+			dispbottom "Time left : "+ callfunc("Time2Str",.@Timer);
+			dispbottom "Check @rates for VIP exp and job rate";
+			dispbottom "============================================";
+			end;
+		}
+	}

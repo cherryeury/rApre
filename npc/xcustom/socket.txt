@@ -1,0 +1,45 @@
+prontera,150,150,4	script	Socket Enchant	953,{
+			mes .n$;
+			mes "What to slot ?.";
+			next;
+			switch( select( "Weapon.","No.") ) {
+				case 2:
+					mes "k";
+					close;
+				case 1:
+					.@x = getequipid(EQI_HAND_R);
+					if (.@x == -1) { mes .n$;
+						mes "You don't have any weapon in your right hand!";
+						close;
+					}				
+					set .@part,EQI_HAND_R;
+					if((getequipid(.@part))== 1201) {
+						set .@item,1201;
+						set .@weapon,1202;
+						goto L_Socket;
+					}
+					mes .n$;
+					mes "You can't add socket to this.";
+					close;								
+					}
+						L_Socket:
+						//Random opt check			
+					for(.@i=0;.@i<(MAX_ITEM_RDM_OPT-1);.@i++){
+						.@rand_id[.@i] = getequiprandomoption(.@part,.@i,ROA_ID);
+						.@rand_val[.@i] = getequiprandomoption(.@part,.@i,ROA_VALUE);
+						.@rand_param[.@i] = getequiprandomoption(.@part,.@i,ROA_PARAM);
+					}
+			//Card check
+					.@card0 = getequipcardid(.@part,0);
+					.@card1 = getequipcardid(.@part,1);
+					.@card2 = getequipcardid(.@part,2);
+					.@card3 = getequipcardid(.@part,3);
+			//Making
+					mes "Let me take this ..";
+					unequip(.@part);
+					next;
+					specialeffect2 EF_REPAIRWEAPON;
+					getitem3 .@weapon, 1, 1, .@s_item_refine, 0, .@card0, .@card1, .@card2, .@card3,.@rand_id,.@rand_val,.@rand_param;
+					delitem .@item,1;
+					end;
+			}

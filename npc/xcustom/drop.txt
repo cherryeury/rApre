@@ -1,0 +1,40 @@
+-	script	Sample#1	FAKE_NPC,{
+
+	OnNPCKillEvent:
+		.@killedrid = killedrid;
+		while ( .@i < .monster_drop_size ) {
+			if ( compare( "#"+.monster_drop$[.@i],"#"+.@killedrid+"," ) ) {
+				.@size = explode( .@reward$,.monster_drop$[.@i],"," );
+				if ( .@size > 1 ) {
+				
+					// Zeny + Cash rewards
+					Zeny += atoi( .@reward$[1] );
+					#CASHPOINTS += atoi( .@reward$[2] );
+					
+					// item rewards
+					if ( rand( 100 ) < 100 ) {
+							getitem atoi( .@reward$[3] ),atoi( .@reward$[4] );
+					}
+					// item rewards
+					if ( rand( 100 ) < 100 ) {
+							getitem atoi( .@reward$[5] ),atoi( .@reward$[6] );
+					}
+				}
+				end;
+			}
+			.@i++;
+		}
+		end;
+		
+	OnInit:
+	//		Monster & Drop List:
+	//		"<Monster ID>|<Zeny>|<Cash Points>|<itemID-1>|<amount-1>|<itemID-2>|<amount-2>...etc",
+		setarray .monster_drop$,
+
+			"1511,5000,1,18900,1,5759,1",		// AMON_RA: 5000 Zeny + 1 Cash + Weisswurst + Noah_Hat	
+			"1502,5000,1,18844,1,18839,1";		// PORING_V: 5000 Zeny + 1 Cash + Blue_Poring_Bubble + Poring_Sunglasses	
+
+		.monster_drop_size = getarraysize( .monster_drop$ );
+		end;
+	
+}

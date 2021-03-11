@@ -1,0 +1,31 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Izlude
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+izlude,107,176,5	script	Bounty Board 41-60#iz1	837,{
+	callfunc "F_Bounty_Board", 41, 60, 3, 1,
+		1141,	62841,	37740,		 42291,	// MARINA
+		1161,	62843,	37074,		 41625,	// PLANKTON
+		1066,	62845,	37962,		 42846,	// VADON
+		1264,	62842,	68376,		 76812,	// MERMAN
+		1065,	62844,	69486,		 78255;	// STROUF
+		
+	end;
+}
+

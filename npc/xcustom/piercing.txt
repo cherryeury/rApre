@@ -1,0 +1,178 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update HG-Upgrader By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+itemmall,16,65,5	script	Elim	581,{
+function Add; function Chk; function Slot; function A_An;
+if (checkweight(21016,1) == 0) {
+	mes "[^FF6600Elim^000000]";
+    mes "You're carrying too much stuffs , make some space and come back to me later";
+        close;	
+	}
+	mes "[^FF6600Elim^000000]";
+	mes "Hello, I am Elim.";
+	mes "I can add slot to the listed mid gear at the cost of a spiritual auger.";
+	mes "With 20% chance.";
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Elim^000000]";
+	mes "Here's the list.";
+	break; 
+case 2: 	
+	mes "[^FF6600Elim^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFYou can only select one item at a time.^000000";
+	callshop "hgpiercer"+.@i,1;
+	npcshopattach "hgpiercer"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "hgpiercer"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Elim^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	addtimer 1000, strnpcinfo(1)+"::OnEnd";
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((((@qe1&1) || (@qe1&256) || (@qe1&512) || (@qe1&1024) || (@qe1&2048) || (@qe1&4096)) && @qe2>0 && !@qe6)?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Elim^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Elim^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(1,5) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				getitem .@q[0],.@q[1];
+				specialeffect2 699;
+					mes "[^FF6600Elim^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Elim^000000]";
+					mes "I . I'm sorry , i failed.";
+					close; 
+			}			
+			case 2:
+				set @qe3, getlook(3); set @qe4, getlook(4); set @qe5, getlook(5);
+				if (@qe1&1) atcommand "@changelook 3 "+@qe2;
+				if (@qe1&256) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&512) atcommand "@changelook 2 "+@qe2;
+				if (@qe1&1024) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&2048) atcommand "@changelook 1 "+@qe2;
+				if (@qe1&4096) atcommand "@changelook 1 "+@qe2;
+				set @qe6,1;
+				break; 
+			case 3:
+				close; } }
+OnEnd:
+	if (@qe6) { atcommand "@changelook 3 "+@qe3; atcommand "@changelook 1 "+@qe4; atcommand "@changelook 2 "+@qe5; }
+	for(set .@i,0; .@i<7; set .@i,.@i+1) setd "@qe"+.@i,0;
+	end;
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<variable>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"Pierce Mid Headgear";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+//	Add(1,2204,1,10000000,0,2203,1,6396,1); // Glasses [1]
+//	Add(1,2202,1,10000000,0,2201,1,6396,1); // Sunglasses [1]
+	Add(1,18507,1,10000000,0,2286,1,6396,1); // Elven Ears [1]
+	Add(1,18518,1,10000000,0,5074,1,6396,1); // Angel Wing Ears [1]
+	Add(1,18519,1,10000000,0,5068,1,6396,1); // Evil Wing Ears [1]
+//	Add(1,18607,1,10000000,0,5040,1,6396,1); // Blush [1]
+	Add(1,18608,1,10000000,0,5085,1,6396,1); // Small Ribbons [1]
+	Add(1,18609,1,10000000,0,5104,1,6396,1); // Dark Blinder [1]
+//	Add(1,18611,1,10000000,0,5401,1,6396,1); // Black Framed Glasses [1]
+	Add(1,18591,1,10000000,0,2260,1,6396,1); // Mini Glasses [1]
+
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "hgpiercer"+.@i,909;
+	end;
+}
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	hgpiercer1	-1,909:-1

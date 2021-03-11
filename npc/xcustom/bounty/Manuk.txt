@@ -1,0 +1,38 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Manuk
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+manuk,301,137,5	script	Bounty Board 121-140#man1	837,{
+	callfunc "F_Bounty_Board", 120, 140, 12, 2,
+		1999,	62903,		325230,		222333,	// CENTIPEDE_LARVA
+		1989,	62904,		322899,		188478,	// HILLSRION
+		1986,	62905,		417582,		343212,	// TATACHO		
+		2024,	62902,		727383,		399045;	// BRADIUM_GOLEM
+		
+	end;
+	}
+manuk,299,137,5	script	Bounty Board 141-160#man1	837,{
+	callfunc "F_Bounty_Board", 141, 160, 12, 2,	
+		2083,	62805,		587250,		451237,	// HORN_SCARABA
+		2084,	62803,		650250,		511762,	// HORN_SCARABA2
+		2085,	62802,		712125,		591187,	// ANTLER_SCARABA
+		2086,	62804,		786375,		674437;	// RAKE_SCARABA
+		
+	end;
+}

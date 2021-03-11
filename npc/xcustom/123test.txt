@@ -1,0 +1,17 @@
+prontera,150,150,5	script	Change Dress	509,{
+	mes "[Armando]";
+	if ( !(eaclass() & EAJL_THIRD) || BaseJob == Job_SuperNovice ) {
+		mes "I'm sorry, but you do not have 3rd class.";
+		close;
+	}
+	mes "Hi "+strcharinfo(0)+" do you want to change your dress?";
+	next;
+	if ( prompt( "Primary Dress", "Second Dress" ) == 255 ) {
+		mes "[Kasondra]"; // why keep changing name ?
+		mes "Goodbye.";
+		close;
+	}
+	setlook LOOK_BODY2, @menu -1;
+	mes "Done!";
+	close;
+}

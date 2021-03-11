@@ -1,0 +1,70 @@
+// Buying Store Item List
+// List of items that can be sold to buying stores.
+//
+// Structure of Database:
+// ItemID
+//
+// Note:
+//  Items are in same order as data\buyingstoreitemlist.txt, which
+//  must be edited as well for the client to accept added items.
+
+601  // Wing_Of_Fly
+602  // Wing_Of_Butterfly
+610  // Leaf_Of_Yggdrasil
+611  // Spectacles
+616  // Old_Card_Album
+717  // Blue_Gemstone
+4032  // Ambernite_Card
+4039  // Stainer_Card
+4041  // Coco_Card
+4042  // Steel_Chonchon_Card
+4046  // Martin_Card
+4061  // Cornutus_Card
+4067  // Megalodon_Card
+4073  // Pirate_Skel_Card
+4075  // Argos_Card
+4089  // Sword_Fish_Card
+4090  // Munak_Card
+4098  // Dokebi_Card
+4099  // Pasana_Card
+4101  // Sand_Man_Card
+4110  // Ghoul_Card
+4114  // Argiope_Card
+4121  // Phreeoni_Card_Z
+4128  // Golden_Bug_Card_Z
+4131  // Moonlight_Flower_Card_Z
+4134  // Dracula_Card_Z
+4141  // Evil_Druid_Card
+4142  // Doppelganger_Card_Z
+4144  // Osiris_Card_Z
+4146  // Maya_Card_Z
+4150  // Goat_Card
+4207  // Mysteltainn_Card
+4220  // Solider_Card
+4223  // Stalactic_Golem_Card
+4226  // Sting_Card
+4240  // Arclouse_Card
+4250  // Executioner_Card
+4254  // Tirfing_Card
+4259  // Wooden_Golem_Card
+4260  // Wootan_Shooter_Card
+4261  // Wootan_Fighter_Card
+4304  // Tamruan_Card
+4309  // Parasite_Card
+4318  // Knight_Windstorm_Card_Z
+4320  // Bloody_Knight_Card_
+4322  // High_Orc_Card
+4337  // Porcellio_Card
+4339  // Mineral_Card
+4399  // Thanatos_Card
+4401  // Alicel_Card
+4409  // Agav_Card
+4417  // Ice_Titan_Card
+6772  // Octopus
+6774  // Piranha
+6797  // 11th_Coin
+12246  // Magic_Card_Album
+23258  // Stinky_Rotten_Meat
+25508  // Orc_Warlord_Token_
+25622  // White_Snake_Tear_
+25629  // Knot_Letter

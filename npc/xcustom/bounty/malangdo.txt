@@ -1,0 +1,29 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Malangdo
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+malangdo,233,172,5	script	Bounty Board 75-95#mal1	837,{
+	callfunc "F_Bounty_Board", 75, 95, 1, 5,
+		2199,	62883,		66600,	 66600,	// SIORAVA
+		2197,	62882,		105894,	 105894;	// RED ERUMA
+		
+	end;
+}
+
+

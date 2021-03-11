@@ -1,0 +1,2154 @@
+//===== eAthena/rAthena Script =======================================
+//= Weapon Forger
+//===== Template by: =========================================
+//= Pang Cake
+//===== Modified by: =========================================
+//= Mysterious
+//===== Current Version: =====================================
+//= 1.2
+//===== Compatible With: =====================================
+//= eAthena / rAthena SVN
+//===== Description: =========================================
+//= This NPC forges NAMELESS weapons, and can incorporate element stones and star crumbs.
+//= The forge chance is adjustable by changing the formula below.
+//===== Additional Comments: ========================================
+//= v1.0 - Initial release [Pang Cake]
+//= v1.1 - Fixed a couple of things [Mysterious]
+//= v1.2 - Proper disclaimer [Mysterious]
+//============================================================
+alberta,42,68,5	script	The Forger	813,{
+
+// ============= Configuration Settings ==================
+// Based on following forge success-rate formula:
+// ( Skill Level ) + ( Job Level / 5 ) + ( DEX / 10 ) + ( LUK / 10 ) + 50.
+	set .ForgeSkLvl,(getskilllv(97))+(getskilllv(98))+(getskilllv(99))+(getskilllv(100))+(getskilllv(101))+(getskilllv(102))+(getskilllv(103))+(getskilllv(104)); // Level of Forge Skill ( Forge Sword, Forge Mace, etc ).
+	if(Class == Job_Whitesmith || Class == Job_Mechanic) { if (JobLevel <50) {set .@JLvl, 50; } else { set.@JLvl, Joblevel; }}
+	else { set .@JLvl, JobLevel; } // Job level of the Forger NPC.
+	set .@ForDex, readparam(bDex); // The dexterity stat of the Forge NPC.
+	set .@ForLuk, readparam(bLuk); // The luck stat of the Forge NPC.
+	
+// Anvil chance mods, e.g. 0 = Normal Anvil, 3 = Oridecon Anvil, 5 = Golden Anvil, 10 = Emperium Anvil. Recommended: 10 max.	
+	if (countitem(986) > 0) {
+	set .@AnvMod, 1;
+	}
+	if (countitem(987) > 0) {
+	set .@AnvMod, 4;
+	}
+	if (countitem(988) > 0) {
+	set .@AnvMod, 6;
+	}
+	if (countitem(989) > 0) {
+	set .@AnvMod, 11;
+	}
+ 	
+// Forge formula - don't fiddle with this one unless you want to change the formula.
+	
+	set .ForgeChance, ( .ForgeSkLvl ) + ( .@JLvl / 5 ) + ( .@ForDex / 10 ) + ( .@ForLuk / 10 ) + .@AnvMod + 45;
+
+// Misc. Configuration.
+	
+	set .GMBypassLv, 50; // Minimum GM level for ignoring item requirements. set it to 50 to bypass
+	set .NameSet, 1; // Weapons will be forged with: 0 = Nameless, 1 = Invoking PC's name.
+	set .PerfectChance, 1; // Set to 1 to enable 100% forge chance.
+	
+// ============== End Configurations ================
+
+	if (BaseJob == Job_Blacksmith){	
+	if (.@AnvMod < 1) {
+	goto L_NoAnvil;
+	}
+	
+	if (countitem(986) > 0 && countitem(987) > 0){
+	goto L_Anvil;
+	}
+	if (countitem(986) > 0 && countitem(988) > 0){
+	goto L_Anvil;
+	}	
+	if (countitem(986) > 0 && countitem(989) > 0){
+	goto L_Anvil;
+	}	
+	if (countitem(987) > 0 && countitem(988) > 0){
+	goto L_Anvil;
+	}
+	if (countitem(987) > 0 && countitem(989) > 0){
+	goto L_Anvil;
+	}	
+	if (countitem(988) > 0 && countitem(989) > 0){
+	goto L_Anvil;
+	}
+	
+	mes "[^FF6600Forger^000000]";
+	mes "Hello, I am the Forger. If you provide the materials, I'll forge weapons for you.";
+	mes "The success rate is based on your stats.";
+	mes "Would you like me to forge you a weapon?";
+	switch( select( "Yes.:Information.:No." ) ) {
+		case 1:
+			break;
+		case 2:
+			next;
+			mes "[^FF6600Forger^000000]";
+			mes "What would you like to know about?";
+			mes "Remember to bring some hammers for me to forge.";
+			switch( select( "Hammers?.:Success Chance.:Star Crumb?.:Can I Awaken Forged Weapons?.:Weapon Recipe.:Nevermind." ) ) {
+			case 1:
+					mes "Yeah, basically.";
+					mes "1 ^FF0099Iron Hammer^000000:";
+					mes "Is used for Crafting level 1 weapons.";
+					mes "1 ^FF0099Golden Hammer^000000:";
+					mes "Is used for Crafting level 2 weapons.";
+					mes "1 ^FF0099Oridecon Hammer^000000:";
+					mes "Is used for Crafting level 3 weapons.";					
+					mes "Don't forget to bring those if you want to forge.";
+					close;
+				case 2:
+					mes "The success chance is based on your";
+					mes "Job level, Dex, Luk.";
+					mes "Cumulative of all of your smithing skill levels";
+					mes "and the quality of the anvil you brought.";
+					close;
+				case 3:
+					mes "Star Crumb / Very strong weapons";
+					mes "don't give mastery damage anymore";
+					mes "it gives 2,3,6 All Stats respectively";
+					mes "in enchant option instead.";
+					close;
+				case 4:
+					mes "You can't awaken any forged weapons";
+					mes "if you used star crumbs or elemental stone";
+					mes "when you forged your weapon.";
+					close;
+				case 6:
+					mes "Come back when you would like to forge.";
+					close;					
+				case 5:
+					switch( select( "Daggers.:1H Swords.:2H Swords.:Maces..:Axes.:Bow.:Spears.:Knuckles.:Instruments.:Whip.:Katar.:Nothing." ) ) {
+					case 1:	
+						mes "DAGGERS";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Knife - ^FF00001x Iron, 10x Jellopies^000000.";
+						mes "Cutter - ^FF000025x Iron^000000.";
+						mes "Main Gauche - ^FF000050x Iron^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Dirk - ^FF000017x Steel^000000.";
+						mes "Dagger - ^FF000030x Steel^000000.";
+						mes "Stiletto - ^FF000040x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Gladius - ^FF00004x Oridecon, 40x Steel, 1x Sapphire^000000.";
+						mes "Cinquedea - ^FF00004x Oridecon, 40x Steel, 1x Emerald^000000.";
+						mes "Damascus - ^FF00004x Oridecon, 60x Steel, 1x Zircon^000000.";
+						close;
+					case 2:
+						mes "1H SWORDS.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Sword - ^FF00002x Iron^000000.";
+						mes "Falchion - ^FF000030x Iron^000000.";
+						mes "Blade - ^FF000045x Iron, 25x Tooth of Bat^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Rapier - ^FF000020x Steel^000000.";
+						mes "Scimitar - ^FF000035x Steel^000000.";
+						mes "Ring Pommel Saber - ^FF000040x Steel, 50x Wolf Claw^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Saber - ^FF00008x Oridecon, 5x Steel, 1x Opal^000000.";
+						mes "Haedongum - ^FF00008x Oridecon, 10x Steel, 1x Topaz^000000.";
+						mes "Tsurugi - ^FF00008x Oridecon, 15x Steel, 1x Garnet^000000.";
+						mes "Town Sword - ^FF00004x Oridecon, 40x Steel, 1x Amethyst^000000.";
+						mes "Flamberge - ^FF000016x Oridecon, 1x Cursed Ruby^000000.";
+						close;
+					case 3:
+						mes "2H SWORDS.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Katana - ^FF000035x Iron, 15x Horrendous Mouth^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Slayer - ^FF000025x Steel, 20x Decayed Nail^000000.";
+						mes "Bastard Sword - ^FF000045x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Two-Handed Sword - ^FF000012x Oridecon, 10x Steel^000000.";
+						mes "Broad Sword - ^FF000012x Oridecon, 10x Steel^000000.";
+						mes "Claymore - ^FF000016x Oridecon, 20x Steel, 1x Cracked Diamond^000000.";
+						close;
+					case 4:
+						mes "MACES.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Club - ^FF00003x Iron^000000.";
+						mes "Mace - ^FF000030x Iron^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Smasher - ^FF000020x Steel^000000.";
+						mes "Flail - ^FF000033x Steel^000000.";
+						mes "Chain - ^FF000040x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Morning Star - ^FF000085x Steel, 1x 1 Carat Diamond^000000.";
+						mes "Sword Mace - ^FF0000100x Steel, 20x Sharp Scale^000000.";
+						mes "Stunner - ^FF0000120x Steel, 1x Heroic Emblem^000000.";
+						close;
+					case 5:
+						mes "AXES.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Axe - ^FF000010x Iron^000000.";
+						mes "Battle Axe - ^FF0000110x Iron^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Hammer - ^FF000030x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Buster - ^FF00004x Oridecon, 20x Steel, 30x Orcish Fang^000000.";
+						mes "Two-Handed Axe - ^FF00008x Oridecon, 10x Steel, 1x Amethyst^000000.";
+						close;
+					case 6:	
+						mes "BOWS";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Bow - ^FF000015x Iron, 1x Trunk^000000.";
+						mes "Composite Bow - ^FF000040x Iron, 1 Trunk^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Great Bow - ^FF000030x Steel, 2x Trunk^000000.";
+						mes "Crossbow - ^FF000040x Steel, 5x Trunk^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Arbalest - ^FF00004x Oridecon, 40x Steel, 1x Sapphire, 10x Trunk^000000.";
+						mes "Gakkung Bow - ^FF00004x Oridecon, 40x Steel, 1x Emerald, 10x Trunk^000000.";
+						mes "Hunter Bow - ^FF00004x Oridecon, 60x Steel, 1x Zircon, 10x Trunk^000000.";
+						mes "Repeating Crossbow - ^FF00004x Oridecon, 60x Steel, 1x Cursed Ruby, 15x Trunk^000000.";
+						close;
+					case 7:
+						mes "SPEARS.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Javelin - ^FF00003x Iron^000000.";
+						mes "Spear - ^FF000035x Iron^000000.";
+						mes "Pike - ^FF000070x Iron^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Guisarme - ^FF000025x Steel^000000.";
+						mes "Glaive - ^FF000040x Steel^000000.";
+						mes "Partizan - ^FF000055x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Trident - ^FF00008x Oridecon, 10x Steel, 1x Aquamarine^000000.";
+						mes "Halberd - ^FF000012x Oridecon, 10x Steel^000000.";
+						mes "Lance - ^FF000012x Oridecon, 3x Ruby, 2x Evil Horn^000000.";
+						close;
+					case 8:
+						mes "KNUCKLES.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Waghnak - ^FF0000160x Iron, 1x Pearl^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Knuckle Duster - ^FF000050x Steel^000000.";
+						mes "Studded Knuckles - ^FF000065x Steel^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Fist - ^FF00008x Oridecon, 10x Ruby^000000.";
+						mes "Claw - ^FF000012x Oridecon, 10x Topaz^000000.";
+						mes "Finger - ^FF000012x Oridecon, 10x Opal^000000.";
+						close;
+					case 9:
+						mes "INSTRUMENTS.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Violin - ^FF0000130x Iron, 1x Pearl, 10x Trunk^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Mandolin - ^FF000040x Steel, 15x trunk^000000.";
+						mes "Lute - ^FF000050x Steel , 30x Trunk^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Guitar - ^FF00006x Oridecon, 3x Emerald, 40 Trunk^000000.";
+						mes "Harp - ^FF000010x Oridecon, 3x Large Jellopy, 50 Trunk^000000.";
+						mes "Gumoongoh - ^FF00008x Oridecon, 3x Sardonyx, 50 Trunk^000000.";
+						close;
+					case 10:
+						mes "WHIP.";
+						mes "^FF0099LEVEL ONE^000000:";
+						mes "Rope - ^FF0000120x Iron, 1x Pearl , 1x Rope^000000.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Whip - ^FF000040x Steel, 2x Rope^000000.";
+						mes "Wire Whip - ^FF000050x Steel , 4x Rope^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Rante Whip - ^FF00008x Oridecon, 6x Steel, 40x Elastic Band.";
+						mes "Tail Whip - ^FF000010x Oridecon, 8x Steel, 3x Large Jellopy^, 60x Elastic Band000000.";
+						mes "Whip - ^FF00008x Oridecon, 3x Sardonyx, 60x Elastic Band^000000.";
+						close;
+					case 11:
+						mes "KATAR.";
+						mes "^FF0099LEVEL TWO^000000:";
+						mes "Jur - ^FF000040x Steel, 1x Pearl^000000.";
+						mes "^FF0099LEVEL THREE^000000:";
+						mes "Katar - ^FF000010x Oridecon, 6x Steel, 3x Large Jellopy, 3x Blood of Wolf^000000.";
+						mes "Jamadhar - ^FF00008x Oridecon, 6x Steel, 3x Sardonyx, 60x Ogre Tooth^000000.";
+						close;					
+					case 12:
+					mes "Come back when you would like to forge.";
+					close;
+			}
+		}	
+		case 3:
+			mes "Alright, come back when you'd like me to forge.";
+			close;
+	}
+	
+	next;
+	mes "[^FF6600Forger^000000]";
+	mes "What weapons would you like to forge?";
+	switch( select( "Daggers.:1H Swords.:2H Swords.:Maces.:Axes.:Bows.:Spears.:Knuckles.:Instruments.:Whip.:Katar.:Nothing." ) ) {
+		case 1:
+			mes "Which ^FF0099DAGGER^000000 would you like me to produce?";
+			switch( select( "Knife (dmg 17):Cutter (dmg 30):Main Gauche (dmg 43):Dirk (dmg 59):Dagger (dmg 73):Stiletto (dmg 87):Gladius (dmg 105):Cinquedea(N)(dmg 110):Damascus (dmg 118)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000KNIFE^000000.";
+					set .ForgeID, 1201;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000CUTTER^000000.";
+					set .ForgeID, 1204;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000MAIN GAUCHE^000000.";
+					set .ForgeID, 1207;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 4:
+					mes "You have selected ^FF0000DIRK^000000.";
+					set .ForgeID, 1210;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000DAGGER^000000.";
+					set .ForgeID, 1213;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 6:
+					mes "You have selected ^FF0000STILETTO^000000.";
+					set .ForgeID, 1216;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 7:
+					mes "You have selected ^FF0000GLADIUS^000000.";
+					set .ForgeID, 1219;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 8:
+					mes "You have selected ^FF0000CINQUEDEA^000000.";
+					set .ForgeID, 1245;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;					
+				case 9:
+					mes "You have selected ^FF0000DAMASCUS^000000.";
+					set .ForgeID, 1222;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 2:
+			mes "Which ^FF00991H SWORD^000000 would you like me to produce?";
+			switch( select( "Sword (dmg 25):Falchion (dmg 39):Blade (dmg 53):Rapier (dmg 70):Scimitar (dmg 85):Ring Pommel Saber (dmg 100):Saber (dmg 115):Haedongum (dmg 120):Tsurugi (dmg 130):Town Sword(N)(dmg 100):Flamberge (dmg 150)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000SWORD^000000.";
+					set .ForgeID, 1101;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000FALCHION^000000.";
+					set .ForgeID, 1104;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000BLADE^000000.";
+					set .ForgeID, 1107;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 4:
+					mes "You have selected ^FF0000RAPIER^000000.";
+					set .ForgeID, 1110;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000SCIMITAR^000000.";
+					set .ForgeID, 1113;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 6:
+					mes "You have selected ^FF0000RING POMMEL SABER^000000.";
+					set .ForgeID, 1122;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 7:
+					mes "You have selected ^FF0000SABER^000000.";
+					set .ForgeID, 1126;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 8:
+					mes "You have selected ^FF0000HAEDONGUM^000000.";
+					set .ForgeID, 1123;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 9:
+					mes "You have selected ^FF0000TSURUGI^000000.";
+					set .ForgeID, 1119;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 10:
+					mes "You have selected ^FF0000TOWN SWORD^000000.";
+					set .ForgeID, 1146;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;					
+				case 11:
+					mes "You have selected ^FF0000FLAMBERGE^000000.";
+					set .ForgeID, 1129;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 3:
+			mes "Which ^FF00992H SWORD^000000 would you like me to produce?";
+			switch( select( "Katana (dmg 60):Slayer (dmg 90):Bastard Sword (dmg 115):Two-Handed Sword (dmg 160):Broad Sword (dmg 140):Claymore (dmg 180)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000KATANA^000000.";
+					set .ForgeID, 1116;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000SLAYER^000000.";
+					set .ForgeID, 1151;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 3:
+					mes "You have selected ^FF0000BASTARD SWORD^000000.";
+					set .ForgeID, 1154;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000TWO-HANDED SWORD^000000.";
+					set .ForgeID, 1157;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 5:
+					mes "You have selected ^FF0000BROAD SWORD^000000.";
+					set .ForgeID, 1160;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 6:
+					mes "You have selected ^FF0000CLAYMORE^000000.";
+					set .ForgeID, 1163;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 4:
+			mes "Which ^FF0099MACE^000000 would you like me to produce?";
+			switch( select( "Club (dmg 23):Mace (dmg 37):Smasher (dmg 54):Flail (dmg 69):Chain (dmg 84):Morning Star (dmg 110):Sword Mace (dmg 130):Stunner (dmg 140)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000CLUB^000000.";
+					set .ForgeID, 1501;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000MACE^000000.";
+					set .ForgeID, 1504;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000SMASHER^000000.";
+					set .ForgeID, 1507;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000FLAIL^000000.";
+					set .ForgeID, 1510;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000CHAIN^000000.";
+					set .ForgeID, 1519;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 6:
+					mes "You have selected ^FF0000MORNING STAR^000000.";
+					set .ForgeID, 1513;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 7:
+					mes "You have selected ^FF0000SWORD MACE^000000.";
+					set .ForgeID, 1516;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 8:
+					mes "You have selected ^FF0000STUNNER^000000.";
+					set .ForgeID, 1522;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 5:
+			mes "Which ^FF0099AXE^000000 would you like me to produce?";
+			switch( select( "Axe (dmg 38):Battle Axe (dmg 80):Hammer (dmg 120):Buster (dmg 115):Two-Handed Axe (dmg 185)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000AXE^000000.";
+					set .ForgeID, 1301;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000BATTLE AXE^000000.";
+					set .ForgeID, 1351;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000HAMMER^000000.";
+					set .ForgeID, 1354;
+					set .Hammer, 614; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 4:
+					mes "You have selected ^FF0000BUSTER^000000.";
+					set .ForgeID, 1357;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 5:
+					mes "You have selected ^FF0000TWO-HANDED AXE^000000.";
+					set .ForgeID, 1360;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 6:
+			mes "Which ^FF0099BOW^000000 would you like me to produce?";
+			switch( select( "Bow (dmg 15):Composite Bow (dmg 29):Great Bow (dmg 50):Crossbow (dmg 65):Arbalest (dmg 90):Gakkung Bow (dmg 100):Roguemaster Bow (dmg 125):Repeating Crossbow (dmg 95)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000BOW^000000.";
+					set .ForgeID, 1701;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000COMPOSITE BOW^000000.";
+					set .ForgeID, 1704;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000GREAT BOW^000000.";
+					set .ForgeID, 1707;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000CROSS BOW^000000.";
+					set .ForgeID, 1710;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000ARBALEST^000000.";
+					set .ForgeID, 1713;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 6:
+					mes "You have selected ^FF0000GAKKUNG BOW^000000.";
+					set .ForgeID, 1714;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 7:
+					mes "You have selected ^FF0000HUNTER BOW^000000.";
+					set .ForgeID, 1719;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;					
+				case 8:
+					mes "You have selected ^FF0000REPEATING CROSSBOW^000000.";
+					set .ForgeID, 1721;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 7:
+			mes "Which ^FF0099SPEAR^000000 would you like me to produce?";
+			switch( select( "Javelin (dmg 28):Spear (dmg 44):Pike (dmg 74):Guisarme (dmg 84):Glaive (dmg 104):Partizan (dmg 124):Trident (dmg 150):Halberd (dmg 165):Lance (dmg 185)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000JAVELIN^000000.";
+					set .ForgeID, 1401;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000SPEAR^000000.";
+					set .ForgeID, 1404;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 3:
+					mes "You have selected ^FF0000PIKE^000000.";
+					set .ForgeID, 1407;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 4:
+					mes "You have selected ^FF0000GUISARME^000000.";
+					set .ForgeID, 1451;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000GLAIVE^000000.";
+					set .ForgeID, 1454;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 6:
+					mes "You have selected ^FF0000PARTIZAN^000000.";
+					set .ForgeID, 1457;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 7:
+					mes "You have selected ^FF0000TRIDENT^000000.";
+					set .ForgeID, 1460;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 8:
+					mes "You have selected ^FF0000HALBERD^000000.";
+					set .ForgeID, 1463;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 9:
+					mes "You have selected ^FF0000LANCE^000000.";
+					set .ForgeID, 1410;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 8:
+			mes "Which ^FF0099KNUCKLE^000000 would you like me to produce?";
+			switch( select( "Waghnakh (dmg 30):Knuckle Duster (dmg 50):Studded Knuckles (dmg 65):Fist (dmg 115):Claw (dmg 86):Finger (dmg 97)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000WAGHNAKH^000000.";
+					set .ForgeID, 1801;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000KNUCKLE DUSTER^000000.";
+					set .ForgeID, 1803;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 3:
+					mes "You have selected ^FF0000STUDDED KNUCKLES^000000.";
+					set .ForgeID, 1805;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000FIST^000000.";
+					set .ForgeID, 1807;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 5:
+					mes "You have selected ^FF0000CLAW^000000.";
+					set .ForgeID, 1809;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 6:
+					mes "You have selected ^FF0000FINGER^000000.";
+					set .ForgeID, 1811;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;			
+		case 9:
+			mes "Which ^FF0099INSTRUMENTS^000000 would you like me to produce?";
+			switch( select( "Violin(dmg 50):Mandolin (90):Lute (dmg 105):Guitar (dmg 142):Harp (dmg 114):Gumoongoh (dmg 126)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000VIOLIN^000000.";
+					set .ForgeID, 1901;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000MANDOLIN^000000.";
+					set .ForgeID, 1903;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 3:
+					mes "You have selected ^FF0000LUTE^000000.";
+					set .ForgeID, 1905;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000GUITAR^000000.";
+					set .ForgeID, 1907;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 5:
+					mes "You have selected ^FF0000HARP^000000.";
+					set .ForgeID, 1909;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 6:
+					mes "You have selected ^FF0000GUMONGOOH^000000.";
+					set .ForgeID, 1911;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+			break;
+		case 10:
+			mes "Which ^FF0099WHIP^000000 would you like me to produce?";
+			switch( select( "Rope (dmg 45):Whip (dmg 80):Wire Whip (dmg 95):Rante Whip (dmg 135):Tail Whip (dmg 105):Whip (dmg 120)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000ROPE^000000.";
+					set .ForgeID, 1950;
+					set .Hammer, 613; setd ".Hammer$", "Iron Hammer"; set .Level,1;
+					break;
+				case 2:
+					mes "You have selected ^FF0000WHIP^000000.";
+					set .ForgeID, 1952;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 3:
+					mes "You have selected ^FF0000WIRE WHIP^000000.";
+					set .ForgeID, 1954;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 4:
+					mes "You have selected ^FF0000RANTE WHIP^000000.";
+					set .ForgeID, 1956;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 5:
+					mes "You have selected ^FF0000TAIL WHIP^000000.";
+					set .ForgeID, 1958;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 6:
+					mes "You have selected ^FF0000WHIP^000000.";
+					set .ForgeID, 1960;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+			}
+		case 11:
+			mes "Which ^FF0099KATAR^000000 would you like me to produce?";
+			switch( select( "Jur (dmg 125):Katar (dmg 148):Jamadhar (dmg 165)" ) ) {
+				case 1:
+					mes "You have selected ^FF0000JUR^000000.";
+					set .ForgeID, 1250;
+					set .Hammer, 614; setd ".Hammer$", "Golden Hammer"; set .Level,2;
+					break;
+				case 2:
+					mes "You have selected ^FF0000KATAR^000000.";
+					set .ForgeID, 1252;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;
+				case 3:
+					mes "You have selected ^FF0000JAMADHAR^000000.";
+					set .ForgeID, 1254;
+					set .Hammer, 615; setd ".Hammer$", "Oridecon Hammer"; set .Level,3;
+					break;			
+			}
+	break;	
+		case 12:
+		mes "Okay, see you next time.";
+		close;
+	}
+	if( getgmlevel() < .GMBypassLv ) {
+	if( countitem( .Hammer ) < 1 ) {
+		mes "You don't have ^ff0000"+getitemname(.Hammer)+"^000000.";
+		mes "I can't forge without hammer.";
+		close;
+		}
+	}
+	
+	if( getiteminfo( .ForgeID , 13 ) > 1 ) {
+		set .ForgeChance, .ForgeChance - ( getiteminfo( .ForgeID , 13 ) * 10 );
+	}
+	
+	next;
+	mes "[^FF6600Forger^000000]";
+	mes "How many ^FF0099Star Crumbs^000000 would you like to put in your weapon?";
+	switch( select( "1.:2.:3.:None." ) ) {
+	case 1:
+		mes "You wish to forge an ^FF0000Atk +5^000000 weapon.";
+		set .SCFor, 1; set .Star, 5;
+		set .ForgeChance, .ForgeChance - 15;
+		break;
+	case 2:
+		mes "You wish to forge an ^FF0000Atk +10^000000 weapon.";
+		set .SCFor, 2; set .Star, 10;
+		set .ForgeChance, .ForgeChance - 30;
+		break;
+	case 3:
+		mes "You wish to forge an ^FF0000Atk +40^000000 weapon.";
+		set .SCFor, 3; set .Star, 40;
+		set .ForgeChance, .ForgeChance - 45;
+		break;
+	case 4:
+		mes "You do not wish to put ^FF0099Star Crumbs^000000 in this weapon.";
+		set .SCFor, 0; set .Star, 0;
+		break;
+		}
+	
+	if( .SCFor < 3 ) {
+		next;
+		mes "[^FF6600Forger^000000]";
+		mes "What ^FF0099element^000000 would you like to put into your weapon?";
+		switch( select( "^0000FFICE^000000.:^993300EARTH^000000.:^FF0000FIRE^000000.:^33CC00WIND^000000.:None." ) ) {
+			case 1:
+				mes "You wish to forge with ^0000FFMYSTIC FROZEN^000000.";
+				set .EleFor, 1;
+				set .ForgeChance, .ForgeChance - 20;
+				break;
+			case 2:
+				mes "You wish to forge with ^993300GREAT NATURE^000000.";
+				set .EleFor, 2;
+				set .ForgeChance, .ForgeChance - 20;
+				break;
+			case 3:
+				mes "You wish to forge with ^FF0000FLAME HEART^000000.";
+				set .EleFor, 3;
+				set .ForgeChance, .ForgeChance - 20;
+				break;
+			case 4:
+				mes "You wish to forge with ^33CC00ROUGH WIND^000000.";
+				set .EleFor, 4;
+				set .ForgeChance, .ForgeChance - 20;
+				break;
+			case 5:
+				mes "You do not wish to insert an element into your weapon.";
+				set .Ele, 0;
+				break;
+		}
+	}
+	if( .EleFor > 0 ) {
+		next;
+		mes "[^FF6600Forger^000000]";
+		mes "What ^FF0099element^000000 enchant type do you want ?";
+		switch( select( "(Physical) 20% Damage to opposite element.:(Magic) 20% M-Damage to opposite element." ) ) {
+			case 1:
+				mes "You wish to give more physical damage to certain element.";
+				set .Range,1;
+				break;
+			case 2:
+				mes "You wish to give more magic damage to certain element.";
+				set .Magic,1;
+				break;
+			}
+		}
+		next;
+		mes "[^FF6600Forger^000000]";
+		mes "What enchant type do you want ?";
+		switch( select( "Physical.:Magic." ) ) {
+			case 1:
+				mes "You wish to enchant with physical power.";
+				set .Atk,RDMOPT_VAR_ATTPOWER; set .Patk,1;
+				break;
+			case 2:
+				mes "You wish to enchant with magical power.";
+				set .Atk,RDMOPT_VAR_ATTMPOWER; set .Matk,1;
+				break;
+			}			
+	if ( getgmlevel() < .GMBypassLv ) {
+		callfunc ( "LOL_ChkSCEle", .EleFor );
+		setd ".ForgeItem", .ForgeID;
+		set .forgeable, callfunc ( "LOL_Chk" + .ForgeItem + "i", .SCFor );
+		if ( .forgeable == 0 ) {
+			next;
+			mes "[^FF6600Forger^000000]";
+			mes "You do not have all the required materials. Please come back when you do.";
+			close;
+		}
+	}
+	if (.Patk == 1) {
+		if( .SCFor == 1 ) {
+			setd ".StarCrumb$", "Atk +5 ";
+		}
+		if( .SCFor == 2 ) {
+			setd ".StarCrumb$", "Atk +10  ";
+		}
+		if( .SCFor == 3 ) {
+			setd ".StarCrumb$", "Atk +40  ";
+		}
+	}
+	if (.Matk == 1) {
+		if( .SCFor == 1 ) {
+			setd ".StarCrumb$", "Matk +5 ";
+		}
+		if( .SCFor == 2 ) {
+			setd ".StarCrumb$", "Matk +10  ";
+		}
+		if( .SCFor == 3 ) {
+			setd ".StarCrumb$", "Matk +40  ";
+		}
+	}	
+	
+	if( .Melee == 1 ) {
+		if( .EleFor == 1 ) {
+			setd ".Element$", "Ice ";
+			set .Ele,176;
+			set .EleVal,1;
+		}
+		if( .EleFor == 2 ) {
+			setd ".Element$", "Earth ";
+			set .Ele,177;
+			set .EleVal,1;
+		}
+		if( .EleFor == 3 ) {
+			setd ".Element$", "Fire ";
+			set .Ele,178;
+			set .EleVal,1;
+		}
+		if( .EleFor == 4 ) {
+			setd ".Element$", "Wind ";
+			set .Ele,179;
+			set .EleVal,1;
+		}
+	}		
+	if( .Range == 1 ) {
+		if( .EleFor == 1 ) {
+			setd ".Element$", "Ice Enchanted ";
+			set .Ele,RDMOPT_DAMAGE_PROPERTY_FIRE_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 2 ) {
+			setd ".Element$", "Earth Enchanted ";
+			set .Ele,RDMOPT_DAMAGE_PROPERTY_WIND_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 3 ) {
+			setd ".Element$", "Fire Enchanted ";
+			set .Ele,RDMOPT_DAMAGE_PROPERTY_GROUND_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 4 ) {
+			setd ".Element$", "Wind Enchanted ";
+			set .Ele,RDMOPT_DAMAGE_PROPERTY_WATER_TARGET;
+			set .EleVal,20;
+		}
+	}	
+	if( .Magic == 1 ) {
+		if( .EleFor == 1 ) {
+			setd ".Element$", "Ice Enchanted ";
+			set .Ele,RDMOPT_MDAMAGE_PROPERTY_FIRE_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 2 ) {
+			setd ".Element$", "Earth Enchanted ";
+			set .Ele,RDMOPT_MDAMAGE_PROPERTY_WIND_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 3 ) {
+			setd ".Element$", "Fire Enchanted ";
+			set .Ele,RDMOPT_MDAMAGE_PROPERTY_GROUND_TARGET;
+			set .EleVal,20;
+		}
+		if( .EleFor == 4 ) {
+			setd ".Element$", "Wind Enchanted ";
+			set .Ele,RDMOPT_MDAMAGE_PROPERTY_WATER_TARGET;
+			set .EleVal,20;
+		}
+	}
+	next;
+	if( .PerfectChance == 1 ) {
+		set .ForgeChance, 100;
+	}
+	mes "[^FF6600Forger^000000]";
+	mes "We are now ready to forge your ^FF0000" + .StarCrumb$ + .Element$ + getitemname( .ForgeID ) + "^000000, at a ^FF0000" + .ForgeChance + "^000000% chance.";
+	mes "^009900ALL ITEMS WILL BE CONSUMED UPON EITHER FAILURE OR SUCCESS^000000. Continue?";
+	switch( select( "Yes.:No." ) ) {
+		case 1:
+			if( getgmlevel() < .GMBypassLv ) {
+				callfunc ( "LOL_DelSCEle", .SCFor, .EleFor );
+				callfunc "LOL_Del" + .ForgeItem + "i";
+			}
+			if( .ForgeChance >= rand( 100 ) ) {
+				if( .NameSet == 1 ) {
+					set .name3, getcharid( 0 ) & 65535;
+					set .name4, getcharid( 0 ) >> 16;
+				}
+				if( getgmlevel() < .GMBypassLv ) {
+				delitem .Hammer,1;
+				}
+				if (.Level > 2){
+					set .lolface, .EleFor + ( ( .SCFor * 5 ) << 8 );
+					setarray .@OptID[0],.Atk,.Ele;
+					setarray .@OptVal[0],.Star,.EleVal;
+					setarray .@OptParam[0],0,0,0;
+					getitem3 .ForgeID, 1, 1, 0, 0, 0, 0, 0, 0,.@OptID,.@OptVal,.@OptParam;
+					specialeffect 154;
+					next;
+					mes "[^FF6600Forger^000000]";
+					mes "There you go! Enjoy your new weapon!";
+					close;
+				}
+				else if( .Level <3){
+					set .lolface, .EleFor + ( ( .SCFor * 5 ) << 8 );
+					setarray .@OptID[0],.Atk,.Ele;
+					setarray .@OptVal[0],.Star,.EleVal;
+					setarray .@OptParam[0],0,0,0;
+					getitem3 .ForgeID, 1, 1, 0, 0, 0, 0, 0, 0,.@OptID,.@OptVal,.@OptParam;
+					specialeffect 154;
+					next;
+					mes "[^FF6600Forger^000000]";
+					mes "There you go! Enjoy your new weapon!";
+					close;
+				}				
+			}
+			else {
+				specialeffect 155;
+				next;
+				mes "[^FF6600Forger^000000]";
+				mes "I am very sorry, item creation has ^FF0000failed^000000. Better luck next time.";
+				close;
+			}
+		case 2:
+			mes "[^FF6600Forger^000000]";
+			mes "Well alright, come back if you change your mind.";
+			close;
+		
+		}
+	}
+	else {	
+		mes "[^FF6600Forger^000000]";
+		mes "Aye, if you're a blacksmith.";
+		mes "I can help you to forge more stuffs.";	
+		close;	
+		}
+	
+	L_Anvil:
+	mes "[^FF6600Forger^000000]";
+	mes "You have more than one type of anvil in your inventory.";
+	mes "Please only bring one to me.";	
+	close;
+	end;
+
+	L_NoAnvil:
+	mes "[^FF6600Forger^000000]";
+	mes "You don't have any type of anvil in your inventory.";
+	mes "Please bring one to me if you wanna forge.";	
+	close;
+	end;
+}
+
+
+
+	
+//Item-Check and Delete Functions!
+
+//STAR CRUMBS AND ELE.
+function	script	LOL_ChkSCEle	{
+	if( getarg( 0 ) == 1 && countitem( 995 ) < 1 ) {
+		mes "[^FF6600Forger^000000]";
+		mes "You do not have the required ^0000FFMystic Frozen^000000. Come back when you do.";
+		close;
+	}
+	if( getarg( 0 ) == 2 && countitem( 997 ) < 1 ) {
+		mes "[^FF6600Forger^000000]";
+		mes "You do not have the required ^993300Great Nature^000000. Come back when you do.";
+		close;
+	}
+	if( getarg( 0 ) == 3 && countitem( 994 ) < 1 ) {
+		mes "[^FF6600Forger^000000]";
+		mes "You do not have the required ^FF0000Flame Heart^000000. Come back when you do.";
+		close;
+	}
+	if( getarg( 0 ) == 4 && countitem( 996 ) < 1 ) {
+		mes "[^FF6600Forger^000000]";
+		mes "You do not have the required ^33CC00Rough Wind^000000. Come back when you do.";
+		close;
+	}
+	return;
+}
+function	script	LOL_DelSCEle	{
+	if( getarg( 0 ) != 0 ) {
+		delitem 1000,getarg( 0 );
+	}
+	if( getarg( 1 ) == 1 ) {
+		delitem 995,1;
+	}
+	if( getarg( 1 ) == 2 ) {
+		delitem 997,1;
+	}
+	if( getarg( 1 ) == 3 ) {
+		delitem 994,1;
+	}
+	if( getarg( 1 ) == 4 ) {
+		delitem 996,1;
+	}
+	return;
+}
+
+
+//DAGGERS:
+// -knife
+function	script	LOL_Chk1201i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 1 && countitem( 909 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1201i	{
+	delitem 998,1;
+	delitem 909,10;
+	return;
+}
+// -cutter
+function	script	LOL_Chk1204i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 25 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1204i	{
+	delitem 998,25;
+	return;
+}
+// -main gauche
+function	script	LOL_Chk1207i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 50 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1207i	{
+	delitem 998,50;
+	return;
+}
+// -dirk
+function	script	LOL_Chk1210i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 17 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1210i	{
+	delitem 999,17;
+	return;
+}
+// -dagger
+function	script	LOL_Chk1213i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 30 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1213i	{
+	delitem 999,30;
+	return;
+}
+// -stiletto
+function	script	LOL_Chk1216i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1216i	{
+	delitem 999,40;
+	return;
+}
+// -gladius
+function	script	LOL_Chk1219i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 984 ) >= 4 && countitem( 726 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1219i	{
+	delitem 984,4;
+	delitem 999,40;
+	delitem 726,1;
+	return;
+}
+// -cinquedea
+function	script	LOL_Chk1245i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 984 ) >= 4 && countitem( 721 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1245i	{
+	delitem 984,4;
+	delitem 999,40;
+	delitem 721,1;
+	return;
+}
+// -damascus
+function	script	LOL_Chk1222i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 60 && countitem( 984 ) >= 4 && countitem( 729 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1222i	{
+	delitem 984,4;
+	delitem 999,60;
+	delitem 729,1;
+	return;
+}
+
+//ONE-HANDED SWORDS:
+// -sword
+function	script	LOL_Chk1101i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 2 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1101i	{
+	delitem 998,2;
+	return;
+}
+// -falchion
+function	script	LOL_Chk1104i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 30 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1104i	{
+	delitem 998,30;
+	return;
+}
+// -blade
+function	script	LOL_Chk1107i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 45 && countitem( 913 ) >= 25 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1107i	{
+	delitem 998,45;
+	delitem 913,25;
+	return;
+}
+// -rapier
+function	script	LOL_Chk1110i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 20 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1110i	{
+	delitem 999,20;
+	return;
+}
+// -scimitar
+function	script	LOL_Chk1113i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 35 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1113i	{
+	delitem 999,35;
+	return;
+}
+// -ring pommel saber
+function	script	LOL_Chk1122i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 920 ) >= 50 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1122i	{
+	delitem 999,40;
+	delitem 920,50;
+	return;
+}
+// -saber
+function	script	LOL_Chk1126i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 5 && countitem( 984 ) >= 8 && countitem( 727 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1126i	{
+	delitem 984,8;
+	delitem 999,5;
+	delitem 727,1;
+	return;
+}
+// -haedongum
+function	script	LOL_Chk1123i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 10 && countitem( 984 ) >= 8 && countitem( 728 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1123i	{
+	delitem 984,8;
+	delitem 999,10;
+	delitem 728,1;
+	return;
+}
+// -tsurugi
+function	script	LOL_Chk1119i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 15 && countitem( 984 ) >= 8 && countitem( 718 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1119i	{
+	delitem 984,8;
+	delitem 999,15;
+	delitem 718,1;
+	return;
+}
+// -town sword
+function	script	LOL_Chk1146i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 984 ) >= 4 && countitem( 719 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1146i	{
+	delitem 984,4;
+	delitem 999,40;
+	delitem 719,1;
+	return;
+}
+// -flamberge
+function	script	LOL_Chk1129i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 16 && countitem( 724 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1129i	{
+	delitem 984,16;
+	delitem 724,1;
+	return;
+}
+
+//TWO-HANDED SWORDS:
+// -katana
+function	script	LOL_Chk1116i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 35 && countitem( 958 ) >= 15 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1116i	{
+	delitem 998,35;
+	delitem 958,15;
+	return;
+}
+// -slayer
+function	script	LOL_Chk1151i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 25 && countitem( 957 ) >= 20 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1151i	{
+	delitem 999,25;
+	delitem 957,20;
+	return;
+}
+// -bastard sword
+function	script	LOL_Chk1154i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 45 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1154i	{
+	delitem 999,45;
+	return;
+}
+// -two-handed sword
+function	script	LOL_Chk1157i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 10 && countitem( 984 ) >= 12 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1157i	{
+	delitem 984,12;
+	delitem 999,10;
+	return;
+}
+// -broad sword
+function	script	LOL_Chk1160i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 20 && countitem( 984 ) >= 12 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1160i	{
+	delitem 984,12;
+	delitem 999,20;
+	return;
+}
+// -claymore
+function	script	LOL_Chk1163i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 20 && countitem( 984 ) >= 16 && countitem( 733 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1163i	{
+	delitem 999,20;
+	delitem 984,16;
+	delitem 733,1;
+	return;
+}
+
+//MACES:
+// -club
+function	script	LOL_Chk1501i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 3 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1501i	{
+	delitem 998,3;
+	return;
+}
+// -mace
+function	script	LOL_Chk1504i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 30 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1504i	{
+	delitem 998,30;
+	return;
+}
+// -smasher
+function	script	LOL_Chk1507i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 20 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1507i	{
+	delitem 999,20;
+	return;
+}
+// -flail
+function	script	LOL_Chk1510i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 33 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1510i	{
+	delitem 999,33;
+	return;
+}
+// -chain
+function	script	LOL_Chk1519i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 45 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1519i	{
+	delitem 999,45;
+	return;
+}
+// -morning star
+function	script	LOL_Chk1513i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 85 && countitem( 730 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1513i	{
+	delitem 999,85;
+	delitem 730,1;
+	return;
+}
+// -sword mace
+function	script	LOL_Chk1516i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 100 && countitem( 963 ) >= 20 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1516i	{
+	delitem 999,100;
+	delitem 963,20;
+	return;
+}
+// -stunner
+function	script	LOL_Chk1522i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 120 && countitem( 968 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1522i	{
+	delitem 999,120;
+	delitem 968,1;
+	return;
+}
+
+//SPEARS:
+// -javelin
+function	script	LOL_Chk1401i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 3 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1401i	{
+	delitem 998,3;
+	return;
+}
+// -spear
+function	script	LOL_Chk1404i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 35 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1404i	{
+	delitem 998,35;
+	return;
+}
+// -pike
+function	script	LOL_Chk1407i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 70 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1407i	{
+	delitem 998,70;
+	return;
+}
+// -guisarme
+function	script	LOL_Chk1451i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 25 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1451i	{
+	delitem 999,25;
+	return;
+}
+// -glaive
+function	script	LOL_Chk1454i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1454i	{
+	delitem 999,40;
+	return;
+}
+// -partizan
+function	script	LOL_Chk1457i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 55 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1457i	{
+	delitem 999,55;
+	return;
+}
+// -trident
+function	script	LOL_Chk1460i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 10 && countitem( 984 ) >= 8 && countitem( 720 ) >= 5 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1460i	{
+	delitem 984,8;
+	delitem 999,10;
+	delitem 720,5;
+	return;
+}
+// -halberd
+function	script	LOL_Chk1463i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 10 && countitem( 984 ) >= 12 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1463i	{
+	delitem 984,12;
+	delitem 999,10;
+	return;
+}
+// -lance
+function	script	LOL_Chk1410i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 12 && countitem( 723 ) >= 3 && countitem( 923 ) >= 2 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1410i	{
+	delitem 984,12;
+	delitem 723,3;
+	delitem 923,2;
+	return;
+}
+
+//KNUCKLES:
+// -waghnakh
+function	script	LOL_Chk1801i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 160 && countitem( 722 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1801i	{
+	delitem 998,160;
+	delitem 722,1;
+	return;
+}
+// -knuckle duster
+function	script	LOL_Chk1803i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 50 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1803i	{
+	delitem 999,50;
+	return;
+}
+// -studded knuckles
+function	script	LOL_Chk1805i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 65 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1805i	{
+	delitem 999,65;
+	return;
+}
+// -fist
+function	script	LOL_Chk1807i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 8 && countitem( 723 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1807i	{
+	delitem 984,8;
+	delitem 723,10;
+	return;
+}
+// -claw
+function	script	LOL_Chk1809i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 12 && countitem( 728 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1809i	{
+	delitem 984,12;
+	delitem 728,10;
+	return;
+}
+// -finger
+function	script	LOL_Chk1811i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 8 && countitem( 727 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1811i	{
+	delitem 984,8;
+	delitem 727,10;
+	return;
+}
+
+//AXES:
+// -axe
+function	script	LOL_Chk1301i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1301i	{
+	delitem 998,10;
+	return;
+}
+// -battle axe
+function	script	LOL_Chk1351i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 110 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1351i	{
+	delitem 998,110;
+	return;
+}
+// -hammer
+function	script	LOL_Chk1354i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 30 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1354i	{
+	delitem 999,30;
+	return;
+}
+// -buster
+function	script	LOL_Chk1357i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 20 && countitem( 984 ) >= 4 && countitem( 922 ) >= 30 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1357i	{
+	delitem 984,4;
+	delitem 999,20;
+	delitem 922,30;
+	return;
+}
+// -two-handed axe
+function	script	LOL_Chk1360i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 10 && countitem( 984 ) >= 8 && countitem( 719 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1360i	{
+	delitem 999,10;
+	delitem 984,8;
+	delitem 719,1;
+	return;
+}
+//BOWS:
+// Bow
+function	script	LOL_Chk1701i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 15 && countitem( 1019 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1701i	{
+	delitem 998,15;
+	delitem 1019,1;
+	return;
+}
+// -composite bow
+function	script	LOL_Chk1704i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 40 && countitem( 1019 ) >= 1 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1704i	{
+	delitem 998,40;
+	delitem 1019,1;
+	return;
+}
+// -GREAT BOW
+function	script	LOL_Chk1707i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 30 && countitem( 1019 ) >= 2 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1707i	{
+	delitem 999,30;
+	return;
+}
+// -CROSSBOW
+function	script	LOL_Chk1710i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 1019 ) >= 5 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1710i	{
+	delitem 999,40;
+	delitem 1019,5;
+	return;
+}
+// -Arbalest
+function	script	LOL_Chk1713i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 984 ) >= 4 && countitem( 726 ) >= 1 && countitem( 1019 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+
+function	script	LOL_Del1713i	{
+	delitem 984,4;
+	delitem 999,40;
+	delitem 726,1;
+	delitem 1019,10;
+	return;
+}
+// -Gakkung bow
+function	script	LOL_Chk1714i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 984 ) >= 4 && countitem( 721 ) >= 1 && countitem( 1019 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1714i	{
+	delitem 984,4;
+	delitem 999,40;
+	delitem 721,1;
+	delitem 1019,10;
+	return;
+}
+// -Hunter bow
+function	script	LOL_Chk1718i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 60 && countitem( 984 ) >= 4 && countitem( 729 ) >= 1 && countitem( 1019 ) >= 10 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1718i	{
+	delitem 984,4;
+	delitem 999,60;
+	delitem 729,1;
+	delitem 1019,10;
+	return;
+}
+// -Repeating Crossbow
+function	script	LOL_Chk1721i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 60 && countitem( 984 ) >= 4 && countitem( 724 ) >= 1 && countitem( 1019 ) >= 15 ) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1721i	{
+	delitem 984,4;
+	delitem 999,60;
+	delitem 723,1;
+	delitem 1019,15;
+	return;
+}
+//
+// -Instrument
+//Violin
+function	script	LOL_Chk1901i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 130 && countitem( 722 ) >= 1 && countitem( 1019 ) >= 10) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1901i	{
+	delitem 998,130;
+	delitem 722,1;
+	delitem 1019,10;
+	return;
+}
+//Mandolin
+function	script	LOL_Chk1903i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 1019 ) >= 15) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1903i	{
+	delitem 999,40;
+	delitem 1019,15;
+	return;
+}
+//Lute
+function	script	LOL_Chk1905i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 50 && countitem( 1019 ) >= 30) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1905i	{
+	delitem 999,50;
+	delitem 1019,30;
+	return;
+}    
+//Guitar
+function	script	LOL_Chk1907i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 6 && countitem( 1019 ) >= 40 && countitem( 721 ) >= 3) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1907i	{
+	delitem 984,6;
+	delitem 1019,40;
+	delitem 721,3;
+	return;
+}
+//Harp
+function	script	LOL_Chk1909i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 10 && countitem( 1019 ) >= 50 && countitem( 7126 ) >= 3) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1909i	{
+	delitem 984,10;
+	delitem 1019,50;
+	delitem 7126,3;
+	return;
+}
+//Gumongooh
+function	script	LOL_Chk1911i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 10 && countitem( 1019 ) >= 50 && countitem( 725 ) >= 3) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1911i	{
+	delitem 984,8;
+	delitem 1019,50;
+	delitem 725,3;
+	return;
+}
+//Whip
+//Rope
+function	script	LOL_Chk1950i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 998 ) >= 120 && countitem( 722 ) >= 1 && countitem( 1950 ) >= 1) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1950i	{
+	delitem 998,120;
+	delitem 722,1;
+	delitem 1950,1;	
+	return;
+}
+//Whip
+function	script	LOL_Chk1952i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 1950 ) >= 2) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1952i	{
+	delitem 999,40;	
+	delitem 1950,2;	
+	return;
+}
+//Wire Whip
+function	script	LOL_Chk1954i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 50 && countitem( 1950 ) >= 4) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1954i	{
+	delitem 999,50;	
+	delitem 1950,4;	
+	return;
+} 
+//Rante Whip
+function	script	LOL_Chk1956i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 8 && countitem( 999 ) >= 6 && countitem( 7200 ) >= 40) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1956i	{
+	delitem 999,6;	
+	delitem 984,8;
+	delitem 7200,40;
+	return;
+}
+//Tail Whip
+function	script	LOL_Chk1958i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 10 && countitem( 999 ) >= 8 && countitem( 7200 ) >= 40 && countitem( 7126 ) >= 3) {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1958i	{
+	delitem 999,8;	
+	delitem 984,10;
+	delitem 7200,60;
+	delitem 7126,3;
+	return;
+}
+//Whip
+function	script	LOL_Chk1960i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 8 && countitem( 999 ) >= 6 && countitem( 7200 ) >= 60 && countitem( 725 ) >= 3)  {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1960i	{
+	delitem 999,6;	
+	delitem 984,8;
+	delitem 7200,60;
+	delitem 725,3;
+	return;
+} 
+//Katar
+// Jur
+function	script	LOL_Chk1250i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 999 ) >= 40 && countitem( 722 ) >= 1)  {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1250i	{
+	delitem 999,40;	
+	delitem 722,1;
+	return;
+} 
+// Katar
+function	script	LOL_Chk1252i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 10 && countitem( 999 ) >= 4 && countitem( 7126 ) >= 3 && countitem( 6252 ) >= 3 )  {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1252i	{
+	delitem 984,10;
+	delitem 999,4;	
+	delitem 7126,3;
+	delitem 6252,3;
+	return;
+}
+// Jamadhar
+function	script	LOL_Chk1254i	{
+	if( countitem( 1000 ) >= getarg( 0 ) && countitem( 984 ) >= 6 && countitem( 999 ) >= 6 && countitem( 725 ) >= 3 && countitem( 7002 ) >= 50 )  {
+		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+function	script	LOL_Del1254i	{
+	delitem 984,6;
+	delitem 999,6;	
+	delitem 725,3;
+	delitem 7002,50;
+	return;
+}                                                                                                        

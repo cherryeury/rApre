@@ -1,0 +1,108 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Geffen
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+geffen,57,96,5	script	Bounty Board 1-20#gf1	837,{
+	callfunc "F_Bounty_Board", 1, 20, 1, 1,
+		1011,	62660,	 4950,		 4050,	// CHONCHON
+		1012,	62661,	10125,		 7650,	// RODA_FROG
+		1020,	62662,	16200,		12151,	// MANDRAGORA
+		1094,	62663,	13050,		 9675;	// AMBERNITE
+	end;
+}
+
+geffen,57,98,5	script	Bounty Board 21-40#gf2	837,{
+	callfunc "F_Bounty_Board", 21, 40, 2, 1,
+		1018,	62664,	16200,		18225,	// CREAMY
+		1103,	62665,	18225,		20475,	// CARAMEL
+		1077,	62667,	18225,		20475,	// POISON_SPORE
+		1056,	62811,	18225,		20475,	// SMOKIE
+		1128,	62666,	24300,		27225,	// HORN
+		1033,	62813,	26100,		29475,	// ELDER_WILOW
+		1104,	62810,	30375,		34200,	// COCO
+		1145,	62812,	20250,		22725;	// MARTIN
+		
+	end;
+}
+
+geffen,57,100,5	script	Bounty Board 41-60#gf3	837,{
+	callfunc "F_Bounty_Board", 41, 60, 2, 1,
+		1023,	62668,	39375,		60750,	// ORK_WARRIOR
+		1124,	62853,	36963,		41514,	// GOBLIN_3
+		1123,	62856,	36963,		41514,	// GOBLIN_2	
+		1169,	62820,	37350,		42075,	// SKEL_WORKER
+		1273,	62669,	42750,		48825,	// ORC_LADY
+		1122,	62670,	41400,		46575,	// GOBLIN_1
+		1125,	62856,	43956,		49506,	// GOBLIN_4
+		1258,	62671,	50625,		56925,	// GOBLIN_ARCHER
+		1126,	62854,	53946,		60828;	// GOBLIN_5
+		
+	end;
+}
+
+geffen,57,102,5	script	Bounty Board 61-80#gf4	837,{
+	callfunc "F_Bounty_Board", 61, 80, 2, 1,
+		1036,	62672,	65475,		 73800,	// GHOUL
+		1130,	62673,	71100,		 79875,	// JAKK
+		1061,	62674,	56250,		116100;	// NIGHTMARE
+	end;
+}
+
+geffen,57,104,5	script	Bounty Board 81-100#gf5	837,{
+	callfunc "F_Bounty_Board", 81, 100, 2, 1,
+		1192,	62677,	133875,		133875,	// WRAITH
+		1156,	62680,	101250,		113850,	// PETIT_
+		1117,	62682,	150525,		144000,	// EVIL_DRUID
+		1263,	62683,	103275,		150075,	// WIND_GHOST
+		1155,	62681,	131625,		148050,	// PETIT	
+		1143,	62676,	162225,		225900,	// MARIONETTE		
+		1109,	62675,	203175,		243675,	// DEVIRUCHI
+		1198,	62678,	273375,		187425,	// DARK_PRIEST
+		1253,	62679,	213750,		160275;	// GARGOYLE
+		
+
+
+	end;
+}
+
+geffen,57,106,5	script	Bounty Board 101-120#gf6	837,{
+	callfunc "F_Bounty_Board", 101, 120, 2, 1,
+		1267,	62684,	218700,		164025,	// CARAT 103
+		1207,	62686,	244350,		183150,	// STING 104
+		1371,	62691,	236250,		176625,	// FAKE_ANGEL 105
+		1194,	62687,	207450,		293175,	// ARCLOUSE 107
+		1310,	62815,	347625,		347625,	// MAJORUROS 107
+		1206,	62690,	329625,		249975,	// ANOLIAN 109
+		1163,	62688,	311625,		233550,	// RAYDRIC 115
+		1292,	62693,	303750,		227700,	// MINI_DEMON 117
+		1132,	62689,	321975,		241425,	// KHALITZBURG 118
+		1390,	62692,	321975,		241425,	// VIOLY 118
+		1208,	62685,	381150,		277425;	// WANDER_MAN 120
+	end;
+}
+
+geffen,57,108,5	script	Bounty Board 131-150#gf7	837,{
+	callfunc "F_Bounty_Board", 131, 150, 2, 1,
+		2481,	62860,	283494,		306360,	// NG_WRAITH_DEAD
+		2480,	62857,	748140,		653346,	// NG_EVILDRUID
+		2356,	62858,	355311,		300144,	// NG_MIMIC
+		2477,	62859,	2199354,	1912308;// NG_WANDER_MAN
+		
+	end;
+}

@@ -1,0 +1,45 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Veins
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+veins,226,154,5	script	Bounty Board 81-100#vei1	837,{
+	callfunc "F_Bounty_Board", 81, 100, 12, 2,
+		1784,	62906,		174714,		196692;	// STAPO		
+	end;
+	}
+	
+veins,224,154,5	script	Bounty Board 101-120#vei2	837,{
+	callfunc "F_Bounty_Board", 101, 120, 12, 2,
+		1783,	62908,		196359,		147297,	// GALION
+		1781,	62907,		149850,		112443,	// DROSERA
+		1780,	62910,		215784,		161838,	// MUSCIPULAR
+		1836,	62909,		281496,		211233;	// MAGMARING
+	end;
+	}	
+
+veins,222,154,5	script	Bounty Board 121-140#vei3	837,{
+	callfunc "F_Bounty_Board", 121, 140, 12, 2,
+		1865,	62914,		390165,		342657,	// RAGGED_ZOMBIE
+		1865,	62916,		390165,		342657,	// ZOMBIE_SLAUGHTER
+		1838,	62912,		409950,		418248,	// KNOCKER
+		1870,	62913,		619380,		464535,	// NECROMANCER
+		1833,	62911,		621489,		855699,	// KASA
+		1831,	62915,		657009,		792429;	// SALAMANDER
+	end;
+	}		

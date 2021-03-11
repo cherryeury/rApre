@@ -1,0 +1,22 @@
+in_rogue,353,116,5	script	StalkerNpc	757,{
+	if(BaseJob==Job_Rogue||BaseJob==Job_ShadowChaser){
+	mes "Which skill you need me to cast on you ?";
+	set .@SkillID, select( implode( .SkillName$, ":" ) ) - 1;
+	mes "Selected "+ .Skillname$[ .@SkillID ];
+	close2;
+	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 50, 99;
+	if( .SkillID[ .@SkillID ] == 421 ) {
+		getmapxy .@map$, .@x, .@y, BL_PC;
+		movenpc strnpcinfo(0), .@x, .@y;
+		sleep 3000;
+		movenpc strnpcinfo(0),353,116;
+	}
+	end;
+
+OnInit:
+	setarray .SkillID,14,19,20,421;
+	setarray .SkillLv,10,10,10,7;
+	setarray .SkillName$,"Cold Bolt","Fire Bolt","Lightning Bolt","Fly Kick";
+	end;
+	}
+}

@@ -1,0 +1,5 @@
+new_1-3	mapflag	noexp
+new_2-3	mapflag	noexp
+new_3-3	mapflag	noexp
+new_4-3	mapflag	noexp
+new_5-3	mapflag	noexp

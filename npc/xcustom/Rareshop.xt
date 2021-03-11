@@ -1,0 +1,33 @@
+paramk,141,64,5	script	Rare Equip Shop#1	890,{
+	mes "Rare Equip Shop";
+	mes "Hello!";
+	mes "Would you like to look at the shop?";
+	next;
+	switch(select("Item set:Individual Item Set:Taming Items:Not Today")) {
+		case 1:
+		switch(select("Item set:Pet Armor:Taming Items:Not Today")) {
+		case 1: // Element Set
+			mes "Here it is";
+			close2; // Closes the NPC dialog without ending the script
+			callshop "LumiereShop",1; // Only Sell window
+			end; // We end the script just after opening the shop so no need to break
+		case 2: // Solo Set
+			mes "Here it is";
+			close2; // Closes the NPC dialog without ending the script
+			callshop "EspritShop",1; // Only Sell window
+			end; // We end the script just after opening the shop so no need to break
+		case 3: // Taming Items
+			mes "I'll open the Taming Items Shop for you";
+			callshop "TamingItemsShop",1;
+			end;
+		default: // Any other case not covered above. "Not today" in this example.
+			mes "See you again!";
+			close; // This statement closes and ends the script so no need to end again
+	}
+	// No need to close or end anything at this point
+}
+
+// Please add yourself the items you want to sell, last one doesn't need a comma
+-	shop	LumiereShop	-1,2174:10000000,20705:10000000,22061:10000000,2175:10000000,20716:10000000,22066:10000000,2167:10000000,20708:10000000,2165:10000000,22065:10000000,20701:10000000,22049:10000000,
+-	shop	SoloShop	-1,2948,10000000,
+-	shop	TamingItemsShop	-1,

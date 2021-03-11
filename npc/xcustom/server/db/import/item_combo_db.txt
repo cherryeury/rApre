@@ -1,0 +1,19 @@
+// Item Combos Database
+//
+// Structure of Database:
+// ID:ID:ID:ID,{ Script }
+
+2312:2656,{ bonus bDef,45; bonus bMaxHP,150; }
+2313:2656,{ bonus bDef,45; bonus bMaxHP,150; }
+4545:18730,{ bonus bMatk,-5; bonus bBaseAtk,-5; }
+1420:2133,{ bonus bDef,18; }
+1421:2133,{ bonus bDef,18; }
+1422:2133,{ bonus bDef,18; }
+2114:2353:5122,{ bonus bDef,45; if(BaseClass==Job_Swordman) bonus bDef,54; }
+2115:2353:5124,{ bonus bDef,18-getequiprefinerycnt(EQI_HAND_L)-getequiprefinerycnt(EQI_HEAD_TOP); }
+2137:2353:5124,{ bonus bDef,18-getequiprefinerycnt(EQI_HAND_L)-getequiprefinerycnt(EQI_HEAD_TOP); }
+2354:2419:2520:5128,{ bonus bDef,45; }
+4031:4161,{ bonus bDef,27; }
+4191:4208:4258:4309:4325:4327,{ bonus bDef,45; }
+4229:4244:4299:4313,{ bonus bDef,27; }
+4311:4319:4331:4371,{ bonus bDef,18; }

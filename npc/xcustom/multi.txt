@@ -1,0 +1,90 @@
+// Settings :
+//	-	Only required to edit the ShopSetting() Function
+//			Notes : You may also add / remove Menu ( If any ) 
+//	-	Shop Currency can be either ItemID or Variable Name, but must write within Quotation Marks ( "" )
+//			Ex. of Variable.	->	Zeny , #CASHPOINTS , #KAFRAPOINTS , CustomVariable , #CustomVariable
+//	-	ERROR Message are used to show Invalid Settings in your NPC.
+
+
+// Leave this alone...
+-	shop	hArmory	-1,2319:500000,2349:2000000,2351:2000000,2345:2000000,2347:2000000
+-	shop	hDagger	-1,1232:1500000,1235:1500000,1241:1500000,1242:1500000,13001:1500000,1233:1500000,13002:1500000,1237:1500000,1229:1500000,1225:1500000,1236:1500000,1224:1500000,1227:1500000,1234:3000000,1228:3000000,1223:3000000,1231:6000000,1230:6000000
+-	shop	hSword	-1,1140:1500000,1134:1500000,1135:1500000,1133:1500000,1131:1500000,1141:1500000,1137:1500000,1136:1500000,1148:1500000,1139:1500000,1132:3000000,1130:3000000,1137:3000000
+-	shop	h2Sword	-1,1166:1500000,1170:1500000,1164:1500000,1167:1500000,1168:1500000,1169:3000000,1165:3000000
+-	shop	hSpear	-1,1467:1500000,1470:1500000,1415:3000000,1466:1500000,1474:1500000,1414:1500000,1413:1500000,1471:1500000,1469:1500000,1416:1500000,1468:1500000
+-	shop	hAxe	-1,1305:1500000,1364:1500000,1365:1500000,1368:1500000,1369:3000000,1363:3000000,1366:6000000
+-	shop	hMace	-1,1524:1500000,1364:1500000,1525:1500000,1527:1500000,1526:3000000,1523:3000000,1528:6000000
+-	shop	hStaff	-1,1616:1500000,1473:1500000
+-	shop	hBook	-1,1557:1500000,1558:1500000
+-	shop	hKatar	-1,1263:1500000,1265:3000000,1261:6000000
+-	shop	hKnuckle	-1,1813:1500000,1814:1500000,1815:1500000
+-	shop	hBow	-1,1722:1500000,1724:1500000,1719:1500000,1720:3000000
+-	shop	hWhip	-1,1969:1500000,1964:1500000,1962:1500000,1970:1500000,1963:1500000
+-	shop	hInstrument	-1,1913:1500000
+
+
+moc_para01,33,167,5	script	Hugel Cat Store 	10242,{
+mes "[^FF6600Hugel Cat Store ^000000]";
+mes "Hi there.";
+mes "I'm selling stuff from old hugel minigames !";
+mes "So,Which category would you like to look at ?";
+next;
+// Menu Selection
+switch(select("Armor.:Dagger.:1H-Sword.:2H-Sword.:Spear.:Axe.:Mace.:Staff.:Book.:Katar.:Knuckle.:Bow.:Whip.:Instrument.") ) {
+		Case 1:
+			callshop "hArmory",1;
+			end;
+			
+		Case 2: // Dagger
+			callshop "hDagger",1;
+			end;
+			
+		Case 3: // 1H Sword
+			callshop "hSword",1;
+			end;
+
+		Case 4: // 2H Sword
+			callshop "h2Sword",1;
+			end;
+			
+		Case 5: // Spear
+			callshop "hSpear",1;
+			end;
+
+		Case 6: // Axe
+			callshop "hAxe",1;
+			end;
+
+		Case 7: // Mace
+			callshop "hMace",1;
+			end;	
+
+		Case 8: // Staff
+			callshop "hStaff",1;
+			end;	
+
+		Case 9: // Book
+			callshop "hBook",1;
+			end;				
+
+		Case 10: // Katar
+			callshop "hKatar",1;
+			end;	
+			
+		Case 11: // Knuckle
+			callshop "hKnuckle",1;
+			end;
+			
+		Case 12: // Bow
+			callshop "hBow",1;
+			end;
+	
+		Case 13: // Whip
+			callshop "hWhip",1;
+			end;
+		
+		Case 14: // Instrument
+			callshop "hInstrument",1;
+			end;
+	}
+}

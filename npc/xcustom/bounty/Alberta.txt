@@ -1,0 +1,46 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Alberta
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+alberta,99,144,5	script	Bounty Board 1-20#alb	837,{
+	callfunc "F_Bounty_Board", 1, 20, 1, 5,
+		1024,	62846,		12987,	 9657;	// WORM_TAIL
+	end;
+}
+
+alberta,99,142,5	script	Bounty Board 21-40#alb	837,{
+	callfunc "F_Bounty_Board", 21, 40, 1, 5,
+		1068,	62847,		25863,	29193;	// HYDRA
+	end;
+}
+
+alberta,99,140,5	script	Bounty Board 41-60#alb	837,{
+	callfunc "F_Bounty_Board", 41, 60, 1, 5,
+		1071,	62848,		40959,	45954;	// PIRATE_SKEL
+	end;
+}
+
+alberta,99,138,5	script	Bounty Board 81-100#alb	837,{
+	callfunc "F_Bounty_Board", 81, 100, 1, 5,
+		1314,	62849,		144855,	162837,	// PERMETER
+		1316,	62850,		165057,	185481,	// SOLIDER
+		1319,	62851,		172605,	194139;	// FREEZER
+	end;
+}
+

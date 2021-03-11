@@ -1,0 +1,41 @@
+prontera,137,125,5	script	Cash Sales Guide (A)	860,{
+	mes "[^FF6600Mina^000000]";
+	mes "Hello, I am Mina.";
+	mes "I can teleport you to the mall.";
+	mes "Do you wanna go there ?";
+	next;
+	switch( select( "Yes.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Mina^000000]";
+	mes "Here we go !";
+	warp "itemmall",22,43;
+	close;
+case 2:
+	mes "[^FF6600Mina^000000]";
+	mes "Okay !";
+	mes "come back to me anytime you need me !";
+	close;
+	
+	}
+}	
+	
+itemmall,27,45,5	script	Cash Sales Guide (B)	861,{
+	mes "[^FF6600Mina^000000]";
+	mes "Hello, I am Minu.";
+	mes "I can teleport you back to prontera.";
+	mes "Do you wanna go there ?";
+	next;
+	switch( select( "Yes.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Mina^000000]";
+	mes "Here we go !";
+	warp "prontera",139,119;
+	close;
+case 2:
+	mes "[^FF6600Mina^000000]";
+	mes "Okay !";
+	mes "come back to me anytime you need me !";
+	close;
+	
+	}
+}		

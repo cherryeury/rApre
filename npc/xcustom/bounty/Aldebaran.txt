@@ -1,0 +1,53 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Aldebaran
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+aldebaran,190,62,3	script	Bounty Board 41-80#Ald	837,{
+	callfunc "F_Bounty_Board", 41, 80, 1, 5,
+		1111,	62863,		43179,	48618,	// DRAINLIAR
+		1114,	62864,		66822,	75258,	// DUSTINESS
+		1368,	62865,		99678,	112110,	// GEOGRAPHER
+		1195,	62866,		89910,	134532;	// RIDEWORD		
+	end;
+}
+
+aldebaran,188,62,3	script	Bounty Board 81-100#Ald	837,{
+	callfunc "F_Bounty_Board", 81, 100, 1, 5,
+		1269,	62869,		136641,	128538,	// CLOCK
+		1213,	62870,		121989,	128538,	// HIGH_ORC	
+		1199,	62872,		107892,	121434,	// PUNK	
+		1216,	62871,		123876,	172716,	// PENOMENA		
+		1102,	62868,		129870,	151404,	// BATHORY		
+		1193,	62867,		137751,	155178;	// ALARM
+	end;
+}
+
+aldebaran,186,62,3	script	Bounty Board 101-120#Ald	837,{
+	callfunc "F_Bounty_Board", 101, 120, 1, 5,
+		1194,	62873,		204684,	289377;	// ARCLOUSE
+}
+
+aldebaran,184,62,3	script	Bounty Board 151-175#Ald	837,{
+	callfunc "F_Bounty_Board", 151, 175, 1, 5,
+		2916,	62893,		1675575,	1576125,	// BIG_BEN	
+		2919,	62894,		1321650,	1489050,	// NEO_PUNK		
+		2917,	62892,		1690425,	1902825;	// BIG_BELL
+
+	end;
+}

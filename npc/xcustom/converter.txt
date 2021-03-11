@@ -1,0 +1,223 @@
+prontera,139,289,4	script	Convert Sage	743,{
+	mes "[^FF6600Convert Sage^000000]";
+	mes "Hello adventurer !	";
+	mes	"Wanna put elements to your weapons?";
+	next;
+	switch( select( "Endow my weapon.:Make converters.:Scroll shop.:No thanks." ) ) {
+	case 1:
+	mes "[^FF6600Convert Sage^000000]";
+	mes "So you want your weapon to be endowed?";
+	mes "I can endow it for 30 minutes.";
+	if(@End_Ele) .@Last_Ele$ = "Last Element - "+.Element$[@End_Ele]+":"; else .@Last_Ele$ = ":";
+	select(.@Last_Ele$+.Element$[1]+":"+.Element$[2]+":"+.Element$[3]+":"+.Element$[4]+":No thanks");
+	if(@menu == 6) {mes "Okay then"; end; }
+	if(@menu != 1) .@Choice = @menu-1; else .@Choice = @End_Ele;
+	if(.ReqType) .@Req_Item$ = " and a ^0055FF" + getitemname(.StoneReq[.@Choice]) + "^000000";
+	clear;
+	mes "[^FF6600Convert Sage^000000]","So you would like a ^0055FF" + .Element$[.@Choice] + "^000000 endowment? You will require ^0055FF" + .Price + "^000000 zeny" + .@Req_Item$ + ".","Do you accept?";
+	if(select("Yes:No") == 1) {
+		if( .ReqType ) {
+			if(countitem(.StoneReq[.@Choice]) == 0 || Zeny < .Price) {
+				clear;
+				mes "[^FF6600Convert Sage^000000]","You do not have the required money or items. Please come back when you do.";
+				close;
+			}
+		}
+		else if( Zeny < .Price ) {
+			clear;
+			mes "[^FF6600Convert Sage^000000]","You do not have the required money or items. Please come back when you do.";
+			close;
+		}
+		clear;
+		mes "[^FF6600Convert Sage^000000]","Thank you for your custom. Here we go!";
+		close2;
+		@End_Ele = .@Choice;
+		sc_start .EndowSC[@End_Ele],.Ticks,0;
+		Zeny = Zeny - .Price;
+		if (.ReqType) delitem .StoneReq[.@Choice],1;
+		end;
+	}
+	else {
+		clear;
+		mes "[^FF6600Convert Sage^000000]","Too bad! Let me know if you need me.";
+		close;
+	}
+
+OnInit:
+	.Price = 3000;			// Price for endowment.
+	.Ticks = 1800000;		// Time in ticks for duration of buff.
+	.ReqType = 1;			// Requirements. 0 = None | 1 = Elemental Stones | 2 = Greater Elemental Stones
+	.ConvPrice = 5000;		// Price for Elemental Scrolls
+	for (.@ConvID = 0;.@ConvID <= 0;.@ConvID++) {
+		npcshopadditem "conv_shop",.@ConvID,.ConvPrice;
+	}
+	npcshopdelitem "conv_shop",909;
+	setarray .Element$[1],"Water","Wind","Fire","Earth";
+	setarray .EndowSC[1],SC_WATERWEAPON,SC_WINDWEAPON,SC_FIREWEAPON,SC_EARTHWEAPON;
+	switch (.ReqType) {
+		case 1: setarray .StoneReq[1],991,992,990,993; end;
+		case 2: setarray .StoneReq[1],995,996,994,997; end;
+	}
+	case 3: 
+		mes "[^FF6600Convert Sage^000000]";
+		mes	"Alright, here's what i'm selling.";
+		callshop "scroll_shop",1; end;
+	case 4: {
+		mes "[^FF6600Convert Sage^000000]","Too bad! Let me know if you need me.";
+		close;
+	}	
+	case 2:
+		mes "[^FF6600Convert Sage^000000]";
+		mes	"Which one then ?";
+		next;
+		switch( select( "Fire.:Water.:Earth.:Wind.:Cancel." ) ) {
+			case 1 :
+				if ( Zeny < 10000 ){
+				mes "[^FF6600Convert Sage^000000]";
+				mes "You don't even have enough zeny for this.";
+				mes "At least bring 10000 Zeny and come back to me.";
+				close;
+				}
+				mes "[^FF6600Convert Sage^000000]";
+				mes "To make 10 fire converter, i need 30 ^FF6600Scorpion Tail^000000 and 10 ^FF6600Blank Scroll^000000";
+				mes "And it will cost you 10000 Zeny, is that okay ?";
+				next;
+				switch( select( "Yes.:No." ) ) {
+				case 1:
+					mes "[^FF6600Convert Sage^000000]","You do not have the required money or items. Please come back when you do.";
+					close; 
+					if ( countitem( 904	) >= 30 && countitem( 7433 ) >= 10 ){
+					mes "[^FF6600Convert Sage^000000]","Here it is.";
+					delitem 904,30;
+					delitem 7433,10;
+					getitem 12114,10;
+					zeny = zeny -10000;
+					close;
+					}
+				case 2:
+					mes "[^FF6600Convert Sage^000000]";
+					mes "Too bad then";
+					close;
+					}
+			case 2 :
+				if ( Zeny < 10000 ){
+				mes "[^FF6600Convert Sage^000000]";
+				mes "You don't even have enough zeny for this.";
+				mes "At least bring 10000 Zeny and come back to me.";
+				close;
+				}
+				mes "[^FF6600Convert Sage^000000]";
+				mes "To make 10 water converter, i need 30 ^FF6600Snail Shell^000000 and 10 ^FF6600Blank Scroll^000000";
+				mes "And it will cost you 10000 Zeny, is that okay ?";
+				next;
+				switch( select( "Yes.:No." ) ) {
+					case 1:
+						mes "[^FF6600Convert Sage^000000]";
+						mes "You do not have the required money or items. Please come back when you do.";
+						close; 
+						if ( countitem( 946 ) >= 30 && countitem( 7433 )>= 10 ) {
+						mes "[^FF6600Convert Sage^000000]","Here it is.";
+						delitem 946,30;
+						delitem 7433,10;
+						getitem 12115,10;
+						zeny = zeny -10000;
+						close;
+						}
+					case 2:
+						mes "[^FF6600Convert Sage^000000]";
+						mes "Too bad then";
+						close;
+				}
+			case 3 :
+				if ( Zeny < 10000 ){
+				mes "[^FF6600Convert Sage^000000]";
+				mes "You don't even have enough zeny for this.";
+				mes "At least bring 10000 Zeny and come back to me.";
+				close;
+				}
+				mes "[^FF6600Convert Sage^000000]";
+				mes "To make 10 earth converter, i need 30 ^FF6600947Horn^000000 and 10 ^FF6600Blank Scroll^000000";
+				mes "And it will cost you 10000 Zeny, is that okay ?";
+				next;
+				switch( select( "Yes.:No." ) ) {
+				case 1:
+					mes "[^FF6600Convert Sage^000000]","You do not have the required money or items. Please come back when you do.";
+					close; 
+					if ( countitem( 947 ) >= 30 && countitem( 7433 )>= 10 ) {
+					mes "[^FF6600Convert Sage^000000]","Here it is.";
+					delitem 947,30;
+					delitem 7433,10;
+					getitem 12116,10;
+					zeny = zeny -10000;
+					close;
+				}
+				case 2:
+					mes "[^FF6600Convert Sage^000000]";
+					mes "Too bad then";
+					close;
+				}	
+			case 4 :
+				if ( Zeny < 10000 ){
+				mes "[^FF6600Convert Sage^000000]";
+				mes "You don't even have enough zeny for this.";
+				mes "At least bring 10000 Zeny and come back to me.";
+				close;
+				}
+				mes "[^FF6600Convert Sage^000000]";
+				mes "To make 10 wind converter, i need 30 ^FF6600947Rainbow Shell^000000 and 10 ^FF6600Blank Scroll^000000";
+				mes "And it will cost you 10000 Zeny, is that okay ?";
+				next;
+				switch( select( "Yes.:No." ) ) {
+				case 1:
+					mes "[^FF6600Convert Sage^000000]","You do not have the required money or items. Please come back when you do.";
+					close; 
+					if ( countitem( 1013 ) >= 30 && countitem( 7433 ) >= 10 ) {
+					mes "[^FF6600Convert Sage^000000]","Here it is.";
+					delitem 1013,30;
+					delitem 7433,10;
+					getitem 12117,10;
+					zeny = zeny -10000;
+					close;
+					}
+			
+				case 2:
+					mes "[^FF6600Convert Sage^000000]";
+					mes "Too bad then";
+					close;
+			}
+			case 5: 
+				mes "[^FF6600Convert Sage^000000]";
+				mes "Too bad then";
+				close;
+				}
+			}
+		}
+
+-	shop	scroll_shop	-1,7433:4000,12114:7000,12115:7000,12116:7000,12117:7000
+
+prontera,146,84,5	duplicate(Convert Sage)	Convert Sage Prontera#prt	743
+izlude,125,148,4	duplicate(Convert Sage)	Convert Sage Izlude#prt	743
+alberta,105,61,4	duplicate(Convert Sage)	Convert Sage Alberta#prt	743
+aldebaran,146,114,4	duplicate(Convert Sage)	Convert Sage Aldebaran#prt	743
+amatsu,105,141,4	duplicate(Convert Sage)	Convert Sage Amatsu#prt	743
+ayothaya,212,174,4	duplicate(Convert Sage)	Convert Sage Ayothaya#prt	743
+brasilis,119,226,4	duplicate(Convert Sage)	Convert Sage Brasilis#prt	743
+comodo,199,148,4	duplicate(Convert Sage)	Convert Sage Comodo#prt	743
+dewata,206,184,4	duplicate(Convert Sage)	Convert Sage Dewata#prt	743
+einbroch,240,209,4	duplicate(Convert Sage)	Convert Sage Einbroch#prt	743
+geffen,128,63,4	duplicate(Convert Sage)	Convert Sage Geffen#prt	743
+gonryun,153,127,4	duplicate(Convert Sage)	Convert Sage Gonryun#prt	743
+hugel,84,168,4	duplicate(Convert Sage)	Convert Sage Hugel#prt	743
+lighthalzen,163,110,4	duplicate(Convert Sage)	Convert Sage Lighthalzen#prt	743
+louyang,224,112,4	duplicate(Convert Sage)	Convert Sage Louyang#prt	743
+malangdo,191,135,4	duplicate(Convert Sage)	Convert Sage Malangdo#prt	743
+malaya,229,204,4	duplicate(Convert Sage)	Convert Sage Malaya#prt	743
+mora,40,128,4	duplicate(Convert Sage)	Convert Sage Mora#prt	743
+morocc,151,83,4	duplicate(Convert Sage)	Convert Sage Morocc#prt	743
+moscovia,220,191,4	duplicate(Convert Sage)	Convert Sage Moscovia#prt	743
+payon,177,117,4	duplicate(Convert Sage)	Convert Sage Payon#prt	743
+rachel,102,138,4	duplicate(Convert Sage)	Convert Sage Rachel#prt	743
+umbala,84,163,4	duplicate(Convert Sage)	Convert Sage Umbala#prt	743
+veins,210,133,4	duplicate(Convert Sage)	Convert Sage Veins#prt	743
+xmas,143,135,4	duplicate(Convert Sage)	Convert Sage Xmas#prt	743
+yuno,148,187,4	duplicate(Convert Sage)	Convert Sage Yuno#prt	743

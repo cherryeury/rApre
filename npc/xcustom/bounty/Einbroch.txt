@@ -1,0 +1,30 @@
+//===== Atlantis Script ======================================
+//= iRO Bounty Boards : Einbroch
+//===== By: ==================================================
+//= Ragno / AtlantisRO
+//===== Actual Version: ======================================
+//= 1.0.2 Removed += operations with strings.
+//= 1.0.1 Changed npc and monsters constants to numerical ids
+//= 1.0 Starting Release
+//===== General Description: =================================
+//= Hunting Quest designed by iRO:
+//=    http://irowiki.org/wiki/Bounty_Board_Quests
+//===== How to Use: ==========================================
+//= Uses function "F_Bounty_Board" to manage the Bounty Boards
+//= npc on cities.
+//= The function arguments are this:
+//= 	callfunc "F_Bounty_Board", MinLevel, MaxLevel, MsgHuntPlace, MsgOutLevel,
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp{, 
+//=			MonsterID, 		QuestID, 	BaseExp, 	JobExp};
+//============================================================
+
+einbroch,224,215,5	script	Bounty Board 81-100#ein1	837,{
+	callfunc "F_Bounty_Board", 81, 100, 3, 1,
+		1613,	62897,	 105894,	119124,	// METALING
+		1628,	62896,	 133866,	150738,	// MOLE
+		1619,	62899,	 143634,	161505,	// PORCELLIO
+		1620,	62898,	 98568,		198135,	// NOXIOUS
+		1621,	62901,	 131868,	148407,	// VENOMOUS
+		1622,	62900,	 149850,	199689;	// TEDDY_BEAR
+	end;
+}

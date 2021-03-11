@@ -1,0 +1,1802 @@
+//===== eAthena/rAthena Script =======================================
+//= Weapon Zekken
+//===== Template by: =========================================
+//= Pang Cake
+//===== Modified by: =========================================
+//= Mysterious
+//===== Current Version: =====================================
+//= 1.2
+//===== Compatible With: =====================================
+//= eAthena / rAthena SVN
+//===== Description: =========================================
+//= This NPC forges NAMELESS weapons, and can incorporate element stones and star crumbs.
+//= The forge chance is adjustable by changing the formula below.
+//===== Additional Comments: ========================================
+//= v1.0 - Initial release [Pang Cake]
+//= v1.1 - Fixed a couple of things [Mysterious]
+//= v1.2 - Proper disclaimer [Mysterious]
+//============================================================
+prontera,164,167,4	script	The Enchanter	953,{
+
+// ============== End Configurations ================		
+	mes "[^FF6600Zekken^000000]";
+	mes "Hello, I am Zekken the The Enchanter, i can enchant any pre-renewal equip dropped from monsters, forged items, and headgear quests that you're using.";
+	next;
+	switch( select( "Enchant Equips.:Explain.:Cancel." ) ) {
+		case 3:
+			mes .n$;
+			mes "Oh, okay dude";
+			close;
+		case 2:
+			mes "[^FF6600Zekken^000000]";
+			mes "Basically if you want to enchant a Knife[4]";
+			mes "You'll need another copy of Knife[4] in your inventory.";
+			mes "Yes, the exact same copy of item.";
+//			mes "And you can reset the enchantment anytime, as long if you have another copy of the item.";
+			mes "For the exception of forged items.";
+			mes "Those can be enchanted even without another copy of the item.";
+			next;
+			mes "[^FF6600Zekken^000000]";
+			mes "I can only enchant equip dropped";
+			mes "From monsters and headgear quests that you're using.";			
+			mes "For the exception of Super Novice's Set and Novice Weapons.";
+			mes "I can enchant those even if you bought it from shops.";
+			close;
+		case 1:
+			mes .n$;
+			mes "Which one ?";
+			next;
+	switch( select( "Enchant Weapon.:Enchant Shield.:Enchant Armor.:Enchant Garment.:Enchant Shoes.:Enchant Acc.:Enchant Upper Headgear.:Enchant Middle Headgear.:Enchant Lower Headgear.:Cancel." ) ) {
+		case 10:
+			mes .n$;
+			mes "Oh, okay dude";
+			close;
+			
+		case 1: // Enchant Forged Weapon
+			.@x = getequipid(EQI_HAND_R);
+			if (.@x == -1) {
+				mes "You don't have any weapon in your right hand!";
+				close;
+			}
+			mes .n$;
+			mes "To apply a property to a weapon, you need to have it equipped in your right hand.";
+			set .@part,EQI_HAND_R;
+			if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Thief||(BaseJob==Job_Taekwon&&Class!=Job_Soul_Linker)){ set .@Type$,"P"; }		
+			if(BaseClass==Job_Mage||BaseClass==Job_Acolyte||Class==Job_Ninja||Class==Job_Soul_Linker){ set .@Type$,"M"; }		
+			if(BaseClass==Job_Archer||BaseClass==Job_Gunslinger){ set .@Type$,"R"; }
+			if(BaseJob==Job_Novice||BaseJob==Job_SuperNovice){ set .@Type$,"PM"; }
+			for(set .@i,0; .@i<4; set .@i,.@i+1)
+				set .@slot[.@i], getequipcardid(.@part,.@i);
+			if (.@slot[0]==255 || .@slot[0]==254 || .@slot[0]<0) {
+			set .@Forged,1;
+			next;
+			goto L_Enchant;
+			}		
+			break;
+					
+			
+		case 2: // Enchant Shield
+		
+			if (getequipid(EQI_HAND_L) && getiteminfo(getequipid(EQI_HAND_L), 5) == 32){
+			set .@part,EQI_HAND_L;
+			set .@Type$,"S";
+			break;			
+			}
+			mes "You don't have any shield in your left hand!";
+				close;			
+				
+		case 3: // Enchant Armor
+			.@x = getequipid(EQI_ARMOR);
+			if (.@x == -1) {
+				mes "You don't wear any armor!";
+				close;
+			}		
+			set .@part,EQI_ARMOR;
+			set .@Type$,"A";
+			break;
+
+		case 4: // Enchant Garment
+			.@x = getequipid(EQI_GARMENT);
+			if (.@x == -1) {
+				mes "You don't wear any garment!";
+				close;
+			}		
+			set .@part,EQI_GARMENT;
+			set .@Type$,"G";
+			break;
+
+		case 5: // Enchant Shoes
+			.@x = getequipid(EQI_SHOES);
+			if (.@x == -1) {
+				mes "You don't wear any shoes!";
+				close;
+			}		
+			set .@part,EQI_SHOES;
+			set .@Type$,"SH";
+			break;
+
+		case 6: // Enchant Acc
+			.@x = getequipid(EQI_ACC_R);
+			if (.@x == -1) {
+				mes "You don't wear any acc!";
+				close;
+			}		
+			set .@part,EQI_ACC_R;
+			set .@Type$,"AC";
+			break;
+
+		case 7: // Enchant Headgear Top
+			.@x = getequipid(EQI_HEAD_TOP);
+			if (.@x == -1) {
+				mes "You don't wear any top headgear!";
+				close;
+			}		
+			set .@part,EQI_HEAD_TOP;
+			set .@Type$,"HGT";
+			break;
+
+		case 8: // Enchant Headgear Mid
+			.@x = getequipid(EQI_HEAD_MID);
+			if (.@x == -1) {
+				mes "You don't wear any mid headgear!";
+				close;
+			}					
+			set .@part,EQI_HEAD_MID;
+			set .@Type$,"HGM";
+			break;
+
+		case 9: // Enchant Headgear Lower
+			.@x = getequipid(EQI_HEAD_LOW);
+			if (.@x == -1) {
+				mes "You don't wear any low headgear!";
+				close;
+			}		
+
+			set .@part,EQI_HEAD_LOW;
+			set .@Type$,"HGL";
+			break;			
+		}
+		
+next;	
+switch(getequipid(.@part)) {
+	case 1204: // Cutter
+	goto L_Enchant;
+	}
+	mes "[^FF6600Zekken^000000]";
+	mes "This item is not dropped from monster.";
+	mes	"I can't enchant this.";
+	close;
+
+L_Enchant: 	
+mes "[^FF6600Zekken^000000]";
+mes "Equipped: "+getitemname(getequipid(.@part));
+set .@ropt1,getequiprandomoption(.@part,0,ROA_ID);
+set .@ropt2,getequiprandomoption(.@part,1,ROA_ID);
+set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
+if(.@ropt1 || .@ropt2 || .@ropt2) {
+	mes "I'm sorry, but this weapon already has bonus properties applied.";
+//	if(.@part == EQI_ACC_R||.@part == EQI_HEAD_MID||.@part == EQI_HEAD_LOW){
+	close;
+//	}
+//	mes "This item is resettable.";
+//	mes "Reset enchant? though, you'll need another copy of this item.";
+//	if (select("Cancel", "Reset Enchantment") == 2) {
+//	next;	
+//	if (countitem(getequipid(.@part)) <2) {
+//	mes "[^FF6600Zekken^000000]";
+//	mes "You don't have enough copy of item for this.";
+//	close; 
+//	}
+//	mes "I'll take this item..";	
+//		delitem (getequipid(.@part)),1;
+//		next;		
+//			.@equip_id = getequipid(.@part);
+//			.@refine = getequiprefinerycnt(.@part);
+//			for (.@i = 0; .@i < 4; .@i++)			
+//				.@card[.@i] = getequipcardid(.@part, .@i);
+//			delequip .@part;
+//			getitem2 .@equip_id, 1, 1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+//			mes "[^FF6600Zekken^000000]";
+//			mes "Done reset enchant.";
+//			close;			
+//		}
+//	mes "Then, please choose a different one.";
+//	close;
+}	
+
+// Randomize each Option Slot:
+// Random Option 1
+set .@Opt1,rand(getarraysize(getd(".RandOpt1_"+.@Type$)));
+if(getd(".RandOpt1_"+.@Type$+"_MinV["+.@Opt1+"]") != getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]"))
+	set .@Opt1_V,rand(getd(".RandOpt1_"+.@Type$+"_MinV["+.@Opt1+"]"),getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]"));
+else 
+	set .@Opt1_V,getd(".RandOpt1_"+.@Type$+"_MaxV["+.@Opt1+"]");
+	
+// Random Option 2
+set .@Opt2,rand(getarraysize(getd(".RandOpt2_"+.@Type$)));
+if(getd(".RandOpt2_"+.@Type$+"_MinV["+.@Opt2+"]") != getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]"))
+	set .@Opt2_V,rand(getd(".RandOpt2_"+.@Type$+"_MinV["+.@Opt2+"]"),getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]"));
+else 
+	set .@Opt2_V,getd(".RandOpt2_"+.@Type$+"_MaxV["+.@Opt2+"]");
+	
+// Random Option 3
+set .@Opt3,rand(getarraysize(getd(".RandOpt3_"+.@Type$)));
+if(getd(".RandOpt3_"+.@Type$+"_MinV["+.@Opt3+"]") != getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]"))
+	set .@Opt3_V,rand(getd(".RandOpt3_"+.@Type$+"_MinV["+.@Opt3+"]"),getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]"));
+else 
+	set .@Opt3_V,getd(".RandOpt3_"+.@Type$+"_MaxV["+.@Opt3+"]");
+
+// Random Option 4
+set .@Opt4,rand(getarraysize(getd(".RandOpt4_"+.@Type$)));
+if(getd(".RandOpt4_"+.@Type$+"_MinV["+.@Opt4+"]") != getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]"))
+	set .@Opt4_V,rand(getd(".RandOpt4_"+.@Type$+"_MinV["+.@Opt4+"]"),getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]"));
+else 
+	set .@Opt4_V,getd(".RandOpt4_"+.@Type$+"_MaxV["+.@Opt4+"]");
+
+// Random Option 5
+set .@Opt5,rand(getarraysize(getd(".RandOpt5_"+.@Type$)));
+if(getd(".RandOpt5_"+.@Type$+"_MinV["+.@Opt5+"]") != getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]"))
+	set .@Opt5_V,rand(getd(".RandOpt5_"+.@Type$+"_MinV["+.@Opt5+"]"),getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]"));
+else 
+	set .@Opt5_V,getd(".RandOpt5_"+.@Type$+"_MaxV["+.@Opt5+"]");
+
+// Apply options to equipped weapon
+if( .@Forged == 0 ) {
+if (countitem(getequipid(.@part)) <2) {
+	mes "[^FF6600Zekken^000000]";
+	mes "You don't have enough copy of item for this.";
+	close; 
+	}
+}	
+
+mes "Okay, i can enchant this ! Are you ready ?";
+next;
+switch( select( "Yes.:Cancel." ) ) {
+	case 2:
+		mes "[^FF6600Zekken^000000]";
+		mes "Oh, Okay,.";
+		mes "Come back here when you wear the right equipment";
+		close;
+
+	case 1:
+		mes "[^FF6600Zekken^000000]";
+		if( .@Forged == 0 ) {
+		mes "I'll take this item..";
+		delitem (getequipid(.@part)),1;		
+		}
+		mes "Give me a second ..";
+.@rand = rand( 10000 ); // total 100
+setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0);
+if ( .@rand < 5001 ){setrandomoption(.@part,1,getd(".RandOpt2_"+.@Type$+"["+.@Opt2+"]"),.@Opt2_V,0);}
+if ( .@rand < 1001 ){setrandomoption(.@part,2,getd(".RandOpt3_"+.@Type$+"["+.@Opt3+"]"),.@Opt3_V,0);}
+if ( .@rand < 101 ){setrandomoption(.@part,3,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0);}
+if ( .@rand < 11 ){setrandomoption(.@part,4,getd(".RandOpt5_"+.@Type$+"["+.@Opt5+"]"),.@Opt5_V,0);}
+next;
+mes "[^FF6600Zekken^000000]";
+mes "Random bonus properties have been applied on your equipment.";
+end;
+}
+end;
+
+OnInit:
+set .n$,"[^FF6600Zekken^000000]";
+
+// ========= PHYSICAL Random Option 1=========
+// - Phsyical
+setarray .RandOpt1_P[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3;
+setarray .RandOpt1_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6;
+
+// ========= PHYSICAL Random Option 2=========
+// - Phsyical
+setarray .RandOpt2_P[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3;
+setarray .RandOpt2_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6;
+
+// ========= PHYSICAL Random Option 3=========
+// - Phsyical
+setarray .RandOpt3_P[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3;
+setarray .RandOpt3_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6;
+
+// ========= PHYSICAL Random Option 4=========
+// - Phsyical
+setarray .RandOpt4_P[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3;
+setarray .RandOpt4_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6;
+
+// ========= PHYSICAL Random Option 5=========
+// - Phsyical
+setarray .RandOpt5_P[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3;
+setarray .RandOpt5_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6;
+
+// ========= MAGICAL Random Option 1=========
+// - Magic
+setarray .RandOpt1_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_HEAL_VALUE,							// HEAL
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_M_MinV[0],1,1,1,1,1,1,10,1,5,3,3,3,1;
+setarray .RandOpt1_M_MaxV[0],4,4,4,4,4,4,20,5,20,5,5,5,1;
+
+// ========= MAGICAL Random Option 2=========
+// - Magic
+setarray .RandOpt2_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_HEAL_VALUE,							// HEAL
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_M_MinV[0],1,1,1,1,1,1,10,1,5,3,3,3,1;
+setarray .RandOpt2_M_MaxV[0],4,4,4,4,4,4,20,5,20,5,5,5,1;
+
+// ========= MAGICAL Random Option 3=========
+// - Magic
+setarray .RandOpt3_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_HEAL_VALUE,							// HEAL
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_M_MinV[0],1,1,1,1,1,1,10,1,5,3,3,3,1;
+setarray .RandOpt3_M_MaxV[0],4,4,4,4,4,4,20,5,20,5,5,5,1;
+
+// ========= MAGICAL Random Option 4=========
+// - Magic
+setarray .RandOpt4_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_HEAL_VALUE,							// HEAL
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_M_MinV[0],1,1,1,1,1,1,10,1,5,3,3,3,1;
+setarray .RandOpt4_M_MaxV[0],4,4,4,4,4,4,20,5,20,5,5,5,1;
+
+// ========= MAGICAL Random Option 5=========
+// - Magic
+setarray .RandOpt5_M[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_HEAL_VALUE,							// HEAL
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_M_MinV[0],1,1,1,1,1,1,10,1,5,3,3,3,1;
+setarray .RandOpt5_M_MaxV[0],4,4,4,4,4,4,20,5,20,5,5,5,1;
+
+// ========= RANGED Random Option 1=========
+// - RANGED
+setarray .RandOpt1_R[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// LONG RANGE			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_P_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3,3;
+setarray .RandOpt1_P_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6,5;
+
+// ========= RANGED Random Option 2=========
+// - RANGED
+setarray .RandOpt2_R[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// LONG RANGE			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_R_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3,3;
+setarray .RandOpt2_R_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6,5;
+
+// ========= RANGED Random Option 3=========
+// - RANGED
+setarray .RandOpt3_R[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// LONG RANGE			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_R_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3,3;
+setarray .RandOpt3_R_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6,5;
+
+// ========= RANGED Random Option 4=========
+// - RANGED
+setarray .RandOpt4_R[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// LONG RANGE			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_R_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3,3;
+setarray .RandOpt4_R_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6,5;
+
+// ========= RANGED Random Option 5=========
+// - RANGED
+setarray .RandOpt5_R[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// LONG RANGE			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_R_MinV[0],1,1,1,1,1,1,10,1,1,5,5,5,3,3;
+setarray .RandOpt5_R_MaxV[0],4,4,4,4,4,4,20,5,1,10,20,20,6,5;
+
+// ========= Random Option 1=========
+// - Physical Magic
+setarray .RandOpt1_PM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_DEC_SP_CONSUMPTION,					// SPCONS
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DEC_SPELL_CAST_TIME;					// VCT						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_R_MinV[0],1,1,1,1,1,1,10,10,10,5,1,3,3;
+setarray .RandOpt1_R_MaxV[0],4,4,4,4,4,4,20,20,20,10,1,6,5;
+
+// ========= Random Option 2=========
+setarray .RandOpt2_PM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_DEC_SP_CONSUMPTION,					// SPCONS
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DEC_SPELL_CAST_TIME;					// VCT						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_R_MinV[0],1,1,1,1,1,1,10,10,10,5,1,3,3;
+setarray .RandOpt2_R_MaxV[0],4,4,4,4,4,4,20,20,20,10,1,6,5;
+
+// ========= Random Option 3=========
+setarray .RandOpt3_PM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_DEC_SP_CONSUMPTION,					// SPCONS
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DEC_SPELL_CAST_TIME;					// VCT						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_R_MinV[0],1,1,1,1,1,1,10,10,10,5,1,3,3;
+setarray .RandOpt3_R_MaxV[0],4,4,4,4,4,4,20,20,20,10,1,6,5;
+
+// ========= Random Option 4=========
+setarray .RandOpt4_PM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_DEC_SP_CONSUMPTION,					// SPCONS
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DEC_SPELL_CAST_TIME;					// VCT						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_R_MinV[0],1,1,1,1,1,1,10,10,10,5,1,3,3;
+setarray .RandOpt4_R_MaxV[0],4,4,4,4,4,4,20,20,20,10,1,6,5;
+
+// ========= Random Option 5=========
+setarray .RandOpt5_PM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_DEC_SP_CONSUMPTION,					// SPCONS
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DEC_SPELL_CAST_TIME;					// VCT						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_R_MinV[0],1,1,1,1,1,1,10,10,10,5,1,3,3;
+setarray .RandOpt5_R_MaxV[0],4,4,4,4,4,4,20,20,20,10,1,6,5;
+
+
+// ========= SHIELD =========
+// ========= Random Option 1 =========
+// - SHIELD 1
+setarray .RandOpt1_S[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_DAMAGE_SIZE_SMALL_USER,				// SMALL
+						RDMOPT_DAMAGE_SIZE_MIDIUM_USER,				// MEDIUM
+						RDMOPT_DAMAGE_SIZE_LARGE_USER;				// LARGE
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_S_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,1,1,1;
+setarray .RandOpt1_S_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,5,5,5;
+
+
+// ========= Random Option 2 =========
+// - SHIELD 2
+setarray .RandOpt2_S[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_DAMAGE_SIZE_SMALL_USER,				// SMALL
+						RDMOPT_DAMAGE_SIZE_MIDIUM_USER,				// MEDIUM
+						RDMOPT_DAMAGE_SIZE_LARGE_USER;				// LARGE					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_S_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,1,1,1;
+setarray .RandOpt2_S_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,5,5,5;
+
+// ========= Random Option 3=========
+// - SHIELD 3
+setarray .RandOpt3_S[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_DAMAGE_SIZE_SMALL_USER,				// SMALL
+						RDMOPT_DAMAGE_SIZE_MIDIUM_USER,				// MEDIUM
+						RDMOPT_DAMAGE_SIZE_LARGE_USER;				// LARGE
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_S_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,1,1,1;
+setarray .RandOpt3_S_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,5,5,5;
+
+// ========= Random Option 4=========
+// - SHIELD 4
+setarray .RandOpt4_S[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_DAMAGE_SIZE_SMALL_USER,				// SMALL
+						RDMOPT_DAMAGE_SIZE_MIDIUM_USER,				// MEDIUM
+						RDMOPT_DAMAGE_SIZE_LARGE_USER;				// LARGE
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_S_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,1,1,1;
+setarray .RandOpt4_S_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,5,5,5;
+
+// ========= Random Option 5=========
+// - SHIELD 5
+setarray .RandOpt5_S[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_DAMAGE_SIZE_SMALL_USER,				// SMALL
+						RDMOPT_DAMAGE_SIZE_MIDIUM_USER,				// MEDIUM
+						RDMOPT_DAMAGE_SIZE_LARGE_USER;				// LARGE
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_S_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,1,1,1;
+setarray .RandOpt5_S_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,5,5,5;
+
+// ========= ARMOR =========
+// ========= Random Option 1 =========
+// - Armory 1
+setarray .RandOpt1_A[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_A_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt1_A_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,7,7,7,7,7,7,7,7,7,7;
+
+
+// ========= Random Option 2 =========
+// - Armory 2
+setarray .RandOpt2_A[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_A_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt2_A_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 3=========
+setarray .RandOpt3_A[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_A_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt3_A_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 4=========
+setarray .RandOpt4_A[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_A_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt4_A_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 5=========
+setarray .RandOpt5_A[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_HPACCELERATION,					// HP RECOV
+						RDMOPT_VAR_SPACCELERATION,					// SP RECOV
+						RDMOPT_VAR_ITEMDEFPOWER,					// DEF
+						RDMOPT_VAR_MDEFPOWER,						// MDEF
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_A_MinV[0],1,1,1,1,1,1,100,1,20,1,10,10,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt5_A_MaxV[0],4,4,4,4,4,4,300,3,60,3,30,30,30,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= GARMENT =========
+// ========= Random Option 1 =========
+// - GARMENT 1
+setarray .RandOpt1_G[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD	
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_G_MinV[0],1,1,1,1,1,1,100,1,20,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt1_G_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+
+// ========= Random Option 2 =========
+// - garment 2
+setarray .RandOpt2_G[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD					
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_G_MinV[0],1,1,1,1,1,1,100,1,20,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt2_G_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 3=========
+setarray .RandOpt3_G[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_G_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt3_G_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 4=========
+setarray .RandOpt4_G[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_G_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt4_G_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 5=========
+setarray .RandOpt5_G[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_WEAPON_ATTR_NOTHING,					// NEUTRAL
+						RDMOPT_WEAPON_ATTR_WATER,					// WATER
+						RDMOPT_WEAPON_ATTR_GROUND,					// EARTH
+						RDMOPT_WEAPON_ATTR_FIRE,					// FIRE
+						RDMOPT_WEAPON_ATTR_WIND,					// WIND
+						RDMOPT_WEAPON_ATTR_POISON,					// POISON
+						RDMOPT_WEAPON_ATTR_SAINT,					// SAINT
+						RDMOPT_WEAPON_ATTR_DARKNESS,				// DEMI HUMAN
+						RDMOPT_WEAPON_ATTR_TELEKINESIS,				// ANGEL
+						RDMOPT_WEAPON_ATTR_UNDEAD;					// UNDEAD
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_G_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt5_G_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= SHOES =========
+// ========= Random Option 1 =========
+// - SHOES 1
+setarray .RandOpt1_SH[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_RACE_WEAPON_TOLERACE_NOTHING,		// FORMLESS
+						RDMOPT_RACE_WEAPON_TOLERACE_UNDEAD,			// UNDEAD
+						RDMOPT_RACE_WEAPON_TOLERACE_ANIMAL,			// ANIMAL
+						RDMOPT_RACE_WEAPON_TOLERACE_PLANT,			// PLANT
+						RDMOPT_RACE_WEAPON_TOLERACE_INSECT,			// INSECT
+						RDMOPT_RACE_WEAPON_TOLERACE_FISHS,			// FISH
+						RDMOPT_RACE_WEAPON_TOLERACE_DEVIL,			// DEMON
+						RDMOPT_RACE_WEAPON_TOLERACE_HUMAN,			// DEMI HUMAN
+						RDMOPT_RACE_WEAPON_TOLERACE_ANGEL,			// ANGEL
+						RDMOPT_RACE_WEAPON_TOLERACE_DRAGON;			// DRAGON
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_SH_MinV[0],1,1,1,1,1,1,100,1,20,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt1_SH_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+
+// ========= Random Option 2 =========
+// - SHOES 2
+setarray .RandOpt2_SH[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_RACE_WEAPON_TOLERACE_NOTHING,		// FORMLESS
+						RDMOPT_RACE_WEAPON_TOLERACE_UNDEAD,			// UNDEAD
+						RDMOPT_RACE_WEAPON_TOLERACE_ANIMAL,			// ANIMAL
+						RDMOPT_RACE_WEAPON_TOLERACE_PLANT,			// PLANT
+						RDMOPT_RACE_WEAPON_TOLERACE_INSECT,			// INSECT
+						RDMOPT_RACE_WEAPON_TOLERACE_FISHS,			// FISH
+						RDMOPT_RACE_WEAPON_TOLERACE_DEVIL,			// DEMON
+						RDMOPT_RACE_WEAPON_TOLERACE_HUMAN,			// DEMI HUMAN
+						RDMOPT_RACE_WEAPON_TOLERACE_ANGEL,			// ANGEL
+						RDMOPT_RACE_WEAPON_TOLERACE_DRAGON;			// DRAGON						
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_SH_MinV[0],1,1,1,1,1,1,100,1,20,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt2_SH_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 3=========
+setarray .RandOpt3_SH[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_RACE_WEAPON_TOLERACE_NOTHING,		// FORMLESS
+						RDMOPT_RACE_WEAPON_TOLERACE_UNDEAD,			// UNDEAD
+						RDMOPT_RACE_WEAPON_TOLERACE_ANIMAL,			// ANIMAL
+						RDMOPT_RACE_WEAPON_TOLERACE_PLANT,			// PLANT
+						RDMOPT_RACE_WEAPON_TOLERACE_INSECT,			// INSECT
+						RDMOPT_RACE_WEAPON_TOLERACE_FISHS,			// FISH
+						RDMOPT_RACE_WEAPON_TOLERACE_DEVIL,			// DEMON
+						RDMOPT_RACE_WEAPON_TOLERACE_HUMAN,			// DEMI HUMAN
+						RDMOPT_RACE_WEAPON_TOLERACE_ANGEL,			// ANGEL
+						RDMOPT_RACE_WEAPON_TOLERACE_DRAGON;			// DRAGON
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_SH_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt3_SH_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 4=========
+setarray .RandOpt4_SH[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_RACE_WEAPON_TOLERACE_NOTHING,		// FORMLESS
+						RDMOPT_RACE_WEAPON_TOLERACE_UNDEAD,			// UNDEAD
+						RDMOPT_RACE_WEAPON_TOLERACE_ANIMAL,			// ANIMAL
+						RDMOPT_RACE_WEAPON_TOLERACE_PLANT,			// PLANT
+						RDMOPT_RACE_WEAPON_TOLERACE_INSECT,			// INSECT
+						RDMOPT_RACE_WEAPON_TOLERACE_FISHS,			// FISH
+						RDMOPT_RACE_WEAPON_TOLERACE_DEVIL,			// DEMON
+						RDMOPT_RACE_WEAPON_TOLERACE_HUMAN,			// DEMI HUMAN
+						RDMOPT_RACE_WEAPON_TOLERACE_ANGEL,			// ANGEL
+						RDMOPT_RACE_WEAPON_TOLERACE_DRAGON;			// DRAGON
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_SH_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt4_SH_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 5=========
+setarray .RandOpt5_SH[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_MAXHPAMOUNT,						// HP
+						RDMOPT_VAR_MAXHPPERCENT,					// HP%
+						RDMOPT_VAR_MAXSPAMOUNT,						// SP
+						RDMOPT_VAR_MAXSPPERCENT,					// SP%
+						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
+						RDMOPT_RACE_WEAPON_TOLERACE_NOTHING,		// FORMLESS
+						RDMOPT_RACE_WEAPON_TOLERACE_UNDEAD,			// UNDEAD
+						RDMOPT_RACE_WEAPON_TOLERACE_ANIMAL,			// ANIMAL
+						RDMOPT_RACE_WEAPON_TOLERACE_PLANT,			// PLANT
+						RDMOPT_RACE_WEAPON_TOLERACE_INSECT,			// INSECT
+						RDMOPT_RACE_WEAPON_TOLERACE_FISHS,			// FISH
+						RDMOPT_RACE_WEAPON_TOLERACE_DEVIL,			// DEMON
+						RDMOPT_RACE_WEAPON_TOLERACE_HUMAN,			// DEMI HUMAN
+						RDMOPT_RACE_WEAPON_TOLERACE_ANGEL,			// ANGEL
+						RDMOPT_RACE_WEAPON_TOLERACE_DRAGON;			// DRAGON
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_SH_MinV[0],1,1,1,1,1,1,100,1,10,1,10,3,3,3,3,3,3,3,3,3,3;
+setarray .RandOpt5_SH_MaxV[0],4,4,4,4,4,4,300,3,60,3,20,7,7,7,7,7,7,7,7,7,7;
+
+// ========= Random Option 1 =========
+// - Accesories
+setarray .RandOpt1_AC[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_AC_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt1_AC_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 2 =========
+// - Accesories
+setarray .RandOpt2_AC[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_AC_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt2_AC_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 3 =========
+// - Accesories
+setarray .RandOpt3_AC[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_AC_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt3_AC_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 4 =========
+// - Accesories
+setarray .RandOpt4_AC[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_AC_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt4_AC_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 5 =========
+// - Accesories
+setarray .RandOpt5_AC[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_AC_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt5_AC_MaxV[0],2,2,2,2,2,2;
+
+
+
+// ========= HEADGEAR TOP=============
+// ========= Random Option 1 =========
+// - HGT Level 1
+setarray .RandOpt1_HGT[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_HGT_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt1_HGT_MaxV[0],5,5,5,5,5,5;
+
+// ========= Random Option 2 =========
+// - HGT Level 2
+setarray .RandOpt2_HGT[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_HGT_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt2_HGT_MaxV[0],5,5,5,5,5,5;
+
+// ========= Random Option 3 =========
+// - HGT Level 3
+setarray .RandOpt3_HGT[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_HGT_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt3_HGT_MaxV[0],5,5,5,5,5,5;
+
+// ========= Random Option 4 =========
+// - HGT Level 4
+setarray .RandOpt3_HGT[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_HGT_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt4_HGT_MaxV[0],5,5,5,5,5,5;
+
+// ========= Random Option 5 =========
+// - HGT Level 5
+setarray .RandOpt3_HGT[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_HGT_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt5_HGT_MaxV[0],5,5,5,5,5,5;
+
+
+// ========= HEADGEAR MID =========
+// ========= Random Option 1 =========
+// - HGM Level 1
+setarray .RandOpt1_HGM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_HGM_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt1_HGM_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 2 =========
+// - HGM Level 2
+setarray .RandOpt1_HGM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_HGM_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt2_HGM_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 3 =========
+// - HGM Level 3
+setarray .RandOpt1_HGM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_HGM_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt3_HGM_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 4 =========
+// - HGM Level 4
+setarray .RandOpt4_HGM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_HGM_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt4_HGM_MaxV[0],2,2,2,2,2,2;
+
+// ========= Random Option 5 =========
+// - HGM Level 5
+setarray .RandOpt5_HGM[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_HGM_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt5_HGM_MaxV[0],2,2,2,2,2,2;
+
+// ========= HEADGEAR LOW =========
+// ========= Random Option 1 =========
+// - HGL Level 1
+setarray .RandOpt1_HGL[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt1_HGL_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt1_HGL_MaxV[0],1,1,1,1,1,1;
+
+// ========= HEADGEAR LOW =========
+// ========= Random Option 2 =========
+// - HGL Level 2
+setarray .RandOpt1_HGL[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt2_HGL_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt2_HGL_MaxV[0],1,1,1,1,1,1;
+
+// ========= HEADGEAR LOW =========
+// ========= Random Option 3 =========
+// - HGL Level 3
+setarray .RandOpt1_HGL[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt3_HGL_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt3_HGL_MaxV[0],1,1,1,1,1,1;
+
+// ========= HEADGEAR LOW =========
+// ========= Random Option 4 =========
+// - HGL Level 4
+setarray .RandOpt4_HGL[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt4_HGL_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt4_HGL_MaxV[0],1,1,1,1,1,1;
+
+// ========= HEADGEAR LOW =========
+// ========= Random Option 5 =========
+// - HGL Level 5
+setarray .RandOpt5_HGL[0],
+					    RDMOPT_VAR_STRAMOUNT,	 					// Str
+					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
+					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
+						RDMOPT_VAR_INTAMOUNT,						// Int
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk			
+					    // ToDo: // Recover 1500 of Damage lost from size penalties
+						
+
+// - Values
+// Note: When MinV and MaxV are the same, rand() will not be used!
+setarray .RandOpt5_HGL_MinV[0],1,1,1,1,1,1;
+setarray .RandOpt5_HGL_MaxV[0],1,1,1,1,1,1;
+	}	
+}
+
+// Duplicates
+//============================================================
+alberta,25,240,6	duplicate(The Enchanter)	The Enchanter#alb	953
+aldebaran,146,118,4	duplicate(The Enchanter)	The Enchanter#alde	953
+amatsu,200,79,4	duplicate(The Enchanter)	The Enchanter#ama	953
+ayothaya,207,169,6	duplicate(The Enchanter)	The Enchanter#ayo	953
+comodo,184,158,6	duplicate(The Enchanter)	The Enchanter#com	953
+einbech,57,36,6	duplicate(The Enchanter)	The Enchanter#einbe	953
+einbroch,57,202,6	duplicate(The Enchanter)	The Enchanter#einbr	953
+geffen,115,72,6	duplicate(The Enchanter)	The Enchanter#gef	953
+gonryun,156,122,6	duplicate(The Enchanter)	The Enchanter#gon	953
+hugel,89,150,6	duplicate(The Enchanter)	The Enchanter#hug	953
+izlude,119,154,6	duplicate(The Enchanter)	The Enchanter#izl	953	//Pre-RE: (125,118)
+jawaii,250,139,4	duplicate(The Enchanter)	The Enchanter#jaw	953
+lighthalzen,152,100,6	duplicate(The Enchanter)	The Enchanter#lhz	953
+louyang,226,103,4	duplicate(The Enchanter)	The Enchanter#lou	953
+manuk,272,144,6	duplicate(The Enchanter)	The Enchanter#man	953
+mid_camp,203,289,6	duplicate(The Enchanter)	The Enchanter#mid	953
+moc_ruins,72,164,4	duplicate(The Enchanter)	The Enchanter#moc	953
+morocc,145,87,6	duplicate(The Enchanter)	The Enchanter#mor	953
+moscovia,220,191,4	duplicate(The Enchanter)	The Enchanter#mos	953
+niflheim,212,182,5	duplicate(The Enchanter)	The Enchanter#nif	953
+payon,179,106,4	duplicate(The Enchanter)	The Enchanter#pay	953
+//prontera,162,193,4	duplicate(The Enchanter)	The Enchanter#prt	953
+rachel,125,116,6	duplicate(The Enchanter)	The Enchanter#rac	953
+splendide,201,153,4	duplicate(The Enchanter)	The Enchanter#spl	953
+thor_camp,249,74,4	duplicate(The Enchanter)	The Enchanter#thor	953
+umbala,105,148,3	duplicate(The Enchanter)	The Enchanter#umb	953
+veins,217,121,4	duplicate(The Enchanter)	The Enchanter#ve	953
+xmas,143,136,4	duplicate(The Enchanter)	The Enchanter#xmas	953
+yuno,164,45,4	duplicate(The Enchanter)	The Enchanter#yuno	953
+
+// Duplicates (Renewal)
+//============================================================
+brasilis,194,221,6	duplicate(The Enchanter)	The Enchanter#bra	953
+dewata,195,187,4	duplicate(The Enchanter)	The Enchanter#dew	953
+dicastes01,201,194,4	duplicate(The Enchanter)	The Enchanter#dic	953
+ecl_in01,45,60,4	duplicate(The Enchanter)	The Enchanter#ecl	953
+malangdo,132,114,6	duplicate(The Enchanter)	The Enchanter#mal	953
+malaya,227,204,6	duplicate(The Enchanter)	The Enchanter#ma	953
+mora,55,152,4	duplicate(The Enchanter)	The Enchanter#mora	953
