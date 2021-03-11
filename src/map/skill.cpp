@@ -1387,7 +1387,7 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 		break;
 
 	case MG_FROSTDIVER:
-		if(!sc_start(src,bl,SC_FREEZE,min(skill_lv*3+35,skill_lv+60),skill_lv,skill_get_time2(skill_id,skill_lv)) && sd)
+		if(!sc_start(src,bl,SC_FREEZE,min(skill_lv*5+33,skill_lv+60),skill_lv,skill_get_time2(skill_id,skill_lv)) && sd) //gie
 			clif_skill_fail(sd,skill_id,USESKILL_FAIL_LEVEL,0);
 		break;
 

@@ -42,7 +42,7 @@ geffen_in,144,166,4	script	Blacksmith	63,{
 		mes "It works by covering your face with a fat metal plate. Truly, it's an item that everyone should want! If not yourself, it'd be a good idea to give this to a friend who is studying smithing.";
 		next;
 		mes "[Blacksmith]";
-		mes "So how about it ? If you give me ^2244FF50 Steel^000000 and ^4422FFonly 2000 Zeny^000000, I will make it for you right away~!!";
+		mes "So how about it ? If you give me ^2244FF100 Steel^000000 and ^4422FFonly 2000 Zeny^000000, I will make it for you right away~!!";
 		next;
 		switch(select("Hm... Not bad. Alright.:How does it work again?")) {
 		case 1:
@@ -125,15 +125,15 @@ geffen_in,30,71,4	script	Eric	83,{
 		close;
 	case 2:
 		mes "[Eric]";
-		mes "40 ^3355FFSteel^000000";
+		mes "50 ^3355FFSteel^000000";
 		mes "1 ^3355FFOridecon^000000";
 		mes "1 ^3355FFAlcohol^000000";
 		mes "1 ^3355FFCoal^000000";
 		mes "These are the things I need for Grandfather's masterpiece.";
 		close;
 	case 3:
-		if ((countitem(999) > 39) && (countitem(984) > 0) && (countitem(970) > 0) && (countitem(1003) > 0)) {
-			delitem 999,40; //Steel
+		if ((countitem(999) > 99) && (countitem(984) > 0) && (countitem(970) > 0) && (countitem(1003) > 0)) {
+			delitem 999,50; //Steel
 			delitem 984,1; //Oridecon
 			delitem 970,1; //Alchol
 			delitem 1003,1; //Coal

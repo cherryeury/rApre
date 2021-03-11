@@ -160,7 +160,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 				if (!this->asUInt32(node, "Sell", sell))
 					return 0;
 
-				item->value_buy = sell * 2;
+				item->value_buy = sell * 2; // 2 [Cherry]
 			} else
 				item->value_buy = 0;
 		}
@@ -175,7 +175,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 		item->value_sell = sell;
 	} else {
 		if (!exists)
-			item->value_sell = item->value_buy / 2;
+			item->value_sell = item->value_buy / 2; // 2 [Cherry]
 	}
 
 	if (item->value_buy / 124. < item->value_sell / 75.) {

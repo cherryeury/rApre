@@ -915,7 +915,7 @@ izlude,122,207,3	script	Criatura Academy Staff#0	4_M_KHKYEL,3,3,{
 						mes "I want to give you more but that was the last of it";
 						mes "Anyways here's some potions. They'll come in handy when you start fighting.";
 						completequest 7473;
-						getitem 569,30;// Novice_Potion
+						getitem 569,15;// Novice_Potion
 						getexp 200,0;
 						next;
 						mes "[Hun]";
@@ -934,7 +934,7 @@ izlude,122,207,3	script	Criatura Academy Staff#0	4_M_KHKYEL,3,3,{
 						mes "I want to give you more but that was the last of it";
 						mes "Anyways here's some potions. They'll come in handy when you start fighting.";
 						completequest 7473;
-						getitem 569,30;// Novice_Potion
+						getitem 569,15;// Novice_Potion
 						getexp 200,0;
 						next;
 						mes "[Hun]";
@@ -1422,10 +1422,10 @@ izlude,120,207,4	script	Information Staff#0	8W_SOLDIER,{
 			erasequest 7475;
 			erasequest 7476;
 			erasequest 7477;
-			getexp 300,20;
-			getitem 12323,20;// N_Fly_Wing
-			getitem 12324,10;// N_Butterfly_Wing
-			getitem 569,20;// Novice_Potion
+			getexp 300,20; getexp 1200,500;
+			getitem 12323,10;// N_Fly_Wing
+			getitem 12324,5;// N_Butterfly_Wing
+			getitem 569,10;// Novice_Potion
 			next;
 			mes "[Information Staff]";
 			mes "Have a wonderful journey.";
@@ -2202,7 +2202,7 @@ iz_ac01,59,43,3	script	Therapist#ac	4_M_6THPRIN1,{
 				mes "You can make it easily by ^4d4dffusing the combination kit or cooking tool^000000.";
 				completequest 7478;
 				getexp 2000,50;
-				getitem 569,30;// Novice_Potion
+				getitem 569,15;// Novice_Potion
 				getitem 11058,1;// Novice_Combi_Book
 				getitem 12849,10;// Combination_Kit
 				getitem 507,1;// Red_Herb
@@ -2607,9 +2607,9 @@ iz_ac01,100,39,5	script	Academy Receptionist#1	4_F_01,{
 		mes "What can I do for you?";
 		next;
 		if (isbegin_quest(4269) == 2)
-			.@menu$ = ":What's inside and outside the Academy.:Trainer location guide.:End Coversation.";
+			.@menu$ = ":What's inside and outside the Academy.:Please teach me something.:End Coversation.";
 		else
-			.@menu$ = "Register for the Academy:Explanation about the Academy:Location for trainers:Coversation finished";
+			.@menu$ = "Register for the Academy:Explanation about the Academy:Please teach me something:Coversation finished";
 		switch(select(.@menu$)) {
 		case 1:
 			if (Class == Job_Novice) {
@@ -2632,11 +2632,11 @@ iz_ac01,100,39,5	script	Academy Receptionist#1	4_F_01,{
 				getitem 2510,1;// Novice_Hood
 				getitem 2414,1;// Novice_Boots
 				getitem 5055,1;// Novice_Egg_Cap
-				getitem 1243,1;// Novice_Knife
+//				getitem 1243,1;// Novice_Knife
 				getitem 2112,1;// Novice_Guard
-				getitem 18730,1;// Criatura_Academy_Hat
-				getitem 6593,1;// Criatura_Hair_Coupon
-				getitem 569,300;// Novice_Potion
+//				getitem 18730,1;// Criatura_Academy_Hat
+//				getitem 6593,1;// Criatura_Hair_Coupon
+//				getitem 569,20;// Novice_Potion
 				next;
 				mes "[Receptionist]";
 				mes "It is your first step to be an adventurer that you have made a visit to us.";
@@ -2696,17 +2696,17 @@ iz_ac01,100,39,5	script	Academy Receptionist#1	4_F_01,{
 			break;
 		case 3:
 			while(1) {
-				switch(select("Game Mechanic Tutorial Instructors", "1st job trainers", "Return to the previous menu", "End Conversation")) {
+				switch(select("Can i learn something basic?", "Can i meet class instructor?", "Return to the previous menu", "End Conversation")) {
 				case 1:
 					mes "[Receptionist]";
-					mes "Left-Click your mouse on the name of the trainer you are looking for and I will give guide you to them.";
+					mes "Do you mean quests? Left-Click your mouse on the name of the trainer you are looking for and I will give guide you to them.";
 					next;
 					mes "<NAVI>[Therapist]<INFO>iz_ac01,59,43</INFO></NAVI>, status recovery trainer";
 					mes "<NAVI>[Subino]<INFO>iz_ac01,59,83</INFO></NAVI>, battle trainer";
 					mes "<NAVI>[Mainz]<INFO>iz_ac01,134,47</INFO></NAVI>, abnormal stats trainer";
 					mes "<NAVI>[Dakuwazu]<INFO>iz_ac01,147,47</INFO></NAVI>, Cooking Trainer.";
 					mes "<NAVI>[Han]<INFO>izlude,153,126</INFO></NAVI>, Refining Trainer.";
-					mes "<NAVI>[Mounds]<INFO>izlude,96,125</INFO></NAVI> Enchanting Trainer.";
+//					mes "<NAVI>[Mounds]<INFO>izlude,96,125</INFO></NAVI> Enchanting Trainer.";
 					mes "<NAVI>[Cream Puff]<INFO>iz_ac02,143,55</INFO></NAVI>, Class Aptitude Test.";
 					next;
 					mes "[Receptionist]";
@@ -3467,7 +3467,7 @@ izlude,115,181,5	script	Shop Helper#iz	4_F_KHELLISIA,{
 				mes "As a reward I'll give you a couple of ^ff0000Fly Wing^000000s.";
 				completequest 1238;
 				setquest 1239;
-				getitem 12323,50;// N_Fly_Wing
+				getitem 12323,10;// N_Fly_Wing
 				getexp 1300,100;
 				close;
 			}
@@ -3525,7 +3525,7 @@ izlude,115,181,5	script	Shop Helper#iz	4_F_KHELLISIA,{
 					mes "Good work, here's the reward for it.";
 					mes "The things I haven't told you, you will learn throughout your travels.";
 					completequest 1240;
-					getitem 12324,10;// N_Butterfly_Wing
+					getitem 12324,5;// N_Butterfly_Wing
 					getexp 1000,50;
 					close;
 				}
@@ -8371,11 +8371,11 @@ iz_ac02,70,85,5	script	Arang#ac	4_F_TAEKWON,{
 								next;
 							} else {
 								mes "[Arang]";
-								mes "You can find a boy with the same appearance as me, when you get in the town through ^FF0000the west entrance^000000, and continue follow the way ^FF0000to the north^000000 after passing the pub house but just before the archer town.";
+								mes "Go find a guy named Phoenix, ill warp you to his house! Good luck.";
 								next;
 								setquest 13101;
 								cutin "", 255;
-								warp "pay_fild08", 148, 76;
+								warp "payon", 252, 285;
 								end;
 							}
 						} else {
@@ -9654,7 +9654,7 @@ iz_ac02,50,169,3	script	Salim Hamid#ac	1_M_MERCHANT,{
 			end;
 		} else {
 			mes "[Salim Hamid]";
-			mes "Good~ Please go to the Forge and find me.";
+			mes "Good~ Please go to the Forge and find my student.";
 			close2;
 			setquest 12307;
 			warp "pay_fild03", 388, 68;
@@ -10260,8 +10260,8 @@ iz_ac02,52,136,3	script	Guest Lecturer Mayssel#0	4_F_MAYSEL,{
 					setquest 7483;
 					completequest 7483;
 					getexp 800,50;
-					getitem 569,30;// Novice_Potion
-					getitem 12325,20;// N_Magnifier
+					getitem 569,15;// Novice_Potion
+					getitem 12325,2;// N_Magnifier
 				} else {
 					mes "[Mayssel]";
 					mes "I only play the role to inform you of there is this one that one...";
@@ -10334,8 +10334,8 @@ iz_ac02,52,136,3	script	Guest Lecturer Mayssel#0	4_F_MAYSEL,{
 					setquest 7483;
 					completequest 7483;
 					getexp 800,50;
-					getitem 569,30;// Novice_Potion
-					getitem 12325,20;// N_Magnifier
+					getitem 569,15;// Novice_Potion
+					getitem 12325,2;// N_Magnifier
 				} else {
 					mes "[Mayssel]";
 					mes "I only play the role to inform you of there is this one that one...";
@@ -10382,8 +10382,8 @@ iz_ac02,52,136,3	script	Guest Lecturer Mayssel#0	4_F_MAYSEL,{
 					mes "Thank you for you hard work.";
 					completequest 7483;
 					getexp 800,50;
-					getitem 569,30;// Novice_Potion
-					getitem 12325,20;// N_Magnifier
+					getitem 569,15;// Novice_Potion
+					getitem 12325,2;// N_Magnifier
 					close2;
 					cutin "", 255;
 					end;
@@ -10895,7 +10895,7 @@ iz_ac02,49,134,5	script	Vicente#ac	4_M_HUMAN_02,{
 					mes "Important thing is not theory but actual fighting.";
 					mes "Do you agree?";
 					setquest 7481;
-					getitem 569,30;// Novice_Potion
+					getitem 569,15;// Novice_Potion
 					close2;
 					cutin "", 255;
 					end;
@@ -11833,7 +11833,7 @@ iz_ac02,62,139,3	script	Lumin#ac	4_M_NOV_RUMIN,{
 			getexp 800,50;
 			getitem 512,3;// Apple
 			getitem 511,2;// Green_Herb
-			getitem 569,22;// Novice_Potion
+			getitem 569,11;// Novice_Potion
 			getitem 622,1;// Rainbow_Carrot
 			close2;
 			cutin "", 255;
@@ -11850,7 +11850,7 @@ iz_ac02,62,139,3	script	Lumin#ac	4_M_NOV_RUMIN,{
 			cutin "nov_lumin03.bmp", 2;
 			completequest 7487;
 			getexp 800,50;
-			getitem 512,22;// Apple
+			getitem 512,11;// Apple
 			next;
 			select("Why are you treating me like this?", "Didn't I loose?");
 			mes "[Lumin]";
@@ -13555,7 +13555,7 @@ izlude_d,155,132,3	duplicate(Locas#iz)	Locas#iz_d	4_M_02
 // - Enchanter Mounds
 // - Teaches the player about enchanting.
 // -----------------------------------------------------------------------------
-izlude,96,125,7	script	Enchanter Mounds#iz	4_CAT_SAILOR2,{
+izlude_d,96,125,7	script	Enchanter Mounds#iz	4_CAT_SAILOR2,{
 	if (!checkweight(1301,1)) {
 		mes "- As you have too many items in your inventory, Quest can't be continued -";
 		close;

@@ -65,10 +65,10 @@
 		mes "This unique ornament, ^3355FFStop Post^000000, is a traffic signal on the road, and doubles as a hair ornament! This, we solemnly promise on the strength of a 100-year guarantee.";
 		next;
 		mes "[William]";
-		mes "To produce a ^3355FFStop Post^000000, we need ^3355FF91100 Zeny^000000, ^3355FF50 Trunk^000000 and ^3355FF1 Black Dyestuffs^000000.";
+		mes "To produce a ^3355FFStop Post^000000, we need ^3355FF91100 Zeny^000000, ^3355FF100 Trunk^000000 and ^3355FF1 Black Dyestuffs^000000.";
 		next;
-		if ((countitem(1019) > 49) && (countitem(983) > 0) && (Zeny > 91099)) {
-			delitem 1019,50;  //Wooden_Block
+		if ((countitem(1019) > 99) && (countitem(983) > 0) && (Zeny > 91099)) {
+			delitem 1019,100;  //Wooden_Block
 			delitem 983,1;  //Black_Dyestuffs
 			set Zeny, Zeny-91100;
 			mes "[William]";

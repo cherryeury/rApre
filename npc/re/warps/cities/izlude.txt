@@ -112,14 +112,14 @@ int_land03,49,57,0	duplicate(#intro_to_izlude)	#intro_to_izlude_c	WARPNPC,2,2
 int_land04,49,57,0	duplicate(#intro_to_izlude)	#intro_to_izlude_d	WARPNPC,2,2
 
 //= Izlude Academy ===========================================
-izlude,125,257,0	warp	#to_ac01	2,2,iz_ac01,99,29
-izlude,130,257,0	warp	#to_ac02	2,2,iz_ac01,99,29
+//izlude,125,257,0	warp	#to_ac01	2,2,iz_ac01,99,29
+//izlude,130,257,0	warp	#to_ac02	2,2,iz_ac01,99,29
 iz_ac01,100,24,0	warp	#to_ac01-1	2,2,izlude,127,253
 iz_ac01,78,25,0	warp	#to_ac2f01	2,2,iz_ac02,104,27
 iz_ac01,122,25,0	warp	#to_ac2f02	2,2,iz_ac02,104,27
 iz_ac02,94,27,0	warp	#to_ac1f01	2,2,iz_ac01,78,28
 iz_ac02,113,27,0	warp	#to_ac1f02	2,2,iz_ac01,122,28
-new_1-3,96,176,0	warp	#to_ac01-2	1,1,iz_ac01,49,73
+//new_1-3,96,176,0	warp	#to_ac01-2	1,1,iz_ac01,49,73
 
 //= Izlude Academy Duplicates ================================
 izlude_a,125,257,0	warp	#to_ac01_a	2,2,iz_ac01_a,99,29

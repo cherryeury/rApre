@@ -53,11 +53,11 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 		close2;
 		break;
 	case 2:
-		if (Zeny < 20) {
+		if (Zeny < 500) { // if (Zeny < 20) {
 			mes "[Kafra Leilah]";
 			mes "Excuse me, but it";
 			mes "seems that you don't";
-			mes "have the 20 zeny to pay";
+			mes "have the 500 zeny to pay";
 			mes "the Storage access fee...";
 			close;
 		}
@@ -68,8 +68,8 @@ aldeba_in,96,181,4	script	Kafra Service	113,{
 		mes "and administrative functions,";
 		mes "I'll access your Storage for you.";
 		next;
-		set Zeny, Zeny-20;
-		set RESRVPTS, RESRVPTS + (20/5);
+		set Zeny, Zeny-500; // set Zeny, Zeny-20;
+		set RESRVPTS, RESRVPTS + (500/5);
 		mes "[Kafra Leilah]";
 		mes "In the future, please";
 		mes "ask the Kafra Employee on";

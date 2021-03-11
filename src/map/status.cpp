@@ -3991,9 +3991,9 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 #endif
 			if(sd->inventory.u.items_inventory[index].card[0] == CARD0_FORGE) { // Forged weapon
 				wd->star += (sd->inventory.u.items_inventory[index].card[1]>>8);
-				if(wd->star >= 15) wd->star = 40; // 3 Star Crumbs now give +40 dmg
+				if(wd->star >= 30) wd->star = 80; // 3 Star Crumbs now give +40 dmg
 				if(pc_famerank(MakeDWord(sd->inventory.u.items_inventory[index].card[2],sd->inventory.u.items_inventory[index].card[3]) ,MAPID_BLACKSMITH))
-					wd->star += 10;
+					wd->star += 20;
 				if (!wa->ele) // Do not overwrite element from previous bonuses.
 					wa->ele = (sd->inventory.u.items_inventory[index].card[1]&0x0f);
 			}
@@ -12804,7 +12804,7 @@ int status_change_clear(struct block_list* bl, int type)
 			case SC_ELEMENTALCHANGE: // Only when its Holy or Dark that it doesn't dispell on death
 				if( sc->data[i]->val2 != ELE_HOLY && sc->data[i]->val2 != ELE_DARK )
 					break;
-			case SC_WEIGHT50:
+			case SC_WEIGHT50: case SC_CRITICALWOUND: case SC_COMA:
 			case SC_WEIGHT90:
 			case SC_EDP:
 			case SC_MELTDOWN:
@@ -13996,7 +13996,7 @@ TIMER_FUNC(status_change_timer){
 
 	case SC_BURNING:
 		if (sce->val4 >= 0) {
-			int64 damage = 1000 + (3 * status->max_hp) / 100; // Deals fixed (1000 + 3%*MaxHP)
+			int64 damage = 100 + (6 * status->max_hp) / 100; // Deals fixed (1000 + 3%*MaxHP) // int64 damage = 1000 + (3 * status->max_hp) / 100; // Deals fixed (1000 + 3%*MaxHP)
 			map_freeblock_lock();
 			dounlock = true;
 			status_fix_damage(bl, bl, damage, clif_damage(bl, bl, tick, 0, 1, damage, 1, DMG_NORMAL, 0, false),0);
@@ -15378,7 +15378,7 @@ static int status_natural_heal(struct block_list* bl, va_list args)
 		if(!vd)
 			vd = status_get_viewdata(bl);
 		if(vd && vd->dead_sit == 2)
-			multi += 1; //This causes the interval to be halved
+			multi += 2; //multi += 1; //This causes the interval to be halved
 		if(regen->state.gc)
 			multi += 1; //This causes the interval to be halved
 	}

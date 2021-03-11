@@ -181,13 +181,13 @@ que_ng,152,167,3	script	Master Miller	901,{
 			mes "power of the earth protect";
 			mes "you in all of your adventures~";
 			callfunc "Job_Change",Job_Gunslinger;
-			set GUNS_Q,6;
+			set GUNS_Q,6; JobLevel = JobLevel + 1;
 			completequest 6024;
-			if (rand(1,2) == 1) {
-				getitem 13100,1; // Six_Shooter
-			} else {
-				getitem 13150,1; // Branch
-			}
+//			if (rand(1,2) == 1) {
+				getitem 13118,1; getitem 13200,500; // Fading Flame
+//			} else {
+//				getitem 13150,1; // Branch
+//			}
 			close;
 		}
 	} else {

@@ -30,7 +30,7 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		mes "[Boya]";
 		mes "To register with the Eden Group ask Laime Evenor next to me.";
 		close;
-	}
+	} if (!callfunc("F_StrongEnough")) { mes "You're not strong enough,"; mes "Come back to me when you've reached level 100 and above."; close; }
 	if (para_suv01 == 0) {
 		mes "What's up?";
 		mes "If you have any normal missions use the bulletin board.";
@@ -2460,7 +2460,7 @@ moc_para01,179,44,3	script	Chef	820,{
 }
 
 moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
-	mes "[Instructor Ur]";
+	mes "[Instructor Ur]"; if (!callfunc("F_StrongEnough")) { mes "Huh, you know the rule."; mes "I'll give you mission when you've reached level 100."; close; }
 	if (!callfunc("F_HasEdenGroupMark")) {
 		mes "Hey there!";
 		mes "I see you're not one of our agents?";
