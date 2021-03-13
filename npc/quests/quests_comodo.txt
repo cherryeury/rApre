@@ -95,7 +95,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 			close;
 		}
 	case 2:
-		if ((countitem(2233) > 0) && (countitem(746) > 99)) {
+		if ((countitem(2233) > 0) && (countitem(746) > 19)) {
 			mes "[Hair Ornament Girl]";
 			mes "You've chosen Bulb band?";
 			mes "If you brought all the required items, I will make it for you~";
@@ -116,7 +116,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 				mes "^3355FFSwish swish snip snip^000000";
 				next;
 				delitem 2233,1;  //Circlet_
-				delitem 746,100;  //Glass_Bead
+				delitem 746,20;  //Glass_Bead
 				mes "[Hair Ornament Girl]";
 				mes "Look at this! Well done~";
 				mes "Please come again~ hoooo!";
@@ -132,7 +132,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 			mes "[Hair Ornament Girl]";
 			mes "I'll need...";
 			mes "^3355FF1 Slotted Circlet^000000";
-			mes "^3355FF100 Glass Bead^000000";
+			mes "^3355FF20 Glass Bead^000000";
 			next;
 			mes "[Hair Ornament Girl]";
 			mes "If you bring all the items then I will make it for you right away.";
@@ -178,7 +178,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 			close;
 		}
 	case 4:
-		if ((countitem(2211) > 0) && (countitem(978) > 0) && (countitem(7003) > 499)) {
+		if ((countitem(2211) > 0) && (countitem(978) > 0) && (countitem(7003) > 299)) {
 			mes "[Hair Ornament Girl]";
 			mes "You've chosen Blue Hairband?";
 			mes "If you brought all the required items, I will make it for you~";
@@ -200,7 +200,7 @@ comodo,228,159,3	script	Hair Ornament Girl	700,{
 				next;
 				delitem 2211,1;  //Bandana
 				delitem 978,1;  //Cobaltblue_Dyestuffs
-				delitem 7003,500;  //Anolian_Skin
+				delitem 7003,300;  //Anolian_Skin
 				mes "[Hair Ornament Girl]";
 				mes "Look, at this! Well done!";
 				mes "Please come again~ ";
@@ -239,7 +239,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 	next;
 	switch(select("Mine Helmet:Parcel Hat:Grief for Greed:Opera Phantom Mask")) {
 	case 1:
-		if ((countitem(5009) > 0) && (countitem(5028) > 0) && (countitem(999) > 49) && (countitem(747) > 0)) {
+		if ((countitem(5009) > 0) && (countitem(5028) > 0) && (countitem(999) > 24) && (countitem(747) > 0)) {
 			mes "[Isac Mari]";
 			mes "Mine Helmet was designed for the miners in the coal mines to have light in the dark. If you brought all the required items, I will go ahead and make it for you~";
 			next;
@@ -264,7 +264,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 				delitem 5009,1;  //Safety_Helmet
 				delitem 5028,1;  //Candle
 				delitem 747,1;  //Crystal_Mirror
-				delitem 999,50;  //Steel
+				delitem 999,25;  //Steel
 				mes "[Isac Mari]";
 				mes "I'm not quite sure if this is the right one, but it looks about right. Ha ha~";
 				getitem 5031,1; // Mine_Helm
@@ -291,7 +291,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			close;
 		}
 	case 2:
-		if ((countitem(1059) > 299) && (countitem(907) > 199) && (countitem(978) > 0)) {
+		if ((countitem(1059) > 149) && (countitem(907) > 99) && (countitem(978) > 0)) {
 			mes "[Isac Mari]";
 			mes "Parcel Hat seems to be useful for business people to carry around their products. If you brought everything I need, I will make it for you.";
 			mes "If you brought all the required items, I will make it for you~";
@@ -316,8 +316,8 @@ comodo,273,137,4	script	Traveler#head	702,{
 				mes "I think I messed up!";
 				mes "No, wait, I think I can fix this...";
 				next;
-				delitem 1059,300;  //Transparent_Cloth
-				delitem 907,200;  //Resin
+				delitem 1059,150;  //Transparent_Cloth
+				delitem 907,100;  //Resin
 				delitem 978,1;  //Cobaltblue_Dyestuffs
 				mes "[Isac Mari]";
 				mes "Well...";
@@ -338,8 +338,8 @@ comodo,273,137,4	script	Traveler#head	702,{
 			next;
 			mes "[Isac Mari]";
 			mes "I'll need...";
-			mes "^3355FF300 Fabric^000000";
-			mes "^3355FF200 Resin^000000 and";
+			mes "^3355FF150 Fabric^000000";
+			mes "^3355FF100 Resin^000000 and";
 			mes "^3355FF1 Cobaltblue Dyestuffs^000000";
 			mes "to make a Parcel Hat.";
 			next;
@@ -348,7 +348,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			close;
 		}
 	case 3:
-		if ((countitem(2233) > 0) && (countitem(969) > 1) && (countitem(949) > 79) && (countitem(999) > 19) && (countitem(938) > 799)) {
+		if ((countitem(2233) > 0) && (countitem(969) > 0) && (countitem(949) > 79) && (countitem(999) > 19) && (countitem(938) > 799)) {
 			mes "[Isac Mari]";
 			mes "Grief for Greed...";
 			mes "If you brought all the required items, I'll go ahead and make it for you~";
@@ -372,7 +372,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 				mes "Whew! This is pretty hard!";
 				next;
 				delitem 2233,1;  //Circlet_
-				delitem 969,2;  //Gold
+				delitem 969,1;  //Gold
 				delitem 949,80;  //Feather
 				delitem 999,20;  //Steel
 				delitem 938,800;  //Sticky_Mucus
@@ -399,7 +399,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			mes "[Isac Mari]";
 			mes "For this hat, I'll need...";
 			mes "^3355FF1 Slotted Circlet^000000";
-			mes "^3355FF2 Gold^000000";
+			mes "^3355FF1 Gold^000000";
 			mes "^3355FF20 Steel^000000";
 			mes "^3355FF80 Feather^000000";
 			mes "^3355FF800 Sticky Mucus^000000";
@@ -409,7 +409,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			close;
 		}
 	case 4:
-		if ((countitem(2281) > 0) && (countitem(1048) > 299)) {
+		if ((countitem(2281) > 0) && (countitem(1048) > 49)) {
 			mes "[Isac Mari]";
 			mes "Opera Phantom Mask...";
 			mes "Frightening, but also tragic and romantic. If you brought all the required items, I will make it for you~";
@@ -433,7 +433,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 				mes "Whew! This is pretty hard!";
 				next;
 				delitem 2281,1;  //Phantom_Of_Opera
-				delitem 1048,300;  //Slender_Snake
+				delitem 1048,50;  //Slender_Snake
 				mes "[Isac Mari]";
 				mes "I'm not quite sure if this is the right one.";
 				mes "But it looks fine. Ha ha";
@@ -462,7 +462,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			mes "[Isac Mari]";
 			mes "If you want to make Phantom of Opera. You will need:";
 			mes "^3355FF1 Opera Masque^000000";
-			mes "^3355FF500 Horrendous Hair^000000";
+			mes "^3355FF50 Horrendous Hair^000000";
 			next;
 			mes "[Isac Mari]";
 			mes "If you bring all the items then I will make it for you right away. See you later~";

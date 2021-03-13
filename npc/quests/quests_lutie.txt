@@ -79,7 +79,7 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 			mes "Rainbow Eggshell?";
 			mes "1 Egg Shell";
 			mes "1 Cobaltblue Dyestuffs";
-			mes "400 Claw of Desert Wolf";
+			mes "50 Claw of Desert Wolf";
 			break;
 		case 5:
 			mes "[Titicupe]";
@@ -87,31 +87,31 @@ xmas,117,295,4	script	Vending Machine Man	704,{
 			mes "You!";
 			mes "You know something...";
 			mes "Heh heh~ Anyway";
-			mes "200 Alice's Apron";
+			mes "100 Alice's Apron";
 			break;
 		case 6:
 			mes "[Titicupe]";
 			mes "Chef Hat?";
-			mes "100 Piece of Cake";
+			mes "120 Piece of Cake";
 			mes "1 White Dyestuffs";
-			mes "500 Feather";
-			mes "500 Dragon Scale";
+			mes "330 Feather";
+			mes "450 Dragon Scale";
 			break;
 		case 7:
 			mes "[Titicupe]";
 			mes "Candle?";
 			mes "1 Bomb Wick";
-			mes "100 Matchstick";
-			mes "150 Royal Jelly";
+			mes "50 Matchstick";
+			mes "100 Royal Jelly";
 			break;
 		case 8:
 			mes "[Titicupe]";
 			mes "Cake Hat?";
-			mes "20 Candy";
-			mes "10 Candy Cane";
+			mes "10 Candy";
+			mes "5 Candy Cane";
 			mes "15 Well-baked Cookie";
 			mes "20 Piece Of Cake";
-			mes "15 Steel";
+			mes "10 Steel";
 			break;
 		case 9:
 			mes "[Titicupe]";
@@ -229,12 +229,12 @@ xmas,115,297,4	script	Vending Machine	111,{
 		}
 		break;
 	case 5:
-		if ((countitem(5015) > 0) && (countitem(978) > 0) && (countitem(7030) > 399)){ 
+		if ((countitem(5015) > 0) && (countitem(978) > 0) && (countitem(7030) > 49)){ 
 			mes "^3355FFYou gingerly place the items into the snowman's mouth.^000000";
 			next;
 			delitem 5015,1;  //Egg_Shell
 			delitem 978,1;  //Cobaltblue_Dyestuffs
-			delitem 7030,400;  //Claw_Of_Desert_Wolf
+			delitem 7030,50;  //Claw_Of_Desert_Wolf
 			emotion ET_O;
 			mes "^3355FF*Vroooooom~~*";
 			mes "*Bzzzzzt*";
@@ -250,10 +250,10 @@ xmas,115,297,4	script	Vending Machine	111,{
 		}
 		break;
 	case 6:
-		if (countitem(7047) > 199) {
-			mes "^3355FFYou gingerly place all 200 Aprons into the snowman's mouth.^000000";
+		if (countitem(7047) > 99) {
+			mes "^3355FFYou gingerly place all 100 Aprons into the snowman's mouth.^000000";
 			next;
-			delitem 7047,200;  //Alice's_Apron
+			delitem 7047,100;  //Alice's_Apron
 			emotion ET_O;
 			mes "^3355FF*Vroooooom~~*";
 			mes "*Bzzzzzt*";
@@ -296,12 +296,12 @@ xmas,115,297,4	script	Vending Machine	111,{
 		}
 		break;
 	case 8:
-		if ((countitem(2279) > 0) && (countitem(7035) > 99) && (countitem(526) > 149)) {
+		if ((countitem(2279) > 0) && (countitem(7035) > 49) && (countitem(526) > 99)) {
 			mes "^3355FFYou gingerly place the items into the snowman's mouth.^000000";
 			next;
 			delitem 2279,1;  //Bomb_Wick
-			delitem 7035,100;  //Matchstick
-			delitem 526,150;  //Royal_Jelly
+			delitem 7035,50;  //Matchstick
+			delitem 526,100;  //Royal_Jelly
 			emotion ET_O;
 			mes "^3355FF*Vroooooom~~*";
 			mes "*Bzzzzzt*";
@@ -317,11 +317,11 @@ xmas,115,297,4	script	Vending Machine	111,{
 		}
 		break;
 	case 9:
-		if ((countitem(529) > 19) && (countitem(530) > 9) && (countitem(538) > 14) && (countitem(539) > 19) && (countitem(999) > 15)) { 
+		if ((countitem(529) > 9) && (countitem(530) > 4) && (countitem(538) > 14) && (countitem(539) > 19) && (countitem(999) > 9)) { 
 			mes "^3355FFYou gingerly place the items into the snowman's mouth.^000000";
 			next;
-			delitem 529,20;  //Candy
-			delitem 530,10;  //Candy_Striper
+			delitem 529,10;  //Candy
+			delitem 530,5;  //Candy_Striper
 			delitem 538,15;  //Well_Baked_Cookie
 			delitem 539,20;  //Piece_Of_Cake
 			delitem 999,10;  //Steel

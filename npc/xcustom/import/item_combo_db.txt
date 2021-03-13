@@ -3,8 +3,8 @@
 // Structure of Database:
 // ID:ID:ID:ID,{ Script }
 
-2312:2656,{ bonus bDef,45; bonus bMaxHP,150; }
-2313:2656,{ bonus bDef,45; bonus bMaxHP,150; }
+2312:2656,{ bonus bDef,45; }
+2313:2656,{ bonus bDef,45; }
 4545:18730,{ bonus bMatk,-5; bonus bBaseAtk,-5; }
 1420:2133,{ bonus bDef,18; }
 1421:2133,{ bonus bDef,18; }
@@ -16,32 +16,5 @@
 4031:4161,{ bonus bDef,27; }
 4191:4208:4258:4309:4325:4327,{ bonus bDef,45; }
 4229:4244:4299:4313,{ bonus bDef,27; }
-4311:4319:4331:4371,{ bonus bDef,18; bonus bInt,1; bonus bStr,1; }
-18540:5072,{ bonus bAspdRate,getequiprefinerycnt(EQI_HEAD_TOP); bonus2 bSPLossRate,6,2000; } 
-18540:5066,{ bonus bAspdRate,getequiprefinerycnt(EQI_HEAD_TOP); bonus2 bSPLossRate,6,2000; }
-1573:2334,{ bonus bInt,1; }
-1573:2372,{ bonus bInt,1; }
-1573:2716:2717,{ bonus bInt,1; }
-1629:5045,{ bonus bDex,1; bonus bInt,1; }
-2339:2522,{ bonus bAgi,1; }
-2339:2523,{ bonus bAgi,1; }
-2353:2418:2517,{ bonus bVit,1; }
-4090:4212:4328,{ bonus bAllStats,1; }
-4172:4210:4230:4257:4272,{ bonus bAgi,1; bonus bStr,1; }
-4178:4199:4234:4252:4297,{ bonus bAgi,1; bonus bDex,1; }
-4178:4234:4252:4297:4381,{ bonus bDex,1; }
-4220:4246:4311:4319:4331,{ bonus bStr,1; }
-4186:4206:4233:4281:4321,{ bonus bLuk,1; }
-4036:4186:4233:4281:4343,{ bonus bStr,1; }
-4208:4258:4325:4327:4382,{ bonus bInt,1; }
-4185:4217:4280:4293:4312,{ bonus bVit,1; }
-4185:4293:4312:4332,{ bonus bStr,1; } 
-2983:4269,{ bonus bInt,1; }
-4218:4269,{ bonus bVit,1; bonus bInt,1; }
-4172:4210:4230:4257:4272,{ bonus bAgi,1; bonus bStr,1;}
-4185:4217:4280:4293:4312,{ bonus bVit,1; }
-4039:4210:4230:4257:4348,{ bonus bStr,1; bonus bAgi,1;}
-2357:2524:2421:5171,{ bonus bAllstats,1; }
-2718:1723,{ bonus bDex,1; }
-2399:2533,{ bonus bAgi,1; }
+4311:4319:4331:4371,{ bonus bDef,18; }
 5782:2125,{ bonus bDef,18; }

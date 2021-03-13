@@ -563,3 +563,19 @@ Body:
         bonus bInt,1;
         bonus bDef,10;
       }
+  - Mob: ORK_WARRIOR
+    TameItem: Horror_Of_Tribe
+    EggItem: Orc_Warrior_Egg
+    EquipItem: Wild_Flower
+    FoodItem: Pet_Food
+    Fullness: 5
+    IntimacyFed: 20
+    CaptureRate: 500
+    Script: >
+      .@i = getpetinfo(PETINFO_INTIMATE);
+      
+      if (.@i >= PET_INTIMATE_LOYAL) {
+        bonus bAtk,15;
+      } else if (.@i >= PET_INTIMATE_CORDIAL) {
+        bonus bAtk,10;
+      }

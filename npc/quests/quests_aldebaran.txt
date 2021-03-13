@@ -29,9 +29,9 @@ aldeba_in,152,166,4	script	Trader#01	86,{
 	mes "For what purpose do I collect and trade these hats from all around the world? Choose a hat, get closer to unraveling the mystery...";
 	next;
 	mes " (1) ^3355FFDoctor Band^000000:";
-	mes "1 Red Bandana + 50 Irons + 10 Cracked Diamond + 3500 Zeny";
+	mes "1 Red Bandana + 50 Irons + 1 Cracked Diamond + 3500 Zeny";
 	mes " (2)^3355FFFeather Bonnet^000000:";
-	mes "1 Romantic Gent + 500 Feather of Birds + 500 Zeny";
+	mes "1 Romantic Gent + 300 Feather of Birds + 500 Zeny";
 	mes " (3) ^3355FFPhantom of Opera^000000:";
 	mes "20 Iron + 1 Singing Plant + 5000 Zeny ";
 	mes " (4) ^3355FFSakkat^000000:";
@@ -39,10 +39,10 @@ aldeba_in,152,166,4	script	Trader#01	86,{
 	next;
 	switch(select(" Doctor Band : Feather Bonnet : Phantom of Opera : Sakkat ")) {
 	case 1:
-		if ((countitem(2275) > 0) && (countitem(998) > 9) && (countitem(733) > 14) && (Zeny > 3499)) {
+		if ((countitem(2275) > 0) && (countitem(998) > 49) && (countitem(733) > 0) && (Zeny > 3499)) {
 			delitem 2275,1; //Red_Bandana
 			delitem 998,50; //Iron
-			delitem 733,10; //Crystal_Jewel___
+			delitem 733,1; //Crystal_Jewel___
 			set Zeny, Zeny-3500;
 			mes "[Trader]";
 			mes "Hm! You don't have a medical license, do you? It's alright, I've heard about a rogue, unlicensed physician who performed medical miracles! But... That might have been a comic book.";
@@ -60,9 +60,9 @@ aldeba_in,152,166,4	script	Trader#01	86,{
 			close;
 		}
 	case 2:
-		if ((countitem(2247) > 0) && (countitem(916) > 499) && (Zeny > 599)) {
+		if ((countitem(2247) > 0) && (countitem(916) > 299) && (Zeny > 499)) {
 			delitem 2247,1; //Oldman's_Romance
-			delitem 916,500; //Feather_Of_Birds
+			delitem 916,300; //Feather_Of_Birds
 			set Zeny, Zeny-500;
 			mes "[Trader]";
 			mes "Ooh~! You have good fashion sense. I know you've had a hard time collecting this stuff, but this hat is worth it. Take it. All you need now is a fur coat and a cane!";
@@ -76,7 +76,7 @@ aldeba_in,152,166,4	script	Trader#01	86,{
 			close;
 		}
 	case 3:
-		if ((countitem(998) > 19) && (countitem(707) > 1) && (Zeny > 4999)){ //Iron Singing_Plant 
+		if ((countitem(998) > 19) && (countitem(707) > 0) && (Zeny > 4999)){ //Iron Singing_Plant 
 			delitem 998,20; //Iron
 			delitem 707,1; //Singing_Plant
 			set Zeny, Zeny-5000;
@@ -91,8 +91,8 @@ aldeba_in,152,166,4	script	Trader#01	86,{
 			close;
 		}
 	case 4:
-		if ((countitem(1019) > 299) && (Zeny > 9999)){ //Wooden_Block 
-			delitem 1019,300; //Wooden_Block
+		if ((countitem(1019) > 119) && (Zeny > 9999)){ //Wooden_Block 
+			delitem 1019,120; //Wooden_Block
 			set Zeny, Zeny-10000;
 			mes "[Trader]";
 			mes "If you have a chance to visit the Uplander Village, Payon, please go and meet the Sakkat Craftsman.";

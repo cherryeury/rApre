@@ -6292,19 +6292,19 @@ moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
 	mes "[Irina]";
 	mes "If you bring the materials,";
 	mes "we can make one immediately!";
-	mes "The materials are: ^0000FFNine Tails 1000, Yarn 10, Soft Silk 10, Sea-otter Fur 1000, Spool 1^000000.";
+	mes "The materials are: ^0000FFNine Tails 20, Yarn 10, Soft Silk 10, Sea-otter Fur 20, Spool 1^000000.";
 	if (isbegin_quest(18121) == 0)
 		setquest 18121;
 	next;
-	if (countitem(1022) > 999 && countitem(7038) > 9 && countitem(7166) > 9 && countitem(7065) > 999 && countitem(7217)) {
+	if (countitem(1022) > 19 && countitem(7038) > 9 && countitem(7166) > 9 && countitem(7065) > 19 && countitem(7217)) {
 		mes "[Irina]";
 		mes "You did well.";
 		mes "Give me the materials. I will make the Shafka.";
 		next;
-		delitem 1022,1000; //Fox_Tail
-		delitem 7038,9; //Yarn
+		delitem 1022,20; //Fox_Tail
+		delitem 7038,10; //Yarn
 		delitem 7166,10; //Soft_Silk_Cloth
-		delitem 7065,1000; //Sea_Otter_Leather
+		delitem 7065,20; //Sea_Otter_Leather
 		delitem 7217,1; //Spool
 		getitem 5243,1; //Chullos
 		completequest 18121;

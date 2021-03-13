@@ -399,7 +399,7 @@ alberta_in,28,145,4	script	Grampa	120,{
 	mes "[Grampa]";
 	mes "But my soul still burns with youthful vigor! It's just... This old body can't keep up anymore... *Hack! Wheeeeze~*";
 	next;
-	if (countitem(1030) > 29) {
+	if (countitem(1030) > 9) {
 		switch(select("Show him Tiger's Footskin.:Exchange it with Boys Cap.:Cancel")) {
 		case 1:
 			mes "[Grampa]";
@@ -416,7 +416,7 @@ alberta_in,28,145,4	script	Grampa	120,{
 			mes "Will revive my virility!!!! The Tiger's Footskin~!! Ohhhh! Ohh My God !! Please!!! Please give me that... Please...";
 			close;
 		case 2:
-			delitem 1030,30;  //Tiger_Footskin
+			delitem 1030,10;  //Tiger_Footskin
 			getitem 5016,1; //Boy's_Cap
 			mes "[Grampa]";
 			mes "T... Thank you !!";
@@ -451,7 +451,7 @@ alberta_in,28,145,4	script	Grampa	120,{
 			next;
 			mes "[Grampa]";
 			mes "Before I die...";
-			mes "I wish I could eat 30 Tiger's Footskin. Then, I wouldn't have to die!";
+			mes "I wish I could eat 10 Tiger's Footskin. Then, I wouldn't have to die!";
 			next;
 			mes "[Grampa]";
 			mes "If someone helped me get them, I would give that person my precious item, ^3355FFBoys Cap^000000 without regret...";
@@ -483,12 +483,12 @@ alberta_in,122,53,4	script	Cherokee	47,{
 	mes "[Cherokee]";
 	mes "Do you...";
 	mes "Do you have ^FF3355Evil Horn^000000?";
-	mes "If you offer me 300 Evil Horns, I will give you an ^3355FFAntler^000000 from my precious collection. So, deal?";
+	mes "If you offer me 20 Evil Horns, I will give you an ^3355FFAntler^000000 from my precious collection. So, deal?";
 	next;
 	switch(select("Okay, let's deal.:Shut up, Dumbo.")) {
 	case 1:
-		if (countitem(923) > 299) {
-			delitem 923,300;  //Evil_Horn
+		if (countitem(923) > 19) {
+			delitem 923,20;  //Evil_Horn
 			mes "[Cherokee]";
 			mes "Whoah~! This is the first time I've ever seen a real ^FF3355Evil Horn^000000!!";
 			mes "Thank you! Here, this is my Antler for you!";
@@ -501,7 +501,7 @@ alberta_in,122,53,4	script	Cherokee	47,{
 		else {
 			mes "[Cherokee]";
 			mes "Hmm...";
-			mes "You don't seem to have enough. I need ^FF3355300 Evil Horns^000000 for my collection.";
+			mes "You don't seem to have enough. I need ^FF335520 Evil Horns^000000 for my collection.";
 			close;
 		}
 	case 2:
@@ -514,7 +514,7 @@ alberta_in,122,53,4	script	Cherokee	47,{
 // 'Bao Bao', 'Crescent Hairpin', 'Fashionable Glasses', 'Heart Hairpin' Quest
 //============================================================
 alberta,120,53,1	script	Stylish Merchant#new30	51,{
-	if ((countitem(10007) > 0) && (countitem(968) > 199)) {
+	if ((countitem(10007) > 0) && (countitem(968) > 49)) {
 		mes "[Zic]";
 		mes "I know I know, you just want to get a Bao Bao of your own. But I can't concentrate on my work if you keep rushing me like this.";
 		next;
@@ -523,7 +523,7 @@ alberta,120,53,1	script	Stylish Merchant#new30	51,{
 		mes "*Boom Boom!*^000000";
 		next;
 		delitem 10007,1;  //Silk_Ribbon
-		delitem 968,200;  //Voucher_Of_Orcish_Hero
+		delitem 968,50;  //Voucher_Of_Orcish_Hero
 		mes "[Zic]";
 		mes "Phew!";
 		mes "There you go~!";
@@ -531,7 +531,7 @@ alberta,120,53,1	script	Stylish Merchant#new30	51,{
 		getitem 5042,1; // Hair_Protector
 		close;
 	}
-	else if((countitem(5041) > 0) && (countitem(999) > 14)) {
+	else if((countitem(5041) > 0) && (countitem(999) > 9)) {
 		mes "[Zic]";
 		mes "Alright alright! Gosh, your Crescent Hairpin will be ready in a bit, but I can't concentrate my work if you keep rushing me like this!";
 		next;
@@ -540,7 +540,7 @@ alberta,120,53,1	script	Stylish Merchant#new30	51,{
 		mes "*Boom Boom!*^000000";
 		next;
 		delitem 5041,1;  //Heart_Hair_Pin
-		delitem 999,15;  //Steel
+		delitem 999,10;  //Steel
 		mes "[Zic]";
 		mes "Phew!";
 		mes "It's done~!";
@@ -608,7 +608,7 @@ alberta,120,53,1	script	Stylish Merchant#new30	51,{
 			mes "[Zic]";
 			mes "Let's see, I'll need...";
 			mes "1 ^0000FFSilk Ribbon^000000";
-			mes "200 ^0000FFHeroic Emlbem^000000";
+			mes "50 ^0000FFHeroic Emlbem^000000";
 			mes "...Did you know this already?";
 			close;
 		case 2:
@@ -618,7 +618,7 @@ alberta,120,53,1	script	Stylish Merchant#new30	51,{
 			mes "[Zic]";
 			mes "Okay, I'll need...";
 			mes "1 ^0000FFHeart hair pin^000000";
-			mes "20 ^0000FFSteel^000000";
+			mes "10 ^0000FFSteel^000000";
 			mes "...Did you know this already?";
 			close;
 		case 3:

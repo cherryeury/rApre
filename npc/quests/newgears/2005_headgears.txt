@@ -19,7 +19,7 @@
 //============================================================ 
 
 yuno,222,116,3	script	Kasis#LhzHat	851,{
-	if(countitem(519) > 74 && countitem(7031) > 74 && countitem(548) > 74 && countitem(539) > 74)
+	if(countitem(519) > 49 && countitem(7031) > 49 && countitem(548) > 49 && countitem(539) > 49)
 	{
 		mes "[Kasis]";
 		mes "Milk, Cheese,";
@@ -55,10 +55,10 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 				mes "most important meal of the day!";
 				mes "Now, I better prepare those";
 				mes "lunches. Goodbye, my friend~";
-				delitem 519,75;
-				delitem 7031,75;
-				delitem 548,75;
-				delitem 539,75;
+				delitem 519,50;
+				delitem 7031,50;
+				delitem 548,50;
+				delitem 539,50;
 				getitem 5107,1;
 				close;
 			case 2:
@@ -122,10 +122,10 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 						mes "most important meal of the day!";
 						mes "Now, I better prepare those";
 						mes "lunches. Goodbye, my friend~";
-						delitem 519,74;
-						delitem 7031,74;
-						delitem 548,74;
-						delitem 539,74;
+						delitem 519,50;
+						delitem 7031,50;
+						delitem 548,50;
+						delitem 539,50;
 						getitem 5107,1;
 						close;
 					case 2:
@@ -186,10 +186,10 @@ yuno,222,116,3	script	Kasis#LhzHat	851,{
 					mes "[Kasis]";
 					mes "Would you";
 					mes "please get me";
-					mes "^4D4DFF75 Milk^000000,";
-					mes "^4D4DFF75 Cheese^000000,";
-					mes "^4D4DFF75 Pieces of Cake^000000 and";
-					mes "^4D4DFF75 Old Frying Pans^000000?";
+					mes "^4D4DFF50 Milk^000000,";
+					mes "^4D4DFF50 Cheese^000000,";
+					mes "^4D4DFF50 Pieces of Cake^000000 and";
+					mes "^4D4DFF50 Old Frying Pans^000000?";
 					next;
 					mes "[Kasis]";
 					mes "I'd really appreciate";
@@ -714,7 +714,7 @@ lighthalzen,143,68,0	script	Strange Guy#LhzHat	47,{
 					mes "^0000FF10 Magnifiers^000000,";
 					mes "^0000FF1887 Tassels^000000,";
 					mes "^0000FF1 Slotted Bucket Hat^000000";
-					mes "and ^0000FF2,887 zeny^000000. Okay?";
+					mes "and ^0000FF1,887 zeny^000000. Okay?";
 					emotion ET_FRET;
 					close;
 				}
@@ -757,7 +757,7 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 	mes "Um, would you do";
 	mes "me a favor, please?";
 	next;
-	if(countitem(526) >= 1 && countitem(7270) >= 100 && countitem(941) >= 500 && countitem(10004))
+	if(countitem(526) && countitem(7270) && countitem(941) && countitem(10004))
 	{
 		mes "[Kid]";
 		mes "Oh! You brought me";
@@ -785,8 +785,8 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 		mes "I hope you're happy with";
 		mes "yourself. Travel safe, okay?";
 		delitem 526,1;
-		delitem 7270,100;
-		delitem 941,500;
+		delitem 7270,1;
+		delitem 941,1;
 		delitem 10004,1;
 		getitem 5110,1;
 		close;
@@ -846,7 +846,7 @@ lighthalzen,360,313,3	script	Kid#LhzHat	706,{
 					mes "Would you";
 					mes "please bring";
 					mes "^3131FF1 Nursing Bottle^000000,";
-					mes "^3131FF500 Nose Ring^000000 and";
+					mes "^3131FF1 Nose Ring^000000 and";
 					mes "^3131FF1 Pacifier^000000? Oh, and one";
 					mes "more ^3131FFRoyal Jelly^000000 for me~";
 					close;
@@ -995,7 +995,7 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 	switch( select( "Make a Mystic Rose.", "End Conversation." ) )
 	{
 		case 1:
-			if(countitem(731) > 14 && countitem(748) > 2 && countitem(982) && Zeny > 49999)
+			if(countitem(731) > 9 && countitem(748) > 2 && countitem(982) && Zeny > 49999)
 			{
 				mes "[Margaret Mary]";
 				mes "Ah, I see that you've brought";
@@ -1033,7 +1033,7 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 						mes "your hair in an elegant and";
 						mes "refined manner when wearing";
 						mes "the Mystic Rose so as not to disgrace these beautiful flowers.";
-						delitem 731,15;
+						delitem 731,10;
 						delitem 748,3;
 						delitem 982,1;
 						set Zeny,Zeny - 50000;
@@ -1067,7 +1067,7 @@ lhz_in02,91,38,5	script	Margaret Mary#LhzHat	90,{
 			next;
 			mes "[Margaret Mary]";
 			mes "Please bring me";
-			mes "^3131FF15 2 Carat Diamonds^000000,";
+			mes "^3131FF10 2 Carat Diamonds^000000,";
 			mes "^3131FF3 Witherless Roses^000000,";
 			mes "^3131FF1 White Dyestuffs^000000 and";
 			mes "^3131FF50,000 zeny^000000 if you would";
@@ -1175,7 +1175,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 						next;
 						mes "[Achiha]";
 						mes "Just bring";
-						mes "^0000FF2 Green Lace^000000,";
+						mes "^0000FF1 Green Lace^000000,";
 						mes "^0000FF1 Silk Ribbon^000000,";
 						mes "^0000FF1 Scarlet Dyestuffs^000000,";
 						mes "^0000FF1 Sunday Hat^000000 and";
@@ -1219,7 +1219,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "I need some materials first.";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF2 Green Lace^000000,";
+				mes "^0000FF1 Green Lace^000000,";
 				mes "^0000FF1 Silk Ribbon^000000,";
 				mes "^0000FF1 Scarlet Dyestuffs^000000,";
 				mes "^0000FF1 Sunday Hat^000000 and";
@@ -1248,7 +1248,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 		switch( select( "Yes.", "I forgot what I need." ) )
 		{
 			case 1:
-				if(countitem(10015) < 2 || countitem(10007) < 1 || countitem(975) < 1 || countitem(5032) < 1 || Zeny < 50000)
+				if(countitem(10015) < 1 || countitem(10007) < 1 || countitem(975) < 1 || countitem(5032) < 1 || Zeny < 50000)
 				{
 					mes "[Achiha]";
 					mes "Uh oh.";
@@ -1259,7 +1259,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 					mes "you need to bring?";
 					next;
 					mes "[Achiha]";
-					mes "^0000FF2 Green Lace^000000,";
+					mes "^0000FF1 Green Lace^000000,";
 					mes "^0000FF1 Silk Ribbon^000000,";
 					mes "^0000FF1 Scarlet Dyestuffs^000000,";
 					mes "^0000FF1 Sunday Hat^000000 and";
@@ -1280,7 +1280,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "take this Red Bonnet.";
 				mes "I hope you like it~";
 				mes "I think I'll relax now...";
-				delitem 10015,2;
+				delitem 10015,1;
 				delitem 10007,1;
 				delitem 975,1;
 				delitem 5032,1;
@@ -1300,7 +1300,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Oh next;, I remember now...";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF2 Green Lace^000000,";
+				mes "^0000FF1 Green Lace^000000,";
 				mes "^0000FF1 Silk Ribbon^000000,";
 				mes "^0000FF1 Scarlet Dyestuffs^000000,";
 				mes "^0000FF1 Sunday Hat^000000 and";
@@ -1321,7 +1321,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 		switch( select( "Yes.", "I forgot what I need." ) )
 		{
 			case 1:
-				if(countitem(10015) < 2 || countitem(10007) < 1 || countitem(975) < 1 || countitem(5032) < 1 || Zeny < 50000)
+				if(countitem(10015) < 1 || countitem(10007) < 1 || countitem(975) < 1 || countitem(5032) < 1 || Zeny < 50000)
 				{
 					mes "[Achiha]";
 					mes "Uh oh.";
@@ -1332,7 +1332,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 					mes "you need to bring?";
 					next;
 					mes "[Achiha]";
-					mes "^0000FF2 Green Lace^000000,";
+					mes "^0000FF1 Green Lace^000000,";
 					mes "^0000FF1 Silk Ribbon^000000,";
 					mes "^0000FF1 Scarlet Dyestuffs^000000,";
 					mes "^0000FF1 Sunday Hat^000000 and";
@@ -1353,7 +1353,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "take this Red Bonnet.";
 				mes "I hope you like it~";
 				mes "I think I'll relax now...";
-				delitem 10015,2;
+				delitem 10015,1;
 				delitem 10007,1;
 				delitem 975,1;
 				delitem 5032,1;
@@ -1372,7 +1372,7 @@ lighthalzen,182,89,0	script	Relaxed-Looking Lady	91,{
 				mes "Oh next;, I remember now...";
 				next;
 				mes "[Achiha]";
-				mes "^0000FF2 Green Lace^000000,";
+				mes "^0000FF1 Green Lace^000000,";
 				mes "^0000FF1 Silk Ribbon^000000,";
 				mes "^0000FF1 Scarlet Dyestuffs^000000,";
 				mes "^0000FF1 Sunday Hat^000000 and";

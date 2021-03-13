@@ -75,7 +75,7 @@ function Add; function Chk; function Slot; function A_An;
 	mes "[^FF6600Reno^000000]";
 	mes "Hi? I am ^FF6600Reno^000000 from the Energy Crystal Research Association, or ECRA.";
 	next;
-	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Headgear:Random Gear for Crystals" + ((.@features_iRO)?":See Equipment List":""))) {
+	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Headgear:Random Gear for Crystals."))) {
 	case 1:
 		mes "[^FF6600Reno^000000]";
 		mes "ECRA is the institute that researches '^0000FFEnergy Crystals^000000' that shall be used as an alternative energy source in the Rune-Midgarts Kingdom, which suffers from a shortage of energy.";
@@ -415,6 +415,7 @@ function Add; function Chk; function Slot; function A_An;
 			mes "- Enhanced Corsair";
 			mes "- Enhanced Bone Helm";
 			mes "- Enhanced Helm of Angel";
+			mes "- Enhanced Refined Deviruchi Hat";
 			mes "- Enhanced Variant Shoes";
 			mes "- Enhanced Ring of Flame Lord";
 			mes "- Enhanced Ring of Resonance";
@@ -466,20 +467,15 @@ function Add; function Chk; function Slot; function A_An;
 			     if (.@r <= 10) getitem 18765,1; //Enhanced_Corsair
 			else if (.@r <= 20) getitem 18768,1; //Enhanced_Bone_Helm
 			else if (.@r <= 25) getitem 18766,1; //Enhanced_Helm_Of_Angel
-			else if (.@r <= 30) getitem 22014,1; //Enhanced_Variant_Shoes
-			else if (.@r <= 31) getitem 2957,1;  //Good_Ring_Of_Flame_Lord
+			else if (.@r <= 30) getitem 5281,1;  //Deviruchi_Cap_C
+			else if (.@r <= 35) getitem 22014,1; //Enhanced_Variant_Shoes
+			else if (.@r <= 36) getitem 2957,1;  //Good_Ring_Of_Flame_Lord
 			else                getitem 2958,1;  //Good_Ring_Of_Resonance
 			break;
 		}
 		mes "[^FF6600Reno^000000]";
 		mes "Thank you very much. The Energy Crystals you donated will be greatly helpful for our research. This is your reward for your donation."; //custom translation
 		close;
-	case 7:  // iRO only
-		mes "[^FF6600Reno^000000]";
-		mes "This is the brochure regarding the equipment upgrade that our Energy Crystal research association provides. Please take a look around.";
-		close2;
-		readbook 11060,1; //Energy_Xtal_Combi_Book
-		end;
 	}
 
 //callsub L_CheckHunting,<quest index>,<start quest>,<number of quests>,"<type>",<reward id>,<reward amount>;
