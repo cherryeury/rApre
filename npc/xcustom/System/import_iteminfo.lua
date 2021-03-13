@@ -1224,6 +1224,33 @@ tbl = {
 		ClassNum = 660,
 		costume = false
 	},	
+	[18762] = {
+		unidentifiedDisplayName = "Unidentified Mask",
+		unidentifiedResourceName = "스마일",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Modified Kitsune Mask",
+		identifiedResourceName = "여우가면",
+		identifiedDescriptionName = {
+			"A replica of Assassin troops' secret hiding mask. Slick shape. Remodeled for extra effect.",
+			"________________________",
+			"AGI +1",
+			"LUK +1",
+			"________________________",
+			"^0000FFRefine Level +7^000000:",
+			"Reduce After Attack Delay by 5%",
+			"________________________",
+			"^0000CCType:^000000 Headgear",
+			"^0000CCDefense:^000000 2",
+			"^0000CCPosition:^000000 Upper",
+			"^0000CCWeight:^000000 30",
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"All Jobs except Novice"
+		},
+		slotCount = 1,
+		ClassNum = 153,
+		costume = false
+	},	
 	[4371] = {
 		unidentifiedDisplayName = "Archdam Card",
 		unidentifiedResourceName = "이름없는카드",

@@ -542,6 +542,7 @@ Header:
 #    Gender: Female
 #  - Id: 5735
 #    Gender: Female
+Body:
   - Id: 1723
     AegisName: Luna_Bow
     Name: Luna Bow
@@ -611,7 +612,7 @@ Header:
     Refineable: true
     Script: |
       bonus bDef,50;
-      bonus bUnbreakableWeapon;   .
+      bonus bUnbreakableWeapon;
   - Id: 1135
     AegisName: Cutlas
     Name: Cutlus
@@ -640,6 +641,27 @@ Header:
       skill "SM_BASH",5;
       bonus bStr,2;
       bonus bDef,10;
+  - Id: 18762
+    AegisName: Remodel_Mask_Of_Fox
+    Name: Improved Kitsune Mask
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 2
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 153
+    Script: |
+      bonus bAgi,1;
+      bonus bLuk,1;
+      if (getrefine()>=7)
+         bonus bAspdRate,5;      
   - Id: 13400
     AegisName: Cutlas_
     Name: Cutlus
@@ -1401,6 +1423,25 @@ Header:
     Script: |
       bonus bDef,10;
       bonus2 bResEff,Eff_Bleeding,2000;
+  - Id: 14365
+    AegisName: Job_Manual5_Box
+    Name: JOB Battle Manual Box
+    Type: Cash
+    Buy: 20
+    Weight: 10
+    Flags:
+      UniqueId: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      getitem 14592,5;    
   - Id: 4260
     AegisName: Wootan_Shooter_Card
     Name: Wootan Shooter Card

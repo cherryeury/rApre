@@ -75,7 +75,7 @@ function Add; function Chk; function Slot; function A_An;
 	mes "[^FF6600Reno^000000]";
 	mes "Hi? I am ^FF6600Reno^000000 from the Energy Crystal Research Association, or ECRA.";
 	next;
-	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Headgear:Random Gear for Crystals."))) {
+	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Headgear:Random Gear for Crystals.")) {
 	case 1:
 		mes "[^FF6600Reno^000000]";
 		mes "ECRA is the institute that researches '^0000FFEnergy Crystals^000000' that shall be used as an alternative energy source in the Rune-Midgarts Kingdom, which suffers from a shortage of energy.";
