@@ -1602,4 +1602,27 @@ tbl = {
 		ClassNum = 4,
 		costume = false
 	},
+	[9062] = {
+		unidentifiedDisplayName = "Baby Poring Egg",
+		unidentifiedResourceName = "荐加己舅",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Baby Poring Egg",
+		identifiedResourceName = "荐加己舅",
+		identifiedDescriptionName = {
+			"An egg in which a Baby Poring cute pet rests.",
+			"Can be hatched by using a ^0033CCPet Incubator^000000.",
+			"________________________",
+			"When intimacy is ^0033CCCordial^000000:",
+			"Increases HP Recovery Rate by 25%.",
+			"________________________",
+			"When intimacy is ^0033CCLoyal^000000:",
+			"Increases HP Recovery Rate by 50%.",
+			"________________________",
+			"^0000CCType:^000000 Monster Egg",
+			"^0000CCDiet:^000000 "
+		},
+		slotCount = 0,
+		ClassNum = 0,
+		costume = false
+	},	
 }
