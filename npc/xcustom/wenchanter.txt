@@ -34,7 +34,6 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 		case 3:
 			mes "[^FF6600Mayomayo^000000]";
 			mes "Basically Awaken is adding few random options to your equip,";
-			mes "you can only enchant item with +7 refine or above ..";
 			mes "well, you'll know after you've tried.";
 			close; 
 		case 2: // Awaken Crimson Weapon
@@ -68,7 +67,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 				case 1995:	
 			if (.@Free == 1){	set .@Forged,1;}
 				set .@Type$,"CR";
-				set .@Level,4;
+				set .@Level,7;
 				set .@crimson,1;
 				goto L_Awaken;
 				}
@@ -126,7 +125,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 			
 		case 2: // Awaken Shield
 			if (getequipid(8) && getiteminfo(getequipid(8), 5) == 32){
-			set .@part,8;
+			set .@part,8;			
 			mes .n$;
 			mes "You can choose the enchant type.";
 			next;
@@ -697,6 +696,8 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1238:
 
 // Lv 4 Weapon	
+	case 16051:
+	case 28717:
 	case 13016:
 	case 13018:
 	case 13019:
@@ -766,18 +767,6 @@ if (.@Free == 1){	set .@Forged,1;}
 switch(getequipid(.@part)) {	
 //Armor
 //Modified
-	case 2101:
-	case 2102:
-	case 2103:
-	case 2104:
-	case 2105:
-	case 2106:
-	case 2107:
-	case 2108:
-	case 2109:
-	case 2117:
-	case 2118:
-	case 2171:
 	case 2501:
 	case 2502:
 	case 2503:
@@ -802,13 +791,11 @@ switch(getequipid(.@part)) {
 	case 2389:
 	case 2441:
 	case 2432:
-	case 2121:
 	case 2359:
 	case 2525:
 	case 2434:
 	case 2372:
 	case 2373:
-	case 2128:
 	case 2371:
 	case 2523:
 	case 2425:
@@ -881,24 +868,6 @@ switch(getequipid(.@part)) {
 	case 2313:
 	case 2339:
 	case 15032:
-	case 2116:
-	case 2147:
-	case 2146:
-	case 2129:
-	case 2133:
-	case 2123:
-	case 2124:
-	case 2138:
-	case 2114:
-	case 2115:
-	case 2110:
-	case 2131:
-	case 2134:
-	case 2125:
-	case 2130:
-	case 2111:
-	case 2148:
-	case 2153:
 	case 2161:
 	case 2514:
 	case 2508:
@@ -944,6 +913,47 @@ if (.@Free == 1){	set .@Forged,1;}
 			set .@level,5;
 			goto L_Awaken;
 	}
+
+			switch(getequipid(.@part)) {
+			// Shieldx
+			case 2101:
+			case 2102:
+			case 2103:
+			case 2104:
+			case 2105:
+			case 2106:
+			case 2107:
+			case 2108:
+			case 2109:
+			case 2121:
+			case 2113:
+			case 2117:
+			case 2118:
+			case 2171:
+			case 2116:
+			case 2147:
+			case 2146:
+			case 2129:
+			case 2133:
+			case 2123:
+			case 2124:
+			case 2138:
+			case 2114:
+			case 2115:
+			case 2110:
+			case 2131:
+			case 2134:
+			case 2125:
+			case 2130:
+			case 2111:
+			case 2128:
+			case 2148:
+			case 2153:		
+		if (.@Free == 1){	set .@Forged,1;}
+			set .@level,6;
+			set .@shield,1;
+			goto L_Awaken;
+	}
 	
  	
 	mes "[^FF6600Mayomayo^000000]";
@@ -951,11 +961,6 @@ if (.@Free == 1){	set .@Forged,1;}
 	close;
 	
 L_Awaken: 
-	if (getequiprefinerycnt(.@part)<7){
-	mes "[^FF6600Mayomayo^000000]";
-	mes "Only equipment +7 or above that can get enchanted.";
-	close;
-	}
 	disable_items;
 	mes "[^FF6600Mayomayo^000000]";
 	mes "Equipped: "+getitemname(getequipid(.@part));
@@ -963,8 +968,54 @@ L_Awaken:
 	set .@ropt2,getequiprandomoption(.@part,1,ROA_ID);
 	set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
 
-if  ((.@part) < 8 ){	
-	if(.@ropt1) {
+if  ((.@Level) == 4 ){
+	if(.@ropt2) {
+		mes "This item can't be enchanted anymore.";
+		mes "Reset enchant ?";
+		mes "(Cost 1 Silvervine Fruit).";
+		next;
+		switch( select( "Cancel.:Reset Enchant." ) ) {
+			case 1:
+				mes "[^FF6600Mayomayo^000000]";	
+				mes "Then, please choose a different one.";
+				close;
+			
+			case 2:
+				goto L_Random;
+				
+				L_Reset:
+				.@equip_id = getequipid(.@part);
+				.@refine = getequiprefinerycnt(.@part);
+				for (.@i = 0; .@i < 4; .@i++)
+					.@card[.@i] = getequipcardid(.@part, .@i);
+				delequip .@part;
+				delitem 6417,1;
+				getitem2 .@equip_id, 1, 1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+				mes "[^FF6600Mayomayo^000000]";	
+				mes "Done reset enchant.";
+				close;
+		}
+}
+if(.@ropt1) {
+	mes "1st Enchantment has been applied.";
+	mes "Begin second enchant ?";
+	next;
+	switch( select( "Yeah keep going.:Cancel." ) ) {
+		case 1:
+		set .@Rand1st,1;
+		mes "[^FF6600Mayomayo^000000]";	
+		goto L_Random;		
+		
+		case 2:
+		mes "[^FF6600Mayomayo^000000]";	
+		mes "Then, please choose a different one.";
+		close;
+		}
+	}
+}	
+
+else {
+if(.@ropt1) {
 	mes "You can only enchant armor once.";
 	mes "Reset enchant ?";
 	mes "(Cost 1 Silvervine Fruit).";
@@ -984,57 +1035,7 @@ if  ((.@part) < 8 ){
 			goto L_Reset;
 		}
 	}
-}	
-if(.@ropt2) {
-	mes "This item can't be enchanted anymore.";
-	mes "Reset enchant ?";
-	mes "(Cost 1 Silvervine Fruit).";
-	next;
-	switch( select( "Cancel.:Reset Enchant." ) ) {
-		case 1:
-			mes "[^FF6600Mayomayo^000000]";	
-			mes "Then, please choose a different one.";
-			close;
-		
-		case 2:
-			if (countitem(6417) <1) {
-			mes "[^FF6600Mayomayo^000000]";	
-			mes "You don't have enough silvervine fruit.";
-			close;		
-			}
-			goto L_Reset;
-			
-			L_Reset:
-			.@equip_id = getequipid(.@part);
-			.@refine = getequiprefinerycnt(.@part);
-			for (.@i = 0; .@i < 4; .@i++)
-				.@card[.@i] = getequipcardid(.@part, .@i);
-			delequip .@part;
-			delitem 6417,1;
-			getitem2 .@equip_id, 1, 1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
-			mes "[^FF6600Mayomayo^000000]";	
-			mes "Done reset enchant.";
-			close;
-	}
 }
-	
-if(.@ropt1) {
-	mes "1st Enchantment has been applied.";
-	mes "Begin second enchant ?";
-	next;
-	switch( select( "Yeah keep going.:Cancel." ) ) {
-		case 1:
-		set .@Rand1st,1;
-		mes "[^FF6600Mayomayo^000000]";	
-		goto L_Random;		
-		
-		case 2:
-		mes "[^FF6600Mayomayo^000000]";	
-		mes "Then, please choose a different one.";
-		close;
-	}
-}
-	
 L_Random:
 // Randomize each Option Slot:
 // Random Option 1
@@ -1084,7 +1085,7 @@ if( .@Forged == 99 ) {
 		}
 	}	
 
-	if(.@Level < 5){ set .@Price,500000; set .Stone,3;
+	if(.@Level == 4){ set .@Price,500000; set .Stone,3;
 		mes "Hmm, a weapon..";
 		//mes "^0000FF50%^000000 chance  to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
@@ -1100,7 +1101,15 @@ if( .@Forged == 99 ) {
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
 		}
-	if(.@Level == 6){ set .@Price,0;
+	if(.@Level == 6){ set .@Price,500000; set .Stone,4;
+		mes "Armory awakening needs 500.000.";
+		mes "And an ^FF0000Elunium^000000.";
+		//mes "^0000FF50%^000000 chance to get 1 High Rank random option.";
+		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
+		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
+		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
+		}		
+	if(.@Level == 7){ set .@Price,0; set .Stone,3;
 		mes "Crimson weapons Awaken is free.";
 		mes "You'll get permanent element endow option.";
 		mes "And it has ^0000FF100%^000000 success rate for awakening."; 
@@ -1175,6 +1184,17 @@ else goto L_Broke;
 }
 
 else if( .@Level == 6) {
+.@rand = rand( 10000 ); // total 100
+setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0); set .@success,1;
+//if ( .@rand < 501 ){setrandomoption(.@part,1,getd(".RandOpt2_"+.@Type$+"["+.@Opt2+"]"),.@Opt2_V,0); set .@success,1;}
+//if ( .@rand < 101 ){setrandomoption(.@part,2,getd(".RandOpt3_"+.@Type$+"["+.@Opt3+"]"),.@Opt3_V,0); set .@success,1;}
+//if ( .@rand < 11 ){setrandomoption(.@part,3,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;}
+//if ( .@rand < 11 ){setrandomoption(.@part,4,getd(".RandOpt5_"+.@Type$+"["+.@Opt5+"]"),.@Opt5_V,0);set .@success,1;}
+if (.@success == 1){goto L_Finish;}
+else goto L_Broke;
+}
+
+else if( .@Level == 7) {
 .@rand = rand( 10000 ); // total 100
 setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0); set .@success,1;
 //if ( .@rand < 501 ){setrandomoption(.@part,1,getd(".RandOpt2_"+.@Type$+"["+.@Opt2+"]"),.@Opt2_V,0); set .@success,1;}
@@ -1290,7 +1310,6 @@ setarray .RandOpt4_P[0],
 						RDMOPT_VAR_ATTPOWER,						// ATK
 						RDMOPT_VAR_ATKPERCENT,						// ATK%
 						RDMOPT_VAR_PLUSASPD,						// ASPD
-						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
 						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT								
 						RDMOPT_DAMAGE_CRI_TARGET;					// CRIT DMG					
@@ -1300,8 +1319,8 @@ setarray .RandOpt4_P[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_P_MinV[0],1,1,1,1,10,2,1,3,5,3,5;
-setarray .RandOpt4_P_MaxV[0],3,3,3,3,30,6,1,9,18,6,12;
+setarray .RandOpt4_P_MinV[0],1,1,1,1,5,2,1,5,3,5;
+setarray .RandOpt4_P_MaxV[0],3,3,3,3,20,5,1,18,6,12;
 
 // ========= PHYSICAL Random Option 5=========
 // - Phsyical
@@ -1399,8 +1418,8 @@ setarray .RandOpt4_M[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_M_MinV[0],1,1,1,10,2,2,2,5,5,2;
-setarray .RandOpt4_M_MaxV[0],3,3,3,30,6,6,6,12,12,6;
+setarray .RandOpt4_M_MinV[0],1,1,1,5,2,2,2,5,5,2;
+setarray .RandOpt4_M_MaxV[0],3,3,3,20,5,5,5,12,12,5;
 
 // ========= MAGICAL Random Option 5=========
 // - Magic
@@ -1489,7 +1508,6 @@ setarray .RandOpt4_R[0],
 						RDMOPT_VAR_ATTPOWER,						// ATK
 						RDMOPT_VAR_ATKPERCENT,						// ATK%
 						RDMOPT_VAR_PLUSASPD,						// ASPD
-						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
 						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
 						RDMOPT_DAMAGE_CRI_TARGET,					// CRIT DMG
@@ -1499,8 +1517,8 @@ setarray .RandOpt4_R[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_R_MinV[0],1,1,1,1,10,2,1,3,5,3,5,2,3;
-setarray .RandOpt4_R_MaxV[0],3,3,3,3,30,6,1,9,18,6,12,6,8;
+setarray .RandOpt4_R_MinV[0],1,1,1,1,5,2,1,5,3,5,2,3;
+setarray .RandOpt4_R_MaxV[0],3,3,3,3,20,5,1,18,6,12,6,6;
 
 // ========= RANGED Random Option 5=========
 // - RANGED
@@ -1609,7 +1627,7 @@ setarray .RandOpt4_S[0],
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
 setarray .RandOpt4_S_MinV[0],1,1,1,1,100,20,8,2,3,3,1;
-setarray .RandOpt4_S_MaxV[0],3,3,3,3,300,60,20,10,7,12,1;
+setarray .RandOpt4_S_MaxV[0],3,3,3,3,300,60,20,10,6,12,1;
 
 // ========= Random Option 5=========
 // - SHIELD 5
@@ -1822,7 +1840,7 @@ setarray .RandOpt4_AP[0],
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
 setarray .RandOpt4_AP_MinV[0],1,1,1,1,100,20,8,2,3,3,1;
-setarray .RandOpt4_AP_MaxV[0],3,3,3,3,300,60,20,10,7,12,1;
+setarray .RandOpt4_AP_MaxV[0],3,3,3,3,300,60,20,10,6,12,1;
 
 
 // ========= Random Option 5=========
@@ -1925,7 +1943,7 @@ setarray .RandOpt4_GP[0],
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
 setarray .RandOpt4_GP_MinV[0],1,1,1,1,100,20,8,2,3,3,1;
-setarray .RandOpt4_GP_MaxV[0],3,3,3,3,300,60,20,10,7,12,1;
+setarray .RandOpt4_GP_MaxV[0],3,3,3,3,300,60,20,10,6,12,1;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_GP[0],
@@ -2026,7 +2044,7 @@ setarray .RandOpt4_SHP[0],
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
 setarray .RandOpt4_SHP_MinV[0],1,1,1,1,100,20,8,2,3,3,1;
-setarray .RandOpt4_SHP_MaxV[0],3,3,3,3,300,60,20,10,7,12,1;
+setarray .RandOpt4_SHP_MaxV[0],3,3,3,3,300,60,20,10,6,12,1;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_SHP[0],
