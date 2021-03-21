@@ -22,3 +22,4 @@ IG_Classic_ 2001
 IG_Costamax1 2002
 IG_Costamax2 2003
 IG_Costamax3 2004
+IG_Costamax4 2005

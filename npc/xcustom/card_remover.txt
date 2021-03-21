@@ -42,12 +42,6 @@ moc_para01,25,23,5	script	Card Remover#eAcustom	78,{
 			mes "Young one... Your not wearing anything there that I can remove cards from.";
 			close;
 		}
-		.@x = getequipid(EQI_HAND_R);
-		if (.@x == 13066 || 16014 || 13434 || 1197 || 1434 || 1391 || 1289 || 1658 || 1831 || 1583 || 13310 || 13114 || 26101){
-			mes "[^FF6600Wise Old Woman^000000]";
-			mes "Young one i'm sorry ... I can't remove cards that enchanted to eden group's equip.";
-			close;
-		}		
 		if(getequipcardcnt(.@part) == 0) {
 			mes "[^FF6600Wise Old Woman^000000]";
 			mes "Young one... There are no cards compounded on this item. I can do nothing with it, I'm afraid.";

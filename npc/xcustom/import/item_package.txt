@@ -407,3 +407,21 @@ IG_Costamax3,31611,20,1,1 // C_Dark_Snake_Lord_Stall
 IG_Costamax3,31616,20,1,1 // C_Sleep_Sheep_TW
 IG_Costamax3,31625,20,1,1 // C_Protect_Cloth
 IG_Costamax3,31698,20,1,1 // C_Pigtail_Red_Hood
+
+//Garment
+IG_Costamax4,20502,20,1,1	// C_Devil_Wing
+IG_Costamax4,20504,20,1,1	// C_Cupid_Wing_Pink
+//IG_Costamax4,20505,20,1,1	// C_Cupid_Wing_Skyblue
+IG_Costamax4,20506,20,1,1	// C_Invisible_Manteau
+IG_Costamax4,20507,20,1,1	// C_Poring_Bag
+IG_Costamax4,20509,20,1,1	// C_Wings_of_Uriel
+IG_Costamax4,20510,20,1,1	// C_SwordWing
+IG_Costamax4,20511,20,1,1	// C_Blue_Fairy_Wing
+IG_Costamax4,20727,20,1,1	// Brilliant_Golden_Wings
+IG_Costamax4,20737,20,1,1	// C_Kirin_Wing
+IG_Costamax4,20746,20,1,1	// C_Rudra_Wing
+IG_Costamax4,20761,20,1,1	// C_Wing_Of_Happiness
+IG_Costamax4,20762,20,1,1	// C_GreatDevilWing
+IG_Costamax4,20763,20,1,1	// C_Amistr_Bag
+IG_Costamax4,20764,20,1,1	// C_Fallen_Angel_Wing
+IG_Costamax4,20765,20,1,1	// C_Archangel_Wing

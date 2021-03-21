@@ -620,3 +620,4 @@
 7,12391,200 // Top Costume
 7,12403,200 // Mid Costume
 7,12416,200 // Low Costume
+7,12493,500 // Garment Costume
