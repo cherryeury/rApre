@@ -2893,6 +2893,49 @@ Body:
     Refineable: true    
     Script: |
       bonus bFlee,1;    
+  - Id: 22132
+    AegisName: Lighting_God's_Shoes
+    Name: Lightning God's Shoes
+    Type: Armor
+    Buy: 10
+    Weight: 100
+    Defense: 18
+    Slots: 1
+    Locations:
+      Shoes: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      .@r = getrefine(); 
+      bonus bVariableCastrate,-.@r;
+      bonus bMatk,(.@r*5);
+      bonus2 bMagicAddEle,Ele_Earth,2*.@r; 
+      bonus2 bAddEle,Ele_Neutral,2*.@r; 
+      bonus2 bAddEle,Ele_Undead,2*.@r;
+      bonus2 bAddEle,Ele_Ghost,2*.@r;      
+  - Id: 5357
+    AegisName: Wings_Of_Victory
+    Name: Wings Of Victory
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 100
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    View: 365
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bMdef,10;
+      bonus bUnbreakableHelm;      
   - Id: 2307
     AegisName: Mantle
     Name: Mantle

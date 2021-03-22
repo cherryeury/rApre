@@ -244,7 +244,7 @@ IG_Costamax2,19624,20,1,1 // C_Round_Eyes
 IG_Costamax2,19752,20,1,1 // C_Shelter_Wing_Ears
 IG_Costamax2,19755,20,1,1 // C_YinYang_Earring
 IG_Costamax2,19787,20,1,1 // C_Devoted_Eyes
-IG_Costamax2,19826,20,1,1 // C_Ice_Wing_Ear
+//IG_Costamax2,19826,20,1,1 // C_Ice_Wing_Ear
 IG_Costamax2,19871,20,1,1 // C_Music_Decoration
 IG_Costamax2,19886,20,1,1 // C_Luxury_Sunglasses
 IG_Costamax2,19912,20,1,1 // C_Cat_Eye

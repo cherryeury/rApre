@@ -18,3 +18,4 @@
 4229:4244:4299:4313,{ bonus bDef,27; }
 4311:4319:4331:4371,{ bonus bDef,18; }
 5782:2125,{ bonus bDef,18; }
+22132:4131,{.@r = getequiprefinerycnt(EQI_SHOES); skill "AL_HEAL",10; if(BaseLevel < 99){ bonus bMatk,.@r*5; bonus bMdef,.*@r; } else { bonus bMatk,.@r*15; bonus bMdef,.@r*10; }}
