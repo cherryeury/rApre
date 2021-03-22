@@ -1082,6 +1082,24 @@ Body:
     View: 14      
     Script: |
       bonus2 bAddClass,Class_All,1;  
+  - Id: 5032
+    AegisName: Picnic_Hat
+    Name: Sunday Hat
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 20
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 117
+    Script: |
+      bonus2 bAddClass,Class_All,1; 
+      bonus bMatkRate,1;
   - Id: 2230
     AegisName: Gemmed_Sallet
     Name: Gemmed Sallet
@@ -1802,6 +1820,63 @@ Body:
     View: 164
     Script: |
       bonus bMagicHPGainValue,75;
+  - Id: 5171
+    AegisName: Valkyrie_Helm
+    Name: Valkyrie Helm
+    Type: Armor
+    Buy: 100000
+    Weight: 1000
+    Defense: 50
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 225
+    Script: |
+      bonus bMdef,5;
+  - Id: 5094
+    AegisName: Orc_Hero_Helm
+    Name: Helmet of Orc Hero
+    Type: Armor
+    Buy: 500000
+    Weight: 900
+    Defense: 50
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 178
+    Script: |
+      bonus bStr,2;
+      bonus bVit,1;      
+  - Id: 5073
+    AegisName: Cap_Of_Concentration
+    Name: Model Training Hat
+    Type: Armor
+    Buy: 20
+    Weight: 700
+    Defense: 15
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 157
+    Script: |
+      bonus bDex,2;      
   - Id: 5081
     AegisName: Mistress_Crown
     Name: Crown of Mistress
@@ -2766,7 +2841,7 @@ Body:
     Type: Armor
     Buy: 22000
     Weight: 1200
-    Defense: 42
+    Defense: 22
     Jobs:
       All: true
       Novice: false
@@ -2782,7 +2857,7 @@ Body:
     Type: Armor
     Buy: 22000
     Weight: 1200
-    Defense: 42
+    Defense: 22
     Slots: 1
     Jobs:
       All: true
@@ -2824,7 +2899,7 @@ Body:
     Type: Armor
     Buy: 10000
     Weight: 600
-    Defense: 37
+    Defense: 27
     Jobs:
       All: true
       Novice: false
@@ -2840,7 +2915,7 @@ Body:
     Type: Armor
     Buy: 10000
     Weight: 600
-    Defense: 37
+    Defense: 27
     Slots: 1
     Jobs:
       All: true

@@ -615,8 +615,8 @@
 6,12916,2
 
 //Bundle
-7,12026,20 // Classic Headgear Box
-7,12623,50 // High Weapon Box
+//7,12026,20 // Classic Headgear Box
+7,12623,20 // High Weapon Box
 7,12391,200 // Top Costume
 7,12403,200 // Mid Costume
 7,12416,200 // Low Costume
