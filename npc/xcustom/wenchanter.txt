@@ -22,8 +22,8 @@ set .@Free,1; // 1 = Allow Awaken without another copy
 set .@Reset,1; // 1 = Allow reset (buggy)
 // ============== End Configurations ================		
 	mes "[^FF6600Mayomayo^000000]";
-	mes "Hello, I am Mayomayo the Mayomayo.";
-	mes "I can Awaken any classic equip dropped from monsters";
+	mes "Hello, I am Mayomayo the Awakener.";
+	mes "I can Awaken certain equips dropped from monsters";
 	mes "forged items, socket Awakened gears and headgear quests that you're using.";
 	next;
 	switch( select( "Awaken Equips.:Awaken Crimson Weapon.:Explain Awaken.:Cancel." ) ) {
@@ -78,8 +78,8 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 			mes .n$;
 			mes "Which one ?";
 			next;
-	switch( select( "Awaken Weapon.:Awaken Shield.:Awaken Armor.:Awaken Garment.:Awaken Shoes.:Awaken Acc.:Cancel." ) ) {
-		case 8:
+	switch( select( "Awaken Weapon.:Awaken Shield.:Awaken Armor.:Awaken Garment.:Awaken Shoes.:Cancel." ) ) {
+		case 6:
 			mes .n$;
 			mes "Oh, okay dude";
 			close;
@@ -221,7 +221,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 			}					
 			break;
 			
-		case 6: // Awaken Acc
+		case 11: // Awaken Acc
 			.@x = getequipid(EQI_ACC_R);
 			if (.@x == -1) { mes .n$;
 				mes "You're not wearing any acc!";

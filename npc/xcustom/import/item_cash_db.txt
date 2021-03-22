@@ -124,8 +124,8 @@
 2,21015,10
 2,1939,10
 2,1995,10
-2,16051,500 // Valkyrie Hammer
-2,28717,500 // Valkyrie Knife
+2,16051,200 // Valkyrie Hammer
+2,28717,200 // Valkyrie Knife
 
 //Shield
 
@@ -226,7 +226,7 @@
 
 // Utility
 5,13599,1 // Battle Manual
-5,14365,1 // Job B Manual
+5,13990,1 // Job B Manual
 5,13607,1 // Drop
 5,7776,1
 5,17106,8
