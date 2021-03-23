@@ -23,18 +23,19 @@
 
 //Headgear 
 //Top
-0,5690,5 // Red Wing Hat
-0,5502,5 // Necromancer
-0,5568,5 // Rabbit Bonnet
-0,5153,10 // Angeling Hairpin
-0,5527,10 // Lunatic Hat
-0,5782,20 // Legion
-0,18901,30 // Seppl Hat
+0,5690,20 // Red Wing Hat
+0,5502,20 // Necromancer
+0,5568,20 // Rabbit Bonnet
+0,5153,25 // Angeling Hairpin
+0,5527,25 // Lunatic Hat
+0,5782,35 // Legion
+0,18901,35 // Seppl Hat
+0,18847,35 // Jolly Roger
 //0,18738,8 // White Student
-0,5357,30 // Wings of Victory
-0,5396,30 // Jasper Crest
+0,5357,45 // Wings of Victory
+0,5396,45 // Jasper Crest
 //0,18801,50 // Gale Hair Or
-0,18847,30 // Jolly Roger
+
 0,5520,50 // Rabbit Earmuffs
 0,18563,50 
 0,5673,100 // Hometown Sakura
@@ -49,11 +50,11 @@
 0,19033,400 // Ancient Deco
 0,19098,500 // Piamette Hood
 0,18756,600 // Black Shiba Inu Hat
-0,18652,1000 // Vanargand Helm
+0,18652,1250 // Vanargand Helm
 //0,5975,750
 //0,19172,1250 // Sitting Pope
-0,19364,1250 // Engineer Cap
-0,18934,1500 // Kitsune Ear
+//0,19364,1250 // Engineer Cap
+0,18934,1250 // Kitsune Ear
 0,18673,1700 // Drooping Pope
 0,18849,1700 // Celine Ribbon
 0,19163,2000 // Katarina
@@ -62,13 +63,15 @@
 
 // Middle
 1,5664,50 // Filir Pinion
-1,18787,100 // Goaltender
 1,5610,100 // Ice Wing Ears
-1,5916,100 // Demon Glass
-1,5921,100 // Gills
-1,5924,100 // Dragon Knight
+1,5358,100 // Peco
+//1,5916,100 // Demon Glass
+//1,5921,100 // Gills
+//1,5924,100 // Dragon Knight
+1,5786,200 // Ancient elven ear
 1,5104,250 // Dark Blinkers
 //1,5924,350
+1,18787,400 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
 1,18877,750 // Baron Evil Eye
@@ -77,18 +80,18 @@
 1,19083,1000 // Mask of Hero
 1,19141,1500 // Dolor Thanatos
 1,18603,1500 // Black Devil Mask
-1,5933,1750 // Crow Tengu Mask
-1,400001,2000 // Victory Wing ears
-1,400002,3000 // Victory Wing Ears [1]
+//1,5933,1750 // Crow Tengu Mask
+//1,400001,2000 // Victory Wing ears
+//1,400002,3000 // Victory Wing Ears [1]
 
 //Lower
 1,18900,5 // Weisswurst
+1,18677,5 // Twig
 1,5775,10 // Chocolate Donut
-1,18643,10 // Paperhand str
-1,18642,10 // Paperhand int
-1,18644,10 // Paperhand dex
-1,18677,10 // Twig
 1,5403,15 // Fish in Mouth
+1,18643,20 // Paperhand str
+1,18642,20 // Paperhand int
+1,18644,20 // Paperhand dex
 1,5305,50 // Pirate Dagger
 //1,5934,50
 //1,18759,70 // Wood Goblin
@@ -96,8 +99,8 @@
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
 1,18868,150 // Assassin mask
-1,18754,500 // Blood Sucker
-1,18858,750 // Pink Angelring Bubble
+1,18754,600 // Blood Sucker
+1,18858,600 // Pink Angelring Bubble
 //1,18968,500
 1,18666,900 // CD in Mouth 
 1,19097,1250 // Piamette Ribbon
@@ -105,7 +108,7 @@
 1,19137,2500 // Strawberry in Mouth
 
 1,19101,4000 // Glast Heim
-1,19112,4000 // Tengu Scroll
+//1,19112,4000 // Tengu Scroll
 1,400000,5000 // Whistle
 1,5972,5000 // Talking Parrot
 //1,28502,3000 // Mob Scarf
@@ -144,13 +147,14 @@
 //3,2192,250
 3,28903,30 // Scutum
 3,2184,100 // Bunker Shield
-3,28906,100 // Shield of Living Flame
-3,28907,100 // Shield of Unnamed Wind
-3,28908,100 // Shield of Great Water
-3,28909,100 // Shield of Formless Earth
 
-3,28918,100 // Shield of Chaos Boiling
 3,28929,200 // Happy Shield
+3,28906,300 // Shield of Living Flame
+3,28907,300 // Shield of Unnamed Wind
+3,28908,300 // Shield of Great Water
+3,28909,300 // Shield of Formless Earth
+
+3,28918,300 // Shield of Chaos Boiling
 3,2191,350 // Solomon
 3,28951,700 // Nero Shield 
 3,28921,700 // Anemos Shield
@@ -160,10 +164,10 @@
 
 // Armor
 3,15040,10 // Prison Uniform
-3,15072,40 // Nectar Suit
+//3,15072,40 // Nectar Suit
 3,15058,40 // Rider Suit
 //3,19048,1000
-3,15141,400 // Ancient Armor
+3,15141,300 // Rift Armor
 //3,15054,750 // Ninja
 //3,15075,750 // Guillotine
 //3,15076,750 // Ranger
@@ -189,16 +193,16 @@
 3,20714,50 // Assassin Muffler
 3,20730,75 // Loyalist Hood
 3,20778,150 // Crimson Stole
-3,20783,150 // Hero Manteau
 3,2597,150 // Bloody Muffler
+3,20783,250 // Hero Manteau
 //3,20860,500
+3,20779,300 // Rift Garment
 3,20863,500 // Menblatt Garment
-//3,20799,750
 3,20814,500 // Wakwak Manteau 
-3,20831,600 // Elder's Spirit
 3,20943,500 // Geffen Magic Muffler
 //3,20931,750
 3,20944,500 // Anti Magic Manteau
+3,20831,600 // Elder's Spirit
 3,20952,1000 // Mysterious Muffler
 //3,20773,1500 // Excellion Wing
 3,20859,1500 // Phreeoni Wings
@@ -209,6 +213,7 @@
 3,2466,100 // Training Shoes
 3,2481,100 // Rune Boots
 3,22064,100 // Thorn Boots
+3,22075,300 // Rift Shoes
 //3,22132,1250 // Lightning God
 //3,22171,600 // Ancient Hero's Boots
 //3,22103,850 // Excellion Legs
@@ -227,16 +232,17 @@
 4,2984,400 // Glove of Saehrimnir
 4,28342,400 // Critical Anklet
 4,2881,500 // Orlean's
+4,2980,500 // Evil thread
 //4,28520,750 // Egir's Ring
 //4,28501,1000 // Kirin's Horn
 //4,28433,1000 // Luminous Blue Light Stone
 //3,28505,750
-4,32237,1500 // Celine's Brooch
+4,32237,2500 // Celine's Brooch
 4,32204,2500 // Immortal Corps Dog Tag
 4,32227,2500 // Fenrir Chain
-4,28565,2500 // Perverse Demon Mask
-4,28594,4000 // Temporal Ring
-4,32258,4000 // Ring of Jupiter
+//4,28565,2500 // Perverse Demon Mask
+//4,28594,4000 // Temporal Ring
+//4,32258,4000 // Ring of Jupiter
 //3,28561,2500
 
 // Utility

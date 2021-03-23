@@ -767,6 +767,14 @@ if (.@Free == 1){	set .@Forged,1;}
 switch(getequipid(.@part)) {	
 //Armor
 //Modified
+	case 15040:
+	case 15058:
+	case 20714:
+	case 20730:
+	case 2597:
+	case 20783:
+	case 22064:
+	case 20778:
 	case 22042:
 	case 2501:
 	case 2502:
@@ -964,6 +972,12 @@ if (.@Free == 1){	set .@Forged,1;}
 	close;
 	
 L_Awaken: 
+.@refine = getequiprefinerycnt(.@part);
+if (.@refine < 7){
+	mes "[^FF6600Mayomayo^000000]";
+	mes "I only can awaken item with +7 Refine or more.";
+	close;
+	}
 	disable_items;
 	mes "[^FF6600Mayomayo^000000]";
 	mes "Equipped: "+getitemname(getequipid(.@part));

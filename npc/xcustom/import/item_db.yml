@@ -2893,6 +2893,81 @@ Body:
     Refineable: true    
     Script: |
       bonus bFlee,1;    
+  - Id: 5074
+    AegisName: Ear_Of_Angel's_Wing
+    Name: Angel Wing Ears
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 3
+    Locations:
+      Head_Mid: true
+    EquipLevelMin: 70
+    View: 158
+    Script: |
+      bonus bInt,1;
+      bonus bStr,readparam(bStr)/90;
+      bonus bInt,readparam(bInt)/90;
+      bonus bVit,readparam(bVit)/90;
+      bonus bDex,readparam(bDex)/90;
+      bonus bLuk,readparam(bLuk)/90;     
+  - Id: 18518
+    AegisName: Ear_Of_Angel's_Wing_
+    Name: Angel Wing Ears
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 3
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    EquipLevelMin: 70
+    View: 158
+    Script: |
+    Script: |
+      bonus bInt,1;
+      bonus bStr,readparam(bStr)/90;
+      bonus bInt,readparam(bInt)/90;
+      bonus bVit,readparam(bVit)/90;
+      bonus bDex,readparam(bDex)/90;
+      bonus bLuk,readparam(bLuk)/90;    
+  - Id: 5068
+    AegisName: Ear_Of_Devil's_Wing
+    Name: Evil Wing Ears
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 3
+    Locations:
+      Head_Mid: true
+    EquipLevelMin: 70
+    View: 152
+    Script: |
+      bonus bStr,1;
+      bonus bStr,readparam(bStr)/90;
+      bonus bInt,readparam(bInt)/90;
+      bonus bVit,readparam(bVit)/90;
+      bonus bDex,readparam(bDex)/90;
+      bonus bLuk,readparam(bLuk)/90;      
+  - Id: 18519
+    AegisName: Ear_Of_Devil's_Wing_
+    Name: Evil Wing Ears
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 3
+    Slots: 1
+    Locations:
+      Head_Mid: true
+    EquipLevelMin: 70
+    View: 152
+    Script: |
+      bonus bStr,1;
+      bonus bStr,readparam(bStr)/90;
+      bonus bInt,readparam(bInt)/90;
+      bonus bVit,readparam(bVit)/90;
+      bonus bDex,readparam(bDex)/90;
+      bonus bLuk,readparam(bLuk)/90;      
   - Id: 22132
     AegisName: Lighting_God's_Shoes
     Name: Lightning God's Shoes
