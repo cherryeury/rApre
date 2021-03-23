@@ -41,10 +41,10 @@
 0,5673,100 // Hometown Sakura
 0,18600,100 // Cat Ear Berret
 //0,18812,250 // Elder Crown
+0,18574,200 // Lord of Death
 0,18539,300 // Skull Cap
 //0,18804,350 // Thorn
 0,19326,300 // Book of Soyga
-0,18574,300 // Lord of Death
 0,5975,400 // Zealotus
 0,18827,400 // Valkyrie Circlet
 0,19033,400 // Ancient Deco
@@ -74,7 +74,7 @@
 1,18787,400 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
-1,18877,750 // Baron Evil Eye
+1,18877,500 // Baron Evil Eye
 //1,19024,1000 // Protect Feathers
 1,18599,750 // Black Devil Mask
 1,19083,1000 // Mask of Hero
@@ -87,8 +87,8 @@
 //Lower
 1,18900,5 // Weisswurst
 1,18677,5 // Twig
-1,5775,10 // Chocolate Donut
-1,5403,15 // Fish in Mouth
+//1,5775,10 // Chocolate Donut
+1,5403,10 // Fish in Mouth
 1,18643,20 // Paperhand str
 1,18642,20 // Paperhand int
 1,18644,20 // Paperhand dex
@@ -102,10 +102,10 @@
 1,18754,600 // Blood Sucker
 1,18858,600 // Pink Angelring Bubble
 //1,18968,500
-1,18666,900 // CD in Mouth 
+1,18666,800 // CD in Mouth 
 1,19097,1250 // Piamette Ribbon
 1,18564,2000 // Fragment of Love
-1,19137,2500 // Strawberry in Mouth
+//1,19137,2500 // Strawberry in Mouth
 
 1,19101,4000 // Glast Heim
 //1,19112,4000 // Tengu Scroll
@@ -140,22 +140,22 @@
 
 //3,2197,35 // Iron Shield
 //3,2188,25 // Svalinn
-3,2196,10 // White Gold Shield
+//3,2196,10 // White Gold Shield
 3,2177,30 // Shield of Death
-3,2198,30 // Lapine Shield
+//3,2198,30 // Lapine Shield
 //3,28910,500 // Rectangular Large Sleeve
 //3,2192,250
-3,28903,30 // Scutum
-3,2184,100 // Bunker Shield
+//3,28903,30 // Scutum
+//3,2184,100 // Bunker Shield
 
-3,28929,200 // Happy Shield
+//3,28929,200 // Happy Shield
 3,28906,300 // Shield of Living Flame
 3,28907,300 // Shield of Unnamed Wind
 3,28908,300 // Shield of Great Water
 3,28909,300 // Shield of Formless Earth
 
 3,28918,300 // Shield of Chaos Boiling
-3,2191,350 // Solomon
+3,2191,500 // Solomon
 3,28951,700 // Nero Shield 
 3,28921,700 // Anemos Shield
 3,28916,700 // Gaia Shield
@@ -194,16 +194,16 @@
 3,20730,75 // Loyalist Hood
 3,20778,150 // Crimson Stole
 3,2597,150 // Bloody Muffler
-3,20783,250 // Hero Manteau
+//3,20783,150 // Hero Manteau
 //3,20860,500
 3,20779,300 // Rift Garment
 3,20863,500 // Menblatt Garment
-3,20814,500 // Wakwak Manteau 
-3,20943,500 // Geffen Magic Muffler
+3,20814,700 // Wakwak Manteau 
+3,20943,700 // Geffen Magic Muffler
 //3,20931,750
-3,20944,500 // Anti Magic Manteau
-3,20831,600 // Elder's Spirit
-3,20952,1000 // Mysterious Muffler
+3,20944,700 // Anti Magic Manteau
+3,20831,900 // Elder's Spirit
+3,20952,900 // Mysterious Muffler
 //3,20773,1500 // Excellion Wing
 3,20859,1500 // Phreeoni Wings
 3,20932,1500 // Old Morocc Shawl
@@ -220,13 +220,13 @@
 
 // Acc
 //4,2745,10 // Pinguicula Corsage
-4,2948,50 // Devil Wing
+4,2948,25 // Devil Wing
 4,2998,50 // Shining Ttapezohedron
-4,2936,75 // Ring of Recovery
+4,2936,50 // Ring of Recovery
 //4,28314,10 // Hand of Glory
 //4,2749,20 // Linen Glove
-4,2935,100 // Sprint Glove
-4,2913,100 // Thief Handcuffs
+4,2935,75 // Sprint Glove
+4,2913,75 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
 4,2959,100 // Fidelity Necklace
 4,2984,400 // Glove of Saehrimnir

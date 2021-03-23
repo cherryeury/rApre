@@ -775,6 +775,7 @@ switch(getequipid(.@part)) {
 	case 20783:
 	case 22064:
 	case 20778:
+	case 2177:
 	case 22042:
 	case 2501:
 	case 2502:
