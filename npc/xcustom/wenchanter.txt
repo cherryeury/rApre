@@ -470,6 +470,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 13155:
 	case 13154:
 	case 13165:
+	case 13150:
 	case 13163:
 	case 13151:
 	case 13102:
@@ -514,6 +515,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1455:
 	case 1454:
 	case 1485:
+	case 1351:
 	case 1460:
 	case 13161:
 	case 13160:
@@ -565,8 +567,11 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 // Lv 1 Weapon
 	case 1951:
 	case 1902:
+	case 1201:
 	case 13011:
+	case 1601:
 	case 1205:
+	case 1204:
 	case 1202:
 	case 1208:
 	case 1302:
@@ -604,12 +609,19 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1216:
 	case 1217:
 	case 1806:
+	case 1704:
+	case 1604:
 	case 1605:
+	case 1618:
+	case 1701:
 	case 1307:	
 	
 	
 // Lv 3 Weapon
 	case 1569:
+	case 1101:
+	case 1104:
+	case 1107:
 	case 1801:
 	case 1568:
 	case 1571:
@@ -629,6 +641,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1925:
 	case 1246:
 	case 1810:
+	case 1901:
 	case 1822:
 	case 13004:
 	case 1647:
@@ -680,11 +693,16 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1965:
 	case 1630:
 	case 1127:
+	case 1116:
+	case 1401:
+	case 1404:
+	case 1407:
 	case 1560:
 	case 1144:
 	case 1821:
 	case 1968:
 	case 1517:
+	case 1518:
 	case 1552:
 	case 1147:
 	case 1120:
@@ -707,6 +725,8 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1519:
 	case 13405:
 	case 1206:
+	case 1207:
+	case 1210:
 	case 13501:
 	case 1510:
 	case 13002:
@@ -733,12 +753,14 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1507:
 	case 1516:
 	case 1522:
+	case 1804:
 	case 1607:
 	case 1610:
 	case 1617:
 	case 1619:
 	case 1803:
 	case 1805:
+	case 1808:
 	case 1807:
 	case 1809:
 	case 1811:
@@ -747,10 +769,14 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1907:
 	case 1911:
 	case 1952:
+	case 1953:
+	case 1950:
 	case 1954:
+	case 1912:
 	case 1956:
 	case 1958:
 	case 1960:
+	case 1961:
 	case 1906:
 	case 1904:
 	case 13404:
@@ -758,6 +784,8 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1648:
 	case 13028:
 	case 13049:
+	case 1959:
+	case 1504:
 
 if (.@Free == 1){	set .@Forged,1;}
 			set .@level,4;
@@ -911,6 +939,7 @@ switch(getequipid(.@part)) {
 	case 2522:
 	case 2517:
 	case 2357:
+	case 1501:
 	case 15012:
 	case 15013:
 	case 15014:

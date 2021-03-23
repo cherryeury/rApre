@@ -2387,6 +2387,30 @@ tbl = {
 		ClassNum = 18,
 		costume = false
 	},
+	[1116] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "바스타드소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Katana",
+		identifiedResourceName = "카타나",
+		identifiedDescriptionName = {
+			"A straight bladed sword that the Japanese samurai depended on during battle.",
+			"________________________",
+			"^0000CCType:^000000 Two-Handed Sword",
+			"^0000CCAttack:^000000 60",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Swordman classes"
+		},
+		slotCount = 3,
+		ClassNum = 48,
+		costume = false
+	},	
 	[1117] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "바스타드소드",
@@ -2658,6 +2682,78 @@ tbl = {
 		ClassNum = 7,
 		costume = false
 	},	
+	[1360] = {
+		unidentifiedDisplayName = "Unidentified Axe",
+		unidentifiedResourceName = "배틀액스",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Two-Handed Axe",
+		identifiedResourceName = "투핸드액스",
+		identifiedDescriptionName = {
+			"A Two-Handed, double bladed axe.",
+			"________________________",
+			"^0000CCType:^000000 Two-Handed Axe",
+			"^0000CCAttack:^000000 185",
+			"^0000CCWeight:^000000 250",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 30",
+			"Swordman and Merchant"
+		},
+		slotCount = 1,
+		ClassNum = 7,
+		costume = false
+	},
+	[1501] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Club",
+		identifiedResourceName = "클럽",
+		identifiedDescriptionName = {
+			"A heavy bludgeon that makes a handy weapon in a pinch.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 23",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Novice, Swordman, Acolyte and Merchant"
+		},
+		slotCount = 3,
+		ClassNum = 8,
+		costume = false
+	},	
+	[1361] = {
+		unidentifiedDisplayName = "Unidentified Axe",
+		unidentifiedResourceName = "배틀액스",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Two-Handed Axe",
+		identifiedResourceName = "투핸드액스",
+		identifiedDescriptionName = {
+			"A Two-Handed, double bladed axe.",
+			"________________________",
+			"^0000CCType:^000000 Two-Handed Axe",
+			"^0000CCAttack:^000000 185",
+			"^0000CCWeight:^000000 250",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 30",
+			"Swordman and Merchant"
+		},
+		slotCount = 2,
+		ClassNum = 7,
+		costume = false
+	},	
 	[1357] = {
 		unidentifiedDisplayName = "Unidentified Axe",
 		unidentifiedResourceName = "배틀액스",
@@ -2754,6 +2850,30 @@ tbl = {
 		ClassNum = 53,
 		costume = false
 	},
+	[1451] = {
+		unidentifiedDisplayName = "Unidentified Spear",
+		unidentifiedResourceName = "쟈벨린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Guisarme",
+		identifiedResourceName = "귀삼",
+		identifiedDescriptionName = {
+			"Topped with a curved blade and puncturing spike, this spear can topple a mounted warrior in the hands of a highly skilled expert.",
+			"________________________",
+			"^0000CCType:^000000 Two-Handed Spear",
+			"^0000CCAttack:^000000 84",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 18",
+			"Swordman classes"
+		},
+		slotCount = 2,
+		ClassNum = 5,
+		costume = false
+	},	
 	[1410] = {
 		unidentifiedDisplayName = "Unidentified Spear",
 		unidentifiedResourceName = "쟈벨린",
@@ -4361,6 +4481,54 @@ tbl = {
 		ClassNum = 11,
 		costume = false
 	},
+	[1701] = {
+		unidentifiedDisplayName = "Unidentified Bow",
+		unidentifiedResourceName = "보우",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Bow",
+		identifiedResourceName = "보우",
+		identifiedDescriptionName = {
+			"A common bow.",
+			"________________________",
+			"^0000CCType:^000000 Bow",
+			"^0000CCAttack:^000000 15",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Archer, Thief and Rogue"
+		},
+		slotCount = 3,
+		ClassNum = 11,
+		costume = false
+	},	
+	[1704] = {
+		unidentifiedDisplayName = "Unidentified Bow",
+		unidentifiedResourceName = "보우",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Composite Bow",
+		identifiedResourceName = "컴포지트보우",
+		identifiedDescriptionName = {
+			"An average bow that is mostly used for small game hunting.",
+			"________________________",
+			"^0000CCType:^000000 Bow",
+			"^0000CCAttack:^000000 29",
+			"^0000CCWeight:^000000 60",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Archer, Thief and Rogue"
+		},
+		slotCount = 3,
+		ClassNum = 11,
+		costume = false
+	},	
 	[1702] = {
 		unidentifiedDisplayName = "Unidentified Bow",
 		unidentifiedResourceName = "보우",
@@ -4590,32 +4758,6 @@ tbl = {
 		ClassNum = 7,
 		costume = false
 	},
-	[1162] = {
-		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
-		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
-		identifiedDisplayName = "Broad Sword",
-		identifiedResourceName = "브로드소드",
-		identifiedDescriptionName = {
-			"A sword with a wide, double sided blade.",
-			"________________________",
-			"DEF +5",
-			"________________________",
-			"^0000CCType:^000000 Two-Handed Sword",
-			"^0000CCAttack:^000000 140",
-			"^0000CCWeight:^000000 200",
-			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
-			"________________________",
-			"^0000CCRequirement:^000000",
-			"Base Level 33",
-			"Swordman classes"
-		},
-		slotCount = 2,
-		ClassNum = 50,
-		costume = false
-	},
 	[1163] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "바스타드소드",
@@ -4761,6 +4903,52 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
+	[1204] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Cutter",
+		identifiedResourceName = "커터",
+		identifiedDescriptionName = {
+			"A knife used for cutting enemies.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 30",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 3,
+		ClassNum = 1,
+		costume = false
+	},	
+	[1201] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Knife",
+		identifiedResourceName = "나이프",
+		identifiedDescriptionName = {
+			"A simple knife.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 17",
+			"^0000CCWeight:^000000 40",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 3,
+		ClassNum = 1,
+		costume = false
+	},	
 	[1202] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -4784,6 +4972,29 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
+	[1207] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Main Gauche",
+		identifiedResourceName = "망고슈",
+		identifiedDescriptionName = {
+			"A French dagger that is usually held in the left hand to parry attacks.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 43",
+			"^0000CCWeight:^000000 60",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 3,
+		ClassNum = 31,
+		costume = false
+	},	
 	[1208] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -4807,6 +5018,30 @@ tbl = {
 		ClassNum = 31,
 		costume = false
 	},
+	[1351] = {
+		unidentifiedDisplayName = "Unidentified Axe",
+		unidentifiedResourceName = "배틀액스",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Battle Axe",
+		identifiedResourceName = "배틀액스",
+		identifiedDescriptionName = {
+			"A sturdy Two-Handed axe useful for defeating many foes.",
+			"________________________",
+			"^0000CCType:^000000 Two-Handed Axe",
+			"^0000CCAttack:^000000 80",
+			"^0000CCWeight:^000000 150",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 3",
+			"Swordman and Merchant"
+		},
+		slotCount = 3,
+		ClassNum = 7,
+		costume = false
+	},	
 	[1302] = {
 		unidentifiedDisplayName = "Unidentified Axe",
 		unidentifiedResourceName = "액스",
@@ -4831,6 +5066,30 @@ tbl = {
 		ClassNum = 6,
 		costume = false
 	},
+	[1107] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Blade",
+		identifiedResourceName = "블레이드",
+		identifiedDescriptionName = {
+			"A one-handed sword with a thick, flat blade.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 53",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Novice, Swordman, Merchant and Thief classes"
+		},
+		slotCount = 3,
+		ClassNum = 2,
+		costume = false
+	},	
 	[1108] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -4879,6 +5138,30 @@ tbl = {
 		ClassNum = 8,
 		costume = false
 	},
+	[1104] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Falchion",
+		identifiedResourceName = "폴쳔",
+		identifiedDescriptionName = {
+			"A one-handed sword with a rounded blade.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 39",
+			"^0000CCWeight:^000000 60",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Novice, Swordman, Merchant and Thief classes"
+		},
+		slotCount = 3,
+		ClassNum = 2,
+		costume = false
+	},	
 	[1105] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -4903,6 +5186,30 @@ tbl = {
 		ClassNum = 2,
 		costume = false
 	},
+	[1401] = {
+		unidentifiedDisplayName = "Unidentified Spear",
+		unidentifiedResourceName = "쟈벨린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Javelin",
+		identifiedResourceName = "쟈벨린",
+		identifiedDescriptionName = {
+			"A light spear that can be thrown in an attack. It'll probably be safer to keep holding on to it, though.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Spear",
+			"^0000CCAttack:^000000 28",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Swordman classes"
+		},
+		slotCount = 3,
+		ClassNum = 4,
+		costume = false
+	},	
 	[1402] = {
 		unidentifiedDisplayName = "Unidentified Spear",
 		unidentifiedResourceName = "쟈벨린",
@@ -4951,6 +5258,58 @@ tbl = {
 		ClassNum = 62,
 		costume = false
 	},
+	[1601] = {
+		unidentifiedDisplayName = "Unidentified Staff",
+		unidentifiedResourceName = "롯드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Rod",
+		identifiedResourceName = "롯드",
+		identifiedDescriptionName = {
+			"A simple magic wand.",
+			"________________________",
+			"MATK +30",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Staff",
+			"^0000CCAttack:^000000 15",
+			"^0000CCWeight:^000000 40",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Novice, Magician, Acolyte and Soul Linker"
+		},
+		slotCount = 3,
+		ClassNum = 10,
+		costume = false
+	},	
+	[1604] = {
+		unidentifiedDisplayName = "Unidentified Staff",
+		unidentifiedResourceName = "롯드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Wand",
+		identifiedResourceName = "완드",
+		identifiedDescriptionName = {
+			"A rough-hewn wand that's effective enough for the casting of magic spells.",
+			"________________________",
+			"INT +1",
+			"MATK +45",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Staff",
+			"^0000CCAttack:^000000 25",
+			"^0000CCWeight:^000000 40",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Novice, Magician, Acolyte and Soul Linker"
+		},
+		slotCount = 2,
+		ClassNum = 10,
+		costume = false
+	},	
 	[1602] = {
 		unidentifiedDisplayName = "Unidentified Staff",
 		unidentifiedResourceName = "롯드",
@@ -4976,6 +5335,54 @@ tbl = {
 		ClassNum = 10,
 		costume = false
 	},
+	[1407] = {
+		unidentifiedDisplayName = "Unidentified Spear",
+		unidentifiedResourceName = "쟈벨린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Pike",
+		identifiedResourceName = "파이크",
+		identifiedDescriptionName = {
+			"A long spear that is generally issued to foot soldiers.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Spear",
+			"^0000CCAttack:^000000 60",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Swordman classes"
+		},
+		slotCount = 3,
+		ClassNum = 4,
+		costume = false
+	},	
+	[1404] = {
+		unidentifiedDisplayName = "Unidentified Spear",
+		unidentifiedResourceName = "쟈벨린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Spear",
+		identifiedResourceName = "스피어",
+		identifiedDescriptionName = {
+			"A basic spear that allows slightly longer ranged melee attacks.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Spear",
+			"^0000CCAttack:^000000 44",
+			"^0000CCWeight:^000000 85",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 4",
+			"Swordman classes"
+		},
+		slotCount = 3,
+		ClassNum = 4,
+		costume = false
+	},	
 	[1405] = {
 		unidentifiedDisplayName = "Unidentified Spear",
 		unidentifiedResourceName = "쟈벨린",
@@ -5000,6 +5407,30 @@ tbl = {
 		ClassNum = 4,
 		costume = false
 	},
+	[1101] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Sword",
+		identifiedResourceName = "소드",
+		identifiedDescriptionName = {
+			"A basic one-handed sword.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 25",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Novice, Swordman, Merchant and Thief classes"
+		},
+		slotCount = 3,
+		ClassNum = 2,
+		costume = false
+	},	
 	[1102] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -5102,6 +5533,30 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
+	[1210] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Dirk",
+		identifiedResourceName = "더크",
+		identifiedDescriptionName = {
+			"An ancient knife used by highlanders in Scotland.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 59",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 2,
+		ClassNum = 1,
+		costume = false
+	},	
 	[1211] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -5200,6 +5655,30 @@ tbl = {
 		ClassNum = 64,
 		costume = false
 	},
+	[1213] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Dagger",
+		identifiedResourceName = "대거",
+		identifiedDescriptionName = {
+			"Knife used for stabbing.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 73",
+			"^0000CCWeight:^000000 60",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 2,
+		ClassNum = 1,
+		costume = false
+	},	
 	[1214] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -5248,6 +5727,150 @@ tbl = {
 		ClassNum = 19,
 		costume = false
 	},
+	[1513] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Morning Star",
+		identifiedResourceName = "모닝스타",
+		identifiedDescriptionName = {
+			"A metal club topped with a solid steel ball that's covered in spikes.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 110",
+			"^0000CCWeight:^000000 150",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 1,
+		ClassNum = 8,
+		costume = false
+	},
+	[1519] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Chain",
+		identifiedResourceName = "체인",
+		identifiedDescriptionName = {
+			"A simple flail that consists of a thin mace attached to a chain of iron links.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 84",
+			"^0000CCWeight:^000000 80",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 14",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 2,
+		ClassNum = 64,
+		costume = false
+	},	
+	[1520] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Chain",
+		identifiedResourceName = "체인",
+		identifiedDescriptionName = {
+			"A simple flail that consists of a thin mace attached to a chain of iron links.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 84",
+			"^0000CCWeight:^000000 80",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 14",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 3,
+		ClassNum = 64,
+		costume = false
+	},	
+	[1517] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Sword Mace",
+		identifiedResourceName = "소드메이스",
+		identifiedDescriptionName = {
+			"A specialty weapon that beautifully combines the power of swords ^333333and^000000 maces.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 130",
+			"^0000CCWeight:^000000 120",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 1,
+		ClassNum = 63,
+		costume = false
+	},	
+	[1518] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Sword Mace",
+		identifiedResourceName = "소드메이스",
+		identifiedDescriptionName = {
+			"A specialty weapon that beautifully combines the power of swords ^333333and^000000 maces.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 130",
+			"^0000CCWeight:^000000 120",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 1,
+		ClassNum = 63,
+		costume = false
+	},	
+	[1514] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Morning Star",
+		identifiedResourceName = "모닝스타",
+		identifiedDescriptionName = {
+			"A metal club topped with a solid steel ball that's covered in spikes.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 110",
+			"^0000CCWeight:^000000 150",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 2,
+		ClassNum = 8,
+		costume = false
+	},	
 	[1511] = {
 		unidentifiedDisplayName = "Unidentified Mace",
 		unidentifiedResourceName = "클럽",
@@ -5324,30 +5947,6 @@ tbl = {
 		},
 		slotCount = 2,
 		ClassNum = 1,
-		costume = false
-	},
-	[1110] = {
-		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
-		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
-		identifiedDisplayName = "Rapier",
-		identifiedResourceName = "레이피어",
-		identifiedDescriptionName = {
-			"A one-handed sword with an elegant blade and crossguard.",
-			"________________________",
-			"^0000CCType:^000000 One-Handed Sword",
-			"^0000CCAttack:^000000 70",
-			"^0000CCWeight:^000000 50",
-			"^0000CCWeapon Level:^000000 2",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
-			"________________________",
-			"^0000CCRequirement:^000000",
-			"Base Level 14",
-			"Novice, Swordman, Merchant and Thief classes"
-		},
-		slotCount = 2,
-		ClassNum = 2,
 		costume = false
 	},
 	[1111] = {
@@ -5453,6 +6052,30 @@ tbl = {
 		ClassNum = 2,
 		costume = false
 	},
+	[1510] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Flail",
+		identifiedResourceName = "플레일",
+		identifiedDescriptionName = {
+			"With a spiked metal ball that freely swings from a chain, a flail is a very intimidating weapon.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 69",
+			"^0000CCWeight:^000000 90",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 14",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 2,
+		ClassNum = 8,
+		costume = false
+	},	
 	[1508] = {
 		unidentifiedDisplayName = "Unidentified Mace",
 		unidentifiedResourceName = "클럽",
@@ -6089,32 +6712,6 @@ tbl = {
 		ClassNum = 12,
 		costume = false
 	},
-	[13004] = {
-		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
-		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
-		identifiedDisplayName = "Cowardice Blade",
-		identifiedResourceName = "코워드",
-		identifiedDescriptionName = {
-			"A dagger invented by a cowardly Assassin who was always held resentment about being unable to equip a shield.",
-			"________________________",
-			"DEF +5",
-			"________________________",
-			"^0000CCType:^000000 Dagger",
-			"^0000CCAttack:^000000 80",
-			"^0000CCWeight:^000000 70",
-			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
-			"________________________",
-			"^0000CCRequirement:^000000",
-			"Base Level 55",
-			"Thief and Ninja"
-		},
-		slotCount = 2,
-		ClassNum = 1,
-		costume = false
-	},
 	[1647] = {
 		unidentifiedDisplayName = "Unidentified Staff",
 		unidentifiedResourceName = "롯드",
@@ -6343,6 +6940,30 @@ tbl = {
 		ClassNum = 72,
 		costume = false
 	},
+	[1901] = {
+		unidentifiedDisplayName = "Unidentified Instrument",
+		unidentifiedResourceName = "바이올린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Violin",
+		identifiedResourceName = "바이올린",
+		identifiedDescriptionName = {
+			"The classical stringed instrument favored by Rocker, the grasshopper monster who'd rather play music than do actual work.",
+			"________________________",
+			"^0000CCType:^000000 Musical Instrument",
+			"^0000CCAttack:^000000 50",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Bard classes"
+		},
+		slotCount = 3,
+		ClassNum = 13,
+		costume = false
+	},	
 	[1812] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
 		unidentifiedResourceName = "바그낙",
@@ -6464,6 +7085,30 @@ tbl = {
 		ClassNum = 33,
 		costume = false
 	},
+	[1220] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Gladius",
+		identifiedResourceName = "그라디우스",
+		identifiedDescriptionName = {
+			"A strong dagger that is usually crafted by traditional artisans.",
+			"________________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 105",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 24",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 3,
+		ClassNum = 33,
+		costume = false
+	},	
 	[1222] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -6634,6 +7279,30 @@ tbl = {
 		ClassNum = 2,
 		costume = false
 	},
+	[1120] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Tsurugi",
+		identifiedResourceName = "츠루기",
+		identifiedDescriptionName = {
+			"One of the most powerful one-handed swords, the Tsurugi was favored by the Japanese samurai.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 130",
+			"^0000CCWeight:^000000 120",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Merchant and Thief classes"
+		},
+		slotCount = 2,
+		ClassNum = 39,
+		costume = false
+	},	
 	[1113] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -6706,6 +7375,32 @@ tbl = {
 		ClassNum = 40,
 		costume = false
 	},
+	[1128] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Haedong Gum",
+		identifiedResourceName = "해동검",
+		identifiedDescriptionName = {
+			"A one-handed sword from far-eastern country that known has been used not just for eliminating, but also for training.",
+			"________________________",
+			"INT +3",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 120",
+			"^0000CCWeight:^000000 90",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Merchant and Thief classes"
+		},
+		slotCount = 2,
+		ClassNum = 41,
+		costume = false
+	},	
 	[1123] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -6732,6 +7427,30 @@ tbl = {
 		ClassNum = 41,
 		costume = false
 	},
+	[1127] = {
+		unidentifiedDisplayName = "Unidentified Sword",
+		unidentifiedResourceName = "소드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Saber",
+		identifiedResourceName = "세이버",
+		identifiedDescriptionName = {
+			"A heavy one-handed cavalry sword with a slightly curved blade.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Sword",
+			"^0000CCAttack:^000000 115",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Merchant and Thief classes"
+		},
+		slotCount = 3,
+		ClassNum = 42,
+		costume = false
+	},	
 	[1126] = {
 		unidentifiedDisplayName = "Unidentified Sword",
 		unidentifiedResourceName = "소드",
@@ -6931,6 +7650,71 @@ tbl = {
 		ClassNum = 69,
 		costume = false
 	},
+	[1618] = {
+		unidentifiedDisplayName = "Unidentified Staff",
+		unidentifiedResourceName = "롯드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Staff of Survival",
+		identifiedResourceName = "생존의지팡이",
+		identifiedDescriptionName = {
+			"A staff developed through the united efforts of the Magician Guild and Prontera Church.",
+			"There are two different versions of this staff intended to help new trainees.",
+			"________________________",
+			"DEX +3",
+			"MATK +120",
+			"MaxHP +400",
+			"________________________",
+			"When equipped with ^990099Manteau of Survival^000000:",
+			"MaxHP +300",
+			"MATK -5%",
+			" ",
+			"^0000FFFor each Refine Level^000000 of ^990099Staff of Survival[1]^000000:",
+			"MATK +1%",
+			" ",
+			"^0000FFFor each Refine Level^000000 of ^990099Manteau of Survival^000000:",
+			"Decreases damage taken from ^777777Neutral^000000 elemental attacks by 3%.",
+			"________________________",
+			"When equipped with ^990099Orbs of Survival^000000:",
+			"^0000FFFor each Refine Level^000000 of ^990099Staff of Survival[1]^000000:",
+			"MATK +10",
+			" ",
+			"When ^990099Staff of Survival[1]^000000 Refined to ^0000FF+10^000000:",
+			"^CC6600Base Level^000000 is below ^0000FF100^000000:",
+			"Decreases Variable Casting Time of all skills by 3%.",
+			"Increases damage of ^009900Earth Strain^000000 and ^009900Chain Lightning^000000 by 15%.",
+			"Increases damage of ^009900Heaven's Drive^000000 and ^009900Jupitel Thunder^000000 by 70%.",
+			" ",
+			"^CC6600Base Level^000000 at least ^0000FF100^000000:",
+			"Decreases Variable Casting Time of all skills by 9%.",
+			"Increases damage of ^009900Earth Strain^000000 and ^009900Chain Lightning^000000 by 45%.",
+			"Increases damage of ^009900Heaven's Drive^000000 and ^009900Jupitel Thunder^000000 by 210%.",
+			"________________________",
+			"When equipped with ^990099Shoes of Survival [1]^000000:",
+			"Decreases damage taken from ^FF0000Demi-Human^000000 race monsters by 10%.",
+			"Ignores magical defense of target by 50%.",
+			" ",
+			"If ^990099Staff of Survival [1]^000000 Refine Level ^0000FF+10^000000:",
+			"Decreases ^009900Earth Strain^000000 skill cooldown by 2.4 seconds.",
+			"Decreases ^009900Chain Lightning^000000 skill cooldown by 1 seconds.",
+			"Increases magical damage against ^FF0000Demi-Human^000000 race monsters by 20%.",
+			"Increases ^777777Neutral^000000 elemental magic damage by 80%.",
+			"Random chance to increase damage inflicted with ^009900Chain Lightning^000000 by 100% for 5 seconds when dealing magical damage.",
+			"________________________",
+			"^0000CCType:^000000 One-Handed Staff",
+			"^0000CCAttack:^000000 50",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 24",
+			"Magician, Acolyte and Soul Linker"
+		},
+		slotCount = 1,
+		ClassNum = 10,
+		costume = false
+	},	
 	[1617] = {
 		unidentifiedDisplayName = "Unidentified Staff",
 		unidentifiedResourceName = "롯드",
@@ -7013,6 +7797,54 @@ tbl = {
 		ClassNum = 79,
 		costume = false
 	},
+	[1808] = {
+		unidentifiedDisplayName = "Unidentified Knuckle",
+		unidentifiedResourceName = "바그낙",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Fist",
+		identifiedResourceName = "피스트",
+		identifiedDescriptionName = {
+			"A weapon made in the form of a human fist which effectively inflicts damage on enemies.",
+			"________________________",
+			"^0000CCType:^000000 Knuckle",
+			"^0000CCAttack:^000000 115",
+			"^0000CCWeight:^000000 65",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 24",
+			"Priest and Monk classes"
+		},
+		slotCount = 1,
+		ClassNum = 81,
+		costume = false
+	},	
+	[1804] = {
+		unidentifiedDisplayName = "Unidentified Knuckle",
+		unidentifiedResourceName = "바그낙",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Knuckle Dusters",
+		identifiedResourceName = "너클더스터",
+		identifiedDescriptionName = {
+			"A protective covering that shields the back of the hand and forearm and has raised studs for offensive purposes.",
+			"________________________",
+			"^0000CCType:^000000 Knuckle",
+			"^0000CCAttack:^000000 50",
+			"^0000CCWeight:^000000 45",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Priest and Monk classes"
+		},
+		slotCount = 3,
+		ClassNum = 79,
+		costume = false
+	},	
 	[1805] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
 		unidentifiedResourceName = "바그낙",
@@ -7329,6 +8161,127 @@ tbl = {
 		ClassNum = 88,
 		costume = false
 	},
+	[13150] = {
+		unidentifiedDisplayName = "Unidentified Rifle",
+		unidentifiedResourceName = "라이플",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Branch",
+		identifiedResourceName = "라이플",
+		identifiedDescriptionName = {
+			"A practical firearm with a long gun barrel which increases its range and accuracy.",
+			"________________________",
+			"^0000CCType:^000000 Rifle",
+			"^0000CCAttack:^000000 50",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Gunslinger"
+		},
+		slotCount = 3,
+		ClassNum = 18,
+		costume = false
+	},	
+	[1961] = {
+		unidentifiedDisplayName = "Unidentified Whip",
+		unidentifiedResourceName = "로프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Whip",
+		identifiedResourceName = "휩",
+		identifiedDescriptionName = {
+			"A fairly common and very normal whip.",
+			"________________________",
+			"^0000CCType:^000000 Whip",
+			"^0000CCAttack:^000000 120",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 30",
+			"Dancer classes"
+		},
+		slotCount = 2,
+		ClassNum = 88,
+		costume = false
+	},	
+	[1959] = {
+		unidentifiedDisplayName = "Unidentified Whip",
+		unidentifiedResourceName = "로프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Tail Whip",
+		identifiedResourceName = "테일",
+		identifiedDescriptionName = {
+			"A whip fashioned out of an animal's tail that is said to bring good luck.",
+			"________________________",
+			"LUK +3",
+			"________________________",
+			"^0000CCType:^000000 Whip",
+			"^0000CCAttack:^000000 105",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 30",
+			"Dancer classes"
+		},
+		slotCount = 2,
+		ClassNum = 87,
+		costume = false
+	},	
+	[1953] = {
+		unidentifiedDisplayName = "Unidentified Whip",
+		unidentifiedResourceName = "로프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Whip",
+		identifiedResourceName = "라인",
+		identifiedDescriptionName = {
+			"A standard whip that's perfect for adventuring Dancers.",
+			"________________________",
+			"^0000CCType:^000000 Whip",
+			"^0000CCAttack:^000000 80",
+			"^0000CCWeight:^000000 30",
+			"^0000CCWeapon Level:^000000 2",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 16",
+			"Dancer classes"
+		},
+		slotCount = 3,
+		ClassNum = 14,
+		costume = false
+	},	
+	[1950] = {
+		unidentifiedDisplayName = "Unidentified Whip",
+		unidentifiedResourceName = "로프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Rope",
+		identifiedResourceName = "로프",
+		identifiedDescriptionName = {
+			"A strong, thick cord composed of tightly braided fiber.",
+			"________________________",
+			"^0000CCType:^000000 Whip",
+			"^0000CCAttack:^000000 45",
+			"^0000CCWeight:^000000 40",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 3",
+			"Dancer classes"
+		},
+		slotCount = 3,
+		ClassNum = 14,
+		costume = false
+	},	
 	[1906] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
 		unidentifiedResourceName = "바이올린",
@@ -7353,6 +8306,30 @@ tbl = {
 		ClassNum = 13,
 		costume = false
 	},
+	[1912] = {
+		unidentifiedDisplayName = "Unidentified Instrument",
+		unidentifiedResourceName = "바이올린",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Gumoongoh",
+		identifiedResourceName = "거문고",
+		identifiedDescriptionName = {
+			"A traditional chordophone, favored by the aristocracy in days past, which plays deep, subtle notes.",
+			"________________________",
+			"^0000CCType:^000000 Musical Instrument",
+			"^0000CCAttack:^000000 126",
+			"^0000CCWeight:^000000 130",
+			"^0000CCWeapon Level:^000000 3",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Bard classes"
+		},
+		slotCount = 2,
+		ClassNum = 13,
+		costume = false
+	},	
 	[1904] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
 		unidentifiedResourceName = "바이올린",
@@ -8313,6 +9290,30 @@ tbl = {
 		},
 		slotCount = 1,
 		ClassNum = 0,
+		costume = false
+	},	
+	[1504] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Mace",
+		identifiedResourceName = "메이스",
+		identifiedDescriptionName = {
+			"A flanged, solid club that is effective for simple smashing.",
+			"________________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 37",
+			"^0000CCWeight:^000000 80",
+			"^0000CCWeapon Level:^000000 1",
+			"^0000CCCan be enchanted by:^000000",
+			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 2",
+			"Novice, Swordman, Acolyte and Merchant"
+		},
+		slotCount = 3,
+		ClassNum = 62,
 		costume = false
 	},	
 	[15040] = {
