@@ -757,6 +757,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 13027:
 	case 1648:
 	case 13028:
+	case 13049:
 
 if (.@Free == 1){	set .@Forged,1;}
 			set .@level,4;
