@@ -3590,6 +3590,381 @@ Body:
       bonus bDef,30;
       bonus bFlee,5;
       bonus bFlee2,2;   
+  - Id: 4128
+    AegisName: Golden_Bug_Card
+    Name: Golden Thief Bug Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bMdef,250;
+      bonus bDefRate,-90;
+  - Id: 4131
+    AegisName: Moonlight_Flower_Card
+    Name: Moonlight Flower Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bSpeedRate,25;      
+  - Id: 4121
+    AegisName: Phreeoni_Card
+    Name: Phreeoni Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bHit,100;      
+  - Id: 4115
+    AegisName: Hunter_Fly_Card
+    Name: Hunter Fly Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      autobonus("{ sc_start2(SC_REGEN_HP, 5000, 1000, 100); }", 10, 5000, BF_WEAPON);    
+  - Id: 4320
+    AegisName: Bloody_Knight_Card
+    Name: Bloody Knight Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus3 bAutoSpell,"WZ_METEOR",1,20;
+      bonus2 bAddEff, Eff_Stun, 2000;
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Silence,getrefine();
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Blind,getrefine();
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Confusion,getrefine();
+  - Id: 4608
+    AegisName: White_Knightage_Card
+    Name: White Knight Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bBaseAtk,15;
+      bonus2 bAddSize,Size_Medium,10;
+      bonus2 bAddSize,Size_Large,10;      
+  - Id: 4609
+    AegisName: Khaliz_Knightage_Card
+    Name: Khalitzburg Knight Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bDef,20;
+      bonus2 bSubSize,Size_Medium,20;
+      bonus2 bSubSize,Size_Large,20;      
+  - Id: 27081
+    AegisName: AngerMoonlight_Card
+    Name: Angry Moonlight Flower Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bMatk,100;
+      bonus bUseSPRate,-25;
+  - Id: 27083
+    AegisName: BitterBonGun_Card
+    Name: Resentful Bongun Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bAddClass,Class_All,1;
+      bonus bMatkRate,1;   
+  - Id: 1264
+    AegisName: Various_Jur
+    Name: Specialty Jur
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 800
+    Attack: 50
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus2 bAddEff2,Eff_Bleeding,10;  
+  - Id: 1307
+    AegisName: Windhawk
+    Name: Windhawk
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 18000
+    Weight: 1500
+    Attack: 95
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 14
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;
+      bonus bAspdRate,5;
+      bonus bUnbreakableWeapon;      
+  - Id: 13013
+    AegisName: Murasame_
+    Name: Murasame
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 95
+    Range: 1
+    Slots: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 24
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus2 bCriticalAddRace,RC_DemiHuman,10;
+      bonus2 bCriticalAddRace,RC_Player_Human,10;      
+  - Id: 13012
+    AegisName: Murasame
+    Name: Murasame
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 95
+    Range: 1
+    Slots: 0
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 24
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus2 bCriticalAddRace,RC_DemiHuman,10;
+      bonus2 bCriticalAddRace,RC_Player_Human,10;      
+  - Id: 1189
+    AegisName: Krasnaya
+    Name: Krasnaya
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 20
+    Weight: 3800
+    Attack: 200
+    Range: 2
+    Slots: 2
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      if (readparam(bStr)>=95) {
+         bonus bBaseAtk,20;
+      }      
+  - Id: 13034
+    AegisName: Twilight_Desert
+    Name: Desert Twilight
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 600
+    Attack: 130
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true        
+  - Id: 1485
+    AegisName: Battle_Fork
+    Name: Battle Fork
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 20
+    Weight: 700
+    Attack: 92
+    Range: 3
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 50
+    Refineable: true      
+  - Id: 27086
+    AegisName: BitterArcherSk_Card
+    Name: Resentful Soldier Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      if (getiteminfo(getequipid(EQI_COMPOUND_ON),11) == W_BOW) {
+         bonus3 bAutoSpell,"AC_DOUBLE",5,30;
+         if (getrefine() >= 10) {
+            bonus bLongAtkRate,10;
+         }
+      }      
+  - Id: 4318
+    AegisName: Knight_Windstorm_Card
+    Name: Stormy Knight Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus3 bAutoSpell,"WZ_STORMGUST",1,20;
+      bonus2 bAddEff,Eff_Freeze,2000;
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Stone,getrefine();
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Poison,getrefine();
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Blind,getrefine();
+      bonus3 bAddEffOnSkill,"WZ_STORMGUST",Eff_Confusion,getrefine();
+  - Id: 4142
+    AegisName: Doppelganger_Card
+    Name: Doppelganger Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bAspdRate,10;      
+  - Id: 4144
+    AegisName: Osiris_Card
+    Name: Osiris Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bRestartFullRecover;
+      bonus bHealPower2,20;      
+  - Id: 4134
+    AegisName: Dracula_Card
+    Name: Dracula Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      autobonus("{ sc_start2(SC_REGEN_SP, 7000, 1000, 20); }", 10, 7000, BF_WEAPON | BF_MAGIC);     
+  - Id: 4146
+    AegisName: Maya_Card
+    Name: Maya Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubEle,Ele_Ghost,20;
+      bonus2 bSubEle,Ele_Wind,20;
+      bonus2 bSubEle,Ele_Fire,-20;
+      bonus2 bSubEle,Ele_Dark,-20;
+      bonus2 bSubRace,RC_DemiPlayer,30;
+      bonus2 bSubRace,RC_Brute,30;     
   - Id: 2386
     AegisName: Chameleon_Armor
     Name: Chameleon Armor

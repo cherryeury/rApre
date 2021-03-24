@@ -526,20 +526,20 @@
 4074:4162,{ bonus2 bAddEffWhenHit,Eff_Blind,600; }
 4079:27338,{ bonus2 bAddClass,Class_All,7; bonus bHit,12; }
 4090:4212:4328,{ bonus bAllStats,1; }
-4090:27085,{ autobonus "{ bonus2 bAddEff,Eff_Stun,5000; }",2,5000,BF_SHORT; }
+27083:27085,{ bonus bMatk,15; bonus bBaseAtk,15; }
 4093:27120,{ bonus bMaxSP,50; }
 4094:27086,{ autobonus "{ bonus bAspd,1; }",20,5000,BF_WEAPON; }
 4100:27084,{ autobonus "{ bonus bSPrecovRate,100; }",20,5000,BF_MAGIC; }
 4106:4248,{ bonus bPerfectHitAddRate,20; }
 4127:4166,{ bonus2 bAddEffWhenHit,Eff_Curse,600; }
 4129:27335,{ bonus bCritAtkRate,15; }
-4131:27081,{ autobonus "{ bonus bFlee2,10; }",70,5000,BF_SHORT; }
+4131:27081,{ bonus bMatkRate,10; bonus bUseSPRate,-25; }
 4139:18619,{ bonus3 bAutoSpell,"RG_SNATCHER",5,20; bonus bDex,2; bonus bAgi,1; bonus bInt,-1; }
 4144:20932,{ bonus bMaxHPrate,15; bonus2 bSubEle,Ele_Dark,100; bonus2 bSubEle,Ele_Fire,50; bonus2 bResEff,Eff_Curse,10000; }
 4152:5967,{ bonus2 bAddItemGroupHealRate,IG_Juice,1000; }
 4153:4247:4273,{ bonus3 bAddMonsterDropItem,544,RC_Fish,3000; bonus2 bAddEle,Ele_Water,30; }
 4153:18554,{ bonus2 bAddEle,Ele_Water,10; }
-4159:27082,{ autobonus "{ bonus bFlee,10; }",20,5000,BF_SHORT; }
+4159:27082,{ bonus bFlee,10; }
 4163:5967,{ bonus bAspdRate,3; bonus bAspd,1; bonus2 bAddClass,Class_All,-5; if (getequiprefinerycnt(EQI_HAND_R) >= 10 && getiteminfo(getequipid(EQI_HAND_R),11) == 11) bonus bAspd,1; }
 4168:4169,{ bonus bMaxHPrate,20; bonus bMaxSPrate,20; bonus bVariableCastrate,-10; }
 4169:4488,{ if(getequiprefinerycnt(EQI_SHOES) >= 15) { bonus bMaxHPrate,15; bonus bMaxSPrate,15; } else { bonus bMaxHPrate,10; bonus bMaxSPrate,10; } }
@@ -553,7 +553,7 @@
 4193:4294,{ bonus bMaxHP,300; bonus bMaxSP,60; }
 4207:18865,{ bonus2 bAddSize,Size_All,5; bonus2 bMagicAddSize,Size_All,5; }
 4208:4258:4325:4327:4382,{ bonus bInt,3; bonus2 bSkillAtk,"WZ_HEAVENDRIVE",10; bonus2 bSkillAtk,"MG_THUNDERSTORM",10; if(BaseJob==Job_Sage) { bonus bMagicDamageReturn,20; bonus2 bAddMonsterDropItem,716,100; bonus2 bAddMonsterDropItem,715,100; bonus bVariableCastrate,-20; } }
-4212:27083,{ autobonus2 "{ bonus2 bAddDefMonster,1026,-100; }",20,5000,BF_SHORT; }
+27085:27083,{ bonus bMatkRate,2; bonus2 bAddClass,Class_All,2; }
 4218:4269,{ bonus bHPrecovRate,30; bonus bSPrecovRate,30; bonus bVit,4; bonus bInt,4; }
 4220:4246:4311:4319:4331,{ bonus bStr,10; bonus bMaxHPrate,20; bonus bHPrecovRate,50; bonus3 bAutoSpell,"BS_WEAPONPERFECT",1,3; bonus2 bAddMonsterDropItem,501,500; if(BaseClass==Job_Swordman) bonus2 bAddItemGroupHealRate,IG_Potion,50; }
 4020:27328,{ bonus bBaseAtk,15; bonus2 bAddEle,Ele_Dark,20; }

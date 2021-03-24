@@ -19,3 +19,5 @@
 4311:4319:4331:4371,{ bonus bDef,18; }
 5782:2125,{ bonus bDef,18; }
 22132:4131,{.@r = getequiprefinerycnt(EQI_SHOES); skill "AL_HEAL",10; if(BaseLevel < 99){ bonus bMatk,.@r*5; bonus bMdef,.*@r; } else { bonus bMatk,.@r*15; bonus bMdef,.@r*10; }}
+4608:4609,{ bonus2 bAddSize,Size_Medium,-10; bonus2 bAddSize,Size_Large,-10; }
+27163:27165,{ bonus bAspdRate,10; bonus bDelayrate,3; }

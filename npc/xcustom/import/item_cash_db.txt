@@ -221,9 +221,9 @@
 
 // Acc
 //4,2745,10 // Pinguicula Corsage
-4,2751,10 // Academy Badge
-4,2888,25 // School Bag
+4,2751,15 // Academy Badge
 4,2948,25 // Devil Wing
+4,2888,35 // School Bag
 4,2998,50 // Shining Ttapezohedron
 4,2936,50 // Ring of Recovery
 //4,28314,10 // Hand of Glory
