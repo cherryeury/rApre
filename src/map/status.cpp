@@ -8672,7 +8672,7 @@ t_tick status_get_sc_def(struct block_list *src, struct block_list *bl, enum sc_
 			sc_def = status->vit*100;
 			sc_def2 = status->luk*10 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #else
-			sc_def = status->int_*100;
+			sc_def = (status->vit*50)+(status->int_*50); //sc_def = status->int_*100;
 			sc_def2 = (status->vit + status->luk) * 5 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #endif
 			tick_def2 = status->luk*10;
@@ -8682,7 +8682,7 @@ t_tick status_get_sc_def(struct block_list *src, struct block_list *bl, enum sc_
 			sc_def = status->vit*100;
 			sc_def2 = status->luk*10 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #else
-			sc_def = status->agi*100;
+			sc_def = (status->vit*50)+(status->agi*50); //sc_def = status->agi*100;
 			sc_def2 = status->luk*10 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #endif
 			tick_def2 = status->luk*10;
@@ -8692,7 +8692,7 @@ t_tick status_get_sc_def(struct block_list *src, struct block_list *bl, enum sc_
 			sc_def = status->int_*100;
 			sc_def2 = status->luk*10 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #else
-			sc_def = status->agi*100;
+			sc_def = (status->vit*50)+(status->agi*50); //sc_def = status->agi*100;
 			sc_def2 = (status->int_ + status->luk) * 5 + status_get_lv(bl)*10 - status_get_lv(src)*10;
 #endif
 			tick_def2 = status->luk*10;
