@@ -23,43 +23,50 @@
 
 //Headgear 
 //Top
-0,5690,20 // Red Wing Hat
-0,5502,20 // Necromancer
-0,5568,20 // Rabbit Bonnet
-0,5153,25 // Angeling Hairpin
-0,5527,25 // Lunatic Hat
-0,5782,35 // Legion
-0,18901,35 // Seppl Hat
-0,18847,35 // Jolly Roger
+0,5690,2 // Red Wing Hat
+0,5502,2 // Necromancer
+0,5568,2 // Rabbit Bonnet
+0,5153,7 // Angeling Hairpin
+0,5527,7 // Lunatic Hat
+0,5782,12 // Legion
+0,18901,12 // Seppl Hat
+0,5781,12 // Persica
+//0,18847,12 // Jolly Roger
+0,5768,20 // Sakura Coronet
 //0,18738,8 // White Student
-0,5357,45 // Wings of Victory
-0,5396,45 // Jasper Crest
+0,5396,30 // Jasper Crest
+0,5357,30 // Wings of Victory
 //0,18801,50 // Gale Hair Or
 
-0,5520,50 // Rabbit Earmuffs
-0,18563,50 
-0,5673,100 // Hometown Sakura
-0,18600,100 // Cat Ear Berret
+0,5520,30 // Rabbit Earmuffs
+0,5579,30 // Wanderer's Sakkat
+0,18563,50 // Heart wings
+0,5673,50 // Hometown Sakura
+0,18600,70 // Cat Ear Berret
 //0,18812,250 // Elder Crown
-0,18574,200 // Lord of Death
-0,18539,300 // Skull Cap
+0,18574,70 // Lord of Death
+0,18803,70 // Rose Cascade
+0,5975,75 // Zealotus
+0,18539,150 // Skull Cap
 //0,18804,350 // Thorn
-0,19326,300 // Book of Soyga
-0,5975,400 // Zealotus
-0,18827,400 // Valkyrie Circlet
-0,19033,400 // Ancient Deco
-0,19098,500 // Piamette Hood
-0,18756,600 // Black Shiba Inu Hat
-0,18652,1250 // Vanargand Helm
+//0,19326,150 // Book of Soyga
+0,19033,150 // Ancient Deco
+0,18827,250 // Valkyrie Circlet
+0,19098,250 // Piamette Hood
+0,18756,250 // Black Shiba Inu Hat
+0,5208,300 // rIDEWORD
+0,18652,350 // Vanargand Helm
+0,18908,350 // Piamette Red Ears
+0,18909,350 // Piamette Brown Ears
+0,18910,350 // Piamette Blue Ears
 //0,5975,750
 //0,19172,1250 // Sitting Pope
 //0,19364,1250 // Engineer Cap
-0,18934,1250 // Kitsune Ear
-0,18673,1700 // Drooping Pope
-0,18849,1700 // Celine Ribbon
-0,19163,2000 // Katarina
+//0,18934,1250 // Kitsune Ear
+0,18673,800 // Drooping Pope
+//0,18849,800 // Celine Ribbon
+0,19163,1500 // Katarina
 //0,19163,1000
-
 
 // Middle
 1,5664,50 // Filir Pinion
@@ -69,17 +76,19 @@
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
 1,5786,200 // Ancient elven ear
+1,18559,200 // Fafnir Skin
 1,5104,250 // Dark Blinkers
 //1,5924,350
 1,18787,400 // Goaltender
+1,18540,400 // Demon Mask
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
 1,18877,500 // Baron Evil Eye
 //1,19024,1000 // Protect Feathers
 1,18599,750 // Black Devil Mask
-1,19083,1000 // Mask of Hero
-1,19141,1500 // Dolor Thanatos
-1,18603,1500 // Black Devil Mask
+//1,19083,1000 // Mask of Hero
+//1,19141,1500 // Dolor Thanatos
+1,18603,2000 // Black Devil Mask
 //1,5933,1750 // Crow Tengu Mask
 //1,400001,2000 // Victory Wing ears
 //1,400002,3000 // Victory Wing Ears [1]
@@ -92,6 +101,7 @@
 1,18643,20 // Paperhand str
 1,18642,20 // Paperhand int
 1,18644,20 // Paperhand dex
+1,5574,35 // Well Chewed
 1,5305,50 // Pirate Dagger
 //1,5934,50
 //1,18759,70 // Wood Goblin
@@ -99,15 +109,16 @@
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
 1,18868,150 // Assassin mask
+1,18560,200 // Fafnir Mask
 1,18754,600 // Blood Sucker
 1,18858,600 // Pink Angelring Bubble
 //1,18968,500
-1,18666,800 // CD in Mouth 
+//1,18666,800 // CD in Mouth 
 1,19097,1250 // Piamette Ribbon
 1,18564,2000 // Fragment of Love
 //1,19137,2500 // Strawberry in Mouth
 
-1,19101,4000 // Glast Heim
+1,19101,5000 // Glast Heim
 //1,19112,4000 // Tengu Scroll
 1,400000,5000 // Whistle
 1,5972,5000 // Talking Parrot
@@ -116,23 +127,23 @@
 
 
 // Weapons
-2,28604,10
-2,18130,10
-2,28705,10
-2,13327,10
-2,28007,10
-2,1839,10
-2,1498,10
-2,16040,10
-2,1680,10
-2,13127,10
-2,13454,10
-2,1443,10
-2,28106,10
-2,2025,10
-2,21015,10
-2,1939,10
-2,1995,10
+2,28604,5
+2,18130,5
+2,28705,5
+2,13327,5
+2,28007,5
+2,1839,5
+2,1498,5
+2,16040,5
+2,1680,5
+2,13127,5
+2,13454,5
+2,1443,5
+2,28106,5
+2,2025,5
+2,21015,5
+2,1939,5
+2,1995,5
 2,13049,200 // Lacma
 2,16051,200 // Valkyrie Hammer
 2,28717,200 // Valkyrie Knife
@@ -142,7 +153,7 @@
 //3,2197,35 // Iron Shield
 //3,2188,25 // Svalinn
 //3,2196,10 // White Gold Shield
-3,2177,30 // Shield of Death
+3,2177,100 // Shield of Death
 //3,2198,30 // Lapine Shield
 //3,28910,500 // Rectangular Large Sleeve
 //3,2192,250
@@ -150,25 +161,26 @@
 //3,2184,100 // Bunker Shield
 
 //3,28929,200 // Happy Shield
-3,28906,300 // Shield of Living Flame
-3,28907,300 // Shield of Unnamed Wind
-3,28908,300 // Shield of Great Water
-3,28909,300 // Shield of Formless Earth
-
-3,28918,300 // Shield of Chaos Boiling
-3,2191,500 // Solomon
-3,28951,700 // Nero Shield 
-3,28921,700 // Anemos Shield
-3,28916,700 // Gaia Shield
+3,28906,100 // Shield of Living Flame
+3,28907,100 // Shield of Unnamed Wind
+3,28908,100 // Shield of Great Water
+3,28909,100 // Shield of Formless Earth
+3,28918,100 // Shield of Chaos Boiling
+3,2191,100 // Solomon
+//3,28951,500 // Nero Shield 
+//3,28921,500 // Anemos Shield
+//3,28916,500 // Gaia Shield
 //3,28941,700 // Excelion Shield
 //3,20800,1000
 
 // Armor
 3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15058,40 // Rider Suit
+3,15058,30 // Rider Suit
+3,15060,30 // Azure Smock
 //3,19048,1000
-3,15141,300 // Rift Armor
+3,15141,100 // Rift Armor
+3,2584,100 // Wanderer Coat
 //3,15054,750 // Ninja
 //3,15075,750 // Guillotine
 //3,15076,750 // Ranger
@@ -181,29 +193,29 @@
 //3,15083,750 // Archmage
 //3,15084,750 // Performer
 //3,15085,750 // Gene  
-3,15353,1000 // Rapid Armor
-3,15354,1000 // Dex Armor
-3,15346,1000 // Lucky Armor
-3,15347,1000 // Vitality Armor
-3,15278,1000 // Power Armor
-3,15279,1000 // Magic Armor
+//3,15353,1000 // Rapid Armor
+//3,15354,1000 // Dex Armor
+//3,15346,1000 // Lucky Armor
+//3,15347,1000 // Vitality Armor
+//3,15278,1000 // Power Armor
+//3,15279,1000 // Magic Armor
 //3,15128,1500 // Excellion Suit
-3,15204,2000 // Abyss Dress
+//3,15204,1500 // Abyss Dress
 
 // Garment
-3,20714,50 // Assassin Muffler
-3,20730,75 // Loyalist Hood
-3,20778,150 // Crimson Stole
-3,2597,150 // Bloody Muffler
+3,20714,30 // Assassin Muffler
+3,20730,40 // Loyalist Hood
+3,2597,100 // Bloody Muffler
+3,20778,100 // Crimson Stole
 //3,20783,150 // Hero Manteau
 //3,20860,500
-3,20779,300 // Rift Garment
-3,20863,500 // Menblatt Garment
-3,20814,700 // Wakwak Manteau 
-3,20943,700 // Geffen Magic Muffler
+3,20779,100 // Rift Garment
+3,20863,400 // Menblatt Garment
+3,20814,400 // Wakwak Manteau 
 //3,20931,750
-3,20944,700 // Anti Magic Manteau
-3,20831,900 // Elder's Spirit
+3,20831,400 // Elder's Spirit
+3,20943,900 // Geffen Magic Muffler
+3,20944,900 // Anti Magic Manteau
 3,20952,900 // Mysterious Muffler
 //3,20773,1500 // Excellion Wing
 3,20859,1500 // Phreeoni Wings
@@ -211,18 +223,19 @@
 //3,20940,2000 // Violet Halo
 
 //Shoes
-3,2466,100 // Training Shoes
-3,2481,100 // Rune Boots
-3,22064,100 // Thorn Boots
-3,22075,300 // Rift Shoes
+3,2466,15 // Training Shoes
+3,2481,35 // Rune Boots
+3,22064,75 // Thorn Boots
+3,22075,150 // Rift Shoes
 //3,22132,1250 // Lightning God
 //3,22171,600 // Ancient Hero's Boots
 //3,22103,850 // Excellion Legs
 
 // Acc
 //4,2745,10 // Pinguicula Corsage
-4,2751,10 // Academy Badge
-4,2948,20 // Devil Wing
+4,2751,20 // Academy Badge
+4,2855,20 // Whikebain tail
+4,2948,25 // Devil Wing
 4,2888,50 // School Bag
 4,2998,50 // Shining Ttapezohedron
 4,2936,50 // Ring of Recovery
@@ -232,17 +245,18 @@
 4,2913,75 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
 4,2959,100 // Fidelity Necklace
+4,2983,150 // Brooch of greed
 4,2984,400 // Glove of Saehrimnir
 4,28342,400 // Critical Anklet
-4,2881,500 // Orlean's
-4,2980,500 // Evil thread
+4,2881,800 // Orlean's
+//4,2980,500 // Evil thread
 //4,28520,750 // Egir's Ring
 //4,28501,1000 // Kirin's Horn
 //4,28433,1000 // Luminous Blue Light Stone
 //3,28505,750
-4,32237,2500 // Celine's Brooch
-4,32204,2500 // Immortal Corps Dog Tag
-4,32227,2500 // Fenrir Chain
+//4,32237,2500 // Celine's Brooch
+//4,32204,2500 // Immortal Corps Dog Tag
+//4,32227,2500 // Fenrir Chain
 //4,28565,2500 // Perverse Demon Mask
 //4,28594,4000 // Temporal Ring
 //4,32258,4000 // Ring of Jupiter
@@ -640,8 +654,8 @@
 
 //Bundle
 //7,12026,20 // Classic Headgear Box
-7,12623,20 // High Weapon Box
-7,12391,200 // Top Costume
-7,12403,200 // Mid Costume
-7,12416,200 // Low Costume
-7,12493,500 // Garment Costume
+//7,12623,20 // High Weapon Box
+7,12391,150 // Top Costume
+7,12403,150 // Mid Costume
+7,12416,150 // Low Costume
+7,12493,400 // Garment Costume

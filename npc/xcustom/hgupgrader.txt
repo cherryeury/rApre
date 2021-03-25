@@ -46,8 +46,8 @@ case 2:
 			set .@menu$, .@menu$+.Shops$[.@i]+":";
 		set .@i, select(.@menu$); }
 		mes "^0055FFYou can only select one item at a time.^000000";
-	callshop "edengear"+.@i,1;
-	npcshopattach "edengear"+.@i;
+	callshop "cardgear"+.@i,1;
+	npcshopattach "cardgear"+.@i;
 	end;
 
 function Add {
@@ -59,7 +59,7 @@ function Add {
 			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
 	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
 		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
-	npcshopadditem "edengear"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	npcshopadditem "cardgear"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
 	return; }
 function Chk {
 	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
@@ -258,12 +258,12 @@ OnInit:
 
 // --------------------------------------------------
 	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
-		npcshopdelitem "edengear"+.@i,909;
+		npcshopdelitem "cardgear"+.@i,909;
 	end;
 }
 
 // -------- Dummy data (duplicate as needed) --------
--	shop	edengear1	-1,909:-1
--	shop	edengear2	-1,909:-1
--	shop	edengear3	-1,909:-1
--	shop	edengear4	-1,909:-1
+-	shop	cardgear1	-1,909:-1
+-	shop	cardgear2	-1,909:-1
+-	shop	cardgear3	-1,909:-1
+-	shop	cardgear4	-1,909:-1
