@@ -1552,7 +1552,7 @@ Body:
     Refineable: true
     View: 115
     Script: |
-      bonus2 bAddEffWhenHit,Eff_Freeze,200;  
+      bonus2 bAddEffWhenHit,Eff_Freeze,300;  
   - Id: 5037
     AegisName: Fruit_Shell
     Name: Nut Shell
@@ -1708,7 +1708,50 @@ Body:
     Refineable: true
     View: 46      
     Script: |
-      bonus bFlee,3;       
+      bonus bFlee2,5;       
+  - Id: 2299
+    AegisName: Viking_Helm
+    Name: Orc Helm
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 39
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 86      
+  - Id: 5157
+    AegisName: Viking_Helm_
+    Name: Orc Helm
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 39
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 86    
   - Id: 2213
     AegisName: Cat_Hairband
     Name: Kitty Band
@@ -1897,7 +1940,52 @@ Body:
     Refineable: true
     View: 96 
     Script: |
-      bonus bHitRate,1;       
+      bonus bHitRate,1;      
+  - Id: 2256
+    AegisName: Magestic_Goat
+    Name: Majestic Goat
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 9
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 41
+    Script: |
+      bonus bStr,3;
+  - Id: 5160
+    AegisName: Magestic_Goat_
+    Name: Majestic Goat
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 9
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 41
+    Script: |
+      bonus bStr,3;      
   - Id: 2298
     AegisName: Green_Feeler
     Name: Green Feeler
@@ -1909,7 +1997,7 @@ Body:
       Head_Top: true
     View: 85      
     Script: |
-      bonus bHit,5;       
+      bonus bHit,4;       
   - Id: 5042
     AegisName: Hair_Protector
     Name: Bao Bao
@@ -2315,6 +2403,466 @@ Body:
     View: 43      
     Script: |
       bonus bShortWeaponDamageReturn,5;
+  - Id: 5141
+    AegisName: Marionette_Doll
+    Name: Marionette Doll
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 1
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 30
+    Refineable: true
+    View: 212
+    Script: |
+      bonus bStr,1; 
+      bonus2 bSubEle,Ele_Ghost,2; 
+  - Id: 2235
+    AegisName: Crown
+    Name: Crown
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 7
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 45
+    Refineable: true
+    View: 45
+    Script: |
+      bonus bInt,1;
+      bonus bDex,1;
+      bonus bVit,1;
+  - Id: 2224
+    AegisName: Goggle
+    Name: Goggles
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 25
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    Script: |
+      bonus2 bSubEle,Ele_Wind,4;
+    View: 1
+  - Id: 2225
+    AegisName: Goggle_
+    Name: Goggles
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    View: 1      
+    Script: |
+      bonus2 bSubEle,Ele_Wind,4;
+  - Id: 5090
+    AegisName: Goblin_Mask_04
+    Name: Goblin Leader Mask
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 7
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 174
+    Script: |
+      bonus2 bAddRace2,RC2_Goblin,3;
+  - Id: 2288
+    AegisName: Mr_Scream
+    Name: Mr. Scream
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 75
+    Script: |
+      bonus2 bCritical,1;
+  - Id: 5808
+    AegisName: Diabolus_Helmet
+    Name: Dark Bacilium
+    Type: Armor
+    Buy: 20
+    Weight: 250
+    Defense: 45
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    View: 364
+    Script: |
+      .@r = getrefine();
+      bonus2 bResEff,Eff_Stone,2000+(.@r*200);
+      bonus2 bResEff,Eff_Freeze,2000+(.@r*200);
+      bonus2 bResEff,Eff_Stun,2000+(.@r*200);      
+  - Id: 5053
+    AegisName: Spinx_Helm
+    Name: Sphinx Hat
+    Type: Armor
+    Buy: 20
+    Weight: 3000
+    Defense: 25
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Head_Low: true
+      Head_Top: true
+    EquipLevelMin: 65
+    View: 137
+    Script: |
+      bonus bStr,2;
+      bonus bInt,2;
+  - Id: 2297
+    AegisName: Goblini_Mask
+    Name: Goblin Mask
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 7
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 84      
+  - Id: 5088
+    AegisName: Goblin_Mask_02
+    Name: Surprised Mask
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 4
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 172    
+  - Id: 5087
+    AegisName: Goblin_Mask_01
+    Name: Poker Face
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 4
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 171    
+  - Id: 5089
+    AegisName: Goblin_Mask_03
+    Name: Annoyed Mask
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 4
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 173      
+  - Id: 5092
+    AegisName: Blue_Coif
+    Name: Coif
+    Type: Armor
+    Buy: 150000
+    Weight: 300
+    Defense: 45
+    Jobs:
+      Assassin: true
+      Priest: true
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 176
+  - Id: 5093
+    AegisName: Blue_Coif_
+    Name: Coif
+    Type: Armor
+    Buy: 150000
+    Weight: 300
+    Defense: 45
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Priest: true
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 177
+    Script: |
+      bonus bMaxSP,100;      
+  - Id: 2266
+    AegisName: Iron_Cane
+    Name: Iron Cain
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 10
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Head_Low: true
+    EquipLevelMin: 50
+    View: 53      
+  - Id: 2262
+    AegisName: Pierrot_Nose
+    Name: Clown Nose
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Low: true
+    View: 49
+    Script: |
+      bonus bHPrecovRate,1;
+  - Id: 2241
+    AegisName: Granpa_Beard
+    Name: Grampa Beard
+    Type: Armor
+    Buy: 5000
+    Weight: 100
+    Locations:
+      Head_Low: true
+    View: 25
+    Script: |
+      bonus bMaxSp,3;
+  - Id: 2263
+    AegisName: Gangster_Patch
+    Name: Zorro Masque
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Mid: true
+    View: 50
+    Script: |
+      bonus bFlee,2;
+  - Id: 2276
+    AegisName: Eagle_Eyes
+    Name: Angled Glasses
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 2
+    Locations:
+      Head_Mid: true
+    View: 63
+    Script: |
+      bonus bHit,2;
+  - Id: 5085
+    AegisName: Pair_Of_Red_Ribbon
+    Name: Small Ribbons
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 2
+    Locations:
+      Head_Mid: true
+    EquipLevelMin: 45
+    View: 169
+    Script: |
+      bonus bMaxSp,20;
+  - Id: 5165
+    AegisName: Crown_
+    Name: Crown
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 7
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 45
+    Refineable: true
+    View: 45
+    Script: |
+      bonus bInt,1;
+      bonus bDex,1;
+      bonus bVit,1; 
+  - Id: 2249
+    AegisName: Coronet
+    Name: Coronet
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 33
+    Script: |
+      bonus bVariableCastrate,-4;      
+  - Id: 5007
+    AegisName: Loard_Circlet
+    Name: Grand Circlet
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 27
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 93
+    Script: |
+      bonus bStr,1;
+      bonus bInt,1;
+      bonus bLuk,1;
+      bonus bMdef,4;      
+  - Id: 5002
+    AegisName: Gemmed_Crown
+    Name: Jewel Crown
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 39
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 60
+    Refineable: true
+    View: 88
+    Script: |
+      bonus bInt,2;
+      bonus bLuk,1;
+      bonus bMdef,3;      
+  - Id: 2234
+    AegisName: Tiara
+    Name: Tiara
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 7
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 45
+    Refineable: true
+    View: 19
+    Script: |
+      bonus bInt,3; 
+  - Id: 5164
+    AegisName: Tiara_
+    Name: Tiara
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 7
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 45
+    Refineable: true
+    View: 19
+    Script: |
+      bonus bInt,3;      
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar
@@ -3205,6 +3753,23 @@ Body:
     Refineable: true    
     Script: |
       bonus bFlee,1;    
+  - Id: 5086
+    AegisName: Alarm_Mask
+    Name: Alarm Mask
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 20
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 170
+    Script: |
+      bonus2 bResEff,Eff_Blind,5000;
   - Id: 5074
     AegisName: Ear_Of_Angel's_Wing
     Name: Angel Wing Ears

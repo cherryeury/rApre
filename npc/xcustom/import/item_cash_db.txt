@@ -23,98 +23,98 @@
 
 //Headgear 
 //Top
-0,5690,2 // Red Wing Hat
-0,5502,2 // Necromancer
-0,5568,2 // Rabbit Bonnet
-0,5153,7 // Angeling Hairpin
-0,5527,7 // Lunatic Hat
-0,5782,10 // Legion
-0,18901,10 // Seppl Hat
-0,5781,10 // Persica
+0,5690,3 // Red Wing Hat
+0,5502,3 // Necromancer
+0,5568,7 // Rabbit Bonnet
+0,5153,10 // Angeling Hairpin
+0,5527,20 // Lunatic Hat
+0,5782,22 // Legion
+0,18901,22 // Seppl Hat
+0,5781,22 // Persica
 //0,18847,12 // Jolly Roger
-0,5579,15 // Wanderer's Sakkat
-0,5768,20 // Sakura Coronet
+0,5579,38 // Wanderer's Sakkat
+//0,5357,40 // Wings of Victory
+0,5520,45 // Rabbit Earmuffs
+0,5768,50 // Sakura Coronet
 //0,18738,8 // White Student
-0,5396,30 // Jasper Crest
-0,5357,30 // Wings of Victory
+0,5396,50 // Jasper Crest
 //0,18801,50 // Gale Hair Or
 
-0,5520,30 // Rabbit Earmuffs
 //0,18563,50 // Heart wings
-0,18600,70 // Cat Ear Berret
 //0,18812,250 // Elder Crown
-0,18574,70 // Lord of Death
-0,18803,70 // Rose Cascade
-0,5975,75 // Zealotus
-0,18539,150 // Skull Cap
+0,5975,65 // Zealotus
+0,18574,75 // Lord of Death
+0,18803,75 // Rose Cascade
+0,18600,100 // Cat Ear Berret
+0,18539,125 // Skull Cap
 //0,5673,150 // Hometown Sakura
 //0,18804,350 // Thorn
 //0,19326,150 // Book of Soyga
 //0,19033,150 // Ancient Deco
-0,18827,250 // Valkyrie Circlet
-0,19098,250 // Piamette Hood
-0,18756,250 // Black Shiba Inu Hat
-0,5208,300 // rIDEWORD
-0,18652,350 // Vanargand Helm
-0,18908,350 // Piamette Red Ears
-0,18909,350 // Piamette Brown Ears
-0,18910,350 // Piamette Blue Ears
+0,18827,200 // Valkyrie Circlet
+0,19098,200 // Piamette Hood
+0,18756,200 // Black Shiba Inu Hat
+0,5208,235 // rIDEWORD
+0,18652,250 // Vanargand Helm
+0,18908,250 // Piamette Red Ears
+0,18909,250 // Piamette Brown Ears
+//0,18910,350 // Piamette Blue Ears
 //0,5975,750
 //0,19172,1250 // Sitting Pope
 //0,19364,1250 // Engineer Cap
 //0,18934,1250 // Kitsune Ear
-0,18673,1000 // Drooping Pope
+//0,18673,1000 // Drooping Pope
 //0,18849,800 // Celine Ribbon
-0,19163,1000 // Katarina
+0,19163,1500 // Katarina
 //0,19163,1000
 
 // Middle
-1,5664,50 // Filir Pinion
-1,5610,100 // Ice Wing Ears
-1,5358,100 // Peco
+1,5664,55 // Filir Pinion
+1,5610,125 // Ice Wing Ears
+1,5358,125 // Peco
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,5786,200 // Ancient elven ear
-1,18559,200 // Fafnir Skin
-1,5104,250 // Dark Blinkers
+1,5786,300 // Ancient elven ear
+1,18559,300 // Fafnir Skin
 //1,5924,350
-1,18787,400 // Goaltender
-1,18540,400 // Demon Mask
+1,5104,400 // Dark Blinkers
+1,18787,500 // Goaltender
+1,18540,600 // Demon Mask
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
-1,18877,500 // Baron Evil Eye
+1,18877,600 // Baron Evil Eye
 //1,19024,1000 // Protect Feathers
-1,18599,750 // Black Devil Mask
+1,18599,800 // Black Devil Mask
 //1,19083,1000 // Mask of Hero
 //1,19141,1500 // Dolor Thanatos
-1,18603,2000 // Black Devil Mask
+1,18603,2500 // Black Devil Mask
 //1,5933,1750 // Crow Tengu Mask
 //1,400001,2000 // Victory Wing ears
 //1,400002,3000 // Victory Wing Ears [1]
 
 //Lower
-1,18900,10 // Weisswurst
-1,18677,10 // Twig
+1,18900,7 // Weisswurst
+1,18677,7 // Twig
 //1,5775,10 // Chocolate Donut
-1,5403,20 // Fish in Mouth
-1,18643,20 // Paperhand str
-1,18642,20 // Paperhand int
-1,18644,20 // Paperhand dex
-1,5574,30 // Well Chewed
-1,5305,50 // Pirate Dagger
+1,5403,50 // Fish in Mouth
+1,18643,65 // Paperhand str
+1,18642,65 // Paperhand int
+1,18644,65 // Paperhand dex
+1,5574,100 // Well Chewed
+1,5305,125 // Pirate Dagger
 //1,5934,50
 //1,18759,70 // Wood Goblin
 //1,5878,100 // Miracle blue rose
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
-1,18868,70 // Assassin mask
-1,18560,100 // Fafnir Mask
-1,18754,250 // Blood Sucker
-1,18858,250 // Pink Angelring Bubble
+1,18868,150 // Assassin mask
+1,18560,225 // Fafnir Mask
+1,18858,375 // Pink Angelring Bubble
+1,18754,400 // Blood Sucker
 //1,18968,500
 //1,18666,800 // CD in Mouth 
-1,19097,1000 // Piamette Ribbon
+1,19097,13/00 // Piamette Ribbon
 //1,18564,1000 // Fragment of Love
 //1,19137,2500 // Strawberry in Mouth
 
@@ -145,7 +145,7 @@
 2,1939,5
 2,1995,5
 //2,13049,250 // Lacma
-2,16051,100 // Valkyrie Hammer
+//2,16051,100 // Valkyrie Hammer
 2,28717,300 // Valkyrie Knife
 
 //Shield
@@ -204,14 +204,14 @@
 //3,15204,1500 // Abyss Dress
 
 // Garment
-3,20714,30 // Assassin Muffler
+3,20714,35 // Assassin Muffler
 //3,20730,40 // Loyalist Hood
-3,20726,30 // Fire Dragon Manteau
-3,20728,30 // Water Dragon Manteau
-3,20729,30 // Wind Dragon Manteau
-3,20731,30 // Earth Dragon Manteau
-3,2594,30 // Wrapping cloth
-3,2597,30 // Bloody Muffler
+3,20726,35 // Fire Dragon Manteau
+3,20728,35 // Water Dragon Manteau
+3,20729,35 // Wind Dragon Manteau
+3,20731,35 // Earth Dragon Manteau
+3,2594,35 // Wrapping cloth
+3,2597,35 // Bloody Muffler
 //3,20778,300 // Crimson Stole
 3,20783,500 // Hero Manteau
 //3,20860,500
@@ -240,21 +240,21 @@
 // Acc
 //4,2745,10 // Pinguicula Corsage
 4,2751,20 // Academy Badge
-4,2855,25 // Whikebain tail
+4,2855,30 // Whikebain tail
 4,2948,35 // Devil Wing
-4,2888,60 // School Bag
+4,2888,65 // School Bag
 //4,2998,60 // Shining Ttapezohedron
-4,2936,60 // Ring of Recovery
+4,2936,70 // Ring of Recovery
 //4,28314,10 // Hand of Glory
 //4,2749,20 // Linen Glove
-4,2935,75 // Sprint Glove
-4,2913,75 // Thief Handcuffs
+4,2935,85 // Sprint Glove
+4,2913,85 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
-4,2959,75 // Fidelity Necklace
-4,28342,150 // Critical Anklet
-4,2983,250 // Brooch of greed
-4,2984,250 // Glove of Saehrimnir
-4,2881,400 // Orlean's
+4,2959,100 // Fidelity Necklace
+4,28342,175 // Critical Anklet
+4,2983,450 // Brooch of greed
+4,2984,450 // Glove of Saehrimnir
+4,2881,550 // Orlean's
 //4,2980,500 // Evil thread
 //4,28520,750 // Egir's Ring
 //4,28501,1000 // Kirin's Horn
