@@ -28,11 +28,11 @@
 0,5568,2 // Rabbit Bonnet
 0,5153,7 // Angeling Hairpin
 0,5527,7 // Lunatic Hat
-0,5782,12 // Legion
-0,18901,12 // Seppl Hat
-0,5781,12 // Persica
+0,5782,10 // Legion
+0,18901,10 // Seppl Hat
+0,5781,10 // Persica
 //0,18847,12 // Jolly Roger
-0,5579,20 // Wanderer's Sakkat
+0,5579,15 // Wanderer's Sakkat
 0,5768,20 // Sakura Coronet
 //0,18738,8 // White Student
 0,5396,30 // Jasper Crest
@@ -165,8 +165,8 @@
 //3,28908,70 // Shield of Great Water
 //3,28909,70 // Shield of Formless Earth
 //3,28918,70 // Shield of Chaos Boiling
-3,2191,100 // Solomon
-3,2177,100 // Shield of Death
+3,2191,70 // Solomon
+3,2177,70 // Shield of Death
 //3,28951,500 // Nero Shield 
 //3,28921,500 // Anemos Shield
 //3,28916,500 // Gaia Shield
@@ -176,7 +176,8 @@
 // Armor
 3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15058,35 // Rider Suit
+3,15058,50 // Rider Suit
+3,15057,50 // Apron 
 //3,15060,50 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
@@ -203,14 +204,14 @@
 //3,15204,1500 // Abyss Dress
 
 // Garment
-3,20714,40 // Assassin Muffler
+3,20714,50 // Assassin Muffler
 //3,20730,40 // Loyalist Hood
-3,20726,100 // Fire Dragon Manteau
-3,20728,100 // Water Dragon Manteau
-3,20729,100 // Wind Dragon Manteau
-3,20731,100 // Earth Dragon Manteau
-3,2594,100 // Wrapping cloth
-3,2597,100 // Bloody Muffler
+3,20726,70 // Fire Dragon Manteau
+3,20728,70 // Water Dragon Manteau
+3,20729,70 // Wind Dragon Manteau
+3,20731,70 // Earth Dragon Manteau
+3,2594,70 // Wrapping cloth
+3,2597,70 // Bloody Muffler
 //3,20778,300 // Crimson Stole
 3,20783,500 // Hero Manteau
 //3,20860,500
@@ -219,12 +220,12 @@
 3,20814,500 // Wakwak Manteau 
 //3,20931,750
 3,20831,500 // Elder's Spirit
-3,20943,1000 // Geffen Magic Muffler
-3,20944,1000 // Anti Magic Manteau
+3,20943,1250 // Geffen Magic Muffler
+3,20944,1250 // Anti Magic Manteau
 //3,20952,900 // Mysterious Muffler
 //3,20773,1250 // Excellion Wing
-3,20859,1000 // Phreeoni Wings
-3,20932,1000 // Old Morocc Shawl
+3,20859,1250 // Phreeoni Wings
+3,20932,1250 // Old Morocc Shawl
 //3,20940,2000 // Violet Halo
 
 //Shoes
