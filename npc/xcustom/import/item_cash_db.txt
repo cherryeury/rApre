@@ -39,7 +39,6 @@
 //0,18738,8 // White Student
 0,5396,50 // Jasper Crest
 //0,18801,50 // Gale Hair Or
-
 //0,18563,50 // Heart wings
 //0,18812,250 // Elder Crown
 0,5975,65 // Zealotus
@@ -110,11 +109,11 @@
 //1,5880,200 // Cheering Whistle
 1,18868,150 // Assassin mask
 1,18560,225 // Fafnir Mask
-1,18858,375 // Pink Angelring Bubble
+1,18858,300 // Pink Angelring Bubble
 1,18754,400 // Blood Sucker
 //1,18968,500
 //1,18666,800 // CD in Mouth 
-1,19097,13/00 // Piamette Ribbon
+1,19097,1250 // Piamette Ribbon
 //1,18564,1000 // Fragment of Love
 //1,19137,2500 // Strawberry in Mouth
 
@@ -146,7 +145,7 @@
 2,1995,5
 //2,13049,250 // Lacma
 //2,16051,100 // Valkyrie Hammer
-2,28717,300 // Valkyrie Knife
+//2,28717,300 // Valkyrie Knife
 
 //Shield
 
@@ -176,9 +175,9 @@
 // Armor
 3,15040,5 // Prison Uniform
 //3,15072,40 // Nectar Suit
+//3,15060,30 // Azure Smock
 3,15058,30 // Rider Suit
 3,15057,30 // Apron 
-//3,15060,50 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,100 // Rift Armor
@@ -239,10 +238,10 @@
 
 // Acc
 //4,2745,10 // Pinguicula Corsage
-4,2751,20 // Academy Badge
+//4,2751,20 // Academy Badge
 4,2855,30 // Whikebain tail
 4,2948,35 // Devil Wing
-4,2888,65 // School Bag
+//4,2888,65 // School Bag
 //4,2998,60 // Shining Ttapezohedron
 4,2936,70 // Ring of Recovery
 //4,28314,10 // Hand of Glory
@@ -275,7 +274,7 @@
 5,7776,1
 5,17106,8
 5,6635,20 // Blacksmith Bless
-5,6396,20
+//5,6396,20
 
 //// Costume
 //4,18740,150 // C_Hair_Of_The_Strong

@@ -2226,7 +2226,7 @@ Body:
     Type: Armor
     Buy: 100000
     Weight: 1000
-    Defense: 50
+    Defense: 10
     Slots: 1
     Jobs:
       All: true
@@ -2240,6 +2240,7 @@ Body:
     View: 225
     Script: |
       bonus bMdef,5;
+      bonus bAllStats,1;
   - Id: 5094
     AegisName: Orc_Hero_Helm
     Name: Helmet of Orc Hero
@@ -2260,6 +2261,7 @@ Body:
     Script: |
       bonus bStr,2;
       bonus bVit,1;      
+      bonus bMaxHPRate,10;
   - Id: 5073
     AegisName: Cap_Of_Concentration
     Name: Model Training Hat
@@ -2440,8 +2442,7 @@ Body:
     Refineable: true
     View: 45
     Script: |
-      bonus bInt,1;
-      bonus bDex,1;
+      bonus bInt,2;
       bonus bVit,1;
   - Id: 2224
     AegisName: Goggle
@@ -2449,7 +2450,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 25
+    Defense: 15
     Jobs:
       Alchemist: true
       Archer: true
@@ -2476,7 +2477,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 25
+    Defense: 15
     Slots: 1
     Jobs:
       Alchemist: true
@@ -2504,20 +2505,20 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 7
+    Defense: 1
     Locations:
       Head_Low: true
       Head_Mid: true
     View: 174
     Script: |
-      bonus2 bAddRace2,RC2_Goblin,3;
+      bonus2 bAddRace2,RC2_Goblin,5;
   - Id: 2288
     AegisName: Mr_Scream
     Name: Mr. Scream
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2527,7 +2528,8 @@ Body:
       Head_Mid: true
     View: 75
     Script: |
-      bonus2 bCritical,1;
+      bonus bCritical,2;
+      bonus bDef,-15;
   - Id: 5808
     AegisName: Diabolus_Helmet
     Name: Dark Bacilium
@@ -2587,7 +2589,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 7
+    Defense: 1
     Jobs:
       All: true
       Novice: false
@@ -2596,39 +2598,47 @@ Body:
       Head_Low: true
       Head_Mid: true
     View: 84      
+    Script: |
+      bonus bBaseAtk,3;    
   - Id: 5088
     AegisName: Goblin_Mask_02
     Name: Surprised Mask
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 4
+    Defense: 1
     Locations:
       Head_Low: true
       Head_Mid: true
     View: 172    
+    Script: |
+      bonus bHit,2;      
   - Id: 5087
     AegisName: Goblin_Mask_01
     Name: Poker Face
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 4
+    Defense: 1
     Locations:
       Head_Low: true
       Head_Mid: true
     View: 171    
+    Script: |
+      bonus bHit,2;       
   - Id: 5089
     AegisName: Goblin_Mask_03
     Name: Annoyed Mask
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 4
+    Defense: 1
     Locations:
       Head_Low: true
       Head_Mid: true
     View: 173      
+    Script: |
+      bonus bMaxSP,10;    
   - Id: 5092
     AegisName: Blue_Coif
     Name: Coif
@@ -2759,8 +2769,7 @@ Body:
     Refineable: true
     View: 45
     Script: |
-      bonus bInt,1;
-      bonus bDex,1;
+      bonus bInt,2;
       bonus bVit,1; 
   - Id: 2249
     AegisName: Coronet
@@ -2778,7 +2787,7 @@ Body:
     Refineable: true
     View: 33
     Script: |
-      bonus bVariableCastrate,-4;      
+      bonus bInt,1;      
   - Id: 5007
     AegisName: Loard_Circlet
     Name: Grand Circlet
@@ -3759,7 +3768,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 20
+    Defense: 2
     Jobs:
       All: true
       Novice: false
@@ -3770,6 +3779,34 @@ Body:
     View: 170
     Script: |
       bonus2 bResEff,Eff_Blind,5000;
+      bonus bCritical,1;
+  - Id: 5398
+    AegisName: Bone_Head
+    Name: Bone Head
+    Type: Armor
+    Buy: 20
+    Weight: 1200
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 85
+    Refineable: true
+    View: 401
+    Script: |
+      bonus bStr,2;
+      bonus bMdef,5;
+      bonus2 bResEff,Eff_Stun,500;
+      bonus2 bResEff,Eff_Bleeding,500;      
   - Id: 5074
     AegisName: Ear_Of_Angel's_Wing
     Name: Angel Wing Ears
@@ -3783,11 +3820,12 @@ Body:
     View: 158
     Script: |
       bonus bInt,1;
-      bonus bStr,readparam(bStr)/90;
-      bonus bInt,readparam(bInt)/90;
-      bonus bVit,readparam(bVit)/90;
-      bonus bDex,readparam(bDex)/90;
-      bonus bLuk,readparam(bLuk)/90;     
+      bonus bStr,readparam(bStr)/120;
+      bonus bAgi,readparam(bAgi)/120;
+      bonus bInt,readparam(bInt)/120;
+      bonus bVit,readparam(bVit)/120;
+      bonus bDex,readparam(bDex)/120;
+      bonus bLuk,readparam(bLuk)/120;     
   - Id: 18518
     AegisName: Ear_Of_Angel's_Wing_
     Name: Angel Wing Ears
@@ -3803,11 +3841,12 @@ Body:
     Script: |
     Script: |
       bonus bInt,1;
-      bonus bStr,readparam(bStr)/90;
-      bonus bInt,readparam(bInt)/90;
-      bonus bVit,readparam(bVit)/90;
-      bonus bDex,readparam(bDex)/90;
-      bonus bLuk,readparam(bLuk)/90;    
+      bonus bStr,readparam(bStr)/120;
+      bonus bAgi,readparam(bAgi)/120;
+      bonus bInt,readparam(bInt)/120;
+      bonus bVit,readparam(bVit)/120;
+      bonus bDex,readparam(bDex)/120;
+      bonus bLuk,readparam(bLuk)/120;    
   - Id: 5068
     AegisName: Ear_Of_Devil's_Wing
     Name: Evil Wing Ears
@@ -3821,11 +3860,12 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bStr,readparam(bStr)/90;
-      bonus bInt,readparam(bInt)/90;
-      bonus bVit,readparam(bVit)/90;
-      bonus bDex,readparam(bDex)/90;
-      bonus bLuk,readparam(bLuk)/90;      
+      bonus bStr,readparam(bStr)/120;
+      bonus bAgi,readparam(bAgi)/120;
+      bonus bInt,readparam(bInt)/120;
+      bonus bVit,readparam(bVit)/120;
+      bonus bDex,readparam(bDex)/120;
+      bonus bLuk,readparam(bLuk)/120;      
   - Id: 18519
     AegisName: Ear_Of_Devil's_Wing_
     Name: Evil Wing Ears
@@ -3840,11 +3880,12 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bStr,readparam(bStr)/90;
-      bonus bInt,readparam(bInt)/90;
-      bonus bVit,readparam(bVit)/90;
-      bonus bDex,readparam(bDex)/90;
-      bonus bLuk,readparam(bLuk)/90;      
+      bonus bStr,readparam(bStr)/120;
+      bonus bAgi,readparam(bAgi)/120;
+      bonus bInt,readparam(bInt)/120;
+      bonus bVit,readparam(bVit)/120;
+      bonus bDex,readparam(bDex)/120;
+      bonus bLuk,readparam(bLuk)/120;      
   - Id: 22132
     AegisName: Lighting_God's_Shoes
     Name: Lightning God's Shoes
