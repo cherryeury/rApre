@@ -1737,7 +1737,7 @@ job3_rang01,90,43,3	script	Ranger Master#jr_29	832,{
 		delitem 1703,1; //Bow__
 		set job_ranger01,8;
 		completequest 8262;
-		jobchange roclass(eaclass()|EAJL_THIRD);
+		jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 		getitem 5748,1; //Sniper_Goggle
 		getitem 2795,1; //Green_Apple_Ring
 		getitem 6124,1; //Wolf's_Flute

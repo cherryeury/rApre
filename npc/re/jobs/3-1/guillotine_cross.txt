@@ -3667,8 +3667,8 @@ job3_guil01,148,53,3	script	Bercasell#3rdgc16	467,{
 								next;
 								mes "[Bercasell]";
 								mes "A sword of the shadow...";
-								setlook 7,0;
-								jobchange roclass(eaclass()|EAJL_THIRD);
+								setlook 7,0; setlook LOOK_BODY_2,1;
+								jobchange roclass(eaclass()|EAJL_THIRD); 
 								if (checkquest(7096) == 1) {
 									set job_3rd_gc, 25;
 									erasequest 7096;
@@ -3682,7 +3682,7 @@ job3_guil01,148,53,3	script	Bercasell#3rdgc16	467,{
 									set job_3rd_gc, 28;
 									erasequest 7099;
 								}
-								getitem 2795,1; //Green_Apple_Ring
+								getitem 2795,1; //Green_Apple_Ring 
 								getitem 5755,1; //Silent_Executer
 								next;
 								mes "[Bercasell]";

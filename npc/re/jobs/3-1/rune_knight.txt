@@ -542,7 +542,7 @@ job3_rune01,80,60,3	script	Rune Knight Captain	470,2,2,{
 				getitem 2795,1; //Green_Apple_Ring
 				set job_rune_edq,23;
 				completequest 3219;
-				jobchange roclass(eaclass()|EAJL_THIRD);
+				jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 				mes "[Captain Tigris]";
 				mes "Congratulations.";
 				mes "You are now an honorable Rune Knight.";

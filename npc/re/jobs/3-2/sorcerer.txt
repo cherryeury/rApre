@@ -369,7 +369,7 @@ gef_tower,113,161,5	script	Karacas	754,{
 		next;
 		mes "[Karacas]";
 		mes "Congratulations, [" + strcharinfo(0) + "]";
-		jobchange roclass(eaclass()|EAJL_THIRD);
+		jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 		getitem 5756,1; //Wind_Whisper
 		getitem 2795,1; //Green_Apple_Ring
 		next;

@@ -1600,7 +1600,7 @@ s_atelier,70,66,4	script	Dumk#sc13_lgh	481,{
 				mes "[Dumk]";
 				mes "Congratulations.";
 				mes "Welcome to your new life.";
-				jobchange roclass(eaclass()|EAJL_THIRD);
+				jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 				getitem 6121,1; //Makeover_Brush
 				getitem 6122,1; //Paint_Brush
 				set job_sha,32;

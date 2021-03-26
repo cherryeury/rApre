@@ -712,7 +712,7 @@ spl_in02,80,108,5	script	Guild Master#Warlock	465,{
 			else set job_wl,11;
 		}
 		else set job_wl,10;
-		jobchange roclass(eaclass()|EAJL_THIRD);
+		jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 		completequest 11112;
 		getitem 5753,1; //Magic_Stone_Hat
 		getitem 2795,1; //Green_Apple_Ring

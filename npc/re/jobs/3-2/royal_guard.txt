@@ -437,7 +437,7 @@ glast_01,240,366,5	script	Memory of King Schmidtz	844,{
 		specialeffect2 EF_LORD;
 		delitem 6275,1; //King_Shield
 		erasequest 12094;
-		jobchange roclass(eaclass()|EAJL_THIRD);
+		jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 		getitem 5757,1; //Schmidt_Helm
 		getitem 2795,1; //Green_Apple_Ring
 		end;

@@ -9140,7 +9140,7 @@ tbl = {
 			"Increases resistance against ^663399Stun^000000 and ^663399Bleeding^000000 status by 5%.",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
-			"^0000CCDefense:^000000 10",
+			"^0000CCDefense:^000000 25",
 			"^0000CCPosition:^000000 Upper",
 			"^0000CCWeight:^000000 120",
 			"________________________",

@@ -3786,7 +3786,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1200
-    Defense: 10
+    Defense: 25
     Slots: 1
     Jobs:
       Alchemist: true

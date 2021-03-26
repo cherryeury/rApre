@@ -989,7 +989,7 @@ xmas,147,135,5	script	Dancer Kim#xmas	485,{
 		mes "[Dancer Kim]";
 		mapannounce "xmas","Dancer Kim: Introducing the rising Wanderer! " + strcharinfo(0) + "!",bc_map,"0xffff00"; //FW_NORMAL 12 0 0
 		mes "This rising Wanderer star, " + strcharinfo(0) + "!";
-		jobchange roclass(eaclass()|EAJL_THIRD);
+		jobchange roclass(eaclass()|EAJL_THIRD); setlook LOOK_BODY_2,1;
 		set job_wan,10;
 		getitem 2795,1; //Green_Apple_Ring
 		getitem 5758,1; //Dying_Swan
