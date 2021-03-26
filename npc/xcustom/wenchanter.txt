@@ -678,7 +678,7 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1959:
 
 if (.@Free == 1){	set .@Forged,1;}
-			set .@level,4;
+			set .@level,getequipweaponlv(.@part);
 			goto L_Awaken;
 	}
 	
@@ -686,13 +686,19 @@ if (.@Free == 1){	set .@Forged,1;}
 switch(getequipid(.@part)) {	
 //Armor
 //Modified
+	case 2191:
 	case 15040:
 	case 15058:
 	case 20714:
 	case 20730:
 	case 2597:
-	case 20783:
-	case 20778:
+//	case 20783:
+	case 2594:
+	case 20726:
+	case 20728:
+	case 20729:
+	case 20731:
+//	case 20778: //crimson stole
 	case 2177:
 	case 22042:
 	case 2501:
@@ -898,7 +904,13 @@ L_Awaken:
 	set .@ropt2,getequiprandomoption(.@part,1,ROA_ID);
 	set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
 
-if  ((.@Level) == 4 ){
+if  ((.@Level) == 7 ){
+	if(.@ropt2) {
+		mes "Crimson item can't be enchanted or get resetted anymore.";
+		close;
+		}
+	}
+if  ((.@Level) < 5 ){
 	if(.@ropt2) {
 		mes "This item can't be enchanted anymore.";
 		mes "Reset enchant ?";
@@ -1019,9 +1031,16 @@ if( .@Forged == 99 ) {
 		close; 
 		}
 	}	
-
-	if(.@Level == 4){ set .@Price,500000; set .Stone,3;
-		mes "Hmm, a weapon..";
+	if(.@Level == 3){ set .@Price,400000; set .Stone,3;
+		mes "Hmm, a level 3 weapon..";
+		//mes "^0000FF50%^000000 chance  to get 1 High Rank random option.";
+		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
+		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
+		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
+		mes "Cost : ^0000FF125.000^000000 zeny.";
+		mes "And an ^FF0000Oridecon^000000."; }
+	if(.@Level == 4){ set .@Price,1000000; set .Stone,3;
+		mes "Hmm, a level 4 weapon..";
 		//mes "^0000FF50%^000000 chance  to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
@@ -1563,8 +1582,8 @@ setarray .RandOpt4_S[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_S_MinV[0],1,1,1,1,100,20,10,5,3,10,1;
-setarray .RandOpt4_S_MaxV[0],4,4,4,4,350,70,30,10,8,20,1;
+setarray .RandOpt4_S_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_S_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 // ========= Random Option 5=========
 // - SHIELD 5
@@ -1670,8 +1689,8 @@ setarray .RandOpt4_SM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SM_MinV[0],1,1,1,100,20,10,5,10,3,2,3;
-setarray .RandOpt4_SM_MaxV[0],4,4,4,350,70,30,10,20,7,4,7;
+setarray .RandOpt4_SM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
+setarray .RandOpt4_SM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
 
 // ========= Random Option 5=========
 // - SHIELD 5
@@ -1776,8 +1795,8 @@ setarray .RandOpt4_AP[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_AP_MinV[0],1,1,1,1,100,20,10,5,3,10,1;
-setarray .RandOpt4_AP_MaxV[0],4,4,4,4,350,70,30,10,8,20,1;
+setarray .RandOpt4_AP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_AP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 
 // ========= Random Option 5=========
@@ -1879,8 +1898,8 @@ setarray .RandOpt4_GP[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_GP_MinV[0],1,1,1,1,100,20,10,5,3,10,1;
-setarray .RandOpt4_GP_MaxV[0],4,4,4,4,350,70,30,10,8,20,1;
+setarray .RandOpt4_GP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_GP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_GP[0],
@@ -1980,8 +1999,8 @@ setarray .RandOpt4_SHP[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SHP_MinV[0],1,1,1,1,100,20,10,5,3,10,1;
-setarray .RandOpt4_SHP_MaxV[0],4,4,4,4,350,70,30,10,8,20,1;
+setarray .RandOpt4_SHP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_SHP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_SHP[0],
@@ -2081,8 +2100,8 @@ setarray .RandOpt4_AM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_AM_MinV[0],1,1,1,100,20,10,5,10,3,2,3;
-setarray .RandOpt4_AM_MaxV[0],4,4,4,350,70,30,10,20,7,4,7;
+setarray .RandOpt4_AM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
+setarray .RandOpt4_AM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_AM[0],
@@ -2182,8 +2201,8 @@ setarray .RandOpt4_GM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_GM_MinV[0],1,1,1,100,20,10,5,10,3,2,3;
-setarray .RandOpt4_GM_MaxV[0],4,4,4,350,70,30,10,20,7,4,7;
+setarray .RandOpt4_GM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
+setarray .RandOpt4_GM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_GM[0],
@@ -2284,8 +2303,8 @@ setarray .RandOpt4_SHM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SHM_MinV[0],1,1,1,100,20,10,5,10,3,2,3;
-setarray .RandOpt4_SHM_MaxV[0],4,4,4,350,70,30,10,20,7,4,7;
+setarray .RandOpt4_SHM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
+setarray .RandOpt4_SHM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_SHM[0],

@@ -199,7 +199,7 @@
 					mes "You sure about this?";
 					mes "Alright... Let me know the Armor to which you'd like to add a Slot, and I'll tell what I need to try it.";
 					next;
-					switch(select("Majestic Goat:Spiky Band:Bone Helm:Corsair:Crown:Tiara:Sphinx Hat:Robe of Cast:Earring:Ring:Bow Thimble"))
+					switch(select("Majestic Goat:Spiky Band:Bone Helm:Corsair:Crown:Tiara:Sphinx Hat:Robe of Cast:Earring:Ring:Bow Thimble:Critical Ring"))
 					{
 						case 1:  callfunc "Func_Socket",2256,5160,40,51,2000,985,2;
 						case 2:  callfunc "Func_Socket",2258,5161,40,51,2000,985,2;
@@ -212,6 +212,7 @@
 						case 9:  callfunc "Func_Socket",2602,2622,40,51,1000,985,2;
 						case 10: callfunc "Func_Socket",2601,2621,40,51,1000,985,2;
 						case 11: callfunc "Func_Socket",2619,2671,40,51,1000,985,2;
+						case 12: callfunc "Func_Socket",2616,2847,40,51,1000,985,2;
 					}
 			}
 		case 3:

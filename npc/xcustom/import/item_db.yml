@@ -651,6 +651,42 @@ Body:
       Container: true
     Script: |
       getrandgroupitem(IG_Classic_,1);
+  - Id: 20729
+    AegisName: Wind_Dragon_Coat
+    Name: Wind Dragon Coat
+    Type: Armor
+    Buy: 10
+    Weight: 300
+    Slots: 1
+    Locations:
+      Garment: true
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,5;
+      bonus2 bMagicAtkEle,Ele_Wind,2;
+      if (getrefine()>=7) {
+         bonus2 bMagicAtkEle,Ele_Wind,3;
+      }
+      bonus2 bMagicAtkEle,Ele_Earth,-10;      
+  - Id: 20731
+    AegisName: Earth_Dragon_Coat
+    Name: Earth Dragon Coat
+    Type: Armor
+    Buy: 10
+    Weight: 300
+    Slots: 1
+    Locations:
+      Garment: true
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,5;
+      bonus2 bMagicAtkEle,Ele_Earth,2;
+      if (getrefine()>=7) {
+         bonus2 bMagicAtkEle,Ele_Earth,3;
+      }
+      bonus2 bMagicAtkEle,Ele_Wind,-10;       
   - Id: 2311
     AegisName: Mink_Coat
     Name: Mink Coat
