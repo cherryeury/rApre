@@ -1577,14 +1577,14 @@ setarray .RandOpt4_S[0],
 						RDMOPT_VAR_MDEFPOWER,						// MDEF
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT	
 						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
-						RDMOPT_VAR_PLUSASPD;						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT;						// ASPD
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_S_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
-setarray .RandOpt4_S_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
+setarray .RandOpt4_S_MinV[0],1,1,1,1,100,20,5,3,3,7,3;
+setarray .RandOpt4_S_MaxV[0],3,3,3,3,300,60,25,8,7,17,7;
 
 // ========= Random Option 5=========
 // - SHIELD 5
@@ -1690,8 +1690,8 @@ setarray .RandOpt4_SM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
-setarray .RandOpt4_SM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
+setarray .RandOpt4_SM_MinV[0],1,1,1,100,20,10,3,7,2,1,2;
+setarray .RandOpt4_SM_MaxV[0],3,3,3,300,60,25,8,17,5,3,5;
 
 // ========= Random Option 5=========
 // - SHIELD 5
@@ -1790,13 +1790,13 @@ setarray .RandOpt4_AP[0],
 						RDMOPT_VAR_MDEFPOWER,						// MDEF
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT	
 						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
-						RDMOPT_VAR_PLUSASPD;						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT;							// ASPD
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_AP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_AP_MinV[0],1,1,1,1,100,20,5,3,3,7,3;
 setarray .RandOpt4_AP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 
@@ -1893,13 +1893,13 @@ setarray .RandOpt4_GP[0],
 						RDMOPT_VAR_MDEFPOWER,						// MDEF
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT	
 						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
-						RDMOPT_VAR_PLUSASPD;						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT;							// ASPD
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_GP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_GP_MinV[0],1,1,1,1,100,20,5,3,3,7,3;
 setarray .RandOpt4_GP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 // ========= Random Option 5=========
@@ -1994,13 +1994,13 @@ setarray .RandOpt4_SHP[0],
 						RDMOPT_VAR_MDEFPOWER,						// MDEF
 						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT	
 						RDMOPT_VAR_AVOIDSUCCESSVALUE,				// FLEE
-						RDMOPT_VAR_PLUSASPD;						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT;							// ASPD
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SHP_MinV[0],1,1,1,1,100,20,5,3,3,7,1;
+setarray .RandOpt4_SHP_MinV[0],1,1,1,1,100,20,5,3,3,7,3;
 setarray .RandOpt4_SHP_MaxV[0],3,3,3,3,300,60,25,8,7,17,1;
 
 // ========= Random Option 5=========
@@ -2101,8 +2101,8 @@ setarray .RandOpt4_AM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_AM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
-setarray .RandOpt4_AM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
+setarray .RandOpt4_AM_MinV[0],1,1,1,100,20,10,3,7,2,1,2;
+setarray .RandOpt4_AM_MaxV[0],3,3,3,300,60,25,8,17,5,3,5;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_AM[0],
@@ -2202,8 +2202,8 @@ setarray .RandOpt4_GM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_GM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
-setarray .RandOpt4_GM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
+setarray .RandOpt4_GM_MinV[0],1,1,1,100,20,10,3,7,2,1,2;
+setarray .RandOpt4_GM_MaxV[0],3,3,3,300,60,25,8,17,5,3,5;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_GM[0],
@@ -2304,8 +2304,8 @@ setarray .RandOpt4_SHM[0],
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt4_SHM_MinV[0],1,1,1,100,20,10,3,7,3,1,3;
-setarray .RandOpt4_SHM_MaxV[0],3,3,3,300,60,25,8,17,6,3,6;
+setarray .RandOpt4_SHM_MinV[0],1,1,1,100,20,10,3,7,2,1,2;
+setarray .RandOpt4_SHM_MaxV[0],3,3,3,300,60,25,8,17,5,3,5;
 
 // ========= Random Option 5=========
 setarray .RandOpt5_SHM[0],

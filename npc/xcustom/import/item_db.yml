@@ -641,6 +641,210 @@ Body:
       if (.@r>8){
       bonus bDef,20;
       }
+  - Id: 2733
+    AegisName: Medal_Gunner
+    Name: Sheriff Badge
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Gunslinger: true
+      Rebellion: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 80
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bCritical,10;
+      bonus bMaxHP,300;
+      bonus bMaxSP,80;
+      bonus3 bAddEff,Eff_Blind,100,ATF_LONG;      
+  - Id: 2720
+    AegisName: Medal_Swordman
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Crusader: true
+      Knight: true
+      StarGladiator: true
+      Swordman: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bHit,10;
+      bonus bMaxHP,500;
+      bonus bMaxSP,50;
+      bonus3 bAddEff,Eff_Stun,100,ATF_SHORT;
+  - Id: 2721
+    AegisName: Medal_Thief
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Assassin: true
+      KagerouOboro: true
+      Ninja: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bFlee,10;
+      bonus bMaxHP,300;
+      bonus bMaxSP,80;
+      bonus3 bAddEff,Eff_Poison,100,ATF_SHORT;
+  - Id: 2722
+    AegisName: Medal_Acolyte
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bMdef,6;
+      bonus bMaxHP,600;
+      bonus3 bAddEff,Eff_Silence,100,ATF_SHORT;
+  - Id: 2723
+    AegisName: Medal_Mage
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bMdef,6;
+      bonus bMaxHP,600;
+      bonus2 bAddEffWhenHit,Eff_Stone,100;
+  - Id: 2724
+    AegisName: Medal_Archer
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bCritical,10;
+      bonus bMaxHP,300;
+      bonus bMaxSP,80;
+      bonus3 bAddEff,Eff_Blind,100,ATF_LONG;
+  - Id: 2725
+    AegisName: Medal_Merchant
+    Name: Medal of Honor
+    Type: Armor
+    Buy: 20
+    Defense: 10
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 70
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddClass,Class_All,5;
+      bonus bMatkRate,5;
+      bonus bAspdRate,10;
+      bonus bMaxHP,500;
+      bonus bMaxSP,50;
+      bonus3 bAddEff,Eff_Curse,100,ATF_SHORT;      
   - Id: 12026
     AegisName: Egg_Girl
     Name: Dano Festival Egg
