@@ -25,25 +25,33 @@
 //Top
 0,5690,3 // Red Wing Hat
 0,5502,3 // Necromancer
-0,5568,7 // Rabbit Bonnet
-0,5153,10 // Angeling Hairpin
-0,5527,20 // Lunatic Hat
-0,5782,22 // Legion
-0,18901,22 // Seppl Hat
-0,5781,22 // Persica
+0,5568,5 // Rabbit Bonnet
+0,5153,7 // Angeling Hairpin
+0,5324,12 // Little Angel
+0,5138,12 // Magician eyes
+0,5414,12 // Campfire
+0,5527,12 // Lunatic Hat
+0,5782,12 // Legion
+0,18901,15 // Seppl Hat
+0,5781,15 // Persica
+0,5289,15 // Rabbit Earmuffs
+0,5790,20 // Mother
+0,18595,20 // Ancient Horn
+0,5561,20 // Rabbit Magic Hat
+0,5768,22 // Sakura Coronet
 //0,18847,12 // Jolly Roger
-0,5579,38 // Wanderer's Sakkat
+0,5579,30 // Wanderer's Sakkat
 //0,5357,40 // Wings of Victory
-0,5520,45 // Rabbit Earmuffs
-0,5768,50 // Sakura Coronet
+
+0,5563,40 // Dolor
 //0,18738,8 // White Student
-0,5396,50 // Jasper Crest
+0,5396,45 // Jasper Crest
 //0,18801,50 // Gale Hair Or
 //0,18563,50 // Heart wings
 //0,18812,250 // Elder Crown
 0,5975,65 // Zealotus
-0,18574,75 // Lord of Death
-0,18803,75 // Rose Cascade
+0,18574,65 // Lord of Death
+0,18803,65 // Rose Cascade
 0,18600,100 // Cat Ear Berret
 0,18539,125 // Skull Cap
 //0,5673,150 // Hometown Sakura
