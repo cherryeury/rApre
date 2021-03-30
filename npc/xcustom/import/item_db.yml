@@ -2799,7 +2799,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 10
+    Defense: 0
     Jobs:
       Crusader: true
       Knight: true
@@ -2807,7 +2807,9 @@ Body:
     Locations:
       Head_Low: true
     EquipLevelMin: 50
-    View: 53      
+    View: 53
+    Script: |
+      bonus2 bSubEle,Ele_Neutral,1;
   - Id: 2262
     AegisName: Pierrot_Nose
     Name: Clown Nose

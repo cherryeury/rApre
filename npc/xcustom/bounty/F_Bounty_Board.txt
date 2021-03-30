@@ -89,12 +89,18 @@ function	script	F_Bounty_Board	{
 			mes "There is a bounty to hunt 150 " + .@HuntAllList$ + " hunt them all.";
 			close;
 		}
+			if ((getmonsterinfo(getarg(.@bounty-1),MOB_LV)) < BaseLevel){
+				mes "[Bounty Board]";
+				mes "You can't take quest with monster level much lower than yours.";
+				close;
+				}		
+		
 		.@monster$ = getmonsterinfo(getarg(.@bounty-1),MOB_NAME);
 		mes "[Bounty Board]";
 		mes "There is a bounty to hunt 150 " + .@monster$ + ".";
 		next;
 			if (select("I'll do it.", "Uhh actually nevermind.") == 1){
-				if (checkquest(getarg(.@bounty),HUNTING) == -1){
+			if (checkquest(getarg(.@bounty),HUNTING) == -1){
 						setquest getarg(.@bounty);
 						set .@qd, getarg(.@bounty);
 						set .@done, 1;
@@ -154,10 +160,10 @@ L_BountyOne:
 			.@vip_reward = select("^FF0000Both Base and Job EXP^000000", "^0000FFI want Base EXP only.^000000", "^FFA400I want Job EXP only.^000000");
 		}
 		erasequest getarg(.@bounty);
-		.@BaseExp = getmonsterinfo(getarg(.@bounty-1),MOB_BASEEXP)*50;
-		.@JobExp = getmonsterinfo(getarg(.@bounty-1),MOB_JOBEXP)*50;
+		.@BaseExp = getmonsterinfo(getarg(.@bounty-1),MOB_BASEEXP)*100;
+		.@JobExp = getmonsterinfo(getarg(.@bounty-1),MOB_JOBEXP)*100;
 		if (Zeny + .@BaseExp + @JobExp <= MAX_ZENY)
-			Zeny += .@BaseExp + @JobExp /10;		
+			Zeny += .@BaseExp + @JobExp /5;		
 		switch(.@vip_reward){
 			case 2:
 				getexp .@BaseExp,0;

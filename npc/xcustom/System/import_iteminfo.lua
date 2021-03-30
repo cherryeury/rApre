@@ -14485,8 +14485,9 @@ tbl = {
 		identifiedDescriptionName = {
 			"Specialized face armor that protects the jaw and teeth in battle.",
 			"________________________",
+			"Decreases damage taken from ^777777Neutral^000000 elemental attacks by 1%",
 			"^0000CCType:^000000 Headgear",
-			"^0000CCDefense:^000000 10",
+			"^0000CCDefense:^000000 0",
 			"^0000CCPosition:^000000 Lower",
 			"^0000CCWeight:^000000 30",
 			"^0000CCRefineable:^000000 No",

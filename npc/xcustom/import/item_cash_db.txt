@@ -120,6 +120,7 @@
 1,18858,300 // Pink Angelring Bubble
 1,18754,400 // Blood Sucker
 //1,18968,500
+1,18859,800 // Angelring Bubble
 //1,18666,800 // CD in Mouth 
 1,19097,1250 // Piamette Ribbon
 //1,18564,1000 // Fragment of Love
