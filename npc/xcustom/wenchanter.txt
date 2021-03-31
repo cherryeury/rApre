@@ -1038,7 +1038,7 @@ if( .@Forged == 99 ) {
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
-		mes "Cost : ^0000FF125.000^000000 zeny.";
+		mes "Cost : ^0000FF400.000^000000 zeny.";
 		mes "And an ^FF0000Oridecon^000000."; }
 	if(.@Level == 4){ set .@Price,1000000; set .Stone,3;
 		mes "Hmm, a level 4 weapon..";
@@ -1048,7 +1048,7 @@ if( .@Forged == 99 ) {
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
 		mes "Cost : ^0000FF500.000^000000 zeny.";
 		mes "And an ^FF0000Oridecon^000000."; }
-	if(.@Level == 5){ set .@Price,500000; set .Stone,4;
+	if(.@Level == 5){ set .@Price,1000000; set .Stone,4;
 		mes "Armory awakening needs 500.000.";
 		mes "And an ^FF0000Elunium^000000.";
 		//mes "^0000FF50%^000000 chance to get 1 High Rank random option.";
@@ -1056,8 +1056,8 @@ if( .@Forged == 99 ) {
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
 		}
-	if(.@Level == 6){ set .@Price,500000; set .Stone,4;
-		mes "Armory awakening needs 500.000.";
+	if(.@Level == 6){ set .@Price,400000; set .Stone,4;
+		mes "Armory awakening needs 400.000.";
 		mes "And an ^FF0000Elunium^000000.";
 		//mes "^0000FF50%^000000 chance to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
