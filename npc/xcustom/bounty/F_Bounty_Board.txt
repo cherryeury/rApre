@@ -160,10 +160,10 @@ L_BountyOne:
 			.@vip_reward = select("^FF0000Both Base and Job EXP^000000", "^0000FFI want Base EXP only.^000000", "^FFA400I want Job EXP only.^000000");
 		}
 		erasequest getarg(.@bounty);
-		.@BaseExp = getmonsterinfo(getarg(.@bounty-1),MOB_BASEEXP)*70;
-		.@JobExp = getmonsterinfo(getarg(.@bounty-1),MOB_JOBEXP)*70;
+		.@BaseExp = getmonsterinfo(getarg(.@bounty-1),MOB_BASEEXP)*50;
+		.@JobExp = getmonsterinfo(getarg(.@bounty-1),MOB_JOBEXP)*50;
 		if (Zeny + .@BaseExp + @JobExp <= MAX_ZENY)
-			Zeny += .@BaseExp + @JobExp /7;		
+			Zeny += .@BaseExp + @JobExp /10;		
 		switch(.@vip_reward){
 			case 2:
 				getexp .@BaseExp,0;
