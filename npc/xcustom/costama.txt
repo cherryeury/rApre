@@ -14,7 +14,7 @@
 //= Item Preview script by ToastOfDoom.
 //============================================================
 					
-moc_para01,51,38,4	script	Costama#xch	882,{
+moc_para01,51,38,4	script	Merry Badger#xchy	882,{
 function Add; function Chk; function Slot; function A_An;
 if (checkweight(21016,1) == 0) {
 	mes "[^FF6600Merry Badger^000000]";
