@@ -7554,7 +7554,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A jeweled coronet said to grant the wisdom of an ancient queen that had worn it.",
 			"________________________",
-			"INT +3",
+			"INT +2",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 7",
@@ -7579,7 +7579,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A jeweled coronet that is said to grant its wearer the wisdom of a queen that had once worn it.",
 			"________________________",
-			"INT +3",
+			"INT +2",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 7",
@@ -13983,7 +13983,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A helmet, made to look like mighty goat horns, that can increase the strength of its wearer.",
 			"________________________",
-			"STR +3",
+			"STR +2",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 9",
@@ -14704,7 +14704,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A helmet that has been fashioned to give its wearer the appearance of having mighty goat horns. It's a helm that evokes power!",
 			"________________________",
-			"STR +3",
+			"STR +2",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 9",

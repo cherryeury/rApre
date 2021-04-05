@@ -1962,7 +1962,7 @@ Body:
     Refineable: true
     View: 41
     Script: |
-      bonus bStr,3;
+      bonus bStr,2;
   - Id: 5160
     AegisName: Magestic_Goat_
     Name: Majestic Goat
@@ -1985,7 +1985,7 @@ Body:
     Refineable: true
     View: 41
     Script: |
-      bonus bStr,3;      
+      bonus bStr,2;      
   - Id: 2298
     AegisName: Green_Feeler
     Name: Green Feeler
@@ -2973,7 +2973,7 @@ Body:
     Refineable: true
     View: 19
     Script: |
-      bonus bInt,3; 
+      bonus bInt,2; 
   - Id: 5164
     AegisName: Tiara_
     Name: Tiara
@@ -2992,7 +2992,7 @@ Body:
     Refineable: true
     View: 19
     Script: |
-      bonus bInt,3;      
+      bonus bInt,2;      
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar

@@ -27,31 +27,34 @@
 0,5502,3 // Necromancer
 0,5568,5 // Rabbit Bonnet
 0,5153,7 // Angeling Hairpin
-0,5324,12 // Little Angel
-0,5138,12 // Magician eyes
-0,5414,12 // Campfire
-0,5527,12 // Lunatic Hat
-0,5782,12 // Legion
+0,5324,10 // Little Angel
+0,5138,10 // Magician eyes
+0,5414,10 // Campfire
+0,5782,10 // Legion
+0,5527,13 // Lunatic Hat
+0,5387,13 // Neko Mimi
+0,5509,14 // Sting Hat 
+0,5781,14 // Persica
+//0,5289,14 // Vanilmirth
+0,5790,14 // Mother
 0,18901,15 // Seppl Hat
-0,5781,15 // Persica
-0,5289,15 // Rabbit Earmuffs
-0,5790,20 // Mother
 0,18595,20 // Ancient Horn
 0,5561,20 // Rabbit Magic Hat
-0,5768,22 // Sakura Coronet
+0,5768,20 // Sakura Coronet
 //0,18847,12 // Jolly Roger
-0,5579,30 // Wanderer's Sakkat
+0,5579,25 // Wanderer's Sakkat
+//0,5379,27 // Balloon Hat
 //0,5357,40 // Wings of Victory
-
-0,5563,40 // Dolor
+0,5660,30 // Gryphon
+0,5563,35 // Dolor
 //0,18738,8 // White Student
-0,5396,45 // Jasper Crest
+//0,5396,35 // Jasper Crest
 //0,18801,50 // Gale Hair Or
 //0,18563,50 // Heart wings
 //0,18812,250 // Elder Crown
-0,5975,65 // Zealotus
-0,18574,65 // Lord of Death
-0,18803,65 // Rose Cascade
+0,5975,60 // Zealotus
+0,18574,60 // Lord of Death
+0,18803,60 // Rose Cascade
 0,18600,100 // Cat Ear Berret
 0,18539,125 // Skull Cap
 //0,5673,150 // Hometown Sakura
@@ -135,23 +138,23 @@
 
 
 // Weapons
-2,28604,5
-2,18130,5
-2,28705,5
-2,13327,5
-2,28007,5
-2,1839,5
-2,1498,5
-2,16040,5
-2,1680,5
-2,13127,5
-2,13454,5
-2,1443,5
-2,28106,5
-2,2025,5
-2,21015,5
-2,1939,5
-2,1995,5
+2,28604,2
+2,18130,2
+2,28705,2
+2,13327,2
+2,28007,2
+2,1839,2
+2,1498,2
+2,16040,2
+2,1680,2
+2,13127,2
+2,13454,2
+2,1443,2
+2,28106,2
+2,2025,2
+2,21015,2
+2,1939,2
+2,1995,2
 //2,13049,250 // Lacma
 //2,16051,100 // Valkyrie Hammer
 //2,28717,300 // Valkyrie Knife
@@ -186,7 +189,7 @@
 //3,15072,40 // Nectar Suit
 //3,15060,30 // Azure Smock
 3,15058,30 // Rider Suit
-3,15057,30 // Apron 
+3,15057,35 // Apron 
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,100 // Rift Armor
@@ -259,9 +262,9 @@
 4,2913,85 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
 4,2959,100 // Fidelity Necklace
-4,28342,175 // Critical Anklet
+4,28342,125 // Critical Anklet
 4,2983,450 // Brooch of greed
-4,2984,450 // Glove of Saehrimnir
+//4,2984,450 // Glove of Saehrimnir
 4,2881,550 // Orlean's
 //4,2980,500 // Evil thread
 //4,28520,750 // Egir's Ring
@@ -281,8 +284,9 @@
 5,13990,1 // Job B Manual
 5,13607,1 // Drop
 5,7776,1
-5,17106,8
-5,6635,20 // Blacksmith Bless
+5,17106,10
+5,13583,1 // Convex
+5,6635,10 // Blacksmith Bless
 //5,6396,20
 
 //// Costume
