@@ -140,7 +140,7 @@ IG_Costamax1,20258,20,1,1; C_Blue_Head_Dress
 IG_Costamax1,20263,20,1,1; C_Hat_Of_Drowsy_Cat
 IG_Costamax1,20266,20,1,1; C_Secret_Zipper
 IG_Costamax1,20269,20,1,1; C_White_Fox_Ear_Ribbon
-IG_Costamax1,20277,20,1,1; C_Balloon_Hat
+//IG_Costamax1,20277,20,1,1; C_Balloon_Hat
 IG_Costamax1,20278,20,1,1; C_Man_Medal
 IG_Costamax1,20283,20,1,1; C_Over_Protector
 IG_Costamax1,20383,20,1,1; C_Magicdecoy_Doll

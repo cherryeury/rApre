@@ -42,8 +42,9 @@
 0,5561,20 // Rabbit Magic Hat
 0,5768,20 // Sakura Coronet
 //0,18847,12 // Jolly Roger
+0,18653,23 // Deviruchi
 0,5579,25 // Wanderer's Sakkat
-//0,5379,27 // Balloon Hat
+0,5379,27 // Balloon Hat
 //0,5357,40 // Wings of Victory
 0,5660,30 // Gryphon
 0,5563,35 // Dolor
@@ -54,7 +55,7 @@
 //0,18812,250 // Elder Crown
 0,5975,60 // Zealotus
 0,18574,60 // Lord of Death
-0,18803,60 // Rose Cascade
+0,18803,100 // Rose Cascade
 0,18600,100 // Cat Ear Berret
 0,18539,125 // Skull Cap
 //0,5673,150 // Hometown Sakura
