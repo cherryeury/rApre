@@ -86,7 +86,7 @@
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,250 // Fafnir Skin
+1,18559,150 // Fafnir Skin
 1,5786,300 // Ancient elven ear
 //1,5924,350
 1,5104,400 // Dark Blinkers

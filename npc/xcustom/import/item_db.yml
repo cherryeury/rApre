@@ -1109,7 +1109,85 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bBaseAtk,6;          
+      bonus bBaseAtk,6;   
+  - Id: 23256
+    AegisName: Elixir_Bandages
+    Name: Elixir Bandages
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1041;    
+  - Id: 12358
+    AegisName: Fan_Of_Wind
+    Name: Fan Of Wind
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1513;         
+  - Id: 23187
+    AegisName: Sap_Liquid
+    Name: Sap Liquid
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1180;        
+  - Id: 23189
+    AegisName: Small_Needle_Kit
+    Name: Small Needle Kit
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1622;        
+  - Id: 23188
+    AegisName: Unprocessed_Parts
+    Name: Unprocessed Parts
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1632;     
+  - Id: 23258
+    AegisName: Stinky_Rotten_Meat
+    Name: Stinky Rotten Meat
+    Type: Usable
+    Buy: 300
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    NoUse:
+      Override: 100
+      Sitting: true
+    Script: |
+      pet 1782;        
   - Id: 2103
     AegisName: Buckler
     Name: Buckler

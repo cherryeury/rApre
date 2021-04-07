@@ -127,50 +127,9 @@ Body:
   - Id: 1717
     AegisName: FERUS_
     Name: Ferus
-    Level: 126
-    Hp: 39054
-    BaseExp: 4185
-    JobExp: 2989
-    Attack: 906
-    Attack2: 122
-    Defense: 111
-    MagicDefense: 33
-    Str: 91
-    Agi: 57
-    Vit: 57
-    Int: 61
-    Dex: 62
-    Luk: 51
-    AttackRange: 2
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Large
-    Race: Dragon
-    Element: Earth
-    ElementLevel: 2
-    WalkSpeed: 120
-    AttackDelay: 108
-    AttackMotion: 576
-    DamageMotion: 432
-    Ai: 09
-    Drops:
-      - Item: Delicious_Fish
-        Rate: 5100
-      - Item: Dragon_Canine
-        Rate: 1000
+    Drops:    
       - Item: Dragon_Manteau
         Rate: 10
-      - Item: Dragon_Scale
-        Rate: 3589
-      - Item: Dragonball_Green
-        Rate: 800
-      - Item: Great_Nature
-        Rate: 20
-      - Item: Dragonball_Green
-        Rate: 100
-      - Item: Ferus__Card
-        Rate: 1
-        StealProtected: true
   - Id: 2289
     AegisName: E_FABRE
     Name: Fabre
@@ -403,32 +362,6 @@ Body:
     AegisName: GOBLIN_1
     Name: Goblin
     JapaneseName: Goblin Dagger
-    Level: 48
-    Hp: 1058
-    BaseExp: 369
-    JobExp: 414
-    Attack: 87
-    Attack2: 34
-    Defense: 56
-    MagicDefense: 5
-    Str: 37
-    Agi: 54
-    Vit: 25
-    Int: 20
-    Dex: 36
-    Luk: 10
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Wind
-    ElementLevel: 1
-    WalkSpeed: 100
-    AttackDelay: 1120
-    AttackMotion: 620
-    DamageMotion: 240
-    Ai: 21
     Drops:
       - Item: Iron
         Rate: 270
@@ -451,31 +384,6 @@ Body:
     AegisName: GOBLIN_2
     Name: Goblin
     JapaneseName: Goblin Flail
-    Level: 44
-    Hp: 931
-    BaseExp: 333
-    JobExp: 374
-    Attack: 94
-    Attack2: 28
-    Defense: 52
-    MagicDefense: 5
-    Str: 33
-    Agi: 16
-    Vit: 24
-    Int: 15
-    Dex: 58
-    Luk: 10
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Fire
-    ElementLevel: 1
-    WalkSpeed: 150
-    AttackDelay: 1320
-    AttackMotion: 620
-    DamageMotion: 240
     Ai: 09
     Drops:
       - Item: Iron
@@ -499,31 +407,6 @@ Body:
     AegisName: GOBLIN_3
     Name: Goblin
     JapaneseName: Goblin Axe
-    Level: 44
-    Hp: 930
-    BaseExp: 333
-    JobExp: 374
-    Attack: 88
-    Attack2: 33
-    Defense: 47
-    MagicDefense: 5
-    Str: 30
-    Agi: 16
-    Vit: 24
-    Int: 15
-    Dex: 17
-    Luk: 10
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Poison
-    ElementLevel: 1
-    WalkSpeed: 250
-    AttackDelay: 1624
-    AttackMotion: 624
-    DamageMotion: 240
     Ai: 13
     Drops:
       - Item: Iron
@@ -547,32 +430,6 @@ Body:
     AegisName: GOBLIN_4
     Name: Goblin
     JapaneseName: Goblin Hammer
-    Level: 49
-    Hp: 1494
-    BaseExp: 396
-    JobExp: 446
-    Attack: 72
-    Attack2: 22
-    Defense: 70
-    MagicDefense: 3
-    Str: 31
-    Agi: 27
-    Vit: 46
-    Int: 15
-    Dex: 34
-    Luk: 10
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Earth
-    ElementLevel: 1
-    WalkSpeed: 200
-    AttackDelay: 1624
-    AttackMotion: 624
-    DamageMotion: 240
-    Ai: 13
     Drops:
       - Item: Yellow_Live
         Rate: 100
@@ -595,32 +452,6 @@ Body:
     AegisName: GOBLIN_5
     Name: Goblin
     JapaneseName: Goblin Mace
-    Level: 56
-    Hp: 2342
-    BaseExp: 486
-    JobExp: 548
-    Attack: 167
-    Attack2: 31
-    Defense: 64
-    MagicDefense: 5
-    Str: 51
-    Agi: 37
-    Vit: 22
-    Int: 15
-    Dex: 38
-    Luk: 10
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Water
-    ElementLevel: 1
-    WalkSpeed: 300
-    AttackDelay: 3074
-    AttackMotion: 1874
-    DamageMotion: 480
-    Ai: 13
     Drops:
       - Item: Iron
         Rate: 150
@@ -643,32 +474,6 @@ Body:
     AegisName: KOBOLD_1
     Name: Kobold
     JapaneseName: Kobold Axe
-    Level: 107
-    Hp: 10483
-    BaseExp: 2274
-    JobExp: 1706
-    Attack: 701
-    Attack2: 87
-    Defense: 103
-    MagicDefense: 25
-    Str: 109
-    Agi: 76
-    Vit: 61
-    Int: 53
-    Dex: 82
-    Luk: 30
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Wind
-    ElementLevel: 2
-    WalkSpeed: 150
-    AttackDelay: 1028
-    AttackMotion: 528
-    DamageMotion: 360
-    Ai: 13
     Drops:
       - Item: Steel
         Rate: 100
@@ -689,32 +494,6 @@ Body:
     AegisName: KOBOLD_2
     Name: Kobold
     JapaneseName: Kobold Hammer
-    Level: 102
-    Hp: 9152
-    BaseExp: 1944
-    JobExp: 1458
-    Attack: 477
-    Attack2: 62
-    Defense: 117
-    MagicDefense: 59
-    Str: 96
-    Agi: 61
-    Vit: 55
-    Int: 48
-    Dex: 79
-    Luk: 20
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Poison
-    ElementLevel: 2
-    WalkSpeed: 200
-    AttackDelay: 1528
-    AttackMotion: 528
-    DamageMotion: 360
-    Ai: 13
     Drops:
       - Item: Steel
         Rate: 100
@@ -735,32 +514,6 @@ Body:
     AegisName: KOBOLD_3
     Name: Kobold
     JapaneseName: Kobold Mace
-    Level: 101
-    Hp: 9078
-    BaseExp: 1827
-    JobExp: 1371
-    Attack: 468
-    Attack2: 64
-    Defense: 109
-    MagicDefense: 48
-    Str: 103
-    Agi: 64
-    Vit: 59
-    Int: 42
-    Dex: 67
-    Luk: 20
-    AttackRange: 1
-    SkillRange: 10
-    ChaseRange: 12
-    Size: Medium
-    Race: Demihuman
-    Element: Fire
-    ElementLevel: 2
-    WalkSpeed: 300
-    AttackDelay: 1228
-    AttackMotion: 528
-    DamageMotion: 360
-    Ai: 13
     Drops:
       - Item: Boody_Red
         Rate: 35
@@ -1256,3 +1009,265 @@ Body:
       - Item: Roda_Frog_Card
         Rate: 1
         StealProtected: true
+  - Id: 1416
+    AegisName: WICKED_NYMPH
+    Name: Evil Nymph
+    JapaneseName: Wicked Nymph
+    Drops:
+      - Item: Charming_Lotus
+        Rate: 50
+  - Id: 1143
+    AegisName: MARIONETTE
+    Name: Marionette
+    Drops:
+      - Item: Delicious_Shaved_Ice
+        Rate: 20
+  - Id: 2761
+    AegisName: C3_MARIONETTE
+    Name: Marionette Ringleader        
+    Drops:
+      - Item: Delicious_Shaved_Ice
+        Rate: 20
+  - Id: 2740
+    AegisName: C2_MUMMY
+    Name: Solid Mummy 
+    Drops:
+      - Item: Elixir_Bandages
+        Rate: 20 
+  - Id: 2739
+    AegisName: C1_MUMMY
+    Name: Swift Mummy   
+    Drops:
+      - Item: Elixir_Bandages
+        Rate: 20
+  - Id: 1041
+    AegisName: MUMMY
+    Name: Mummy        
+    Drops:
+      - Item: Elixir_Bandages
+        Rate: 20
+  - Id: 1513
+    AegisName: CIVIL_SERVANT
+    Name: Mao Guai
+    JapaneseName: Civil Servant
+    Drops:
+      - Item: Fan_Of_Wind
+        Rate: 20   
+  - Id: 1179
+    AegisName: WHISPER
+    Name: Whisper
+    Drops:
+      - Item: Fit_Pipe
+        Rate: 20   
+  - Id: 1185
+    AegisName: WHISPER_
+    Name: Whisper        
+    Drops:
+      - Item: Fit_Pipe
+        Rate: 20 
+  - Id: 1404
+    AegisName: MIYABI_NINGYO
+    Name: Miyabi Doll
+    JapaneseName: Miyabi Ningyo       
+    Drops:
+      - Item: Gril_Doll
+        Rate: 20        
+  - Id: 2746
+    AegisName: C3_MIYABI_NINGYO
+    Name: Miyabi Doll Ringleader
+    Drops:
+      - Item: Gril_Doll
+        Rate: 20 
+  - Id: 1374
+    AegisName: INCUBUS
+    Name: Incubus
+    Drops:
+      - Item: Gril's_Naivety
+        Rate: 1
+  - Id: 1379
+    AegisName: NIGHTMARE_TERROR
+    Name: Nightmare Terror
+    Drops:
+      - Item: Hell_Contract
+        Rate: 20
+  - Id: 2732
+    AegisName: C4_NIGHTMARE_TERROR
+    Name: Furious Nightmare Terror        
+    Drops:
+      - Item: Hell_Contract
+        Rate: 20       
+  - Id: 1188
+    AegisName: BON_GUN
+    Name: Bongun
+    Drops:
+      - Item: Heart_Of_Her
+        Rate: 20      
+  - Id: 1401
+    AegisName: SHINOBI
+    Name: Shinobi  
+    Drops:
+      - Item: Kuloren
+        Rate: 20        
+  - Id: 2664
+    AegisName: C4_SHINOBI
+    Name: Furious Shinobi        
+    Drops:
+      - Item: Kuloren
+        Rate: 20          
+  - Id: 2398
+    AegisName: LITTLE_PORING
+    Name: Little Poring
+    Drops:
+      - Item: Unripe_Apple2
+        Rate: 20   
+  - Id: 2776
+    AegisName: C3_LITTLE_PORING
+    Name: Baby Poring Ringleader   
+    Drops:
+      - Item: Unripe_Apple2
+        Rate: 20  
+  - Id: 1504
+    AegisName: DULLAHAN
+    Name: Dullahan
+    Drops:
+      - Item: Luxury_Whisky_Bottle
+        Rate: 20
+  - Id: 1040
+    AegisName: GOLEM
+    Name: Golem
+    Drops:
+      - Item: Magical_Lithography
+        Rate: 20
+  - Id: 2812
+    AegisName: C4_GOLEM
+    Name: Furious Golem
+    Drops:
+      - Item: Magical_Lithography
+        Rate: 20
+  - Id: 1026
+    AegisName: MUNAK
+    Name: Munak       
+    Drops:
+      - Item: No_Recipient
+        Rate: 20    
+  - Id: 1495
+    AegisName: STONE_SHOOTER
+    Name: Stone Shooter
+    Drops:
+      - Item: Oilpalm_Coconut
+        Rate: 20 
+  - Id: 1023
+    AegisName: ORK_WARRIOR
+    Name: Orc Warrior
+    Drops:
+      - Item: Horror_Of_Tribe
+        Rate: 5 
+  - Id: 2722
+    AegisName: C4_ORK_WARRIOR
+    Name: Furious Orc Warrior
+    Drops:
+      - Item: Horror_Of_Tribe
+        Rate: 5
+  - Id: 1382
+    AegisName: DIABOLIC
+    Name: Diabolic    
+    Drops:
+      - Item: Red_Burning_Stone
+        Rate: 5    
+  - Id: 1180
+    AegisName: NINE_TAIL
+    Name: Nine Tail
+    Drops:
+      - Item: Sap_Liquid
+        Rate: 5  
+  - Id: 1622
+    AegisName: TEDDY_BEAR
+    Name: Teddy Bear        
+    Drops:
+      - Item: Small_Needle_Kit
+        Rate: 5      
+  - Id: 2636
+    AegisName: C1_TEDDY_BEAR
+    Name: Swift Teddy Bear        
+    Drops:
+      - Item: Small_Needle_Kit
+        Rate: 5       .
+  - Id: 1148
+    AegisName: MEDUSA
+    Name: Medusa
+    Drops:
+      - Item: Splendid_Mirror
+        Rate: 5       .
+  - Id: 2759
+    AegisName: C1_MEDUSA
+    Name: Swift Medusa   
+    Drops:
+      - Item: Splendid_Mirror
+        Rate: 5    
+  - Id: 1299
+    AegisName: GOBLIN_LEADER
+    Name: Goblin Leader     
+    Drops:
+      - Item: Staff_Of_Leader
+        Rate: 50
+  - Id: 2313
+    AegisName: TIKBALANG
+    Name: Tikbalang
+    Drops:
+      - Item: Tikbalang_Belt
+        Rate: 5
+  - Id: 1632
+    AegisName: GREMLIN
+    Name: Gremlin
+    Drops:
+      - Item: Unprocessed_Parts
+        Rate: 5
+  - Id: 1208
+    AegisName: WANDER_MAN
+    Name: Wanderer
+    JapaneseName: Wander Man        
+    Drops:
+      - Item: Skull_Of_Vagabond
+        Rate: 5    
+  - Id: 2620
+    AegisName: C4_WANDER_MAN
+    Name: Furious Wanderer        
+    Drops:
+      - Item: Skull_Of_Vagabond
+        Rate: 5  
+  - Id: 1505
+    AegisName: LOLI_RURI
+    Name: Loli Ruri   
+    Drops:
+      - Item: Very_Red_Juice
+        Rate: 5      
+  - Id: 2774
+    AegisName: C1_LOLI_RURI
+    Name: Swift Loli Ruri
+    Drops:
+      - Item: Very_Red_Juice
+        Rate: 5     
+  - Id: 1586
+    AegisName: LEAF_CAT
+    Name: Leaf Cat
+    Drops:
+      - Item: Very_Soft_Plant
+        Rate: 5   
+  - Id: 2781
+    AegisName: C3_LEAF_CAT
+    Name: Leaf Cat Ringleader
+    Drops:
+      - Item: Very_Soft_Plant
+        Rate: 5
+  - Id: 1782
+    AegisName: ROWEEN
+    Name: Roween  
+    Drops:
+      - Item: Stinky_Rotten_Meat
+        Rate: 5           
+  - Id: 2677
+    AegisName: C2_ROWEEN
+    Name: Solid Roween  
+    Drops:
+      - Item: Stinky_Rotten_Meat
+        Rate: 5       
