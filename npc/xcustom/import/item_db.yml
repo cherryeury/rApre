@@ -1634,7 +1634,7 @@ Body:
     Refineable: true
     View: 189
     Script: |
-      bonus2 bAddMonsterDropItem,611,200;
+      bonus2 bAddMonsterDropItem,611,400;
   - Id: 5059
     AegisName: Brown_Bear_Cap
     Name: Teddybear Hat
