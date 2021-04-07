@@ -2624,7 +2624,7 @@ on the invoking character or the specified equipment slot. If nothing is
 equipped there, it returns -1.
 Valid equipment slots are:
 
-EQI_COMPOUND_ON (-1)      - Item slot that calls this script (In context of item script)
+EQI_COMPOUND_ON (-1)      - Item slot that calls this script (In context of item script) - exclusive to getequipid
 EQI_ACC_L (0)             - Accessory 1
 EQI_ACC_R (1)             - Accessory 2
 EQI_SHOES (2)             - Footgear (shoes, boots)
@@ -4900,7 +4900,7 @@ Example to get Crimson Weapon with Ghost property:
 	// with Neutral Resistance +10% and 5% damage reduction from Demi-Human or Player
 	// when Valkyrie Randgris killed
 	OnNPCKillEvent:
-		if (killedrid == 1751 && rand(0,1000) > 950) { // Valkyrie Randgris
+		if (killedrid == 1751 && rand(0,10000) > 9950) { // Valkyrie Randgris
 			getmapxy(.@map$,.@x,.@y,BL_PC);
 			setarray .@OptID[0],RDMOPT_ATTR_TOLERACE_NOTHING,RDMOPT_RACE_TOLERACE_HUMAN;
 			setarray .@OptVal[0],10,5;

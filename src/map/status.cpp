@@ -3829,7 +3829,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 	memset (&sd->right_weapon.overrefine, 0, sizeof(sd->right_weapon) - sizeof(sd->right_weapon.atkmods));
 	memset (&sd->left_weapon.overrefine, 0, sizeof(sd->left_weapon) - sizeof(sd->left_weapon.atkmods));
 
-	if (sd->special_state.intravision && !sd->sc.data[SC_INTRAVISION]) // Clear intravision as long as nothing else is using it
+	if (sd->special_state.intravision)
 		clif_status_load(&sd->bl, EFST_CLAIRVOYANCE, 0);
 
 	if (sd->special_state.no_walk_delay)
@@ -10297,7 +10297,11 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 			}
 			break;
 		case SC_POISONREACT:
+#ifdef RENEWAL
+			val2=(val1 - ((val1-1) % 1 - 1)) / 2;
+#else
 			val2=(val1+1)/2 + val1/10; // Number of counters [Skotlex]
+#endif
 			val3=50; // + 5*val1; // Chance to counter. [Skotlex]
 			break;
 		case SC_MAGICROD:
