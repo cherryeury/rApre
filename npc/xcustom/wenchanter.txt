@@ -686,6 +686,7 @@ if (.@Free == 1){	set .@Forged,1;}
 switch(getequipid(.@part)) {	
 //Armor
 //Modified
+	case 2553:
 	case 2191:
 	case 15040:
 	case 15058:

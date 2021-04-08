@@ -43,38 +43,38 @@
 0,5380,15 // Fish Head
 0,18595,18 // Ancient Horn
 0,5561,20 // Rabbit Magic Hat
+//0,18575,25 // Wunderkammer
 //0,18847,12 // Jolly Roger
-0,18653,21 // Deviruchi
+0,18653,25 // Deviruchi
 0,5579,25 // Wanderer's Sakkat
 0,5563,25 // Dolor
-0,5379,27 // Balloon Hat
 0,5660,27 // Gryphon
 0,5520,28 // Rabbit Earplug
-0,5357,35 // Wings of Victory
+0,5357,30 // Wings of Victory
 //0,18738,8 // White Student
-0,5396,35 // Jasper Crest
-0,5975,35 // Zealotus
-0,5467,35 // Dragon Helm
-0,18574,35 // Lord of Death
+0,5396,30 // Jasper Crest
+//0,5975,30 // Zealotus
+0,18574,30 // Lord of Death
 //0,18801,50 // Gale Hair Or
-0,18563,45 // Heart wings
+0,5467,40 // Dragon Helm
+0,18563,80 // Heart wings
 //0,18812,250 // Elder Crown
 
-
-0,18803,100 // Rose Cascade
+0,5379,80 // Balloon Hat
+0,18803,90 // Rose Cascade
 0,18600,100 // Cat Ear Berret
-0,18539,125 // Skull Cap
+0,18539,150 // Skull Cap
 //0,5673,150 // Hometown Sakura
 //0,18804,350 // Thorn
 //0,19326,150 // Book of Soyga
 //0,19033,150 // Ancient Deco
-0,18827,200 // Valkyrie Circlet
-0,19098,200 // Piamette Hood
-0,18756,200 // Black Shiba Inu Hat
-0,5208,235 // rIDEWORD
-0,18652,250 // Vanargand Helm
-0,18908,250 // Piamette Red Ears
-0,18909,250 // Piamette Brown Ears
+0,18827,175 // Valkyrie Circlet
+0,19098,175 // Piamette Hood
+0,18756,175 // Black Shiba Inu Hat
+0,5208,200 // rIDEWORD
+0,18652,220 // Vanargand Helm
+0,18908,220 // Piamette Red Ears
+0,18909,220 // Piamette Brown Ears
 //0,18910,350 // Piamette Blue Ears
 //0,5975,750
 //0,19172,750 // Sitting Pope
@@ -114,6 +114,7 @@
 1,18900,7 // Weisswurst
 1,18677,7 // Twig
 //1,5775,10 // Chocolate Donut
+1,5483,30 // Odin's Mask
 1,5403,50 // Fish in Mouth
 1,5574,50 // Well Chewed
 1,5362,60 // Ninja Scroll
@@ -164,12 +165,26 @@
 2,21015,2
 2,1939,2
 2,1995,2
-2,16051,50 // Valkyrie Hammer
+//2,1139,8 // Tirfing
+2,1240,10 // Princess Knife
+2,1244,15 // Holy Dagger
+2,1227,15 // Weeder Knife
+2,13001,15 // Dragon Killer
+//2,1134,15 // Caesar Sword
+2,1467,15 // Bill Guisarme
+2,1562,15 // Battlefield Textbook
+//2,1416,15 // Tjungkuletti
+2,1414,15 // Gelerdria
+//2,1367,15 // Slaughter
+2,1169,15 // Executioner
+2,1579,30 // Book of the Dead
+//2,1137,25 // Excalibur
+2,16051,75 // Valkyrie Hammer
 2,28717,250 // Valkyrie Knife
 2,13049,250 // Lacma
 
-//Shield
 
+//Shield
 //3,2197,35 // Iron Shield
 //3,2188,25 // Svalinn
 //3,2196,10 // White Gold Shield
@@ -197,8 +212,8 @@
 3,15040,7 // Prison Uniform
 //3,15072,40 // Nectar Suit
 //3,15060,30 // Azure Smock
-3,15057,30 // Apron 
-3,15058,35 // Rider Suit
+3,15057,25 // Apron 
+3,15058,40 // Rider Suit
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,100 // Rift Armor
@@ -224,15 +239,15 @@
 //3,15204,1500 // Abyss Dress
 
 // Garment
-//3,20714,25 // Assassin Muffler
-
-3,20726,25 // Fire Dragon Manteau
-3,20728,25 // Water Dragon Manteau
-3,20729,25 // Wind Dragon Manteau
-3,20731,25 // Earth Dragon Manteau
-3,2594,25 // Wrapping cloth
-3,2597,25 // Bloody Muffler
-3,20730,30 // Loyalist Hood
+//3,20714,15 // Assassin Muffler
+3,2553,20 // Dragon Manteau
+3,20726,20 // Fire Dragon Manteau
+3,20728,20 // Water Dragon Manteau
+3,20729,20 // Wind Dragon Manteau
+3,20731,20 // Earth Dragon Manteau
+3,2594,20 // Wrapping cloth
+3,2597,20 // Bloody Muffler
+3,20730,25 // Loyalist Hood
 //3,20778,300 // Crimson Stole
 3,20783,500 // Hero Manteau
 //3,20860,500
@@ -251,7 +266,7 @@
 
 //Shoes
 3,2466,15 // Training Shoes
-//3,2481,25 // Rune Boots
+3,2481,15 // Rune Boots
 //3,22064,50 // Thorn Boots
 //3,22075,150 // Rift Shoes
 //3,22132,1250 // Lightning God
@@ -683,7 +698,7 @@
 
 //Bundle
 //7,12026,20 // Classic Headgear Box
-//7,12623,20 // High Weapon Box
+7,12623,5 // High Weapon Box
 7,12391,250 // Top Costume
 7,12403,250 // Mid Costume
 7,12416,250 // Low Costume

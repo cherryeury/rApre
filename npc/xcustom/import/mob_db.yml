@@ -124,12 +124,6 @@ Body:
       - Item: Fabre_Card
         Rate: 1
         StealProtected: true
-  - Id: 1717
-    AegisName: FERUS_
-    Name: Ferus
-    Drops:    
-      - Item: Dragon_Manteau
-        Rate: 10
   - Id: 2289
     AegisName: E_FABRE
     Name: Fabre

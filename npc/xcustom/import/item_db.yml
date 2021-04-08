@@ -855,6 +855,31 @@ Body:
       Container: true
     Script: |
       getrandgroupitem(IG_Classic_,1);
+  - Id: 5467
+    AegisName: Helm_Of_Dragoon
+    Name: Helm Of Dragon
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 10
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 464
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bStr,2;
+      bonus bInt,2;
+      bonus bDex,2;
+      .@r = getrefine();
+      if (.@r>=7)
+         bonus2 bExpAddRace,RC_Dragon,3;
+      if (.@r>=9)
+         bonus2 bExpAddRace,RC_Dragon,5;      
   - Id: 20729
     AegisName: Wind_Dragon_Coat
     Name: Wind Dragon Coat
@@ -2777,8 +2802,8 @@ Body:
       Head_Mid: true
     View: 75
     Script: |
-      bonus bCritical,2;
-      bonus bDef,-15;
+      bonus bCritical,1;
+      bonus bDef,-10;
   - Id: 5808
     AegisName: Diabolus_Helmet
     Name: Dark Bacilium
@@ -4019,7 +4044,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 2
+    Defense: 10
     Jobs:
       All: true
       Novice: false
@@ -4030,7 +4055,7 @@ Body:
     View: 170
     Script: |
       bonus2 bResEff,Eff_Blind,5000;
-      bonus bCritical,2;
+      bonus bCritical,1;
   - Id: 5398
     AegisName: Bone_Head
     Name: Bone Head
