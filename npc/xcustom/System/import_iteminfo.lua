@@ -9067,7 +9067,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A mask which resembles the face of an Alarm monster.",
 			"________________________",
-			"CRIT +1",
+			"CRIT +2",
 			"________________________",
 			"Increases resistance against ^663399Blind^000000 status by 50%.",
 			"________________________",
@@ -11158,6 +11158,32 @@ tbl = {
 		ClassNum = 0,
 		costume = false
 	},
+	[22014] = {
+		unidentifiedDisplayName = "Unidentified Shoes",
+		unidentifiedResourceName = "½´Áî",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Enhanced Variant Shoes",
+		identifiedResourceName = "¹è¸®¾ðÆ®½´Áî",
+		identifiedDescriptionName = {
+			"A pair of shoes that emanates unnatural feeling. It is evident that the creator tried to challenge the limits but failed in overcoming it.",
+			"________________________",
+			"MaxHP +12%",
+			"MaxSP +12%",
+			"________________________",
+			"Increases DEF by 5 and MDEF by 1 based of Refine Level.",
+			"________________________",
+			"^0000CCType:^000000 Shoes",
+			"^0000CCDefense:^000000 13",
+			"^0000CCWeight:^000000 50",
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 85",
+			"2nd Classes, Kagerou, Oboro and Rebel"
+		},
+		slotCount = 1,
+		ClassNum = 0,
+		costume = false
+	},	
 	[2388] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
 		unidentifiedResourceName = "ÄÚÆ°¼ÅÃ÷",
@@ -13248,10 +13274,11 @@ tbl = {
 			"When equipped with ^990099Wanderer's Sakkat^000000:",
 			"If ^0000FFRefine Level^000000 of ^990099Wanderer's Coat^000000 is ^0000FF+5 or higher^000000:",
 			"Enables Level 1 ^009900Double Attack^000000.",
+			"(If wearer has learned higher Level of ^009900Double Attack^000000, it will use the learned Level instead.)",
 			"________________________",
 			"If ^0000FFRefine Level^000000 of ^990099Wanderer's Coat^000000 is ^0000FF+7 or higher^000000:",
 			"Enables Level 5 ^009900Double Attack^000000.",
-			"If wearer has learned higher Level of ^009900Double Attack^000000, it will use the learned Level instead.",
+			"(If wearer has learned higher Level of ^009900Double Attack^000000, it will use the learned Level instead.)",
 			"________________________",
 			"When equipped with ^990099Wanderer's Sakkat^000000 and Pet ^990099Wanderer^000000:",
 			"Decreases After Attack Delay by 3%.",
@@ -14374,6 +14401,7 @@ tbl = {
 		ClassNum = 137,
 		costume = false
 	},	
+	
 	[2288] = {
 		unidentifiedDisplayName = "Unidentified Mask",
 		unidentifiedResourceName = "½º¸¶ÀÏ",

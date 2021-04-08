@@ -24,37 +24,43 @@
 //Headgear 
 //Top
 //0,5690,3 // Red Wing Hat
-//0,5502,5 // Necromancer
+0,5502,5 // Necromancer
 0,5568,5 // Rabbit Bonnet
-0,5153,8 // Angeling Hairpin
+//0,5153,8 // Angeling Hairpin
 0,5324,8 // Little Angel
 0,5138,8 // Magician eyes
 0,5414,8 // Campfire
 0,5782,8 // Legion
-0,5527,13 // Lunatic Hat
-0,5387,13 // Neko Mimi
-0,5509,14 // Sting Hat 
-0,5781,14 // Persica
+0,5527,10 // Lunatic Hat
+0,5387,10 // Neko Mimi
+0,5509,12 // Sting Hat 
+0,5781,15 // Persica
+0,5382,15 // Bell Ribbon
 //0,5289,14 // Vanilmirth
 //0,5790,14 // Mother
-0,5768,14 // Sakura Coronet
+0,5768,15 // Sakura Coronet
 0,18901,15 // Seppl Hat
-0,18595,20 // Ancient Horn
+0,5380,15 // Fish Head
+0,18595,18 // Ancient Horn
 0,5561,20 // Rabbit Magic Hat
 //0,18847,12 // Jolly Roger
-0,18653,23 // Deviruchi
+0,18653,21 // Deviruchi
 0,5579,25 // Wanderer's Sakkat
+0,5563,25 // Dolor
 0,5379,27 // Balloon Hat
-//0,5357,40 // Wings of Victory
-0,5660,30 // Gryphon
-0,5563,35 // Dolor
+0,5660,27 // Gryphon
+0,5520,28 // Rabbit Earplug
+0,5357,35 // Wings of Victory
 //0,18738,8 // White Student
-//0,5396,35 // Jasper Crest
+0,5396,35 // Jasper Crest
+0,5975,35 // Zealotus
+0,5467,35 // Dragon Helm
+0,18574,35 // Lord of Death
 //0,18801,50 // Gale Hair Or
-//0,18563,50 // Heart wings
+0,18563,45 // Heart wings
 //0,18812,250 // Elder Crown
-0,5975,50 // Zealotus
-0,18574,50 // Lord of Death
+
+
 0,18803,100 // Rose Cascade
 0,18600,100 // Cat Ear Berret
 0,18539,125 // Skull Cap
@@ -71,10 +77,10 @@
 0,18909,250 // Piamette Brown Ears
 //0,18910,350 // Piamette Blue Ears
 //0,5975,750
-//0,19172,1250 // Sitting Pope
+//0,19172,750 // Sitting Pope
 //0,19364,1250 // Engineer Cap
 //0,18934,1250 // Kitsune Ear
-//0,18673,1000 // Drooping Pope
+0,18673,700 // Drooping Pope
 //0,18849,800 // Celine Ribbon
 0,19163,1500 // Katarina
 //0,19163,1000
@@ -109,12 +115,13 @@
 1,18677,7 // Twig
 //1,5775,10 // Chocolate Donut
 1,5403,50 // Fish in Mouth
+1,5574,50 // Well Chewed
 1,5362,60 // Ninja Scroll
-1,18643,65 // Paperhand str
-1,18642,65 // Paperhand int
-1,18644,65 // Paperhand dex
-1,5574,100 // Well Chewed
-1,5305,100 // Pirate Dagger
+1,18643,75 // Paperhand str
+1,18642,75 // Paperhand int
+1,18644,75 // Paperhand dex
+
+1,5305,75 // Pirate Dagger
 //1,5934,50
 //1,18759,70 // Wood Goblin
 //1,5878,100 // Miracle blue rose
@@ -187,13 +194,13 @@
 //3,20800,1000
 
 // Armor
-3,15040,5 // Prison Uniform
+3,15040,7 // Prison Uniform
 //3,15072,40 // Nectar Suit
 //3,15060,30 // Azure Smock
-3,15058,25 // Rider Suit
-3,15057,35 // Apron 
+3,15057,30 // Apron 
+3,15058,35 // Rider Suit
 //3,19048,1000
-3,2584,100 // Wanderer Coat
+//3,2584,100 // Wanderer Coat
 //3,15141,100 // Rift Armor
 //3,15054,750 // Ninja
 //3,15075,750 // Guillotine
@@ -217,7 +224,7 @@
 //3,15204,1500 // Abyss Dress
 
 // Garment
-3,20714,25 // Assassin Muffler
+//3,20714,25 // Assassin Muffler
 
 3,20726,25 // Fire Dragon Manteau
 3,20728,25 // Water Dragon Manteau
@@ -244,7 +251,7 @@
 
 //Shoes
 3,2466,15 // Training Shoes
-3,2481,25 // Rune Boots
+//3,2481,25 // Rune Boots
 //3,22064,50 // Thorn Boots
 //3,22075,150 // Rift Shoes
 //3,22132,1250 // Lightning God
@@ -258,14 +265,15 @@
 4,2948,35 // Devil Wing
 //4,2888,65 // School Bag
 //4,2998,60 // Shining Ttapezohedron
-4,2936,70 // Ring of Recovery
+4,2936,60 // Ring of Recovery
 //4,28314,10 // Hand of Glory
 //4,2749,20 // Linen Glove
 4,2935,85 // Sprint Glove
 4,2913,85 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
 4,2959,100 // Fidelity Necklace
-4,28342,125 // Critical Anklet
+//4,28342,125 // Critical Anklet
+4,2799,250 // Ring of Protection
 4,2983,450 // Brooch of greed
 //4,2984,450 // Glove of Saehrimnir
 4,2881,550 // Orlean's

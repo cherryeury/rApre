@@ -1111,8 +1111,8 @@ Body:
     Script: |
       bonus bBaseAtk,6;   
   - Id: 23256
-    AegisName: Elixir_Bandages
-    Name: Elixir Bandages
+    AegisName: Elixir_Bandage
+    Name: Elixir Bandage
     Type: Usable
     Buy: 300
     Weight: 50
@@ -1137,7 +1137,7 @@ Body:
     Script: |
       pet 1513;         
   - Id: 23187
-    AegisName: Sap_Liquid
+    AegisName: Sap_Jelly
     Name: Sap Liquid
     Type: Usable
     Buy: 300
@@ -1150,7 +1150,7 @@ Body:
     Script: |
       pet 1180;        
   - Id: 23189
-    AegisName: Small_Needle_Kit
+    AegisName: Little_Dall_Needle
     Name: Small Needle Kit
     Type: Usable
     Buy: 300
@@ -1163,7 +1163,7 @@ Body:
     Script: |
       pet 1622;        
   - Id: 23188
-    AegisName: Unprocessed_Parts
+    AegisName: Airship_Part
     Name: Unprocessed Parts
     Type: Usable
     Buy: 300
@@ -1175,6 +1175,58 @@ Body:
       Sitting: true
     Script: |
       pet 1632;     
+  - Id: 5561
+    AegisName: Rabbit_Magic_Hat_J
+    Name: Magic Rabbit Hat
+    Type: Armor
+    Weight: 800
+    Defense: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 497
+    Script: |
+      bonus bInt,1;
+      bonus bMaxSP,50;
+      bonus4 bAutoSpell,"MG_FIREBOLT",3,10,3;
+      bonus4 bAutoSpell,"MG_COLDBOLT",3,10,3;
+      bonus4 bAutoSpell,"MG_LIGHTNINGBOLT",3,10,3;
+      bonus3 bAutoSpellWhenHit,"AL_HEAL",1,10;    
+  - Id: 22014
+    AegisName: Enhanced_Variant_Shoes
+    Name: Enhanced Variant Shoes
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 13
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rebellion: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 85
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,12;
+      bonus bMaxSPrate,12;
+      .@r = getrefine();
+      bonus bDef,.@r*5;
+      bonus bMdef,.@r;      
   - Id: 23258
     AegisName: Stinky_Rotten_Meat
     Name: Stinky Rotten Meat
@@ -3978,7 +4030,7 @@ Body:
     View: 170
     Script: |
       bonus2 bResEff,Eff_Blind,5000;
-      bonus bCritical,1;
+      bonus bCritical,2;
   - Id: 5398
     AegisName: Bone_Head
     Name: Bone Head

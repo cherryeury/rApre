@@ -6,7 +6,7 @@ IG_Classic_,5683,20,1,1	// 1x Majestic_Goat_Repl
 IG_Classic_,5099,20,1,1; // Cat Hat
 IG_Classic_,18640,20,1,1; // Autumn Headband
 IG_Classic_,5678,20,1,1; // Headphone
-IG_Classic_,5138,20,1,1; // Magic_Eyes
+//IG_Classic_,5138,20,1,1; // Magic_Eyes
 IG_Classic_,5481,20,1,1; // Hermode
 IG_Classic_,5139,20,1,1; // Hibiscus
 IG_Classic_,5140,20,1,1; // Charming Ribbon
@@ -29,9 +29,9 @@ IG_Classic_,5186,20,1,1; // Geographer Band
 IG_Classic_,5467,20,1,1; // Dragon Helm
 IG_Classic_,5761,20,1,1; // Sloth
 IG_Classic_,5212,20,1,1; // Satellite		
-IG_Classic_,5563,20,1,1; // Dolor
+//IG_Classic_,5563,20,1,1; // Dolor
 IG_Classic_,5572,20,1,1; // Babe
-IG_Classic_,5561,20,1,1; // Magician Rabbit
+//IG_Classic_,5561,20,1,1; // Magician Rabbit
 IG_Classic_,5289,20,1,1; // Vanilmirth
 IG_Classic_,5659,20,1,1; // Sleeper
 IG_Classic_,5658,20,1,1; // Imp
@@ -218,7 +218,7 @@ IG_Costamax1,31598,20,1,1; C_Forest_Guide
 IG_Costamax1,31624,20,1,1; C_HeartOfCat_TW
 IG_Costamax1,31628,20,1,1; C_Bogy_Cap_TW
 // top + mid
-IG_Costamax1,19574,20,1,1; C_Lord_of_Death
+//IG_Costamax1,19574,20,1,1; C_Lord_of_Death
 //IG_Costamax1,19710,20,1,1; C_Wings_Of_Victory
 IG_Costamax1,19760,20,1,1; C_Rainbow_Veil
 IG_Costamax1,19775,20,1,1; C_Marvelous_Wig

@@ -1032,19 +1032,19 @@ Body:
     AegisName: C2_MUMMY
     Name: Solid Mummy 
     Drops:
-      - Item: Elixir_Bandages
+      - Item: Elixir_Bandage
         Rate: 20 
   - Id: 2739
     AegisName: C1_MUMMY
     Name: Swift Mummy   
     Drops:
-      - Item: Elixir_Bandages
+      - Item: Elixir_Bandage
         Rate: 20
   - Id: 1041
     AegisName: MUMMY
     Name: Mummy        
     Drops:
-      - Item: Elixir_Bandages
+      - Item: Elixir_Bandage
         Rate: 20
   - Id: 1513
     AegisName: CIVIL_SERVANT
@@ -1173,37 +1173,37 @@ Body:
     Name: Diabolic    
     Drops:
       - Item: Red_Burning_Stone
-        Rate: 5    
+        Rate: 5
   - Id: 1180
     AegisName: NINE_TAIL
     Name: Nine Tail
     Drops:
-      - Item: Sap_Liquid
-        Rate: 5  
+      - Item: Sap_Jelly
+        Rate: 5
   - Id: 1622
     AegisName: TEDDY_BEAR
     Name: Teddy Bear        
     Drops:
-      - Item: Small_Needle_Kit
-        Rate: 5      
+      - Item: Little_Dall_Needle
+        Rate: 5
   - Id: 2636
     AegisName: C1_TEDDY_BEAR
     Name: Swift Teddy Bear        
     Drops:
-      - Item: Small_Needle_Kit
-        Rate: 5       .
+      - Item: Little_Dall_Needle
+        Rate: 5
   - Id: 1148
     AegisName: MEDUSA
     Name: Medusa
     Drops:
       - Item: Splendid_Mirror
-        Rate: 5       .
+        Rate: 5
   - Id: 2759
     AegisName: C1_MEDUSA
     Name: Swift Medusa   
     Drops:
       - Item: Splendid_Mirror
-        Rate: 5    
+        Rate: 5
   - Id: 1299
     AegisName: GOBLIN_LEADER
     Name: Goblin Leader     
@@ -1220,7 +1220,7 @@ Body:
     AegisName: GREMLIN
     Name: Gremlin
     Drops:
-      - Item: Unprocessed_Parts
+      - Item: Airship_Part
         Rate: 5
   - Id: 1208
     AegisName: WANDER_MAN
@@ -1228,7 +1228,7 @@ Body:
     JapaneseName: Wander Man        
     Drops:
       - Item: Skull_Of_Vagabond
-        Rate: 5    
+        Rate: 5
   - Id: 2620
     AegisName: C4_WANDER_MAN
     Name: Furious Wanderer        
@@ -1240,13 +1240,13 @@ Body:
     Name: Loli Ruri   
     Drops:
       - Item: Very_Red_Juice
-        Rate: 5      
+        Rate: 5  
   - Id: 2774
     AegisName: C1_LOLI_RURI
     Name: Swift Loli Ruri
     Drops:
       - Item: Very_Red_Juice
-        Rate: 5     
+        Rate: 5 
   - Id: 1586
     AegisName: LEAF_CAT
     Name: Leaf Cat
@@ -1264,10 +1264,10 @@ Body:
     Name: Roween  
     Drops:
       - Item: Stinky_Rotten_Meat
-        Rate: 5           
+        Rate: 5       
   - Id: 2677
     AegisName: C2_ROWEEN
     Name: Solid Roween  
     Drops:
       - Item: Stinky_Rotten_Meat
-        Rate: 5       
+        Rate: 5   
