@@ -239,19 +239,19 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 	}
 }
 prontera,124,76,3	duplicate(eto)	Eden Teleport Officer#1	729
-moc_ruins,68,164,3	duplicate(eto)	Eden Teleport Officer#2	729
+//moc_ruins,68,164,3	duplicate(eto)	Eden Teleport Officer#2	729
 geffen,132,66,3	duplicate(eto)	Eden Teleport Officer#3	729
 alberta,124,67,3	duplicate(eto)	Eden Teleport Officer#4	729
 aldebaran,133,119,5	duplicate(eto)	Eden Teleport Officer#5	729
-izlude_in,68,162,1	duplicate(eto)	Eden Teleport Officer#6	729
+//izlude_in,68,162,1	duplicate(eto)	Eden Teleport Officer#6	729
 prt_church,103,78,3	duplicate(eto)	Eden Teleport Officer#7	729
-geffen_in,160,104,5	duplicate(eto)	Eden Teleport Officer#8	729
+//geffen_in,160,104,5	duplicate(eto)	Eden Teleport Officer#8	729
 moc_prydb1,53,126,3	duplicate(eto)	Eden Teleport Officer#9	729
-alberta_in,75,39,3	duplicate(eto)	Eden Teleport Officer#10	729
-payon_in02,58,58,1	duplicate(eto)	Eden Teleport Officer#11	729
+//alberta_in,75,39,3	duplicate(eto)	Eden Teleport Officer#10	729
+//payon_in02,58,58,1	duplicate(eto)	Eden Teleport Officer#11	729
 payon,177,111,3	duplicate(eto)	Eden Teleport Officer#12	729
-que_ng,33,73,3	duplicate(eto)	Eden Teleport Officer#13	729
-que_ng,144,161,5	duplicate(eto)	Eden Teleport Officer#14	729
+//que_ng,33,73,3	duplicate(eto)	Eden Teleport Officer#13	729
+//que_ng,144,161,5	duplicate(eto)	Eden Teleport Officer#14	729
 yuno,144,189,5	duplicate(eto)	Eden Teleport Officer#15	729
 rachel,125,144,3	duplicate(eto)	Eden Teleport Officer#16	729
 comodo,202,151,4	duplicate(eto)	Eden Teleport Officer#17	729

@@ -126,10 +126,10 @@ if (Hp > 30){ goto L_res;}
 dispbottom "1";
 sleep2 1000;
 
-if ( countitem( 17523 ) > 0 ) {
-message strcharinfo(0),"One charge of Holy Egg was consumed.";
+if ( countitem( 6413 ) > 0 ) {
+message strcharinfo(0),"One charge of Heart Pact was consumed.";
 message strcharinfo(0),"You feel that you can safely warp now.";
-delitem 17523,1;
+delitem 6413,1;
 warp "prontera",150,150;
 end;
 }
@@ -165,14 +165,14 @@ if( strcharinfo(3) == "sec_pri"){
 	sleep2 1000;
 	dispbottom "Tap";
 	sleep2 1000;
-		if ( countitem( 17523 ) > 0 ) {
+		if ( countitem( 6413 ) > 0 ) {
 		message strcharinfo(0),"One charge of Holy Egg was consumed.";
 		sc_end SC_COMA;
 		sc_end SC_CRITICALWOUND;		
 		sleep2 2000;
 		message strcharinfo(0),"You'll be warped into somewhere safe.";
 		sleep2 2000;
-		delitem 17523,1;
+		delitem 6413,1;
 		savepoint "moc_para01",171,100;
 		warp "moc_para01",171,100;
 		end;
@@ -217,14 +217,14 @@ if( strcharinfo(3) == "sec_pri"){
 	sleep2 1000;
 	dispbottom "Tap";
 	sleep2 1000;
-		if ( countitem( 17523 ) > 0 ) {
+		if ( countitem( 6413 ) > 0 ) {
 		message strcharinfo(0),"One charge of Holy Egg was consumed.";
 		sc_end SC_COMA;
 		sc_end SC_CRITICALWOUND;			
 		sleep2 2000;
 		message strcharinfo(0),"You'll be warped into somewhere safe.";
 		sleep2 2000;
-		delitem 17523,1;
+		delitem 6413,1;
 		savepoint "moc_para01",171,100;
 		warp "moc_para01",171,100;
 		end;
