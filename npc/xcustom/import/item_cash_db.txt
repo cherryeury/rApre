@@ -314,6 +314,7 @@
 5,13583,1 // Convex
 5,6635,10 // Blacksmith Bless
 //5,6396,20
+5,12901,2 // Insurance Package 
 
 //// Costume
 //4,18740,150 // C_Hair_Of_The_Strong

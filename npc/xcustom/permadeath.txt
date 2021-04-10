@@ -166,7 +166,7 @@ if( strcharinfo(3) == "sec_pri"){
 	dispbottom "Tap";
 	sleep2 1000;
 		if ( countitem( 6413 ) > 0 ) {
-		message strcharinfo(0),"One charge of Holy Egg was consumed.";
+		message strcharinfo(0),"One charge of Heart Pact was consumed.";
 		sc_end SC_COMA;
 		sc_end SC_CRITICALWOUND;		
 		sleep2 2000;
@@ -218,7 +218,7 @@ if( strcharinfo(3) == "sec_pri"){
 	dispbottom "Tap";
 	sleep2 1000;
 		if ( countitem( 6413 ) > 0 ) {
-		message strcharinfo(0),"One charge of Holy Egg was consumed.";
+		message strcharinfo(0),"One charge of Heart Pact was consumed.";
 		sc_end SC_COMA;
 		sc_end SC_CRITICALWOUND;			
 		sleep2 2000;
