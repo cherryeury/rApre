@@ -5026,6 +5026,137 @@ Body:
       if (readparam(bStr)>=95) {
          bonus bBaseAtk,20;
       }      
+  - Id: 1825
+    AegisName: Horn_Of_Hilthrion
+    Name: Horn of Hillslion
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 600
+    Attack: 95
+    Range: 1
+    Slots: 3
+    Jobs:
+      Monk: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,30;
+      bonus4 bAutoSpellOnSkill,"CH_PALMSTRIKE","MO_INVESTIGATE",1,100;
+      bonus3 bAutoSpell,"MO_CALLSPIRITS",5,getrefine()*5;    
+  - Id: 13039
+    AegisName: Ivory_Knife
+    Name: Ivory Knife
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 130
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Rogue: true
+      Sage: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      bonus bAspdRate,3;
+      bonus2 bAddEff,Eff_Bleeding,300;
+      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,getrefine()*10;      
+  - Id: 1483
+    AegisName: Ivory_Lance
+    Name: Ivory Lance
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 20
+    Weight: 1000
+    Attack: 160
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      bonus bAspdRate,3;
+      bonus2 bAddEff,Eff_Bleeding,300;
+      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,getrefine()*10; 
+      skill "KN_SPEARSTAB",5;      
+  - Id: 1736
+    AegisName: Double_Bound
+    Name: Double Bound
+    Type: Weapon
+    SubType: Bow
+    Buy: 20
+    Weight: 900
+    Attack: 70
+    Range: 5
+    Slots: 3
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"AC_DOUBLE",GetSkillLv("AC_DOUBLE"),getrefine()*4;      
+  - Id: 13167
+    AegisName: Gate_KeeperDD
+    Name: Gate Keeper-DD
+    Type: Weapon
+    SubType: Shotgun
+    Buy: 72000
+    Weight: 1300
+    Attack: 200
+    Range: 9
+    Jobs:
+      Gunslinger: true
+      Rebellion: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bSplashRange,1;
+      bonus3 bAutoSpell,"GS_SPREADATTACK",6,50;
+      bonus bDef,getrefine()*10;
+      bonus bDex,1;      
   - Id: 13034
     AegisName: Twilight_Desert
     Name: Desert Twilight
@@ -5045,6 +5176,153 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true        
+  - Id: 1544
+    AegisName: Lunakaligo
+    Name: Lunakaligo
+    Type: Weapon
+    SubType: Mace
+    Buy: 20
+    Weight: 700
+    Attack: 130
+    Range: 1
+    Slots: 2
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      if (readparam(bStr)>=77) {
+         bonus bAspdRate,4;
+         bonus2 bAddEff,Eff_Stun,1500+(getrefine()*100);
+         bonus3 bAddMonsterDropItem,12065,RC_Plant,500;
+         bonus3 bAddMonsterDropItem,12043,RC_Brute,500;
+         bonus3 bAddMonsterDropItem,12069,RC_Fish,500;
+      }    
+  - Id: 13027
+    AegisName: Scalpel
+    Name: Scalpel
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 500
+    Attack: 120
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Rogue: true
+      Sage: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus2 bAddEff,Eff_Bleeding,300+getrefine();    
+  - Id: 1648
+    AegisName: Staff_Of_Bordeaux
+    Name: Staff Of Bordeaux
+    Type: Weapon
+    SubType: Staff
+    Buy: 20
+    Weight: 500
+    Attack: 30
+    MagicAttack: 170
+    Range: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bInt,2;
+      bonus bDex,1;
+      bonus bUseSPrate,-getrefine()/2;
+      if (getskilllv("SA_DRAGONOLOGY") == 5) {
+         bonus bUseSPrate,-15;
+         bonus bInt,3;
+      }      
+  - Id: 1980
+    AegisName: Whip_Of_Balance
+    Name: Whip of Balance
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 110
+    Range: 2
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Classes:
+      All_Upper: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      bonus bDex,3;
+      bonus2 bAddSkillBlow,"DC_THROWARROW",2;
+      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",3;
+      if (getrefine()>8) {
+      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",1;
+      bonus2 bAddSkillBlow,"DC_THROWARROW",1;
+      }
+  - Id: 1925
+    AegisName: Cello
+    Name: Cello
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 700
+    Attack: 130
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      All_Upper: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      bonus bDex,3;
+      bonus2 bAddSkillBlow,"BA_MUSICALSTRIKE",2;
+      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",3;      
   - Id: 1485
     AegisName: Battle_Fork
     Name: Battle Fork
@@ -5054,7 +5332,7 @@ Body:
     Weight: 700
     Attack: 92
     Range: 3
-    Slots: 4
+    Slots: 3
     Jobs:
       Crusader: true
       Knight: true
@@ -5066,6 +5344,33 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 50
     Refineable: true      
+  - Id: 1375
+    AegisName: Berdysz
+    Name: Berdysz
+    Type: Weapon
+    SubType: 2hAxe
+    Buy: 20
+    Weight: 2500
+    Attack: 200
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus2 bSubSize,Size_Medium,10+getrefine();
+      bonus2 bSubSize,Size_Large,12+getrefine();    
   - Id: 27086
     AegisName: BitterArcherSk_Card
     Name: Resentful Soldier Card

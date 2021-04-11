@@ -94,7 +94,8 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 			mes "To apply a property to a weapon, you need to have it equipped in your right hand.";
 			next;
 			mes .n$;
-			mes "Weapon Awaken will based on your choice.";
+			mes "Weapon Awaken will based on your job and your stats.";
+			mes "And two handed weapons will have more options than one handed weapons";
 			set .@part,9;
 //			for(set .@i,0; .@i<4; set .@i,.@i+1)
 //				set .@slot[.@i], getequipcardid(.@part,.@i);
@@ -470,316 +471,207 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 			case 28226:	// Avenger
 	
 // Two Handed
-	case 1149:
-	case 1157:
-	case 1158:
-	case 1160:
-	case 1162:
-	case 1163:
-	case 1172:
-	case 1252:
-	case 1253:
-	case 1254:
-	case 1255:
-	case 1256:
-	case 1257:
-	case 1258:
-	case 1259:
-	case 1260:
-	case 1262:
-	case 1264:
-	case 1275:
-	case 1276:
-	case 1277:
-	case 1278:
-	case 13107:
-	case 13163:
-	case 13164:
-	case 13165:
-	case 13167:
-	case 13168:
-	case 13169:
-	case 13170:
-	case 13300:
 	case 13301:
 	case 13302:
-	case 13303:
 	case 13304:
-	case 1357:
-	case 1358:
-	case 1360:
-	case 1361:
-	case 1375:
-	case 1384:
-	case 1410:
-	case 1457:
-	case 1458:
-	case 1460:
-	case 1461:
-	case 1463:
-	case 1464:
-	case 1472:	
-	case 1483:
-	case 1485:
-	case 1532:
-	case 1620:
-	case 1713:
-	case 1714:
-	case 1715:
-	case 1716:
-	case 1718:
+	case 13300:
+	case 13303:
+	case 13168:
+	case 13165:
+	case 13163:
+	case 1254:
+	case 1252:
 	case 1721:
-	case 1723:
+	case 1718:
+	case 1714:
+	case 1713:
+	case 1360:
+	case 1357:
+	case 1463:
+	case 1457:
+	case 1410:
+	case 1160:
+	case 1157:
+	case 1620:
+	case 1278:
+	case 1275:
+	case 1277:
+	case 1276:
+	case 1172:
+	case 1532:
+	case 1149:
 	case 1726:
-	case 1730:
+	case 1358:
+	case 1375:
+	case 1461:
+	case 1458:
+	case 1483:
+	case 1464:
+	case 1485:
+	case 1460:
+	case 13169:
+	case 13167:
+	case 13164:
+	case 13170:
+	case 13107:
+	case 1264:
+	case 1260:
+	case 1262:
+	case 1258:
+	case 1257:
+	case 1259:
+	case 1256:
+	case 1253:
+	case 1255:
+	case 1734:
+	case 1723:
+	case 1733:
+	case 1716:
 	case 1731:
 	case 1732:
-	case 1733:
-	case 1734:
 	case 1736:
+	case 1730:
+	case 1715:
+	case 1384:
+	case 1158:
+	case 1361:
+	case 1472:	
+	case 1162:
+	case 1163:
 
-// Lv 1&2 Weapon
-
-	case 1101:
-	case 1102:
-	case 1104:
-	case 1105:
-	case 1107:
-	case 1108:
-	case 1110:
-	case 1111:
-	case 1113:
-	case 1114:
-	case 1116:
-	case 1117:
-	case 1122:
-	case 1151:
-	case 1152:
-	case 1154:
-	case 1155:
-	case 1201:
-	case 1202:
-	case 1204:
-	case 1205:
-	case 1207:
-	case 1208:
+// Lv 1 Weapon
 	case 1210:
-	case 1211:
-	case 1213:
-	case 1214:
-	case 1216:
-	case 1217:
-	case 1247:
-	case 1248:
-	case 1249:
-	case 1251:
-	case 13000:
-	case 13008:
-	case 13011:
+	
+		
+// Lv 2 
+	case 13034:		
 	case 13012:
 	case 13013:
-	case 1301:
-	case 1302:
-	case 13034:		
 	case 13035:
-	case 1307:	
-	case 13101:
-	case 13102:
-	case 13103:
-	case 13104:
-	case 13150:
-	case 13151:
-	case 13152:
-	case 13153:
-	case 13154:
-	case 13155:
-	case 13156:
-	case 13157:
-	case 13160:
-	case 13161:
-	case 1351:
-	case 1352:
-	case 1354:
-	case 1355:
-	case 1401:
-	case 1402:
-	case 1404:
-	case 1405:
-	case 1407:
-	case 1408:
-	case 1451:
-	case 1452:
-	case 1454:
-	case 1455:
-	case 1501:
-	case 1502:
-	case 1504:
-	case 1505:
-	case 1507:
-	case 1508:
-	case 1510:
-	case 1511:
-	case 1519:
-	case 1520:
-	case 1550:
-	case 1601:
-	case 1602:
-	case 1604:
-	case 1605:
-	case 1607:
-	case 1608:
 	case 1618:
-	case 1701:
-	case 1702:
-	case 1704:
-	case 1705:
-	case 1707:
-	case 1708:
-	case 1710:
-	case 1711:
-	case 1801:
-	case 1802:
-	case 1803:
-	case 1804:
-	case 1805:
-	case 1806:
-	case 1901:
-	case 1902:
-	case 1903:
-	case 1904:
-	case 1905:
-	case 1906:
-	case 1950:
-	case 1951:
-	case 1952:
-	case 1953:
-	case 1954:
-	case 1955:
+	case 1307:	
 	
 	
 // Lv 3 Weapon
-	case 1120:
-	case 1124:
-	case 1127:
-	case 1128:
-	case 1142:
-	case 1143:
-	case 1144:
-	case 1145:
-	case 1147:
-	case 1219:
-	case 1220:
-	case 1226:
-	case 1238:
-	case 1239:
-	case 1246:
-	case 13004:
-	case 13006:
-	case 13014:
-	case 13015:
-	case 13038:
-	case 13039:
-	case 1304:
-	case 1306:
-	case 1309:
-	case 13158:
-	case 13159:
-	case 13414:
-	case 13437:
-	case 1417:
-	case 1513:
-	case 1514:
-	case 1517:
-	case 1518:
-	case 1529:
-	case 1531:
-	case 1544:
-	case 1548:
-	case 1551:
-	case 1552:
-	case 1553:
-	case 1554:
-	case 1555:
-	case 1556:
-	case 1560:
-	case 1564:
-	case 1568:
 	case 1569:
-	case 1570:
+	case 1568:
 	case 1571:
-	case 1572:
+	case 1570:
+	case 1309:
 	case 1573:	
 	case 1611:
-	case 1613:
-	case 1614:
-	case 1615:
-	case 1622:
-	case 1624:
-	case 1625:
-	case 1626:
-	case 1630:
-	case 1646:
-	case 1647:
+	case 1919:
+	case 1551:
+	case 1553:
+	case 1556:
+	case 1554:
+	case 1555:
+	case 1914:
+	case 13158:
+	case 13159:
+	case 1925:
+	case 1246:
 	case 1810:
-	case 1812:
-	case 1818:
-	case 1819:
-	case 1820:
-	case 1821:
 	case 1822:
-	case 1825:
+	case 13004:
+	case 1647:
+	case 13038:
+	case 1226:
+	case 1820:
+	case 1971:
+	case 13414:
+	case 1564:
+	case 1615:
+	case 1812:
+	case 1143:
+	case 1967:
+	case 1917:
+	case 1219:
+	case 1220:
+	case 1916:
 	case 1908:
+	case 1128:
+	case 13014:
+	case 13015:
 	case 1909:
 	case 1910:
-	case 1914:
+	case 1625:
+	case 1145:
+	case 1825:
+	case 1622:
+	case 1819:
+	case 1966:
+	case 1529:
+	case 13039:
+	case 1142:
+	case 13006:
+	case 1646:
+	case 1624:
 	case 1915:
-	case 1916:
-	case 1917:
-	case 1919:
-	case 1925:
+	case 1544:
+	case 1818:
+	case 1613:
+	case 1513:
+	case 1514:
+	case 1304:
+	case 1124:
+	case 13437:
+	case 1626:
+	case 1239:
+	case 1417:
+	case 1572:
 	case 1957:
 	case 1965:
-	case 1966:
-	case 1967:
+	case 1630:
+	case 1127:
+	case 1560:
+	case 1144:
+	case 1821:
 	case 1968:
-	case 1971:
+	case 1517:
+	case 1518:
+	case 1552:
+	case 1147:
+	case 1120:
+	case 1548:
+	case 1614:
+	case 1306:
 	case 1980:
+	case 1531:
+	case 1238:
 
 // Lv 4 Weapon	
+	case 16051:
+	case 28717:
+	case 13016:
+	case 13018:
+	case 13019:
+	case 13032:
+	case 13031:
+	case 13033:
+	case 13405:
+	case 13501:
+	case 13002:
+	case 1425:
+	case 13017:
+	case 13009:
+	case 1222:
+	case 1245:
+	case 13001: // Dragon Killer
+	case 13030: // Dragon Killer [1]
+	case 13003:
 	case 1119:
 	case 1123:
 	case 1126:
 	case 1129:
 	case 1146:
-	case 1222:
-	case 1245:
-	case 13001: // Dragon Killer
-	case 13002:
-	case 13003:
-	case 13009:
-	case 13016:
-	case 13017:
-	case 13018:
-	case 13019:
-	case 13028:
-	case 13030: // Dragon Killer [1]
-	case 13031:
-	case 13032:
-	case 13033:
-	case 13049:
-	case 13404:
-	case 13405:
-	case 13401:
-	case 1425:
 	case 1516:
 	case 1522:
-	case 16051:
 	case 1610:
 	case 1617:
 	case 1619:
-	case 1648:
-	case 1807:
 	case 1808:
+	case 1807:
 	case 1809:
 	case 1811:
 	case 1907:
@@ -787,10 +679,14 @@ set .@Reset,1; // 1 = Allow reset (buggy)
 	case 1912:
 	case 1956:
 	case 1958:
-	case 1959:
 	case 1960:
 	case 1961:
-	case 28717:
+	case 13404:
+	case 13027:
+	case 1648:
+	case 13028:
+	case 13049:
+	case 1959:
 
 if (.@Free == 1){	set .@Forged,1;}
 			set .@level,getequipweaponlv(.@part);
@@ -1023,18 +919,12 @@ L_Awaken:
 	set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
 
 if  ((.@Level) == 7 ){
-	if(.@ropt1) {
-		mes "This crimson item can't be enchanted or get resetted anymore.";
+	if(.@ropt2) {
+		mes "Crimson item can't be enchanted or get resetted anymore.";
 		close;
 		}
 	}	
 if  ((.@Level) < 7 ){
-	if  ((.@Level) <3 ){
-		if(.@ropt1) {
-			mes "This item can't be enchanted anymore.";
-			goto L_Reset;
-			}
-		}
 	if(.@ropt2) {
 		mes "This item can't be enchanted anymore.";
 		goto L_Reset;
@@ -1106,25 +996,9 @@ if( .@Forged == 99 ) {
 		close; 
 		}
 	}	
-	if(.@Level == 1){ set .@Price,2500; set .Stone,3;
-		mes "Hmm, a level 1 weapon..";
-		mes "You can only enchant this item once.";
-		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
-		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
-		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
-		mes "Cost : ^0000FF2500^000000 zeny.";
-		mes "And an ^FF0000Oridecon^000000."; }
-	if(.@Level == 2){ set .@Price,10000; set .Stone,3;
-		mes "Hmm, a level 2 weapon..";
-		mes "You can only enchant this item once.";
-		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
-		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
-		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
-		mes "Cost : ^0000FF400.000^000000 zeny.";
-		mes "And an ^FF0000Oridecon^000000."; }				
-	if(.@Level == 3){ set .@Price,250000; set .Stone,3;
+	if(.@Level == 3){ set .@Price,400000; set .Stone,3;
 		mes "Hmm, a level 3 weapon..";
-		mes "You can enchant this item twice.";
+		//mes "^0000FF50%^000000 chance  to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
@@ -1132,16 +1006,15 @@ if( .@Forged == 99 ) {
 		mes "And an ^FF0000Oridecon^000000."; }
 	if(.@Level == 4){ set .@Price,1000000; set .Stone,3;
 		mes "Hmm, a level 4 weapon..";
-		mes "You can enchant this item twice.";
+		//mes "^0000FF50%^000000 chance  to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
 		//mes "^0000FF0.01%^000000 chance to get 5 High Rank random option.";
-		mes "Cost : ^0000FF1.000.000^000000 zeny.";
+		mes "Cost : ^0000FF500.000^000000 zeny.";
 		mes "And an ^FF0000Oridecon^000000."; }
-	if(.@Level == 5){ set .@Price,400000; set .Stone,4;
-		mes "Armory awakening needs 400.000.";
+	if(.@Level == 5){ set .@Price,1000000; set .Stone,4;
+		mes "Armory awakening needs 500.000.";
 		mes "And an ^FF0000Elunium^000000.";
-		mes "You can enchant this item twice.";
 		//mes "^0000FF50%^000000 chance to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
@@ -1150,7 +1023,6 @@ if( .@Forged == 99 ) {
 	if(.@Level == 6){ set .@Price,400000; set .Stone,4;
 		mes "Armory awakening needs 400.000.";
 		mes "And an ^FF0000Elunium^000000.";
-		mes "You can enchant this item twice.";
 		//mes "^0000FF50%^000000 chance to get 1 High Rank random option.";
 		//mes "^0000FF20%^000000 chance to get 2 High Rank random option.";
 		//mes "^0000FF5%^000000 chance to get 3 High Rank random option.";
@@ -1158,7 +1030,7 @@ if( .@Forged == 99 ) {
 		}		
 	if(.@Level == 7){ set .@Price,0; set .Stone,3;
 		mes "Crimson weapons Awaken is free.";
-		mes "You'll get one permanent element endow option.";
+		mes "You'll get permanent element endow option.";
 		mes "And it has ^0000FF100%^000000 success rate for awakening."; 
 			}
 		if( .Stone == 1 ) {
@@ -1209,7 +1081,9 @@ switch( select( "Sure.:Cancel." ) ) {
 		mes "[^FF6600Mayomayo^000000]";
 		mes "Give me a second ..";
 		
-if( .@Level == 1 ) {
+
+
+if( .@Level < 7) {
 	if(( .@Rand1st)==1){
 			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
 			goto L_Finish;
@@ -1219,62 +1093,6 @@ if( .@Level == 1 ) {
 		goto L_Finish;	
 	}
 }
-
-if( .@Level == 2 ) {
-	if(( .@Rand1st)==1){
-			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-			goto L_Finish;
-		}
-	else {	
-		setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0); set .@success,1;
-		goto L_Finish;	
-	}
-}
-
-if( .@Level == 3) {
-	if(( .@Rand1st)==1){
-			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-			goto L_Finish;
-		}
-	else {	
-		setrandomoption(.@part,0,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-		goto L_Finish;	
-	}
-}
-
-if( .@Level == 4) {
-	if(( .@Rand1st)==1){
-			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-			goto L_Finish;
-		}
-	else {	
-		setrandomoption(.@part,0,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-		goto L_Finish;	
-	}
-}
-
-if( .@Level == 5) {
-	if(( .@Rand1st)==1){
-			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-			goto L_Finish;
-		}
-	else {	
-		setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0); set .@success,1;
-		goto L_Finish;	
-	}
-}
-
-if( .@Level == 6) {
-	if(( .@Rand1st)==1){
-			setrandomoption(.@part,1,getd(".RandOpt4_"+.@Type$+"["+.@Opt4+"]"),.@Opt4_V,0); set .@success,1;
-			goto L_Finish;
-		}
-	else {	
-		setrandomoption(.@part,0,getd(".RandOpt1_"+.@Type$+"["+.@Opt1+"]"),.@Opt1_V,0); set .@success,1;
-		goto L_Finish;	
-	}
-}
-
 
 
 else if( .@Level == 7) {
@@ -1305,14 +1123,12 @@ mes "RIP money brah.";
 delequip .@part;
 end; 
 
-
 					L_Reset:
+					if ((.@ropt1) <1) {
 					mes "[^FF6600Mayomayo^000000]";
-					mes "Equipped: "+getitemname(getequipid(.@part));
-					set .@ropt1,getequiprandomoption(.@part,0,ROA_ID);
-					set .@ropt2,getequiprandomoption(.@part,1,ROA_ID);
-					set .@ropt3,getequiprandomoption(.@part,2,ROA_ID);
-					if (.@ropt1) {			
+					mes "This item is not even enchanted yet..";
+					close;
+					}				
 					mes "Reset enchant ?";
 					mes "(Cost 1.000.000 Zeny).";				
 					next;
@@ -1338,38 +1154,7 @@ end;
 						mes "[^FF6600Mayomayo^000000]";	
 						mes "Done reset enchant.";
 						close;
-							}
 						}
-					if (.@ropt2) {			
-					mes "Reset enchant ?";
-					mes "(Cost 1.000.000 Zeny).";				
-					next;
-					switch( select( "Cancel.:Reset Enchant." ) ) {
-						case 1:
-							mes "[^FF6600Mayomayo^000000]";	
-							mes "Then, please choose a different one.";
-							close;
-					
-						case 2:				
-						if (Zeny < 1000000) {
-						mes "[^FF6600Mayomayo^000000]";
-						mes "You don't even have enough money for this.";
-						close;
-						}	
-						.@equip_id = getequipid(.@part);
-						.@refine = getequiprefinerycnt(.@part);
-						for (.@i = 0; .@i < 4; .@i++)
-							.@card[.@i] = getequipcardid(.@part, .@i);
-						delequip .@part;
-						set zeny,zeny -(1000000);
-						getitem2 .@equip_id, 1, 1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
-						mes "[^FF6600Mayomayo^000000]";	
-						mes "Done reset enchant.";
-						close;
-							}
-						}						
-						mes "This item is not even enchanted yet..";
-						close;						
 
 				
 end;
@@ -1401,29 +1186,39 @@ setarray .RandOpt1_P[0],
 					    RDMOPT_VAR_STRAMOUNT,	 					// Str
 					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
 					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
-					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT								
+						RDMOPT_DAMAGE_CRI_TARGET;					// CRIT DMG					
+					
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt1_S_MinV[0],1,1,1,1;
-setarray .RandOpt1_S_MaxV[0],3,3,3,3;
+setarray .RandOpt1_P_MinV[0],3,3,3,3,15,3,5,10,3,6;
+setarray .RandOpt1_P_MaxV[0],5,5,5,5,40,8,12,25,12,16;
 
 // ========= PHYSICAL Random Option 2=========
 // - Phsyical
 setarray .RandOpt2_P[0],
-					    RDMOPT_VAR_STRAMOUNT,	 					// Str
-					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
-					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
-					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk
+
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_DAMAGE_CRI_TARGET,					// CRIT DMG					
+						RDMOPT_VAR_CRITICALSUCCESSVALUE;			// CRIT							
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt2_P_MinV[0],3,3,3,3;
-setarray .RandOpt2_P_MaxV[0],5,5,5,5;
+setarray .RandOpt2_P_MinV[0],2,1,3,5,5,3;
+setarray .RandOpt2_P_MaxV[0],8,2,12,13,16,8;
 
 // ========= PHYSICAL Random Option 3=========
 // - Phsyical
@@ -1496,29 +1291,39 @@ setarray .RandOpt1_M[0],
 					    
 					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
 						RDMOPT_VAR_INTAMOUNT,						// Int
-					    RDMOPT_VAR_DEXAMOUNT;	 					// Dex
+					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
+						RDMOPT_VAR_ATTMPOWER,						// MATK
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_CLASS_IGNORE_MDEF_PERCENT_NORMAL,	// NORMAL
+						RDMOPT_CLASS_IGNORE_MDEF_PERCENT_BOSS,		// BOSS			
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt1_M_MinV[0],1,1,1;
-setarray .RandOpt1_M_MaxV[0],3,3,3;
+setarray .RandOpt1_M_MinV[0],3,3,3,15,3,3,3,8,8,2;
+setarray .RandOpt1_M_MaxV[0],5,5,5,40,8,8,8,15,15,5;
 
 // ========= MAGICAL Random Option 2=========
 // - Magic
 setarray .RandOpt2_M[0],			  
 
-					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
-						RDMOPT_VAR_INTAMOUNT,						// Int
-					    RDMOPT_VAR_DEXAMOUNT;	 					// Dex
+						RDMOPT_VAR_MAGICATKPERCENT,					// MATK%
+						RDMOPT_DEC_SPELL_CAST_TIME,					// VCT
+						RDMOPT_DEC_SPELL_DELAY_TIME,				// ACD
+						RDMOPT_CLASS_IGNORE_MDEF_PERCENT_NORMAL,	// NORMAL
+						RDMOPT_CLASS_IGNORE_MDEF_PERCENT_BOSS,		// BOSS			
+						RDMOPT_DEC_SP_CONSUMPTION;					// SP CONS
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt2_M_MinV[0],3,3,3;
-setarray .RandOpt2_M_MaxV[0],5,5,5;
+setarray .RandOpt2_M_MinV[0],2,2,2,5,5,1;
+setarray .RandOpt2_M_MaxV[0],8,8,8,12,12,3;
 
 // ========= MAGICAL Random Option 3=========
 // - Magic
@@ -1593,29 +1398,40 @@ setarray .RandOpt1_R[0],
 					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
 					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
 					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
-					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk				
+					    RDMOPT_VAR_LUKAMOUNT,		 				// Luk
+						RDMOPT_VAR_ATTPOWER,						// ATK
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DAMAGE_CRI_TARGET,					// CRIT DMG
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// Range					
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt1_R_MinV[0],1,1,1,1;
-setarray .RandOpt1_R_MaxV[0],3,3,3,3;
+setarray .RandOpt1_R_MinV[0],3,3,3,3,15,3,5,10,6,3,6;
+setarray .RandOpt1_R_MaxV[0],6,6,6,6,40,8,12,25,16,8,12;
 
 // ========= RANGED Random Option 2=========
 // - RANGED
 setarray .RandOpt2_R[0],
-					    RDMOPT_VAR_AGIAMOUNT,	 					// Agi
-					    RDMOPT_VAR_VITAMOUNT,		 				// Vit
-					    RDMOPT_VAR_DEXAMOUNT,	 					// Dex
-					    RDMOPT_VAR_LUKAMOUNT;		 				// Luk				
+
+						RDMOPT_VAR_ATKPERCENT,						// ATK%
+						RDMOPT_VAR_PLUSASPD,						// ASPD
+						RDMOPT_VAR_PLUSASPDPERCENT,					// ASPD%
+						RDMOPT_VAR_HITSUCCESSVALUE,					// HIT
+						RDMOPT_VAR_CRITICALSUCCESSVALUE,			// CRIT
+						RDMOPT_DAMAGE_CRI_TARGET,					// CRIT DMG
+						RDMOPT_RANGE_ATTACK_DAMAGE_TARGET;			// Range					
 					    // ToDo: // Recover 1500 of Damage lost from size penalties
 						
 
 // - Values
 // Note: When MinV and MaxV are the same, rand() will not be used!
-setarray .RandOpt2_R_MinV[0],3,3,3,3;
-setarray .RandOpt2_R_MaxV[0],5,5,5,5;
+setarray .RandOpt2_R_MinV[0],3,1,3,5,3,5,3;
+setarray .RandOpt2_R_MaxV[0],8,2,12,13,8,16,10;
 
 // ========= RANGED Random Option 3=========
 // - RANGED

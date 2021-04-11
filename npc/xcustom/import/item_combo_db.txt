@@ -27,3 +27,4 @@
 5073:5574,{ bonus bDex,2; bonus bDef,20; }
 18540:5072,{ bonus bAspd,1; bonus bAspdRate,9; bonus2 bSPLossRate,3,2000; }
 18540:5066,{ bonus bAspd,1; bonus bAspdRate,9; bonus2 bSPLossRate,3,2000; }
+13034:13035,{ bonus bHit,10+getequiprefinerycnt(EQI_HAND_R)+getequiprefinerycnt(EQI_HAND_L); }
