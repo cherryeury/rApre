@@ -177,7 +177,7 @@
 2,1414,15 // Gelerdria
 //2,1367,15 // Slaughter
 2,1169,15 // Executioner
-2,1579,30 // Book of the Dead
+//2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
 2,16051,75 // Valkyrie Hammer
 2,28717,250 // Valkyrie Knife
@@ -209,11 +209,11 @@
 //3,20800,1000
 
 // Armor
-3,15040,7 // Prison Uniform
+3,15040,2 // Prison Uniform
 //3,15072,40 // Nectar Suit
 //3,15060,30 // Azure Smock
-3,15057,25 // Apron 
-3,15058,40 // Rider Suit
+3,15057,10 // Apron 
+3,15058,15 // Rider Suit
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,100 // Rift Armor
@@ -240,14 +240,14 @@
 
 // Garment
 //3,20714,15 // Assassin Muffler
-3,2553,20 // Dragon Manteau
-3,20726,20 // Fire Dragon Manteau
-3,20728,20 // Water Dragon Manteau
-3,20729,20 // Wind Dragon Manteau
-3,20731,20 // Earth Dragon Manteau
-3,2594,20 // Wrapping cloth
-3,2597,20 // Bloody Muffler
-3,20730,25 // Loyalist Hood
+3,2553,10 // Dragon Manteau
+3,20726,10 // Fire Dragon Manteau
+3,20728,10 // Water Dragon Manteau
+3,20729,10 // Wind Dragon Manteau
+3,20731,10 // Earth Dragon Manteau
+3,2594,10 // Wrapping cloth
+3,2597,10 // Bloody Muffler
+3,20730,15 // Loyalist Hood
 //3,20778,300 // Crimson Stole
 3,20783,500 // Hero Manteau
 //3,20860,500
@@ -265,8 +265,8 @@
 //3,20940,2000 // Violet Halo
 
 //Shoes
-3,2466,15 // Training Shoes
-3,2481,15 // Rune Boots
+3,2466,10 // Training Shoes
+3,2481,10 // Rune Boots
 //3,22064,50 // Thorn Boots
 //3,22075,150 // Rift Shoes
 //3,22132,1250 // Lightning God
@@ -276,22 +276,22 @@
 // Acc
 //4,2745,10 // Pinguicula Corsage
 //4,2751,20 // Academy Badge
-4,2855,30 // Whikebain tail
-4,2948,35 // Devil Wing
+4,2855,20 // Whikebain tail
+4,2948,25 // Devil Wing
 //4,2888,65 // School Bag
 //4,2998,60 // Shining Ttapezohedron
-4,2936,60 // Ring of Recovery
+4,2936,40 // Ring of Recovery
 //4,28314,10 // Hand of Glory
 //4,2749,20 // Linen Glove
-4,2935,85 // Sprint Glove
-4,2913,85 // Thief Handcuffs
+4,2935,55 // Sprint Glove
+4,2913,55 // Thief Handcuffs
 //4,2994,35 // Water Crystal Stone
-4,2959,100 // Fidelity Necklace
+4,2959,50 // Fidelity Necklace
 //4,28342,125 // Critical Anklet
-4,2799,250 // Ring of Protection
-4,2983,450 // Brooch of greed
+//4,2799,150 // Ring of Protection
+4,2983,300 // Brooch of greed
 //4,2984,450 // Glove of Saehrimnir
-4,2881,550 // Orlean's
+4,2881,400 // Orlean's
 //4,2980,500 // Evil thread
 //4,28520,750 // Egir's Ring
 //4,28501,1000 // Kirin's Horn
