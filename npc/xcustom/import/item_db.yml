@@ -5344,7 +5344,9 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"SA_SEISMICWEAPON",5,getrefine()*5;      
+      bonus bAtkEle,Ele_Earth;
+      bonus2 bAddEle,Ele_Wind,getrefine();
+      bonus2 bMagicAddEle,Ele_Wind,getrefine();      
   - Id: 1570
     AegisName: Book_Of_Blazing_Sun_
     Name: Book of Blazing Sun
@@ -6246,7 +6248,9 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"SA_FLAMELAUNCHER",5,getrefine()*5; 
+      bonus bAtkEle,Ele_Fire;
+      bonus2 bAddEle,Ele_Earth,getrefine(); 
+      bonus2 bMagicAddEle,Ele_Earth,getrefine(); 
   - Id: 1260
     AegisName: Ghoul_Leg
     Name: Sharpened Legbone of Ghoul
@@ -6779,7 +6783,9 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"SA_LIGHTNINGLOADER",5,getrefine()*5;     
+      bonus bAtkEle,Ele_Wind;
+      bonus2 bAddEle,Ele_Water,getrefine();
+      bonus2 bMagicAddEle,Ele_Water,getrefine();  
   - Id: 1819
     AegisName: Icicle_Fist
     Name: Icicle Fist
@@ -6799,7 +6805,30 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"SA_FROSTWEAPON",5,getrefine()*5;      
+      bonus bAtkEle,Ele_Water;
+      bonus2 bAddEle,Ele_Fire,getrefine();
+      bonus2 bMagicAddEle,Ele_Fire,getrefine();
+  - Id: 1966
+    AegisName: Whip_Of_Ice_Piece
+    Name: Icicle Whip
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 110
+    Range: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus2 bAddEle,Ele_Fire,getrefine();
+      bonus2 bMagicAddEle,Ele_Fire,getrefine();    
   - Id: 1529
     AegisName: Iron_Driver
     Name: Iron Driver
