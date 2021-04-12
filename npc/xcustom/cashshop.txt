@@ -20,9 +20,9 @@ case 1:
 			mes "Farewell.";
 			close;
 		}
-		else if ((.@input < 0) || (.@input > 500)) {
+		else if ((.@input < 0) || (.@input > 1000)) {
 			mes "[^FF6600Money Changer^000000]";
-			mes "You can trade 500, er less.";
+			mes "You can trade 1000, er less.";
 			next;
 		}
 		else {
@@ -36,7 +36,7 @@ case 1:
 	}
 
 	set #CASHPOINTS, #CASHPOINTS + .@input; // Zeny coin
-	set Zeny, Zeny - 1000000*.@input; // Zeny bag
+	set Zeny, Zeny - 100000*.@input; // Zeny bag
 	mes "[^FF6600Money Changer^000000]";
 	mes "Thank you ! Your cash point has been added.";
 	close;			
