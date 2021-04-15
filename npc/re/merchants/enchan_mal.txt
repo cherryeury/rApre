@@ -75,14 +75,14 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 	switch(.@equip_type) {	//  Check weapon type first to speed up the checks.
 	case 1:	// Daggers
 		switch(@mal_equip_id) {
-			case 1224: callsub L_Socket,1,2; case 1225: callsub L_Socket,1,2;	// Sword_Breaker // Mail_Breaker
+			case 1224: callsub L_Socket,1,2; case 13031: callsub L_Socket,1,2;     // Sword_Breaker
+			case 1225: callsub L_Socket,1,2; case 13032: callsub L_Socket,1,2; 	 // Mail_Breaker
 			case 13002: callsub L_Socket,1,2; case 13019: callsub L_Socket,1,2; // Ginnungagap 
 			case 1227: callsub L_Socket,1,2; case 1229: callsub L_Socket,1,2;  // Weeder_Knife // Mama's_Knife
 			case 13001: callsub L_Socket,1,2; case 13030: callsub L_Socket,1,2; // Dragon_Killer
-			case 1232: callsub L_Socket,1,2; case 13033: callsub L_Socket,1,2; 	// Assasin_Dagger
-			case 1233: callsub L_Socket,1,2;	// Exercise
-			case 1235: callsub L_Socket,1,2;	// Azoth
-			case 1236: callsub L_Socket,1,2; case 13018: callsub L_Socket,1,2;	// Sucsamad
+			case 1232: callsub L_Socket,1,2;  case 13033: callsub L_Socket,1,2; 	// Assasin_Dagger
+			case 1233: callsub L_Socket,1,2; case 1235: callsub L_Socket,1,2;	// Exercise
+			case 1236: callsub L_Socket,1,2;  case 13018: callsub L_Socket,1,2;	// Sucsamad
 			case 1237: callsub L_Socket,1,2;	// Grimtooth_
 			case 1240: callsub L_Socket,1,2;	// Princess_Knife
 			case 1241: callsub L_Socket,1,2;	// Cursed_Dagger
@@ -94,7 +94,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1223: callsub L_Socket,2,2;	// Forturn_Sword
 			case 1228: callsub L_Socket,2,2;	// Combat_Knife
 			case 1234: callsub L_Socket,2,2;	// Moonlight_Sword
-			case 1230: callsub L_Socket,4,2;	// House_Auger
+			case 1230: callsub L_Socket,4,2; case 13017: callsub L_Socket,4,2;	// House_Auger
 			case 1231: callsub L_Socket,4,2;	// Bazerald
 			case 13062: callsub L_Socket,4,2;	// Ancient_Dagger
 		}

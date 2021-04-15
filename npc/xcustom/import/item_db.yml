@@ -4419,622 +4419,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getgroupitem(IG_Costamax2); 
-  - Id: 1713
-    AegisName: Arbalest
-    Name: Arbalest
-    Type: Weapon
-    SubType: Bow
-    Buy: 48000
-    Weight: 1000
-    Attack: 90
-    Range: 5
-    Slots: 1
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-      Thief: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 33
-    Refineable: true
-    Script: |
-      bonus bDex,1+getrefine()/2;    
-  - Id: 1715
-    AegisName: Arbalest_
-    Name: Arbalest
-    Type: Weapon
-    SubType: Bow
-    Buy: 48000
-    Weight: 1000
-    Attack: 90
-    Range: 5
-    Slots: 2
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-      Thief: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 33
-    Refineable: true
-    Script: |
-      bonus bDex,1+getrefine()/2;      
-  - Id: 1610
-    AegisName: Arc_Wand
-    Name: Arc Wand
-    Type: Weapon
-    SubType: Staff
-    Buy: 45000
-    Weight: 400
-    Attack: 60
-    MagicAttack: 95
-    Range: 1
-    Slots: 1
-    Jobs:
-      Acolyte: true
-      Mage: true
-      Monk: true
-      Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 24
-    Refineable: true
-    Script: |
-      bonus bInt,2+getrefine()/2;
-  - Id: 1553
-    AegisName: Book_Of_Billows
-    Name: Book of Billows
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();
-  - Id: 1915
-    AegisName: Guitar_Of_Blue_Solo
-    Name: Loner's Guitar
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Jobs:
-      BardDancer: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();
-  - Id: 13164
-    AegisName: Long_Barrel_
-    Name: Long Barrel
-    Type: Weapon
-    SubType: Rifle
-    Buy: 40000
-    Weight: 1000
-    Attack: 150
-    Range: 9
-    Slots: 1
-    Jobs:
-      Gunslinger: true
-      Rebellion: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bHit,10;
-      bonus bCritical,20;
-      bonus bAspdRate,-3;
-      bonus3 bAutoSpell,"GS_TRACKING",5,getrefine()*10;      
-  - Id: 1723
-    AegisName: Luna_Bow
-    Name: Luna Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 2000
-    Attack: 100
-    Range: 5
-    Slots: 2
-    Jobs:
-      Hunter: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      .@r = getrefine();
-      bonus bDef,2+3*(.@r>5)+5*(.@r>8);
-      bonus bDef,.@r*5;
-  - Id: 1256
-    AegisName: Katar_Of_Cold_Icicle
-    Name: Katar of Frozen Icicle
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,500;   
-      bonus2 bAddEle,Ele_Fire,getrefine();
-  - Id: 1275
-    AegisName: Katar_Of_Cold_Icicle_
-    Name: Katar of Frozen Icicle
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Slots: 3
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,500;      
-      bonus2 bAddEle,Ele_Fire,getrefine();
-  - Id: 1568
-    AegisName: Book_Of_Billows_
-    Name: Book of Billows
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Slots: 3
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;  
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();
-  - Id: 13000
-    AegisName: Jujube_Dagger
-    Name: Jujube Dagger
-    Type: Weapon
-    SubType: Dagger
-    Buy: 10000
-    Weight: 600
-    Attack: 39
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;      
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();      
-  - Id: 1556
-    AegisName: Book_Of_Gust_Of_Wind
-    Name: Book of Gust of Wind
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();
-  - Id: 1259
-    AegisName: Katar_Of_Piercing_Wind
-    Name: Katar of Piercing Wind
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Sleep,500;       
-      bonus2 bAddEle,Ele_Water,getrefine();
-  - Id: 1278
-    AegisName: Katar_Of_Piercing_Wind_
-    Name: Katar of Piercing Wind
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Slots: 3
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Sleep,500;       
-      bonus2 bAddEle,Ele_Water,getrefine();
-  - Id: 1733
-    AegisName: Gust_Bow
-    Name: Gust Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1400
-    Attack: 95
-    Range: 5
-    Slots: 1
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true      
-    Script: |
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();  
-  - Id: 13014
-    AegisName: Hakujin
-    Name: Hakujin
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 800
-    Attack: 120
-    Range: 1
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 42
-    Refineable: true
-    Script: |
-      bonus bInt,2;
-      bonus3 bAutoSpell,"AL_HEAL",1,getrefine()*6;    
-  - Id: 13015
-    AegisName: Hakujin_
-    Name: Hakujin
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 800
-    Attack: 120
-    Range: 1
-    Slots: 1
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 42
-    Refineable: true
-    Script: |
-      bonus bInt,2;
-      bonus3 bAutoSpell,"AL_HEAL",1,getrefine()*6;      
-  - Id: 1571
-    AegisName: Book_Of_Gust_Of_Wind_
-    Name: Book of Gust of Wind
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Slots: 3
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();
-  - Id: 1554
-    AegisName: Book_Of_Mother_Earth
-    Name: Book of Mother Earth
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();
-  - Id: 1916
-    AegisName: Guitar_Of_Vast_Land
-    Name: Green Acre Guitar
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Jobs:
-      BardDancer: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;      
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();      
-  - Id: 1569
-    AegisName: Book_Of_Mother_Earth_
-    Name: Book of Mother Earth
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Slots: 3
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;  
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();
-  - Id: 1551
-    AegisName: Bible
-    Name: Bible
-    Type: Weapon
-    SubType: Book
-    Buy: 60000
-    Weight: 1000
-    Attack: 115
-    Range: 1
-    Slots: 2
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bInt,2;      
-  - Id: 1611
-    AegisName: Arc_Wand_
-    Name: Arc Wand
-    Type: Weapon
-    SubType: Staff
-    Buy: 45000
-    Weight: 400
-    Attack: 60
-    MagicAttack: 95
-    Range: 1
-    Slots: 2
-    Jobs:
-      Acolyte: true
-      Mage: true
-      Monk: true
-      Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 24
-    Refineable: true
-    Script: |
-      bonus bInt,2+getrefine()/2;      
-  - Id: 1573
-    AegisName: Ancient_Magic
-    Name: Ancient Magic
-    Type: Weapon
-    SubType: Book
-    Buy: 20
-    Weight: 700
-    Attack: 30
-    MagicAttack: 140
-    Range: 1
-    Slots: 2
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bMdef,8;
-      bonus bMaxSPrate,10+getrefine()/2;
-      bonus bInt,4;      
-  - Id: 13156
-    AegisName: Gate_Keeper
-    Name: Gate Keeper
-    Type: Weapon
-    SubType: Shotgun
-    Buy: 56000
-    Weight: 1000
-    Attack: 210
-    Range: 9
-    Jobs:
-      Gunslinger: true
-      Rebellion: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bSplashRange,1;
-      bonus3 bAutoSpell,"GS_SPREADATTACK",6,getrefine()*20;      
-  - Id: 13404
-    AegisName: Platinum_Shotel
-    Name: Platinum Shotel
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 20
-    Weight: 1500
-    Attack: 130
-    Range: 1
-    Slots: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bCritical,50+getrefine();      
-  - Id: 2416
-    AegisName: Novice_Shoes
-    Name: Novice Shoes
-    Type: Armor
-    Buy: 35000
-    Weight: 500
-    Defense: 8
-    Slots: 1
-    Jobs:
-      Novice: true
-      SuperNovice: true
-    Locations:
-      Shoes: true
-    EquipLevelMin: 40
-    Refineable: true
-    Script: |
-      bonus bMaxHPrate,6;      
+      getgroupitem(IG_Costamax2);      
   - Id: 12416
     AegisName: Lucky_Egg_C3
     Name: Lucky Egg C3
@@ -5118,7 +4503,7 @@ Body:
     EquipLevelMin: 33
     Refineable: true
     Script: |
-      bonus bDef,50+getrefine()*5;
+      bonus bDef,50;
       bonus bUnbreakableWeapon;
   - Id: 1160
     AegisName: Broad_Sword
@@ -5140,374 +4525,8 @@ Body:
     EquipLevelMin: 33
     Refineable: true
     Script: |
-      bonus bDef,50+getrefine()*5;
+      bonus bDef,50;
       bonus bUnbreakableWeapon;
-  - Id: 1730
-    AegisName: Burning_Bow
-    Name: Burning Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1400
-    Attack: 95
-    Range: 5
-    Slots: 1
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus2 bSubEle,Ele_Fire,10;
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-  - Id: 1258
-    AegisName: Katar_Of_Raging_Blaze
-    Name: Katar of Raging Blaze
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEff,Eff_Silence,500;    
-      bonus2 bAddEle,Ele_Earth,getrefine();  
-  - Id: 1277
-    AegisName: Katar_Of_Raging_Blaze_
-    Name: Katar of Raging Blaze
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Slots: 3
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEff,Eff_Silence,500;    
-      bonus2 bAddEle,Ele_Earth,getrefine();     
-  - Id: 1555
-    AegisName: Book_Of_Blazing_Sun
-    Name: Book of the Blazing Sun
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine(); 
-  - Id: 1965
-    AegisName: Whip_Of_Red_Flame
-    Name: Red Flame Whip
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 700
-    Attack: 110
-    Range: 2
-    Jobs:
-      BardDancer: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine(); 
-  - Id: 1630
-    AegisName: Release_Of_Wish
-    Name: Release of Wish
-    Type: Weapon
-    SubType: Staff
-    Buy: 20
-    Weight: 500
-    Attack: 30
-    MagicAttack: 125
-    Range: 1
-    Jobs:
-      Mage: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 50
-    Refineable: true
-    Script: |
-      bonus bInt,3;
-      bonus bHealPower,5;
-      autobonus "{ bonus2 bSPRegenRate,100,2000; bonus2 bHPRegenRate,50,2000; }",getrefine()*5,10000,BF_MAGIC,"{ specialeffect2 EF_HEAL; }";      
-  - Id: 1560
-    AegisName: Diary_Of_Great_Sage
-    Name: Sage's Diary
-    Type: Weapon
-    SubType: Book
-    Buy: 20
-    Weight: 1100
-    Attack: 100
-    MagicAttack: 120
-    Range: 1
-    Slots: 2
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 60
-    Refineable: true
-    Script: |
-      if (readparam(bStr)>=50)
-         bonus bAspdRate,2+getrefine();
-      if (readparam(bInt)>=70)
-         bonus bMatkRate,2+getrefine();      
-  - Id: 1144
-    AegisName: Sasimi
-    Name: Sashimi
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 20
-    Weight: 1400
-    Attack: 75
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 48
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus3 bAddMonsterDropItem,544,RC_Fish,4000+getrefine()*200;         
-  - Id: 1821
-    AegisName: Seismic_Fist
-    Name: Seismic Fist
-    Type: Weapon
-    SubType: Knuckle
-    Buy: 20
-    Weight: 650
-    Attack: 80
-    Range: 1
-    Slots: 3
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 75
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();      
-  - Id: 1570
-    AegisName: Book_Of_Blazing_Sun_
-    Name: Book of Blazing Sun
-    Type: Weapon
-    SubType: Book
-    Buy: 35000
-    Weight: 750
-    Attack: 90
-    Range: 1
-    Slots: 3
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine();  
-  - Id: 1914
-    AegisName: Guitar_Of_Passion
-    Name: Burning Passion Guitar
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Jobs:
-      BardDancer: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;   
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine();    
-  - Id: 1247
-    AegisName: Kindling_Dagger
-    Name: Kindle Dagger
-    Type: Weapon
-    SubType: Dagger
-    Buy: 10000
-    Weight: 600
-    Attack: 39
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;     
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine();   
-  - Id: 1248
-    AegisName: Obsidian_Dagger
-    Name: Obsidian Dagger
-    Type: Weapon
-    SubType: Dagger
-    Buy: 10000
-    Weight: 600
-    Attack: 39
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();
-  - Id: 1249
-    AegisName: Fisherman's_Dagger
-    Name: Fisherman's Dagger
-    Type: Weapon
-    SubType: Dagger
-    Buy: 10000
-    Weight: 600
-    Attack: 39
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;     
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();      
   - Id: 1135
     AegisName: Cutlas
     Name: Cutlus
@@ -5674,7 +4693,7 @@ Body:
     EquipLevelMin: 55
     Refineable: true
     Script: |
-      bonus bDef,50+getrefine()*5;   
+      bonus bDef,50;
   - Id: 13004
     AegisName: Coward_
     Name: Cowardice Blade
@@ -5697,31 +4716,7 @@ Body:
     EquipLevelMin: 55
     Refineable: true
     Script: |
-      bonus bDef,50+getrefine()*5;   
-  - Id: 1919
-    AegisName: Base_Guitar
-    Name: Bass Guitar
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 1500
-    Attack: 130
-    Range: 1
-    Slots: 1
-    Jobs:
-      BardDancer: true
-    Classes:
-      All_Upper: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bSPGainValue,3;
-      bonus4 bAutoSpellWhenHit,"WZ_HEAVENDRIVE",3,getrefine()*6,1;
-      bonus3 bAutoSpell,"NPC_WIDECONFUSE",2,100;      
+      bonus bDef,50;    
   - Id: 1484
     AegisName: Cardo
     Name: Cardo
@@ -5960,31 +4955,10 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus bAspdRate,2+getrefine();
+      bonus bAspdRate,5;
       bonus bUnbreakableWeapon;      
   - Id: 13013
     AegisName: Murasame_
-    Name: Murasame
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 700
-    Attack: 95
-    Range: 1
-    Slots: 2
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 24
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus bCritical,getrefine();
-  - Id: 13012
-    AegisName: Murasame
     Name: Murasame
     Type: Weapon
     SubType: Dagger
@@ -5998,12 +4972,35 @@ Body:
       Ninja: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 2
+    WeaponLevel: 3
     EquipLevelMin: 24
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus bCritical,getrefine();    
+      bonus2 bCriticalAddRace,RC_DemiHuman,10;
+      bonus2 bCriticalAddRace,RC_Player_Human,10;      
+  - Id: 13012
+    AegisName: Murasame
+    Name: Murasame
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 95
+    Range: 1
+    Slots: 0
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 24
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus2 bCriticalAddRace,RC_DemiHuman,10;
+      bonus2 bCriticalAddRace,RC_Player_Human,10;      
   - Id: 1189
     AegisName: Krasnaya
     Name: Krasnaya
@@ -6022,83 +5019,80 @@ Body:
       All_Upper: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 2
+    WeaponLevel: 3
     EquipLevelMin: 50
     Refineable: true
     Script: |
       if (readparam(bStr)>=95) {
          bonus bBaseAtk,20;
       }      
-  - Id: 1825
-    AegisName: Horn_Of_Hilthrion
-    Name: Horn of Hillslion
+  - Id: 5583
+    AegisName: Para_Team_Hat
+    Name: Eden Team Hat I
+    Type: Armor
+    Defense: 5
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 7
+    Refineable: true
+    View: 465
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true      
+    Script: |
+      bonus bMaxHP,50;
+      bonus bMaxSP,10;
+  - Id: 1131
+    AegisName: Ice_Falchon
+    Name: Ice Falchion
     Type: Weapon
-    SubType: Knuckle
+    SubType: 1hSword
     Buy: 20
     Weight: 600
-    Attack: 95
+    Attack: 100
     Range: 1
-    Slots: 3
     Jobs:
-      Monk: true
-    Classes:
-      All_Upper: true
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 60
+    WeaponLevel: 4
+    EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,30;
-      bonus4 bAutoSpellOnSkill,"CH_PALMSTRIKE","MO_INVESTIGATE",1,100;
-      bonus3 bAutoSpell,"MO_CALLSPIRITS",5,getrefine()*5;    
-  - Id: 13304
-    AegisName: Huuma_Calm_Mind
-    Name: Huuma Calm Mind
-    Type: Weapon
-    SubType: Huuma
-    Buy: 20
-    Weight: 1550
-    Attack: 112
-    Range: 1
-    Slots: 2
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus2 bSkillAtk,"NJ_HUUMA",30+getrefine();
-      bonus bNoCastCancel;      
-  - Id: 13039
-    AegisName: Ivory_Knife
-    Name: Ivory Knife
+      bonus bAtkEle,Ele_Water;
+      bonus bMatk,50;
+      bonus2 bAddEff,Eff_Freeze,500;
+      bonus2 bAddEff2,Eff_Freeze,10;
+      skill "MG_COLDBOLT",3;
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,100;   
+  - Id: 13046
+    AegisName: Krieg
+    Name: Krierg
     Type: Weapon
     SubType: Dagger
     Buy: 20
-    Weight: 700
-    Attack: 130
+    Weight: 500
+    Attack: 110
     Range: 1
     Slots: 2
     Jobs:
-      Alchemist: true
-      Archer: true
       Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      Knight: true
-      Mage: true
-      Merchant: true
       Rogue: true
-      Sage: true
-      Swordman: true
       Thief: true
-      Wizard: true
     Classes:
       All_Upper: true
     Locations:
@@ -6107,80 +5101,37 @@ Body:
     EquipLevelMin: 50
     Refineable: true
     Script: |
-      bonus bAgi,2;
-      bonus bAspdRate,3;
-      bonus2 bAddEff,Eff_Bleeding,300;
-      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,getrefine()*10;      
-  - Id: 1483
-    AegisName: Ivory_Lance
-    Name: Ivory Lance
+      bonus3 bAddEffOnSkill,"RG_BACKSTAP",Eff_Bleeding,1000;
+      bonus2 bSkillAtk,"RG_BACKSTAP",15;      
+  - Id: 1133
+    AegisName: Fire_Brand
+    Name: Fireblend
     Type: Weapon
-    SubType: 2hSpear
+    SubType: 1hSword
     Buy: 20
-    Weight: 1000
-    Attack: 160
-    Range: 3
-    Slots: 1
+    Weight: 500
+    Attack: 100
+    Range: 1
     Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
       Crusader: true
       Knight: true
+      Merchant: true
+      Rogue: true
       Swordman: true
-    Classes:
-      All_Upper: true
+      Thief: true
     Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 50
-    Refineable: true
-    Script: |
-      bonus bAgi,2;
-      bonus bAspdRate,3;
-      bonus2 bAddEff,Eff_Bleeding,300;
-      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,getrefine()*10; 
-      skill "KN_SPEARSTAB",5;      
-  - Id: 1736
-    AegisName: Double_Bound
-    Name: Double Bound
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 900
-    Attack: 70
-    Range: 5
-    Slots: 3
-    Jobs:
-      Hunter: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus3 bAutoSpell,"AC_DOUBLE",GetSkillLv("AC_DOUBLE"),getrefine()*4;      
-  - Id: 13167
-    AegisName: Gate_KeeperDD
-    Name: Gate Keeper-DD
-    Type: Weapon
-    SubType: Shotgun
-    Buy: 72000
-    Weight: 1300
-    Attack: 200
-    Range: 9
-    Jobs:
-      Gunslinger: true
-      Rebellion: true
-    Locations:
-      Both_Hand: true
+      Right_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 70
+    EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus bSplashRange,1;
-      bonus3 bAutoSpell,"GS_SPREADATTACK",6,50;
-      bonus bDef,getrefine()*10;
-      bonus bDex,1;      
+      bonus bAtkEle,Ele_Fire;
+      bonus bMatk,50;
+      skill "MG_FIREBOLT",3;
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;      
   - Id: 13034
     AegisName: Twilight_Desert
     Name: Desert Twilight
@@ -6200,813 +5151,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 70
     Refineable: true        
-  - Id: 1544
-    AegisName: Lunakaligo
-    Name: Lunakaligo
-    Type: Weapon
-    SubType: Mace
-    Buy: 20
-    Weight: 700
-    Attack: 130
-    Range: 1
-    Slots: 2
-    Jobs:
-      Acolyte: true
-      Monk: true
-      Priest: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 50
-    Refineable: true
-    Script: |
-      if (readparam(bStr)>=77) {
-         bonus bAspdRate,4;
-         bonus2 bAddEff,Eff_Stun,1500;
-         bonus3 bAddMonsterDropItem,12065,RC_Plant,500+getrefine()*100;
-         bonus3 bAddMonsterDropItem,12043,RC_Brute,500+getrefine()*100;
-         bonus3 bAddMonsterDropItem,12069,RC_Fish,500+getrefine()*100;
-      }    
-  - Id: 1818
-    AegisName: Magma_Fist
-    Name: Magma Fist
-    Type: Weapon
-    SubType: Knuckle
-    Buy: 20
-    Weight: 650
-    Attack: 80
-    Range: 1
-    Slots: 3
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 75
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEle,Ele_Earth,getrefine(); 
-      bonus2 bMagicAddEle,Ele_Earth,getrefine(); 
-  - Id: 1260
-    AegisName: Ghoul_Leg
-    Name: Sharpened Legbone of Ghoul
-    Type: Weapon
-    SubType: Katar
-    Buy: 52500
-    Weight: 1700
-    Attack: 150
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Undead;
-      bonus2 bSubEle,Ele_Undead,getrefine();
-  - Id: 1552
-    AegisName: Tablet
-    Name: Tablet
-    Type: Weapon
-    SubType: Book
-    Buy: 51000
-    Weight: 800
-    Attack: 125
-    Range: 1
-    Slots: 1
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus2 bAddEle,Ele_Undead,getrefine();
-  - Id: 1531
-    AegisName: Spanner
-    Name: Wrench
-    Type: Weapon
-    SubType: Mace
-    Buy: 20
-    Weight: 2500
-    Attack: 115
-    Range: 1
-    Jobs:
-      Acolyte: true
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus2 bAddEff,Eff_Freeze,getrefine()*50; 
-      bonus2 bAddEff,Eff_Freeze,getrefine()*50; 
-      bonus2 bAddEff,Eff_Freeze,getrefine()*50; 
-      bonus2 bAddEff,Eff_Freeze,getrefine()*50;     
-  - Id: 1238
-    AegisName: Zeny_Knife
-    Name: Zeny Knife
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 1200
-    Attack: 64
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus2 bGetZenyNum,100+getrefine()*10,40;      
-  - Id: 1968
-    AegisName: Jump_Rope
-    Name: Skipping Rope
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 400
-    Attack: 120
-    Range: 2
-    Jobs:
-      BardDancer: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      bonus bCritical,20+getrefine();      
-  - Id: 1734
-    AegisName: Orc_Archer_Bow
-    Name: Orc Archer Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1600
-    Attack: 120
-    Range: 5
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus bLongAtkRate,getrefine();
-  - Id: 1239
-    AegisName: Poison_Knife
-    Name: Poison Knife
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 800
-    Attack: 64
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,3000;
-      if (getrefine()>6){
-      bonus2 bAddEff,Eff_Poison,7000;
-      }
-  - Id: 13016
-    AegisName: Poison_Knife_
-    Name: Poison Knife
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 800
-    Attack: 64
-    Range: 1
-    Slots: 2
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,3000;
-      if (getrefine()>6){
-      bonus2 bAddEff,Eff_Poison,7000;
-      }
-  - Id: 1572
-    AegisName: Principles_Of_Magic
-    Name: Principles of Magic
-    Type: Weapon
-    SubType: Book
-    Buy: 20
-    Weight: 300
-    Attack: 60
-    MagicAttack: 160
-    Range: 1
-    Slots: 2
-    Jobs:
-      Priest: true
-      Sage: true
-      StarGladiator: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 60
-    Refineable: true
-    Script: |
-      bonus bInt,3;
-      bonus bSPrecovRate,5+getrefine();      
-  - Id: 1613
-    AegisName: Mighty_Staff
-    Name: Mighty Staff
-    Type: Weapon
-    SubType: Staff
-    Buy: 20
-    Weight: 700
-    Attack: 130
-    MagicAttack: 100
-    Range: 1
-    Jobs:
-      Acolyte: true
-      Mage: true
-      Monk: true
-      Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 24
-    Refineable: true
-    Script: |
-      bonus bStr,6+getrefine();
-      bonus bSPDrainValue,-2;      
-  - Id: 13027
-    AegisName: Scalpel
-    Name: Scalpel
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 500
-    Attack: 120
-    Range: 1
-    Slots: 3
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Rogue: true
-      Sage: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus2 bAddEff,Eff_Bleeding,500+getrefine()*100; 
-  - Id: 13006
-    AegisName: Khukri
-    Name: Khukri
-    Type: Weapon
-    SubType: Dagger
-    Buy: 240000
-    Weight: 600
-    Attack: 150
-    Range: 1
-    Jobs:
-      KagerouOboro: true
-      Ninja: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Dark;
-      bonus2 bAddEff,Eff_Curse,1000;
-      bonus2 bAddEle,Ele_Holy,getrefine();  
-  - Id: 1262
-    AegisName: Nail_Of_Loki
-    Name: Loki's Nail
-    Type: Weapon
-    SubType: Katar
-    Buy: 20
-    Weight: 1200
-    Attack: 115
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus2 bAddEff,Eff_Bleeding,getrefine()*300;    
-      bonus2 bAddEff,Eff_Poison,getrefine()*300;       
-  - Id: 1648
-    AegisName: Staff_Of_Bordeaux
-    Name: Staff Of Bordeaux
-    Type: Weapon
-    SubType: Staff
-    Buy: 20
-    Weight: 500
-    Attack: 30
-    MagicAttack: 170
-    Range: 1
-    Jobs:
-      Mage: true
-      Sage: true
-      Wizard: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 50
-    Refineable: true
-    Script: |
-      bonus bInt,2;
-      bonus bDex,1;
-      bonus bUseSPrate,-getrefine()/2;
-      if (getskilllv("SA_DRAGONOLOGY") == 5) {
-         bonus bUseSPrate,-15;
-         bonus bInt,3;
-      }      
-  - Id: 1980
-    AegisName: Whip_Of_Balance
-    Name: Whip of Balance
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 700
-    Attack: 110
-    Range: 2
-    Slots: 3
-    Jobs:
-      BardDancer: true
-    Classes:
-      All_Upper: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bAgi,2;
-      bonus bDex,3;
-      bonus2 bAddSkillBlow,"DC_THROWARROW",2;
-      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",3;
-      if (getrefine()>8) {
-      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",1;
-      bonus2 bAddSkillBlow,"DC_THROWARROW",1;
-      }
-  - Id: 1925
-    AegisName: Cello
-    Name: Cello
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 700
-    Attack: 130
-    Range: 1
-    Slots: 2
-    Jobs:
-      BardDancer: true
-    Classes:
-      All_Upper: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bAgi,2;
-      bonus bDex,3;
-      bonus2 bAddSkillBlow,"BA_MUSICALSTRIKE",2;
-      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",3;      
-      if (getrefine()>6) {
-      bonus2 bAddSkillBlow,"BA_MUSICALSTRIKE",1;
-      bonus2 bAddSkillBlow,"CG_ARROWVULCAN",1;      
-      }
-  - Id: 1822
-    AegisName: Combo_Battle_Glove
-    Name: Combo Battle Glove
-    Type: Weapon
-    SubType: Knuckle
-    Buy: 20
-    Weight: 500
-    Attack: 30
-    Range: 1
-    Slots: 4
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 60
-    Refineable: true
-    Script: |
-      bonus2 bSkillAtk,"MO_TRIPLEATTACK",13+getrefine(); 
-      bonus2 bSkillAtk,"MO_CHAINCOMBO",13+getrefine(); 
-      bonus2 bSkillAtk,"MO_COMBOFINISH",18+getrefine();    
-  - Id: 1732
-    AegisName: Earth_Bow
-    Name: Earth Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1400
-    Attack: 105
-    Range: 5
-    Slots: 1
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true      
-    Script: |
-      bonus2 bAddEle,Ele_Wind,getrefine();   
-  - Id: 1257
-    AegisName: Katar_Of_Thornbush
-    Name: Katar of Quaking
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEff,Eff_Blind,500;      
-      bonus2 bAddEle,Ele_Wind,getrefine();   
-  - Id: 1276
-    AegisName: Katar_Of_Thornbush_
-    Name: Katar of Quaking
-    Type: Weapon
-    SubType: Katar
-    Buy: 45000
-    Weight: 1200
-    Attack: 105
-    Range: 1
-    Slots: 3
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEff,Eff_Blind,500;      
-      bonus2 bAddEle,Ele_Wind,getrefine();   
-  - Id: 1820
-    AegisName: Electric_Fist
-    Name: Electric Fist
-    Type: Weapon
-    SubType: Knuckle
-    Buy: 20
-    Weight: 650
-    Attack: 80
-    Range: 1
-    Slots: 3
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 75
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();  
-  - Id: 1819
-    AegisName: Icicle_Fist
-    Name: Icicle Fist
-    Type: Weapon
-    SubType: Knuckle
-    Buy: 20
-    Weight: 650
-    Attack: 80
-    Range: 1
-    Slots: 3
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 75
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();
-  - Id: 1966
-    AegisName: Whip_Of_Ice_Piece
-    Name: Icicle Whip
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 700
-    Attack: 110
-    Range: 2
-    Jobs:
-      BardDancer: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Water;
-      bonus2 bAddEle,Ele_Fire,getrefine();
-      bonus2 bMagicAddEle,Ele_Fire,getrefine();    
-  - Id: 1529
-    AegisName: Iron_Driver
-    Name: Iron Driver
-    Type: Weapon
-    SubType: Mace
-    Buy: 20
-    Weight: 3000
-    Attack: 155
-    Range: 2
-    Jobs:
-      Monk: true
-      Priest: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 78
-    Refineable: true
-    Script: |
-      bonus bAspdRate,getrefine();
-  - Id: 1971
-    AegisName: Electric_Wire
-    Name: Electric Wire
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 700
-    Attack: 110
-    Range: 2
-    Jobs:
-      BardDancer: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;  
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();   
-  - Id: 1967
-    AegisName: Whip_Of_Earth
-    Name: Gaia Whip
-    Type: Weapon
-    SubType: Whip
-    Buy: 20
-    Weight: 700
-    Attack: 110
-    Range: 2
-    Jobs:
-      BardDancer: true
-    Gender: Female
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Earth;      
-      bonus2 bAddEle,Ele_Wind,getrefine();
-      bonus2 bMagicAddEle,Ele_Wind,getrefine();
-  - Id: 1917
-    AegisName: Guitar_Of_Gentle_Breeze
-    Name: Gentle Breeze Guitar
-    Type: Weapon
-    SubType: Musical
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Jobs:
-      BardDancer: true
-    Gender: Male
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 27
-    Refineable: true
-    Script: |
-      bonus bAtkEle,Ele_Wind;     
-      bonus2 bAddEle,Ele_Water,getrefine();
-      bonus2 bMagicAddEle,Ele_Water,getrefine();
-  - Id: 13106
-    AegisName: Gold_Lux
-    Name: Gold Lux
-    Type: Weapon
-    SubType: Revolver
-    Buy: 100000
-    Weight: 500
-    Attack: 20
-    Range: 7
-    Jobs:
-      Gunslinger: true
-      Rebellion: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 12
-    Refineable: true
-    Script: |
-      bonus bHit,-10;
-      if (getskilllv("GS_GLITTERING")>0)
-         bonus3 bAutoSpell,"GS_GLITTERING",getskilllv("GS_GLITTERING"),100+(getrefine()*10);      
-  - Id: 1143
-    AegisName: Gaia_Sword
-    Name: Gaia Sword
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 20
-    Weight: 2500
-    Attack: 140
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 74
-    Refineable: true
-    Script: |
-      bonus2 bAddMonsterDropItemGroup,IG_Ore,getrefine()*10;      
-  - Id: 1142
-    AegisName: Jewel_Sword
-    Name: Jeweled Sword
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 20
-    Weight: 2200
-    Attack: 104
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 68
-    Refineable: true
-    Script: |
-      bonus2 bAddMonsterDropItemGroup,IG_Jewel,getrefine()*60;
-  - Id: 1731
-    AegisName: Frozen_Bow
-    Name: Frozen Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1400
-    Attack: 100
-    Range: 5
-    Slots: 1
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 55
-    Refineable: true
-    Script: |
-      bonus2 bAddEff,Eff_Freeze,1000;
-      bonus2 bAddEle,Ele_Fire,getrefine();
   - Id: 1485
     AegisName: Battle_Fork
     Name: Battle Fork
@@ -7016,7 +5160,7 @@ Body:
     Weight: 700
     Attack: 92
     Range: 3
-    Slots: 3
+    Slots: 4
     Jobs:
       Crusader: true
       Knight: true
@@ -7028,33 +5172,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 50
     Refineable: true      
-  - Id: 1375
-    AegisName: Berdysz
-    Name: Berdysz
-    Type: Weapon
-    SubType: 2hAxe
-    Buy: 20
-    Weight: 2500
-    Attack: 200
-    Range: 1
-    Slots: 2
-    Jobs:
-      Alchemist: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Swordman: true
-    Classes:
-      All_Upper: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus2 bSubSize,Size_Medium,10+getrefine();
-      bonus2 bSubSize,Size_Large,12+getrefine();    
   - Id: 27086
     AegisName: BitterArcherSk_Card
     Name: Resentful Soldier Card
@@ -7497,6 +5614,84 @@ Body:
     Script: |
       bonus2 bSubSize,Size_Small,25;
       bonus bDef,10;
+  - Id: 13001
+    AegisName: Dragon_Killer
+    Name: Dragon Killer
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 900
+    Attack: 110
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_Dragon;
+      bonus2 bExpAddRace,RC_Dragon,10;
+      bonus2 bAddRace,RC_Dragon,getrefine()*2;
+  - Id: 13030
+    AegisName: Dragon_Killer_
+    Name: Dragon Killer
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 900
+    Attack: 110
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_Dragon;
+      bonus2 bExpAddRace,RC_Dragon,10;      
   - Id: 4254
     AegisName: Tirfing_Card
     Name: Ogretooth Card

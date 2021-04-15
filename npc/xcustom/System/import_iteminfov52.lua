@@ -4,10 +4,10 @@ tbl = {
 	--Example
 	[1723] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Luna Bow",
-		identifiedResourceName = "루나보우",
+		identifiedResourceName = "·c³ªº¸¿i",
 		identifiedDescriptionName = {
 			"A bow crafted out of moonstone with an attached blade that allows its user to block and counter enemy attacks.",
 			"The drawback is that this bow is quite heavy.",
@@ -16,6 +16,7 @@ tbl = {
 			"________________________",
 			"^0000FFRefine Level +6^000000:",
 			"DEF +10",
+			"________________________",
 			"^0000FFRefine Level +9^000000:",
 			"DEF +20",
 			"________________________",
@@ -23,8 +24,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -36,10 +35,10 @@ tbl = {
 	},	
 	[1818] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Magma Fist",
-		identifiedResourceName = "마그마피스트",
+		identifiedResourceName = "¸¶±×¸¶CC½ºÆ®",
 		identifiedDescriptionName = {
 			"A knuckle made of superheated lava that has a special lining so that it can be worn.",
 			"________________________",
@@ -49,8 +48,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",					
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -62,10 +59,10 @@ tbl = {
 	},	
 	[1544] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lunakaligo",
-		identifiedResourceName = "루나칼리고",
+		identifiedResourceName = "·c³ªA®¸®°i",
 		identifiedDescriptionName = {
 			"An old, black and large frying pan.",
 			"________________________",
@@ -78,8 +75,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",					
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -91,10 +86,10 @@ tbl = {
 	},	
 	[1160] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Broad Sword",
-		identifiedResourceName = "브로드소드",
+		identifiedResourceName = "ºe·Iμa¼Oμa",
 		identifiedDescriptionName = {
 			"A sword with a wide, double sided blade.",
 			"________________________",
@@ -104,8 +99,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -117,10 +110,10 @@ tbl = {
 	},	
 	[1162] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Broad Sword",
-		identifiedResourceName = "브로드소드",
+		identifiedResourceName = "ºe·Iμa¼Oμa",
 		identifiedDescriptionName = {
 			"A sword with a wide, double sided blade.",
 			"________________________",
@@ -130,8 +123,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -143,10 +134,10 @@ tbl = {
 	},	
 	[1135] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cutlus",
-		identifiedResourceName = "커틀러스",
+		identifiedResourceName = "A¿Æ²·?½º",
 		identifiedDescriptionName = {
 			"A one-handed sword popularized by its use by sea adventurers.",
 			"________________________",
@@ -172,10 +163,10 @@ tbl = {
 	},	
 	[2855] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Whikebain's Black Tail",
-		identifiedResourceName = "휘케바인검은꼬리",
+		identifiedResourceName = "EOAE¹UAI°EAº²¿¸®",
 		identifiedDescriptionName = {
 			"Morocc town Hyuke's black tail style. It doesn't seem to be moving.",
 			"________________________",
@@ -199,10 +190,10 @@ tbl = {
 	},	
 	[2983] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Brooch of Greed",
-		identifiedResourceName = "탐욕의브로치",
+		identifiedResourceName = "A½¿aACºe·IA¡",
 		identifiedDescriptionName = {
 			"Embroidery brooch with beautiful jewelry occasion of a spider. The devil is asleep in it and the wearer of this gem will vitality.",
 			"________________________",
@@ -231,10 +222,10 @@ tbl = {
 	},	
 	[18934] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Kitsune Ear Bell Ribbon",
-		identifiedResourceName = "여우귀방울리본",
+		identifiedResourceName = "¿ⓒ¿i±I¹æ¿i¸®º≫",
 		identifiedDescriptionName = {
 			"A cute headgear that imitate the ears of fox with small bells attached on it.",
 			"________________________",
@@ -267,10 +258,10 @@ tbl = {
 	},	
 	[13033] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Assassin Dagger",
-		identifiedResourceName = "어새신대거",
+		identifiedResourceName = "¾i≫o½A´e°A",
 		identifiedDescriptionName = {
 			"A dagger commonly used by Assassins.",
 			"________________________",
@@ -283,8 +274,6 @@ tbl = {
 			"^0000CCWeight:^000000 60",
 			"^0000CCElement:^777777 Shadow",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -296,10 +285,10 @@ tbl = {
 	},	
 	[13018] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sucsamad",
-		identifiedResourceName = "수크사마드",
+		identifiedResourceName = "¼oAⓒ≫c¸¶μa",
 		identifiedDescriptionName = {
 			"A specialty dagger made by a small, mysterious, desert dwelling tribe.",
 			"________________________",
@@ -311,8 +300,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -324,10 +311,10 @@ tbl = {
 	},	
 	[1170] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katzbalger",
-		identifiedResourceName = "카츠발게르",
+		identifiedResourceName = "A≪A÷¹ß°O¸￡",
 		identifiedDescriptionName = {
 			"A sword with a unique, \"S\" shaped hilt.",
 			"________________________",
@@ -351,10 +338,10 @@ tbl = {
 	},	
 	[13031] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Swordbreaker",
-		identifiedResourceName = "소드브레이커",
+		identifiedResourceName = "¼Oμaºe·¹AIA¿",
 		identifiedDescriptionName = {
 			"A powerful dagger that is specially constructed to destroy the enemy's weapon by a low chance.",
 			"________________________",
@@ -375,10 +362,10 @@ tbl = {
 	},	
 	[13032] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mailbreaker",
-		identifiedResourceName = "메일브레이커",
+		identifiedResourceName = "¸ÞAIºe·¹AIA¿",
 		identifiedDescriptionName = {
 			"An incredibly sharp dagger built to puncture and destroy an enemy's armor by a low chance.",
 			"________________________",
@@ -386,8 +373,6 @@ tbl = {
 			"^0000CCAttack:^000000 40",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -399,10 +384,10 @@ tbl = {
 	},	
 	[13400] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cutlus",
-		identifiedResourceName = "커틀러스",
+		identifiedResourceName = "A¿Æ²·?½º",
 		identifiedDescriptionName = {
 			"A practical sword that is typically used by sailors.",
 			"________________________",
@@ -428,10 +413,10 @@ tbl = {
 	},
 	[1167] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Schweizersabel",
-		identifiedResourceName = "슈바이체르샤벨",
+		identifiedResourceName = "½´¹UAIA¼¸￡≫þº§",
 		identifiedDescriptionName = {
 			"A Two-Handed, formal dress sword imbued with the wind element.",
 			"________________________",
@@ -457,10 +442,10 @@ tbl = {
 	},	
 	[1178] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Schweizersabel",
-		identifiedResourceName = "슈바이체르샤벨",
+		identifiedResourceName = "½´¹UAIA¼¸￡≫þº§",
 		identifiedDescriptionName = {
 			"A Two-Handed, formal dress sword imbued with the wind element.",
 			"________________________",
@@ -486,10 +471,10 @@ tbl = {
 	},	
 	[13003] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cowardice Blade",
-		identifiedResourceName = "코워드",
+		identifiedResourceName = "AU¿oμa",
 		identifiedDescriptionName = {
 			"A dagger invented by a cowardly Assassin who was always held resentment about being unable to equip a shield.",
 			"________________________",
@@ -499,8 +484,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -512,10 +495,10 @@ tbl = {
 	},
 	[13004] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cowardice Blade",
-		identifiedResourceName = "코워드",
+		identifiedResourceName = "AU¿oμa",
 		identifiedDescriptionName = {
 			"A dagger invented by a cowardly Assassin who was always held resentment about being unable to equip a shield.",
 			"________________________",
@@ -525,8 +508,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -538,10 +519,10 @@ tbl = {
 	},
 	[1484] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cardo",
-		identifiedResourceName = "카르도",
+		identifiedResourceName = "A≪¸￡μμ",
 		identifiedDescriptionName = {
 			"A Two-Handed spear which looks just like a miniature of a pillar from the ancient temples.",
 			"________________________",
@@ -567,10 +548,10 @@ tbl = {
 	},	
 	[1261] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Infiltrator",
-		identifiedResourceName = "등뒤를베는자",
+		identifiedResourceName = "μiμU¸|º￡´AAU",
 		identifiedDescriptionName = {
 			"A lethal Katar that has been perfectly designed to carry out quick assasinations.",
 			"________________________",
@@ -597,10 +578,10 @@ tbl = {
 	},
 	[1266] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Infiltrator",
-		identifiedResourceName = "등뒤를베는자",
+		identifiedResourceName = "μiμU¸|º￡´AAU",
 		identifiedDescriptionName = {
 			"A lethal Katar that has been designed for quick assassinations.",
 			"________________________",
@@ -627,10 +608,10 @@ tbl = {
 	},	
 	[2386] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Chameleon Armor",
-		identifiedResourceName = "카멜레온아머",
+		identifiedResourceName = "A≪¸a·¹¿A¾Æ¸O",
 		identifiedDescriptionName = {
 			"A miraculous Armor that can change its abilities according to those of its wearer.",
 			"________________________",
@@ -647,8 +628,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 170",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -660,10 +639,10 @@ tbl = {
 	},	
 	[2423] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Variant Shoes",
-		identifiedResourceName = "배리언트슈즈",
+		identifiedResourceName = "¹e¸®¾ðÆ®½´Ai",
 		identifiedDescriptionName = {
 			"Although it seems that whoever made these shoes tried to fix his mistakes, he didn't make these as well as he hoped.",
 			"________________________",
@@ -688,10 +667,10 @@ tbl = {
 	},	
 	[4409] = {
 		unidentifiedDisplayName = "Agav Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Agav Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"MATK +5%",
 			"DEF -100",
@@ -710,10 +689,10 @@ tbl = {
 	},	
 	[4401] = {
 		unidentifiedDisplayName = "Alicel Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Alicel Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"FLEE +10",
 			"DEF -50",
@@ -729,10 +708,10 @@ tbl = {
 	},
 	[4032] = {
 		unidentifiedDisplayName = "Ambernite Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Ambernite Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"________________________",
@@ -747,10 +726,10 @@ tbl = {
 	},
 	[4240] = {
 		unidentifiedDisplayName = "Arclouze Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Arclouze Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"^0000FFUp to max +5 Refine Level^000000:",
 			"DEF +20",
@@ -767,10 +746,10 @@ tbl = {
 	},
 	[4114] = {
 		unidentifiedDisplayName = "Argiope Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Argiope Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -787,10 +766,10 @@ tbl = {
 	},
 	[4075] = {
 		unidentifiedDisplayName = "Argos Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Argos Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -807,10 +786,10 @@ tbl = {
 	},
 	[4041] = {
 		unidentifiedDisplayName = "Coco Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Coco Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -827,10 +806,10 @@ tbl = {
 	},
 	[4098] = {
 		unidentifiedDisplayName = "Dokkaebi Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Dokkaebi Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -847,10 +826,10 @@ tbl = {
 	},
 	[4141] = {
 		unidentifiedDisplayName = "Evil Druid Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Evil Druid Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"INT +1",
 			"DEF +10",
@@ -868,10 +847,10 @@ tbl = {
 	},
 	[4250] = {
 		unidentifiedDisplayName = "Executioner Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Executioner Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -888,10 +867,10 @@ tbl = {
 	},
 	[4110] = {
 		unidentifiedDisplayName = "Ghoul Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Ghoul Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",		
@@ -908,10 +887,10 @@ tbl = {
 	},
 	[4150] = {
 		unidentifiedDisplayName = "Goat Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Goat Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"^0000FFUp to max +5 Refine Level^000000:",
 			"DEF +20",
@@ -928,10 +907,10 @@ tbl = {
 	},
 	[4322] = {
 		unidentifiedDisplayName = "High Orc Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "High Orc Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -948,10 +927,10 @@ tbl = {
 	},
 	[4417] = {
 		unidentifiedDisplayName = "Ice Titan Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Ice Titan Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"VIT +2",
 			"________________________",
@@ -968,10 +947,10 @@ tbl = {
 	},
 	[4046] = {
 		unidentifiedDisplayName = "Martin Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Martin Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -988,10 +967,10 @@ tbl = {
 	},
 	[4067] = {
 		unidentifiedDisplayName = "Megalodon Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Megalodon Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1008,10 +987,10 @@ tbl = {
 	},
 	[4399] = {
 		unidentifiedDisplayName = "Memory of Thanatos Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Memory of Thanatos Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF -300",
 			"FLEE -30",
@@ -1030,10 +1009,10 @@ tbl = {
 	},
 	[4339] = {
 		unidentifiedDisplayName = "Mineral Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Mineral Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK -25",
 			"DEF +30",
@@ -1049,10 +1028,10 @@ tbl = {
 	},
 	[4090] = {
 		unidentifiedDisplayName = "Munak Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Munak Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1073,10 +1052,10 @@ tbl = {
 	},
 	[4207] = {
 		unidentifiedDisplayName = "Mysteltainn Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Mysteltainn Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1093,10 +1072,10 @@ tbl = {
 	},
 	[4254] = {
 		unidentifiedDisplayName = "Ogretooth Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Ogretooth Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1113,10 +1092,10 @@ tbl = {
 	},
 	[4309] = {
 		unidentifiedDisplayName = "Parasite Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Parasite Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1143,10 +1122,10 @@ tbl = {
 	},
 	[4191] = {
 		unidentifiedDisplayName = "Loli Ruri Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Loli Ruri Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Random chance to autocast Level 3 ^009900Heal^000000 on wearer when receiving physical damage.",
 			"________________________",
@@ -1171,10 +1150,10 @@ tbl = {
 	},
 	[4325] = {
 		unidentifiedDisplayName = "Harpy Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Harpy Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Decreases damage taken from ^777777Neutral^000000 elemental attacks by 15%",
 			"Increases damage of ^009900Napalm Beat^000000 by 5%",
@@ -1210,10 +1189,10 @@ tbl = {
 	},
 	[4327] = {
 		unidentifiedDisplayName = "Bloody Butterfly Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Bloody Butterfly Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Enables interrupted skill casting.",
 			"Increases Variable Casting Time of all skills by 30%",
@@ -1250,10 +1229,10 @@ tbl = {
 	},	
 	[4229] = {
 		unidentifiedDisplayName = "Tower Keeper Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Tower Keeper Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"INT +1",
 			"________________________",
@@ -1274,10 +1253,10 @@ tbl = {
 	},
 	[4299] = {
 		unidentifiedDisplayName = "Clock Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Clock Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Chance to cast Level 3 ^009900Auto Guard^000000 on the user when receiving melee attack.",
 			"If the user has mastered the skill at Level 10, it will cast Level 10 ^009900Auto Guard^000000",
@@ -1297,10 +1276,10 @@ tbl = {
 	},	
 	[4313] = {
 		unidentifiedDisplayName = "Punk Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Punk Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Automatically cast Level 1 ^009900Quagmire^000000 around the user when receiving physical damage.",
 			"If the user has mastered the skill, it will cast Level 5 ^009900Quagmire^000000.",
@@ -1320,10 +1299,10 @@ tbl = {
 	},
 	[4311] = {
 		unidentifiedDisplayName = "Permeter Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Permeter Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Decreases damage taken from ^777777Shadow^000000 and ^777777Undead^000000 elemental attacks by 15%",
 			"________________________",
@@ -1359,10 +1338,10 @@ tbl = {
 	},	
 	[4319] = {
 		unidentifiedDisplayName = "Freezer Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Freezer Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"MaxHP +300",
 			"________________________",
@@ -1401,10 +1380,10 @@ tbl = {
 	},	
 	[4331] = {
 		unidentifiedDisplayName = "Heater Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Heater Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Critical +3",
 			"________________________",
@@ -1443,10 +1422,10 @@ tbl = {
 	},
 	[5782] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Legionaire Helm",
-		identifiedResourceName = "중장보병의투구",
+		identifiedResourceName = "AßAaº¸º´ACAo±¸",
 		identifiedDescriptionName = {
 			"A Helm used in ancient western country that was famous for close formation and tight defense.",
 			"________________________",
@@ -1475,10 +1454,10 @@ tbl = {
 	},	
 	[18762] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Modified Kitsune Mask",
-		identifiedResourceName = "여우가면",
+		identifiedResourceName = "¿ⓒ¿i°¡¸e",
 		identifiedDescriptionName = {
 			"A replica of Assassin troops' secret hiding mask. Slick shape. Remodeled for extra effect.",
 			"________________________",
@@ -1502,10 +1481,10 @@ tbl = {
 	},	
 	[4371] = {
 		unidentifiedDisplayName = "Archdam Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Archdam Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK +10",
 			"________________________",
@@ -1533,10 +1512,10 @@ tbl = {
 	},	
 	[4244] = {
 		unidentifiedDisplayName = "Alarm Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Alarm Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"VIT +1",
 			"MaxHP +300",
@@ -1558,10 +1537,10 @@ tbl = {
 	},	
 	[4208] = {
 		unidentifiedDisplayName = "Miyabi Doll Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Miyabi Doll Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"MaxSP +10%",
 			"________________________",
@@ -1597,10 +1576,10 @@ tbl = {
 	},	
 	[4258] = {
 		unidentifiedDisplayName = "Evil Nymph Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Evil Nymph Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"INT +1",
 			"MaxSP +50",
@@ -1636,10 +1615,10 @@ tbl = {
 	},	
 	[4099] = {
 		unidentifiedDisplayName = "Pasana Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Pasana Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1656,10 +1635,10 @@ tbl = {
 	},	
 	[4337] = {
 		unidentifiedDisplayName = "Porcellio Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Porcellio Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK +25",
 			"DEF -50",
@@ -1675,10 +1654,10 @@ tbl = {
 	},	
 	[4101] = {
 		unidentifiedDisplayName = "Sandman Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Sandman Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1695,10 +1674,10 @@ tbl = {
 	},
 	[4220] = {
 		unidentifiedDisplayName = "Solider Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Solider Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"MDEF +2",
@@ -1724,10 +1703,10 @@ tbl = {
 	},	
 	[4039] = {
 		unidentifiedDisplayName = "Stainer Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Stainer Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"________________________",
@@ -1754,10 +1733,10 @@ tbl = {
 	},	
 	[4223] = {
 		unidentifiedDisplayName = "Stalactic Golem Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Stalactic Golem Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1774,10 +1753,10 @@ tbl = {
 	},	
 	[4042] = {
 		unidentifiedDisplayName = "Steel Chonchon Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Steel Chonchon Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"________________________",
@@ -1794,10 +1773,10 @@ tbl = {
 	},	
 	[4226] = {
 		unidentifiedDisplayName = "Sting Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Sting Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"^0000FFRefine Level +9^000000:",
 			"DEF +20",
@@ -1814,10 +1793,10 @@ tbl = {
 	},	
 	[4089] = {
 		unidentifiedDisplayName = "Swordfish Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Swordfish Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1834,10 +1813,10 @@ tbl = {
 	},
 	[4304] = {
 		unidentifiedDisplayName = "Tamruan Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Tamruan Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"________________________",
@@ -1854,10 +1833,10 @@ tbl = {
 	},	
 	[4259] = {
 		unidentifiedDisplayName = "Wooden Golem Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Wooden Golem Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1874,10 +1853,10 @@ tbl = {
 	},
 	[4261] = {
 		unidentifiedDisplayName = "Wootan Fighter Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Wootan Fighter Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1894,10 +1873,10 @@ tbl = {
 	},
 	[4260] = {
 		unidentifiedDisplayName = "Wootan Shooter Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Wootan Shooter Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +10",
 			"________________________",
@@ -1914,10 +1893,10 @@ tbl = {
 	},
 	[9024] = {
 		unidentifiedDisplayName = "Baphomet Jr. Egg",
-		unidentifiedResourceName = "암속성알",
+		unidentifiedResourceName = "¾I¼O¼º¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Baphomet Jr. Egg",
-		identifiedResourceName = "암속성알",
+		identifiedResourceName = "¾I¼O¼º¾E",
 		identifiedDescriptionName = {
 			"An egg in which a Baphomet Jr. cute pet rests.",
 			"Can be hatched by using a ^0033CCPet Incubator^000000.",
@@ -1941,10 +1920,10 @@ tbl = {
 	},
 	[9030] = {
 		unidentifiedDisplayName = "Green Maiden Egg",
-		unidentifiedResourceName = "무속성알",
+		unidentifiedResourceName = "¹≪¼O¼º¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Green Maiden Egg",
-		identifiedResourceName = "무속성알",
+		identifiedResourceName = "¹≪¼O¼º¾E",
 		identifiedDescriptionName = {
 			"An egg in which a Green Maiden cute pet rests.",
 			"Can be hatched by using a ^0033CCPet Incubator^000000.",
@@ -1966,10 +1945,10 @@ tbl = {
 	},
 	[9018] = {
 		unidentifiedDisplayName = "Munak Egg",
-		unidentifiedResourceName = "언데드알",
+		unidentifiedResourceName = "¾ðμ￥μa¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Munak Egg",
-		identifiedResourceName = "언데드알",
+		identifiedResourceName = "¾ðμ￥μa¾E",
 		identifiedDescriptionName = {
 			"An egg in which a Munak cute pet rests.",
 			"Can be hatched by using a ^0033CCPet Incubator^000000.",
@@ -1991,10 +1970,10 @@ tbl = {
 	},
 	[9017] = {
 		unidentifiedDisplayName = "Orc Warrior Egg",
-		unidentifiedResourceName = "지속성알",
+		unidentifiedResourceName = "Ao¼O¼º¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Orc Warrior Egg",
-		identifiedResourceName = "지속성알",
+		identifiedResourceName = "Ao¼O¼º¾E",
 		identifiedDescriptionName = {
 			"An egg in which a Orc Warrior cute pet rests.",
 			"Can be hatched by using a ^0033CCPet Incubator^000000.",
@@ -2014,10 +1993,10 @@ tbl = {
 	},
 	[2656] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Armor Charm",
-		identifiedResourceName = "하이퍼체인저",
+		identifiedResourceName = "CIAIÆUA¼AIAu",
 		identifiedDescriptionName = {
 			"A mysterious, ancient artifact that can endow normal armor with great defensive power, although it does make the wearer feel very sluggish.",
 			"________________________",
@@ -2040,10 +2019,10 @@ tbl = {
 	},
 	[5128] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Helm",
-		identifiedResourceName = "게브네이투구",
+		identifiedResourceName = "°Oºe³×AIAo±¸",
 		identifiedDescriptionName = {
 			"One of the few armors that was forged by Goibniu the blacksmith.",
 			"It is said that the gods valued his armors more than the weapons he had forged.",
@@ -2074,10 +2053,10 @@ tbl = {
 	},	
 	[4161] = {
 		unidentifiedDisplayName = "Grand Peco Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Grand Peco Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Random chance to autocast Level 1 ^009900Gloria^000000 when receiving physical damage.",
 			"________________________",
@@ -2096,10 +2075,10 @@ tbl = {
 	},
 	[2615] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Safety Ring",
-		identifiedResourceName = "세이프티링",
+		identifiedResourceName = "¼¼AICAÆ¼¸μ",
 		identifiedDescriptionName = {
 			"A strange ring that curiously raises its wearer's defense.",
 			"________________________",
@@ -2119,10 +2098,10 @@ tbl = {
 	},
 	[2114] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stone Buckler",
-		identifiedResourceName = "스톤버클러",
+		identifiedResourceName = "½ºAæ¹oA￢·?",
 		identifiedDescriptionName = {
 			"A stone shield which Thor obtained by killing Hrungnir, king of giants.",
 			"It possesses the powers of giants which rival the might of the gods.",
@@ -2150,10 +2129,10 @@ tbl = {
 	},	
 	[2133] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tournament Shield",
-		identifiedResourceName = "토너먼트쉴드",
+		identifiedResourceName = "Aa³E¸OÆ®½?μa",
 		identifiedDescriptionName = {
 			"A Shield that a lance can be placed on top of.",
 			"Very efficient to defend oneself while attacking with a lance.",
@@ -2181,10 +2160,10 @@ tbl = {
 	},
 	[2115] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Shield",
-		identifiedResourceName = "발키리아쉴드",
+		identifiedResourceName = "¹ßA°¸®¾Æ½?μa",
 		identifiedDescriptionName = {
 			"A shield used by Gna, messenger of Freya, when she served as a Valkyrie.",
 			"________________________",
@@ -2211,10 +2190,10 @@ tbl = {
 	},
 	[9062] = {
 		unidentifiedDisplayName = "Baby Poring Egg",
-		unidentifiedResourceName = "수속성알",
+		unidentifiedResourceName = "¼o¼O¼º¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Baby Poring Egg",
-		identifiedResourceName = "수속성알",
+		identifiedResourceName = "¼o¼O¼º¾E",
 		identifiedDescriptionName = {
 			"An egg in which a Baby Poring cute pet rests.",
 			"Can be hatched by using a ^0033CCPet Incubator^000000.",
@@ -2234,10 +2213,10 @@ tbl = {
 	},	
 	[4545] = {
 		unidentifiedDisplayName = "Novice Poring Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Novice Poring Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"LUK +1",
 			"________________________",
@@ -2252,10 +2231,10 @@ tbl = {
 	},	
 	[2177] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shield of Death",
-		identifiedResourceName = "죽은자의방패",
+		identifiedResourceName = "A×AºAUAC¹æÆÐ",
 		identifiedDescriptionName = {
 			"The Shield of the Lord of Death.",
 			"________________________",
@@ -2272,8 +2251,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 150",
 			"^0000CCWeight:^000000 200",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 90"
@@ -2284,10 +2261,10 @@ tbl = {
 	},
 	[13301] = {
 		unidentifiedDisplayName = "Unidentified Huuma Shuriken",
-		unidentifiedResourceName = "풍마_편익",
+		unidentifiedResourceName = "C³¸¶_ÆiAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Huuma Giant Wheel Shuriken",
-		identifiedResourceName = "풍마_대차륜",
+		identifiedResourceName = "C³¸¶_´eA÷·u",
 		identifiedDescriptionName = {
 			"A heavy, giant shuriken shaped like a bladed wheel.",
 			"________________________",
@@ -2297,8 +2274,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 42",
@@ -2310,10 +2285,10 @@ tbl = {
 	},
 	[13302] = {
 		unidentifiedDisplayName = "Unidentified Huuma Shuriken",
-		unidentifiedResourceName = "풍마_편익",
+		unidentifiedResourceName = "C³¸¶_ÆiAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Huuma Giant Wheel Shuriken",
-		identifiedResourceName = "풍마_대차륜",
+		identifiedResourceName = "C³¸¶_´eA÷·u",
 		identifiedDescriptionName = {
 			"A heavy, giant shuriken shaped like a bladed wheel.",
 			"________________________",
@@ -2323,8 +2298,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 42",
@@ -2336,10 +2309,10 @@ tbl = {
 	},
 	[13303] = {
 		unidentifiedDisplayName = "Unidentified Huuma Shuriken",
-		unidentifiedResourceName = "풍마_편익",
+		unidentifiedResourceName = "C³¸¶_ÆiAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Huuma Blaze Shuriken",
-		identifiedResourceName = "풍마_열화",
+		identifiedResourceName = "C³¸¶_¿­E­",
 		identifiedDescriptionName = {
 			"A ^FF0000Fire^000000 element Huuma shuriken that sparks like a firecracker when it strikes enemies.",
 			"________________________",
@@ -2352,8 +2325,6 @@ tbl = {
 			"^0000CCWeight:^000000 150",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -2365,10 +2336,10 @@ tbl = {
 	},
 	[1483] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ivory Lance",
-		identifiedResourceName = "아이보리랜스",
+		identifiedResourceName = "¾ÆAIº¸¸®·￡½º",
 		identifiedDescriptionName = {
 			"Two-Handed Spear made of the Ivory of a Mammoth. It is very hard to be processed due to its strength, but its sharp end makes it perfect for stabbing.",
 			"________________________",
@@ -2383,8 +2354,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -2396,10 +2365,10 @@ tbl = {
 	},	
 	[13039] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ivory Knife",
-		identifiedResourceName = "아이보리나이프",
+		identifiedResourceName = "¾ÆAIº¸¸®³ªAICA",
 		identifiedDescriptionName = {
 			"A dagger made of Mammoth's Ivory. It is very hard to be processed due to the strong solidity of the ivory. It's sharply pointed tip makes it effective for stabbing rather than cutting.",
 			"________________________",
@@ -2412,8 +2381,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -2425,10 +2392,10 @@ tbl = {
 	},	
 	[1529] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Iron Driver",
-		identifiedResourceName = "아이언드라이버",
+		identifiedResourceName = "¾ÆAI¾ðμa¶oAI¹o",
 		identifiedDescriptionName = {
 			"A heavy, round headed mace intended for use in athletic competitions, but has proven to be effective in battle.",
 			"________________________",
@@ -2436,8 +2403,6 @@ tbl = {
 			"^0000CCAttack:^000000 155",
 			"^0000CCWeight:^000000 300",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 78",
@@ -2449,10 +2414,10 @@ tbl = {
 	},	
 	[1966] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Icicle Whip",
-		identifiedResourceName = "물의채찍",
+		identifiedResourceName = "¹°ACA¤Ai",
 		identifiedDescriptionName = {
 			"A whip created from enchanted icicles that are eternally frozen.",
 			"________________________",
@@ -2461,8 +2426,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2474,10 +2437,10 @@ tbl = {
 	},	
 	[1819] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Icicle Fist",
-		identifiedResourceName = "아이시클피스트",
+		identifiedResourceName = "¾ÆAI½AA￢CC½ºÆ®",
 		identifiedDescriptionName = {
 			"A knuckle made of extremely cold ice that has a special lining so that it can be worn.",
 			"________________________",
@@ -2487,8 +2450,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -2500,10 +2461,10 @@ tbl = {
 	},	
 	[1622] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hypnotist's Staff",
-		identifiedResourceName = "최면술사지팡이",
+		identifiedResourceName = "AO¸e¼u≫cAoÆIAI",
 		identifiedDescriptionName = {
 			"A staff with a hynpotizing effect that can even make a Novice feel just like a High Wizard. Sort of.",
 			"________________________",
@@ -2514,8 +2475,6 @@ tbl = {
 			"^0000CCAttack:^000000 70",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2527,10 +2486,10 @@ tbl = {
 	},	
 	[13304] = {
 		unidentifiedDisplayName = "Unidentified Huuma Shuriken",
-		unidentifiedResourceName = "풍마_편익",
+		unidentifiedResourceName = "C³¸¶_ÆiAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Huuma Calm Mind",
-		identifiedResourceName = "풍마_명정",
+		identifiedResourceName = "C³¸¶_¸iA¤",
 		identifiedDescriptionName = {
 			"The Huuma Calm Mind enables the wearer into remain collected in any tense situation.",
 			"________________________",
@@ -2542,8 +2501,6 @@ tbl = {
 			"^0000CCAttack:^000000 112",
 			"^0000CCWeight:^000000 155",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -2555,10 +2512,10 @@ tbl = {
 	},
 	[13009] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Kamaitachi",
-		identifiedResourceName = "카마이타치",
+		identifiedResourceName = "A≪¸¶AIA¸A¡",
 		identifiedDescriptionName = {
 			"A legendary weapon with extremely sharp blades.",
 			"________________________",
@@ -2570,8 +2527,6 @@ tbl = {
 			"^0000CCWeight:^000000 90",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -2583,10 +2538,10 @@ tbl = {
 	},	
 	[13300] = {
 		unidentifiedDisplayName = "Unidentified Huuma Shuriken",
-		unidentifiedResourceName = "풍마_편익",
+		unidentifiedResourceName = "C³¸¶_ÆiAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Huuma Wing Shuriken",
-		identifiedResourceName = "풍마_편익",
+		identifiedResourceName = "C³¸¶_ÆiAI",
 		identifiedDescriptionName = {
 			"A famous Huuma Ninja weapon that is shaped like a wing.",
 			"________________________",
@@ -2598,8 +2553,6 @@ tbl = {
 			"^0000CCWeight:^000000 300",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -2611,10 +2564,10 @@ tbl = {
 	},
 	[13168] = {
 		unidentifiedDisplayName = "Unidentified Shotgun",
-		unidentifiedResourceName = "싱글샷건",
+		unidentifiedResourceName = "½I±U¼|°C",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "THUNDER-P",
-		identifiedResourceName = "썬더P",
+		identifiedResourceName = "½a´oP",
 		identifiedDescriptionName = {
 			"A sawed off shotgun that fires shots more rapidly like a pistol at the cost of reduced accuracy.",
 			"________________________",
@@ -2627,8 +2580,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -2640,10 +2591,10 @@ tbl = {
 	},
 	[13165] = {
 		unidentifiedDisplayName = "Unidentified Rifle",
-		unidentifiedResourceName = "라이플",
+		unidentifiedResourceName = "¶oAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jungle Carbine",
-		identifiedResourceName = "정글카빈",
+		identifiedResourceName = "A¤±UA≪ºo",
 		identifiedDescriptionName = {
 			"A rifle with a shorter barrel to better suit it for close quarter battles such as in the jungle or indoors.",
 			"________________________",
@@ -2656,8 +2607,6 @@ tbl = {
 			"^0000CCAttack:^000000 170",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -2669,10 +2618,10 @@ tbl = {
 	},
 	[13163] = {
 		unidentifiedDisplayName = "Unidentified Rifle",
-		unidentifiedResourceName = "라이플",
+		unidentifiedResourceName = "¶oAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Long Barrel",
-		identifiedResourceName = "롱바렐",
+		identifiedResourceName = "·O¹U·¼",
 		identifiedDescriptionName = {
 			"A sniping rifle with a lengthened barrel for improved accuracy.",
 			"________________________",
@@ -2686,8 +2635,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -2699,10 +2646,10 @@ tbl = {
 	},
 	[1254] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jamadhar",
-		identifiedResourceName = "자마다르",
+		identifiedResourceName = "AU¸¶´U¸￡",
 		identifiedDescriptionName = {
 			"A specially made Katar with two blades that move like scissors to reveal a third blade from within.",
 			"________________________",
@@ -2710,8 +2657,6 @@ tbl = {
 			"^0000CCAttack:^000000 165",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2723,10 +2668,10 @@ tbl = {
 	},
 	[1252] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar",
-		identifiedResourceName = "카타르",
+		identifiedResourceName = "A≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A set of daggers in which the blades are positioned above the knuckles for use in close range combat.",
 			"________________________",
@@ -2736,8 +2681,6 @@ tbl = {
 			"^0000CCAttack:^000000 148",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2749,10 +2692,10 @@ tbl = {
 	},	
 	[1721] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Repeating Crossbow",
-		identifiedResourceName = "리피팅크로스",
+		identifiedResourceName = "¸®CCÆAAⓒ·I½º",
 		identifiedDescriptionName = {
 			"A rapid fire crossbow that can shoot many arrows in a short span of time.",
 			"________________________",
@@ -2760,8 +2703,6 @@ tbl = {
 			"^0000CCAttack:^000000 95",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -2773,10 +2714,10 @@ tbl = {
 	},
 	[1718] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hunter Bow",
-		identifiedResourceName = "헌터보우",
+		identifiedResourceName = "CaAIº¸¿i",
 		identifiedDescriptionName = {
 			"A mighty bow that can only be effectively used by Hunters and Snipers.",
 			"________________________",
@@ -2787,8 +2728,6 @@ tbl = {
 			"^0000CCAttack:^000000 125",
 			"^0000CCWeight:^000000 110",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2800,10 +2739,10 @@ tbl = {
 	},
 	[1714] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gakkung",
-		identifiedResourceName = "각궁",
+		identifiedResourceName = "°￠±A",
 		identifiedDescriptionName = {
 			"A potent bow used by Goongsoo, the ancient Korean archer, who used its great strength to knock down the greatest of enemies.",
 			"________________________",
@@ -2811,8 +2750,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 110",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2824,10 +2761,10 @@ tbl = {
 	},
 	[1713] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arbalest",
-		identifiedResourceName = "알바레스트",
+		identifiedResourceName = "¾E¹U·¹½ºÆ®",
 		identifiedDescriptionName = {
 			"A powerful siege weapon that is, in essense, a huge crossbow.",
 			"________________________",
@@ -2837,8 +2774,6 @@ tbl = {
 			"^0000CCAttack:^000000 90",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2850,10 +2785,10 @@ tbl = {
 	},
 	[1360] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Axe",
-		identifiedResourceName = "투핸드액스",
+		identifiedResourceName = "AoCUμa¾×½º",
 		identifiedDescriptionName = {
 			"A Two-Handed, double bladed axe.",
 			"________________________",
@@ -2861,8 +2796,6 @@ tbl = {
 			"^0000CCAttack:^000000 185",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2874,10 +2807,10 @@ tbl = {
 	},	
 	[1360] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Axe",
-		identifiedResourceName = "투핸드액스",
+		identifiedResourceName = "AoCUμa¾×½º",
 		identifiedDescriptionName = {
 			"A Two-Handed, double bladed axe.",
 			"________________________",
@@ -2885,8 +2818,6 @@ tbl = {
 			"^0000CCAttack:^000000 185",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2898,10 +2829,10 @@ tbl = {
 	},
 	[1361] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Axe",
-		identifiedResourceName = "투핸드액스",
+		identifiedResourceName = "AoCUμa¾×½º",
 		identifiedDescriptionName = {
 			"A Two-Handed, double bladed axe.",
 			"________________________",
@@ -2909,8 +2840,6 @@ tbl = {
 			"^0000CCAttack:^000000 185",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2922,10 +2851,10 @@ tbl = {
 	},	
 	[1357] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Buster",
-		identifiedResourceName = "버스터",
+		identifiedResourceName = "¹o½ºAI",
 		identifiedDescriptionName = {
 			"A powerful axe that lives up to its mighty appearance.",
 			"________________________",
@@ -2933,8 +2862,6 @@ tbl = {
 			"^0000CCAttack:^000000 155",
 			"^0000CCWeight:^000000 220",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -2946,10 +2873,10 @@ tbl = {
 	},
 	[1463] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hallberd",
-		identifiedResourceName = "핼버드",
+		identifiedResourceName = "CU¹oμa",
 		identifiedDescriptionName = {
 			"A spear with a steel spike and axe-blade which enable both piercing and hacking.",
 			"________________________",
@@ -2957,8 +2884,6 @@ tbl = {
 			"^0000CCAttack:^000000 165",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2970,10 +2895,10 @@ tbl = {
 	},
 	[1410] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lance",
-		identifiedResourceName = "랜스",
+		identifiedResourceName = "·￡½º",
 		identifiedDescriptionName = {
 			"A spear that is commonly used by mounted knights.",
 			"________________________",
@@ -2981,8 +2906,6 @@ tbl = {
 			"^0000CCAttack:^000000 185",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -2994,10 +2917,10 @@ tbl = {
 	},
 	[13014] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hakujin",
-		identifiedResourceName = "하쿠진",
+		identifiedResourceName = "CIAiAø",
 		identifiedDescriptionName = {
 			"A dagger that has a shining white blade crafted of bone and is designed for stabbing, rather than slashing.",
 			"________________________",
@@ -3007,8 +2930,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 42",
@@ -3020,10 +2941,10 @@ tbl = {
 	},
 	[13015] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hakujin",
-		identifiedResourceName = "하쿠진",
+		identifiedResourceName = "CIAiAø",
 		identifiedDescriptionName = {
 			"A dagger that has a shining white blade crafted of bone and is designed for stabbing, rather than slashing.",
 			"________________________",
@@ -3033,8 +2954,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 42",
@@ -3046,10 +2965,10 @@ tbl = {
 	},	
 	[1733] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gust Bow",
-		identifiedResourceName = "질풍의활",
+		identifiedResourceName = "AuC³ACE°",
 		identifiedDescriptionName = {
 			"A light bow that has been enhanced with the power of whirlwinds.",
 			"________________________",
@@ -3062,8 +2981,6 @@ tbl = {
 			"^0000CCAttack:^000000 95",
 			"^0000CCWeight:^000000 140",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3075,10 +2992,10 @@ tbl = {
 	},
 	[1716] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gakkung",
-		identifiedResourceName = "각궁",
+		identifiedResourceName = "°￠±A",
 		identifiedDescriptionName = {
 			"A potent bow used by Goongsoo, the ancient Korean archer, who used its great strength to knock down the greatest of enemies.",
 			"________________________",
@@ -3086,8 +3003,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 110",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3099,10 +3014,10 @@ tbl = {
 	},
 	[1732] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Earth Bow",
-		identifiedResourceName = "대지의활",
+		identifiedResourceName = "´eAoACE°",
 		identifiedDescriptionName = {
 			"A bow that is perfectly balanced in every aspect.",
 			"________________________",
@@ -3116,8 +3031,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 140",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3129,10 +3042,10 @@ tbl = {
 	},	
 	[1731] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Frozen Bow",
-		identifiedResourceName = "냉각의활",
+		identifiedResourceName = "³A°￠ACE°",
 		identifiedDescriptionName = {
 			"A frozen bow whose drawstring seems too solid to be pulled.",
 			"________________________",
@@ -3145,8 +3058,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 140",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3158,10 +3069,10 @@ tbl = {
 	},	
 	[1157] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Sword",
-		identifiedResourceName = "투핸드소드",
+		identifiedResourceName = "AoCUμa¼Oμa",
 		identifiedDescriptionName = {
 			"A heavy Two-handed sword that can knockdown many enemies in single swing.",
 			"________________________",
@@ -3169,8 +3080,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 220",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3182,10 +3091,10 @@ tbl = {
 	},
 	[1620] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Staff of Survival",
-		identifiedResourceName = "생존의지팡이2",
+		identifiedResourceName = "≫yA¸ACAoÆIAI2",
 		identifiedDescriptionName = {
 			"A staff developed through the united efforts of the Magician Guild and Prontera Church.",
 			"There are two different versions of this staff intended to help new trainees.",
@@ -3234,8 +3143,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -3247,10 +3154,10 @@ tbl = {
 	},
 	[13016] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Poison Knife",
-		identifiedResourceName = "포이즌나이프",
+		identifiedResourceName = "Æ÷AIAð³ªAICA",
 		identifiedDescriptionName = {
 			"A fearsome dagger with a burgundy blade that is coated with potent poison.",
 			"________________________",
@@ -3261,8 +3168,6 @@ tbl = {
 			"^0000CCWeight:^000000 80",
 			"^0000CCElement:^663399 Poison",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -3274,10 +3179,10 @@ tbl = {
 	},	
 	[1278] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Piercing Wind",
-		identifiedResourceName = "바람의카타르",
+		identifiedResourceName = "¹U¶÷ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar forged with the power of stormy winds.",
 			"________________________",
@@ -3288,8 +3193,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3301,10 +3204,10 @@ tbl = {
 	},
 	[1275] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Cold Icicle",
-		identifiedResourceName = "물의카타르",
+		identifiedResourceName = "¹°ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar fashioned from a cold, sharp icicle.",
 			"________________________",
@@ -3315,8 +3218,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3328,10 +3229,10 @@ tbl = {
 	},
 	[1277] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Raging Blaze",
-		identifiedResourceName = "불의카타르",
+		identifiedResourceName = "ºOACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar molded from an inferno.",
 			"________________________",
@@ -3342,8 +3243,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3355,10 +3254,10 @@ tbl = {
 	},
 	[1276] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Dusty Thornbush",
-		identifiedResourceName = "땅의카타르",
+		identifiedResourceName = "¶￥ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar sculpted from Earth.",
 			"________________________",
@@ -3369,8 +3268,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3382,10 +3279,10 @@ tbl = {
 	},
 	[1172] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claymore",
-		identifiedResourceName = "크레이모어",
+		identifiedResourceName = "Aⓒ·¹AI¸ð¾i",
 		identifiedDescriptionName = {
 			"A simple, Two-Handed Sword adorned with a cross shaped hilt.",
 			"________________________",
@@ -3393,8 +3290,6 @@ tbl = {
 			"^0000CCAttack:^000000 180",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3406,10 +3301,10 @@ tbl = {
 	},
 	[1816] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Berserk",
-		identifiedResourceName = "베르세르크",
+		identifiedResourceName = "º￡¸￡¼¼¸￡Aⓒ",
 		identifiedDescriptionName = {
 			"A pair of fierce claws that possesses its wearer, compelling him to draw fresh blood.",
 			"________________________",
@@ -3419,8 +3314,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -3432,10 +3325,10 @@ tbl = {
 	},	
 	[1532] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stunner",
-		identifiedResourceName = "스터너",
+		identifiedResourceName = "½ºAI³E",
 		identifiedDescriptionName = {
 			"A blow from this hefty mace can cause someone to black out.",
 			"________________________",
@@ -3445,8 +3338,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -3458,10 +3349,10 @@ tbl = {
 	},
 	[1149] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Flamberge",
-		identifiedResourceName = "프람베르그",
+		identifiedResourceName = "CA¶÷º￡¸￡±×",
 		identifiedDescriptionName = {
 			"A beautiful, wavy bladed dagger that inflicts especially excruciating pain.",
 			"________________________",
@@ -3469,8 +3360,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -3482,10 +3371,10 @@ tbl = {
 	},
 	[1726] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hunter Bow",
-		identifiedResourceName = "헌터보우",
+		identifiedResourceName = "CaAIº¸¿i",
 		identifiedDescriptionName = {
 			"A mighty bow that can only be effectively used by Hunter and Sniper.",
 			"________________________",
@@ -3496,8 +3385,6 @@ tbl = {
 			"^0000CCAttack:^000000 125",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3509,10 +3396,10 @@ tbl = {
 	},
 	[1358] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Buster",
-		identifiedResourceName = "버스터",
+		identifiedResourceName = "¹o½ºAI",
 		identifiedDescriptionName = {
 			"A powerful axe that lives up to its mighty appearance.",
 			"________________________",
@@ -3520,8 +3407,6 @@ tbl = {
 			"^0000CCAttack:^000000 155",
 			"^0000CCWeight:^000000 220",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -3533,10 +3418,10 @@ tbl = {
 	},
 	[1375] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Berdysz",
-		identifiedResourceName = "버디슈",
+		identifiedResourceName = "¹oμð½´",
 		identifiedDescriptionName = {
 			"A long bladed axe that's effective in melee combat.",
 			"________________________",
@@ -3548,8 +3433,6 @@ tbl = {
 			"^0000CCAttack:^000000 200",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3561,10 +3444,10 @@ tbl = {
 	},
 	[1461] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Trident",
-		identifiedResourceName = "트라이던트",
+		identifiedResourceName = "Æ®¶oAI´øÆ®",
 		identifiedDescriptionName = {
 			"A triple pronged spear that can also be used for fishing.",
 			"________________________",
@@ -3572,8 +3455,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3585,10 +3466,10 @@ tbl = {
 	},
 	[1483] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ivory Lance",
-		identifiedResourceName = "아이보리랜스",
+		identifiedResourceName = "¾ÆAIº¸¸®·￡½º",
 		identifiedDescriptionName = {
 			"Two-Handed Spear made of the Ivory of a Mammoth. It is very hard to be processed due to its strength, but its sharp end makes it perfect for stabbing.",
 			"________________________",
@@ -3603,8 +3484,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -3616,10 +3495,10 @@ tbl = {
 	},
 	[1909] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Harp",
-		identifiedResourceName = "하프",
+		identifiedResourceName = "CICA",
 		identifiedDescriptionName = {
 			"A stringed instrument known for the beautiful sound ofeach note that is played.",
 			"________________________",
@@ -3629,8 +3508,6 @@ tbl = {
 			"^0000CCAttack:^000000 114",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -3642,10 +3519,10 @@ tbl = {
 	},
 	[1825] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Horn of Hillslion",
-		identifiedResourceName = "혼오브힐스리온",
+		identifiedResourceName = "E￥¿AºeEu½º¸®¿A",
 		identifiedDescriptionName = {
 			"A knuckle made from 3 of Hillslion's horns.",
 			"________________________",
@@ -3659,8 +3536,6 @@ tbl = {
 			"^0000CCAttack:^000000 95",
 			"^0000CCWeight:^000000 60",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -3672,10 +3547,10 @@ tbl = {
 	},	
 	[1625] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Healing Staff",
-		identifiedResourceName = "치유의지팡이",
+		identifiedResourceName = "A¡A?ACAoÆIAI",
 		identifiedDescriptionName = {
 			"A healing staff made out of twigs from the Yggdrasil tree.",
 			"There is an engraving in an ancient language that reads, \"Health and longevity\".",
@@ -3689,8 +3564,6 @@ tbl = {
 			"^0000CCWeight:^000000 40",
 			"^0000CCElement:^777777 Holy",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 					
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -3702,10 +3575,10 @@ tbl = {
 	},	
 	[1910] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Harp",
-		identifiedResourceName = "하프",
+		identifiedResourceName = "CICA",
 		identifiedDescriptionName = {
 			"A stringed instrument known for the beautiful sound ofeach note that is played.",
 			"________________________",
@@ -3715,8 +3588,6 @@ tbl = {
 			"^0000CCAttack:^000000 114",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -3728,10 +3599,10 @@ tbl = {
 	},	
 	[1464] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hallberd",
-		identifiedResourceName = "핼버드",
+		identifiedResourceName = "CU¹oμa",
 		identifiedDescriptionName = {
 			"A spear with a steel spike and axe-blade which enable both piercing and hacking.",
 			"________________________",
@@ -3739,8 +3610,6 @@ tbl = {
 			"^0000CCAttack:^000000 165",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3752,10 +3621,10 @@ tbl = {
 	},
 	[1485] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Battle Fork",
-		identifiedResourceName = "배틀포크",
+		identifiedResourceName = "¹eÆ²Æ÷Aⓒ",
 		identifiedDescriptionName = {
 			"Two handed three-pronged fork that doubles as a spear. It is light and very useful despite its size.",
 			"________________________",
@@ -3763,8 +3632,6 @@ tbl = {
 			"^0000CCAttack:^000000 92",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -3776,10 +3643,10 @@ tbl = {
 	},
 	[1460] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Trident",
-		identifiedResourceName = "트라이던트",
+		identifiedResourceName = "Æ®¶oAI´øÆ®",
 		identifiedDescriptionName = {
 			"A triple pronged spear that can also be used for fishing.",
 			"________________________",
@@ -3787,8 +3654,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -3800,10 +3665,10 @@ tbl = {
 	},
 	[13169] = {
 		unidentifiedDisplayName = "Unidentified Shotgun",
-		unidentifiedResourceName = "싱글샷건",
+		unidentifiedResourceName = "½I±U¼|°C",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "THUNDER-P",
-		identifiedResourceName = "썬더P",
+		identifiedResourceName = "½a´oP",
 		identifiedDescriptionName = {
 			"A sawed off shotgun that fires shots more rapidly like a pistol at the cost of reduced accuracy.",
 			"________________________",
@@ -3816,8 +3681,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3829,10 +3692,10 @@ tbl = {
 	},
 	[13002] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ginnungagap",
-		identifiedResourceName = "간눙가가프",
+		identifiedResourceName = "°￡´±°¡°¡CA",
 		identifiedDescriptionName = {
 			"A dagger with an unnaturally dark colored blade.",
 			"Those who hold it instinctively sense the danger and risk of wielding this weapon.",
@@ -3844,8 +3707,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^777777 Shadow",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3857,10 +3718,10 @@ tbl = {
 	},
 	[13019] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ginnungagap",
-		identifiedResourceName = "간눙가가프",
+		identifiedResourceName = "°￡´±°¡°¡CA",
 		identifiedDescriptionName = {
 			"A dagger with an unnaturally dark colored blade.",
 			"Those who hold it instinctively sense the danger and risk of wielding this weapon.",
@@ -3872,8 +3733,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^777777 Shadow",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3885,10 +3744,10 @@ tbl = {
 	},	
 	[13167] = {
 		unidentifiedDisplayName = "Unidentified Shotgun",
-		unidentifiedResourceName = "싱글샷건",
+		unidentifiedResourceName = "½I±U¼|°C",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gate Keeper-DD",
-		identifiedResourceName = "게이트키퍼DD",
+		identifiedResourceName = "°OAIÆ®A°ÆUDD",
 		identifiedDescriptionName = {
 			"The barrel of the original Gate Keeper is made out of pure Oridecon, making it very durable.",
 			"________________________",
@@ -3905,8 +3764,6 @@ tbl = {
 			"^0000CCAttack:^000000 200",
 			"^0000CCWeight:^000000 130",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3918,10 +3775,10 @@ tbl = {
 	},
 	[13164] = {
 		unidentifiedDisplayName = "Unidentified Rifle",
-		unidentifiedResourceName = "라이플",
+		unidentifiedResourceName = "¶oAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Long Barrel",
-		identifiedResourceName = "롱바렐",
+		identifiedResourceName = "·O¹U·¼",
 		identifiedDescriptionName = {
 			"A sniping rifle with a lengthened barrel for improved accuracy.",
 			"________________________",
@@ -3935,8 +3792,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3948,10 +3803,10 @@ tbl = {
 	},
 	[1624] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lich's Bone Wand",
-		identifiedResourceName = "리치해골지팡이",
+		identifiedResourceName = "¸®A¡CØ°nAoÆIAI",
 		identifiedDescriptionName = {
 			"A wand crafted from a powerful Lich's skull that will curse anyone that threatens its true owner.",
 			"________________________",
@@ -3971,8 +3826,6 @@ tbl = {
 			"^0000CCWeight:^000000 80",
 			"^0000CCElement:^777777 Undead",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -3984,10 +3837,10 @@ tbl = {
 	},	
 	[13170] = {
 		unidentifiedDisplayName = "Unidentified Rifle",
-		unidentifiedResourceName = "라이플",
+		unidentifiedResourceName = "¶oAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lever Action Rifle",
-		identifiedResourceName = "레버액션라이플",
+		identifiedResourceName = "·¹¹o¾×¼C¶oAICA",
 		identifiedDescriptionName = {
 			"A highly efficient rifle with an ornate barrel that is capable of firing penetrating blasts, but takes a long time to reload.",
 			"________________________",
@@ -3999,8 +3852,6 @@ tbl = {
 			"^0000CCAttack:^000000 138",
 			"^0000CCWeight:^000000 77",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4012,10 +3863,10 @@ tbl = {
 	},
 	[1238] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Zeny Knife",
-		identifiedResourceName = "제니나이프",
+		identifiedResourceName = "A|´I³ªAICA",
 		identifiedDescriptionName = {
 			"A dagger that steals zeny from monsters upon their defeat.",
 			"________________________",
@@ -4023,8 +3874,6 @@ tbl = {
 			"^0000CCAttack:^000000 64",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4036,10 +3885,10 @@ tbl = {
 	},	
 	[1531] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wrench",
-		identifiedResourceName = "스패너",
+		identifiedResourceName = "½ºÆÐ³E",
 		identifiedDescriptionName = {
 			"A heavy tool with many practical applications.",
 			"________________________",
@@ -4049,8 +3898,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4062,10 +3909,10 @@ tbl = {
 	},	
 	[1980] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Whip of Balance",
-		identifiedResourceName = "추채찍",
+		identifiedResourceName = "AßA¤Ai",
 		identifiedDescriptionName = {
 			"A balance is attached at the tip of the whip. Anyone who gets a hit by this whip is knocked back.",
 			"________________________",
@@ -4079,8 +3926,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4092,10 +3937,10 @@ tbl = {
 	},	
 	[13107] = {
 		unidentifiedDisplayName = "Unidentified Revolver",
-		unidentifiedResourceName = "식스슈터",
+		unidentifiedResourceName = "½A½º½´AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wasteland's Outlaw",
-		identifiedResourceName = "황야의무법자",
+		identifiedResourceName = "E²¾ßAC¹≪¹yAU",
 		identifiedDescriptionName = {
 			"A highly accurate and rapid firing gun that was made in the memory of all the Gunslingers that had braved the unexplored wilderness.",
 			"________________________",
@@ -4105,8 +3950,6 @@ tbl = {
 			"^0000CCAttack:^000000 68",
 			"^0000CCWeight:^000000 58",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4118,10 +3961,10 @@ tbl = {
 	},
 	[1916] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Green Acre Guitar",
-		identifiedResourceName = "땅의기타",
+		identifiedResourceName = "¶￥AC±aA¸",
 		identifiedDescriptionName = {
 			"According to rumor, this quaint guitar can be used to communicate with stones and even the very Earth itself.",
 			"________________________",
@@ -4130,8 +3973,6 @@ tbl = {
 			"^0000CCWeight:^000000 90",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -4143,10 +3984,10 @@ tbl = {
 	},	
 	[13106] = {
 		unidentifiedDisplayName = "Unidentified Revolver",
-		unidentifiedResourceName = "식스슈터",
+		unidentifiedResourceName = "½A½º½´AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gold Lux",
-		identifiedResourceName = "골드룩스",
+		identifiedResourceName = "°nμa·e½º",
 		identifiedDescriptionName = {
 			"A decorative, beautiful golden revolver that commands attention.",
 			"________________________",
@@ -4159,8 +4000,6 @@ tbl = {
 			"^0000CCAttack:^000000 20",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 12",
@@ -4172,10 +4011,10 @@ tbl = {
 	},
 	[1264] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Various Jur",
-		identifiedResourceName = "바리어스쥬르",
+		identifiedResourceName = "¹U¸®¾i½ºAe¸￡",
 		identifiedDescriptionName = {
 			"Although this katar has an increased number of slots, this weapon is hard to handle and is known to cause injury to those who wield it.",
 			"________________________",
@@ -4185,8 +4024,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Assassin classes"
@@ -4197,10 +4034,10 @@ tbl = {
 	},
 	[1260] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sharpened Leg Bone of Ghoul",
-		identifiedResourceName = "언데드의카타르",
+		identifiedResourceName = "¾ðμ￥μaACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar crafted from a ghoul's femur that still radiates a dark, deathly aura.",
 			"________________________",
@@ -4209,8 +4046,6 @@ tbl = {
 			"^0000CCWeight:^000000 170",
 			"^0000CCElement:^777777 Undead",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -4222,10 +4057,10 @@ tbl = {
 	},
 	[1915] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Loner's Guitar",
-		identifiedResourceName = "물의기타",
+		identifiedResourceName = "¹°AC±aA¸",
 		identifiedDescriptionName = {
 			"A guitar which makes a depressing sound when strummed and is said to have been played by a bard who spend his entire life in complete loneliness.",
 			"________________________",
@@ -4234,8 +4069,6 @@ tbl = {
 			"^0000CCWeight:^000000 90",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -4247,10 +4080,10 @@ tbl = {
 	},	
 	[1262] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Loki's Nail",
-		identifiedResourceName = "로키의손톱",
+		identifiedResourceName = "·IA°AC¼OAe",
 		identifiedDescriptionName = {
 			"A double bladed katar that inflicts incurable wounds.",
 			"________________________",
@@ -4260,8 +4093,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4273,10 +4104,10 @@ tbl = {
 	},
 	[1646] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "La'cryma Stick",
-		identifiedResourceName = "라크리마스틱",
+		identifiedResourceName = "¶oAⓒ¸®¸¶½ºÆ½",
 		identifiedDescriptionName = {
 			"A high class Magician's staff decorated with rich tail-feathers. It has been especially treated for the water elemental magical spell, \"Stormgust\".",
 			"________________________",
@@ -4294,8 +4125,6 @@ tbl = {
 			"^0000CCAttack:^000000 30",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -4307,10 +4136,10 @@ tbl = {
 	},	
 	[13006] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Khukri",
-		identifiedResourceName = "고쿠린",
+		identifiedResourceName = "°iAi¸°",
 		identifiedDescriptionName = {
 			"A dagger whose hilt is crafted from black dragon scale, a material rumored to possess the power of darkness.",
 			"________________________",
@@ -4321,8 +4150,6 @@ tbl = {
 			"^0000CCWeight:^000000 60",
 			"^0000CCElement:^777777 Shadow",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -4334,10 +4161,10 @@ tbl = {
 	},	
 	[1258] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Raging Blaze",
-		identifiedResourceName = "불의카타르",
+		identifiedResourceName = "ºOACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar molded from an inferno.",
 			"________________________",
@@ -4348,8 +4175,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4361,10 +4186,10 @@ tbl = {
 	},
 	[1257] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Dusty Thornbush",
-		identifiedResourceName = "땅의카타르",
+		identifiedResourceName = "¶￥ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar sculpted from Earth.",
 			"________________________",
@@ -4375,8 +4200,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4388,10 +4211,10 @@ tbl = {
 	},
 	[1259] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Piercing Wind",
-		identifiedResourceName = "바람의카타르",
+		identifiedResourceName = "¹U¶÷ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar forged with the power of stormy winds.",
 			"________________________",
@@ -4402,8 +4225,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4415,10 +4236,10 @@ tbl = {
 	},
 	[1256] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar of Cold Icicle",
-		identifiedResourceName = "물의카타르",
+		identifiedResourceName = "¹°ACA≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A katar fashioned from a cold, sharp icicle.",
 			"________________________",
@@ -4429,8 +4250,6 @@ tbl = {
 			"^0000CCWeight:^000000 120",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4442,10 +4261,10 @@ tbl = {
 	},
 	[1253] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Katar",
-		identifiedResourceName = "카타르",
+		identifiedResourceName = "A≪A¸¸￡",
 		identifiedDescriptionName = {
 			"A set of daggers in which the blades are positioned above the knuckles for use in close range combat.",
 			"________________________",
@@ -4455,8 +4274,6 @@ tbl = {
 			"^0000CCAttack:^000000 148",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4468,10 +4285,10 @@ tbl = {
 	},
 	[1142] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jewel Sword",
-		identifiedResourceName = "쥬얼소드",
+		identifiedResourceName = "Ae¾o¼Oμa",
 		identifiedDescriptionName = {
 			"A sword that has a beautiful, transparent blade and a hilt adorned with a princely jewel.",
 			"________________________",
@@ -4479,8 +4296,6 @@ tbl = {
 			"^0000CCAttack:^000000 104",
 			"^0000CCWeight:^000000 220",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 68",
@@ -4492,10 +4307,10 @@ tbl = {
 	},	
 	[1255] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jamadhar",
-		identifiedResourceName = "자마다르",
+		identifiedResourceName = "AU¸¶´U¸￡",
 		identifiedDescriptionName = {
 			"A specially made Katar with two blades that move like scissors to reveal a third blade from within.",
 			"________________________",
@@ -4503,8 +4318,6 @@ tbl = {
 			"^0000CCAttack:^000000 165",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4516,10 +4329,10 @@ tbl = {
 	},
 	[1255] = {
 		unidentifiedDisplayName = "Unidentified Katar",
-		unidentifiedResourceName = "카타르",
+		unidentifiedResourceName = "A≪A¸¸￡",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jamadhar",
-		identifiedResourceName = "자마다르",
+		identifiedResourceName = "AU¸¶´U¸￡",
 		identifiedDescriptionName = {
 			"A specially made Katar with two blades that move like scissors to reveal a third blade from within.",
 			"________________________",
@@ -4527,8 +4340,6 @@ tbl = {
 			"^0000CCAttack:^000000 165",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4540,10 +4351,10 @@ tbl = {
 	},
 	[1734] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orc Archer Bow",
-		identifiedResourceName = "오크아쳐의활",
+		identifiedResourceName = "¿AAⓒ¾ÆAAACE°",
 		identifiedDescriptionName = {
 			"A large, powerful bow used by Orc Archers.",
 			"________________________",
@@ -4556,8 +4367,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 160",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -4569,10 +4378,10 @@ tbl = {
 	},
 	[1736] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Double Bound",
-		identifiedResourceName = "더블바운드",
+		identifiedResourceName = "´oºi¹U¿iμa",
 		identifiedDescriptionName = {
 			"A slim and smooth bow specialized for double attacks.",
 			"________________________",
@@ -4582,8 +4391,6 @@ tbl = {
 			"^0000CCAttack:^000000 70",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4595,10 +4402,10 @@ tbl = {
 	},
 	[1730] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Burning Bow",
-		identifiedResourceName = "불타는활",
+		identifiedResourceName = "ºOA¸´AE°",
 		identifiedDescriptionName = {
 			"A flaming bow that seems dangerous to grasp.",
 			"________________________",
@@ -4611,8 +4418,6 @@ tbl = {
 			"^0000CCAttack:^000000 95",
 			"^0000CCWeight:^000000 140",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -4624,10 +4429,10 @@ tbl = {
 	},
 	[1715] = {
 		unidentifiedDisplayName = "Unidentified Bow",
-		unidentifiedResourceName = "보우",
+		unidentifiedResourceName = "º¸¿i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arbalest",
-		identifiedResourceName = "알바레스트",
+		identifiedResourceName = "¾E¹U·¹½ºÆ®",
 		identifiedDescriptionName = {
 			"A powerful siege weapon that is, in essense, a huge crossbow.",
 			"________________________",
@@ -4637,8 +4442,6 @@ tbl = {
 			"^0000CCAttack:^000000 90",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4650,10 +4453,10 @@ tbl = {
 	},
 	[1614] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wand of Occult",
-		identifiedResourceName = "신관의지팡이",
+		identifiedResourceName = "½A°uACAoÆIAI",
 		identifiedDescriptionName = {
 			"A shamanic wand topped with a goat's skull that enhances magic attack power.",
 			"________________________",
@@ -4664,8 +4467,6 @@ tbl = {
 			"^0000CCAttack:^000000 75",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -4677,10 +4478,10 @@ tbl = {
 	},	
 	[1548] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Veteran Hammer",
-		identifiedResourceName = "베테랑햄머",
+		identifiedResourceName = "º￡A×¶uCU¸O",
 		identifiedDescriptionName = {
 			"A hard hammer made out of the pieces of a meteorite from space.",
 			"Ancient clerics said it to be blessed by the Gods.",
@@ -4697,8 +4498,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 180",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 80",
@@ -4710,10 +4509,10 @@ tbl = {
 	},	
 	[1384] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Veteran Axe",
-		identifiedResourceName = "베테랑액스",
+		identifiedResourceName = "º￡A×¶u¾×½º",
 		identifiedDescriptionName = {
 			"An axe made out of the metal which the Ancient God of Blacksmiths gave to humans.",
 			"________________________",
@@ -4728,8 +4527,6 @@ tbl = {
 			"^0000CCAttack:^000000 250",
 			"^0000CCWeight:^000000 300",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 80",
@@ -4741,10 +4538,10 @@ tbl = {
 	},
 	[1158] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Sword",
-		identifiedResourceName = "투핸드소드",
+		identifiedResourceName = "AoCUμa¼Oμa",
 		identifiedDescriptionName = {
 			"A heavy Two-handed sword that can knockdown many enemies in single swing.",
 			"________________________",
@@ -4752,8 +4549,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 220",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4765,10 +4560,10 @@ tbl = {
 	},
 	[1361] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "배틀액스",
+		unidentifiedResourceName = "¹eÆ²¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Two-Handed Axe",
-		identifiedResourceName = "투핸드액스",
+		identifiedResourceName = "AoCUμa¾×½º",
 		identifiedDescriptionName = {
 			"A Two-Handed, double bladed axe.",
 			"________________________",
@@ -4776,8 +4571,6 @@ tbl = {
 			"^0000CCAttack:^000000 185",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -4789,10 +4582,10 @@ tbl = {
 	},
 	[1472] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Soul Staff",
-		identifiedResourceName = "스태프오브소울",
+		identifiedResourceName = "½ºAACA¿Aºe¼O¿i",
 		identifiedDescriptionName = {
 			"A high quality, Two-Handed staff that amplifies psychic power.",
 			"________________________",
@@ -4804,8 +4597,6 @@ tbl = {
 			"^0000CCAttack:^000000 25",
 			"^0000CCWeight:^000000 140",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 73",
@@ -4817,10 +4608,10 @@ tbl = {
 	},
 	[1163] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claymore",
-		identifiedResourceName = "크레이모어",
+		identifiedResourceName = "Aⓒ·¹AI¸ð¾i",
 		identifiedDescriptionName = {
 			"Large, double-edged broad sword that was used by the Scottish highlanders.",
 			"________________________",
@@ -4828,8 +4619,6 @@ tbl = {
 			"^0000CCAttack:^000000 180",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -4841,10 +4630,10 @@ tbl = {
 	},
 	[13034] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Desert Twilight",
-		identifiedResourceName = "사막의황혼",
+		identifiedResourceName = "≫c¸·ACE²E￥",
 		identifiedDescriptionName = {
 			"One of a pair of daggers made for the Assassin Guild member.",
 			"________________________",
@@ -4859,8 +4648,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 60",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4872,10 +4659,10 @@ tbl = {
 	},
 	[1124] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orcish Sword",
-		identifiedResourceName = "오키쉬소드",
+		identifiedResourceName = "¿AA°½￢¼Oμa",
 		identifiedDescriptionName = {
 			"Crafted by Orcish smiths and used by Orc Warriors, this one-handed sword is symbolic to the Orc tribe.",
 			"________________________",
@@ -4885,8 +4672,6 @@ tbl = {
 			"^0000CCAttack:^000000 90",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 5",
@@ -4898,10 +4683,10 @@ tbl = {
 	},	
 	[1626] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Piercing Staff",
-		identifiedResourceName = "스태프오브피어싱",
+		identifiedResourceName = "½ºAACA¿AºeCC¾i½I",
 		identifiedDescriptionName = {
 			"A staff inset with a gem that constantly emits waves that can disrupt the MDEF of enemies.",
 			"________________________",
@@ -4915,8 +4700,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -4928,10 +4711,10 @@ tbl = {
 	},	
 	[13437] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orcish Sword",
-		identifiedResourceName = "오키쉬소드",
+		identifiedResourceName = "¿AA°½￢¼Oμa",
 		identifiedDescriptionName = {
 			"A sword used by Orc tribe.",
 			"________________________",
@@ -4941,8 +4724,6 @@ tbl = {
 			"^0000CCAttack:^000000 90",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 5",
@@ -4954,10 +4735,10 @@ tbl = {
 	},	
 	[13046] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Krieg",
-		identifiedResourceName = "크리그",
+		identifiedResourceName = "Aⓒ¸®±×",
 		identifiedDescriptionName = {
 			"This dagger is intended to give more pain, rather than killing the target, with its thorny shape.",
 			"________________________",
@@ -4982,10 +4763,10 @@ tbl = {
 	},	
 	[1189] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "바스타드소드",
+		unidentifiedResourceName = "¹U½ºA¸μa¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Krasnaya",
-		identifiedResourceName = "크라스나야",
+		identifiedResourceName = "Aⓒ¶o½º³ª¾ß",
 		identifiedDescriptionName = {
 			"A strong-looking sword which resembles the shape of a Claymore. Its handgrip is decorated with red color from the High Class Knights.",
 			"________________________",
@@ -5009,10 +4790,10 @@ tbl = {
 	},	
 	[1513] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Morning Star",
-		identifiedResourceName = "모닝스타",
+		identifiedResourceName = "¸ð´×½ºA¸",
 		identifiedDescriptionName = {
 			"A metal club topped with a solid steel ball that's covered in spikes.",
 			"________________________",
@@ -5020,8 +4801,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5033,10 +4812,10 @@ tbl = {
 	},
 	[1552] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tablet",
-		identifiedResourceName = "타블렛",
+		identifiedResourceName = "A¸ºi·¿",
 		identifiedDescriptionName = {
 			"A marble tablet on which the wise words of the ancients have been engraved and immortalized.",
 			"________________________",
@@ -5044,8 +4823,6 @@ tbl = {
 			"^0000CCAttack:^000000 125",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5057,10 +4834,10 @@ tbl = {
 	},	
 	[1517] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sword Mace",
-		identifiedResourceName = "소드메이스",
+		identifiedResourceName = "¼Oμa¸ÞAI½º",
 		identifiedDescriptionName = {
 			"A specialty weapon that beautifully combines the power of swords ^333333and^000000 maces.",
 			"________________________",
@@ -5068,8 +4845,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5081,10 +4856,10 @@ tbl = {
 	},	
 	[1518] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sword Mace",
-		identifiedResourceName = "소드메이스",
+		identifiedResourceName = "¼Oμa¸ÞAI½º",
 		identifiedDescriptionName = {
 			"A specialty weapon that beautifully combines the power of swords ^333333and^000000 maces.",
 			"________________________",
@@ -5092,8 +4867,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5105,10 +4878,10 @@ tbl = {
 	},	
 	[1514] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Morning Star",
-		identifiedResourceName = "모닝스타",
+		identifiedResourceName = "¸ð´×½ºA¸",
 		identifiedDescriptionName = {
 			"A metal club topped with a solid steel ball that's covered in spikes.",
 			"________________________",
@@ -5116,8 +4889,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5129,10 +4900,10 @@ tbl = {
 	},	
 	[13012] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Murasame",
-		identifiedResourceName = "무라사메",
+		identifiedResourceName = "¹≪¶o≫c¸Þ",
 		identifiedDescriptionName = {
 			"A famous sword that is said to be sharp enough to divide oceans or cut through the air to make it bleed water.",
 			"________________________",
@@ -5143,8 +4914,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5156,10 +4925,10 @@ tbl = {
 	},
 	[13013] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Murasame",
-		identifiedResourceName = "무라사메",
+		identifiedResourceName = "¹≪¶o≫c¸Þ",
 		identifiedDescriptionName = {
 			"A famous sword that is said to be sharp enough to divide oceans or cut through the air to make it bleed water.",
 			"________________________",
@@ -5170,8 +4939,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5183,10 +4950,10 @@ tbl = {
 	},
 	[13035] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sandstorm",
-		identifiedResourceName = "모래폭풍",
+		identifiedResourceName = "¸ð·¡ÆøC³",
 		identifiedDescriptionName = {
 			"One of a pair of daggers made for the Assassin Guild member.",
 			"________________________",
@@ -5201,8 +4968,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 60",
 			"^0000CCWeapon Level:^000000 2",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5214,10 +4979,10 @@ tbl = {
 	},
 	[1568] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Billows",
-		identifiedResourceName = "물의책",
+		identifiedResourceName = "¹°ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5225,8 +4990,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5238,10 +5001,10 @@ tbl = {
 	},
 	[1570] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Blazing Sun",
-		identifiedResourceName = "불의책",
+		identifiedResourceName = "ºOACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5249,8 +5012,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5262,10 +5023,10 @@ tbl = {
 	},
 	[1571] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Gust of Wind",
-		identifiedResourceName = "바람의책",
+		identifiedResourceName = "¹U¶÷ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5273,8 +5034,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5286,10 +5045,10 @@ tbl = {
 	},
 	[1309] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "액스",
+		unidentifiedResourceName = "¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orcish Axe",
-		identifiedResourceName = "오키쉬액스",
+		identifiedResourceName = "¿AA°½￢¾×½º",
 		identifiedDescriptionName = {
 			"An axe crafted by Orcish smiths for Orcish warriors.",
 			"________________________",
@@ -5297,8 +5056,6 @@ tbl = {
 			"^0000CCAttack:^000000 75",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 3",
@@ -5310,10 +5067,10 @@ tbl = {
 	},
 	[1573] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ancient Magic",
-		identifiedResourceName = "고대의마법",
+		identifiedResourceName = "°i´eAC¸¶¹y",
 		identifiedDescriptionName = {
 			"A book with a Very impressive phrase,'There is no royal road to learning.' on its cover.",
 			"Practice makes perfect. If you keep trying, you'll be an expert before you know it.",
@@ -5329,8 +5086,6 @@ tbl = {
 			"^0000CCAttack:^000000 30",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5342,10 +5097,10 @@ tbl = {
 	},
 	[1611] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arc Wand",
-		identifiedResourceName = "아크완드",
+		identifiedResourceName = "¾ÆAⓒ¿Iμa",
 		identifiedDescriptionName = {
 			"An ornate, elegantly crafted wand that grants powerful magical energy.",
 			"________________________",
@@ -5356,8 +5111,6 @@ tbl = {
 			"^0000CCAttack:^000000 60",
 			"^0000CCWeight:^000000 40",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5369,10 +5122,10 @@ tbl = {
 	},
 	[1919] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Base Guitar",
-		identifiedResourceName = "베이스기타",
+		identifiedResourceName = "º￡AI½º±aA¸",
 		identifiedDescriptionName = {
 			"An instrument that produces low pitched sound.",
 			"________________________",
@@ -5386,8 +5139,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5399,10 +5150,10 @@ tbl = {
 	},
 	[1551] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bible",
-		identifiedResourceName = "바이블",
+		identifiedResourceName = "¹UAIºi",
 		identifiedDescriptionName = {
 			"A book containing a compilation of ancient and sacred writings.",
 			"________________________",
@@ -5412,8 +5163,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5425,10 +5174,10 @@ tbl = {
 	},
 	[1553] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Billows",
-		identifiedResourceName = "물의책",
+		identifiedResourceName = "¹°ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5436,8 +5185,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^0000BB Water",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5449,10 +5196,10 @@ tbl = {
 	},
 	[1556] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Gust of Wind",
-		identifiedResourceName = "바람의책",
+		identifiedResourceName = "¹U¶÷ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5460,8 +5207,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5473,10 +5218,10 @@ tbl = {
 	},
 	[1554] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Mother Earth",
-		identifiedResourceName = "땅의책",
+		identifiedResourceName = "¶￥ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5484,8 +5229,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5497,10 +5240,10 @@ tbl = {
 	},
 	[1555] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Blazing Sun",
-		identifiedResourceName = "불의책",
+		identifiedResourceName = "ºOACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -5508,8 +5251,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5521,10 +5262,10 @@ tbl = {
 	},
 	[1914] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Burning Passion Guitar",
-		identifiedResourceName = "불의기타",
+		identifiedResourceName = "ºOAC±aA¸",
 		identifiedDescriptionName = {
 			"A magically dazzling guitar that bewitches its user to play songs of passion once it's held in his hands.",
 			"________________________",
@@ -5533,8 +5274,6 @@ tbl = {
 			"^0000CCWeight:^000000 90",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -5546,10 +5285,10 @@ tbl = {
 	},
 	[13158] = {
 		unidentifiedDisplayName = "Unidentified Gatling Gun",
-		unidentifiedResourceName = "드리프터",
+		unidentifiedResourceName = "μa¸®CAAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Butcher",
-		identifiedResourceName = "붓쳐",
+		identifiedResourceName = "º×AA",
 		identifiedDescriptionName = {
 			"A Gatling Gun imbued with enormous destructive power.",
 			"________________________",
@@ -5559,8 +5298,6 @@ tbl = {
 			"^0000CCAttack:^000000 75",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 68",
@@ -5572,10 +5309,10 @@ tbl = {
 	},
 	[13159] = {
 		unidentifiedDisplayName = "Unidentified Gatling Gun",
-		unidentifiedResourceName = "드리프터",
+		unidentifiedResourceName = "μa¸®CAAI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Butcher",
-		identifiedResourceName = "붓쳐",
+		identifiedResourceName = "º×AA",
 		identifiedDescriptionName = {
 			"A Gatling Gun imbued with enormous destructive power.",
 			"________________________",
@@ -5585,8 +5322,6 @@ tbl = {
 			"^0000CCAttack:^000000 75",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 68",
@@ -5598,10 +5333,10 @@ tbl = {
 	},
 	[1925] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cello",
-		identifiedResourceName = "첼로",
+		identifiedResourceName = "A¿·I",
 		identifiedDescriptionName = {
 			"An instrument with a low tone. Its 4 strings play nice calm sounds so this instrument is good for both solo and concert play.",
 			"________________________",
@@ -5616,8 +5351,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5629,10 +5362,10 @@ tbl = {
 	},
 	[1246] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cinquedea",
-		identifiedResourceName = "친퀘디아",
+		identifiedResourceName = "A￡Auμð¾Æ",
 		identifiedDescriptionName = {
 			"A wide bladed short sword that was crafted in a western country.",
 			"________________________",
@@ -5640,8 +5373,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -5653,10 +5384,10 @@ tbl = {
 	},
 	[1810] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claw",
-		identifiedResourceName = "크로",
+		identifiedResourceName = "Aⓒ·I",
 		identifiedDescriptionName = {
 			"A weapon with three long steel claws that have proven effective in close combat.",
 			"________________________",
@@ -5666,8 +5397,6 @@ tbl = {
 			"^0000CCAttack:^000000 86",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5679,10 +5408,10 @@ tbl = {
 	},
 	[1822] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Combo Battle Gloves",
-		identifiedResourceName = "연격의투갑",
+		identifiedResourceName = "¿￢°YACAo°ⓒ",
 		identifiedDescriptionName = {
 			"The magic words engraved on these gloves can grant incredible power to the Monk that wears them.",
 			"________________________",
@@ -5692,8 +5421,6 @@ tbl = {
 			"^0000CCAttack:^000000 30",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -5705,10 +5432,10 @@ tbl = {
 	},
 	[1647] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Croce Staff",
-		identifiedResourceName = "크로체스태프",
+		identifiedResourceName = "Aⓒ·IA¼½ºAACA",
 		identifiedDescriptionName = {
 			"The official staff for High Class Clerics. It is decorated with a red Prontera Cathedral Emblem.",
 			"________________________",
@@ -5722,8 +5449,6 @@ tbl = {
 			"^0000CCWeight:^000000 50",
 			"^0000CCElement:^777777 Holy",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -5735,10 +5460,10 @@ tbl = {
 	},
 	[13038] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dagger of Hunter",
-		identifiedResourceName = "추적자의단검",
+		identifiedResourceName = "AßAuAUAC´U°E",
 		identifiedDescriptionName = {
 			"Specialized in back-stabbing. This dagger is customized for stalkers.",
 			"________________________",
@@ -5752,8 +5477,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5765,10 +5488,10 @@ tbl = {
 	},
 	[1226] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Damascus",
-		identifiedResourceName = "다마스커스",
+		identifiedResourceName = "´U¸¶½ºA¿½º",
 		identifiedDescriptionName = {
 			"A lethal knife made of a special metal that can easily cut straight into the heart of an enemy.",
 			"________________________",
@@ -5778,8 +5501,6 @@ tbl = {
 			"^0000CCAttack:^000000 118",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5791,10 +5512,10 @@ tbl = {
 	},
 	[1820] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Electric Fist",
-		identifiedResourceName = "일렉트릭피스트",
+		identifiedResourceName = "AI·ºÆ®¸?CC½ºÆ®",
 		identifiedDescriptionName = {
 			"A knuckle imbued with the power of lightning that occasionally shocks enemies.",
 			"________________________",
@@ -5804,8 +5525,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -5817,10 +5536,10 @@ tbl = {
 	},
 	[1613] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mighty Staff",
-		identifiedResourceName = "마이트스태프",
+		identifiedResourceName = "¸¶AIÆ®½ºAACA",
 		identifiedDescriptionName = {
 			"A rare staff that can convert psychic energy into brute strength.",
 			"________________________",
@@ -5833,8 +5552,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5846,10 +5563,10 @@ tbl = {
 	},	
 	[1971] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Electric Wire",
-		identifiedResourceName = "바람의채찍",
+		identifiedResourceName = "¹U¶÷ACA¤Ai",
 		identifiedDescriptionName = {
 			"An electric wire. Beware of electrick shock.",
 			"________________________",
@@ -5858,8 +5575,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -5871,10 +5586,10 @@ tbl = {
 	},
 	[13414] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Elemental Sword",
-		identifiedResourceName = "엘레멘탈소드",
+		identifiedResourceName = "¿¤·¹¸aA≫¼Oμa",
 		identifiedDescriptionName = {
 			"A magical sword that bears 4 different elements of nature. Very effective to enemies without the elements of Water, Wind, Earth and Fire.",
 			"________________________",
@@ -5891,8 +5606,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5904,10 +5617,10 @@ tbl = {
 	},
 	[1564] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Encyclopedia",
-		identifiedResourceName = "대백과사전",
+		identifiedResourceName = "´e¹e°u≫cAu",
 		identifiedDescriptionName = {
 			"An encyclopedia distributed by a Prontera publisher that is famous for using solid binding in their books.",
 			"Those struck by this book will swear the binding is diamond hard.",
@@ -5921,8 +5634,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -5934,10 +5645,10 @@ tbl = {
 	},
 	[1615] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Evil Bone Wand",
-		identifiedResourceName = "해골지팡이",
+		identifiedResourceName = "CØ°nAoÆIAI",
 		identifiedDescriptionName = {
 			"Since evil spirits possess this wand of human bone, its suffocatingly accursed aura can be sensed by those who wield it.",
 			"________________________",
@@ -5949,8 +5660,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^777777 Undead",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5962,10 +5671,10 @@ tbl = {
 	},
 	[1812] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Finger",
-		identifiedResourceName = "핑거",
+		identifiedResourceName = "CI°A",
 		identifiedDescriptionName = {
 			"Claws shaped like human fingers with long, sharp nails.",
 			"________________________",
@@ -5973,8 +5682,6 @@ tbl = {
 			"^0000CCAttack:^000000 97",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -5986,18 +5693,16 @@ tbl = {
 	},
 	[1143] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gaia Sword",
-		identifiedResourceName = "가이아소드",
+		identifiedResourceName = "°¡AI¾Æ¼Oμa",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 One-Handed Sword",
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 250",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 74",
@@ -6009,10 +5714,10 @@ tbl = {
 	},
 	[1967] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gaia Whip",
-		identifiedResourceName = "땅의채찍",
+		identifiedResourceName = "¶￥ACA¤Ai",
 		identifiedDescriptionName = {
 			"A whip fashioned out of tough tree roots that have been braided together.",
 			"________________________",
@@ -6021,8 +5726,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6034,10 +5737,10 @@ tbl = {
 	},
 	[1917] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gentle Breeze Guitar",
-		identifiedResourceName = "바람의기타",
+		identifiedResourceName = "¹U¶÷AC±aA¸",
 		identifiedDescriptionName = {
 			"A magical guitar which fills the one who plays it with a desire for traveling.",
 			"________________________",
@@ -6046,8 +5749,6 @@ tbl = {
 			"^0000CCWeight:^000000 90",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6059,10 +5760,10 @@ tbl = {
 	},
 	[1219] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gladius",
-		identifiedResourceName = "그라디우스",
+		identifiedResourceName = "±×¶oμð¿i½º",
 		identifiedDescriptionName = {
 			"A strong dagger that is usually crafted by traditional artisans.",
 			"________________________",
@@ -6070,8 +5771,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6083,10 +5782,10 @@ tbl = {
 	},
 	[1220] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gladius",
-		identifiedResourceName = "그라디우스",
+		identifiedResourceName = "±×¶oμð¿i½º",
 		identifiedDescriptionName = {
 			"A strong dagger that is usually crafted by traditional artisans.",
 			"________________________",
@@ -6094,8 +5793,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6107,10 +5804,10 @@ tbl = {
 	},	
 	[1222] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Damascus",
-		identifiedResourceName = "다마스커스",
+		identifiedResourceName = "´U¸¶½ºA¿½º",
 		identifiedDescriptionName = {
 			"A lethal knife made of a special metal that can easily cut straight into the heart of an enemy.",
 			"________________________",
@@ -6120,8 +5817,6 @@ tbl = {
 			"^0000CCAttack:^000000 118",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6133,10 +5828,10 @@ tbl = {
 	},
 	[1245] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cinquedea",
-		identifiedResourceName = "친퀘디아",
+		identifiedResourceName = "A￡Auμð¾Æ",
 		identifiedDescriptionName = {
 			"A wide bladed short sword that was crafted in a western country.",
 			"________________________",
@@ -6144,8 +5839,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6157,10 +5850,10 @@ tbl = {
 	},
 	[1120] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tsurugi",
-		identifiedResourceName = "츠루기",
+		identifiedResourceName = "A÷·c±a",
 		identifiedDescriptionName = {
 			"One of the most powerful one-handed swords, the Tsurugi was favored by the Japanese samurai.",
 			"________________________",
@@ -6168,8 +5861,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6181,10 +5872,10 @@ tbl = {
 	},	
 	[1119] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tsurugi",
-		identifiedResourceName = "츠루기",
+		identifiedResourceName = "A÷·c±a",
 		identifiedDescriptionName = {
 			"One of the most powerful one-handed swords, the Tsurugi was favored by the Japanese samurai.",
 			"________________________",
@@ -6192,8 +5883,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6205,10 +5894,10 @@ tbl = {
 	},
 	[1128] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Haedong Gum",
-		identifiedResourceName = "해동검",
+		identifiedResourceName = "CØμ¿°E",
 		identifiedDescriptionName = {
 			"A one-handed sword from far-eastern country that known has been used not just for eliminating, but also for training.",
 			"________________________",
@@ -6218,8 +5907,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6231,10 +5918,10 @@ tbl = {
 	},	
 	[1123] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Haedong Gum",
-		identifiedResourceName = "해동검",
+		identifiedResourceName = "CØμ¿°E",
 		identifiedDescriptionName = {
 			"A one-handed sword from far-eastern country that known has been used not just for eliminating, but also for training.",
 			"________________________",
@@ -6244,8 +5931,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6257,10 +5942,10 @@ tbl = {
 	},
 	[1821] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Seismic Fist",
-		identifiedResourceName = "사이즈믹피스트",
+		identifiedResourceName = "≫cAIAi¹ICC½ºÆ®",
 		identifiedDescriptionName = {
 			"A knuckle imbued with the power of Mother Earth that can be used to crush your enemies.",
 			"________________________",
@@ -6270,8 +5955,6 @@ tbl = {
 			"^0000CCAttack:^000000 80",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -6283,10 +5966,10 @@ tbl = {
 	},	
 	[1144] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sashimi",
-		identifiedResourceName = "사시미",
+		identifiedResourceName = "≫c½A¹I",
 		identifiedDescriptionName = {
 			"An extremely sharp, thin bladed sword that is very efficient when slicing fish to make Japanese cuisine.",
 			"________________________",
@@ -6297,8 +5980,6 @@ tbl = {
 			"^0000CCWeight:^000000 140",
 			"^0000CCElement:^33CC00 Wind",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 48",
@@ -6310,10 +5991,10 @@ tbl = {
 	},	
 	[1560] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sage's Diary",
-		identifiedResourceName = "현자의일기",
+		identifiedResourceName = "CoAUACAI±a",
 		identifiedDescriptionName = {
 			"The diary of a great sage, published with him never knowing.",
 			"________________________",
@@ -6329,8 +6010,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 110",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -6342,10 +6021,10 @@ tbl = {
 	},	
 	[1127] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Saber",
-		identifiedResourceName = "세이버",
+		identifiedResourceName = "¼¼AI¹o",
 		identifiedDescriptionName = {
 			"A heavy one-handed cavalry sword with a slightly curved blade.",
 			"________________________",
@@ -6353,8 +6032,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6366,10 +6043,10 @@ tbl = {
 	},	
 	[1126] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Saber",
-		identifiedResourceName = "세이버",
+		identifiedResourceName = "¼¼AI¹o",
 		identifiedDescriptionName = {
 			"A heavy one-handed cavalry sword with a slightly curved blade.",
 			"________________________",
@@ -6377,8 +6054,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6390,10 +6065,10 @@ tbl = {
 	},
 	[1129] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Flamberge",
-		identifiedResourceName = "프람베르그",
+		identifiedResourceName = "CA¶÷º￡¸￡±×",
 		identifiedDescriptionName = {
 			"A powerful one-handed sword with a decoratively wavy, flame-like blade.",
 			"________________________",
@@ -6401,8 +6076,6 @@ tbl = {
 			"^0000CCAttack:^000000 150",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6414,10 +6087,10 @@ tbl = {
 	},
 	[1146] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Town Sword",
-		identifiedResourceName = "타운소드",
+		identifiedResourceName = "A¸¿i¼Oμa",
 		identifiedDescriptionName = {
 			"A common, humbly made sword that is intended for the use of those without any special sword expertise.",
 			"________________________",
@@ -6425,8 +6098,6 @@ tbl = {
 			"^0000CCAttack:^000000 100",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6438,10 +6109,10 @@ tbl = {
 	},
 	[1516] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sword Mace",
-		identifiedResourceName = "소드메이스",
+		identifiedResourceName = "¼Oμa¸ÞAI½º",
 		identifiedDescriptionName = {
 			"A deadly mace topped with 3 extremely sharp blades on its end.",
 			"________________________",
@@ -6449,8 +6120,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 120",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6462,10 +6131,10 @@ tbl = {
 	},
 	[1522] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stunner",
-		identifiedResourceName = "스터너",
+		identifiedResourceName = "½ºAI³E",
 		identifiedDescriptionName = {
 			"A huge, unwieldy club that can knock enemies unconscious.",
 			"________________________",
@@ -6475,8 +6144,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 200",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6488,10 +6155,10 @@ tbl = {
 	},
 	[1610] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arc Wand",
-		identifiedResourceName = "아크완드",
+		identifiedResourceName = "¾ÆAⓒ¿Iμa",
 		identifiedDescriptionName = {
 			"An ornate, elegantly crafted wand that grants powerful magical energy.",
 			"________________________",
@@ -6502,8 +6169,6 @@ tbl = {
 			"^0000CCAttack:^000000 60",
 			"^0000CCWeight:^000000 40",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6515,10 +6180,10 @@ tbl = {
 	},
 	[1618] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Staff of Survival",
-		identifiedResourceName = "생존의지팡이",
+		identifiedResourceName = "≫yA¸ACAoÆIAI",
 		identifiedDescriptionName = {
 			"A staff developed through the united efforts of the Magician Guild and Prontera Church.",
 			"There are two different versions of this staff intended to help new trainees.",
@@ -6567,8 +6232,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6580,10 +6243,10 @@ tbl = {
 	},	
 	[1617] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Staff of Survival",
-		identifiedResourceName = "생존의지팡이",
+		identifiedResourceName = "≫yA¸ACAoÆIAI",
 		identifiedDescriptionName = {
 			"A staff developed through the united efforts of the Magician Guild and Prontera Church.",
 			"There are two different versions of this staff intended to help new trainees.",
@@ -6596,8 +6259,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6609,10 +6270,10 @@ tbl = {
 	},
 	[1619] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Staff of Survival",
-		identifiedResourceName = "생존의지팡이2",
+		identifiedResourceName = "≫yA¸ACAoÆIAI2",
 		identifiedDescriptionName = {
 			"A staff developed through the united efforts of the Magician Guild and Prontera Church.",
 			"There are two different versions of this staff intended to help new trainees.",
@@ -6625,8 +6286,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 100",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6638,10 +6297,10 @@ tbl = {
 	},
 	[1808] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fist",
-		identifiedResourceName = "피스트",
+		identifiedResourceName = "CC½ºÆ®",
 		identifiedDescriptionName = {
 			"A weapon made in the form of a human fist which effectively inflicts damage on enemies.",
 			"________________________",
@@ -6649,8 +6308,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6662,10 +6319,10 @@ tbl = {
 	},	
 	[1807] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fist",
-		identifiedResourceName = "피스트",
+		identifiedResourceName = "CC½ºÆ®",
 		identifiedDescriptionName = {
 			"A weapon made in the form of a human fist which effectively inflicts damage on enemies.",
 			"________________________",
@@ -6673,8 +6330,6 @@ tbl = {
 			"^0000CCAttack:^000000 115",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6686,10 +6341,10 @@ tbl = {
 	},
 	[1809] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claw",
-		identifiedResourceName = "크로",
+		identifiedResourceName = "Aⓒ·I",
 		identifiedDescriptionName = {
 			"A weapon with three long steel claws that have proven effective in close combat.",
 			"________________________",
@@ -6699,8 +6354,6 @@ tbl = {
 			"^0000CCAttack:^000000 86",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6712,10 +6365,10 @@ tbl = {
 	},
 	[1811] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
-		unidentifiedResourceName = "바그낙",
+		unidentifiedResourceName = "¹U±×³≪",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Finger",
-		identifiedResourceName = "핑거",
+		identifiedResourceName = "CI°A",
 		identifiedDescriptionName = {
 			"Claws shaped like human fingers with long, sharp nails.",
 			"________________________",
@@ -6723,8 +6376,6 @@ tbl = {
 			"^0000CCAttack:^000000 97",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 24",
@@ -6736,10 +6387,10 @@ tbl = {
 	},
 	[1907] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Guitar",
-		identifiedResourceName = "기타",
+		identifiedResourceName = "±aA¸",
 		identifiedDescriptionName = {
 			"A six stringed musical instrument that is played by plucking the strings with fingers or a pick.",
 			"________________________",
@@ -6747,8 +6398,6 @@ tbl = {
 			"^0000CCAttack:^000000 142",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6760,10 +6409,10 @@ tbl = {
 	},
 	[1911] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gumoongoh",
-		identifiedResourceName = "거문고",
+		identifiedResourceName = "°A¹®°i",
 		identifiedDescriptionName = {
 			"A traditional chordophone, favored by the aristocracy in days past, which plays deep, subtle notes.",
 			"________________________",
@@ -6771,8 +6420,6 @@ tbl = {
 			"^0000CCAttack:^000000 126",
 			"^0000CCWeight:^000000 130",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -6784,10 +6431,10 @@ tbl = {
 	},
 	[1956] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rante Whip",
-		identifiedResourceName = "란테",
+		identifiedResourceName = "¶oA×",
 		identifiedDescriptionName = {
 			"A whip with a spiked ball attached at the end.",
 			"________________________",
@@ -6795,8 +6442,6 @@ tbl = {
 			"^0000CCAttack:^000000 135",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6808,10 +6453,10 @@ tbl = {
 	},
 	[1958] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tail Whip",
-		identifiedResourceName = "테일",
+		identifiedResourceName = "A×AI",
 		identifiedDescriptionName = {
 			"A whip fashioned out of an animal's tail that is said to bring good luck.",
 			"________________________",
@@ -6821,8 +6466,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6834,10 +6477,10 @@ tbl = {
 	},
 	[1960] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Whip",
-		identifiedResourceName = "휩",
+		identifiedResourceName = "EU",
 		identifiedDescriptionName = {
 			"A fairly common and very normal whip.",
 			"________________________",
@@ -6845,8 +6488,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -6858,10 +6499,10 @@ tbl = {
 	},
 	[4128] = {
 		unidentifiedDisplayName = "Golden Thiefbug Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Golden Thiefbug Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"MDEF +250.",
 			"Reduces physical defense by 90%",
@@ -6877,10 +6518,10 @@ tbl = {
 	},	
 	[4320] = {
 		unidentifiedDisplayName = "Bloody Knight Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Bloody Knight Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Random chance to autocast Level 1 ^009900Meteor Storm^000000 on the target when dealing physical damage.",
 			"Has 20% chance to ^663399Stun^000000 an enemy when attacking.",
@@ -6897,10 +6538,10 @@ tbl = {
 	},	
 	[27083] = {
 		unidentifiedDisplayName = "Hollow Bongun Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Hollow Bongun Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK +1%",
 			"MATK +1%",
@@ -6920,10 +6561,10 @@ tbl = {
 	},	
 	[27086] = {
 		unidentifiedDisplayName = "Hollow Archer Skeleton Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Hollow Archer Skeleton Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Random chance to autocast Level 5 Double Strafing when dealing physical attack with Bow weapon.",
 			"________________________",
@@ -6945,10 +6586,10 @@ tbl = {
 	},	
 	[27085] = {
 		unidentifiedDisplayName = "Hollow Munak Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Hollow Munak Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK +15",
 			"MATK +15",
@@ -6972,10 +6613,10 @@ tbl = {
 	},	
 	[27084] = {
 		unidentifiedDisplayName = "Hollow Sohee Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Hollow Sohee Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"MATK +10",
 			"________________________",
@@ -6997,10 +6638,10 @@ tbl = {
 	},	
 	[27082] = {
 		unidentifiedDisplayName = "Furious Nine Tails Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Furious Nine Tails Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Critical +5",
 			"Increases Critical Damage by 10%",
@@ -7022,10 +6663,10 @@ tbl = {
 	},	
 	[27081] = {
 		unidentifiedDisplayName = "Furious Moonlight Flower Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Furious Moonlight Flower Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Matk + 100, increases SP consumption of skills by 25%",
 			"________________________",
@@ -7044,10 +6685,10 @@ tbl = {
 	},	
 	[27163] = {
 		unidentifiedDisplayName = "Faceworm Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Faceworm Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"AGI -1",
 			"DEX -1",
@@ -7067,10 +6708,10 @@ tbl = {
 	},	
 	[4609] = {
 		unidentifiedDisplayName = "Khalitzburg Knight Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Khalitzburg Knight Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"DEF +20",
 			"________________________",
@@ -7091,10 +6732,10 @@ tbl = {
 	},	
 	[4608] = {
 		unidentifiedDisplayName = "White Knight Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "White Knight Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"ATK +15",
 			"________________________",
@@ -7115,10 +6756,10 @@ tbl = {
 	},	
 	[4115] = {
 		unidentifiedDisplayName = "Hunter Fly Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Hunter Fly Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Has a 5% chance to recover 100 HP per second for 5 seconds when dealing physical damage.",
 			"________________________",
@@ -7133,10 +6774,10 @@ tbl = {
 	},	
 	[4318] = {
 		unidentifiedDisplayName = "Stormy Knight Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Stormy Knight Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Random chance to autocast Level 1 ^009900Storm Gust^000000 on the enemy when dealing physical damage.",
 			"Has 20% chance of ^663399Frozen^000000 an enemy when attacking.",
@@ -7153,10 +6794,10 @@ tbl = {
 	},	
 	[4121] = {
 		unidentifiedDisplayName = "Phreeoni Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Phreeoni Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"HIT +100",
 			"________________________",
@@ -7171,10 +6812,10 @@ tbl = {
 	},	
 	[4144] = {
 		unidentifiedDisplayName = "Osiris Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Osiris Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Restores HP and SP by 100% when resurrected.",
 			"Increases incoming heal effectiveness by 20%",
@@ -7190,10 +6831,10 @@ tbl = {
 	},	
 	[4134] = {
 		unidentifiedDisplayName = "Dracula Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Dracula Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Has a 10% chance to recover 20 SP per second for 7 seconds when dealing physical or magical damage.",
 			"________________________",
@@ -7208,10 +6849,10 @@ tbl = {
 	},	
 	[4131] = {
 		unidentifiedDisplayName = "Moonlight Flower Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Moonlight Flower Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Enables faster movement speed so long as the Footgear to which this card is compounded is equipped.",
 			"________________________",
@@ -7226,10 +6867,10 @@ tbl = {
 	},	
 	[4142] = {
 		unidentifiedDisplayName = "Doppelganger Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Doppelganger Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Enables faster attack speed so long as the weapon to which this card is compounded is equipped.",
 			"________________________",
@@ -7244,10 +6885,10 @@ tbl = {
 	},	
 	[4146] = {
 		unidentifiedDisplayName = "Maya Card",
-		unidentifiedResourceName = "이름없는카드",
+		unidentifiedResourceName = "AI¸§¾ø´AA≪μa",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Maya Card",
-		identifiedResourceName = "이름없는카드",
+		identifiedResourceName = "AI¸§¾ø´AA≪μa",
 		identifiedDescriptionName = {
 			"Reduce damage taken from ^33CC00Wind^000000 and ^777777Ghost^000000 property by 20%",
 			"Increases damage taken from ^FF0000Fire^000000 and ^777777Shadow^000000 elemental attacks by 20%",
@@ -7264,10 +6905,10 @@ tbl = {
 	},	
 	[1961] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Whip",
-		identifiedResourceName = "휩",
+		identifiedResourceName = "EU",
 		identifiedDescriptionName = {
 			"A fairly common and very normal whip.",
 			"________________________",
@@ -7275,8 +6916,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -7288,10 +6927,10 @@ tbl = {
 	},	
 	[1959] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tail Whip",
-		identifiedResourceName = "테일",
+		identifiedResourceName = "A×AI",
 		identifiedDescriptionName = {
 			"A whip fashioned out of an animal's tail that is said to bring good luck.",
 			"________________________",
@@ -7301,8 +6940,6 @@ tbl = {
 			"^0000CCAttack:^000000 105",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -7314,10 +6951,10 @@ tbl = {
 	},	
 	[1912] = {
 		unidentifiedDisplayName = "Unidentified Instrument",
-		unidentifiedResourceName = "바이올린",
+		unidentifiedResourceName = "¹UAI¿A¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gumoongoh",
-		identifiedResourceName = "거문고",
+		identifiedResourceName = "°A¹®°i",
 		identifiedDescriptionName = {
 			"A traditional chordophone, favored by the aristocracy in days past, which plays deep, subtle notes.",
 			"________________________",
@@ -7325,8 +6962,6 @@ tbl = {
 			"^0000CCAttack:^000000 126",
 			"^0000CCWeight:^000000 130",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",
@@ -7338,10 +6973,10 @@ tbl = {
 	},	
 	[13404] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Platinum Shotel",
-		identifiedResourceName = "백금의쇼텔",
+		identifiedResourceName = "¹e±YAC¼iAU",
 		identifiedDescriptionName = {
 			"A fearsome weapon with a uniquely curved blade.",
 			"________________________",
@@ -7351,8 +6986,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -7364,10 +6997,10 @@ tbl = {
 	},
 	[13027] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Scalpel",
-		identifiedResourceName = "메스",
+		identifiedResourceName = "¸Þ½º",
 		identifiedDescriptionName = {
 			"A small, light and sharp sword that is optimized for swift strikes.",
 			"________________________",
@@ -7377,8 +7010,6 @@ tbl = {
 			"^0000CCAttack:^000000 120",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -7390,10 +7021,10 @@ tbl = {
 	},
 	[1523] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Spike",
-		identifiedResourceName = "스파이크",
+		identifiedResourceName = "½ºÆAAIAⓒ",
 		identifiedDescriptionName = {
 			"A flail, entirely covered in spikes, that swings wildly and haphazardly in battle.",
 			"________________________",
@@ -7405,8 +7036,6 @@ tbl = {
 			"^0000CCAttack:^000000 85",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -7418,10 +7047,10 @@ tbl = {
 	},	
 	[1648] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Staff of Bordeaux",
-		identifiedResourceName = "스태프오브오르도",
+		identifiedResourceName = "½ºAACA¿Aºe¿A¸￡μμ",
 		identifiedDescriptionName = {
 			"A short, simply designed staff; like a baton. A jewel, with the power of justice, is set on it.",
 			"________________________",
@@ -7437,8 +7066,6 @@ tbl = {
 			"^0000CCAttack:^000000 30",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -7450,10 +7077,10 @@ tbl = {
 	},
 	[13028] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tooth Blade",
-		identifiedResourceName = "투스블레이드",
+		identifiedResourceName = "Ao½ººi·¹AIμa",
 		identifiedDescriptionName = {
 			"A dentist's scalpel that is intended to treat patient's teeth, but it can also be used offensively to impend the victim's ability to speak.",
 			"________________________",
@@ -7465,8 +7092,6 @@ tbl = {
 			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 70",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -7478,10 +7103,10 @@ tbl = {
 	},
 	[2213] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Kitty Band",
-		identifiedResourceName = "고양이머리띠",
+		identifiedResourceName = "°i¾cAI¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A hairband that gives one the appearance of having ears like a cat.",
 			"________________________",
@@ -7500,10 +7125,10 @@ tbl = {
 	},	
 	[2251] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Monk Hat",
-		identifiedResourceName = "성직자의모자",
+		identifiedResourceName = "¼ºA÷AUAC¸ðAU",
 		identifiedDescriptionName = {
 			"A ceremonial hat worn by monks that contains a sacred force which offers protection from evil.",
 			"________________________",
@@ -7525,10 +7150,10 @@ tbl = {
 	},	
 	[5687] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orc Helm",
-		identifiedResourceName = "오크족헬름",
+		identifiedResourceName = "¿AAⓒA·Ci¸§",
 		identifiedDescriptionName = {
 			"A replica of Orc Helm.",
 			"________________________",
@@ -7547,10 +7172,10 @@ tbl = {
 	},	
 	[2234] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tiara",
-		identifiedResourceName = "티아라",
+		identifiedResourceName = "Æ¼¾Æ¶o",
 		identifiedDescriptionName = {
 			"A jeweled coronet said to grant the wisdom of an ancient queen that had worn it.",
 			"________________________",
@@ -7572,10 +7197,10 @@ tbl = {
 	},	
 	[5164] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tiara",
-		identifiedResourceName = "티아라",
+		identifiedResourceName = "Æ¼¾Æ¶o",
 		identifiedDescriptionName = {
 			"A jeweled coronet that is said to grant its wearer the wisdom of a queen that had once worn it.",
 			"________________________",
@@ -7596,10 +7221,10 @@ tbl = {
 	},	
 	[5141] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Marionette Doll",
-		identifiedResourceName = "마리오넷모자",
+		identifiedResourceName = "¸¶¸®¿A³Y¸ðAU",
 		identifiedDescriptionName = {
 			"A Marionette doll that gives you strange chills when you wear it on your head.",
 			"________________________",
@@ -7622,10 +7247,10 @@ tbl = {
 	},	
 	[5030] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Panda Hat",
-		identifiedResourceName = "팬더곰모자",
+		identifiedResourceName = "ÆO´o°o¸ðAU",
 		identifiedDescriptionName = {
 			"A cute and cuddly headgear made in the form of a Panda's head.",
 			"________________________",
@@ -7646,10 +7271,10 @@ tbl = {
 	},	
 	[5157] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orc Helm",
-		identifiedResourceName = "오크족헬름",
+		identifiedResourceName = "¿AAⓒA·Ci¸§",
 		identifiedDescriptionName = {
 			"A surprisingly durable helmet that was crafted by expert Orcish smiths.",
 			"________________________",
@@ -7669,10 +7294,10 @@ tbl = {
 	},	
 	[5037] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fruit Peel",
-		identifiedResourceName = "열매껍질",
+		identifiedResourceName = "¿­¸A²®Au",
 		identifiedDescriptionName = {
 			"A hat made out of half of a fruit. Although it's solid and provides excellent defense, it is very delicate.",
 			"Therefore it is may easily break when trying to Refine this item.",
@@ -7692,10 +7317,10 @@ tbl = {
 	},	
 	[5158] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Monk Hat",
-		identifiedResourceName = "성직자의모자",
+		identifiedResourceName = "¼ºA÷AUAC¸ðAU",
 		identifiedDescriptionName = {
 			"A flat hat worn by priests and monks that is comfortable and protective.",
 			"________________________",
@@ -7717,10 +7342,10 @@ tbl = {
 	},	
 	[2299] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orc Helm",
-		identifiedResourceName = "오크족헬름",
+		identifiedResourceName = "¿AAⓒA·Ci¸§",
 		identifiedDescriptionName = {
 			"A hardy helmet that was crafted by the most expert of Orcish smiths.",
 			"________________________",
@@ -7738,10 +7363,10 @@ tbl = {
 	},	
 	[5157] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orc Helm",
-		identifiedResourceName = "오크족헬름",
+		identifiedResourceName = "¿AAⓒA·Ci¸§",
 		identifiedDescriptionName = {
 			"A surprisingly durable helmet that was crafted by expert Orcish smiths.",
 			"________________________",
@@ -7759,10 +7384,10 @@ tbl = {
 	},	
 	[2259] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mini Propeller",
-		identifiedResourceName = "프로펠라",
+		identifiedResourceName = "CA·IÆc¶o",
 		identifiedDescriptionName = {
 			"A headgear topped with a fashionably experimental propeller.",
 			"________________________",
@@ -7781,10 +7406,10 @@ tbl = {
 	},	
 	[2305] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Adventurer's Suit",
-		identifiedResourceName = "어드밴쳐슈츠",
+		identifiedResourceName = "¾iμa¹eAA½´A÷",
 		identifiedDescriptionName = {
 			"A light, comfortable suit made just for young adventurers.",
 			"________________________",
@@ -7793,8 +7418,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -7804,10 +7427,10 @@ tbl = {
 	},
 	[1306] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "액스",
+		unidentifiedResourceName = "¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "War Axe",
-		identifiedResourceName = "워액스",
+		identifiedResourceName = "¿o¾×½º",
 		identifiedDescriptionName = {
 			"A bloodthirsty axe that has aided many warriors in battle.",
 			"________________________",
@@ -7818,8 +7441,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 420",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 76",
@@ -7831,10 +7452,10 @@ tbl = {
 	},	
 	[2306] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Adventurer's Suit",
-		identifiedResourceName = "어드밴쳐슈츠",
+		identifiedResourceName = "¾iμa¹eAA½´A÷",
 		identifiedDescriptionName = {
 			"A light, comfortable suit made just for young adventurers.",
 			"________________________",
@@ -7843,8 +7464,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -7854,10 +7473,10 @@ tbl = {
 	},
 	[2348] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ebecee's Rage of Typhoon",
-		identifiedResourceName = "바람의갑옷",
+		identifiedResourceName = "¹U¶÷AC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"A suit of armor that is enchanted with the wind elemental.",
 			"________________________",
@@ -7865,8 +7484,6 @@ tbl = {
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^33CC00 Wind",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -7878,10 +7495,10 @@ tbl = {
 	},
 	[2507] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cape of Ancient Lord",
-		identifiedResourceName = "옛영주의망토",
+		identifiedResourceName = "¿¾¿μAOAC¸AAa",
 		identifiedDescriptionName = {
 			"A fancy cape said to have once been worn by marquises long ago.",
 			"________________________",
@@ -7890,8 +7507,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 9",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -7903,10 +7518,10 @@ tbl = {
 	},
 	[2254] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel Wings",
-		identifiedResourceName = "천사의머리띠",
+		identifiedResourceName = "Aμ≫cAC¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A headband adorned with what appears to be the wings of an angel.",
 			"It contains holiness that blesses the wearer's soul and offers protection from dark forces.",
@@ -7920,8 +7535,6 @@ tbl = {
 			"^0000CCDefense:^000000 4",
 			"^0000CCPosition:^000000 Upper",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -7932,10 +7545,10 @@ tbl = {
 	},
 	[5125] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel's Kiss",
-		identifiedResourceName = "천사의입맞춤",
+		identifiedResourceName = "Aμ≫cACAO¸AAa",
 		identifiedDescriptionName = {
 			"A hair ornament that was kissed by the Super Novice's Guardian Angel.",
 			"________________________",
@@ -7950,8 +7563,6 @@ tbl = {
 			"^0000CCDefense:^000000 6",
 			"^0000CCPosition:^000000 Upper",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -7963,10 +7574,10 @@ tbl = {
 	},
 	[2420] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel's Reincarnation",
-		identifiedResourceName = "천사의재래",
+		identifiedResourceName = "Aμ≫cACAc·¡",
 		identifiedDescriptionName = {
 			"Heavenly sandals worn by the Guardian Angel of Super Novices.",
 			"________________________",
@@ -7980,8 +7591,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 25",
@@ -7993,10 +7602,10 @@ tbl = {
 	},
 	[2521] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angelic Cardigan",
-		identifiedResourceName = "천사의온기",
+		identifiedResourceName = "Aμ≫cAC¿A±a",
 		identifiedDescriptionName = {
 			"The Super Novice Guardian Angel's warm and comfortable cardigan.",
 			"________________________",
@@ -8010,8 +7619,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 6",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 20",
@@ -8023,10 +7630,10 @@ tbl = {
 	},
 	[2355] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angelic Protection",
-		identifiedResourceName = "천사의가호",
+		identifiedResourceName = "Aμ≫cAC°¡E￡",
 		identifiedDescriptionName = {
 			"Super Novice Guardian Angel's robe.",
 			"________________________",
@@ -8040,8 +7647,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -8053,10 +7658,10 @@ tbl = {
 	},
 	[2389] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Armor of Naga",
-		identifiedResourceName = "나가의비늘갑옷",
+		identifiedResourceName = "³ª°¡ACºn´A°ⓒ¿E",
 		identifiedDescriptionName = {
 			"A suit of armor made from the scales of Naga. It is very sharp and shiny and it seems like it will hurt anything that goes near it.",
 			"________________________",
@@ -8067,8 +7672,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 45",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -8079,10 +7682,10 @@ tbl = {
 	},
 	[2441] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Beach Sandals",
-		identifiedResourceName = "샌들",
+		identifiedResourceName = "≫÷μe",
 		identifiedDescriptionName = {
 			"A sandals received as a gift from Comodo Environmental Commission.",
 			"It seems to match perfect with Comodo beach.",
@@ -8106,10 +7709,10 @@ tbl = {
 	},
 	[2432] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pointed Shoes",
-		identifiedResourceName = "뾰족구두",
+		identifiedResourceName = "≫IA·±¸μI",
 		identifiedDescriptionName = {
 			"Striped high heeled shoes said to have been worn by a wicked witch since they enhanced her magical powers.",
 			"________________________",
@@ -8118,8 +7721,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -8130,10 +7731,10 @@ tbl = {
 	},
 	[2121] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Memory Book",
-		identifiedResourceName = "메모라이즈북",
+		identifiedResourceName = "¸Þ¸ð¶oAIAiºI",
 		identifiedDescriptionName = {
 			"A spellbook that is impractically huge and more useful as a shield than as a spell reference.",
 			"________________________",
@@ -8147,8 +7748,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Magician and Soul Linker classes"
@@ -8159,10 +7758,10 @@ tbl = {
 	},
 	[2943] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Critical Ring",
-		identifiedResourceName = "크리티컬링",
+		identifiedResourceName = "Aⓒ¸®Æ¼AA¸μ",
 		identifiedDescriptionName = {
 			"An esoteric ring which enables its wearer into amplify his hidden power.",
 			"________________________",
@@ -8191,10 +7790,10 @@ tbl = {
 	},
 	[12883] = {
 		unidentifiedDisplayName = "Almighty",
-		unidentifiedResourceName = "마아모울",
+		unidentifiedResourceName = "¸¶¾Æ¸ð¿i",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Almighty",
-		identifiedResourceName = "마아모울",
+		identifiedResourceName = "¸¶¾Æ¸ð¿i",
 		identifiedDescriptionName = {
 			"Created from all ultimate ingredients.",
 			"All Stats +10, ATK +30, MATK +30 for 30 minutes.",
@@ -8208,10 +7807,10 @@ tbl = {
 	},	
 	[2616] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Critical Ring",
-		identifiedResourceName = "크리티컬링",
+		identifiedResourceName = "Aⓒ¸®Æ¼AA¸μ",
 		identifiedDescriptionName = {
 			"An esoteric ring which enables its wearer into amplify his hidden power.",
 			"________________________",
@@ -8240,10 +7839,10 @@ tbl = {
 	},	
 	[28342] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Critical Anklet",
-		identifiedResourceName = "크리티컬앵클렛",
+		identifiedResourceName = "Aⓒ¸®Æ¼AA¾ÞA￢·¿",
 		identifiedDescriptionName = {
 			"An anklet that only expert at game can wear.",
 			"________________________",
@@ -8263,10 +7862,10 @@ tbl = {
 	},	
 	[2594] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wrapping Cloth Manteau",
-		identifiedResourceName = "보자기망토",
+		identifiedResourceName = "º¸AU±a¸AAa",
 		identifiedDescriptionName = {
 			"A simple cloak made of wrapped cloth.",
 			"________________________",
@@ -8283,8 +7882,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -8294,10 +7891,10 @@ tbl = {
 	},	
 	[20726] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fire Dragon Manteau",
-		identifiedResourceName = "화룡의외투",
+		identifiedResourceName = "E­·æAC¿UAo",
 		identifiedDescriptionName = {
 			"A cloak made from Fire dragon scales.",
 			"________________________",
@@ -8312,8 +7909,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30"
@@ -8324,10 +7919,10 @@ tbl = {
 	},	
 	[20728] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Water Dragon Manteau",
-		identifiedResourceName = "수룡의외투",
+		identifiedResourceName = "¼o·æAC¿UAo",
 		identifiedDescriptionName = {
 			"A cloak made from Water dragon scales.",
 			"________________________",
@@ -8342,8 +7937,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30"
@@ -8354,10 +7947,10 @@ tbl = {
 	},
 	[20729] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wind Dragon Manteau",
-		identifiedResourceName = "풍룡의외투",
+		identifiedResourceName = "C³·æAC¿UAo",
 		identifiedDescriptionName = {
 			"A cloak made from Wind dragon scales.",
 			"________________________",
@@ -8372,8 +7965,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30"
@@ -8384,10 +7975,10 @@ tbl = {
 	},	
 	[20731] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "망토",
+		unidentifiedResourceName = "¸AAa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Earth Dragon Manteau",
-		identifiedResourceName = "지룡의외투",
+		identifiedResourceName = "Ao·æAC¿UAo",
 		identifiedDescriptionName = {
 			"A cloak made from Earth dragon scales.",
 			"________________________",
@@ -8402,8 +7993,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30"
@@ -8414,10 +8003,10 @@ tbl = {
 	},	
 	[20778] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crimson Stole",
-		identifiedResourceName = "홍련의스톨",
+		identifiedResourceName = "E≪·AAC½ºAc",
 		identifiedDescriptionName = {
 			"An evolved stole designed by Magician guild.",
 			"________________________",
@@ -8438,8 +8027,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 70",			
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -8449,7 +8036,7 @@ tbl = {
 	},	
 	[20932] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Old Morocc Shawl",
 		identifiedResourceName = "Old_Moc_Shawl",
@@ -8492,10 +8079,10 @@ tbl = {
 	},	
 	[2733] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sheriff Badge",
-		identifiedResourceName = "전투휘장",
+		identifiedResourceName = "AuAoEOAa",
 		identifiedDescriptionName = {
 			"A badge rewarded to honorable warriors.",
 			"________________________",
@@ -8521,10 +8108,10 @@ tbl = {
 	},	
 	[2720] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_검사",
+		identifiedResourceName = "EÆAa_°E≫c",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8550,10 +8137,10 @@ tbl = {
 	},
 	[2721] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_도둑",
+		identifiedResourceName = "EÆAa_μμμI",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8579,10 +8166,10 @@ tbl = {
 	},
 	[2722] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_복사",
+		identifiedResourceName = "EÆAa_º¹≫c",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8607,10 +8194,10 @@ tbl = {
 	},
 	[2723] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_마법사",
+		identifiedResourceName = "EÆAa_¸¶¹y≫c",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8635,10 +8222,10 @@ tbl = {
 	},
 	[2724] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_궁수",
+		identifiedResourceName = "EÆAa_±A¼o",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8664,10 +8251,10 @@ tbl = {
 	},
 	[2725] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
-		unidentifiedResourceName = "링",
+		unidentifiedResourceName = "¸μ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Medal of Honor",
-		identifiedResourceName = "훈장_상인",
+		identifiedResourceName = "EÆAa_≫oAI",
 		identifiedDescriptionName = {
 			"A medal rewarded to honorable warriors.",
 			"________________________",
@@ -8693,10 +8280,10 @@ tbl = {
 	},	
 	[13049] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lacma",
-		identifiedResourceName = "라크마",
+		identifiedResourceName = "¶oAⓒ¸¶",
 		identifiedDescriptionName = {
 			"A short blade with beautiful decoration of gemstone.",
 			"________________________",
@@ -8718,8 +8305,6 @@ tbl = {
 			"^0000CCAttack:^000000 45",
 			"^0000CCWeight:^000000 65",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Novice, Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja"
@@ -8730,10 +8315,10 @@ tbl = {
 	},	
 	[2191] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Solomon Magic Book",
-		identifiedResourceName = "솔로몬의열쇠",
+		identifiedResourceName = "¼O·I¸oAC¿­¼e",
 		identifiedDescriptionName = {
 			"A large magic book that describe the mystery of King Solomon.",
 			"________________________",
@@ -8750,8 +8335,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 2",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30"
@@ -8762,10 +8345,10 @@ tbl = {
 	},	
 	[15057] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "White Apron",
-		identifiedResourceName = "하늘하늘앞치마",
+		identifiedResourceName = "CI´ACI´A¾OA¡¸¶",
 		identifiedDescriptionName = {
 			"A pure white apron with no single stain. Gives elegance feeling.",
 			"________________________",
@@ -8786,8 +8369,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50"
@@ -8798,10 +8379,10 @@ tbl = {
 	},	
 	[22064] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Thorn Shoes",
-		identifiedResourceName = "가시신발",
+		identifiedResourceName = "°¡½A½A¹ß",
 		identifiedDescriptionName = {
 			"Boots with sharp thorns on the outside.",
 			"Even a light bump is likely to cause injury.",
@@ -8830,10 +8411,10 @@ tbl = {
 	},	
 	[2597] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bloody Muffler",
-		identifiedResourceName = "진홍의판초",
+		identifiedResourceName = "AøE≪ACÆCAE",
 		identifiedDescriptionName = {
 			"This muffler is stained with blood.",
 			"________________________",
@@ -8852,8 +8433,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50"
@@ -8864,10 +8443,10 @@ tbl = {
 	},	
 	[20730] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Loyalists Hood",
-		identifiedResourceName = "충신의두건",
+		identifiedResourceName = "Aæ½AACμI°C",
 		identifiedDescriptionName = {
 			"A loyal servant of the gods sacrificed himself while wearing this hood.",
 			"________________________",
@@ -8880,8 +8459,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 100"
@@ -8892,10 +8469,10 @@ tbl = {
 	},	
 	[20714] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Assassin Muffler",
-		identifiedResourceName = "암살자의머플러",
+		identifiedResourceName = "¾I≫iAUAC¸OCA·?",
 		identifiedDescriptionName = {
 			"A muffler worn by eastern group of assassin.",
 			"________________________",
@@ -8905,8 +8482,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50"
@@ -8917,10 +8492,10 @@ tbl = {
 	},	
 	[15058] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rider Suit",
-		identifiedResourceName = "라이더슈츠",
+		identifiedResourceName = "¶oAI´o½´A÷",
 		identifiedDescriptionName = {
 			"A suit that able to protects rider's body from wind.",
 			"________________________",
@@ -8936,8 +8511,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -8948,10 +8521,10 @@ tbl = {
 	},	
 	[15040] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Prison Uniform",
-		identifiedResourceName = "낡은죄수복",
+		identifiedResourceName = "³°AºAE¼oº¹",
 		identifiedDescriptionName = {
 			"Every prisoner wears this striped uniform.",
 			"________________________",
@@ -8964,8 +8537,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 150",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50"
@@ -8976,10 +8547,10 @@ tbl = {
 	},	
 	[5074] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel Wing Ears",
-		identifiedResourceName = "천사날개귀",
+		identifiedResourceName = "Aμ≫c³?°³±I",
 		identifiedDescriptionName = {
 			"An ear accessory that looks just like white, beautiful angel wings.",
 			"________________________",
@@ -9018,10 +8589,10 @@ tbl = {
 	},	
 	[18518] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel Wing Ears",
-		identifiedResourceName = "천사날개귀",
+		identifiedResourceName = "Aμ≫c³?°³±I",
 		identifiedDescriptionName = {
 			"An ear accessory that looks just like white, beautiful angel wings.",
 			"________________________",
@@ -9060,10 +8631,10 @@ tbl = {
 	},	
 	[5086] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Alarm Mask",
-		identifiedResourceName = "알람가면",
+		identifiedResourceName = "¾E¶÷°¡¸e",
 		identifiedDescriptionName = {
 			"A mask which resembles the face of an Alarm monster.",
 			"________________________",
@@ -9086,10 +8657,10 @@ tbl = {
 	},
 	[5068] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Evil Wing Ears",
-		identifiedResourceName = "악마날개귀",
+		identifiedResourceName = "¾C¸¶³?°³±I",
 		identifiedDescriptionName = {
 			"Widely stretched wings.",
 			"________________________",
@@ -9127,10 +8698,10 @@ tbl = {
 	},	
 	[2204] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Glasses",
-		identifiedResourceName = "글래스",
+		identifiedResourceName = "±U·¡½º",
 		identifiedDescriptionName = {
 			"Prescription glasses worn to compensate for defects in vision.",
 			"________________________",
@@ -9151,10 +8722,10 @@ tbl = {
 	},	
 	[2203] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Glasses",
-		identifiedResourceName = "글래스",
+		identifiedResourceName = "±U·¡½º",
 		identifiedDescriptionName = {
 			"Prescription glasses worn to compensate for defects in vision.",
 			"________________________",
@@ -9175,10 +8746,10 @@ tbl = {
 	},	
 	[5398] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bone Head",
-		identifiedResourceName = "본헤드",
+		identifiedResourceName = "º≫Ciμa",
 		identifiedDescriptionName = {
 			"Headgear made of the skull of dregon. So hard that it does not easily break.",
 			"________________________",
@@ -9202,10 +8773,10 @@ tbl = {
 	},	
 	[18519] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Evil Wing Ears",
-		identifiedResourceName = "악마날개귀",
+		identifiedResourceName = "¾C¸¶³?°³±I",
 		identifiedDescriptionName = {
 			"An ear accessory made with Evil Wing.",
 			"________________________",
@@ -9244,10 +8815,10 @@ tbl = {
 	},	
 	[2481] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rune Boots",
-		identifiedResourceName = "룬부츠",
+		identifiedResourceName = "·eºIA÷",
 		identifiedDescriptionName = {
 			"Black leather boots engraved Rune.",
 			"________________________",
@@ -9264,8 +8835,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -9275,10 +8844,10 @@ tbl = {
 	},	
 	[2553] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Manteau",
-		identifiedResourceName = "드래곤의망토",
+		identifiedResourceName = "μa·¡°iAC¸AAa",
 		identifiedDescriptionName = {
 			"Manteau from a Draco's mane.",
 			"________________________",
@@ -9292,8 +8861,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 14",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes except Novice"
@@ -9304,10 +8871,10 @@ tbl = {
 	},	
 	[2466] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Training Shoes",
-		identifiedResourceName = "축구화",
+		identifiedResourceName = "Aa±¸E­",
 		identifiedDescriptionName = {
 			"A special shoes that made to Reduces the burden of the foot when running.",
 			"________________________",
@@ -9322,8 +8889,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 1",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 10"
@@ -9334,10 +8899,10 @@ tbl = {
 	},	
 	[22042] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tararia",
-		identifiedResourceName = "탈라리아신발",
+		identifiedResourceName = "A≫¶o¸®¾Æ½A¹ß",
 		identifiedDescriptionName = {
 			"A pair of shoes that given by Hermes to prevent magic from Medusa.",
 			"________________________",
@@ -9348,8 +8913,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50"
@@ -9360,10 +8923,10 @@ tbl = {
 	},	
 	[5357] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wings of Victory",
-		identifiedResourceName = "승리의날개",
+		identifiedResourceName = "½A¸®AC³?°³",
 		identifiedDescriptionName = {
 			"This hair accessory is made of Valkyrie's jewel and feathers.",
 			"________________________",
@@ -9385,10 +8948,10 @@ tbl = {
 	},	
 	[2359] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ninja Suit",
-		identifiedResourceName = "닌자슈츠",
+		identifiedResourceName = "´NAU½´A÷",
 		identifiedDescriptionName = {
 			"A sneaking suit that enables its wearer into move more quickly and stealthily.",
 			"________________________",
@@ -9402,8 +8965,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 58",
 			"^0000CCWeight:^000000 150",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -9415,10 +8976,10 @@ tbl = {
 	},
 	[12026] = {
 		unidentifiedDisplayName = "Dano Festival Egg",
-		unidentifiedResourceName = "성스러운알",
+		unidentifiedResourceName = "¼º½º·?¿i¾E",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Classic Headgear Egg",
-		identifiedResourceName = "성스러운알",
+		identifiedResourceName = "¼º½º·?¿i¾E",
 		identifiedDescriptionName = {
 			"An egg that seems to contain something inside.",
 			"Contain various random classic headgears.",
@@ -9431,10 +8992,10 @@ tbl = {
 	},	
 	[12391] = {
 		unidentifiedDisplayName = "Lucky Egg",
-		unidentifiedResourceName = "애니멀스크롤",
+		unidentifiedResourceName = "¾O´I¸O½ºAⓒ·N",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Top Costume Egg",
-		identifiedResourceName = "애니멀스크롤",
+		identifiedResourceName = "¾O´I¸O½ºAⓒ·N",
 		identifiedDescriptionName = {
 			"An egg that seems to contain something inside.",
 			"Contain various random upper headgear costume.",
@@ -9447,10 +9008,10 @@ tbl = {
 	},	
 	[12403] = {
 		unidentifiedDisplayName = "Lucky Egg II",
-		unidentifiedResourceName = "하트스크롤",
+		unidentifiedResourceName = "CIÆ®½ºAⓒ·N",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Mid Costume Egg",
-		identifiedResourceName = "하트스크롤",
+		identifiedResourceName = "CIÆ®½ºAⓒ·N",
 		identifiedDescriptionName = {
 			"An egg that seems to contain something inside.",
 			"Contain various random middle headgear costume.",
@@ -9463,10 +9024,10 @@ tbl = {
 	},	
 	[12416] = {
 		unidentifiedDisplayName = "Lucky Egg III",
-		unidentifiedResourceName = "대만7월7석스크롤",
+		unidentifiedResourceName = "´e¸¸7¿u7¼®½ºAⓒ·N",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Lower Costume Egg",
-		identifiedResourceName = "대만7월7석스크롤",
+		identifiedResourceName = "´e¸¸7¿u7¼®½ºAⓒ·N",
 		identifiedDescriptionName = {
 			"An egg that seems to contain something inside.",
 			"Contain various random low headgear costume.",
@@ -9479,10 +9040,10 @@ tbl = {
 	},	
 	[12493] = {
 		unidentifiedDisplayName = "Lucky Egg IV",
-		unidentifiedResourceName = "대만백소진스크롤",
+		unidentifiedResourceName = "´e¸¸¹e¼OAø½ºAⓒ·N",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Garment Costume Egg",
-		identifiedResourceName = "대만백소진스크롤",
+		identifiedResourceName = "´e¸¸¹e¼OAø½ºAⓒ·N",
 		identifiedDescriptionName = {
 			"An egg that seems to contain something inside.",
 			"Contain various random garment costume.",
@@ -9495,10 +9056,10 @@ tbl = {
 	},	
 	[6417] = {
 		unidentifiedDisplayName = "Silvervine Fruit",
-		unidentifiedResourceName = "개다열매",
+		unidentifiedResourceName = "°³´U¿­¸A",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Silvervine Fruit",
-		identifiedResourceName = "개다래열매",
+		identifiedResourceName = "°³´U·¡¿­¸A",
 		identifiedDescriptionName = {
 			"Sunkissed Silvervine Fruit. Humans think that it is normal and tastes bad but it is valuable in Malangdo.",
 			"Use these as currency to exchange with cats, and for enchanting A-E grade coins with the Special Vending Machine and Coin Exchanger in Malangdo.",
@@ -9512,10 +9073,10 @@ tbl = {
 	},	
 	[6418] = {
 		unidentifiedDisplayName = "A Class Coin",
-		unidentifiedResourceName = "고급코인",
+		unidentifiedResourceName = "°i±ÞAUAI",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "A Class Coin",
-		identifiedResourceName = "고급코인",
+		identifiedResourceName = "°i±ÞAUAI",
 		identifiedDescriptionName = {
 			"Glittering high class coin.",
 			"________________________",
@@ -9528,10 +9089,10 @@ tbl = {
 	},
 	[6419] = {
 		unidentifiedDisplayName = "B Class Coin",
-		unidentifiedResourceName = "고급코인",
+		unidentifiedResourceName = "°i±ÞAUAI",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "B Class Coin",
-		identifiedResourceName = "고급코인",
+		identifiedResourceName = "°i±ÞAUAI",
 		identifiedDescriptionName = {
 			"Glittering high class coin.",
 			"________________________",
@@ -9544,10 +9105,10 @@ tbl = {
 	},
 	[6420] = {
 		unidentifiedDisplayName = "C Class Coin",
-		unidentifiedResourceName = "평범한코인",
+		unidentifiedResourceName = "Æo¹uCNAUAI",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "C Class Coin",
-		identifiedResourceName = "평범한코인",
+		identifiedResourceName = "Æo¹uCNAUAI",
 		identifiedDescriptionName = {
 			"General normal coin.",
 			"________________________",
@@ -9560,10 +9121,10 @@ tbl = {
 	},
 	[6421] = {
 		unidentifiedDisplayName = "D Class Coin",
-		unidentifiedResourceName = "평범한코인",
+		unidentifiedResourceName = "Æo¹uCNAUAI",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "D Class Coin",
-		identifiedResourceName = "평범한코인",
+		identifiedResourceName = "Æo¹uCNAUAI",
 		identifiedDescriptionName = {
 			"General normal coin.",
 			"________________________",
@@ -9576,10 +9137,10 @@ tbl = {
 	},
 	[6422] = {
 		unidentifiedDisplayName = "E Class Coin",
-		unidentifiedResourceName = "허름한코인",
+		unidentifiedResourceName = "Ca¸§CNAUAI",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "E Class Coin",
-		identifiedResourceName = "허름한코인",
+		identifiedResourceName = "Ca¸§CNAUAI",
 		identifiedDescriptionName = {
 			"Poor low class coin.",
 			"________________________",
@@ -9592,10 +9153,10 @@ tbl = {
 	},	
 	[2525] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cape of Ancient Lord",
-		identifiedResourceName = "옛영주의망토",
+		identifiedResourceName = "¿¾¿μAOAC¸AAa",
 		identifiedDescriptionName = {
 			"A fancy cape said to have once been worn by marquises long ago.",
 			"________________________",
@@ -9604,8 +9165,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 9",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -9617,10 +9176,10 @@ tbl = {
 	},
 	[1957] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rante Whip",
-		identifiedResourceName = "란테",
+		identifiedResourceName = "¶oA×",
 		identifiedDescriptionName = {
 			"A whip with a spiked ball attached at the end.",
 			"________________________",
@@ -9628,8 +9187,6 @@ tbl = {
 			"^0000CCAttack:^000000 135",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -9641,10 +9198,10 @@ tbl = {
 	},	
 	[13421] = {
 		unidentifiedDisplayName = "Unidentified Sword",
-		unidentifiedResourceName = "소드",
+		unidentifiedResourceName = "¼Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ruber",
-		identifiedResourceName = "루베르",
+		identifiedResourceName = "·cº￡¸￡",
 		identifiedDescriptionName = {
 			"This short sword has been heavily improved for easy-use. It looks better with its Ruby decoration in the grip.",
 			"________________________",
@@ -9654,8 +9211,6 @@ tbl = {
 			"^0000CCAttack:^000000 170",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -9667,10 +9222,10 @@ tbl = {
 	},	
 	[1630] = {
 		unidentifiedDisplayName = "Unidentified Staff",
-		unidentifiedResourceName = "롯드",
+		unidentifiedResourceName = "·Oμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Release of Wish",
-		identifiedResourceName = "릴리즈오브위스",
+		identifiedResourceName = "¸±¸®Ai¿AºeA§½º",
 		identifiedDescriptionName = {
 			"A staff made of Crystal. It shines beautifully against the light.",
 			"This staff can also help the holder recover from wounds.",
@@ -9686,8 +9241,6 @@ tbl = {
 			"^0000CCAttack:^000000 30",
 			"^0000CCWeight:^000000 50",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -9699,10 +9252,10 @@ tbl = {
 	},	
 	[1965] = {
 		unidentifiedDisplayName = "Unidentified Whip",
-		unidentifiedResourceName = "로프",
+		unidentifiedResourceName = "·ICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Red Flame Whip",
-		identifiedResourceName = "불의채찍",
+		identifiedResourceName = "ºOACA¤Ai",
 		identifiedDescriptionName = {
 			"A whip made from the tough leather of a Fire elemental monster.",
 			"________________________",
@@ -9711,8 +9264,6 @@ tbl = {
 			"^0000CCWeight:^000000 70",
 			"^0000CCElement:^FF0000 Fire",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -9724,10 +9275,10 @@ tbl = {
 	},	
 	[1572] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Principles of Magic",
-		identifiedResourceName = "마법의정석",
+		identifiedResourceName = "¸¶¹yACA¤¼®",
 		identifiedDescriptionName = {
 			"This helps students study and build a strong foundation of using magic.",
 			"If you're having trouble... - Author: Sage S.",
@@ -9746,8 +9297,6 @@ tbl = {
 			"^0000CCAttack:^000000 60",
 			"^0000CCWeight:^000000 30",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -9759,10 +9308,10 @@ tbl = {
 	},	
 	[1417] = {
 		unidentifiedDisplayName = "Unidentified Spear",
-		unidentifiedResourceName = "쟈벨린",
+		unidentifiedResourceName = "Aðº§¸°",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pole Axe",
-		identifiedResourceName = "폴액스",
+		identifiedResourceName = "Æu¾×½º",
 		identifiedDescriptionName = {
 			"An axe head mounted on a long pole, this weapon was especially made to break through thick armored plates.",
 			"________________________",
@@ -9774,8 +9323,6 @@ tbl = {
 			"^0000CCAttack:^000000 160",
 			"^0000CCWeight:^000000 380",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 71",
@@ -9787,10 +9334,10 @@ tbl = {
 	},	
 	[13018] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sucsamad",
-		identifiedResourceName = "수크사마드",
+		identifiedResourceName = "¼oAⓒ≫c¸¶μa",
 		identifiedDescriptionName = {
 			"A specialty dagger made by a small, mysterious, desert dwelling tribe.",
 			"________________________",
@@ -9802,8 +9349,6 @@ tbl = {
 			"^0000CCAttack:^000000 140",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -9815,10 +9360,10 @@ tbl = {
 	},	
 	[13017] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ice Pick",
-		identifiedResourceName = "송곳",
+		identifiedResourceName = "¼U°÷",
 		identifiedDescriptionName = {
 			"A thin, sharp weapon that looks capable of penetrating armor.",
 			"________________________",
@@ -9828,8 +9373,6 @@ tbl = {
 			"^0000CCAttack:^000000 70",
 			"^0000CCWeight:^000000 60",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 36",
@@ -9841,10 +9384,10 @@ tbl = {
 	},	
 	[1239] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Poison Knife",
-		identifiedResourceName = "포이즌나이프",
+		identifiedResourceName = "Æ÷AIAð³ªAICA",
 		identifiedDescriptionName = {
 			"A dreadful dagger whose blade has been soaked in toxin.",
 			"________________________",
@@ -9855,8 +9398,6 @@ tbl = {
 			"^0000CCWeight:^000000 80",
 			"^0000CCElement:^663399 Poison",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -9868,10 +9409,10 @@ tbl = {
 	},	
 	[2401] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sandals",
-		identifiedResourceName = "샌들",
+		identifiedResourceName = "≫÷μe",
 		identifiedDescriptionName = {
 			"Cute, feminine shoes that are a part of the standard schoolgirl's uniform.",
 			"Fortunately, these are unisex.",
@@ -9882,8 +9423,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -9893,10 +9432,10 @@ tbl = {
 	},
 	[2402] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sandals",
-		identifiedResourceName = "샌들",
+		identifiedResourceName = "≫÷μe",
 		identifiedDescriptionName = {
 			"Cute, feminine shoes that are a part of the standard schoolgirl's uniform.",
 			"Fortunately, these are unisex.",
@@ -9907,8 +9446,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -9918,10 +9455,10 @@ tbl = {
 	},	
 	[2403] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shoes",
-		identifiedResourceName = "슈즈",
+		identifiedResourceName = "½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes made of supple, high quality leather.",
 			"________________________",
@@ -9931,8 +9468,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -9943,10 +9478,10 @@ tbl = {
 	},
 	[2404] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shoes",
-		identifiedResourceName = "슈즈",
+		identifiedResourceName = "½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes made of supple, high quality leather.",
 			"________________________",
@@ -9956,8 +9491,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -9968,10 +9501,10 @@ tbl = {
 	},	
 	[2405] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Boots",
-		identifiedResourceName = "부츠",
+		identifiedResourceName = "ºIA÷",
 		identifiedDescriptionName = {
 			"A pair of heavy leather boots, padded with Lunatic fur, that is suited to warriors.",
 			"________________________",
@@ -9980,8 +9513,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Archer, Merchant, Thief, Taekwon Boy/Girl, Star Gladiator and Gunslinger"
@@ -9992,10 +9523,10 @@ tbl = {
 	},
 	[2411] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Greaves",
-		identifiedResourceName = "그리브",
+		identifiedResourceName = "±×¸®ºe",
 		identifiedDescriptionName = {
 			"Steel boots which offer dependable foot protection.",
 			"________________________",
@@ -10004,8 +9535,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 75",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -10017,10 +9546,10 @@ tbl = {
 	},
 	[2412] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Greaves",
-		identifiedResourceName = "그리브",
+		identifiedResourceName = "±×¸®ºe",
 		identifiedDescriptionName = {
 			"Steel boots which offer dependable foot protection.",
 			"________________________",
@@ -10029,8 +9558,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 75",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -10042,10 +9569,10 @@ tbl = {
 	},	
 	[2406] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Boots",
-		identifiedResourceName = "부츠",
+		identifiedResourceName = "ºIA÷",
 		identifiedDescriptionName = {
 			"A pair of heavy leather boots, padded with Lunatic fur, that is suited to warriors.",
 			"________________________",
@@ -10054,8 +9581,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Archer, Merchant, Thief, Taekwon Boy/Girl, Star Gladiator and Gunslinger"
@@ -10066,10 +9591,10 @@ tbl = {
 	},	
 	[2373] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Holy Robe",
-		identifiedResourceName = "홀리로브",
+		identifiedResourceName = "E|¸®·Iºe",
 		identifiedDescriptionName = {
 			"A robe that emanates an aura of holiness.",
 			"________________________",
@@ -10082,8 +9607,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 57",
 			"^0000CCWeight:^000000 170",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10095,10 +9618,10 @@ tbl = {
 	},
 	[2128] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Herald of God",
-		identifiedResourceName = "신의사자",
+		identifiedResourceName = "½AAC≫cAU",
 		identifiedDescriptionName = {
 			"A symbolic shield, rumored to have been given from God to his messenger.",
 			"________________________",
@@ -10110,8 +9633,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 120",
 			"^0000CCWeight:^000000 160",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 83",
@@ -10123,10 +9644,10 @@ tbl = {
 	},
 	[2371] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pantie",
-		identifiedResourceName = "삼각팬티",
+		identifiedResourceName = "≫i°￠ÆOÆ¼",
 		identifiedDescriptionName = {
 			"A risque undergarment that is comfortable to wear, but offers very little in the way of defense.",
 			"________________________",
@@ -10148,10 +9669,10 @@ tbl = {
 	},
 	[2523] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Undershirt",
-		identifiedResourceName = "런닝셔츠",
+		identifiedResourceName = "·±´×¼AA÷",
 		identifiedDescriptionName = {
 			"Lightweight armor made from 100% real cotton that is actually quite durable.",
 			"________________________",
@@ -10164,8 +9685,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 15",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -10175,10 +9694,10 @@ tbl = {
 	},
 	[2425] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Black Leather Boots",
-		identifiedResourceName = "검은가죽부츠",
+		identifiedResourceName = "°EAº°¡A×ºIA÷",
 		identifiedDescriptionName = {
 			"A pair of boots made of light, resilient leather that makes you want to run when you wear them.",
 			"________________________",
@@ -10193,8 +9712,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -10206,10 +9723,10 @@ tbl = {
 	},
 	[2434] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Black Leather Boots",
-		identifiedResourceName = "검은가죽부츠",
+		identifiedResourceName = "°EAº°¡A×ºIA÷",
 		identifiedDescriptionName = {
 			"A pair of boots made of light, resilient leather that makes you want to run when you wear them.",
 			"________________________",
@@ -10224,8 +9741,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -10237,10 +9752,10 @@ tbl = {
 	},	
 	[15000] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bone Plate",
-		identifiedResourceName = "본플레이트",
+		identifiedResourceName = "º≫CA·¹AIÆ®",
 		identifiedDescriptionName = {
 			"Dark Plated Armor covered with sharp bones.",
 			"________________________",
@@ -10254,8 +9769,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 60",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent Thief, Merchant and Swordman"
@@ -10266,18 +9779,16 @@ tbl = {
 	},
 	[2406] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Boots",
-		identifiedResourceName = "부츠",
+		identifiedResourceName = "ºIA÷",
 		identifiedDescriptionName = {
 			"A pair of heavy leather boots, padded with Lunatic fur, that is suited to warriors.",
 			"________________________",
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Archer, Merchant, Thief, Taekwon Boy/Girl, Star Gladiator and Gunslinger"
@@ -10288,10 +9799,10 @@ tbl = {
 	},
 	[2315] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Chain Mail",
-		identifiedResourceName = "메일",
+		identifiedResourceName = "¸ÞAI",
 		identifiedDescriptionName = {
 			"Heavy mail made entirely of polished, metal chain links.",
 			"________________________",
@@ -10301,8 +9812,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 55",
 			"^0000CCWeight:^000000 330",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant and Thief classes"
@@ -10313,10 +9822,10 @@ tbl = {
 	},
 	[2386] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Chameleon Armor",
-		identifiedResourceName = "카멜레온아머",
+		identifiedResourceName = "A≪¸a·¹¿A¾Æ¸O",
 		identifiedDescriptionName = {
 			"A miraculous Armor that can change its abilities according to those of its wearer.",
 			"________________________",
@@ -10333,8 +9842,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 55",
 			"^0000CCWeight:^000000 170",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -10346,18 +9853,16 @@ tbl = {
 	},
 	[2350] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claytos's Rupture of Earth",
-		identifiedResourceName = "땅의갑옷",
+		identifiedResourceName = "¶￥AC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^CC5500 Earth",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -10369,10 +9874,10 @@ tbl = {
 	},
 	[2309] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Coat",
-		identifiedResourceName = "롱코트",
+		identifiedResourceName = "·OAUÆ®",
 		identifiedDescriptionName = {
 			"A long coat that provides remarkable warmth in cold weather.",
 			"________________________",
@@ -10381,8 +9886,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 22",
 			"^0000CCWeight:^000000 120",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -10393,10 +9896,10 @@ tbl = {
 	},	
 	[2310] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Coat",
-		identifiedResourceName = "롱코트",
+		identifiedResourceName = "·OAUÆ®",
 		identifiedDescriptionName = {
 			"A long coat that provides remarkable warmth in cold weather.",
 			"________________________",
@@ -10405,8 +9908,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 22",
 			"^0000CCWeight:^000000 120",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -10417,10 +9918,10 @@ tbl = {
 	},
 	[2407] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crystal Pumps",
-		identifiedResourceName = "유리구두",
+		identifiedResourceName = "A?¸®±¸μI",
 		identifiedDescriptionName = {
 			"A pair of feminine high heeled shoes made of fine crystal. Usually, these are worn only on special occasions.",
 			"________________________",
@@ -10430,8 +9931,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -10442,10 +9941,10 @@ tbl = {
 	},
 	[2375] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Diabolus Armor",
-		identifiedResourceName = "디아볼루스아머",
+		identifiedResourceName = "μð¾Æº¼·c½º¾Æ¸O",
 		identifiedDescriptionName = {
 			"A suit of armor which is made of an unknown metal in the human-world. Mysterious power is hidden in the armor.",
 			"________________________",
@@ -10461,8 +9960,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 79",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10474,10 +9971,10 @@ tbl = {
 	},
 	[2433] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Diabolus Boots",
-		identifiedResourceName = "디아볼루스부츠",
+		identifiedResourceName = "μð¾Æº¼·c½ººIA÷",
 		identifiedDescriptionName = {
 			"Mysterious boots that automatically adjust their size to the wearer's size. They seem alive.",
 			"________________________",
@@ -10489,8 +9986,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 25",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -10501,10 +9996,10 @@ tbl = {
 	},
 	[2537] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Diabolus Manteau",
-		identifiedResourceName = "디아볼루스망토",
+		identifiedResourceName = "μð¾Æº¼·c½º¸AAa",
 		identifiedDescriptionName = {
 			"A manteau with an endless dark shape waving near it. Only those who overcome fear can wear this manteau.",
 			"________________________",
@@ -10520,8 +10015,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 25^000000",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -10532,10 +10025,10 @@ tbl = {
 	},
 	[2374] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Diabolus Robe",
-		identifiedResourceName = "디아볼루스로브",
+		identifiedResourceName = "μð¾Æº¼·c½º·Iºe",
 		identifiedDescriptionName = {
 			"A robe which is decorated with unknown letters. The wearer feels like they're learning a new language.",
 			"________________________",
@@ -10553,8 +10046,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 57",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10566,10 +10057,10 @@ tbl = {
 	},
 	[2366] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Divine Cloth",
-		identifiedResourceName = "디바인클로스",
+		identifiedResourceName = "μð¹UAIA￢·I½º",
 		identifiedDescriptionName = {
 			"A holy garment that has been purified by a series of religious rituals.",
 			"________________________",
@@ -10578,8 +10069,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 150",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -10591,10 +10080,10 @@ tbl = {
 	},
 	[13001] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Killer",
-		identifiedResourceName = "드래곤킬러",
+		identifiedResourceName = "μa·¡°iA³·?",
 		identifiedDescriptionName = {
 			"Crafted from a dragon's fang, this dagger can easily slash through tough dragon hide.",
 			"________________________",
@@ -10606,8 +10095,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10619,10 +10106,10 @@ tbl = {
 	},	
 	[5281] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Refined Deviruchi Hat",
-		identifiedResourceName = "새끼악마모자",
+		identifiedResourceName = "≫o³￠¾C¸¶¸ðAU",
 		identifiedDescriptionName = {
 			"A hat created in the form of the Deviruchi monster.",
 			"________________________",
@@ -10651,10 +10138,10 @@ tbl = {
 	},	
 	[13030] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Killer",
-		identifiedResourceName = "드래곤킬러",
+		identifiedResourceName = "μa·¡°iA³·?",
 		identifiedDescriptionName = {
 			"Crafted from a dragon's fang, this dagger can easily slash through tough dragon hide.",
 			"________________________",
@@ -10666,8 +10153,6 @@ tbl = {
 			"^0000CCAttack:^000000 110",
 			"^0000CCWeight:^000000 90",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",					
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10679,10 +10164,10 @@ tbl = {
 	},	
 	[2527] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Breath",
-		identifiedResourceName = "드래곤의숨결",
+		identifiedResourceName = "μa·¡°iAC¼u°a",
 		identifiedDescriptionName = {
 			"A garment that's so warm, it makes the wearer feel as if a dragon is breathing on him.",
 			"________________________",
@@ -10694,8 +10179,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 48",
@@ -10707,10 +10190,10 @@ tbl = {
 	},
 	[2515] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Eagle Wing",
-		identifiedResourceName = "윙오브이글",
+		identifiedResourceName = "A®¿AºeAI±U",
 		identifiedDescriptionName = {
 			"A robe which once helped the god Odin escape a fatal threat.",
 			"________________________",
@@ -10720,8 +10203,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 12",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 85",
@@ -10733,10 +10214,10 @@ tbl = {
 	},
 	[2516] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Falcon Muffler",
-		identifiedResourceName = "매의날개옷",
+		identifiedResourceName = "¸AAC³?°³¿E",
 		identifiedDescriptionName = {
 			"A muffler owned by Freya, daughter of Njord, that was often borrowed by Loki.",
 			"Wearing it makes its wearer as nimble as a falcon in flight.",
@@ -10752,8 +10233,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -10765,10 +10244,10 @@ tbl = {
 	},
 	[2542] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Flame Manteau of Nacht Sieger",
-		identifiedResourceName = "옛영주의망토",
+		identifiedResourceName = "¿¾¿μAOAC¸AAa",
 		identifiedDescriptionName = {
 			"A manteau of Flame that Nacht Sieger wore.",
 			"________________________",
@@ -10781,8 +10260,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -10794,10 +10271,10 @@ tbl = {
 	},
 	[2320] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Formal Suit",
-		identifiedResourceName = "포멀드레스",
+		identifiedResourceName = "Æ÷¸Oμa·¹½º",
 		identifiedDescriptionName = {
 			"A formal suit for males.",
 			"________________________",
@@ -10806,8 +10283,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -10818,10 +10293,10 @@ tbl = {
 	},
 	[2417] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fricco's Shoes",
-		identifiedResourceName = "프리코슈즈",
+		identifiedResourceName = "CA¸®AU½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes that were blessed by Freyr, the god of Earth and the son of Njord.",
 			"His blessing would release its owner from pain.",
@@ -10838,8 +10313,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 12",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -10851,10 +10324,10 @@ tbl = {
 	},
 	[2321] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silk Robe",
-		identifiedResourceName = "실크로브",
+		identifiedResourceName = "½CAⓒ·Iºe",
 		identifiedDescriptionName = {
 			"A finely woven, silk robe that has been enchanted with magic.",
 			"________________________",
@@ -10863,8 +10336,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Magician, Acolyte, Merchant and Soul Linker"
@@ -10875,10 +10346,10 @@ tbl = {
 	},
 	[2322] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silk Robe",
-		identifiedResourceName = "실크로브",
+		identifiedResourceName = "½CAⓒ·Iºe",
 		identifiedDescriptionName = {
 			"A finely woven, silk robe that has been enchanted with magic.",
 			"________________________",
@@ -10887,8 +10358,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Magician, Acolyte, Merchant and Soul Linker"
@@ -10899,10 +10368,10 @@ tbl = {
 	},
 	[2316] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Full Plate",
-		identifiedResourceName = "플레이트",
+		identifiedResourceName = "CA·¹AIÆ®",
 		identifiedDescriptionName = {
 			"Heavy, solid armor made of durable plates of impenetrable metal.",
 			"________________________",
@@ -10912,8 +10381,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 70",
 			"^0000CCWeight:^000000 450",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -10925,10 +10392,10 @@ tbl = {
 	},
 	[2317] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Full Plate",
-		identifiedResourceName = "플레이트",
+		identifiedResourceName = "CA·¹AIÆ®",
 		identifiedDescriptionName = {
 			"Heavy, solid armor made of durable plates of impenetrable metal.",
 			"________________________",
@@ -10938,8 +10405,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 70",
 			"^0000CCWeight:^000000 450",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -10951,10 +10416,10 @@ tbl = {
 	},
 	[2319] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Glittering Jacket",
-		identifiedResourceName = "글리터링클로스",
+		identifiedResourceName = "±U¸®AI¸μA￢·I½º",
 		identifiedDescriptionName = {
 			"A jacket covered in fake, yet glamorous, rhinestones that is favored by hipsters and lounge singers.",
 			"________________________",
@@ -10965,8 +10430,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 58",
 			"^0000CCWeight:^000000 250",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -10978,10 +10441,10 @@ tbl = {
 	},
 	[2354] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Armor",
-		identifiedResourceName = "게브네이의갑옷",
+		identifiedResourceName = "°Oºe³×AIAC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"VIT +2",
@@ -10990,8 +10453,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 58",
 			"^0000CCWeight:^000000 350",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 54",
@@ -11003,10 +10464,10 @@ tbl = {
 	},
 	[2419] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Greaves",
-		identifiedResourceName = "게브네이의군화",
+		identifiedResourceName = "°Oºe³×AIAC±ºE­",
 		identifiedDescriptionName = {
 			"A pair of shoes rumored to be forged by Goibniu in response to competition from his rival, Dulb.",
 			"________________________",
@@ -11017,8 +10478,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 54",
@@ -11030,10 +10489,10 @@ tbl = {
 	},
 	[2419] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Greaves",
-		identifiedResourceName = "게브네이의군화",
+		identifiedResourceName = "°Oºe³×AIAC±ºE­",
 		identifiedDescriptionName = {
 			"A pair of shoes rumored to be forged by Goibniu in response to competition from his rival, Dulb.",
 			"________________________",
@@ -11044,8 +10503,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 54",
@@ -11057,10 +10514,10 @@ tbl = {
 	},
 	[2520] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Spaulders",
-		identifiedResourceName = "게브네이어깨장식",
+		identifiedResourceName = "°Oºe³×AI¾i±uAa½A",
 		identifiedDescriptionName = {
 			"Goibniu's very first creation, his much prized and precious armor.",
 			"________________________",
@@ -11072,8 +10529,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 11",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 54",
@@ -11085,10 +10540,10 @@ tbl = {
 	},
 	[2422] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "High Fashion Sandals",
-		identifiedResourceName = "고급샌들",
+		identifiedResourceName = "°i±Þ≫÷μe",
 		identifiedDescriptionName = {
 			"Jeweled, golden strapped sandals that offer a casual, yet fashionable, comfort.",
 			"________________________",
@@ -11097,8 +10552,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 7",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -11110,10 +10563,10 @@ tbl = {
 	},
 	[2409] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pointed Shoes",
-		identifiedResourceName = "뾰족구두",
+		identifiedResourceName = "≫IA·±¸μI",
 		identifiedDescriptionName = {
 			"Striped high heeled shoes said to have been worn by a wicked witch since they enhanced her magical powers.",
 			"________________________",
@@ -11122,8 +10575,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -11134,10 +10585,10 @@ tbl = {
 	},
 	[2327] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Holy Robe",
-		identifiedResourceName = "홀리로브",
+		identifiedResourceName = "E|¸®·Iºe",
 		identifiedDescriptionName = {
 			"A robe that emanates an aura of holiness.",
 			"________________________",
@@ -11150,8 +10601,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 57",
 			"^0000CCWeight:^000000 170",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -11163,10 +10612,10 @@ tbl = {
 	},
 	[2390] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Improved Tights",
-		identifiedResourceName = "개량형타이즈",
+		identifiedResourceName = "°³·®CuA¸AIAi",
 		identifiedDescriptionName = {
 			"Brand new tights developed by the Rekenber Corporation. Made of very advanced material which fit close to the body and still allows maximum movement.",
 			"________________________",
@@ -11176,8 +10625,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 38",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -11189,10 +10636,10 @@ tbl = {
 	},
 	[5467] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Helm",
-		identifiedResourceName = "드래군헬름",
+		identifiedResourceName = "μa·¡±ºCi¸§",
 		identifiedDescriptionName = {
 			"A helmet made from hard scale of Dragon. The wearer of this headgear can get the great power of Dragon.",
 			"________________________",
@@ -11231,10 +10678,10 @@ tbl = {
 	},	
 	[22014] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Enhanced Variant Shoes",
-		identifiedResourceName = "배리언트슈즈",
+		identifiedResourceName = "¹e¸®¾ðÆ®½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes that emanates unnatural feeling. It is evident that the creator tried to challenge the limits but failed in overcoming it.",
 			"________________________",
@@ -11257,10 +10704,10 @@ tbl = {
 	},	
 	[2388] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Kandura",
-		identifiedResourceName = "칸두라",
+		identifiedResourceName = "A­μI¶o",
 		identifiedDescriptionName = {
 			"A traditional garb worn by desert dwellers that is specially designed for hot weather environments.",
 			"________________________",
@@ -11271,8 +10718,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 36",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11284,10 +10729,10 @@ tbl = {
 	},
 	[2544] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Leather of Tendrilion",
-		identifiedResourceName = "텐드릴리온의가죽",
+		identifiedResourceName = "AUμa¸±¸®¿AAC°¡A×",
 		identifiedDescriptionName = {
 			"Leather of a Tendrilion with plant stems sticking out of it.",
 			"________________________",
@@ -11298,8 +10743,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 14",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -11310,10 +10753,10 @@ tbl = {
 	},
 	[2399] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dragon Vest",
-		identifiedResourceName = "드래곤베스트",
+		identifiedResourceName = "μa·¡°iº￡½ºÆ®",
 		identifiedDescriptionName = {
 			"Inner wear made out of a draco's mane.",
 			"________________________",
@@ -11326,8 +10769,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes"
@@ -11338,10 +10779,10 @@ tbl = {
 	},	
 	[15053] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Special Ninja Suit",
-		identifiedResourceName = "특수닌자슈츠",
+		identifiedResourceName = "Æ?¼o´NAU½´A÷",
 		identifiedDescriptionName = {
 			"Newly improved ninja suit which took into consideration the opinions of skilled ninjas. Lighter and durability of the textile is better than before.",
 			"________________________",
@@ -11356,8 +10797,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 70",
 			"^0000CCWeight:^000000 120",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 100",
@@ -11369,10 +10808,10 @@ tbl = {
 	},
 	[2341] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Full Plate Armor",
-		identifiedResourceName = "풀플레이트아머",
+		identifiedResourceName = "C®CA·¹AIÆ®¾Æ¸O",
 		identifiedDescriptionName = {
 			"An extremely heavy piece of armor worn by members of the Legion.",
 			"________________________",
@@ -11381,8 +10820,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 79",
 			"^0000CCWeight:^000000 550",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11394,10 +10831,10 @@ tbl = {
 	},
 	[2342] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Full Plate Armor",
-		identifiedResourceName = "풀플레이트아머",
+		identifiedResourceName = "C®CA·¹AIÆ®¾Æ¸O",
 		identifiedDescriptionName = {
 			"An extremely heavy piece of armor worn by members of the Legion.",
 			"________________________",
@@ -11406,8 +10843,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 79",
 			"^0000CCWeight:^000000 550",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11419,10 +10854,10 @@ tbl = {
 	},
 	[2391] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Life Link",
-		identifiedResourceName = "라이프링크",
+		identifiedResourceName = "¶oAICA¸μAⓒ",
 		identifiedDescriptionName = {
 			"A holy armor made by the Goddess in order to cure the chosen warrior.",
 			"________________________",
@@ -11434,8 +10869,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 75",
 			"^0000CCWeight:^000000 350",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 82",
@@ -11447,10 +10880,10 @@ tbl = {
 	},
 	[2318] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lord's Clothes",
-		identifiedResourceName = "로드클로스",
+		identifiedResourceName = "·IμaA￢·I½º",
 		identifiedDescriptionName = {
 			"Formal clothing made in a Renaissance style that evokes thoughts of romance and elegance.",
 			"________________________",
@@ -11460,8 +10893,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 59",
 			"^0000CCWeight:^000000 250",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11473,18 +10904,16 @@ tbl = {
 	},
 	[2344] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lucius's Fierce of Volcano",
-		identifiedResourceName = "불의갑옷",
+		identifiedResourceName = "ºOAC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^FF0000 Fire",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -11496,18 +10925,16 @@ tbl = {
 	},
 	[2345] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Lucius's Fierce of Volcano",
-		identifiedResourceName = "불의갑옷",
+		identifiedResourceName = "ºOAC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^FF0000 Fire",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -11519,10 +10946,10 @@ tbl = {
 	},
 	[2334] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Magician Coat",
-		identifiedResourceName = "매직코트",
+		identifiedResourceName = "¸AA÷AUÆ®",
 		identifiedDescriptionName = {
 			"An exclusive robe for Magician Class characters that contains magic power.",
 			"________________________",
@@ -11532,8 +10959,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -11545,10 +10970,10 @@ tbl = {
 	},
 	[2506] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Manteau",
-		identifiedResourceName = "망토",
+		identifiedResourceName = "¸AAa",
 		identifiedDescriptionName = {
 			"A long, loose cape-like garment that protects its wearer from harsh weather.",
 			"________________________",
@@ -11557,8 +10982,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant, Thief, Taekwon Boy/Girl and Star Gladiator"
@@ -11569,10 +10992,10 @@ tbl = {
 	},
 	[2307] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mantle",
-		identifiedResourceName = "맨틀",
+		identifiedResourceName = "¸CÆ²",
 		identifiedDescriptionName = {
 			"A cloak that is simple, yet elegant.",
 			"________________________",
@@ -11581,8 +11004,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -11593,10 +11014,10 @@ tbl = {
 	},	
 	[2308] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mantle",
-		identifiedResourceName = "맨틀",
+		identifiedResourceName = "¸CÆ²",
 		identifiedDescriptionName = {
 			"A cloak that is simple, yet elegant.",
 			"________________________",
@@ -11605,8 +11026,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -11617,10 +11036,10 @@ tbl = {
 	},
 	[2364] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Meteor Plate",
-		identifiedResourceName = "메테오플레이트",
+		identifiedResourceName = "¸ÞA×¿ACA·¹AIÆ®",
 		identifiedDescriptionName = {
 			"This plate armor was forged using mysterious materials from a meteor.",
 			"________________________",
@@ -11629,8 +11048,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 85",
 			"^0000CCWeight:^000000 300",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -11642,10 +11059,10 @@ tbl = {
 	},
 	[2532] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mythril Magic Cape",
-		identifiedResourceName = "미스릴마법망토",
+		identifiedResourceName = "¹I½º¸±¸¶¹y¸AAa",
 		identifiedDescriptionName = {
 			"A mysterious cape with a protective spell that can convert the wearer's physical defense to magic defense.",
 			"________________________",
@@ -11656,8 +11073,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11669,10 +11084,10 @@ tbl = {
 	},
 	[2518] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Morpheus's Shawl",
-		identifiedResourceName = "모르피셔스쇼올",
+		identifiedResourceName = "¸ð¸￡CC¼A½º¼i¿A",
 		identifiedDescriptionName = {
 			"A shawl marked with ancient conjuration patterns that is one of the three keys for releasing the seal that binds Morpheus.",
 			"________________________",
@@ -11682,8 +11097,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 33",
@@ -11695,10 +11108,10 @@ tbl = {
 	},
 	[16051] = {
 		unidentifiedDisplayName = "Unidentified Mace",
-		unidentifiedResourceName = "클럽",
+		unidentifiedResourceName = "A￢·´",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Hammer",
-		identifiedResourceName = "발키리해머",
+		identifiedResourceName = "¹ßA°¸®CØ¸O",
 		identifiedDescriptionName = {
 			"A hammer of noble valkyrie.",
 			"________________________",
@@ -11751,8 +11164,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 10",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11764,10 +11175,10 @@ tbl = {
 	},	
 	[28717] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
+		unidentifiedResourceName = "³ªAICA",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Knife",
-		identifiedResourceName = "발키리나이프",
+		identifiedResourceName = "¹ßA°¸®³ªAICA",
 		identifiedDescriptionName = {
 			"A noble knife of Valkyrie.",
 			"It seems that even weak people can be treated.",
@@ -11837,8 +11248,6 @@ tbl = {
 			"^0000CCAttack:^000000 50",
 			"^0000CCWeight:^000000 10",
 			"^0000CCWeapon Level:^000000 4",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11850,10 +11259,10 @@ tbl = {
 	},	
 	[2519] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Morrigan's Manteau",
-		identifiedResourceName = "모리아네의망토",
+		identifiedResourceName = "¸ð¸®¾Æ³×AC¸AAa",
 		identifiedDescriptionName = {
 			"________________________",
 			"LUK +2",
@@ -11862,8 +11271,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 9",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 61",
@@ -11875,10 +11282,10 @@ tbl = {
 	},
 	[2504] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Muffler",
-		identifiedResourceName = "머플러",
+		identifiedResourceName = "¸OCA·?",
 		identifiedDescriptionName = {
 			"A warm scarf that is worn around the neck and shoulders.",
 			"________________________",
@@ -11888,8 +11295,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -11900,10 +11305,10 @@ tbl = {
 	},
 	[2545] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Musika",
-		identifiedResourceName = "무시카",
+		identifiedResourceName = "¹≪½AA≪",
 		identifiedDescriptionName = {
 			"An outfit for priests in order to protect the exorcists at Prontera Church.",
 			"________________________",
@@ -11915,8 +11320,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -11928,10 +11331,10 @@ tbl = {
 	},
 	[2337] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ninja Suit",
-		identifiedResourceName = "닌자슈츠",
+		identifiedResourceName = "´NAU½´A÷",
 		identifiedDescriptionName = {
 			"A sneaking suit that enables its wearer into move more quickly and stealthily.",
 			"________________________",
@@ -11945,8 +11348,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 58",
 			"^0000CCWeight:^000000 150",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -11958,10 +11359,10 @@ tbl = {
 	},
 	[2554] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Nidhoggur's Shadow Garb",
-		identifiedResourceName = "대행자의껍질조각",
+		identifiedResourceName = "´eCaAUAC²®AuA¶°￠",
 		identifiedDescriptionName = {
 			"Made from a scale of Nidhoggur's Shadow, it still possesses its strong power.",
 			"________________________",
@@ -11975,8 +11376,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 90",
@@ -11988,18 +11387,16 @@ tbl = {
 	},
 	[2353] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Odin's Blessing",
-		identifiedResourceName = "오딘의축복",
+		identifiedResourceName = "¿AμoACAaº¹",
 		identifiedDescriptionName = {
 			"The main component of the Hermod Armor set.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 53",
 			"^0000CCWeight:^000000 250",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -12011,10 +11408,10 @@ tbl = {
 	},
 	[2365] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orlean's Gown",
-		identifiedResourceName = "오를레앙의제복",
+		identifiedResourceName = "¿A¸|·¹¾OACA|º¹",
 		identifiedDescriptionName = {
 			"A uniform that was once worn by a chef that was obsessed with cleanliness.",
 			"Nobody could stop him once he started talking about cuisine.",
@@ -12026,8 +11423,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -12039,10 +11434,10 @@ tbl = {
 	},
 	[2314] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Chain Mail",
-		identifiedResourceName = "메일",
+		identifiedResourceName = "¸ÞAI",
 		identifiedDescriptionName = {
 			"Heavy mail made entirely of polished, metal chain links.",
 			"________________________",
@@ -12052,8 +11447,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 55",
 			"^0000CCWeight:^000000 330",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant and Thief classes"
@@ -12064,10 +11457,10 @@ tbl = {
 	},
 	[2312] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Padded Armor",
-		identifiedResourceName = "아머",
+		identifiedResourceName = "¾Æ¸O",
 		identifiedDescriptionName = {
 			"Armor constructed of solid metal plates that have been padded on the inside for comfort.",
 			"________________________",
@@ -12077,8 +11470,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 35",
 			"^0000CCWeight:^000000 280",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant and Thief classes"
@@ -12089,10 +11480,10 @@ tbl = {
 	},
 	[2313] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Padded Armor",
-		identifiedResourceName = "아머",
+		identifiedResourceName = "¾Æ¸O",
 		identifiedDescriptionName = {
 			"Armor constructed of solid metal plates that have been padded on the inside for comfort.",
 			"________________________",
@@ -12102,8 +11493,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 35",
 			"^0000CCWeight:^000000 280",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant and Thief classes"
@@ -12114,10 +11503,10 @@ tbl = {
 	},
 	[15012] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Puente Robe",
-		identifiedResourceName = "퓨엔테로브",
+		identifiedResourceName = "C≫¿￡A×·Iºe",
 		identifiedDescriptionName = {
 			"A snow-white robe on which spells are embroidered.",
 			"________________________",
@@ -12128,8 +11517,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 42",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 22"
@@ -12140,10 +11527,10 @@ tbl = {
 	},	
 	[2311] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mink Coat",
-		identifiedResourceName = "밍크코트",
+		identifiedResourceName = "¹OAⓒAUÆ®",
 		identifiedDescriptionName = {
 			"A fur coat that is actually made using hides from Lunatics.",
 			"________________________",
@@ -12152,8 +11539,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 30",
 			"^0000CCWeight:^000000 230",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",	
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 30",
@@ -12165,10 +11550,10 @@ tbl = {
 	},	
 	[15014] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ebone Armor",
-		identifiedResourceName = "칠흑의갑옷",
+		identifiedResourceName = "A￥EæAC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"A suit of armor made of a metal called Opcidium. The decoration of a black crystal looks profound.",
 			"________________________",
@@ -12188,10 +11573,10 @@ tbl = {
 	},	
 	[15013] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Claire Suit",
-		identifiedResourceName = "클레르슈츠",
+		identifiedResourceName = "A￢·¹¸￡½´A÷",
 		identifiedDescriptionName = {
 			"A suit for adventurers that maximizes defense while still fitting comfortably.",
 			"________________________",
@@ -12200,8 +11585,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 58",
 			"^0000CCWeight:^000000 280",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 22",
@@ -12213,10 +11596,10 @@ tbl = {
 	},	
 	[15051] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bakonawa Scale Armor",
-		identifiedResourceName = "버코너워비늘갑옷",
+		identifiedResourceName = "¹oAU³E¿oºn´A°ⓒ¿E",
 		identifiedDescriptionName = {
 			"Armor made from Bakonawa Scale. Lets off a mysterious moonlight effect.",
 			"________________________",
@@ -12237,10 +11620,10 @@ tbl = {
 	},	
 	[2109] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Memory Book",
-		identifiedResourceName = "메모라이즈북",
+		identifiedResourceName = "¸Þ¸ð¶oAIAiºI",
 		identifiedDescriptionName = {
 			"A magic book filled with long, impractical spells that is so large, it can actually be used just like a shield.",
 			"________________________",
@@ -12254,8 +11637,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Magician and Soul Linker classes"
@@ -12266,10 +11647,10 @@ tbl = {
 	},
 	[2169] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Kalasag",
-		identifiedResourceName = "칼라삭",
+		identifiedResourceName = "A®¶o≫e",
 		identifiedDescriptionName = {
 			"Sturdy yet light, practical shield made from rattan.",
 			"________________________",
@@ -12293,10 +11674,10 @@ tbl = {
 	},
 	[2421] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Shoes",
-		identifiedResourceName = "발키리의슈즈",
+		identifiedResourceName = "¹ßA°¸®AC½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes worn by the Valkyries, Odin's battle maidens.",
 			"These shoes grow more powerful as the wearer improves his own abilities.",
@@ -12312,8 +11693,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes except Novice"
@@ -12324,10 +11703,10 @@ tbl = {
 	},	
 	[2420] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angel's Reincarnation",
-		identifiedResourceName = "천사의재래",
+		identifiedResourceName = "Aμ≫cACAc·¡",
 		identifiedDescriptionName = {
 			"Heavenly sandals worn by the Guardian Angel of Super Novices.",
 			"________________________",
@@ -12341,8 +11720,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 25",
@@ -12354,10 +11731,10 @@ tbl = {
 	},	
 	[2419] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goibniu's Greaves",
-		identifiedResourceName = "게브네이의군화",
+		identifiedResourceName = "°Oºe³×AIAC±ºE­",
 		identifiedDescriptionName = {
 			"A pair of shoes rumored to be forged by Goibniu in response to competition from his rival, Dulb.",
 			"________________________",
@@ -12368,8 +11745,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 54",
@@ -12381,10 +11756,10 @@ tbl = {
 	},	
 	[2422] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "High Fashion Sandals",
-		identifiedResourceName = "고급샌들",
+		identifiedResourceName = "°i±Þ≫÷μe",
 		identifiedDescriptionName = {
 			"Jeweled, golden strapped sandals that offer a casual, yet fashionable, comfort.",
 			"________________________",
@@ -12393,8 +11768,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 7",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>",				
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -12406,10 +11779,10 @@ tbl = {
 	},	
 	[2138] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bradium Shield",
-		identifiedResourceName = "브라디움방패",
+		identifiedResourceName = "ºe¶oμð¿o¹æÆÐ",
 		identifiedDescriptionName = {
 			"A heavy and strong shield made out of Bradium.",
 			"________________________",
@@ -12421,8 +11794,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 98",
 			"^0000CCWeight:^000000 180",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -12434,10 +11805,10 @@ tbl = {
 	},
 	[2110] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Holy Guard",
-		identifiedResourceName = "홀리가드",
+		identifiedResourceName = "E|¸®°¡μa",
 		identifiedDescriptionName = {
 			"A blessed guard with God's symbol engraved on it.",
 			"________________________",
@@ -12447,8 +11818,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 110",
 			"^0000CCWeight:^000000 140",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 68",
@@ -12460,10 +11829,10 @@ tbl = {
 	},
 	[2125] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Strong Shield",
-		identifiedResourceName = "스트롱쉴드",
+		identifiedResourceName = "½ºÆ®·O½?μa",
 		identifiedDescriptionName = {
 			"A massive shield that can withstand any attack, but it lacks shock absorption.",
 			"________________________",
@@ -12474,8 +11843,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 90",
 			"^0000CCWeight:^000000 250",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -12487,10 +11854,10 @@ tbl = {
 	},
 	[2130] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cross Shield",
-		identifiedResourceName = "크로스쉴드",
+		identifiedResourceName = "Aⓒ·I½º½?μa",
 		identifiedDescriptionName = {
 			"A big and thick cross-shaped shield.",
 			"________________________",
@@ -12503,8 +11870,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 130",
 			"^0000CCWeight:^000000 200",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 80",
@@ -12516,10 +11881,10 @@ tbl = {
 	},	
 	[2111] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Herald of God",
-		identifiedResourceName = "신의사자",
+		identifiedResourceName = "½AAC≫cAU",
 		identifiedDescriptionName = {
 			"A symbolic shield, rumored to have been given from God to his messenger.",
 			"________________________",
@@ -12531,8 +11896,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 120",
 			"^0000CCWeight:^000000 160",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 83",
@@ -12544,10 +11907,10 @@ tbl = {
 	},	
 	[2128] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Herald of God",
-		identifiedResourceName = "신의사자",
+		identifiedResourceName = "½AAC≫cAU",
 		identifiedDescriptionName = {
 			"A symbolic shield, rumored to have been given from God to his messenger.",
 			"________________________",
@@ -12559,8 +11922,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 120",
 			"^0000CCWeight:^000000 160",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 83",
@@ -12572,10 +11933,10 @@ tbl = {
 	},
 	[2134] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shield of Naga",
-		identifiedResourceName = "나가의비늘방패",
+		identifiedResourceName = "³ª°¡ACºn´A¹æÆÐ",
 		identifiedDescriptionName = {
 			"A hard, firm-looking shield made from the scales of Naga. The scales are as sharp as blades.",
 			"________________________",
@@ -12589,8 +11950,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 35",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -12601,10 +11960,10 @@ tbl = {
 	},
 	[2131] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Magic Bible Vol.1",
-		identifiedResourceName = "마력의서제1권",
+		identifiedResourceName = "¸¶·AAC¼­A|1±C",
 		identifiedDescriptionName = {
 			"A thick book which is full of unknown words. It seems to be published in series.",
 			"________________________",
@@ -12616,8 +11975,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 18",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -12629,10 +11986,10 @@ tbl = {
 	},
 	[2115] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Shield",
-		identifiedResourceName = "발키리아쉴드",
+		identifiedResourceName = "¹ßA°¸®¾Æ½?μa",
 		identifiedDescriptionName = {
 			"A shield used by Gna, messenger of Freya, when she served as a Valkyrie.",
 			"________________________",
@@ -12648,8 +12005,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 80",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -12661,10 +12016,10 @@ tbl = {
 	},
 	[2114] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stone Buckler",
-		identifiedResourceName = "스톤버클러",
+		identifiedResourceName = "½ºAæ¹oA￢·?",
 		identifiedDescriptionName = {
 			"A stone shield which Thor obtained by killing Hrungnir, king of giants.",
 			"It possesses the powers of giants which rival the might of the gods.",
@@ -12681,8 +12036,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 45",
 			"^0000CCWeight:^000000 150",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -12694,10 +12047,10 @@ tbl = {
 	},
 	[2124] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Thorny Buckler",
-		identifiedResourceName = "가시방패",
+		identifiedResourceName = "°¡½A¹æÆÐ",
 		identifiedDescriptionName = {
 			"A rough shield covered in spikes that deters rushing enemies.",
 			"________________________",
@@ -12710,8 +12063,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 85",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -12723,10 +12074,10 @@ tbl = {
 	},
 	[2123] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Orlean's Server",
-		identifiedResourceName = "오를레앙의서버",
+		identifiedResourceName = "¿A¸|·¹¾OAC¼­¹o",
 		identifiedDescriptionName = {
 			"A shiny, round steel plate used for serving food.",
 			"________________________",
@@ -12740,8 +12091,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 75",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -12753,10 +12102,10 @@ tbl = {
 	},
 	[2133] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tournament Shield",
-		identifiedResourceName = "토너먼트쉴드",
+		identifiedResourceName = "Aa³E¸OÆ®½?μa",
 		identifiedDescriptionName = {
 			"A Shield that a lance can be placed on top of.",
 			"Very efficient to defend oneself while attacking with a lance.",
@@ -12783,10 +12132,10 @@ tbl = {
 	},
 	[2129] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Exorcism Bible",
-		identifiedResourceName = "구마의성서",
+		identifiedResourceName = "±¸¸¶AC¼º¼­",
 		identifiedDescriptionName = {
 			"A thick book that contains basic skills for the clergy.",
 			"________________________",
@@ -12801,8 +12150,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 80",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -12814,10 +12161,10 @@ tbl = {
 	},
 	[2146] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silver Guard",
-		identifiedResourceName = "실버가드",
+		identifiedResourceName = "½C¹o°¡μa",
 		identifiedDescriptionName = {
 			"A shield which is a guard covered with thin layer of mixed silver and steel. It looks good when it reflects light.",
 			"________________________",
@@ -12836,10 +12183,10 @@ tbl = {
 	},	
 	[2147] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Round Buckler",
-		identifiedResourceName = "라운드버클러",
+		identifiedResourceName = "¶o¿iμa¹oA￢·?",
 		identifiedDescriptionName = {
 			"A round-shape shield that is used generally.",
 			"It has heightened a defense power by adding elunium thick at the round part.",
@@ -12847,8 +12194,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 100",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 22",
@@ -12860,10 +12205,10 @@ tbl = {
 	},	
 	[2116] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Angelic Guard",
-		identifiedResourceName = "천사의보호",
+		identifiedResourceName = "Aμ≫cACº¸E￡",
 		identifiedDescriptionName = {
 			"Super Novice Guardian Angel's shield which contains holy power that can nullify evil.",
 			"________________________",
@@ -12877,8 +12222,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 30",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 20",
@@ -12890,10 +12233,10 @@ tbl = {
 	},
 	[2121] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Memory Book",
-		identifiedResourceName = "메모라이즈북",
+		identifiedResourceName = "¸Þ¸ð¶oAIAiºI",
 		identifiedDescriptionName = {
 			"A spellbook that is impractically huge and more useful as a shield than as a spell reference.",
 			"________________________",
@@ -12907,8 +12250,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Magician and Soul Linker classes"
@@ -12919,10 +12260,10 @@ tbl = {
 	},	
 	[15032] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tidung",
-		identifiedResourceName = "티덩",
+		identifiedResourceName = "Æ¼μ￠",
 		identifiedDescriptionName = {
 			"A suit of armor made from animal leather, used by the Jaty tribe during battle.",
 			"________________________",
@@ -12935,8 +12276,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 2",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -12947,10 +12286,10 @@ tbl = {
 	},	
 	[2339] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pantie",
-		identifiedResourceName = "삼각팬티",
+		identifiedResourceName = "≫i°￠ÆOÆ¼",
 		identifiedDescriptionName = {
 			"A risque undergarment that is comfortable to wear, but offers very little in the way of defense.",
 			"________________________",
@@ -12963,8 +12302,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 22",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -12974,18 +12311,16 @@ tbl = {
 	},
 	[2514] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pauldron",
-		identifiedResourceName = "폴드런",
+		identifiedResourceName = "Æuμa·±",
 		identifiedDescriptionName = {
 			"A pair of heavy shoulder coverings that provide effective protection in combat.",
 			"________________________",
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 80",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 80",
@@ -12997,10 +12332,10 @@ tbl = {
 	},
 	[2508] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ragamuffin Manteau",
-		identifiedResourceName = "누더기망토",
+		identifiedResourceName = "´ⓒ´o±a¸AAa",
 		identifiedDescriptionName = {
 			"An old, worn-out cape that can protect its wearer from mystical harm, no matter how powerful it may be.",
 			"________________________",
@@ -13011,8 +12346,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 4",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -13023,10 +12356,10 @@ tbl = {
 	},
 	[2343] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Robe of Casting",
-		identifiedResourceName = "캐스팅의로브",
+		identifiedResourceName = "A³½ºÆAAC·Iºe",
 		identifiedDescriptionName = {
 			"A robe which aids its wearer in reducing magic casting time.",
 			"________________________",
@@ -13037,8 +12370,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 110",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -13050,10 +12381,10 @@ tbl = {
 	},
 	[2326] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Saint's Robe",
-		identifiedResourceName = "세인트로브",
+		identifiedResourceName = "¼¼AIÆ®·Iºe",
 		identifiedDescriptionName = {
 			"A robe that has been baptized with saintly power.",
 			"________________________",
@@ -13062,8 +12393,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Acolyte and Merchant"
@@ -13074,10 +12403,10 @@ tbl = {
 	},
 	[2402] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sandals",
-		identifiedResourceName = "샌들",
+		identifiedResourceName = "≫÷μe",
 		identifiedDescriptionName = {
 			"Cute, feminine shoes that are a part of the standard schoolgirl's uniform.",
 			"Fortunately, these are unisex.",
@@ -13085,8 +12414,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -13096,10 +12423,10 @@ tbl = {
 	},
 	[2402] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sandals",
-		identifiedResourceName = "샌들",
+		identifiedResourceName = "≫÷μe",
 		identifiedDescriptionName = {
 			"Cute, feminine shoes that are a part of the standard schoolgirl's uniform.",
 			"Fortunately, these are unisex.",
@@ -13107,8 +12434,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -13118,18 +12443,16 @@ tbl = {
 	},
 	[2346] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sapien's Wail of Ocean",
-		identifiedResourceName = "물의갑옷",
+		identifiedResourceName = "¹°AC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^0000BB Water",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -13141,18 +12464,16 @@ tbl = {
 	},
 	[2347] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sapien's Wail of Ocean",
-		identifiedResourceName = "물의갑옷",
+		identifiedResourceName = "¹°AC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 220",
 			"^0000CCElement:^0000BB Water",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -13164,10 +12485,10 @@ tbl = {
 	},
 	[2323] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Scapulare",
-		identifiedResourceName = "스캐퓰러",
+		identifiedResourceName = "½ºA³C½·?",
 		identifiedDescriptionName = {
 			"A blessed outer garment worn by clerics for religious ceremonies.",
 			"________________________",
@@ -13176,8 +12497,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 24",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Acolyte"
@@ -13188,10 +12507,10 @@ tbl = {
 	},
 	[2324] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Scapulare",
-		identifiedResourceName = "스캐퓰러",
+		identifiedResourceName = "½ºA³C½·?",
 		identifiedDescriptionName = {
 			"A blessed outer garment worn by clerics for religious ceremonies.",
 			"________________________",
@@ -13200,8 +12519,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 24",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Acolyte"
@@ -13212,10 +12529,10 @@ tbl = {
 	},
 	[2328] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wooden Mail",
-		identifiedResourceName = "우든메일",
+		identifiedResourceName = "¿iμc¸ÞAI",
 		identifiedDescriptionName = {
 			"A simple set of armor carved out of solid wood.",
 			"________________________",
@@ -13224,8 +12541,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman and Merchant"
@@ -13236,10 +12551,10 @@ tbl = {
 	},
 	[2329] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wooden Mail",
-		identifiedResourceName = "우든메일",
+		identifiedResourceName = "¿iμc¸ÞAI",
 		identifiedDescriptionName = {
 			"A simple set of armor carved out of solid wood.",
 			"________________________",
@@ -13248,8 +12563,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman and Merchant"
@@ -13260,10 +12573,10 @@ tbl = {
 	},	
 	[2325] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Saint's Robe",
-		identifiedResourceName = "세인트로브",
+		identifiedResourceName = "¼¼AIÆ®·Iºe",
 		identifiedDescriptionName = {
 			"A robe that has been baptized with saintly power.",
 			"________________________",
@@ -13272,8 +12585,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Acolyte and Merchant"
@@ -13284,10 +12595,10 @@ tbl = {
 	},
 	[2326] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Saint's Robe",
-		identifiedResourceName = "세인트로브",
+		identifiedResourceName = "¼¼AIÆ®·Iºe",
 		identifiedDescriptionName = {
 			"A robe that has been baptized with saintly power.",
 			"________________________",
@@ -13296,8 +12607,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Acolyte and Merchant"
@@ -13308,10 +12617,10 @@ tbl = {
 	},	
 	[2491] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bangungot Boots of Nightmare",
-		identifiedResourceName = "악몽의벙웅곳부츠",
+		identifiedResourceName = "¾C¸uACº¡¿o°÷ºIA÷",
 		identifiedDescriptionName = {
 			"Ominous boots emitting Bangungot's revenge and powerful hatred of humans.",
 			"________________________",
@@ -13333,10 +12642,10 @@ tbl = {
 	},	
 	[2584] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wanderer's Coat",
-		identifiedResourceName = "배회하는자의겉옷",
+		identifiedResourceName = "¹eE¸CI´AAUAC°N¿E",
 		identifiedDescriptionName = {
 			"A coat that once worn by master swordman of the east.",
 			"________________________",
@@ -13359,8 +12668,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -13370,10 +12677,10 @@ tbl = {
 	},	
 	[2408] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shackles",
-		identifiedResourceName = "족쇠",
+		identifiedResourceName = "A·¼e",
 		identifiedDescriptionName = {
 			"These steel shackles were clamped on the ankles to prevent some prisoner from escaping.",
 			"________________________",
@@ -13382,8 +12689,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 18",
 			"^0000CCWeight:^000000 300",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -13393,10 +12698,10 @@ tbl = {
 	},
 	[2426] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shadow Walk",
-		identifiedResourceName = "쉐도우워크",
+		identifiedResourceName = "½|μμ¿i¿oAⓒ",
 		identifiedDescriptionName = {
 			"________________________",
 			"MDEF +10",
@@ -13406,8 +12711,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 0",
 			"^0000CCWeight:^000000 200",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -13419,10 +12722,10 @@ tbl = {
 	},
 	[2226] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cap",
-		identifiedResourceName = "캡",
+		identifiedResourceName = "A¸",
 		identifiedDescriptionName = {
 			"A brimless hat that offers very little in the way of fashion, but does provide decent defense.",
 			"________________________",
@@ -13442,10 +12745,10 @@ tbl = {
 	},
 	[2230] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gemmed Sallet",
-		identifiedResourceName = "쥬얼헬름",
+		identifiedResourceName = "Ae¾oCi¸§",
 		identifiedDescriptionName = {
 			"A jeweled headdress that wards off harmful magic.",
 			"________________________",
@@ -13465,10 +12768,10 @@ tbl = {
 	},
 	[2210] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hairband",
-		identifiedResourceName = "머리띠",
+		identifiedResourceName = "¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A simple hairband that holds hair in place quite neatly.",
 			"It's a very cute look for girls, but dudes, on the other hand...",
@@ -13489,10 +12792,10 @@ tbl = {
 	},	
 	[5061] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Flower Hairpin",
-		identifiedResourceName = "꽃머리핀",
+		identifiedResourceName = "²E¸O¸®CE",
 		identifiedDescriptionName = {
 			"A hairpin with a red flower attached. It helps hold hair in place.",
 			"________________________",
@@ -13511,10 +12814,10 @@ tbl = {
 	},	
 	[18533] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Honey Bee Hat",
-		identifiedResourceName = "꿀벌모자",
+		identifiedResourceName = "²U¹u¸ðAU",
 		identifiedDescriptionName = {
 			"A striped hat with honeybee antenna's on top.",
 			"It smells good, like sweet honey.",
@@ -13535,10 +12838,10 @@ tbl = {
 	},	
 	[5034] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bulb Headband",
-		identifiedResourceName = "전구머리띠",
+		identifiedResourceName = "Au±¸¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A hair band with a light bulb attached to it.",
 			"________________________",
@@ -13558,10 +12861,10 @@ tbl = {
 	},	
 	[5052] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Blue Hairband",
-		identifiedResourceName = "청색머리띠",
+		identifiedResourceName = "A≫≫o¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A blue colored hair band worn with a rakish slant.",
 			"________________________",
@@ -13580,10 +12883,10 @@ tbl = {
 	},	
 	[5049] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Striped Hairband",
-		identifiedResourceName = "줄무늬머리띠",
+		identifiedResourceName = "AU¹≪´I¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A striped hair band which is good for preventing hair from covering the eyes.",
 			"________________________",
@@ -13603,10 +12906,10 @@ tbl = {
 	},	
 	[2273] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Doctor Band",
-		identifiedResourceName = "의사머리띠",
+		identifiedResourceName = "AC≫c¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A headband worn by doctors in the past during medical examinations.",
 			"________________________",
@@ -13626,10 +12929,10 @@ tbl = {
 	},	
 	[5047] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fashionable Glasses",
-		identifiedResourceName = "패션선글래스",
+		identifiedResourceName = "ÆÐ¼C¼±±U·¡½º",
 		identifiedDescriptionName = {
 			"A pair of fashionable sunglasses.",
 			"________________________",
@@ -13649,10 +12952,10 @@ tbl = {
 	},	
 	[5041] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Heart Hairpin",
-		identifiedResourceName = "하트머리핀",
+		identifiedResourceName = "CIÆ®¸O¸®CE",
 		identifiedDescriptionName = {
 			"A cute hairpin with a heart attached to it. Makes its wearer look adorable and charming.",
 			"________________________",
@@ -13671,10 +12974,10 @@ tbl = {
 	},	
 	[5048] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cresent Hairpin",
-		identifiedResourceName = "초승달머리핀",
+		identifiedResourceName = "AE½A´Þ¸O¸®CE",
 		identifiedDescriptionName = {
 			"A hairpin in the shape of a crescent.",
 			"________________________",
@@ -13695,10 +12998,10 @@ tbl = {
 	},	
 	[5036] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cross Hat",
-		identifiedResourceName = "십자머리띠",
+		identifiedResourceName = "½EAU¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A hairband with a cross mounted on top.",
 			"________________________",
@@ -13719,10 +13022,10 @@ tbl = {
 	},	
 	[5026] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Chef Hat",
-		identifiedResourceName = "요리사의모자",
+		identifiedResourceName = "¿a¸®≫cAC¸ðAU",
 		identifiedDescriptionName = {
 			"A hat designed to cool a chef's head in a hot kitchen.",
 			"________________________",
@@ -13743,10 +13046,10 @@ tbl = {
 	},	
 	[5040] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Blush",
-		identifiedResourceName = "발그레",
+		identifiedResourceName = "¹ß±×·¹",
 		identifiedDescriptionName = {
 			"Two red dots that can be worn on the face to give a blushing impression.",
 			"________________________",
@@ -13766,10 +13069,10 @@ tbl = {
 	},	
 	[5024] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cake Hat",
-		identifiedResourceName = "케이크모자",
+		identifiedResourceName = "AEAIAⓒ¸ðAU",
 		identifiedDescriptionName = {
 			"A birthday cake replica that won't fit a Dancer inside, but it's almost just as much fun to wear it on top of your head. Almost.",
 			"________________________",
@@ -13788,10 +13091,10 @@ tbl = {
 	},	
 	[5063] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bandage",
-		identifiedResourceName = "반창고",
+		identifiedResourceName = "¹YA￠°i",
 		identifiedDescriptionName = {
 			"A hair accessory which looks just like two bandages.",
 			"________________________",
@@ -13811,10 +13114,10 @@ tbl = {
 	},	
 	[5079] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "X Hairpin",
-		identifiedResourceName = "X자머리핀",
+		identifiedResourceName = "XAU¸O¸®CE",
 		identifiedDescriptionName = {
 			"A hair accessory that looks like an \"X\".",
 			"________________________",
@@ -13833,10 +13136,10 @@ tbl = {
 	},	
 	[13990] = {
 		unidentifiedDisplayName = "Job Battle Manual Box(10)",
-		unidentifiedResourceName = "오래된보라상자",
+		unidentifiedResourceName = "¿A·¡μEº¸¶o≫oAU",
 		unidentifiedDescriptionName = { "" },
 		identifiedDisplayName = "Job Battle Manual Box(5)",
-		identifiedResourceName = "오래된보라상자",
+		identifiedResourceName = "¿A·¡μEº¸¶o≫oAU",
 		identifiedDescriptionName = {
 			"A box that contains",
 			"10 Job Battle Manuals.",
@@ -13859,10 +13162,10 @@ tbl = {
 	},	
 	[5077] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tulip Hairpin",
-		identifiedResourceName = "튤립머리핀",
+		identifiedResourceName = "Æ≪¸³¸O¸®CE",
 		identifiedDescriptionName = {
 			"A tiny little hairpin shaped like a tulip.",
 			"________________________",
@@ -13881,10 +13184,10 @@ tbl = {
 	},	
 	[5059] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Teddybear Hat",
-		identifiedResourceName = "곰돌이모자",
+		identifiedResourceName = "°oμ¹AI¸ðAU",
 		identifiedDescriptionName = {
 			"A hat made to look like a teddy bear's face. It makes a nice present.",
 			"________________________",
@@ -13906,10 +13209,10 @@ tbl = {
 	},	
 	[5790] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mother's Kindness",
-		identifiedResourceName = "트라이앵글룬캡",
+		identifiedResourceName = "Æ®¶oAI¾Þ±U·eA¸",
 		identifiedDescriptionName = {
 			"A hat full of mother's love. Sacrifice herself to help you.",
 			"________________________",
@@ -13931,10 +13234,10 @@ tbl = {
 	},	
 	[5108] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Renown Detective's Cap",
-		identifiedResourceName = "탐정모자",
+		identifiedResourceName = "A½A¤¸ðAU",
 		identifiedDescriptionName = {
 			"This type of cap is known to have been worn by a world famous detective.",
 			"It feels like a Pipe would perfectly complement this cap for some reason.",
@@ -13954,10 +13257,10 @@ tbl = {
 	},	
 	[5109] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Red Bonnet",
-		identifiedResourceName = "차양모자",
+		identifiedResourceName = "A÷¾c¸ðAU",
 		identifiedDescriptionName = {
 			"A bonnet favored by women of nobility.",
 			"Wearing it supposedly causes inexplicable cravings for tea, but that might just be an aristocratic thing.",
@@ -13978,10 +13281,10 @@ tbl = {
 	},	
 	[2293] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pretend Murdered",
-		identifiedResourceName = "연극소도구",
+		identifiedResourceName = "¿￢±Ø¼Oμμ±¸",
 		identifiedDescriptionName = {
 			"A stage prop that creates the illusion that the wearer has a knife sticking out of his head.",
 			"________________________",
@@ -14001,10 +13304,10 @@ tbl = {
 	},	
 	[5010] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Indian Fillet",
-		identifiedResourceName = "원주민머리띠",
+		identifiedResourceName = "¿øAO¹I¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A traditional headdress worn by native peoples.",
 			"________________________",
@@ -14023,10 +13326,10 @@ tbl = {
 	},	
 	[5011] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Antenna",
-		identifiedResourceName = "안테나",
+		identifiedResourceName = "¾EA×³ª",
 		identifiedDescriptionName = {
 			"A mysterious object, possibly a device, that was discovered in the depths of the ocean.",
 			"Nobody knows what it is.",
@@ -14047,10 +13350,10 @@ tbl = {
 	},	
 	[2216] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Biretta",
-		identifiedResourceName = "비레타",
+		identifiedResourceName = "ºn·¹A¸",
 		identifiedDescriptionName = {
 			"A stiff, squarish formal hat usually worn by clerics.",
 			"________________________",
@@ -14068,10 +13371,10 @@ tbl = {
 	},
 	[2217] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Biretta",
-		identifiedResourceName = "비레타",
+		identifiedResourceName = "ºn·¹A¸",
 		identifiedDescriptionName = {
 			"A stiff, squarish formal hat usually worn by clerics.",
 			"________________________",
@@ -14089,10 +13392,10 @@ tbl = {
 	},	
 	[2279] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bomb Wick",
-		identifiedResourceName = "심지",
+		identifiedResourceName = "½EAo",
 		identifiedDescriptionName = {
 			"A wick-like ornament worn on top of the head for a dangerous look.",
 			"________________________",
@@ -14113,10 +13416,10 @@ tbl = {
 	},	
 	[5114] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bucket Hat",
-		identifiedResourceName = "벙거지모자",
+		identifiedResourceName = "º¡°AAo¸ðAU",
 		identifiedDescriptionName = {
 			"A trendy hat whose design is based on the old style hats that used to be worn by men enlisted in the military.",
 			"________________________",
@@ -14135,10 +13438,10 @@ tbl = {
 	},	
 	[2256] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Majestic Goat",
-		identifiedResourceName = "마제스틱고우트",
+		identifiedResourceName = "¸¶A|½ºÆ½°i¿iÆ®",
 		identifiedDescriptionName = {
 			"A helmet, made to look like mighty goat horns, that can increase the strength of its wearer.",
 			"________________________",
@@ -14158,10 +13461,10 @@ tbl = {
 	},	
 	[2235] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crown",
-		identifiedResourceName = "크라운",
+		identifiedResourceName = "Aⓒ¶o¿i",
 		identifiedDescriptionName = {
 			"A crown adorned with gorgeous jewels that is said to be worn by a wise, ancient king who will grant his wisdom to the wearer.",
 			"________________________",
@@ -14184,10 +13487,10 @@ tbl = {
 	},	
 	[18874] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Monocle",
-		identifiedResourceName = "외눈안경",
+		identifiedResourceName = "¿U´≪¾E°æ",
 		identifiedDescriptionName = {
 			"An aristrocratically stylish lense that is worn for only one eye.",
 			"________________________",
@@ -14207,10 +13510,10 @@ tbl = {
 	},	
 	[5112] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Super Novice Hat",
-		identifiedResourceName = "슈노모자",
+		identifiedResourceName = "½´³e¸ðAU",
 		identifiedDescriptionName = {
 			"A hat that happens to match the Super Novice costume... absolutely perfect.",
 			"________________________",
@@ -14231,10 +13534,10 @@ tbl = {
 	},	
 	[5119] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Super Novice Hat",
-		identifiedResourceName = "슈노모자",
+		identifiedResourceName = "½´³e¸ðAU",
 		identifiedDescriptionName = {
 			"A hat that happens to match the Super Novice costume... absolutely perfect.",
 			"________________________",
@@ -14255,10 +13558,10 @@ tbl = {
 	},	
 	[2242] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Purple Glasses",
-		identifiedResourceName = "고급선글래스",
+		identifiedResourceName = "°i±Þ¼±±U·¡½º",
 		identifiedDescriptionName = {
 			"High quality sunglasses that effectively block glare from the sun.",
 			"________________________",
@@ -14278,10 +13581,10 @@ tbl = {
 	},	
 	[2239] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Monocle",
-		identifiedResourceName = "외눈안경",
+		identifiedResourceName = "¿U´≪¾E°æ",
 		identifiedDescriptionName = {
 			"An aristrocratically stylish lense that is worn for only one eye.",
 			"________________________",
@@ -14305,10 +13608,10 @@ tbl = {
 	},	
 	[2212] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Eye Patch",
-		identifiedResourceName = "안대",
+		identifiedResourceName = "¾E´e",
 		identifiedDescriptionName = {
 			"A patch used to cover one eye.",
 			"________________________",
@@ -14329,10 +13632,10 @@ tbl = {
 	},	
 	[2205] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Diver Goggles",
-		identifiedResourceName = "물안경",
+		identifiedResourceName = "¹°¾E°æ",
 		identifiedDescriptionName = {
 			"Sturdy goggles worn by ocean divers.",
 			"________________________",
@@ -14352,10 +13655,10 @@ tbl = {
 	},	
 	[2224] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goggles",
-		identifiedResourceName = "고글",
+		identifiedResourceName = "°i±U",
 		identifiedDescriptionName = {
 			"A pair of Goggles especially created for pilots to Reduces impaired vision while riding at high speeds.",
 			"________________________",
@@ -14375,10 +13678,10 @@ tbl = {
 	},
 	[5090] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goblin Leader Mask",
-		identifiedResourceName = "고블린가면4호",
+		identifiedResourceName = "°iºi¸°°¡¸e4E￡",
 		identifiedDescriptionName = {
 			"A mask worn by the Goblin leader. It looks so ferocious, it's ridiculous.",
 			"________________________",
@@ -14398,10 +13701,10 @@ tbl = {
 	},	
 	[2297] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goblin Mask",
-		identifiedResourceName = "고블린족가면",
+		identifiedResourceName = "°iºi¸°A·°¡¸e",
 		identifiedDescriptionName = {
 			"A mask worn by Goblins to scare and intimidate unsuspecting enemies.",
 			"________________________",
@@ -14422,10 +13725,10 @@ tbl = {
 	},	
 	[5808] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Dark Basilium",
-		identifiedResourceName = "다크바실리움",
+		identifiedResourceName = "´UAⓒ¹U½C¸®¿o",
 		identifiedDescriptionName = {
 			"A strong diadem which has been covered the face of Satan Morocc. It can be possessed only by the ones who have overcome the fear of Satan Morocc.",
 			"________________________",
@@ -14448,10 +13751,10 @@ tbl = {
 	},	
 	[5053] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sphinx Hat",
-		identifiedResourceName = "스핑크스모자",
+		identifiedResourceName = "½ºCIAⓒ½º¸ðAU",
 		identifiedDescriptionName = {
 			"A traditional Egyptian head piece that symbolizes the Egyptian gods.",
 			"________________________",
@@ -14475,10 +13778,10 @@ tbl = {
 	
 	[2288] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mr. Scream",
-		identifiedResourceName = "스크래치마스크",
+		identifiedResourceName = "½ºAⓒ·¡A¡¸¶½ºAⓒ",
 		identifiedDescriptionName = {
 			"A mask that expresses anguish and despair borne of insanity.",
 			"________________________",
@@ -14500,10 +13803,10 @@ tbl = {
 	},	
 	[5088] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Surprised Mask",
-		identifiedResourceName = "고블린가면2호",
+		identifiedResourceName = "°iºi¸°°¡¸e2E￡",
 		identifiedDescriptionName = {
 			"A mask with a surprised expression on it.",
 			"________________________",
@@ -14523,10 +13826,10 @@ tbl = {
 	},	
 	[5087] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Poker Face",
-		identifiedResourceName = "고블린가면1호",
+		identifiedResourceName = "°iºi¸°°¡¸e1E￡",
 		identifiedDescriptionName = {
 			"A mask with a blank expression on it.",
 			"________________________",
@@ -14546,10 +13849,10 @@ tbl = {
 	},	
 	[5089] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Annoyed Mask",
-		identifiedResourceName = "고블린가면3호",
+		identifiedResourceName = "°iºi¸°°¡¸e3E￡",
 		identifiedDescriptionName = {
 			"A mask with an annoyed expression on it.",
 			"________________________",
@@ -14569,10 +13872,10 @@ tbl = {
 	},	
 	[2225] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Goggles",
-		identifiedResourceName = "고글",
+		identifiedResourceName = "°i±U",
 		identifiedDescriptionName = {
 			"A pair of Goggles especially created for pilots to Reduces impaired vision while riding at high speeds.",
 			"________________________",
@@ -14592,10 +13895,10 @@ tbl = {
 	},	
 	[5092] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Coif",
-		identifiedResourceName = "수녀모자",
+		identifiedResourceName = "¼o³a¸ðAU",
 		identifiedDescriptionName = {
 			"A tight-fitting cap worn under a veil, usually worn by nuns.",
 			"________________________",
@@ -14614,10 +13917,10 @@ tbl = {
 	},	
 	[5093] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Coif",
-		identifiedResourceName = "수녀모자",
+		identifiedResourceName = "¼o³a¸ðAU",
 		identifiedDescriptionName = {
 			"A tight-fitting cap worn under a veil, usually worn by nuns.",
 			"________________________",
@@ -14638,10 +13941,10 @@ tbl = {
 	},	
 	[2266] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Iron Cain",
-		identifiedResourceName = "아이언케인",
+		identifiedResourceName = "¾ÆAI¾ðAEAI",
 		identifiedDescriptionName = {
 			"Specialized face armor that protects the jaw and teeth in battle.",
 			"________________________",
@@ -14662,10 +13965,10 @@ tbl = {
 	},	
 	[2241] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Grampa Beard",
-		identifiedResourceName = "흰수염",
+		identifiedResourceName = "Eo¼o¿°",
 		identifiedDescriptionName = {
 			"A white colored moustache, symbol of experience and well aged sophistication.",
 			"________________________",
@@ -14685,10 +13988,10 @@ tbl = {
 	},	
 	[2262] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Clown Nose",
-		identifiedResourceName = "광대코",
+		identifiedResourceName = "±¤´eAU",
 		identifiedDescriptionName = {
 			"A fashion accessory used in clown or town drunk disguises.",
 			"________________________",
@@ -14708,10 +14011,10 @@ tbl = {
 	},	
 	[2263] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Zorro Mask",
-		identifiedResourceName = "의적안대",
+		identifiedResourceName = "ACAu¾E´e",
 		identifiedDescriptionName = {
 			"A mask patterned after the one worn by a fencer of legendary repute who always kept his identity as a wealthy don secret.",
 			"________________________",
@@ -14732,10 +14035,10 @@ tbl = {
 	},	
 	[5085] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Pair of Small Ribbons",
-		identifiedResourceName = "양쪽귀밑리본",
+		identifiedResourceName = "¾cAE±I¹Ø¸®º≫",
 		identifiedDescriptionName = {
 			"A pair of small red ribbons which can be used to decorate the hair of little girls.",
 			"________________________",
@@ -14756,10 +14059,10 @@ tbl = {
 	},	
 	[2276] = {
 		unidentifiedDisplayName = "Unidentified Glasses",
-		unidentifiedResourceName = "글래스",
+		unidentifiedResourceName = "±U·¡½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Eagle Eyes",
-		identifiedResourceName = "도끼눈",
+		identifiedResourceName = "μμ³￠´≪",
 		identifiedDescriptionName = {
 			"A pair of glasses with lenses that are angled up and outward.",
 			"________________________",
@@ -14779,10 +14082,10 @@ tbl = {
 	},	
 	[5165] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crown",
-		identifiedResourceName = "크라운",
+		identifiedResourceName = "Aⓒ¶o¿i",
 		identifiedDescriptionName = {
 			"A jeweled crown that is said to grant the wisdom of a sagacious, ancient king that had once worn it.",
 			"________________________",
@@ -14804,10 +14107,10 @@ tbl = {
 	},	
 	[5007] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Grand Circlet",
-		identifiedResourceName = "로드서클릿",
+		identifiedResourceName = "·Iμa¼­A￢¸´",
 		identifiedDescriptionName = {
 			"An exquisitely made circlet, typically worn by rulers or gentry.",
 			"________________________",
@@ -14831,10 +14134,10 @@ tbl = {
 	},	
 	[5002] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jewel Crown",
-		identifiedResourceName = "쥬얼크라운",
+		identifiedResourceName = "Ae¾oAⓒ¶o¿i",
 		identifiedDescriptionName = {
 			"This crown, adorned with precious gems, is generally worn by monarchs as a symbol of their rule.",
 			"________________________",
@@ -14857,10 +14160,10 @@ tbl = {
 	},	
 	[5160] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Majestic Goat",
-		identifiedResourceName = "마제스틱고우트",
+		identifiedResourceName = "¸¶A|½ºÆ½°i¿iÆ®",
 		identifiedDescriptionName = {
 			"A helmet that has been fashioned to give its wearer the appearance of having mighty goat horns. It's a helm that evokes power!",
 			"________________________",
@@ -14881,10 +14184,10 @@ tbl = {
 	},	
 	[2246] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Golden Gear",
-		identifiedResourceName = "골든헤드기어",
+		identifiedResourceName = "°nμcCiμa±a¾i",
 		identifiedDescriptionName = {
 			"A helmet forged from pure gold which blocks attacks effectively, but is also unaffordable.",
 			"________________________",
@@ -14903,10 +14206,10 @@ tbl = {
 	},	
 	[2298] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Green Feeler",
-		identifiedResourceName = "초록더듬이",
+		identifiedResourceName = "AE·I´oμeAI",
 		identifiedDescriptionName = {
 			"Large insect antennae that humans can wear.",
 			"________________________",
@@ -14926,10 +14229,10 @@ tbl = {
 	},	
 	[5159] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Golden Gear",
-		identifiedResourceName = "골든헤드기어",
+		identifiedResourceName = "°nμcCiμa±a¾i",
 		identifiedDescriptionName = {
 			"A gaudy helmet forged from pure gold that effectively provides more defense for a really, really high price.",
 			"________________________",
@@ -14950,10 +14253,10 @@ tbl = {
 	},	
 	[5120] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bucket Hat",
-		identifiedResourceName = "벙거지모자",
+		identifiedResourceName = "º¡°AAo¸ðAU",
 		identifiedDescriptionName = {
 			"A trendy hat whose design is based on the old style hats that used to be worn by men enlisted in the military.",
 			"________________________",
@@ -14972,10 +14275,10 @@ tbl = {
 	},	
 	[2244] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Big Ribbon",
-		identifiedResourceName = "왕리본",
+		identifiedResourceName = "¿O¸®º≫",
 		identifiedDescriptionName = {
 			"An over-sized red ribbon that contains hidden magical power.",
 			"________________________",
@@ -14995,10 +14298,10 @@ tbl = {
 	},	
 	[5012] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ph.D Hat",
-		identifiedResourceName = "학사모",
+		identifiedResourceName = "CÐ≫c¸ð",
 		identifiedDescriptionName = {
 			"A ceremonial hat worn during one's graduation.",
 			"________________________",
@@ -15018,10 +14321,10 @@ tbl = {
 	},	
 	[5118] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Puppy Headband",
-		identifiedResourceName = "강아지귀",
+		identifiedResourceName = "°­¾ÆAo±I",
 		identifiedDescriptionName = {
 			"A cute headband that looks just like a pair of adorable puppy ears.",
 			"________________________",
@@ -15040,10 +14343,10 @@ tbl = {
 	},	
 	[5009] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Safety Helmet",
-		identifiedResourceName = "안전모",
+		identifiedResourceName = "¾EAu¸ð",
 		identifiedDescriptionName = {
 			"A durable safety helmet created to offer some protection from accidents.",
 			"________________________",
@@ -15065,10 +14368,10 @@ tbl = {
 	},	
 	[2258] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Spiky Band",
-		identifiedResourceName = "샤프헤드기어",
+		identifiedResourceName = "≫þCACiμa±a¾i",
 		identifiedDescriptionName = {
 			"A fashionable headband with two dangerous spikes.",
 			"________________________",
@@ -15089,10 +14392,10 @@ tbl = {
 	},	
 	[2294] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stellar",
-		identifiedResourceName = "스타더스트",
+		identifiedResourceName = "½ºA¸´o½ºÆ®",
 		identifiedDescriptionName = {
 			"A small, star shaped hairclip that makes a great present for ladies.",
 			"________________________",
@@ -15111,10 +14414,10 @@ tbl = {
 	},	
 	[2257] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Unicorn Horn",
-		identifiedResourceName = "새하얀뿔",
+		identifiedResourceName = "≫oCI¾a≫O",
 		identifiedDescriptionName = {
 			"A pristinely white horn worn on the forehead that makes one look like a unicorn.",
 			"________________________",
@@ -15133,10 +14436,10 @@ tbl = {
 	},	
 	[2248] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Western Grace",
-		identifiedResourceName = "웨스턴그레이스",
+		identifiedResourceName = "¿þ½ºAI±×·¹AI½º",
 		identifiedDescriptionName = {
 			"A broad brimmed casual hat, usually worn by cowboys and ranchers, that is rustically stylish.",
 			"________________________",
@@ -15157,10 +14460,10 @@ tbl = {
 	},	
 	[5057] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Black Cat Ears",
-		identifiedResourceName = "검은고양이귀",
+		identifiedResourceName = "°EAº°i¾cAI±I",
 		identifiedDescriptionName = {
 			"A hairband with tiny little black ears attached. It's a copy of the hairband of Wickebine in Morocc.",
 			"________________________",
@@ -15180,10 +14483,10 @@ tbl = {
 	},	
 	[5016] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Boy's Cap",
-		identifiedResourceName = "학생모",
+		identifiedResourceName = "CÐ≫y¸ð",
 		identifiedDescriptionName = {
 			"A black cap that is usually worn by boys attending schools that require uniforms.",
 			"________________________",
@@ -15203,10 +14506,10 @@ tbl = {
 	},	
 	[5349] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Boy's Cap",
-		identifiedResourceName = "학생모",
+		identifiedResourceName = "CÐ≫y¸ð",
 		identifiedDescriptionName = {
 			"A black cap that is usually worn by boys attending schools that require uniforms.",
 			"________________________",
@@ -15226,10 +14529,10 @@ tbl = {
 	},	
 	[5110] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Baby Pacifier",
-		identifiedResourceName = "젖꼭지",
+		identifiedResourceName = "A￥²AAo",
 		identifiedDescriptionName = {
 			"A hat that looks just like a pacifier.",
 			"Wearing it really brings you back to the good old days of hanging in the crib.",
@@ -15250,10 +14553,10 @@ tbl = {
 	},	
 	[5082] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Decorative Mushroom",
-		identifiedResourceName = "버섯머리띠",
+		identifiedResourceName = "¹o¼¸¸O¸®¶i",
 		identifiedDescriptionName = {
 			"A headgear which you can obtain by chance when you put your head for a prolonged period of time in a dark, damp place.",
 			"________________________",
@@ -15272,10 +14575,10 @@ tbl = {
 	},	
 	[5107] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crunch Toast",
-		identifiedResourceName = "토스트",
+		identifiedResourceName = "Aa½ºÆ®",
 		identifiedDescriptionName = {
 			"A noble headgear created in the proud image of crunchy toast.",
 			"Wearing it makes you feel just like a part of a balanced breakfast.",
@@ -15296,10 +14599,10 @@ tbl = {
 	},	
 	[2284] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Antlers",
-		identifiedResourceName = "사슴뿔",
+		identifiedResourceName = "≫c½¿≫O",
 		identifiedDescriptionName = {
 			"A set of deer antlers that humans, finally, can proudly wear.",
 			"________________________",
@@ -15317,10 +14620,10 @@ tbl = {
 	},	
 	[2245] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sweet Gent",
-		identifiedResourceName = "스위트젠틀",
+		identifiedResourceName = "½ºA§Æ®A¨Æ²",
 		identifiedDescriptionName = {
 			"A dark colored and very stylish hat that was popularized by smooth crooners.",
 			"________________________",
@@ -15341,10 +14644,10 @@ tbl = {
 	},	
 	[2272] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Stop Post",
-		identifiedResourceName = "정지표지판",
+		identifiedResourceName = "A¤AoC￥AoÆC",
 		identifiedDescriptionName = {
 			"A signpost that declares its wearer's desire that people should stop whatever they are doing.",
 			"Causes catastrophes during wedding ceremonies.",
@@ -15365,10 +14668,10 @@ tbl = {
 	},	
 	[5161] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Spiky Band",
-		identifiedResourceName = "샤프헤드기어",
+		identifiedResourceName = "≫þCACiμa±a¾i",
 		identifiedDescriptionName = {
 			"A headband with two dangerously fashionable spikes that somehow make it much stronger than more durable looking helms.",
 			"________________________",
@@ -15389,10 +14692,10 @@ tbl = {
 	},	
 	[5018] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Feather Bonnet",
-		identifiedResourceName = "깃털모자",
+		identifiedResourceName = "±eAÐ¸ðAU",
 		identifiedDescriptionName = {
 			"A fabulous, feathered hat that turns men into womanizers and women into manizers.",
 			"________________________",
@@ -15413,10 +14716,10 @@ tbl = {
 	},	
 	[5078] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sea-Otter Hat",
-		identifiedResourceName = "해달모자",
+		identifiedResourceName = "CØ´Þ¸ðAU",
 		identifiedDescriptionName = {
 			"A hat which looks like the face of a sea-otter.",
 			"________________________",
@@ -15436,10 +14739,10 @@ tbl = {
 	},	
 	[5023] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Parcel Hat",
-		identifiedResourceName = "보따리모",
+		identifiedResourceName = "º¸μu¸®¸ð",
 		identifiedDescriptionName = {
 			"A large piece of cloth, usually polka dotted, that is wrapped around goods which are then carried on the head.",
 			"________________________",
@@ -15459,10 +14762,10 @@ tbl = {
 	},	
 	[5039] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rainbow Eggshell",
-		identifiedResourceName = "알록달록알껍질",
+		identifiedResourceName = "¾E·I´Þ·I¾E²®Au",
 		identifiedDescriptionName = {
 			"A mysteriously colorful egg shell.",
 			"________________________",
@@ -15483,10 +14786,10 @@ tbl = {
 	},	
 	[5075] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cowboy Hat",
-		identifiedResourceName = "카우보이모자",
+		identifiedResourceName = "A≪¿iº¸AI¸ðAU",
 		identifiedDescriptionName = {
 			"A cowboy hat. It makes men look manlier and is cute when worn by women.",
 			"________________________",
@@ -15507,10 +14810,10 @@ tbl = {
 	},	
 	[5062] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Straw Hat",
-		identifiedResourceName = "밀짚모자",
+		identifiedResourceName = "¹ÐA¤¸ðAU",
 		identifiedDescriptionName = {
 			"A hat knitted together with straw.",
 			"________________________",
@@ -15532,10 +14835,10 @@ tbl = {
 	},	
 	[5067] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sombrero",
-		identifiedResourceName = "솜브레로",
+		identifiedResourceName = "¼Øºe·¹·I",
 		identifiedDescriptionName = {
 			"A traditional Mexican hat with a wide, round brim.",
 			"________________________",
@@ -15558,10 +14861,10 @@ tbl = {
 	},	
 	[5091] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Decorative Golden Bell",
-		identifiedResourceName = "대형금방울",
+		identifiedResourceName = "´eCu±Y¹æ¿i",
 		identifiedDescriptionName = {
 			"A hair accessory which is made after Sohee's golden bell.",
 			"________________________",
@@ -15582,10 +14885,10 @@ tbl = {
 	},	
 	[5076] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Beanie",
-		identifiedResourceName = "털모자",
+		identifiedResourceName = "AÐ¸ðAU",
 		identifiedDescriptionName = {
 			"A knit beanie that protects from the cold. Makes some wearers look cute and gives other wearers street cred.",
 			"________________________",
@@ -15605,10 +14908,10 @@ tbl = {
 	},	
 	[5050] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mysterious Fruit Peel",
-		identifiedResourceName = "신비한열매껍질",
+		identifiedResourceName = "½AºnCN¿­¸A²®Au",
 		identifiedDescriptionName = {
 			"A hat made of mysterious fruit. Quite tough for a fruit.",
 			"________________________",
@@ -15630,10 +14933,10 @@ tbl = {
 	},	
 	[5029] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Spore Hat",
-		identifiedResourceName = "스포아모자",
+		identifiedResourceName = "½ºÆ÷¾Æ¸ðAU",
 		identifiedDescriptionName = {
 			"A headgear made in the form of a Spore's head.",
 			"________________________",
@@ -15654,10 +14957,10 @@ tbl = {
 	},	
 	[5033] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Raccoon Hat",
-		identifiedResourceName = "너구리모자",
+		identifiedResourceName = "³E±¸¸®¸ðAU",
 		identifiedDescriptionName = {
 			"A hat created in the form of Smokie the Raccoon Monster.",
 			"________________________",
@@ -15679,10 +14982,10 @@ tbl = {
 	},	
 	[5043] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "스마일",
+		unidentifiedResourceName = "½º¸¶AI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Opera Phantom Mask",
-		identifiedResourceName = "오페라유령가면",
+		identifiedResourceName = "¿AÆa¶oA?·E°¡¸e",
 		identifiedDescriptionName = {
 			"A mask rumored to have been worn by a romantic hero with an unknown fate.",
 			"________________________",
@@ -15705,10 +15008,10 @@ tbl = {
 	},	
 	[5021] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bankruptcy of Heart",
-		identifiedResourceName = "돈잃은자의마음",
+		identifiedResourceName = "μ·AOAºAUAC¸¶A½",
 		identifiedDescriptionName = {
 			"Head Gear telling the sad story of an unfortunate merchant who have lost everything.",
 			"It will make its wearer sad and in a down mood.",
@@ -15732,10 +15035,10 @@ tbl = {
 	},	
 	[5031] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mine Helmet",
-		identifiedResourceName = "광산헬멧",
+		identifiedResourceName = "±¤≫eCi¸a",
 		identifiedDescriptionName = {
 			"Safety helmet where a headlight is attached on the forehead, for seeing things in the dark.",
 			"It possesses strong durability, which bears most of impact.",
@@ -15757,10 +15060,10 @@ tbl = {
 	},	
 	[5064] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Smokie Leaf",
-		identifiedResourceName = "나뭇잎투구",
+		identifiedResourceName = "³ª¹μAUAo±¸",
 		identifiedDescriptionName = {
 			"A leaf which rumored to be worn by the Smokie monster for transformations.",
 			"________________________",
@@ -15779,10 +15082,10 @@ tbl = {
 	},	
 	[2247] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Romantic Gent",
-		identifiedResourceName = "올드스터로맨스",
+		identifiedResourceName = "¿Aμa½ºAI·I¸C½º",
 		identifiedDescriptionName = {
 			"An ivory hat worn by classy men during classy occasions.",
 			"________________________",
@@ -15803,10 +15106,10 @@ tbl = {
 	},	
 	[5171] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Helm",
-		identifiedResourceName = "발키리투구",
+		identifiedResourceName = "¹ßA°¸®Ao±¸",
 		identifiedDescriptionName = {
 			"An ornate, winged helmet worn by the warrior maidens that serve Odin.",
 			"________________________",
@@ -15830,10 +15133,10 @@ tbl = {
 	},	
 	[5032] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sunday Hat",
-		identifiedResourceName = "나들이모자",
+		identifiedResourceName = "³ªμeAI¸ðAU",
 		identifiedDescriptionName = {
 			"Fashionable hat with a wide brim,which is very efficient to block strong sunrays.",
 			"You might get in trouble with this hat during the rainy days.",
@@ -15855,10 +15158,10 @@ tbl = {
 	},	
 	[5094] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Helmet of Orc Hero",
-		identifiedResourceName = "오크히어로투구",
+		identifiedResourceName = "¿AAⓒE÷¾i·IAo±¸",
 		identifiedDescriptionName = {
 			"A headgear bestowed only to true Orc Heroes.",
 			"________________________",
@@ -15881,10 +15184,10 @@ tbl = {
 	},	
 	[5073] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Model Training Hat",
-		identifiedResourceName = "자세교정모자",
+		identifiedResourceName = "AU¼¼±³A¤¸ðAU",
 		identifiedDescriptionName = {
 			"A headgear made of a book topped with an apple. Wear it to learn glamourous posture.",
 			"________________________",
@@ -15904,10 +15207,10 @@ tbl = {
 	},	
 	[5081] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crown of Mistress",
-		identifiedResourceName = "미스트레스왕관",
+		identifiedResourceName = "¹I½ºÆ®·¹½º¿O°u",
 		identifiedDescriptionName = {
 			"A crown which is made after the one worn by Mistress.",
 			"________________________",
@@ -15930,10 +15233,10 @@ tbl = {
 	},	
 	[5080] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Crown of Ancient Queen",
-		identifiedResourceName = "여왕의투구",
+		identifiedResourceName = "¿ⓒ¿OACAo±¸",
 		identifiedDescriptionName = {
 			"A hair ornament worn by ancient queens.",
 			"________________________",
@@ -15953,10 +15256,10 @@ tbl = {
 	},	
 	[5008] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Puppy Love",
-		identifiedResourceName = "풋사랑",
+		identifiedResourceName = "C²≫c¶u",
 		identifiedDescriptionName = {
 			"A wreath of wildflowers made by a woman in love.",
 			"________________________",
@@ -15978,10 +15281,10 @@ tbl = {
 	},	
 	[5035] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Poring Hat",
-		identifiedResourceName = "포링모자",
+		identifiedResourceName = "Æ÷¸μ¸ðAU",
 		identifiedDescriptionName = {
 			"A hat created in the form of the Poring monster.",
 			"________________________",
@@ -16002,10 +15305,10 @@ tbl = {
 	},	
 	[5347] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ph.D Hat",
-		identifiedResourceName = "학사모",
+		identifiedResourceName = "CÐ≫c¸ð",
 		identifiedDescriptionName = {
 			"A ceremonial hat worn during one's graduation.",
 			"________________________",
@@ -16025,10 +15328,10 @@ tbl = {
 	},	
 	[5348] = {
 		unidentifiedDisplayName = "Unidentified Ribbon",
-		unidentifiedResourceName = "리본",
+		unidentifiedResourceName = "¸®º≫",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Big Ribbon",
-		identifiedResourceName = "왕리본",
+		identifiedResourceName = "¿O¸®º≫",
 		identifiedDescriptionName = {
 			"An over-sized red ribbon that contains hidden magical power.",
 			"________________________",
@@ -16048,10 +15351,10 @@ tbl = {
 	},	
 	[5042] = {
 		unidentifiedDisplayName = "Unidentified Hairband",
-		unidentifiedResourceName = "머리띠",
+		unidentifiedResourceName = "¸O¸®¶i",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Bao Bao",
-		identifiedResourceName = "머리포자기",
+		identifiedResourceName = "¸O¸®Æ÷AU±a",
 		identifiedDescriptionName = {
 			"Well-known item which has been rumored to have been worn by a great woman warrior in ancient times.",
 			"________________________",
@@ -16072,10 +15375,10 @@ tbl = {
 	},	
 	[2231] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Gemmed Sallet",
-		identifiedResourceName = "쥬얼헬름",
+		identifiedResourceName = "Ae¾oCi¸§",
 		identifiedDescriptionName = {
 			"A jeweled headdress that wards off harmful magic.",
 			"________________________",
@@ -16095,10 +15398,10 @@ tbl = {
 	},	
 	[2227] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cap",
-		identifiedResourceName = "캡",
+		identifiedResourceName = "A¸",
 		identifiedDescriptionName = {
 			"A brimless hat that offers very little in the way of fashion, but does provide decent defense.",
 			"________________________",
@@ -16118,10 +15421,10 @@ tbl = {
 	},	
 	[19163] = {
 		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
+		unidentifiedResourceName = "A¸",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Catharina Von Blood 60th",
-		identifiedResourceName = "카타리나폰브레드60세",
+		identifiedResourceName = "A≪A¸¸®³ªÆuºe·¹μa60¼¼",
 		identifiedDescriptionName = {
 			"A doll hat made based on succubus appearance. Made to celebrate it's 60th generation.",
 			"________________________",
@@ -16148,10 +15451,10 @@ tbl = {
 	},	
 	[5574] = {
 		unidentifiedDisplayName = "Unidentified Mask",
-		unidentifiedResourceName = "마스크",
+		unidentifiedResourceName = "¸¶½ºAⓒ",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Well-Chewed Pencil",
-		identifiedResourceName = "입에무는연필",
+		identifiedResourceName = "AO¿¡¹≪´A¿￢CE",
 		identifiedDescriptionName = {
 			"A popular snack while taking tests. It makes one look more studious but, it's days may be numbered if it stays in somebody's mouth any longer.",
 			"________________________",
@@ -16176,10 +15479,10 @@ tbl = {
 	},
 	[2228] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Helm",
-		identifiedResourceName = "헬름",
+		identifiedResourceName = "Ci¸§",
 		identifiedDescriptionName = {
 			"This steel helmet, made in the style worn by roman soldiers, offers great protection, covering most of the head.",
 			"________________________",
@@ -16199,10 +15502,10 @@ tbl = {
 	},
 	[2229] = {
 		unidentifiedDisplayName = "Unidentified Helmet",
-		unidentifiedResourceName = "헬름",
+		unidentifiedResourceName = "Ci¸§",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Helm",
-		identifiedResourceName = "헬름",
+		identifiedResourceName = "Ci¸§",
 		identifiedDescriptionName = {
 			"This steel helmet, made in the style worn by roman soldiers, offers great protection, covering most of the head.",
 			"________________________",
@@ -16222,18 +15525,16 @@ tbl = {
 	},	
 	[2404] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shoes",
-		identifiedResourceName = "슈즈",
+		identifiedResourceName = "½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes made of supple, high quality leather.",
 			"________________________",
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -16244,10 +15545,10 @@ tbl = {
 	},
 	[2322] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silk Robe",
-		identifiedResourceName = "실크로브",
+		identifiedResourceName = "½CAⓒ·Iºe",
 		identifiedDescriptionName = {
 			"________________________",
 			"MDEF +10",
@@ -16255,8 +15556,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Magician, Acolyte, Merchant and Soul Linker"
@@ -16267,10 +15566,10 @@ tbl = {
 	},
 	[2333] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silver Robe",
-		identifiedResourceName = "실버로브",
+		identifiedResourceName = "½C¹o·Iºe",
 		identifiedDescriptionName = {
 			"A robe knit out of silver thread.",
 			"________________________",
@@ -16279,8 +15578,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 23",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Magician and Soul Linker classes"
@@ -16291,10 +15588,10 @@ tbl = {
 	},
 	[2367] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sniping Suit",
-		identifiedResourceName = "스나이핑슈츠",
+		identifiedResourceName = "½º³ªAICI½´A÷",
 		identifiedDescriptionName = {
 			"A sniping suit that stimulates all the muscles used in firing arrows, increasing accuracy while reducing stress on the body.",
 			"________________________",
@@ -16307,8 +15604,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 42",
 			"^0000CCWeight:^000000 75",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 50",
@@ -16320,10 +15615,10 @@ tbl = {
 	},
 	[2387] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sprint Mail",
-		identifiedResourceName = "스프린트메일",
+		identifiedResourceName = "½ºCA¸°Æ®¸ÞAI",
 		identifiedDescriptionName = {
 			"Very nimble looking armor that lets you gallop like a Peco Peco. It looks like a running shirt, while it has the function of a suit of armor.",
 			"________________________",
@@ -16342,8 +15637,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -16355,10 +15648,10 @@ tbl = {
 	},
 	[2440] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sprint Shoes",
-		identifiedResourceName = "스프린트슈즈",
+		identifiedResourceName = "½ºCA¸°Æ®½´Ai",
 		identifiedDescriptionName = {
 			"Very useful for running. Tighten the strips and you're off to the races!",
 			"________________________",
@@ -16375,8 +15668,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -16387,10 +15678,10 @@ tbl = {
 	},
 	[2440] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Sprint Shoes",
-		identifiedResourceName = "스프린트슈즈",
+		identifiedResourceName = "½ºCA¸°Æ®½´Ai",
 		identifiedDescriptionName = {
 			"Very useful for running. Tighten the strips and you're off to the races!",
 			"________________________",
@@ -16407,8 +15698,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Transcendent 2nd classes"
@@ -16419,10 +15708,10 @@ tbl = {
 	},
 	[2509] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Manteau of Survival",
-		identifiedResourceName = "생존의망토",
+		identifiedResourceName = "≫yA¸AC¸AAa",
 		identifiedDescriptionName = {
 			"A manteau which protects its wearer from the elements.",
 			"________________________",
@@ -16441,8 +15730,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 55",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 75",
@@ -16454,10 +15741,10 @@ tbl = {
 	},
 	[2335] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Thief Clothes",
-		identifiedResourceName = "씨프클로스",
+		identifiedResourceName = "¾¾CAA￢·I½º",
 		identifiedDescriptionName = {
 			"Extremely light clothes outfitted with many pockets, making it handy for stashing stolen goods.",
 			"________________________",
@@ -16466,8 +15753,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Thief and Ninja"
@@ -16478,10 +15763,10 @@ tbl = {
 	},
 	[2336] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Thief Clothes",
-		identifiedResourceName = "씨프클로스",
+		identifiedResourceName = "¾¾CAA￢·I½º",
 		identifiedDescriptionName = {
 			"Extremely light clothes outfitted with many pockets, making it handy for stashing stolen goods.",
 			"________________________",
@@ -16490,8 +15775,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Thief and Ninja"
@@ -16502,10 +15785,10 @@ tbl = {
 	},
 	[2424] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tidal Shoes",
-		identifiedResourceName = "타이달슈즈",
+		identifiedResourceName = "A¸AI´Þ½´Ai",
 		identifiedDescriptionName = {
 			"This pair of shoes was designed with a waterproof coating that prevents slippage in wet areas.",
 			"________________________",
@@ -16519,8 +15802,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -16532,10 +15813,10 @@ tbl = {
 	},
 	[2330] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tights",
-		identifiedResourceName = "타이즈",
+		identifiedResourceName = "A¸AIAi",
 		identifiedDescriptionName = {
 			"Skintight, form fitting clothing that allows easy movement.",
 			"________________________",
@@ -16544,8 +15825,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -16557,10 +15836,10 @@ tbl = {
 	},
 	[2332] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Silver Robe",
-		identifiedResourceName = "실버로브",
+		identifiedResourceName = "½C¹o·Iºe",
 		identifiedDescriptionName = {
 			"A robe knit out of silver thread.",
 			"________________________",
@@ -16569,8 +15848,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 23",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Magician and Soul Linker classes"
@@ -16581,10 +15858,10 @@ tbl = {
 	},
 	[2331] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Tights",
-		identifiedResourceName = "타이즈",
+		identifiedResourceName = "A¸AIAi",
 		identifiedDescriptionName = {
 			"Skintight, form fitting clothing that allows easy movement.",
 			"________________________",
@@ -16593,8 +15870,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 45",
@@ -16606,10 +15881,10 @@ tbl = {
 	},
 	[2531] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Ulfhedinn",
-		identifiedResourceName = "울프헤딘",
+		identifiedResourceName = "¿iCACiμo",
 		identifiedDescriptionName = {
 			"A mysterious cape with a protective spell that can convert the wearer's magic defense to physical defense.",
 			"________________________",
@@ -16618,8 +15893,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 70",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 70",
@@ -16631,10 +15904,10 @@ tbl = {
 	},
 	[2522] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Undershirt",
-		identifiedResourceName = "런닝셔츠",
+		identifiedResourceName = "·±´×¼AA÷",
 		identifiedDescriptionName = {
 			"Lightweight armor made from 100% real cotton that is actually quite durable.",
 			"________________________",
@@ -16647,8 +15920,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 5",
 			"^0000CCWeight:^000000 15",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -16658,10 +15929,10 @@ tbl = {
 	},
 	[2517] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Vali's Manteau",
-		identifiedResourceName = "발리의망토",
+		identifiedResourceName = "¹ß¸®AC¸AAa",
 		identifiedDescriptionName = {
 			"A manteau once owned by Vali, son of Odin.",
 			"It represents Vali's fighting spirit which allowed him to defeat Hoedr the warrior despite his blindness.",
@@ -16675,8 +15946,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -16688,10 +15957,10 @@ tbl = {
 	},
 	[2357] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Armor",
-		identifiedResourceName = "발키리의갑옷",
+		identifiedResourceName = "¹ßA°¸®AC°ⓒ¿E",
 		identifiedDescriptionName = {
 			"A set of shining white armor worn by Valkyries, the battle maidens that serve the god Odin.",
 			"________________________",
@@ -16711,8 +15980,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 55",
 			"^0000CCWeight:^000000 280",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes except Novice"
@@ -16723,10 +15990,10 @@ tbl = {
 	},
 	[2524] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Manteau",
-		identifiedResourceName = "발키리의망토",
+		identifiedResourceName = "¹ßA°¸®AC¸AAa",
 		identifiedDescriptionName = {
 			"A manteau that is worn by the Valkyries, Odin's battle maidens.",
 			"________________________",
@@ -16746,8 +16013,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes except Novice"
@@ -16758,10 +16023,10 @@ tbl = {
 	},
 	[2421] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Valkyrie Shoes",
-		identifiedResourceName = "발키리의슈즈",
+		identifiedResourceName = "¹ßA°¸®AC½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes worn by the Valkyries, Odin's battle maidens.",
 			"These shoes grow more powerful as the wearer improves his own abilities.",
@@ -16777,8 +16042,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Transcendent classes except Novice"
@@ -16789,10 +16052,10 @@ tbl = {
 	},
 	[2416] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Novice Shoes",
-		identifiedResourceName = "초보자용슈즈",
+		identifiedResourceName = "AEº¸AU¿e½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes made exclusively for brand new adventurers.",
 			"________________________",
@@ -16801,8 +16064,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -16814,10 +16075,10 @@ tbl = {
 	},	
 	[2423] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Variant Shoes",
-		identifiedResourceName = "배리언트슈즈",
+		identifiedResourceName = "¹e¸®¾ðÆ®½´Ai",
 		identifiedDescriptionName = {
 			"Although it seems that whoever made these shoes tried to fix his mistakes, he didn't make these as well as he hoped.",
 			"________________________",
@@ -16830,8 +16091,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 85",
@@ -16843,10 +16102,10 @@ tbl = {
 	},
 	[2418] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Vidar's Boots",
-		identifiedResourceName = "비다르의부츠",
+		identifiedResourceName = "ºn´U¸￡ACºIA÷",
 		identifiedDescriptionName = {
 			"The boots worn by Vidar, son of Odin, when he killed the Fenrir Wolf.",
 			"These represent the great physical and mental strength Vidar displayed in that epic final battle.",
@@ -16861,8 +16120,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 65",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 65",
@@ -16874,10 +16131,10 @@ tbl = {
 	},
 	[2450] = {
 		unidentifiedDisplayName = "Unidentified Shoes",
-		unidentifiedResourceName = "슈즈",
+		unidentifiedResourceName = "½´Ai",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Vital Tree Shoes",
-		identifiedResourceName = "생명나무줄기슈즈",
+		identifiedResourceName = "≫y¸i³ª¹≪AU±a½´Ai",
 		identifiedDescriptionName = {
 			"A pair of shoes made out of the stem of the Tree of Life. They are comfortable and provide life energy to the wearer.",
 			"________________________",
@@ -16894,8 +16151,6 @@ tbl = {
 			"^0000CCType:^000000 Shoes",
 			"^0000CCDefense:^000000 16",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -16907,18 +16162,16 @@ tbl = {
 	},
 	[2101] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Guard",
-		identifiedResourceName = "가드",
+		identifiedResourceName = "°¡μa",
 		identifiedDescriptionName = {
 			"A square shield that is small, yet effective in combat.",
 			"________________________",			
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -16928,10 +16181,10 @@ tbl = {
 	},
 	[2103] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Buckler",
-		identifiedResourceName = "버클러",
+		identifiedResourceName = "¹oA￢·?",
 		identifiedDescriptionName = {
 			"A rounded shield that readily absorbs impact from attacks.",
 			"________________________",
@@ -16940,8 +16193,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Acolyte, Merchant, Thief, Bard and Dancer"
@@ -16952,10 +16203,10 @@ tbl = {
 	},
 	[2104] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Buckler",
-		identifiedResourceName = "버클러",
+		identifiedResourceName = "¹oA￢·?",
 		identifiedDescriptionName = {
 			"A rounded shield that readily absorbs impact from attacks.",
 			"________________________",
@@ -16964,8 +16215,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 40",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Acolyte, Merchant, Thief, Bard and Dancer"
@@ -16976,10 +16225,10 @@ tbl = {
 	},	
 	[2107] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mirror Shield",
-		identifiedResourceName = "미러쉴드",
+		identifiedResourceName = "¹I·?½?μa",
 		identifiedDescriptionName = {
 			"A shield with a surface constructed of mirror that might reflect harmful magic.",
 			"________________________",
@@ -16988,8 +16237,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 45",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman and Star Gladiator"
@@ -17000,10 +16247,10 @@ tbl = {
 	},
 	[2108] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Mirror Shield",
-		identifiedResourceName = "미러쉴드",
+		identifiedResourceName = "¹I·?½?μa",
 		identifiedDescriptionName = {
 			"A shield with a surface constructed of mirror that might reflect harmful magic.",
 			"________________________",
@@ -17012,8 +16259,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 45",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman and Star Gladiator"
@@ -17024,10 +16269,10 @@ tbl = {
 	},	
 	[2148] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rosa Shield",
-		identifiedResourceName = "로사쉴드",
+		identifiedResourceName = "·I≫c½?μa",
 		identifiedDescriptionName = {
 			"A shield made by crafting the metal from the Ash Vacuum.",
 			"It looks like a bloomed flower due to the metal pieces rounded on it.",
@@ -17035,8 +16280,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 130",
 			"^0000CCWeight:^000000 130",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 100",
@@ -17048,10 +16291,10 @@ tbl = {
 	},
 	[2153] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Imperial Guard",
-		identifiedResourceName = "임페리얼가드",
+		identifiedResourceName = "AOÆa¸®¾o°¡μa",
 		identifiedDescriptionName = {
 			"A beautiful shield engraved with the patterns of the Rune Kingdom.",
 			"________________________",
@@ -17065,8 +16308,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 120",
 			"^0000CCWeight:^000000 250",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 102",
@@ -17078,10 +16319,10 @@ tbl = {
 	},
 	[2105] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shield",
-		identifiedResourceName = "쉴드",
+		identifiedResourceName = "½?μa",
 		identifiedDescriptionName = {
 			"A well crafted shield which most kinds of attack cannot penetrate.",
 			"________________________",
@@ -17090,8 +16331,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 60",
 			"^0000CCWeight:^000000 130",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman classes"
@@ -17102,10 +16341,10 @@ tbl = {
 	},
 	[2117] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arm Guard",
-		identifiedResourceName = "팔목토시",
+		identifiedResourceName = "ÆE¸nAa½A",
 		identifiedDescriptionName = {
 			"A wrist protector, designed exclusively for the Ninja class, that is padded with a steel plate for increased defense and durability.",
 			"________________________",
@@ -17114,8 +16353,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 15",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 20",
@@ -17127,10 +16364,10 @@ tbl = {
 	},	
 	[2171] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Fox Armguard",
-		identifiedResourceName = "여우문양팔목보호대",
+		identifiedResourceName = "¿ⓒ¿i¹®¾cÆE¸nº¸E￡´e",
 		identifiedDescriptionName = {
 			"Armguard with a charming fox drawing. You feel swift when wearing this.",
 			"________________________",
@@ -17139,7 +16376,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 45",
 			"^0000CCWeight:^000000 20",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 100",
@@ -17151,10 +16387,10 @@ tbl = {
 	},
 	[2118] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Arm Guard",
-		identifiedResourceName = "팔목토시",
+		identifiedResourceName = "ÆE¸nAa½A",
 		identifiedDescriptionName = {
 			"A wrist protector, designed exclusively for the Ninja class, that is padded with a steel plate for increased defense and durability.",
 			"________________________",
@@ -17163,8 +16399,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 50",
 			"^0000CCWeight:^000000 15",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 20",
@@ -17176,10 +16410,10 @@ tbl = {
 	},	
 	[2106] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Shield",
-		identifiedResourceName = "쉴드",
+		identifiedResourceName = "½?μa",
 		identifiedDescriptionName = {
 			"A well crafted shield which most kinds of attack cannot penetrate.",
 			"________________________",
@@ -17188,8 +16422,6 @@ tbl = {
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 60",
 			"^0000CCWeight:^000000 130",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman classes"
@@ -17200,18 +16432,16 @@ tbl = {
 	},	
 	[2102] = {
 		unidentifiedDisplayName = "Unidentified Shield",
-		unidentifiedResourceName = "가드",
+		unidentifiedResourceName = "°¡μa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Guard",
-		identifiedResourceName = "가드",
+		identifiedResourceName = "°¡μa",
 		identifiedDescriptionName = {
 			"A square shield that is small, yet effective in combat.",
 			"________________________",			
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 20",
 			"^0000CCWeight:^000000 30",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 			
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17221,10 +16451,10 @@ tbl = {
 	},	
 	[2340] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Novice Breastplate",
-		identifiedResourceName = "초보자용흉갑",
+		identifiedResourceName = "AEº¸AU¿eEa°ⓒ",
 		identifiedDescriptionName = {
 			"A piece of armor that covers the chest of a Novice.",
 			"________________________",
@@ -17233,8 +16463,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 32",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 10",
@@ -17246,10 +16474,10 @@ tbl = {
 	},
 	[2338] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wedding Dress",
-		identifiedResourceName = "웨딩드레스",
+		identifiedResourceName = "¿þμuμa·¹½º",
 		identifiedDescriptionName = {
 			"A wedding dress that is immaculately white.",
 			"________________________",
@@ -17258,8 +16486,6 @@ tbl = {
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Female Only",
@@ -17271,18 +16497,16 @@ tbl = {
 	},
 	[2329] = {
 		unidentifiedDisplayName = "Unidentified Armor",
-		unidentifiedResourceName = "아머",
+		unidentifiedResourceName = "¾Æ¸O",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wooden Mail",
-		identifiedResourceName = "우든메일",
+		identifiedResourceName = "¿iμc¸ÞAI",
 		identifiedDescriptionName = {
 			"A simple set of armor carved out of solid wood.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 25",
 			"^0000CCWeight:^000000 100",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman and Merchant"
@@ -17293,10 +16517,10 @@ tbl = {
 	},
 	[2501] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hood",
-		identifiedResourceName = "후드",
+		identifiedResourceName = "EAμa",
 		identifiedDescriptionName = {
 			"A simple, soft garment that covers the head and neck.",
 			"________________________",
@@ -17306,8 +16530,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 4",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17317,10 +16539,10 @@ tbl = {
 	},
 	[2502] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Hood",
-		identifiedResourceName = "후드",
+		identifiedResourceName = "EAμa",
 		identifiedDescriptionName = {
 			"A simple, soft garment that covers the head and neck.",
 			"________________________",
@@ -17330,8 +16552,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 4",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17341,10 +16561,10 @@ tbl = {
 	},	
 	[2528] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Wool Scarf",
-		identifiedResourceName = "울스카프",
+		identifiedResourceName = "¿i½ºA≪CA",
 		identifiedDescriptionName = {
 			"A scarf made from the highest quality wool that feels so comforting and cozy when you're exhausted.",
 			"________________________",
@@ -17357,8 +16577,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 11",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -17370,10 +16588,10 @@ tbl = {
 	},
 	[2503] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Muffler",
-		identifiedResourceName = "머플러",
+		identifiedResourceName = "¸OCA·?",
 		identifiedDescriptionName = {
 			"A warm scarf that is worn around the neck and shoulders.",
 			"________________________",
@@ -17383,8 +16601,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 8",
 			"^0000CCWeight:^000000 40",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"All Jobs except Novice"
@@ -17395,10 +16611,10 @@ tbl = {
 	},
 	[2505] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Manteau",
-		identifiedResourceName = "망토",
+		identifiedResourceName = "¸AAa",
 		identifiedDescriptionName = {
 			"A long, loose cape-like garment that protects its wearer from harsh weather.",
 			"________________________",
@@ -17407,8 +16623,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 60",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Swordman, Merchant, Thief, Taekwon Boy/Girl and Star Gladiator"
@@ -17419,10 +16633,10 @@ tbl = {
 	},
 	[2512] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Novice Manteau",
-		identifiedResourceName = "초보자용망토",
+		identifiedResourceName = "AEº¸AU¿e¸AAa",
 		identifiedDescriptionName = {
 			"A cute, durable and lightweight manteau for beginning adventurers.",
 			"________________________",
@@ -17431,8 +16645,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 7",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 40",
@@ -17444,10 +16656,10 @@ tbl = {
 	},	
 	[2529] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rider Insignia",
-		identifiedResourceName = "라이더휘장",
+		identifiedResourceName = "¶oAI´oEOAa",
 		identifiedDescriptionName = {
 			"A symbol worn by runners that just makes you want to sprint when you wear it.",
 			"________________________",
@@ -17459,8 +16671,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -17472,10 +16682,10 @@ tbl = {
 	},
 	[2536] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Skin of Ventus",
-		identifiedResourceName = "스킨오브벤투스",
+		identifiedResourceName = "½ºA²¿Aºeº￥Ao½º",
 		identifiedDescriptionName = {
 			"Lucifer's skin, cursed by the devil's language.",
 			"It can be worn as a robe.",
@@ -17487,8 +16697,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 7",
 			"^0000CCWeight:^000000 25",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 60",
@@ -17500,10 +16708,10 @@ tbl = {
 	},	
 	[2530] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Rider Insignia",
-		identifiedResourceName = "라이더휘장",
+		identifiedResourceName = "¶oAI´oEOAa",
 		identifiedDescriptionName = {
 			"A symbol worn by runners that just makes you want to sprint when you wear it.",
 			"________________________",
@@ -17515,8 +16723,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 13",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 55",
@@ -17528,10 +16734,10 @@ tbl = {
 	},	
 	[2513] = {
 		unidentifiedDisplayName = "Unidentified Garment",
-		unidentifiedResourceName = "후드",
+		unidentifiedResourceName = "EAμa",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Heavenly Wings",
-		identifiedResourceName = "목보호대",
+		identifiedResourceName = "¸nº¸E￡´e",
 		identifiedDescriptionName = {
 			"A faint, transparent clothing decorated with a beautiful pattern worn by celestial maidens when they fly through the heavens.",
 			"________________________",
@@ -17540,8 +16746,6 @@ tbl = {
 			"^0000CCType:^000000 Garment",
 			"^0000CCDefense:^000000 18",
 			"^0000CCWeight:^000000 50",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 80",
@@ -17553,18 +16757,16 @@ tbl = {
 	},	
 	[2301] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cotton Shirt",
-		identifiedResourceName = "코튼셔츠",
+		identifiedResourceName = "AUÆ°¼AA÷",
 		identifiedDescriptionName = {
 			"A simple, sturdily made shirt of cotton.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17574,18 +16776,16 @@ tbl = {
 	},
 	[2302] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Cotton Shirt",
-		identifiedResourceName = "코튼셔츠",
+		identifiedResourceName = "AUÆ°¼AA÷",
 		identifiedDescriptionName = {
 			"A simple, sturdily made shirt of cotton.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 10",
 			"^0000CCWeight:^000000 10",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17595,18 +16795,16 @@ tbl = {
 	},
 	[2303] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jacket",
-		identifiedResourceName = "가죽재킷",
+		identifiedResourceName = "°¡A×AcA¶",
 		identifiedDescriptionName = {
 			"A jacket made out of mediocre leather.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17616,18 +16814,16 @@ tbl = {
 	},	
 	[2304] = {
 		unidentifiedDisplayName = "Unidentified Clothing",
-		unidentifiedResourceName = "코튼셔츠",
+		unidentifiedResourceName = "AUÆ°¼AA÷",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Jacket",
-		identifiedResourceName = "가죽재킷",
+		identifiedResourceName = "°¡A×AcA¶",
 		identifiedDescriptionName = {
 			"A jacket made out of mediocre leather.",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 15",
 			"^0000CCWeight:^000000 20",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000 None"
 		},
@@ -17637,10 +16833,10 @@ tbl = {
 	},	
 	[1307] = {
 		unidentifiedDisplayName = "Unidentified Axe",
-		unidentifiedResourceName = "액스",
+		unidentifiedResourceName = "¾×½º",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Windhawk",
-		identifiedResourceName = "윈드호크",
+		identifiedResourceName = "AⓒμaE￡Aⓒ",
 		identifiedDescriptionName = {
 			"An axe that summons winds around its user, giving it unprecedented attack speed.",
 			"________________________",
@@ -17650,8 +16846,6 @@ tbl = {
 			"^0000CCAttack:^000000 95",
 			"^0000CCWeight:^000000 150",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 14",
@@ -17663,10 +16857,10 @@ tbl = {
 	},
 	[1569] = {
 		unidentifiedDisplayName = "Unidentified Book",
-		unidentifiedResourceName = "북",
+		unidentifiedResourceName = "ºI",
 		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
 		identifiedDisplayName = "Book of Mother Earth",
-		identifiedResourceName = "땅의책",
+		identifiedResourceName = "¶￥ACA￥",
 		identifiedDescriptionName = {
 			"________________________",
 			"^0000CCType:^000000 Book",
@@ -17674,8 +16868,6 @@ tbl = {
 			"^0000CCWeight:^000000 75",
 			"^0000CCElement:^CC5500 Earth",
 			"^0000CCWeapon Level:^000000 3",
-			"^0000CCCan be enchanted by:^000000",
-			"<NAVI>Mayomayo<INFO>malangdo,213,167,0,100,0,0</INFO></NAVI>", 
 			"________________________",
 			"^0000CCRequirement:^000000",
 			"Base Level 27",

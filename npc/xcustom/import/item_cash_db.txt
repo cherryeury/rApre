@@ -208,10 +208,10 @@
 //3,20800,1000
 
 // Armor
-3,15040,10 // Prison Uniform
+3,15040,15 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15057,15 // Apron 
-3,15058,25 // Rider Suit
+3,15057,20 // Apron 
+3,15058,30 // Rider Suit
 3,15060,45 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat

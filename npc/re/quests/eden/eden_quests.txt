@@ -30,7 +30,7 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		mes "[Boya]";
 		mes "To register with the Eden Group ask Laime Evenor next to me.";
 		close;
-	} if (!callfunc("F_StrongEnough")) { mes "You're not strong enough,"; mes "Come back to me when you've reached level 100 and above."; close; }
+	} //if (!callfunc("F_StrongEnough")) { mes "You're already strong enough,"; mes "The supplies quests are just for level 59 and below."; close; }
 	if (para_suv01 == 0) {
 		mes "What's up?";
 		mes "If you have any normal missions use the bulletin board.";
@@ -257,7 +257,7 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		next;
 		switch (select("I want to join training.:Nothing.")) {
 			mes "[Boya]";
-		case 1:
+		case 1: goto L_Master;
 			mes "Hmm... really?";
 			mes "Let me see... which step is good for you...";
 			next;
@@ -376,12 +376,12 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		mes "Remember this when you use the equipment.";
 		mes "But if you decide to sell or trade them off, it is none of our concern.";
 	}
-	else {
+	else { L_Master:
 		mes "What do you want?";
 		mes "I doubt that you need more training.";
 		next;
 		mes "[Boya]";
-		mes "There is nothing more I can teach a battle master such as yourself.";
+		mes "There is nothing more I can teach a battle master such as yourself."; close;
 	}
 	close;
 S_Quest1:
@@ -554,7 +554,7 @@ S_Quest3:
 		para_suv01 = 24;
 		setquest 7147;
 	}
-	else if (BaseLevel < 60) {
+	else if (BaseLevel > 60) {
 		mes "You are on the third step of course B.";
 		mes "This course is called 'Conquer Orc dungeon!'.";
 		mes "It's the most proper mission for your level.";
