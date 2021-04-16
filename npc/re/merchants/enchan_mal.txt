@@ -83,7 +83,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1232: callsub L_Socket,1,2;  case 13033: callsub L_Socket,1,2; 	// Assasin_Dagger
 			case 1233: callsub L_Socket,1,2; case 1235: callsub L_Socket,1,2;	// Exercise
 			case 1236: callsub L_Socket,1,2;  case 13018: callsub L_Socket,1,2;	// Sucsamad
-			case 1237: callsub L_Socket,1,2;	// Grimtooth_
+			case 1237: callsub L_Socket,1,2; case 13009: callsub L_Socket,1,2;	// Grimtooth_ // Kamaitachi
 			case 1240: callsub L_Socket,1,2;	// Princess_Knife
 			case 1241: callsub L_Socket,1,2;	// Cursed_Dagger
 			case 1242: callsub L_Socket,1,2;	// Counter_Dagger
