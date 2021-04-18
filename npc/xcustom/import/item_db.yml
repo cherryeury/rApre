@@ -5349,7 +5349,7 @@ Body:
     SubType: Katar
     Buy: 20
     Weight: 800
-    Attack: 50
+    Attack: 90
     Range: 1
     Slots: 4
     Jobs:
@@ -5360,7 +5360,7 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      bonus2 bAddEff2,Eff_Bleeding,20;  
+      bonus2 bAddEff2,Eff_Bleeding,500;  
   - Id: 1307
     AegisName: Windhawk
     Name: Windhawk
@@ -6297,7 +6297,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 600
-    Attack: 130
+    Attack: 120
     Range: 1
     Slots: 2
     Jobs:
@@ -6819,7 +6819,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 800
-    Attack: 120
+    Attack: 110
     Range: 1
     Jobs:
       Assassin: true
@@ -7088,7 +7088,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 84
+    Attack: 94
     Range: 1
     Jobs:
       Alchemist: true

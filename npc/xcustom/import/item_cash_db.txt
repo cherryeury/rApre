@@ -166,17 +166,17 @@
 2,1939,5
 2,1995,5
 //2,1139,8 // Tirfing
-2,1240,10 // Princess Knife
-2,1244,12 // Holy Dagger
-2,1227,15 // Weeder Knife
+2,1240,30 // Princess Knife
+2,1244,30 // Holy Dagger
+2,1227,30 // Weeder Knife
 2,13001,20 // Dragon Killer
 //2,1134,15 // Caesar Sword
-2,1467,15 // Bill Guisarme
-2,1562,15 // Battlefield Textbook
+2,1467,30 // Bill Guisarme
+2,1562,30 // Battlefield Textbook
 //2,1416,15 // Tjungkuletti
-2,1414,15 // Gelerdria
+2,1414,30 // Gelerdria
 //2,1367,15 // Slaughter
-2,1169,15 // Executioner
+2,1169,30 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
 2,16051,100 // Valkyrie Hammer
@@ -212,7 +212,7 @@
 //3,15072,40 // Nectar Suit
 3,15057,20 // Apron 
 3,15058,30 // Rider Suit
-3,15060,45 // Azure Smock
+3,15060,50 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -239,15 +239,15 @@
 
 // Garment
 
-3,2553,10 // Dragon Manteau
-3,20726,10 // Fire Dragon Manteau
-3,20728,10 // Water Dragon Manteau
-3,20729,10 // Wind Dragon Manteau
-3,20731,10 // Earth Dragon Manteau
-3,2594,10 // Wrapping cloth
-3,2597,15 // Bloody Muffler
-3,20730,30 // Loyalist Hood
-3,20714,30 // Assassin Muffler
+3,2553,15 // Dragon Manteau
+3,20726,15 // Fire Dragon Manteau
+3,20728,15 // Water Dragon Manteau
+3,20729,15 // Wind Dragon Manteau
+3,20731,15 // Earth Dragon Manteau
+3,2594,15 // Wrapping cloth
+3,2597,25 // Bloody Muffler
+3,20730,40 // Loyalist Hood
+3,20714,40 // Assassin Muffler
 
 //3,20779,35 // Rift Garment
 3,20778,500 // Crimson Stole
@@ -268,8 +268,8 @@
 //Shoes
 3,2466,30 // Training Shoes
 3,2481,30 // Rune Boots
-3,22064,200 // Thorn Boots
-3,22042,400 // Talaria
+3,22064,100 // Thorn Boots
+3,22042,200 // Talaria
 //3,22075,35 // Rift Shoes
 //3,22132,1250 // Lightning God
 //3,22171,600 // Ancient Hero's Boots

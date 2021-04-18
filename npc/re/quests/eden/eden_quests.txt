@@ -390,13 +390,13 @@ S_Quest1:
 	mes "Let me see...";
 	next;
 	mes "[Boya]";
-	if (BaseLevel < 12) {
+	if (BaseLevel < 7) {
 		mes "Umm. You should raise your level more!";
-		mes "You need to be at least level 12!";
+		mes "You need to be at least level 7!";
 		mes "I'm sorry but those are the rules.";
 		close;
 	}
-	if (BaseLevel < 20) {
+	if (BaseLevel < 20) { if (zeny < 3000) { mes "Umm. You need to have at least 3000 zeny for this quest!"; } 
 		mes "The first step is course A.";
 		mes "Course A is called 'Conquer the Desert!'.";
 		mes "It's the most proper mission for your level.";
@@ -421,11 +421,11 @@ S_Quest1:
 		mes "[Boya]";
 		mes "Anyway, that place is not far from here so, it is a reasonable place for a beginner like you.";
 		mes "Ok, may Freya bless you~!";
-		para_suv01 = 1;
+		para_suv01 = 1; set zeny, zeny - 3000;
 		setquest 7128;
 		close;
 	}
-	if (BaseLevel < 26) {
+	if (BaseLevel < 26) { if (zeny < 3000) { mes "Umm. You need to have at least 3000 zeny for this quest!"; } 
 		mes "I'll send you to the first step of course B.";
 		mes "Course B is called 'Conquer the Culvert!'.";
 		mes "It's the most proper mission for your level.";
@@ -451,13 +451,13 @@ S_Quest1:
 		mes "Anyway...";
 		mes "That place is nor far from here so, it is a reasonable place for a beginner like you.";
 		mes "Ok, may Freya bless you~!";
-		para_suv01 = 6;
+		para_suv01 = 6; set zeny, zeny - 3000;
 		setquest 7133;
 		close;
 	}
 	return;
 S_Quest2:
-	if (BaseLevel < 33) {
+	if (BaseLevel < 33) { if (zeny < 10000) { mes "Umm. You need to have at least 10.000 zeny for this quest!"; } 
 		mes "Cool.";
 		mes "Let me choose a proper place for you.";
 		next;
@@ -488,11 +488,11 @@ S_Quest2:
 		mes "Anyway...";
 		mes "That place is not far from here so, come back quickly.";
 		mes "Ok, may Freya bless you~!";
-		para_suv01 = 13;
+		para_suv01 = 13; set zeny, zeny - 10000;
 		setquest 7138;
 		close;
 	}
-	if (BaseLevel < 40) {
+	if (BaseLevel < 40) { if (zeny < 10000) { mes "Umm. You need to have at least 10.000 zeny for this quest!"; } 
 		mes "I'll send you to the 2nd step of course B.";
 		mes "This course is called 'Conquer Anthell!'.";
 		mes "It's the most proper mission for your level.";
@@ -523,13 +523,13 @@ S_Quest2:
 		mes "Anyway...";
 		mes "That place is not far from here so, come back quickly.";
 		mes "Ok, blessing you~!!";
-		para_suv01 = 17;
+		para_suv01 = 17; set zeny, zeny - 10000;
 		setquest 7142;
 		close;
 	}
 	return;
 S_Quest3:
-	if (BaseLevel < 50) {
+	if (BaseLevel < 50) { if (zeny < 30000) { mes "Umm. You need to have at least 40.000 zeny for this quest!"; } 
 		mes "You are on the third step of course A.";
 		mes "This course is called 'Conquer Orc village!'.";
 		mes "Let me see...";
@@ -551,10 +551,10 @@ S_Quest3:
 		next;
 		mes "[Boya]";
 		mes "Ok, may Freya bless you!";
-		para_suv01 = 24;
+		para_suv01 = 24; set zeny, zeny - 30000;
 		setquest 7147;
 	}
-	else if (BaseLevel > 60) {
+	else if (BaseLevel > 60) { if (zeny < 30000) { mes "Umm. You need to have at least 30.000 zeny for this quest!"; } 
 		mes "You are on the third step of course B.";
 		mes "This course is called 'Conquer Orc dungeon!'.";
 		mes "It's the most proper mission for your level.";
@@ -576,7 +576,7 @@ S_Quest3:
 		next;
 		mes "[Boya]";
 		mes "Ok, may Freya bless you!";
-		para_suv01 = 29;
+		para_suv01 = 29; set zeny, zeny - 30000;
 		setquest 7152;
 	}
 	else {
@@ -2460,7 +2460,7 @@ moc_para01,179,44,3	script	Chef	820,{
 }
 
 moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
-	mes "[Instructor Ur]"; if (!callfunc("F_StrongEnough")) { mes "Huh, you know the rule."; mes "I'll give you mission when you've reached level 100."; close; }
+	mes "[Instructor Ur]"; // if (!callfunc("F_StrongEnough")) { mes "Huh, you know the rule."; mes "I'll give you mission when you've reached level 100."; close; }
 	if (!callfunc("F_HasEdenGroupMark")) {
 		mes "Hey there!";
 		mes "I see you're not one of our agents?";
@@ -2508,7 +2508,7 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 		mes "Ok, let me check what mission you should get ok?";
 		next;
 		mes "[Instructor Ur]";
-		if (BaseLevel < 60) {
+		if (BaseLevel < 60) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } 
 			mes "Well... I know that you've got the heart but you're just a little too weak to help.";
 			next;
 			mes "[Instructor Ur]";
@@ -2534,10 +2534,10 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 			mes "[Instructor Ur]";
 			mes "Go there are get the mission from him.";
 			mes "Well, then come back here alive when you're done!";
-			para_2nd01 = 1;
+			para_2nd01 = 1; set zeny, zeny - 100000;
 			setquest 7214;// Advanced Training at Comodo
 		}
-		else if (BaseLevel < 80) {
+		else if (BaseLevel < 80) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } 
 			mes "Let's see...";
 			mes "Your level would suggest that Comodo is just too easy for you.";
 			mes "Yeah, here we go.";
@@ -2551,10 +2551,10 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 			next;
 			mes "[Instructor Ur]";
 			mes "Please, come back alive.";
-			para_2nd01 = 7;
+			para_2nd01 = 7; set zeny, zeny - 100000;
 			setquest 7219;// Advanced Training at Glast Heim
 		}
-		else if (BaseLevel < 90) {
+		else if (BaseLevel < 90) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } 
 			mes "Ah, ok so for you...";
 			mes "Hmm where do I send you?";
 			next;
@@ -2566,7 +2566,7 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 			mes "[Instructor Ur]";
 			mes "Anyways, go to Einbroch and find the Dispatched Instructor there. He should be in the field south of the main city.";
 			setquest 7223;// Advanced Training in Einbroch
-			para_2nd01 = 12;
+			para_2nd01 = 12; set zeny, zeny - 100000;
 		}
 		else
 			callsub S_Quest89100;
@@ -2604,7 +2604,7 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 				mes "Which location would suit you...?";
 				next;
 				mes "[Instructor Ur]";
-				if (BaseLevel < 80) {
+				if (BaseLevel < 80) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } 
 					mes "Ah, this place should be good!";
 					mes "Do you know where Glast Heim is?";
 					mes "If it wasn't for that terrible accident, Glast Heim would still be";
@@ -2624,12 +2624,12 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 					next;
 					mes "[Instructor Ur]";
 					mes "Please come back alive.";
-					para_2nd01 = 7;
+					para_2nd01 = 7; zeny - 100000;
 					setquest 7219;// Advanced Training at Glast Heim
 				}
-				else if (BaseLevel < 90)
+				else if (BaseLevel < 90) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } } set zeny, zeny - 100000;
 					callsub S_Quest7990;
-				else
+				else { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } } set zeny, zeny - 100000;
 					callsub S_Quest89100;
 				close;
 			case 2:
@@ -2675,9 +2675,9 @@ moc_para01,23,35,5	script	Instructor Ur#2nd01	4_M_KNIGHT_BLACK,{
 				mes "Let me see....";
 				next;
 				mes "[Instructor Ur]";
-				if (BaseLevel < 90)
+				if (BaseLevel < 90) { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } } set zeny, zeny - 100000;
 					callsub S_Quest7990;
-				else
+				else { if (zeny < 100000) { mes "Yo. You need to have at least 100.000 zeny for this quest!"; } } set zeny, zeny - 100000;
 					callsub S_Quest89100;
 				close;
 			case 2:
