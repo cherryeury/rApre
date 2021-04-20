@@ -754,6 +754,64 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
+	[19890] = {
+		unidentifiedDisplayName = "Unidentified Hat",
+		unidentifiedResourceName = "캡",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Costume Mage Hat",
+		identifiedResourceName = "마법사의모자",
+		identifiedDescriptionName = {
+			"A stylish formal hat that talented magicians usually wear during a show.",
+			"________________________",
+			"^0000CCType:^000000 Costume",
+			"^0000CCPosition:^000000 Upper",
+			"^0000CCWeight:^000000 0",
+			"________________________",
+			"^0000CCRequirement:^000000 None"
+		},
+		slotCount = 0,
+		ClassNum = 112,
+		costume = true
+	},	
+	[19662] = {
+		unidentifiedDisplayName = "Unidentified Hat",
+		unidentifiedResourceName = "캡",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Costume Magician Hat",
+		identifiedResourceName = "마술사의모자",
+		identifiedDescriptionName = {
+			"A hat worn by magicians. Rabbits are usually pulled out of this hat.",
+			"Pretty stout, it won't be destroyed easily.",
+			"________________________",
+			"^0000CCType:^000000 Costume",
+			"^0000CCPosition:^000000 Upper",
+			"^0000CCWeight:^000000 0",
+			"________________________",
+			"^0000CCRequirement:^000000 None"
+		},
+		slotCount = 0,
+		ClassNum = 130,
+		costume = true
+	},
+	[20385] = {
+		unidentifiedDisplayName = "Unidentified Hat",
+		unidentifiedResourceName = "캡",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Costume Helmet of Orc Hero",
+		identifiedResourceName = "오크히어로투구",
+		identifiedDescriptionName = {
+			"A head piece that signifies leadership among the orcs.",
+			"________________________",
+			"^0000CCType:^000000 Costume",
+			"^0000CCPosition:^000000 Upper",
+			"^0000CCWeight:^000000 0",
+			"________________________",
+			"^0000CCRequirement:^000000 None"
+		},
+		slotCount = 0,
+		ClassNum = 966,
+		costume = true
+	},
 	[1484] = {
 		unidentifiedDisplayName = "Unidentified Spear",
 		unidentifiedResourceName = "쟈벨린",

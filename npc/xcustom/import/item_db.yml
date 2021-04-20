@@ -5349,6 +5349,27 @@ Body:
     Locations:
       Costume_Head_Top: true
     View: 332 
+  - Id: 20385
+    AegisName: C_Orc_Hero_Helm
+    Name: Costume Helmet of Orc Hero
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 178  
+  - Id: 19840
+    AegisName: C_Helm_Of_Sun
+    Name: Costume Hat of the Sun God
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 138
+  - Id: 19890
+    AegisName: C_Wizardry_Hat
+    Name: Costume Magician Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 112
   - Id: 20261
     AegisName: C_Cross_Hairband
     Name: Costume Cross Hat

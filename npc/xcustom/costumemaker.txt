@@ -108,8 +108,7 @@ OnBuyItem:
 				getitem .@q[0],.@q[1];
 				specialeffect2 699;
 					mes "[^FF6600Kyewolhyang^000000]";
-					mes "Woah, you did it.";
-					mes "Congratulation !.";
+					mes "Here's your costume !.";
 					close;				
 			} 
 			else {
@@ -135,8 +134,8 @@ OnInit:
 // Duplicate dummy data for any additional shops (bottom of script).
 // If no categories, use the second line instead (remove //).
 
-	setarray .Shops$[1],"Quest Headgears A-C";
-	setarray .Shops$[2],"Quest Headgears D-G";
+	setarray .Shops$[1],"Quest Headgears A-B";
+	setarray .Shops$[2],"Quest Headgears C-G";
 	setarray .Shops$[3],"Quest Headgears H-P";
 	setarray .Shops$[4],"Quest Headgears R-Z";
 	// set .Shops$,"n/a";
@@ -147,58 +146,55 @@ OnInit:
 // Note: Do NOT use a reward item more than once!
 	
 	Add(1,19791,1,1000000,0,5086,1); // Alarm Mask
-	Add(1,19951,1,1000000,0,5449,1); // Angry Solo Hat
-	Add(1,18765,1,1000000,0,5074,1); // Angel Wing Ears
+	
+	Add(1,19781,1,1000000,0,5074,1); // Angel Wing Ears
 	Add(1,19939,1,1000000,0,2284,1); // Antler
 	Add(1,20388,1,1000000,0,5174,1); // Ayam
+	Add(1,31035,1,1000000,0,5021,1); // Bankruptcy for The heart
 	Add(1,19845,1,1000000,0,5042,1); // Bao Bao
-	Add(1,20054,1,1000000,0,5110,1); // Baby Pacifier
 	Add(1,20119,1,1000000,0,5076,1); // Beanie
 	Add(1,19734,1,1000000,0,2296,1); // Binoculars
-	Add(1,19854,1,1000000,0,5057,1); // Black Cat
+	Add(1,20004,1,1000000,0,5091,1); // Big Golden Bell
 	Add(1,20157,1,1000000,0,5065,1); // Blue Fish
 	Add(1,20159,1,1000000,0,5052,1); // Blue Hairband
 	Add(1,19545,1,1000000,0,5016,1); // Boy's Cap
 	sleep 10;
 	Add(1,20056,1,1000000,0,5436,1); // Bride's Corolla
 	Add(1,31128,1,1000000,0,5169,1); // Bride Mask
+	Add(1,20157,1,1000000,0,5065,1); // Blue Fish
+	Add(1,20159,1,1000000,0,5052,1); // Blue Hairband
 	Add(1,20275,1,1000000,0,5034,1); // Bulb Headband
 	Add(1,19625,1,1000000,0,2214,1); // Bunny Band
-	Add(1,20118,1,1000000,0,5024,1); // Cake Hat
-	Add(1,20445,1,1000000,0,5028,1); // Candle
-	Add(1,20245,1,1000000,0,5446,1); // Catfoot Hairpin
-	Add(1,20013,1,1000000,0,5026,1); // Chef Hat
-	Add(1,19582,1,1000000,0,5075,1); // Cowboy Hat
-	Add(1,19622,1,1000000,0,5048,1); // Crescent Hairpin
-	Add(1,19785,1,1000000,0,5107,1); // Crunch Toast
-	Add(1,20261,1,1000000,0,5036,1); // Cross Hat
-	Add(1,20454,1,1000000,0,5080,1); // Crown of Ancient Queen
-	Add(1,19786,1,1000000,0,5081,1); // Crown of Mistress
+	Add(1,19545,1,1000000,0,5016,1); // Boy's Cap
 	
-	Add(2,20004,1,1000000,0,5091,1); // Decorative Golden Bell
+	Add(2,20118,1,1000000,0,5024,1); // Cake Hat
+	Add(2,20445,1,1000000,0,5028,1); // Candle
+	Add(2,31471,1,1000000,0,5437,1); // Celestial Flower
+	Add(2,20245,1,1000000,0,5446,1); // Catfoot Hairpin
+	Add(2,19951,1,1000000,0,5449,1); // Cardboard Box
+	Add(2,20013,1,1000000,0,5026,1); // Chef Hat
+	Add(2,19582,1,1000000,0,5075,1); // Cowboy Hat
+	Add(2,19622,1,1000000,0,5048,1); // Crescent Hairpin
+	Add(2,19785,1,1000000,0,5107,1); // Crunch Toast
+	Add(2,20261,1,1000000,0,5036,1); // Cross Hat
+	sleep 10;
+	Add(2,20454,1,1000000,0,5080,1); // Crown of Ancient Queen
+	Add(2,19786,1,1000000,0,5081,1); // Crown of Mistress
 	Add(2,20276,1,1000000,0,5082,1); // Decorative Mushroom
 	Add(2,19547,1,1000000,0,5038,1); // Deviruchi
 	Add(2,31113,1,1000000,0,2273,1); // Doctor Band
 	Add(2,19782,1,1000000,0,5058,1); // Drooping Cat
 	Add(2,19941,1,1000000,0,2283,1); // Ear Muffs
-	Add(2,19854,1,1000000,0,5057,1); // Black Cat
-	Add(2,20157,1,1000000,0,5065,1); // Blue Fish
-	Add(2,20159,1,1000000,0,5052,1); // Blue Hairband
-	Add(2,19545,1,1000000,0,5016,1); // Boy's Cap
+	Add(2,19854,1,1000000,0,5057,1); // Ears of Black Cat
 	Add(2,19621,1,1000000,0,5068,1); // Evil Wing Ears
-	sleep 10;
-	Add(2,31471,1,1000000,0,5437,1); // Fairy Flower
 	Add(2,20185,1,1000000,0,5047,1); // Fashionable Glasses
 	Add(2,19585,1,1000000,0,5170,1); // Feather Beret
 	Add(2,20057,1,1000000,0,5018,1); // Feather Bonnet
 	Add(2,19983,1,1000000,0,5061,1); // Flower Hairpin
-	Add(2,20057,1,1000000,0,5018,1); // Feather Bonnet
 	Add(2,19548,1,1000000,0,5447,1); // Frog Hat
 	Add(2,20049,1,1000000,0,5063,1); // Giant Band Aid
-	Add(2,31035,1,1000000,0,5021,1); // Grief for Greed
-
-	Add(3,20226,1,1000000,0,5444,1); // Hair Brush
-	Add(3,18767,1,1000000,0,5022,1); // Hat of Sun God
+	
+	Add(3,19840,1,1000000,0,5022,1); // Hat of Sun God
 	Add(3,19628,1,1000000,0,5001,1); // Headset	
 	Add(3,20004,1,1000000,0,5091,1); // Heart Hairpin
 	Add(3,20472,1,1000000,0,5025,1); // Helm of Angel
@@ -207,25 +203,26 @@ OnInit:
 	Add(3,31714,1,1000000,0,5071,1); // Indian Headband
 	Add(3,19618,1,1000000,0,5069,1); // Kitsune mask
 	Add(3,19931,1,1000000,0,5084,1); // Lazy Smokie
-	Add(3,18760,1,1000000,0,5027,1); // Mage Hat
-	Add(3,18761,1,1000000,0,5045,1); // Magician Hat
-	Add(3,31036,1,1000000,0,5173,1); // Magistrate Hat
+	Add(3,21300,1,1000000,0,5177,1); // Lion Mask
+	Add(3,19890,1,1000000,0,5027,1); // Mage Hat
+	Add(3,19662,1,1000000,0,5045,1); // Magician Hat
 	Add(3,20473,1,1000000,0,5031,1); // Mine Helmet
 	sleep 10;
 	Add(3,19932,1,1000000,0,5073,1); // Model Training Hat
 	Add(3,19500,1,1000000,0,2278,1); // Mr Smile
 	Add(3,20181,1,1000000,0,5117,1); // Mystic Rose
-	Add(3,21300,1,1000000,0,5177,1); // Mythical Lion Mask
 	Add(3,20208,1,1000000,0,5442,1); // Necktie
 	Add(3,19872,1,1000000,0,2281,1); // Opera Mask
-	Add(3,19548,1,1000000,0,5447,1); // Opera Phantom Mask
+	Add(3,19846,1,1000000,0,5447,1); // Opera Phantom Mask
 	Add(3,31712,1,1000000,0,5004,1); // Oxygen Mask
+	Add(3,20054,1,1000000,0,5110,1); // Pacifier
 	Add(3,20453,1,1000000,0,5023,1); // Parcel Hat
 	Add(3,20050,1,1000000,0,5012,1); // Ph.D Hat
 
 	Add(4,20304,1,1000000,0,5033,1); // Raccoon Hat
 	Add(4,20182,1,1000000,0,5039,1); // Rainbow Eggshell
 	Add(4,19701,1,1000000,0,5109,1); // Red Bonnet
+	Add(4,20226,1,1000000,0,5444,1); // Red Comb
 	Add(4,20224,1,1000000,0,5083,1); // Red Ribbon
 	Add(4,19639,1,1000000,0,2280,1); // Sakkat
 	Add(4,20138,1,1000000,0,5078,1); // Sea-Otter Hat
@@ -240,6 +237,7 @@ OnInit:
 	sleep 10;
 	Add(4,19851,1,1000000,0,5059,1); // Teddybear Hat
 	Add(4,20471,1,1000000,0,5077,1); // Tulip Hairpin
+	Add(4,31036,1,1000000,0,5173,1); // Magistrate Hat
 	Add(4,19546,1,1000000,0,5171,1); // Valkyrie Helm
 	Add(4,20059,1,1000000,0,2292,1); // Welding Mask
 	Add(4,19984,1,1000000,0,5115,1); // Winter Hat
