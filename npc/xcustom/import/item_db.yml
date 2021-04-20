@@ -5342,6 +5342,90 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,1;
       bonus bMatkRate,1;   
+  - Id: 20275
+    AegisName: C_Bulb_Headband
+    Name: Costume Bulb Headband
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 332 
+  - Id: 20261
+    AegisName: C_Cross_Hairband
+    Name: Costume Cross Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 121     
+  - Id: 20445
+    AegisName: C_Candle
+    Name: Costume Candle
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 113  
+  - Id: 20454
+    AegisName: C_Ancient_Crown
+    Name: Costume Ancient Crown
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 164
+  - Id: 20276
+    AegisName: C_Decorative_Mushroom
+    Name: Costume Decorative Mushroom
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 166
+  - Id: 20385
+    AegisName: C_Orc_Hero_Helmet
+    Name: Costume Helmet of Orc Hero
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 178    
+  - Id: 20473
+    AegisName: C_Mine_Helmet
+    Name: Costume Mine Helmet
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 116     
+  - Id: 19872
+    AegisName: C_Opera_Mask
+    Name: Costume Opera Mask
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 68    
+  - Id: 20453
+    AegisName: C_Parcel_Hat
+    Name: Costume Parcel Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 108           
+  - Id: 19626
+    AegisName: C_Shafka
+    Name: Costume Shafka
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 287            
+  - Id: 20471
+    AegisName: C_Tulip_Hat
+    Name: Costume Tulip Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 499   
+  - Id: 20387
+    AegisName: C_X_Hairpin
+    Name: Costume X Hairpin
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    View: 163
   - Id: 1264
     AegisName: Various_Jur
     Name: Specialty Jur
@@ -5458,28 +5542,6 @@ Body:
       if (readparam(bStr)>=95) {
          bonus bBaseAtk,20;
       }      
-  - Id: 5583
-    AegisName: Para_Team_Hat
-    Name: Eden Team Hat I
-    Type: Armor
-    Defense: 5
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 7
-    Refineable: true
-    View: 465
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true      
-    Script: |
-      bonus bMaxHP,50;
-      bonus bMaxSP,10;
   - Id: 1428
     AegisName: Long_Horn_M
     Name: Long Horn

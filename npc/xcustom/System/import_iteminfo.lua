@@ -528,31 +528,6 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},	
-	[5583] = {
-		unidentifiedDisplayName = "Unidentified Hat",
-		unidentifiedResourceName = "캡",
-		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
-		identifiedDisplayName = "Eden Group Hat",
-		identifiedResourceName = "퍼레이드모자",
-		identifiedDescriptionName = {
-			"A hat that is provided only for members of the Eden Group. It's designed to go well with a suit.",
-			"________________________",
-			"MaxHP +50",
-			"MaxSP +10",
-			"________________________",
-			"^0000CCType:^000000 Headgear",
-			"^0000CCDefense:^000000 5",
-			"^0000CCPosition:^000000 Upper",
-			"^0000CCWeight:^000000 0",
-			"^0000CCRefineable:^000000 No",
-			"________________________",
-			"^0000CCRequirement:^000000",
-			"Base Level 7"
-		},
-		slotCount = 0,
-		ClassNum = 465,
-		costume = false
-	},	
 	[13018] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
