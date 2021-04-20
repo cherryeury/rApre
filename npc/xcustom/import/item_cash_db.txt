@@ -148,35 +148,35 @@
 
 
 // Weapons
-2,28604,5
-2,18130,5
-2,28705,5
-2,13327,5
-2,28007,5
-2,1839,5
-2,1498,5
-2,16040,5
-2,1680,5
-2,13127,5
-2,13454,5
-2,1443,5
-2,28106,5
-2,2025,5
-2,21015,5
-2,1939,5
-2,1995,5
+2,28604,7
+2,18130,7
+2,28705,7
+2,13327,7
+2,28007,7
+2,1839,7
+2,1498,7
+2,16040,7
+2,1680,7
+2,13127,7
+2,13454,7
+2,1443,7
+2,28106,7
+2,2025,7
+2,21015,7
+2,1939,7
+2,1995,7
 //2,1139,8 // Tirfing
-2,1240,30 // Princess Knife
-2,1244,30 // Holy Dagger
-2,1227,30 // Weeder Knife
+2,1240,40 // Princess Knife
+2,1244,40 // Holy Dagger
+2,1227,40 // Weeder Knife
 2,13001,20 // Dragon Killer
 //2,1134,15 // Caesar Sword
-2,1467,30 // Bill Guisarme
-2,1562,30 // Battlefield Textbook
+2,1467,40 // Bill Guisarme
+2,1562,40 // Battlefield Textbook
 //2,1416,15 // Tjungkuletti
-2,1414,30 // Gelerdria
+2,1414,40 // Gelerdria
 //2,1367,15 // Slaughter
-2,1169,30 // Executioner
+2,1169,40 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
 2,16051,100 // Valkyrie Hammer
@@ -208,11 +208,11 @@
 //3,20800,1000
 
 // Armor
-3,15040,15 // Prison Uniform
+3,15040,20 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15057,20 // Apron 
-3,15058,30 // Rider Suit
-3,15060,50 // Azure Smock
+3,15057,25 // Apron 
+3,15058,35 // Rider Suit
+3,15060,55 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
