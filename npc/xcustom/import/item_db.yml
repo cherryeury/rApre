@@ -5342,6 +5342,24 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,1;
       bonus bMatkRate,1;   
+  - Id: 23280
+    AegisName: N_Fly_Wing_
+    Name: Novice Fly Wing
+    Type: Delayconsume
+    Buy: 10
+    EquipLevelMin: 1
+    EquipLevelMax: 39
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      itemskill "AL_TELEPORT",1;      
   - Id: 20275
     AegisName: C_Bulb_Headband
     Name: Costume Bulb Headband

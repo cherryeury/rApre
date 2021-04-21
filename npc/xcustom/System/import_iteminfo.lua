@@ -754,6 +754,24 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
+	[23280] = {
+		unidentifiedDisplayName = "Novice Fly Wing",
+		unidentifiedResourceName = "파리의날개",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Novice Fly Wing",
+		identifiedResourceName = "파리의날개",
+		identifiedDescriptionName = {
+			"The wings cut from fly to be made into enchanted item.",
+			"________________________",
+			"^0000CCType:^000000 Supportive",
+			"^0000CCEffect:^000000 Teleport to random cell",
+			"^0000CCLimit Level:^000000 39",
+			"^0000CCWeight:^000000 0"
+		},
+		slotCount = 0,
+		ClassNum = 0,
+		costume = false
+	},	
 	[19890] = {
 		unidentifiedDisplayName = "Unidentified Hat",
 		unidentifiedResourceName = "캡",

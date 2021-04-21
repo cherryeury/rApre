@@ -25,18 +25,8 @@ if (checkweight(21016,1) == 0) {
 	mes "Hello, I am Kyewolhyang.";
 	mes "I can exchange normal hat in the list to a costume..";
 	mes "In the cost of that headgear, and 1.000.000 zeny.";
-	mes "Interested ?";
-	next;
-	switch( select( "Yes.:No." ) ) {
-case 1: 		
-	mes "[^FF6600Kyewolhyang^000000]";
 	mes "Here's the list.";
-	break; 
-case 2: 	
-	mes "[^FF6600Kyewolhyang^000000]";
-    mes "Okay, see you again.";
-   	close;
-}
+
 	if(.Shops$ != "") set .@i,1;
 	else {
 		set .@menu$,"";
@@ -157,7 +147,6 @@ OnInit:
 	Add(1,20004,1,1000000,0,5091,1); // Big Golden Bell
 	Add(1,20157,1,1000000,0,5065,1); // Blue Fish
 	Add(1,20159,1,1000000,0,5052,1); // Blue Hairband
-	Add(1,19545,1,1000000,0,5016,1); // Boy's Cap
 	sleep 10;
 	Add(1,20056,1,1000000,0,5436,1); // Bride's Corolla
 	Add(1,31128,1,1000000,0,5169,1); // Bride Mask
@@ -194,7 +183,6 @@ OnInit:
 	Add(2,19548,1,1000000,0,5447,1); // Frog Hat
 	Add(2,20049,1,1000000,0,5063,1); // Giant Band Aid
 	
-	Add(3,19840,1,1000000,0,5022,1); // Hat of Sun God
 	Add(3,19628,1,1000000,0,5001,1); // Headset	
 	Add(3,20004,1,1000000,0,5091,1); // Heart Hairpin
 	Add(3,20472,1,1000000,0,5025,1); // Helm of Angel
@@ -228,6 +216,7 @@ OnInit:
 	Add(4,20138,1,1000000,0,5078,1); // Sea-Otter Hat
 	Add(4,19626,1,1000000,0,5243,1); // Shafka
 	Add(4,19858,1,1000000,0,5064,1); // Smokie Leaf
+	Add(4,19840,1,1000000,0,5022,1); // Hat of Sun God
 	Add(4,20330,1,1000000,0,5067,1); // Sombrero
 	Add(4,19533,1,1000000,0,5029,1); // Spore Hat
 	Add(4,20051,1,1000000,0,2272,1); // Stop Post
