@@ -37,11 +37,19 @@ moc_para01,25,23,5	script	Card Remover#eAcustom	78,{
 			set .@menu$, .@menu$ + ":";
 		}
 		set .@part, .@indices[ select(.@menu$) ];
+			if ((getequipid(.@part)==13066) || (getequipid(.@part)==1289 ) || (getequipid(.@part)==1391) || (getequipid(.@part)==1434) || (getequipid(.@part)==1583)
+			|| (getequipid(.@part)==1658) || (getequipid(.@part)==26101 )||  (getequipid(.@part)==1748) || (getequipid(.@part)==1831) || (getequipid(.@part)==1931) 
+			|| (getequipid(.@part)==1986) || (getequipid(.@part)==1197 ) || (getequipid(.@part)==13114)|| (getequipid(.@part)==13310) || (getequipid(.@part)==13434)
+			|| (getequipid(.@part)==16014)){
+			mes "[^FF6600Wise Old Woman^000000]";
+			mes "Young one... I can't remove any cards from eden weapon.";
+			close;
+			}		
 		if(!getequipisequiped(.@part)) {
 			mes "[^FF6600Wise Old Woman^000000]";
 			mes "Young one... Your not wearing anything there that I can remove cards from.";
 			close;
-		}
+			}
 		if(getequipcardcnt(.@part) == 0) {
 			mes "[^FF6600Wise Old Woman^000000]";
 			mes "Young one... There are no cards compounded on this item. I can do nothing with it, I'm afraid.";
