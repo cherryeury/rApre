@@ -6398,7 +6398,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 600
-    Attack: 120
+    Attack: 110
     Range: 1
     Slots: 2
     Jobs:

@@ -457,7 +457,7 @@ S_Quest1:
 	}
 	return;
 S_Quest2:
-	if (BaseLevel < 33) { if (zeny < 25000) { mes "Umm. You need to have at least 25.000 zeny for this quest!"; close; } 
+	if (BaseLevel < 33) { if (para_suv02 == 0) { if (zeny < 28000) { mes "Umm. You need to have at least 28.000 zeny for this quest!"; close; } } if (zeny < 25000) { mes "Umm. You need to have at least 25.000 zeny for this quest!"; close; }  
 		mes "Cool.";
 		mes "Let me choose a proper place for you.";
 		next;
@@ -488,11 +488,11 @@ S_Quest2:
 		mes "Anyway...";
 		mes "That place is not far from here so, come back quickly.";
 		mes "Ok, may Freya bless you~!";
-		para_suv01 = 13; set zeny, zeny - 25000;
+		para_suv01 = 13; if (para_suv02 == 0) { set zeny, zeny - 3000; } set zeny, zeny - 25000;
 		setquest 7138;
 		close;
 	}
-	if (BaseLevel < 40) { if (zeny < 25000) { mes "Umm. You need to have at least 25.000 zeny for this quest!"; close; } 
+	if (BaseLevel < 40) { if (para_suv02 == 0) { if (zeny < 28000) { mes "Umm. You need to have at least 28.000 zeny for this quest!"; close; } } if (zeny < 25000) { mes "Umm. You need to have at least 25.000 zeny for this quest!"; close; } 
 		mes "I'll send you to the 2nd step of course B.";
 		mes "This course is called 'Conquer Anthell!'.";
 		mes "It's the most proper mission for your level.";
@@ -523,13 +523,13 @@ S_Quest2:
 		mes "Anyway...";
 		mes "That place is not far from here so, come back quickly.";
 		mes "Ok, blessing you~!!";
-		para_suv01 = 17; set zeny, zeny - 25000;
+		para_suv01 = 17; if (para_suv02 == 0) { set zeny, zeny - 3000; } set zeny, zeny - 25000;
 		setquest 7142;
 		close;
 	}
 	return;
 S_Quest3:
-	if (BaseLevel < 50) { if (zeny < 100000) { mes "Umm. You need to have at least 100.000 zeny for this quest!"; close; } 
+	if (BaseLevel < 50) { if (para_suv02 == 0) { if (zeny < 103000) { mes "Umm. You need to have at least 103.000 zeny for this quest!"; close; } } if (zeny < 100000) { mes "Umm. You need to have at least 100.000 zeny for this quest!"; close; } 
 		mes "You are on the third step of course A.";
 		mes "This course is called 'Conquer Orc village!'.";
 		mes "Let me see...";
@@ -551,10 +551,10 @@ S_Quest3:
 		next;
 		mes "[Boya]";
 		mes "Ok, may Freya bless you!";
-		para_suv01 = 24; set zeny, zeny - 100000;
+		para_suv01 = 24; if (para_suv02 == 0) { set zeny, zeny - 3000; } set zeny, zeny - 100000;
 		setquest 7147;
 	}
-	else if (BaseLevel > 60) { if (zeny < 100000) { mes "Umm. You need to have at least 100.000 zeny for this quest!"; close; } 
+	else if (BaseLevel > 60) { if (para_suv02 == 0) { if (zeny < 103000) { mes "Umm. You need to have at least 103.000 zeny for this quest!"; close; } } if (zeny < 100000) { mes "Umm. You need to have at least 100.000 zeny for this quest!"; close; } 
 		mes "You are on the third step of course B.";
 		mes "This course is called 'Conquer Orc dungeon!'.";
 		mes "It's the most proper mission for your level.";
@@ -576,7 +576,7 @@ S_Quest3:
 		next;
 		mes "[Boya]";
 		mes "Ok, may Freya bless you!";
-		para_suv01 = 29; set zeny, zeny - 100000;
+		para_suv01 = 29; if (para_suv02 == 0) { set zeny, zeny - 3000; } set zeny, zeny - 100000;
 		setquest 7152;
 	}
 	else {
