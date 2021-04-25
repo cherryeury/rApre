@@ -5866,7 +5866,7 @@ tbl = {
 			"0.01% chance to Reduces After Attack Delay by 100% for 7 seconds when dealing physical damage.",
 			"________________________",
 			"^0000CCType:^000000 Dagger",
-			"^0000CCAttack:^000000 110",
+			"^0000CCAttack:^000000 130",
 			"^0000CCWeight:^000000 60",
 			"^0000CCWeapon Level:^000000 3",
 			"________________________",
@@ -5874,7 +5874,7 @@ tbl = {
 			"Base Level 70",
 			"Assassin Cross"
 		},
-		slotCount = 2,
+		slotCount = 1,
 		ClassNum = 1,
 		costume = false
 	},
