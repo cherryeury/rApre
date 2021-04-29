@@ -8963,7 +8963,7 @@ Body:
     SubType: 2hSpear
     Buy: 20
     Weight: 3500
-    Attack: 200
+    Attack: 210
     Range: 3
     Jobs:
       Crusader: true

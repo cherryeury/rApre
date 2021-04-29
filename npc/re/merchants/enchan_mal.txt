@@ -246,7 +246,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		switch(@mal_equip_id) {
 			case 1524: callsub L_Socket,1,2;	// Golden_Mace
 			case 1525: callsub L_Socket,1,2;	// Long_Mace
-			case 1527: callsub L_Socket,1,2;	// Quadrille
+			case 1527: callsub L_Socket,1,2; case 16024: callsub L_Socket,1,2;	// Quadrille
 			case 1539: callsub L_Socket,1,2;	// Golden_Mace_
 			case 1541: callsub L_Socket,1,2;	// Nemesis
 			case 16000: callsub L_Socket,1,2;	// Erde

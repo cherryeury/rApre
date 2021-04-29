@@ -425,3 +425,11 @@ IG_Costamax4,20762,20,1,1	// C_GreatDevilWing
 IG_Costamax4,20763,20,1,1	// C_Amistr_Bag
 IG_Costamax4,20764,20,1,1	// C_Fallen_Angel_Wing
 IG_Costamax4,20765,20,1,1	// C_Archangel_Wing
+
+IG_BPoring,22101,0,1,0	// Poring Boots
+IG_BPoring,29148,20,1,1	//  Leo
+IG_BPoring,29149,20,1,1	//  Pisces
+IG_BPoring,29150,20,1,1	//  Capri
+IG_BPoring,29151,20,1,1	//  Aq
+IG_BPoring,29152,20,1,1	//  Scorpio
+IG_BPoring,29153,20,1,1	//  Taurus

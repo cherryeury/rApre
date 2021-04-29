@@ -6390,7 +6390,21 @@ Body:
       bonus bAtkEle,Ele_Fire;
       bonus bMatk,50;
       skill "MG_FIREBOLT",3;
-      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;      
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;    
+  - Id: 23073
+    AegisName: AngelPoring_Box
+    Name: Angel Poring Box
+    Type: Usable
+    Buy: 10000
+    Weight: 200
+    Flags:
+      BuyingStore: true
+      Container: true
+    Trade:
+      Override: 100
+      NoSell: true
+    Script: |
+      getgroupitem(IG_BPoring);      
   - Id: 13034
     AegisName: Twilight_Desert
     Name: Desert Twilight
