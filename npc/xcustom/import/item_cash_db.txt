@@ -166,20 +166,20 @@
 2,1939,1
 2,1995,1
 //2,1139,8 // Tirfing
-2,1240,4 // Princess Knife
-2,1244,4 // Holy Dagger
-2,1227,4 // Weeder Knife
-2,13001,2 // Dragon Killer
+2,1240,5 // Princess Knife
+2,1244,5 // Holy Dagger
+2,1227,5 // Weeder Knife
+2,13001,5 // Dragon Killer
 //2,1134,15 // Caesar Sword
-2,1467,4 // Bill Guisarme
-2,1562,4 // Battlefield Textbook
+2,1467,5 // Bill Guisarme
+2,1562,5 // Battlefield Textbook
 //2,1416,15 // Tjungkuletti
-2,1414,4 // Gelerdria
+2,1414,5 // Gelerdria
 //2,1367,15 // Slaughter
-2,1169,4 // Executioner
+2,1169,5 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
-2,16051,10 // Valkyrie Hammer
+2,16051,25 // Valkyrie Hammer
 2,28717,200 // Valkyrie Knife
 2,13049,200 // Lacma
 
@@ -208,11 +208,11 @@
 //3,20800,1000
 
 // Armor
-3,15040,2 // Prison Uniform
+3,15040,3 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15057,3 // Apron 
-3,15058,4 // Rider Suit
-3,15060,7 // Azure Smock
+3,15057,4 // Apron 
+3,15058,5 // Rider Suit
+3,15060,8 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -246,8 +246,8 @@
 3,20731,1 // Earth Dragon Manteau
 3,2594,1 // Wrapping cloth
 3,2597,2 // Bloody Muffler
-3,20730,4 // Loyalist Hood
-3,20714,4 // Assassin Muffler
+3,20730,3 // Loyalist Hood
+3,20714,3 // Assassin Muffler
 
 //3,20779,35 // Rift Garment
 3,20778,500 // Crimson Stole

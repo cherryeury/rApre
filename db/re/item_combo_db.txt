@@ -92,7 +92,7 @@
 1723:2718,{ bonus bDex,1; bonus bMaxSP,50; bonus bSPrecovRate,10; }
 1724:5467,{ bonus bAspd,1; bonus bFlee2,3; }
 1726:1774,{ bonus bLongAtkRate,50; }
-1730:1752,{ bonus bLongAtkRate,25; }
+1730:1752,{ bonus bLongAtkRate,30; }
 1730:1752:19048,{ bonus bLongAtkRate,20; bonus2 bSubEle,Ele_Fire,-10; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1730:19019,{ bonus bLongAtkRate,45; }
 1731:1754,{ bonus bLongAtkRate,25; }

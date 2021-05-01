@@ -107,7 +107,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1284: callsub L_Socket,1,2;	// Krishna
 			case 1285: callsub L_Socket,1,2;	// Cakram
 			case 1268: callsub L_Socket,2,2;	// Wild_Beast_Claw
-			case 1269: callsub L_Socket,2,2;	// Inverse_Scale
+			case 1269: callsub L_Socket,2,2; case 1297: callsub L_Socket,2,2;	// Inverse_Scale
 			case 1265: callsub L_Socket,2,2;	// Bloody_Roar
 			case 1261: callsub L_Socket,4,2;	// Infiltrator
 			case 1266: callsub L_Socket,4,2;	// Infiltrator_
