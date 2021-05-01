@@ -292,8 +292,8 @@ function	script	F_KafTele	{
 	.@j = select( implode(@wrpC$,":") ) - 1;
 	if (@wrpC$[.@j] == "Cancel")
 		return;
-	// Consume "Free Ticket for Kafra Transportation" if available.
-	// Do not consume if in Guild castle
+	if (BaseLevel <40){
+	mes "[Kafra Employee]"; mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport freely!"; goto L_Cut; } 
 	if (countitem(7060) > 0 && getarg(0) != 2)
 		delitem 7060,1;
 	else {
@@ -307,7 +307,7 @@ function	script	F_KafTele	{
 		}
 		Zeny -= @wrpP[.@j];
 		RESRVPTS += (@wrpP[.@j]/16);
-	}
+	} L_Cut:
 	cutin "", 255;
 	if (@wrpD$[.@j] == "Al De Baran") warp "aldebaran",168,112;
 	else if (@wrpD$[.@j] == "Alberta") warp "alberta", 117, 56;

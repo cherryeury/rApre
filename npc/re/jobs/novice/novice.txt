@@ -721,7 +721,7 @@ new_5-2,115,120,3	duplicate(NvJinha)	Jinha#nv5	59
 		completequest 7121;
 		getexp 1800,20;
 		getitem 7059,5; //Cargo_Free_Ticket
-		getitem 7060,10; //Warp_Free_Ticket
+//		getitem 7060,10; //Warp_Free_Ticket
 		next;
 		mes "[Chocolat]";
 		mes "You've completed all the quests I gave you.";

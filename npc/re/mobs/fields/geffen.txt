@@ -18,8 +18,8 @@
 //==================================================
 // gef_fild00 - Geffen Field
 //==================================================
-moc_fild07,0,0	monster	Drops	1113,214,5000
-gef_fild00,0,0	monster	Chonchon	1011,34,5000
+gef_fild00,0,0	monster	Chonchon	1011,160,5000
+gef_fild00,0,0	monster	Poring	1002,34,5000
 gef_fild00,0,0	monster	Fabre	1007,34,5000
 gef_fild00,95,128	monster	Blue Plant	1079,1,900000,450000
 gef_fild00,124,321	monster	Blue Plant	1079,1,900000,450000
