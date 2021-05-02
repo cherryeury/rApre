@@ -95,7 +95,7 @@
 1730:1752,{ bonus bLongAtkRate,30; }
 1730:1752:19048,{ bonus bLongAtkRate,20; bonus2 bSubEle,Ele_Fire,-10; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1730:19019,{ bonus bLongAtkRate,45; }
-1731:1754,{ bonus bLongAtkRate,25; }
+1731:1754,{ bonus bLongAtkRate,30; }
 1731:1754:19048,{ bonus bLongAtkRate,20; bonus2 bAddEff,Eff_Freeze,-1000; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1731:19019,{ bonus bLongAtkRate,45; }
 1732:1756,{ bonus bLongAtkRate,25; bonus2 bAddEff,Eff_Stone,1000; }
