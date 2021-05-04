@@ -389,7 +389,7 @@ Body:
       - Item: Sticky_Mucus
         Rate: 600
       - Item: Guard_
-        Rate: 2
+        Rate: 20
       - Item: Shell
         Rate: 1000
       - Item: Sticky_Mucus
@@ -617,8 +617,8 @@ Body:
         Rate: 20
       - Item: Claw_Of_Wolves
         Rate: 9000
-      - Item: Mantle_
-        Rate: 10
+      - Item: Mantle
+        Rate: 80
       - Item: Meat
         Rate: 650
       - Item: Monster's_Feed
@@ -846,8 +846,8 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 9000
-      - Item: Silk_Robe_
-        Rate: 10
+      - Item: Silk_Robe
+        Rate: 100
       - Item: Honey
         Rate: 150
       - Item: Wing_Of_Butterfly
@@ -1225,8 +1225,8 @@ Body:
         Rate: 9000
       - Item: Munak_Turban
         Rate: 2
-      - Item: Shoes_
-        Rate: 15
+      - Item: Shoes
+        Rate: 150
       - Item: Amulet
         Rate: 20
       - Item: Ninja_Suit
@@ -1310,8 +1310,8 @@ Body:
         Rate: 700
       - Item: Mementos
         Rate: 10
-      - Item: Chain_Mail_
-        Rate: 1
+      - Item: Chain_Mail
+        Rate: 10
       - Item: Stiletto
         Rate: 50
       - Item: Soldier_Skeleton_Card
@@ -1351,8 +1351,8 @@ Body:
     Drops:
       - Item: Scales_Shell
         Rate: 5335
-      - Item: Circlet_
-        Rate: 5
+      - Item: Circlet
+        Rate: 100
       - Item: Necklace
         Rate: 1
       - Item: Crystal_Jewel___
@@ -2062,8 +2062,8 @@ Body:
         Rate: 9000
       - Item: Fin_Helm
         Rate: 1
-      - Item: Saint_Robe_
-        Rate: 10
+      - Item: Saint_Robe
+        Rate: 20
       - Item: Skyblue_Jewel
         Rate: 10
       - Item: Fin
@@ -2209,7 +2209,7 @@ Body:
       - Item: Shell
         Rate: 1500
       - Item: Guard_
-        Rate: 2
+        Rate: 20
       - Item: Red_Herb
         Rate: 400
       - Item: Red_Herb
@@ -2254,7 +2254,7 @@ Body:
       - Item: Chrysalis
         Rate: 5000
       - Item: Guard_
-        Rate: 2
+        Rate: 20
       - Item: Sticky_Mucus
         Rate: 600
       - Item: Red_Gemstone
@@ -3059,8 +3059,8 @@ Body:
         Rate: 5335
       - Item: Oridecon_Stone
         Rate: 115
-      - Item: Chain_Mail_
-        Rate: 2
+      - Item: Chain_Mail
+        Rate: 20
       - Item: Trident_
         Rate: 2
       - Item: Feather
@@ -4627,8 +4627,8 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Boots_
-        Rate: 5
+      - Item: Boots
+        Rate: 50
       - Item: Green_Herb
         Rate: 1500
       - Item: Violet_Jewel
@@ -4732,7 +4732,7 @@ Body:
       - Item: Yellow_Herb
         Rate: 1300
       - Item: Boots
-        Rate: 50
+        Rate: 500
       - Item: Baphomet__Card
         Rate: 1
         StealProtected: true
@@ -4817,8 +4817,8 @@ Body:
     Drops:
       - Item: Porcupine_Spike
         Rate: 9000
-      - Item: Coat_
-        Rate: 5
+      - Item: Coat
+        Rate: 50
       - Item: Animal's_Skin
         Rate: 5500
       - Item: Glaive_
@@ -5502,8 +5502,8 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Biretta_
-        Rate: 10
+      - Item: Biretta
+        Rate: 100
       - Item: Bone_Wand
         Rate: 1
       - Item: Ragamuffin_Cape
@@ -6227,8 +6227,8 @@ Body:
         Rate: 191
       - Item: Bone_Helm
         Rate: 1
-      - Item: Mirror_Shield_
-        Rate: 2
+      - Item: Mirror_Shield
+        Rate: 20
       - Item: Patriotism_Marks
         Rate: 10
       - Item: Ebone_Armor
@@ -7731,8 +7731,8 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Chain_Mail_
-        Rate: 2
+      - Item: Chain_Mail
+        Rate: 20
       - Item: Two_Hand_Sword_
         Rate: 2
       - Item: Katana
@@ -7787,8 +7787,8 @@ Body:
         Rate: 3500
       - Item: Mementos
         Rate: 1500
-      - Item: Mantle_
-        Rate: 10
+      - Item: Mantle
+        Rate: 80
       - Item: Cookbook06
         Rate: 1
       - Item: Requiem_Card
@@ -8064,8 +8064,8 @@ Body:
         Rate: 50
       - Item: Nurse_Cap
         Rate: 1
-      - Item: Muffler_
-        Rate: 5
+      - Item: Muffler
+        Rate: 50
       - Item: Stiletto_
         Rate: 5
       - Item: Puente_Robe
@@ -10680,7 +10680,7 @@ Body:
       - Item: Sticky_Mucus
         Rate: 700
       - Item: Guard_
-        Rate: 2
+        Rate: 20
       - Item: Shell
         Rate: 1300
       - Item: Sticky_Mucus
@@ -10722,8 +10722,8 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 6000
-      - Item: Silk_Robe_
-        Rate: 10
+      - Item: Silk_Robe
+        Rate: 100
       - Item: Honey
         Rate: 180
       - Item: Wing_Of_Butterfly
@@ -10763,7 +10763,7 @@ Body:
       - Item: Shell
         Rate: 1500
       - Item: Guard_
-        Rate: 2
+        Rate: 20
       - Item: Red_Herb
         Rate: 450
       - Item: Red_Herb
@@ -11633,7 +11633,7 @@ Body:
       - Item: Skyblue_Jewel
         Rate: 4500
       - Item: Boots_
-        Rate: 500
+        Rate: 250
       - Item: Mistic_Frozen
         Rate: 3000
     Drops:
@@ -12841,8 +12841,8 @@ Body:
     Drops:
       - Item: Brigan
         Rate: 4656
-      - Item: Chain_Mail_
-        Rate: 2
+      - Item: Chain_Mail
+        Rate: 20
       - Item: Claire_Suits
         Rate: 5
       - Item: Incisive_Arrow
@@ -13656,8 +13656,8 @@ Body:
         Rate: 25
       - Item: Nail_Of_Loki
         Rate: 1
-      - Item: Mirror_Shield_
-        Rate: 1
+      - Item: Mirror_Shield
+        Rate: 10
       - Item: Killer_Mantis_Card
         Rate: 1
         StealProtected: true
@@ -14186,8 +14186,8 @@ Body:
         Rate: 4413
       - Item: Zargon
         Rate: 2500
-      - Item: Boots_
-        Rate: 9
+      - Item: Boots
+        Rate: 90
       - Item: Bowman_Scarf
         Rate: 5
       - Item: Round_Shell
@@ -14768,8 +14768,8 @@ Body:
         Rate: 4365
       - Item: Blue_Herb
         Rate: 250
-      - Item: Coat_
-        Rate: 5
+      - Item: Coat
+        Rate: 50
       - Item: Cyfar
         Rate: 1200
       - Item: Guisarme_
@@ -15087,12 +15087,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15147,12 +15147,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15181,7 +15181,7 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Mirror_Shield_
+      - Item: Mirror_Shield
         Rate: 1000
       - Item: War_Axe
         Rate: 75
@@ -15207,12 +15207,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15267,12 +15267,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15327,12 +15327,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15387,12 +15387,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15447,12 +15447,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15507,12 +15507,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15567,12 +15567,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15627,12 +15627,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15687,12 +15687,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15747,12 +15747,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15807,12 +15807,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15867,12 +15867,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15927,12 +15927,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -15987,12 +15987,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -16047,12 +16047,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -16083,7 +16083,7 @@ Body:
         Rate: 7275
       - Item: Memorize_Book
         Rate: 300
-      - Item: Boots_
+      - Item: Boots
         Rate: 273
       - Item: Sharp_Gear
         Rate: 38
@@ -16107,12 +16107,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -16167,12 +16167,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -16227,12 +16227,12 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Muffler_
+      - Item: Muffler
         Rate: 800
-      - Item: Shoes_
+      - Item: Shoes
         Rate: 800
-      - Item: Chain_Mail_
-        Rate: 800
+      - Item: Chain_Mail
+        Rate: 2000
       - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
@@ -20811,7 +20811,7 @@ Body:
       - Item: Worm_Peelings
         Rate: 500
       - Item: Guard_
-        Rate: 1
+        Rate: 10
       - Item: Kind_Of_Beetle_Card
         Rate: 1
         StealProtected: true
@@ -21311,8 +21311,8 @@ Body:
         Rate: 100
       - Item: Ragamuffin_Cape
         Rate: 50
-      - Item: Muffler_
-        Rate: 2
+      - Item: Muffler
+        Rate: 20
       - Item: Rider_Insignia
         Rate: 5
       - Item: Disguise_Card
@@ -21603,8 +21603,8 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 10
-      - Item: Boots_
-        Rate: 1
+      - Item: Boots
+        Rate: 20
       - Item: Munak_Doll
         Rate: 300
       - Item: Claire_Suits
@@ -23774,8 +23774,8 @@ Body:
         Rate: 3000
       - Item: Bastard_Sword_
         Rate: 8
-      - Item: Chain_Mail_
-        Rate: 3
+      - Item: Chain_Mail
+        Rate: 30
       - Item: Runstone_Mystic
         Rate: 300
       - Item: Silver_Coin_Moneybag
@@ -23911,7 +23911,7 @@ Body:
       - Item: Leaflet_Of_Aloe
         Rate: 1000
       - Item: Guard_
-        Rate: 1
+        Rate: 10
       - Item: Bamboo_Basket
         Rate: 4850
       - Item: Chilli
@@ -24971,8 +24971,8 @@ Body:
         Rate: 2500
       - Item: Dark_Red_Jewel
         Rate: 1500
-      - Item: Boots_
-        Rate: 500
+      - Item: Boots
+        Rate: 5000
       - Item: Ungoliant_Card
         Rate: 1
         StealProtected: true
@@ -25591,8 +25591,8 @@ Body:
         Rate: 3000
       - Item: Violet_Jewel
         Rate: 100
-      - Item: Boots_
-        Rate: 1
+      - Item: Boots
+        Rate: 20
       - Item: Bloody_Roar
         Rate: 1
       - Item: Old_Blue_Box
@@ -26656,7 +26656,7 @@ Body:
       - Item: Adventurere's_Suit_
         Rate: 40
       - Item: Chain_Mail_
-        Rate: 2
+        Rate: 1
       - Item: Ring_Of_Rogue
         Rate: 1
       - Item: Coward_
@@ -26767,9 +26767,9 @@ Body:
       - Item: Armlet_Of_Prisoner
         Rate: 500
       - Item: Biretta_
-        Rate: 5
+        Rate: 1
       - Item: Saint_Robe_
-        Rate: 5
+        Rate: 1
       - Item: Scapulare_
         Rate: 10
       - Item: Spike
@@ -26827,11 +26827,11 @@ Body:
       - Item: Steel_Arrow_Container
         Rate: 100
       - Item: Mantle_
-        Rate: 5
+        Rate: 1
       - Item: Sandals_
-        Rate: 30
+        Rate: 1
       - Item: Shoes_
-        Rate: 2
+        Rate: 1
       - Item: Silent_Energy_Particle
         Rate: 1000
         StealProtected: true
@@ -26885,11 +26885,11 @@ Body:
       - Item: Staff_Of_Wing
         Rate: 1
       - Item: Guard_
-        Rate: 5
+        Rate: 1
       - Item: Silk_Robe_
-        Rate: 10
+        Rate: 1
       - Item: Silver_Robe_
-        Rate: 30
+        Rate: 1
       - Item: Clip
         Rate: 1
       - Item: Silent_Energy_Particle
@@ -26957,7 +26957,7 @@ Body:
       - Item: Formal_Suit
         Rate: 1000
       - Item: Boots_
-        Rate: 1000
+        Rate: 500
       - Item: Nagan
         Rate: 1000
       - Item: Silver_Coin_Moneybag
@@ -28635,8 +28635,8 @@ Body:
         Rate: 1
       - Item: Gift_Box
         Rate: 50
-      - Item: Shoes_
-        Rate: 5
+      - Item: Shoes
+        Rate: 50
       - Item: Manteau_
         Rate: 1
       - Item: Fricco_Shoes
@@ -30746,8 +30746,8 @@ Body:
         Rate: 1000
       - Item: Earring_
         Rate: 3
-      - Item: Mantle_
-        Rate: 10
+      - Item: Mantle
+        Rate: 80
       - Item: Elunium_Stone
         Rate: 500
       - Item: Peuz_Seal
@@ -30796,8 +30796,8 @@ Body:
         Rate: 25
       - Item: Rune_Of_Darkness
         Rate: 1000
-      - Item: Silk_Robe_
-        Rate: 100
+      - Item: Silk_Robe
+        Rate: 1000
       - Item: Odin's_Blessing
         Rate: 100
       - Item: Skeggiold_Card
@@ -30844,8 +30844,8 @@ Body:
         Rate: 25
       - Item: Rune_Of_Darkness
         Rate: 1000
-      - Item: Silk_Robe_
-        Rate: 100
+      - Item: Silk_Robe
+        Rate: 1000
       - Item: Odin's_Blessing
         Rate: 100
       - Item: Skeggiold_Card
@@ -31508,8 +31508,8 @@ Body:
         Rate: 1000
       - Item: Will_Of_Darkness
         Rate: 1000
-      - Item: Boots_
-        Rate: 2
+      - Item: Boots
+        Rate: 20
       - Item: Sticky_Mucus
         Rate: 1000
       - Item: Bloody_Rune
@@ -38392,8 +38392,8 @@ Body:
         Rate: 9000
       - Item: Fin_Helm
         Rate: 2
-      - Item: Saint_Robe_
-        Rate: 20
+      - Item: Saint_Robe
+        Rate: 1000
       - Item: Skyblue_Jewel
         Rate: 20
       - Item: Fin
@@ -39627,8 +39627,8 @@ Body:
     Modes:
       Detector: true
     Drops:
-      - Item: Boots_
-        Rate: 9
+      - Item: Boots
+        Rate: 90
       - Item: Crystal_Jewel__
         Rate: 50
       - Item: Short_Leg
@@ -46521,8 +46521,8 @@ Body:
         Rate: 7
       - Item: Heart_Of_Mermaid
         Rate: 4500
-      - Item: Saint_Robe_
-        Rate: 5
+      - Item: Saint_Robe
+        Rate: 100
       - Item: Skyblue_Jewel
         Rate: 5
       - Item: Fin
@@ -53725,8 +53725,8 @@ Body:
         Rate: 170
       - Item: Mementos
         Rate: 2
-      - Item: Chain_Mail_
-        Rate: 1
+      - Item: Chain_Mail
+        Rate: 10
       - Item: Stiletto
         Rate: 10
   - Id: 2407
@@ -53903,9 +53903,9 @@ Body:
       - Item: Muramasa
         Rate: 5
       - Item: Chain_Mail
-        Rate: 500
-      - Item: Chain_Mail_
-        Rate: 5
+        Rate: 200
+      - Item: Chain_Mail
+        Rate: 200
       - Item: Old_Blue_Box
         Rate: 2
   - Id: 2416
@@ -53991,8 +53991,8 @@ Body:
         Rate: 100
       - Item: Berdysz
         Rate: 5
-      - Item: Coat_
-        Rate: 500
+      - Item: Coat
+        Rate: 5000
       - Item: Clothes_Of_The_Lord
         Rate: 5
       - Item: Old_Blue_Box
@@ -54126,8 +54126,8 @@ Body:
         Rate: 100
       - Item: Slash
         Rate: 5
-      - Item: Saint_Robe_
-        Rate: 500
+      - Item: Saint_Robe
+        Rate: 5000
       - Item: Holy_Robe_
         Rate: 5
       - Item: Old_Blue_Box
@@ -54261,8 +54261,8 @@ Body:
         Rate: 100
       - Item: Cleaver
         Rate: 5
-      - Item: Coat_
-        Rate: 500
+      - Item: Coat
+        Rate: 5000
       - Item: Clothes_Of_The_Lord
         Rate: 5
       - Item: Old_Blue_Box
@@ -54441,8 +54441,8 @@ Body:
         Rate: 100
       - Item: Kaiser_Knuckle
         Rate: 5
-      - Item: Saint_Robe_
-        Rate: 500
+      - Item: Saint_Robe
+        Rate: 5000
       - Item: Holy_Robe_
         Rate: 5
       - Item: Old_Blue_Box
@@ -56317,8 +56317,8 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Biretta_
-        Rate: 10
+      - Item: Biretta
+        Rate: 100
       - Item: Lich_Bone_Wand
         Rate: 1
       - Item: Ragamuffin_Cape
@@ -58671,8 +58671,8 @@ Body:
         Rate: 20
       - Item: Claw_Of_Wolves
         Rate: 9000
-      - Item: Mantle_
-        Rate: 10
+      - Item: Mantle
+        Rate: 80
       - Item: Wing_Of_Fly
         Rate: 650
       - Item: Monster's_Feed
@@ -59430,8 +59430,8 @@ Body:
         Rate: 2500
       - Item: Dark_Red_Jewel
         Rate: 1500
-      - Item: Boots_
-        Rate: 500
+      - Item: Boots
+        Rate: 5000
       - Item: Ungoliant_Card
         Rate: 1
         StealProtected: true
@@ -59874,8 +59874,8 @@ Body:
         Rate: 3000
       - Item: Bastard_Sword_
         Rate: 8
-      - Item: Chain_Mail_
-        Rate: 3
+      - Item: Chain_Mail
+        Rate: 30
       - Item: Runstone_Mystic
         Rate: 300
       - Item: Silver_Coin_Moneybag
@@ -60300,8 +60300,8 @@ Body:
         Rate: 700
       - Item: Wing_Of_Fly
         Rate: 10
-      - Item: Chain_Mail_
-        Rate: 1
+      - Item: Chain_Mail
+        Rate: 10
       - Item: Stiletto
         Rate: 50
       - Item: Soldier_Skeleton_Card
@@ -60347,8 +60347,8 @@ Body:
         Rate: 700
       - Item: Wing_Of_Fly
         Rate: 10
-      - Item: Chain_Mail_
-        Rate: 1
+      - Item: Chain_Mail
+        Rate: 10
       - Item: Stiletto
         Rate: 50
       - Item: Soldier_Skeleton_Card
@@ -60441,8 +60441,8 @@ Body:
         Rate: 50
       - Item: Nurse_Cap
         Rate: 1
-      - Item: Muffler_
-        Rate: 5
+      - Item: Muffler
+        Rate: 50
       - Item: Stiletto_
         Rate: 5
       - Item: Puente_Robe
@@ -62124,8 +62124,8 @@ Body:
         Rate: 3500
       - Item: Mementos
         Rate: 1500
-      - Item: Mantle_
-        Rate: 10
+      - Item: Mantle
+        Rate: 80
       - Item: Cookbook06
         Rate: 1
       - Item: Requiem_Card
@@ -62259,8 +62259,8 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Chain_Mail_
-        Rate: 2
+      - Item: Chain_Mail
+        Rate: 20
       - Item: Two_Hand_Sword_
         Rate: 2
       - Item: Peuz_Plate
@@ -62306,8 +62306,8 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Chain_Mail_
-        Rate: 2
+      - Item: Chain_Mail
+        Rate: 20
       - Item: Two_Hand_Sword_
         Rate: 2
       - Item: Peuz_Plate
@@ -62355,8 +62355,8 @@ Body:
         Rate: 1
       - Item: Lab_Staff_Record
         Rate: 5
-      - Item: Silk_Robe_
-        Rate: 10
+      - Item: Silk_Robe
+        Rate: 100
       - Item: Silver_Robe_
         Rate: 30
       - Item: Clip
@@ -66704,7 +66704,7 @@ Body:
       - Item: Worm_Peelings
         Rate: 500
       - Item: Guard_
-        Rate: 1
+        Rate: 10
       - Item: Kind_Of_Beetle_Card
         Rate: 1
         StealProtected: true
@@ -66837,8 +66837,8 @@ Body:
     Drops:
       - Item: Scales_Shell
         Rate: 5335
-      - Item: Circlet_
-        Rate: 5
+      - Item: Circlet
+        Rate: 100
       - Item: Necklace
         Rate: 1
       - Item: Crystal_Jewel___
@@ -67117,8 +67117,8 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 10
-      - Item: Boots_
-        Rate: 1
+      - Item: Boots
+        Rate: 20
       - Item: Munak_Doll
         Rate: 300
       - Item: Claire_Suits
@@ -67353,7 +67353,7 @@ Body:
         Rate: 1000
       - Item: Will_Of_Darkness
         Rate: 1000
-      - Item: Boots_
+      - Item: Boots
         Rate: 2
       - Item: Sticky_Mucus
         Rate: 1000
@@ -68635,8 +68635,8 @@ Body:
         Rate: 4365
       - Item: Wing_Of_Fly
         Rate: 250
-      - Item: Coat_
-        Rate: 5
+      - Item: Coat
+        Rate: 50
       - Item: Cyfar
         Rate: 1200
       - Item: Guisarme_
@@ -69049,8 +69049,8 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Biretta_
-        Rate: 10
+      - Item: Biretta
+        Rate: 100
       - Item: Bone_Wand
         Rate: 1
       - Item: Ragamuffin_Cape
@@ -69708,8 +69708,8 @@ Body:
         Rate: 100
       - Item: Ragamuffin_Cape
         Rate: 50
-      - Item: Muffler_
-        Rate: 2
+      - Item: Muffler
+        Rate: 20
       - Item: Rider_Insignia
         Rate: 5
       - Item: Disguise_Card
@@ -70219,8 +70219,8 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 9000
-      - Item: Silk_Robe_
-        Rate: 10
+      - Item: Silk_Robe
+        Rate: 100
       - Item: Honey
         Rate: 150
       - Item: Wing_Of_Fly
@@ -70908,8 +70908,8 @@ Body:
     Drops:
       - Item: Porcupine_Spike
         Rate: 9000
-      - Item: Coat_
-        Rate: 5
+      - Item: Coat
+        Rate: 50
       - Item: Animal's_Skin
         Rate: 5500
       - Item: Glaive_
@@ -71517,8 +71517,8 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Boots_
-        Rate: 5
+      - Item: Boots
+        Rate: 50
       - Item: Green_Herb
         Rate: 1500
       - Item: Violet_Jewel
@@ -71564,8 +71564,8 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Boots_
-        Rate: 5
+      - Item: Boots
+        Rate: 50
       - Item: Green_Herb
         Rate: 1500
       - Item: Violet_Jewel
@@ -72062,8 +72062,8 @@ Body:
         Rate: 1
       - Item: Gift_Box
         Rate: 50
-      - Item: Shoes_
-        Rate: 5
+      - Item: Shoes
+        Rate: 50
       - Item: Manteau_
         Rate: 1
       - Item: Fricco_Shoes

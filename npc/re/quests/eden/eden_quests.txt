@@ -1878,8 +1878,8 @@ moc_para01,112,96,5	script	Administrator Michael	4_M_RUSMAN1,{
 			mes "[Michael]";
 			para_suv01 = 23;
 			getitem 13050,1; //P_Dagger1
-			getitem 2457,1; //Para_Team_Boots2
-			getitem 15010,1; //Para_Team_Uniform2
+//			getitem 2457,1; //Para_Team_Boots2
+//			getitem 15010,1; //Para_Team_Uniform2
 			if (para_suv02 == 0) {
 				mes "I don't know what weapon will suit you so, you'll get a Dagger.";
 				mes "You don't have a record of receiving any supplies";
@@ -2112,10 +2112,10 @@ S_Select:
 		mes "You've chosen the "+ getarg(.@i+1) +".";
 	}
 	if (para_suv01 == 22) {
-		mes "Additionally you'll receive the Eden Group Boots II and Uniform II.";
+		mes "Hmm, i think that's all.";
 		next;
-		getitem 2457,1;	// Para_Team_Boots2
-		getitem 15010,1;// Para_Team_Uniform2
+//		getitem 2457,1;	// Para_Team_Boots2
+//		getitem 15010,1;// Para_Team_Uniform2
 		para_suv01 = 23;
 	}
 	else {

@@ -6008,8 +6008,8 @@ static void mob_drop_ratio_adjust(void){
 				continue;
 			}
 
-			if( battle_config.drop_rateincrease && rate < 5000 ){
-				rate++;
+			if( battle_config.drop_rateincrease){
+				rate += battle_config.drop_rateincrease;
 			}
 
 			// Treasure box drop rates [Skotlex]

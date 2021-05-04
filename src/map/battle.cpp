@@ -9025,7 +9025,7 @@ static const struct _battle_data {
 	{ "item_enabled_npc",                   &battle_config.item_enabled_npc,                1,      0,      1,              },
 	{ "item_flooritem_check",               &battle_config.item_onfloor,                    1,      0,      1,              },
 	{ "bowling_bash_area",                  &battle_config.bowling_bash_area,               0,      0,      20,             },
-	{ "drop_rateincrease",                  &battle_config.drop_rateincrease,               0,      0,      1,              },
+	{ "drop_rateincrease",                  &battle_config.drop_rateincrease,               0,      0,      INT_MAX,        },
 	{ "feature.auction",                    &battle_config.feature_auction,                 0,      0,      2,              },
 	{ "feature.banking",                    &battle_config.feature_banking,                 1,      0,      1,              },
 #ifdef VIP_ENABLE

@@ -23,25 +23,31 @@
 
 //Headgear 
 //Top
+0,5131,3 // Close Helmet 
+0,18538,5 // Spirit Whisper
 //0,5690,3 // Red Wing Hat
-0,5502,5 // Necromancer
-0,5568,5 // Rabbit Bonnet
+0,5568,7 // Rabbit Bonnet
 //0,5153,8 // Angeling Hairpin
-0,5324,8 // Little Angel
-0,5138,8 // Magician eyes
-0,5414,8 // Campfire
-0,5782,8 // Legion
-0,5527,10 // Lunatic Hat
-0,5387,10 // Neko Mimi
-0,5509,12 // Sting Hat 
-0,5781,15 // Persica
-0,5382,15 // Bell Ribbon
+0,5324,7 // Little Angel
+0,5138,7 // Magician eyes
+0,5414,7 // Campfire
+0,5212,10 // Satellite
+0,5653,10 // Darkness Helm
+0,5782,10 // Legion
+0,18529,10 // Accurate Wild Rose
+0,5256,11 // Valkyrie
+0,5527,13 // Lunatic Hat
+0,5387,13 // Neko Mimi
+0,5509,15 // Sting Hat
+0,5304,15 // Blindness 
+0,5781,17 // Persica
+0,5382,17 // Bell Ribbon
 //0,5289,14 // Vanilmirth
 //0,5790,14 // Mother
-0,5768,15 // Sakura Coronet
-0,18901,15 // Seppl Hat
-0,5380,15 // Fish Head
-0,18595,18 // Ancient Horn
+0,5768,17 // Sakura Coronet
+0,18901,17 // Seppl Hat
+//0,5380,17 // Fish Head
+0,18595,19 // Ancient Horn
 0,5561,20 // Rabbit Magic Hat
 //0,18575,25 // Wunderkammer
 //0,18847,12 // Jolly Roger
@@ -56,7 +62,7 @@
 //0,5975,30 // Zealotus
 0,18574,30 // Lord of Death
 //0,18801,50 // Gale Hair Or
-0,5467,40 // Dragon Helm
+0,5467,50 // Dragon Helm
 0,18563,80 // Heart wings
 //0,18812,250 // Elder Crown
 
@@ -86,17 +92,18 @@
 //0,19163,1000
 
 // Middle
-1,5664,50 // Filir Pinion
-1,5610,100 // Ice Wing Ears
-1,5358,100 // Peco
+1,5664,25 // Filir Pinion
+1,5610,25 // Ice Wing Ears
+1,5288,25 // Red Glasses
+1,5358,35 // Peco
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,1500 // Fafnir Skin
-1,5786,200 // Ancient elven ear
-//1,5924,350
+1,18559,100 // Fafnir Skin
+1,5786,150 // Ancient elven ear
+//1,5924,300
 1,5104,300 // Dark Blinkers
-1,18787,500 // Goaltender
+1,18787,400 // Goaltender
 1,18540,600 // Demon Mask
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
@@ -111,29 +118,31 @@
 //1,400002,3000 // Victory Wing Ears [1]
 
 //Lower
-1,18900,5 // Weisswurst
-1,18677,5 // Twig
-//1,5775,10 // Chocolate Donut
-1,5483,15 // Odin's Mask
-1,5403,25 // Fish in Mouth
-1,5574,25 // Well Chewed
-1,5362,30 // Ninja Scroll
-1,18643,55 // Paperhand str
-1,18642,55 // Paperhand int
-1,18644,55 // Paperhand dex
 
-1,5305,55 // Pirate Dagger
+1,18677,3 // Twig
+1,18900,5 // Weisswurst
+//1,5775,10 // Chocolate Donut
+1,5483,5 // Odin's Mask
+1,5332,10 // Loki's Mask
+1,5403,30 // Fish in Mouth
+1,5574,30 // Well Chewed
+1,5362,35 // Ninja Scroll
+1,18643,35 // Paperhand str
+1,18642,35 // Paperhand int
+1,18644,35 // Paperhand dex
+1,5305,35 // Pirate Dagger
+1,5767,40 // Samurai	
 //1,5934,50
 //1,18759,70 // Wood Goblin
 //1,5878,100 // Miracle blue rose
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
 1,18868,150 // Assassin mask
-1,18560,200 // Fafnir Mask
+1,18560,150 // Fafnir Mask
 1,18858,300 // Pink Angelring Bubble
 1,18754,300 // Blood Sucker
 //1,18968,500
-1,18859,800 // Angelring Bubble
+//1,18859,600 // Angelring Bubble
 //1,18666,800 // CD in Mouth 
 1,19097,1250 // Piamette Ribbon
 //1,18564,1000 // Fragment of Love
