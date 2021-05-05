@@ -1,9 +1,9 @@
-prontera,180,189,5	script	Christopher#C	731,{
+moc_para01,35,17,5	script	Christopher#C	731,{
 	mes "[^FF6600Christopher^000000]";
-	mes "Welcome to ^FF6600Christopher^000000's Workshop. Ye can get all yer stuff for refining here. Unlike ma old man";
+	mes "Yo. Ye can get all yer stuff for refining from me. Unlike ma old man,";
 	mes "I sell things everyday.";
 	next;
-	switch(select("Purchase Refine Ore.:Craft High Refine Ore.:Cancel.")) {
+	switch(select("Purchase Refine Ore.:Craft High Refine Ore.:Buy Midgard Coin - 100000z.:Cancel.")) {
 	case 1:
 		mes "[^FF6600Christopher^000000]";
 		mes "I prepare every Metal, and only the highest quality ones o'course. Now then, which one do ye need?";
@@ -85,12 +85,12 @@ prontera,180,189,5	script	Christopher#C	731,{
 				mes "[^FF6600Christopher^000000]";
 				mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need, whenever ye want.";
 				close;
-				}
+				}					
 	case 2:
 		mes "[^FF6600Christopher^000000]";
 		mes "You wanna craft aye ? Which ?";
 		next;
-		switch(select("Enriched Oridecon Eluniums.:HD Oridecon Eluniums.:HD Bradiums Carniums.:Cancel.")) {
+		switch(select("Enriched Version.:HD Version.:Cancel.")) {
 			case 1:
 				mes "[^FF6600Christopher^000000]";
 				mes "If you bring me 5";
@@ -99,7 +99,7 @@ prontera,180,189,5	script	Christopher#C	731,{
 				mes "Enriched Oridecon or Enriched Elunium.";
 				mes "Just give me 250,000z.";
 				next;
-				switch(select("Oridecon to Enriched Oridecon.:Elunium to Enriched Elunium.:No thanks.")) {
+				switch(select("Enriched Oridecon.:Enriched Elunium.:No thanks.")) {
 				case 1:
 					setarray .@i[0],984,5,7620;  //Oridecon -> Enriched Oridecon
 					break;
@@ -134,7 +134,7 @@ prontera,180,189,5	script	Christopher#C	731,{
 				mes "HD Oridecon or HD Elunium.";
 				mes "Just give me 750,000z.";
 				next;
-				switch(select("Enriched Oridecon to HD Oridecon.:Enriched Elunium to HD Elunium.:Carnium to HD Carnium.:Bradium to HD Bradium.No thanks.")) {
+				switch(select("Enriched Oridecon to HD Oridecon.:Enriched Elunium to HD Elunium.:No thanks.")) {
 				case 1:
 					setarray .@i[0],7620,2,6240;  //Enriched Oridecon -> HD Oridecon
 					break;
@@ -142,12 +142,6 @@ prontera,180,189,5	script	Christopher#C	731,{
 					setarray .@i[0],7619,2,6241;  //Enriched Elunium -> HD Elunium
 					break;
 				case 3:
-					setarray .@i[0],6223,5,6225;  //Carnium -> HD Carnium
-					break;
-				case 4:
-					setarray .@i[0],6224,5,6226;  //Bradium -> HD Bradium
-					break;				
-				case 5:
 					mes "[^FF6600Christopher^000000]";
 					mes "Hmm...";
 					close;
@@ -166,48 +160,53 @@ prontera,180,189,5	script	Christopher#C	731,{
 				mes "to cheat me because you";
 				mes "don't have enough money";
 				mes "or "+getitemname(.@i[0])+".";
-				close;
+				close;		
 			case 3:
-				mes "[^FF6600Christopher^000000]";
-				mes "If you bring me 3";
-				mes "Carnium or Bradium";
-				mes "I can exchange them for";
-				mes "HD Carnium or HD Bradium.";
-				mes "Just give me 500,000z.";
-				next;
-				switch(select("Carnium to HD Carnium.:Bradium to HD Bradium.No thanks.")) {
-				case 1:
-					setarray .@i[0],6223,3,6225;  //Carnium -> HD Carnium
-					break;
-				case 2:
-					setarray .@i[0],6224,3,6226;  //Bradium -> HD Bradium
-					break;				
-				case 3:
-					mes "[^FF6600Christopher^000000]";
-					mes "Hmm...";
-					close;
-				}
-				if (countitem(.@i[0]) >= .@i[1] && Zeny >= 250000) {
-					delitem .@i[0],.@i[1];
-					Zeny = Zeny - 250000;
-					getitem .@i[2],1;
-					mes "[^FF6600Christopher^000000]";
-					mes "Ok! Here's your "+getitemname(.@i[2])+".";
-					mes "Take it and use it well.";
-					close;
-				}
-				mes "[^FF6600Christopher^000000]";
-				mes "You better not be trying";
-				mes "to cheat me because you";
-				mes "don't have enough money";
-				mes "or "+getitemname(.@i[0])+".";
-				close;			
-			case 4:
 				mes "[^FF6600Christopher^000000]";
 				mes "Feel free to come anytime, whenever ye need. Fare ye well.";
 				close;
-			}		
+			}	
 	case 3:
+		mes "[^FF6600Christopher^000000]";
+		mes "Midgard Coin ?";
+		mes "So you wanna craft something eh ?";
+		mes "How many do ye wish to buy? If ye dont want anything, just type the number as '0.'";
+		next;
+		while(1) {
+			input .@input;
+			if (.@input == 0) {
+				mes "[^FF6600Christopher^000000]";
+				mes "Deal has";
+				mes "been canceled.";
+				mes "Fare ye well.";
+				close;
+			}
+			else if ((.@input < 0) || (.@input > 500)) {
+				mes "[^FF6600Christopher^000000]";
+				mes "Ye can buy 500, er less.";
+				next;
+			}
+			else {
+				break;
+			}
+		}
+		.@sellx = .@input * 100000;
+		if (Zeny < .@sellx) {
+			mes "[^FF6600Christopher^000000]";
+			mes "Ye don't have enough money. Ye know I can't sell this at a lower price... You know how the wifey nags about Zeny.";
+			close;
+		}
+		if (checkweight(6242,.@input) == 0) {
+			mes "[^FF6600Christopher^000000]";
+			mes "Ye look like you don't have the room to carry anythin' new. Why don't ye put some things into Kafra Storage n' come back.";
+			close;
+		}
+		getitem 6242,.@input; // M Coin
+		Zeny = Zeny-.@sellx;
+		mes "[^FF6600Christopher^000000]";
+		mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
+		close;				
+	case 4:
 		mes "[^FF6600Christopher^000000]";
 		mes "Feel free to come anytime, whenever ye need and whenever ye want. Fare ye well.";
 		close;

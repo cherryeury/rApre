@@ -1875,7 +1875,7 @@ Body:
     Script: |
       bonus bCritical,4;   
       if (getrefine()>6)  {
-      bonus bAspdRate,4; }       
+      bonus bAspdRate,3; }       
   - Id: 2408
     AegisName: Cuffs
     Name: Shackles
@@ -2045,11 +2045,40 @@ Body:
     Refineable: true
     View: 2
     Script: |
-      bonus2 bSubEle,Ele_All,5;
-      bonus2 bSubEle,Ele_Neutral,-5;
+      bonus2 bSubEle,Ele_Neutral,2;
       if (getrefine()>6)  {
-      bonus2 bSubEle,Ele_All,5;
-      bonus2 bSubEle,Ele_Neutral,-5;}   
+      bonus2 bSubEle,Ele_Neutral,1;}   
+  - Id: 2523
+    AegisName: Undershirt_
+    Name: Modified Undershirt
+    Type: Armor
+    Buy: 20000
+    Weight: 150
+    Defense: 5
+    Slots: 1
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bMdef,1; 
+      bonus bFlee,3;
+      if (getrefine()>6)  {
+      bonus bFlee,10; }   
+  - Id: 2371
+    AegisName: G_Strings_
+    Name: Modified Pantie
+    Type: Armor
+    Buy: 1000
+    Weight: 100
+    Defense: 22
+    Slots: 1
+    Locations:
+      Armor: true
+    Refineable: true      
+    Script: |
+      bonus bAgi,1;      
+      if (getrefine()>6)  {
+      bonus bAgi,1; }     
   - Id: 2106
     AegisName: Shield_
     Name: Modified Shield
@@ -2069,7 +2098,7 @@ Body:
     Script: |
       bonus2 bSubEle,Ele_All,3;
       if (getrefine()>6)  {
-      bonus2 bSubEle,Ele_All,2;}  
+      bonus2 bSubEle,Ele_All,1;}  
   - Id: 2432
     AegisName: Spiky_Heel_
     Name: High Heels
@@ -2212,27 +2241,36 @@ Body:
     EquipLevelMin: 100
     Refineable: true    
     Script: |
-      bonus bMaxHPrate,5;      
-  - Id: 2228
-    AegisName: Helm
-    Name: Helm
+      bonus bMaxHPrate,5;  
+  - Id: 6242
+    AegisName: Midgard_Coin
+    Name: Midgard Coin
+    Type: Etc
+    Buy: 200000
+    Weight: 10
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoSell: true      
+  - Id: 2956
+    AegisName: Safety_Ring_
+    Name: Advanced Safety Ring
     Type: Armor
-    Buy: 44000
-    Weight: 600
-    Defense: 13
+    Buy: 75000
+    Weight: 100
+    Slots: 1
     Jobs:
-      Crusader: true
-      Knight: true
-      Swordman: true
+      All: true
+      Novice: false
+      SuperNovice: false
     Locations:
-      Head_Top: true
-    Refineable: true
-    View: 40
+      Both_Accessory: true
+    EquipLevelMin: 50
     Script: |
-      bonus2 bSubEle,Ele_Neutral,2;    
+      bonus bAllStats,3;      
   - Id: 2229
     AegisName: Helm_
-    Name: Helm
+    Name: Modified Helm
     Type: Armor
     Buy: 44000
     Weight: 600
@@ -2247,7 +2285,34 @@ Body:
     Refineable: true
     View: 40      
     Script: |
-      bonus2 bSubEle,Ele_Neutral,2;
+      bonus bVit,2;
+      if (getrefine()>6){
+      bonus2 bSubEle,Ele_Neutral,3;  }    
+  - Id: 2359
+    AegisName: Ninja_Suit_
+    Name: Modified Ninja Suit
+    Type: Armor
+    Buy: 20
+    Weight: 1500
+    Defense: 58
+    Slots: 1
+    Jobs:
+      Assassin: true
+      KagerouOboro: true
+      Ninja: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+      bonus bMdef,3;   
+    Script: |
+      if (getrefine()>6){
+      bonus bAspdRate,3;
+      bonus bVariableCastrate,-2;}      
   - Id: 2226
     AegisName: Cap
     Name: Cap
@@ -2319,31 +2384,9 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,1; 
       bonus bMatkRate,1;
-  - Id: 2230
-    AegisName: Gemmed_Sallet
-    Name: Gemmed Sallet
-    Type: Armor
-    Buy: 50000
-    Weight: 500
-    Defense: 8
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Head_Top: true
-    Refineable: true
-    Script: |
-      bonus bMdef,7;
   - Id: 2231
     AegisName: Gemmed_Sallet_
-    Name: Gemmed Sallet
+    Name: Modified Gemmed Sallet
     Type: Armor
     Buy: 50000
     Weight: 500
@@ -2363,7 +2406,9 @@ Body:
       Head_Top: true
     Refineable: true
     Script: |
-      bonus bMdef,7;
+      bonus bMdef,3;
+      if (getrefine()>6){
+      bonus bMdef2,75;}
   - Id: 5011
     AegisName: Antenna
     Name: Aerial
@@ -2377,13 +2422,14 @@ Body:
     View: 97    
     Script: |
       bonus bHit,3;   
-  - Id: 2251
-    AegisName: Holy_Bonnet
-    Name: Monk Hat
+  - Id: 5158
+    AegisName: Holy_Bonnet_
+    Name: Modified Monk Hat
     Type: Armor
     Buy: 30000
     Weight: 100
     Defense: 10
+    Slots: 1
     Jobs:
       Acolyte: true
       Monk: true
@@ -2395,32 +2441,12 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus2 bSubEle,Ele_Dark,3;
-  - Id: 2299
-    AegisName: Viking_Helm
-    Name: Orc Helm
-    Type: Armor
-    Buy: 20
-    Weight: 500
-    Defense: 9
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Head_Top: true
-    Refineable: true
-    View: 86
-    Script: |
-      bonus2 bSubRace,RC2_Orc,10;  
+      if (getrefine()>6){
+      bonus bMaxHP,-100;
+      bonus bMaxSP,100;}
   - Id: 5157
     AegisName: Viking_Helm_
-    Name: Orc Helm
+    Name: Modified Orc Helm
     Type: Armor
     Buy: 20
     Weight: 500
@@ -2441,7 +2467,28 @@ Body:
     Refineable: true
     View: 86      
     Script: |
-      bonus2 bSubRace,RC2_Orc,10;  
+      bonus2 bSubRace2,RC2_Orc,10; 
+      if (getrefine()>6){
+      bonus2 bAddRace2,RC2_Orc,10; }   
+  - Id: 2507
+    AegisName: Cape_Of_Ancient_Lord
+    Name: Ancient Cape
+    Type: Armor
+    Buy: 82000
+    Weight: 600
+    Defense: 9
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+      if (getrefine()>6){
+      bonus bAgi,2;}      
   - Id: 5030
     AegisName: Panda_Cap
     Name: Panda Hat
@@ -2615,50 +2662,72 @@ Body:
     Refineable: true
     View: 46      
     Script: |
-      bonus bFlee2,5;       
-  - Id: 2299
-    AegisName: Viking_Helm
-    Name: Orc Helm
+      bonus bFlee2,5;        
+  - Id: 2372
+    AegisName: Mage_Coat_
+    Name: Modified Mage Coat
     Type: Armor
     Buy: 20
-    Weight: 500
-    Defense: 39
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Head_Top: true
-    Refineable: true
-    View: 86      
-  - Id: 5157
-    AegisName: Viking_Helm_
-    Name: Orc Helm
-    Type: Armor
-    Buy: 20
-    Weight: 500
-    Defense: 39
+    Weight: 600
+    Defense: 40
     Slots: 1
     Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
     Locations:
-      Head_Top: true
+      Armor: true
+    EquipLevelMin: 50
     Refineable: true
-    View: 86    
+    Script: |
+      bonus bMdef,5;
+      bonus bInt,1;
+      if (getrefine()>6){
+      bonus bMatkRate,3;}      
+  - Id: 2327
+    AegisName: Holy_Robe
+    Name: Holy Robe
+    Type: Armor
+    Buy: 20
+    Weight: 1700
+    Defense: 57
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      bonus2 bSubRace,RC_Demon,15;
+      bonus2 bSubEle,Ele_Dark,10;
+      if (getrefine()>6){
+      bonus bHealPower,5;}      
+  - Id: 2128
+    AegisName: Herald_Of_GOD_
+    Name: Modified Sacred Mission
+    Type: Armor
+    Buy: 128000
+    Weight: 1600
+    Defense: 120
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 83
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bVit,3;
+      bonus bInt,2;
+      bonus bMdef,3;
+      bonus bUnbreakableShield;
+      if (getrefine()>6){
+      bonus2 bSkillAtk,"CR_GRANDCROSS",20;}      
   - Id: 2213
     AegisName: Cat_Hairband
     Name: Kitty Band
@@ -2904,7 +2973,7 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,3;   
       if (getrefine()>6){
-         bonus2 bAddClass,Class_All,2;  }        
+         bonus2 bAddClass,Class_All,1;  }        
   - Id: 2284
     AegisName: Antler
     Name: Antlers
@@ -2933,31 +3002,9 @@ Body:
     View: 96 
     Script: |
       bonus bHitRate,1;      
-  - Id: 2256
-    AegisName: Magestic_Goat
-    Name: Majestic Goat
-    Type: Armor
-    Buy: 20
-    Weight: 800
-    Defense: 9
-    Jobs:
-      Alchemist: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      StarGladiator: true
-      Swordman: true
-      Taekwon: true
-    Locations:
-      Head_Top: true
-    Refineable: true
-    View: 41
-    Script: |
-      bonus bStr,2;
   - Id: 5160
     AegisName: Magestic_Goat_
-    Name: Majestic Goat
+    Name: Modified Majestic Goat
     Type: Armor
     Buy: 20
     Weight: 800
@@ -2977,7 +3024,10 @@ Body:
     Refineable: true
     View: 41
     Script: |
-      bonus bStr,2;      
+      bonus bStr,1;
+      bonus2 bIgnoreDefRaceRate,RC_All,10;
+      if (getrefine()>6){
+      bonus2 bIgnoreDefRaceRate,RC_All,10;}
   - Id: 2298
     AegisName: Green_Feeler
     Name: Green Feeler
@@ -3022,7 +3072,7 @@ Body:
       bonus bLuk,1;
   - Id: 2246
     AegisName: Golden_Gear
-    Name: Golden Gear
+    Name: Modified Golden Gear
     Type: Armor
     Buy: 20
     Weight: 900
@@ -3037,14 +3087,124 @@ Body:
     Refineable: true
     View: 30
     Script: |
-      bonus bUnbreakableHelm;     
+      bonus bUnbreakableHelm;   
+  - Id: 5350
+    AegisName: Pirate_Bandana_
+    Name: Modified Pirate Bandana
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 74
+    Script: |
+      bonus bStr,1;
+      if (getrefine()>6){
+      bonus bStr,2;}     
+  - Id: 2434
+    AegisName: Black_Leather_Boots_
+    Name: Modified Black Leather Boots
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 16
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAgi,(getrefine()>=9?3:1);
+      if(readparam(bAgi)>=100){ bonus bFlee,10;}
+  - Id: 2625
+    AegisName: Brooch_
+    Name: Modified Brooch
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 90
+    Script: |
+      bonus bAgi,2;    
+      bonus bAgi,readparam(bAgi)/100;  
+  - Id: 2622
+    AegisName: Earring_
+    Name: Modified Earring
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 90
+    Script: |
+      bonus bInt,2; 
+      bonus bInt,readparam(bInt)/100; 
+  - Id: 2671
+    AegisName: Thimble_Of_Archer_
+    Name: Modified Bow Thimble
+    Type: Armor
+    Buy: 10000
+    Weight: 100
+    Slots: 1
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 65
+    Script: |
+      bonus bLongAtkRate,3;
+      bonus bHit,5;
+      if (readparam(bDex)>100){bonus bLongAtkRate,3;}
+  - Id: 2621
+    AegisName: Ring_
+    Name: Modified Ring
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 90
+    Script: |
+      bonus bStr,2;
+      bonus bStr,readparam(bStr)/100;
   - Id: 5159
     AegisName: Golden_Gear_
     Name: Golden Gear
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 45
+    Defense: 9
     Slots: 1
     Jobs:
       All: true
@@ -3056,23 +3216,13 @@ Body:
     Refineable: true
     View: 30
     Script: |
-      bonus bUnbreakableHelm;      
-  - Id: 5114
-    AegisName: Fedora
-    Name: Bucket Hat
-    Type: Armor
-    Buy: 6000
-    Weight: 300
-    Defense: 6
-    Locations:
-      Head_Top: true
-    Refineable: true
-    View: 195
-    Script: |
-      bonus bMaxHP,50;    
+      bonus bUnbreakableHelm;
+      bonus bMdef,15;
+      if (getrefine()>6){
+      bonus bMdef,10;}
   - Id: 5120
     AegisName: Fedora_
-    Name: Bucket Hat
+    Name: Modified Bucket Hat
     Type: Armor
     Buy: 6000
     Weight: 300
@@ -3083,7 +3233,72 @@ Body:
     Refineable: true
     View: 195    
     Script: |
-      bonus bMaxHP,50;    
+      bonus bHit,10;
+      if (getrefine()>6){
+      bonus bHit,5;}     
+  - Id: 2331
+    AegisName: Tights_
+    Name: Modified Tights
+    Type: Armor
+    Buy: 71000
+    Weight: 500
+    Defense: 27
+    Slots: 1
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDex,1;     
+      if (getrefine()>6){
+      bonus bLongAtkRate,3;}           
+  - Id: 2390
+    AegisName: Improved_Tights
+    Name: Improved Tights
+    Type: Armor
+    Buy: 72000
+    Weight: 400
+    Defense: 38
+    Slots: 1
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+      bonus bFlee2,3;      
+  - Id: 2121
+    AegisName: Memorize_Book_
+    Name: Modified Memory Book
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Left_Hand: true
+    Refineable: true
+    View: 5
+    Script: |
+      bonus bInt,1;
+      bonus bMdef,2;   
+      if (getrefine()>6){
+      bonus bInt,2;}         
   - Id: 5351
     AegisName: Sunflower_
     Name: Modified Sunflower
@@ -3105,7 +3320,7 @@ Body:
     Type: Armor
     Buy: 9000
     Weight: 100
-    Defense: 8
+    Defense: 23
     Slots: 1
     Jobs:
       Acolyte: true
@@ -3115,9 +3330,8 @@ Body:
       Head_Top: true
     Refineable: true
     Script: |
-      bonus bDef,20;    
       if (getrefine()>6){
-         bonus bMagicAtkDef,20;  }     
+         bonus bDef,17;  }     
     View: 11      
   - Id: 5347
     AegisName: Ph.D_Hat_
@@ -3327,42 +3541,13 @@ Body:
     Script: |
       bonus bMdef,1;
       bonus bFlee,2;
-  - Id: 2258
-    AegisName: Sharp_Gear
-    Name: Spiky Band
-    Type: Armor
-    Buy: 20
-    Weight: 1000
-    Defense: 12
-    Jobs:
-      Acolyte: true
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Monk: true
-      Priest: true
-      Rogue: true
-      StarGladiator: true
-      Swordman: true
-      Taekwon: true
-      Thief: true
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 50
-    Refineable: true
-    View: 43      
-    Script: |
-      bonus bShortWeaponDamageReturn,5;   
   - Id: 5161
     AegisName: Sharp_Gear_
-    Name: Spiky Band
+    Name: Modified Spiky Band
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 12
+    Defense: 22
     Slots: 1
     Jobs:
       Acolyte: true
@@ -3385,7 +3570,8 @@ Body:
     Refineable: true
     View: 43      
     Script: |
-      bonus bShortWeaponDamageReturn,5;
+      if (getrefine()>6){
+      bonus bShortWeaponDamageReturn,5;}    
   - Id: 5141
     AegisName: Marionette_Doll
     Name: Marionette Doll
@@ -3406,25 +3592,6 @@ Body:
     Script: |
       bonus bStr,1; 
       bonus2 bSubEle,Ele_Ghost,2; 
-  - Id: 2235
-    AegisName: Crown
-    Name: Crown
-    Type: Armor
-    Buy: 20
-    Weight: 400
-    Defense: 7
-    Jobs:
-      All: true
-      Novice: false
-      SuperNovice: false
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 45
-    Refineable: true
-    View: 45
-    Script: |
-      bonus bInt,2;
-      bonus bVit,1;
   - Id: 2224
     AegisName: Goggle
     Name: Goggles
@@ -3664,6 +3831,17 @@ Body:
       bonus2 bResEff,Eff_Stone,2000+(.@r*200);
       bonus2 bResEff,Eff_Freeze,2000+(.@r*200);
       bonus2 bResEff,Eff_Stun,2000+(.@r*200);      
+  - Id: 2715
+    AegisName: Skul_Ring_
+    Name: Modified Skull Ring
+    Type: Armor
+    Buy: 10000
+    Weight: 100
+    Slots: 1
+    Locations:
+      Both_Accessory: true
+    Script: |
+      bonus2 bSubRace,RC_Undead,5;      
   - Id: 5053
     AegisName: Spinx_Helm
     Name: Sphinx Hat
@@ -3739,29 +3917,13 @@ Body:
     View: 173      
     Script: |
       bonus bMaxSP,10;    
-  - Id: 5092
-    AegisName: Blue_Coif
-    Name: Coif
-    Type: Armor
-    Buy: 150000
-    Weight: 300
-    Defense: 45
-    Jobs:
-      Assassin: true
-      Priest: true
-    Locations:
-      Head_Mid: true
-      Head_Top: true
-    EquipLevelMin: 65
-    Refineable: true
-    View: 176
   - Id: 5093
     AegisName: Blue_Coif_
-    Name: Coif
+    Name: Modified Coif
     Type: Armor
     Buy: 150000
     Weight: 300
-    Defense: 45
+    Defense: 5
     Slots: 1
     Jobs:
       Assassin: true
@@ -3773,7 +3935,9 @@ Body:
     Refineable: true
     View: 177
     Script: |
-      bonus bMaxSP,100;      
+      bonus bMaxSP,200;  
+      if (getrefine()>6){
+      bonus bMaxSP,100;}      
   - Id: 2266
     AegisName: Iron_Cane
     Name: Iron Cain
@@ -3855,7 +4019,7 @@ Body:
       bonus bMaxSp,20;
   - Id: 5165
     AegisName: Crown_
-    Name: Crown
+    Name: Modified Crown
     Type: Armor
     Buy: 20
     Weight: 400
@@ -3871,8 +4035,9 @@ Body:
     Refineable: true
     View: 45
     Script: |
-      bonus bInt,2;
-      bonus bVit,1; 
+      bonus bInt,1;
+      if (getrefine()>6){
+      bonus bInt,2;}
   - Id: 2249
     AegisName: Coronet
     Name: Coronet
@@ -3962,9 +4127,9 @@ Body:
     Refineable: true
     View: 18
     Script: |
-      bonus bMagicAtkDef,6;    
+      bonus bMagicAtkDef,8;    
       if (getrefine()>6){
-         bonus bMagicAtkDef,6;  }       
+         bonus bMagicAtkDef,4;  }       
   - Id: 5007
     AegisName: Loard_Circlet
     Name: Grand Circlet
@@ -4012,27 +4177,9 @@ Body:
       bonus bInt,2;
       bonus bLuk,1;
       bonus bMdef,3;      
-  - Id: 2234
-    AegisName: Tiara
-    Name: Tiara
-    Type: Armor
-    Buy: 20
-    Weight: 400
-    Defense: 7
-    Jobs:
-      All: true
-      Novice: false
-      SuperNovice: false
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 45
-    Refineable: true
-    View: 19
-    Script: |
-      bonus bInt,2; 
   - Id: 5164
     AegisName: Tiara_
-    Name: Tiara
+    Name: Modified Tiara
     Type: Armor
     Buy: 20
     Weight: 400
@@ -4048,7 +4195,52 @@ Body:
     Refineable: true
     View: 19
     Script: |
-      bonus bInt,2;      
+      bonus bInt,1;
+      if (getrefine()>6){
+      bonus bInt,2;}
+  - Id: 2360
+    AegisName: Robe_Of_Casting_
+    Name: Robe of Cast
+    Type: Armor
+    Buy: 124800
+    Weight: 1100
+    Defense: 40
+    Slots: 1
+    Jobs:
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bVariableCastrate,-3;
+      bonus bMdef,4;     
+      if (getrefine()>6){
+      bonus bVariableCastrate,-3;}      
+  - Id: 5166
+    AegisName: Spinx_Helm_
+    Name: Modified Sphinx Hat
+    Type: Armor
+    Buy: 20
+    Weight: 3000
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Head_Low: true
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 137
+    Script: |
+      bonus bStr,3;
+      if (getrefine()>6){
+      bonus bHPrecovRate,50;}      
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar
@@ -4665,25 +4857,7 @@ Body:
     Refineable: true   
     Script: |
       bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;
-  - Id: 2316
-    AegisName: Plate_Armor
-    Name: Full Plate
-    Type: Armor
-    Buy: 80000
-    Weight: 4500
-    Defense: 70
-    Jobs:
-      Crusader: true
-      Knight: true
-      Swordman: true
-    Locations:
-      Armor: true
-    EquipLevelMin: 40
-    Refineable: true
-    Script: |
-      bonus bMaxHPrate,2; 
-      bonus bMaxSpRate,1;    
+      bonus bMaxSpRate,1;  
   - Id: 2317
     AegisName: Plate_Armor_
     Name: Full Plate
@@ -4701,8 +4875,9 @@ Body:
     EquipLevelMin: 40
     Refineable: true    
     Script: |
-      bonus bMaxHPrate,2; 
-      bonus bMaxSpRate,1;    
+      bonus bMaxHPrate,6;
+      if (getrefine()>6){
+      bonus bMaxHPrate,3;}      
   - Id: 2323
     AegisName: Scapulare
     Name: Scapulare
@@ -4839,25 +5014,10 @@ Body:
       bonus2 bResEff,Eff_Silence,1000;
       bonus2 bResEff,Eff_Sleep,1000;
       bonus2 bResEff,Eff_Stone,1000;
-      bonus2 bResEff,Eff_Stun,1000; 
-  - Id: 2341
-    AegisName: Full_Plate_Armor
-    Name: Legion Plate Armor
-    Type: Armor
-    Buy: 94000
-    Weight: 5500
-    Defense: 79
-    Jobs:
-      Crusader: true
-    Locations:
-      Armor: true
-    EquipLevelMin: 70
-    Refineable: true
-    Script: |
-      bonus bMaxHPrate,5;     
+      bonus2 bResEff,Eff_Stun,1000;    
   - Id: 2342
     AegisName: Full_Plate_Armor_
-    Name: Legion Plate Armor
+    Name: Modified Legion Plate Armor
     Type: Armor
     Buy: 102500
     Weight: 5500
@@ -4870,7 +5030,71 @@ Body:
     EquipLevelMin: 70
     Refineable: true     
     Script: |
-      bonus bMaxHPrate,5;        
+      bonus bMaxHPrate,4;
+      bonus bMaxSPRate,2;
+      if (getrefine()>6){
+      bonus bMaxHPRate,4;
+      bonus bMaxSPRate,2;} 
+  - Id: 2113
+    AegisName: Novice_Shield
+    Name: Novice Shield
+    Type: Armor
+    Buy: 5000
+    Weight: 1000
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 40
+    Refineable: true
+    View: 3
+    Script: |
+      bonus2 bSubEle,Ele_All,20;
+      bonus2 bSubEle,Ele_Neutral,-20;     
+  - Id: 2412
+    AegisName: Grave_
+    Name: Modified Greaves
+    Type: Armor
+    Buy: 54000
+    Weight: 750
+    Defense: 27
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bVit,2;
+      if (getrefine()>6){
+      bonus2 bSubEle,Ele_All,4;
+      bonus2 bSubEle,Ele_Neutral,-4; }  
+  - Id: 2336
+    AegisName: Thief_Clothes_
+    Name: Modified Thief Clothes
+    Type: Armor
+    Buy: 74000
+    Weight: 100
+    Defense: 40
+    Slots: 1
+    Jobs:
+      Assassin: true
+      KagerouOboro: true
+      Ninja: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    Refineable: true
+    Script: |
+      bonus bAgi,1; 
+      if (getrefine()>6){
+      bonus bAspdRate,5;}      
   - Id: 2310
     AegisName: Coat_
     Name: Modified Coat
@@ -5132,6 +5356,34 @@ Body:
       bonus bMdef,15;     
       if (getrefine()>6)  {
       bonus bMdef,5;}      
+  - Id: 2550
+    AegisName: Fisher's_Muffler
+    Name: Fisher's Muffler
+    Type: Armor
+    Buy: 24000
+    Weight: 100
+    Locations:
+      Garment: true
+    Refineable: true      
+  - Id: 2463
+    AegisName: Feral_Boots
+    Name: Feral Boots
+    Type: Armor
+    Buy: 24000
+    Weight: 100
+    Defense: 12
+    Locations:
+      Shoes: true
+    EquipLevelMin: 75
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true      
   - Id: 2308
     AegisName: Mantle_
     Name: Modified Mantle
@@ -5148,22 +5400,9 @@ Body:
       Armor: true
     Refineable: true     
     Script: |
-      bonus bFlee,8;
+      bonus bLuk,1;
       if (getrefine()>6){
-         bonus bFlee,5;} 
-  - Id: 2501
-    AegisName: Hood
-    Name: Hood
-    Type: Armor
-    Buy: 1000
-    Weight: 200
-    Defense: 4
-    Locations:
-      Garment: true
-    Refineable: true
-    Script: |
-      bonus bMaxHp,20;
-      bonus bMaxSP,2;    
+         bonus bFlee2,2;}  
   - Id: 2502
     AegisName: Hood_
     Name: Hood
@@ -5199,33 +5438,9 @@ Body:
       if (getrefine()>6)  {
       bonus bMaxHP,50;
       bonus bMaxSP,5; }     
-  - Id: 2505
-    AegisName: Manteau
-    Name: Manteau
-    Type: Armor
-    Buy: 32000
-    Weight: 600
-    Defense: 13
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      StarGladiator: true
-      Swordman: true
-      Taekwon: true
-      Thief: true
-    Locations:
-      Garment: true
-    Refineable: true
-    Script: |
-      bonus2 bSubEle,Ele_Neutral,2;
   - Id: 2506
     AegisName: Manteau_
-    Name: Manteau
+    Name: Modified Manteau
     Type: Armor
     Buy: 32000
     Weight: 600
@@ -5247,7 +5462,10 @@ Body:
       Garment: true
     Refineable: true      
     Script: |
-      bonus2 bSubEle,Ele_Neutral,2;    
+      bonus bFlee,3;
+      bonus2 bSubEle,Ele_Neutral,1;
+      if (getrefine()>6){
+      bonus2 bSubEle,Ele_Neutral,3; }      
   - Id: 2513
     AegisName: Celestial_Robe
     Name: Heavenly Maiden Robe
@@ -9774,7 +9992,7 @@ Body:
     AegisName: Para_Team_Manteau
     Name: Eden Team Manteau I
     Type: Armor
-    Defense: 5
+    Defense: 1
     Locations:
       Garment: true
     EquipLevelMin: 7

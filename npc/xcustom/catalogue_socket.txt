@@ -1,0 +1,225 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update Costumemaker By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+				
+payon,141,143,5	script	Leablem#1	86,{
+function Add; function Chk; function Slot; function A_An;
+	mes "[^FF6600Leablem^000000]";
+	mes "Hello, I am Leablem.";
+	mes "I can make a slotted items if you give me the ingredients.";
+	mes "Do you want to see the list ?";
+	next;
+	switch( select( "Yes.:No." ) ) {
+case 1: 		
+	mes "[^FF6600Leablem^000000]";
+	mes "Which one ?";
+	break; 
+case 2: 	
+	mes "[^FF6600Leablem^000000]";
+    mes "Okay, see you again.";
+   	close;
+}
+	if(.Shops$ != "") set .@i,1;
+	else {
+		set .@menu$,"";
+		for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+			set .@menu$, .@menu$+.Shops$[.@i]+":";
+		set .@i, select(.@menu$); }
+		mes "^0055FFSelect one item at a time.^000000";
+	callshop "asocketlist"+.@i,1;
+	npcshopattach "asocketlist"+.@i;
+	end;
+
+function Add {
+	if (getitemname(getarg(1))=="null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped)."; return; }
+	for(set .@n,5; .@n<127; set .@n,.@n+2) {
+		if (!getarg(.@n,0)) break;
+		if (getitemname(getarg(.@n))=="null") {
+			debugmes "Quest requirement #"+getarg(.@n)+" invalid (skipped) on Quest ItemID "+ getarg(1) +"."; return; } }
+	for(set .@i,2; .@i<.@n; set .@i,.@i+1)
+		set getd(".q_"+getarg(1)+"["+(.@i-2)+"]"), getarg(.@i);
+	npcshopadditem "asocketlist"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return; }
+function Chk {
+	if (getarg(0)<getarg(1)) { set @qe0,1; return "^FF0000"; }
+	else return "^00FF00"; }
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot){
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),11)>0) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$; } }
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0); }
+
+OnBuyItem:
+	set .@q[0],@bought_nameid;
+	copyarray .@q[1],getd(".q_"+@bought_nameid+"[0]"),getarraysize(getd(".q_"+@bought_nameid+"[0]"));
+	if (!.@q[1]) { message strcharinfo(0),"An error has occurred."; end; }
+	mes "[^FF6600Leablem^000000]";
+	mes "Your Choice: ^0055FF"+((.@q[1]>1)?.@q[1]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[2]) mes " > "+Chk(Zeny,.@q[2])+.@q[2]+" Zeny^000000";
+	if (.@q[3]) mes " > "+Chk(getd(.Points$[0]),.@q[3])+.@q[3]+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+.@q[3]+")^000000";
+	if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1])+((.DisplayID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+.@q[.@i+1]+")^000000";
+	next;
+	set @qe1, getiteminfo(.@q[0],5); set @qe2, getiteminfo(.@q[0],11);
+	while(1){
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000: ~ ^777777Cancel^000000")) {
+			case 1:
+				if (@qe0) { 
+					mes "[^FF6600Leablem^000000]";
+					mes "You're missing one or more quest requirements.";
+					close; }
+				if (!checkweight(.@q[0],.@q[1])) {
+					mes "[^FF6600Leablem^000000]";
+					mes "^FF0000You need "+(((.@q[1]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+					close; }
+				if (.@q[2]) set Zeny, Zeny-.@q[2];
+				if (.@q[3]) setd .Points$[0], getd(.Points$[0])-.@q[3];
+				if (.@q[4]) for(set .@i,4; .@i<getarraysize(.@q); set .@i,.@i+2)
+					delitem .@q[.@i],.@q[.@i+1];
+			if (rand(2,1) == 1) {
+				if (.Announce) announce strcharinfo(0)+" has created "+A_An(getitemname(.@q[0]))+"!",0;
+				getitem .@q[0],.@q[1];
+				specialeffect2 699;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, you did it.";
+					mes "Congratulation !.";
+					close;				
+			} 
+			else {
+					specialeffect EF_SUI_EXPLOSION;
+					mes "[^FF6600Leablem^000000]";
+					mes "Woah, exploded like a firecracker.";
+					mes "hahahahahaha.";
+					close; 
+			}			
+			case 2:
+				close; } }
+OnInit:
+// --------------------- Config ---------------------
+// Custom points, if needed: "<vLeablemble>","<name to display>"
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,2;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .DisplayID,1;	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+
+// Shop categories, if needed: "<Shop 1>","<Shop 2>"{,...};
+// Duplicate dummy data for any additional shops (bottom of script).
+// If no categories, use the second line instead (remove //).
+
+	setarray .Shops$[1],"C Class";
+	setarray .Shops$[2],"B Class";
+	setarray .Shops$[3],"A Class";
+	setarray .Shops$[4],"S Class";
+	// set .Shops$,"n/a";
+
+// Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
+//     <required item ID>,<required item amount>{,...});
+// Shop number corresponds with order above (default is 1).
+// Note: Do NOT use a reward item more than once!
+
+	Add(2,2308,1,1,0,2307,4,999,12,6242,4); // Mantle
+	Add(2,2310,1,1,0,2309,4,999,12,6242,4); 
+	Add(2,2233,1,1,0,2232,4,999,12,6242,4);
+	Add(2,2217,1,1,0,2216,4,999,12,6242,4);
+	Add(2,5351,1,1,0,2253,4,999,12,6242,2);
+	Add(2,5347,1,1,0,5012,4,999,12,6242,4);
+	Add(2,5348,1,1,0,2244,4,999,20,6242,4);
+	Add(2,5349,1,1,0,5016,4,999,20,6242,4);
+	sleep 10;
+	Add(3,2108,1,1,0,2107,5,999,25,6242,5);
+	Add(3,2315,1,1,0,2314,5,999,25,6242,5);
+	Add(3,2326,1,1,0,2325,5,999,25,6242,6);
+	Add(3,2322,1,1,0,2321,5,999,25,6242,6);	
+	Add(3,2406,1,1,0,2405,5,999,25,6242,6);
+	Add(3,2404,1,1,0,2403,5,999,25,6242,6);
+	Add(3,2504,1,1,0,2503,5,999,25,6242,6);
+	Add(3,2102,1,1,0,2101,5,999,25,6242,6);
+	Add(3,2104,1,1,0,2103,5,999,25,6242,6);
+	Add(3,2106,1,1,0,2105,5,999,25,6242,5);
+	Add(3,18770,1,1,0,5046,5,999,25,6242,5);
+	Add(3,2715,1,1,0,2609,5,999,25,6242,6);
+	Add(3,2432,1,1,0,2409,5,999,25,6242,6);
+	sleep 10;
+	Add(4,2231,1,1,0,2230,5,985,5,6242,10);
+	Add(4,5120,1,1,0,5114,5,985,5,6242,10);	
+	Add(4,2121,1,1,0,2109,5,985,5,6242,10);	
+	Add(4,2331,1,1,0,2330,5,985,5,6242,10);
+	Add(4,2342,1,1,0,2341,5,985,5,6242,10);
+	Add(4,2317,1,1,0,2316,5,985,5,6242,10);
+	Add(4,2336,1,1,0,2335,5,985,5,6242,10);
+	Add(4,2412,1,1,0,2411,5,985,5,6242,10);
+	Add(4,5093,1,1,0,5092,5,985,5,6242,10);
+	Add(4,2506,1,1,0,2505,5,985,5,6242,10);
+	Add(4,2229,1,1,0,2228,5,985,5,6242,10);
+	Add(4,2359,1,1,0,2337,5,985,5,6242,10);	
+	Add(4,5157,1,1,0,2299,5,985,5,6242,10);
+	Add(4,2525,1,1,0,2507,5,985,5,6242,10);	
+	Add(4,5158,1,1,0,2251,5,985,5,6242,10);
+	Add(4,5159,1,1,0,2246,5,985,5,6242,10);
+	Add(4,2625,1,1,0,2605,5,985,5,6242,10); // Brooch
+	Add(4,18769,1,1,0,2264,5,985,5,6242,7);
+	Add(4,5350,1,1,0,2287,10,985,10,6242,25); // Pirate Bandana
+	Add(4,2434,1,1,0,2425,10,985,10,6242,25); // Black Leather
+	sleep 10;
+	Add(5,5160,1,1,0,2256,10,985,20,6242,100);
+	Add(5,5161,1,1,0,2258,10,985,20,6242,100);	
+	Add(5,18768,1,1,0,5017,10,985,20,6242,100);
+	Add(5,18765,1,1,0,5019,10,985,20,6242,100);
+	Add(5,5165,1,1,0,2235,10,985,20,6242,100);
+	Add(5,5164,1,1,0,2234,10,985,20,6242,100);
+	Add(5,5166,1,1,0,5053,10,985,20,6242,100);
+	Add(5,2360,1,1,0,2343,10,985,20,6242,100);
+	Add(5,2622,1,1,0,2602,10,985,20,6242,100);
+	Add(5,2621,1,1,0,2601,10,985,20,6242,100);
+	Add(5,2671,1,1,0,2619,10,985,20,6242,100);	
+	Add(5,2372,1,1,0,2334,10,985,10,6242,50);
+	Add(5,2373,1,1,0,2327,20,985,20,6242,100);
+	Add(5,2128,1,1,0,2111,20,985,20,6242,100);
+	Add(5,2523,1,1,0,2522,20,985,20,6242,100);
+	Add(5,2371,1,1,0,2339,20,985,20,6242,100);
+	Add(5,18767,1,1,0,5022,1,969,2,6242,2000);	
+
+
+
+// --------------------------------------------------
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
+		npcshopdelitem "asocketlist"+.@i,6417;
+	end;
+}
+
+
+// -------- Dummy data (duplicate as needed) --------
+-	shop	asocketlist2	1,6417:100
+-	shop	asocketlist3	1,6417:100
+-	shop	asocketlist4	1,6417:100
+-	shop	asocketlist5	1,6417:100
+
+morocc,49,39,5	script	Leablem#2	86,{ callfunc "asocketlist",1,2,3;}
+lhz_in02,267,33,5	script	Leablem#3	86,{ callfunc "asocketlist",1,2,3;}
+payon,237,197,3	script	Leablem#4	86,{ callfunc "asocketlist",1,2,3;}
+lighthalzen,94,135,3	script	Leablem#5	86,{ callfunc "asocketlist",1,2,3;}
+prt_in,31,70,5	script	Leablem#6	86,{ callfunc "asocketlist",1,2,3;}
+morocc,272,159,3	script	Leablem#7	86,{ callfunc "asocketlist",1,2,3;}
