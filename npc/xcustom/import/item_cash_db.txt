@@ -249,13 +249,13 @@
 
 // Garment
 
-3,2553,6 // Dragon Manteau
-3,20726,6 // Fire Dragon Manteau
-3,20728,6 // Water Dragon Manteau
-3,20729,6 // Wind Dragon Manteau
-3,20731,6 // Earth Dragon Manteau
-3,2597,8 // Bloody Muffler
-3,20730,10 // Loyalist Hood
+3,2553,4 // Dragon Manteau
+3,20726,4 // Fire Dragon Manteau
+3,20728,4 // Water Dragon Manteau
+3,20729,4 // Wind Dragon Manteau
+3,20731,4 // Earth Dragon Manteau
+3,2597,6 // Bloody Muffler
+3,20730,12 // Loyalist Hood
 3,20714,12 // Assassin Muffler
 
 //3,20779,35 // Rift Garment
@@ -309,7 +309,7 @@
 //4,28501,1000 // Kirin's Horn
 //4,28433,1000 // Luminous Blue Light Stone
 //3,28505,750
-4,32237,4000 // Celine's Brooch
+//4,32237,4000 // Celine's Brooch
 //4,32204,2500 // Immortal Corps Dog Tag
 //4,32227,2500 // Fenrir Chain
 //4,28565,2500 // Perverse Demon Mask

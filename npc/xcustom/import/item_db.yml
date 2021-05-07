@@ -1751,8 +1751,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;      
+      bonus bMaxHPrate,2;      
   - Id: 15013
     AegisName: Claire_Suits
     Name: Claire Suits
@@ -1772,7 +1771,8 @@ Body:
     EquipLevelMin: 22
     Refineable: true      
     Script: |
-      bonus bDefRate,5;    
+      if (getrefine()>6){
+      bonus bDefRate,5; }      
   - Id: 2401
     AegisName: Sandals
     Name: Sandals
@@ -5023,14 +5023,37 @@ Body:
       bonus bMdef,3;
       bonus5 bAutoSpellWhenHit,"NPC_ANTIMAGIC",6,200,BF_MAGIC,0;  
       if (getrefine()>6){
-         bonus bMagicAtkDef,4;  }      
+         bonus bMagicAtkDef,4;  } 
+  - Id: 5124
+    AegisName: Fricca_Circlet
+    Name: Fricca's Circlet
+    Type: Armor
+    Buy: 30000
+    Weight: 300
+    Defense: 6
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 251
+    Script: |
+      bonus bMdef,10;
+      bonus bInt,2;
+      bonus bMaxSP,50;  
+      if (getrefine()>6){
+      bonus bMdef,3;
+      bonus bInt,1;}       
   - Id: 5007
     AegisName: Loard_Circlet
     Name: Grand Circlet
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 27
+    Defense: 7
     Jobs:
       All: true
       Novice: false
@@ -5044,14 +5067,18 @@ Body:
       bonus bStr,1;
       bonus bInt,1;
       bonus bLuk,1;
-      bonus bMdef,4;      
+      bonus bMdef,4;     
+      if (getrefine()>6){
+      bonus bStr,1;
+      bonus bInt,1;
+      bonus bLuk,1;}       
   - Id: 5002
     AegisName: Gemmed_Crown
     Name: Jewel Crown
     Type: Armor
     Buy: 20
     Weight: 600
-    Defense: 39
+    Defense: 9
     Jobs:
       Alchemist: true
       Assassin: true
@@ -5070,7 +5097,54 @@ Body:
     Script: |
       bonus bInt,2;
       bonus bLuk,1;
-      bonus bMdef,3;      
+      bonus bMdef,3;
+      if (getrefine()>6){
+      bonus bInt,2;
+      bonus bLuk,1;}      
+  - Id: 5072
+    AegisName: Inccubus_Horn
+    Name: Incubus Horn
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 7
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 156
+    Script: |
+      bonus bAgi,1;
+      bonus bMdef,10;   
+      if (getrefine()>6){
+      bonus bAgi,1;
+      bonus bMdef,5;   }     
+  - Id: 5066
+    AegisName: Horn_Of_Succubus
+    Name: Succubus Horn
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 7
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 150
+    Script: |
+      bonus bInt,1;
+      bonus bMdef,10;  
+      if (getrefine()>6){
+      bonus bInt,1;
+      bonus bMdef,5;   }         
   - Id: 5164
     AegisName: Tiara_
     Name: Tiara
@@ -5703,7 +5777,153 @@ Body:
       if (BaseClass == Job_Mage || BaseClass == Job_Archer || BaseClass == Job_Acolyte)
          bonus2 bResEff,Eff_Silence,5000;
       else if (BaseClass == Job_Swordman || BaseClass == Job_Merchant || BaseClass == Job_Thief)
-         bonus2 bResEff,Eff_Stun,5000;             
+         bonus2 bResEff,Eff_Stun,5000;  
+  - Id: 2650
+    AegisName: Morrigane's_Belt
+    Name: Morrigane's Belt
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 61
+    Script: |
+      bonus bBaseAtk,7;
+      bonus bCritical,4;         
+  - Id: 5127
+    AegisName: Morrigane's_Helm
+    Name: Morrigane's Helm
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 8
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 61
+    Refineable: true
+    View: 257
+    Script: |
+      bonus bLuk,2;
+      bonus bBaseAtk,3; 
+      if (getrefine()>6){
+      bonus bBaseAtk,13;}   
+  - Id: 5128
+    AegisName: Goibne's_Helmet
+    Name: Goibne's Helm
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 54
+    Refineable: true
+    View: 258
+    Script: |
+      bonus bVit,3;
+      bonus bMdef,3;  
+      if (getrefine()>6){
+      bonus bVit,2;}       
+  - Id: 5125
+    AegisName: Kiss_Of_Angel
+    Name: Angel's Kiss
+    Type: Armor
+    Buy: 10000
+    Weight: 300
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 255
+    Script: |
+      bonus bSPrecovRate,3;
+      if (getrefine()>6){
+      bonus bSPrecovRate,5;}         
+  - Id: 2648
+    AegisName: Morpheus's_Ring
+    Name: Morpheus's Ring
+    Type: Armor
+    Buy: 30000
+    Weight: 100
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 33
+    Script: |
+      bonus bInt,2;
+      bonus bMaxSPrate,5;
+  - Id: 2649
+    AegisName: Morpheus's_Armlet
+    Name: Morpheus's Bracelet
+    Type: Armor
+    Buy: 30000
+    Weight: 100
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 33
+    Script: |
+      bonus bInt,2;
+      bonus bMaxSPrate,5;      
+  - Id: 5126
+    AegisName: Morpheus's_Hood
+    Name: Morpheus's Hood
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Defense: 3
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 33
+    Refineable: true
+    View: 256
+    Script: |
+      bonus bInt,2;     
+      if (getrefine()>6){
+      bonus bInt,2;}         
+  - Id: 2651
+    AegisName: Morrigane's_Pendant
+    Name: Morrigane's Pendant
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 61
+    Script: |
+      bonus bStr,2;
+      bonus bCritical,5;      
   - Id: 2313
     AegisName: Padded_Armor_
     Name: Padded Armor
@@ -5726,8 +5946,7 @@ Body:
       Armor: true
     Refineable: true  
     Script: |
-      bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;
+      bonus bMaxHPrate,2; 
       if (getrefine()>6){
       bonus bNearAtkDef,5;}         
   - Id: 2314
@@ -7079,7 +7298,7 @@ Body:
     Script: |
       bonus bAgi,2;
       if (getrefine()>6)  {
-      bonus bAgi,1;}       
+      bonus bAgi,1;}           
   - Id: 2520
     AegisName: Goibne's_Shoulder_Arms
     Name: Goibne's Spaulders
@@ -7100,7 +7319,7 @@ Body:
       bonus bMdef,2;
       bonus bVit,1;  
       if (getrefine()>6)  {
-      bonus bLongAtkDef,4;}        
+      bonus bMdef,7;}        
   - Id: 2528
     AegisName: Wool_Scarf
     Name: Wool Scarf
@@ -7229,7 +7448,28 @@ Body:
       bonus bLuk,2;
       bonus bFlee2,8; 
       if (getrefine()>6)  {
-      bonus bLuk,2;}        
+      bonus bLuk,1;
+      bonus bFlee,10;}      
+  - Id: 5122
+    AegisName: Magni_Cap
+    Name: Magni's Cap
+    Type: Armor
+    Buy: 30000
+    Weight: 1000
+    Defense: 9
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 250
+    Script: |
+      bonus bStr,2;      
+      if (getrefine()>6)  {
+      bonus bStr,2;}            
   - Id: 2518
     AegisName: Morpheus's_Shawl
     Name: Morpheus's Shawl
