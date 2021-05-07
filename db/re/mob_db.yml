@@ -388,7 +388,7 @@ Body:
         Rate: 5500
       - Item: Sticky_Mucus
         Rate: 600
-      - Item: Elunium
+      - Item: Guard_
         Rate: 2
       - Item: Shell
         Rate: 1000
@@ -617,7 +617,7 @@ Body:
         Rate: 20
       - Item: Claw_Of_Wolves
         Rate: 9000
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 10
       - Item: Meat
         Rate: 650
@@ -846,7 +846,7 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 9000
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 10
       - Item: Honey
         Rate: 150
@@ -1225,7 +1225,7 @@ Body:
         Rate: 9000
       - Item: Munak_Turban
         Rate: 2
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 15
       - Item: Amulet
         Rate: 20
@@ -1310,7 +1310,7 @@ Body:
         Rate: 700
       - Item: Mementos
         Rate: 10
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 1
       - Item: Stiletto
         Rate: 50
@@ -1351,7 +1351,7 @@ Body:
     Drops:
       - Item: Scales_Shell
         Rate: 5335
-      - Item: Oridecon
+      - Item: Circlet_
         Rate: 5
       - Item: Necklace
         Rate: 1
@@ -2062,7 +2062,7 @@ Body:
         Rate: 9000
       - Item: Fin_Helm
         Rate: 1
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 10
       - Item: Skyblue_Jewel
         Rate: 10
@@ -2208,7 +2208,7 @@ Body:
         Rate: 250
       - Item: Shell
         Rate: 1500
-      - Item: Elunium
+      - Item: Guard_
         Rate: 2
       - Item: Red_Herb
         Rate: 400
@@ -2253,7 +2253,7 @@ Body:
         Rate: 300
       - Item: Chrysalis
         Rate: 5000
-      - Item: Elunium
+      - Item: Guard_
         Rate: 2
       - Item: Sticky_Mucus
         Rate: 600
@@ -3059,7 +3059,7 @@ Body:
         Rate: 5335
       - Item: Oridecon_Stone
         Rate: 115
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Trident_
         Rate: 2
@@ -3157,7 +3157,7 @@ Body:
         Rate: 800
       - Item: Elunium_Stone
         Rate: 53
-      - Item: Elunium
+      - Item: Shield_
         Rate: 5
       - Item: Solid_Shell
         Rate: 1000
@@ -4627,7 +4627,7 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 5
       - Item: Green_Herb
         Rate: 1500
@@ -4817,7 +4817,7 @@ Body:
     Drops:
       - Item: Porcupine_Spike
         Rate: 9000
-      - Item: Elunium
+      - Item: Coat_
         Rate: 5
       - Item: Animal's_Skin
         Rate: 5500
@@ -5502,7 +5502,7 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Elunium
+      - Item: Biretta_
         Rate: 10
       - Item: Bone_Wand
         Rate: 1
@@ -5649,7 +5649,7 @@ Body:
         Rate: 5335
       - Item: Ghost_Bandana
         Rate: 100
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 50
       - Item: Branch_Of_Dead_Tree
         Rate: 500
@@ -5751,7 +5751,7 @@ Body:
         Rate: 3
       - Item: Dirk_
         Rate: 10
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Red_Herb
         Rate: 1800
@@ -5847,7 +5847,7 @@ Body:
         Rate: 3
       - Item: Goblin_Mask_02
         Rate: 15
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 1
       - Item: Red_Herb
         Rate: 1550
@@ -5943,7 +5943,7 @@ Body:
         Rate: 9000
       - Item: Wand_
         Rate: 15
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 1
       - Item: Goblin_Mask_03
         Rate: 15
@@ -6131,7 +6131,7 @@ Body:
         Rate: 900
       - Item: Elunium
         Rate: 31
-      - Item: Elunium
+      - Item: Tights_
         Rate: 5
       - Item: Frozen_Heart
         Rate: 5
@@ -6227,7 +6227,7 @@ Body:
         Rate: 191
       - Item: Bone_Helm
         Rate: 1
-      - Item: Oridecon
+      - Item: Mirror_Shield_
         Rate: 2
       - Item: Patriotism_Marks
         Rate: 10
@@ -6283,7 +6283,7 @@ Body:
         Rate: 25
       - Item: Gladius_
         Rate: 2
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Kobold_Card
         Rate: 1
@@ -6326,7 +6326,7 @@ Body:
         Rate: 5335
       - Item: Zargon
         Rate: 200
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 3
       - Item: Yellow_Herb
         Rate: 100
@@ -6375,7 +6375,7 @@ Body:
         Rate: 5335
       - Item: Zargon
         Rate: 200
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 3
       - Item: Yellow_Herb
         Rate: 100
@@ -6422,7 +6422,7 @@ Body:
         Rate: 100
       - Item: Hammer_
         Rate: 5
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 3
       - Item: Yellow_Herb
         Rate: 100
@@ -6468,7 +6468,7 @@ Body:
         Rate: 100
       - Item: Morning_Star_
         Rate: 5
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 3
       - Item: Yellow_Herb
         Rate: 100
@@ -7731,7 +7731,7 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Two_Hand_Sword_
         Rate: 2
@@ -7787,7 +7787,7 @@ Body:
         Rate: 3500
       - Item: Mementos
         Rate: 1500
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 10
       - Item: Cookbook06
         Rate: 1
@@ -8064,7 +8064,7 @@ Body:
         Rate: 50
       - Item: Nurse_Cap
         Rate: 1
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 5
       - Item: Stiletto_
         Rate: 5
@@ -8982,7 +8982,7 @@ Body:
         Rate: 5820
       - Item: Wedding_Veil
         Rate: 10
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 2
       - Item: Red_Gemstone
         Rate: 650
@@ -9371,9 +9371,9 @@ Body:
         Rate: 1800
       - Item: Rose_Quartz
         Rate: 1500
-      - Item: Elunium
+      - Item: Tights_
         Rate: 8
-      - Item: Elunium
+      - Item: Earring_
         Rate: 1
       - Item: Queen's_Whip
         Rate: 100
@@ -9662,7 +9662,7 @@ Body:
         Rate: 10
       - Item: Carga_Mace
         Rate: 1
-      - Item: Oridecon
+      - Item: Brooch_
         Rate: 1
       - Item: Oridecon
         Rate: 134
@@ -10510,7 +10510,7 @@ Body:
 #        Rate: 25
 #      - Item: Gladius_
 #        Rate: 2
-#      - Item: Oridecon
+#      - Item: Buckler_
 #        Rate: 5
 #      - Item: Kobold_Card
 #        Rate: 1
@@ -10554,7 +10554,7 @@ Body:
 #        Rate: 3
 #      - Item: Dirk_
 #        Rate: 10
-#      - Item: Oridecon
+#      - Item: Buckler_
 #        Rate: 5
 #      - Item: Red_Herb
 #        Rate: 800
@@ -10679,7 +10679,7 @@ Body:
         Rate: 6000
       - Item: Sticky_Mucus
         Rate: 700
-      - Item: Elunium
+      - Item: Guard_
         Rate: 2
       - Item: Shell
         Rate: 1300
@@ -10722,7 +10722,7 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 6000
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 10
       - Item: Honey
         Rate: 180
@@ -10762,7 +10762,7 @@ Body:
         Rate: 120
       - Item: Shell
         Rate: 1500
-      - Item: Elunium
+      - Item: Guard_
         Rate: 2
       - Item: Red_Herb
         Rate: 450
@@ -11301,7 +11301,7 @@ Body:
         Rate: 900
       - Item: Elunium
         Rate: 31
-      - Item: Elunium
+      - Item: Tights_
         Rate: 5
       - Item: Gift_Box
         Rate: 20
@@ -11351,7 +11351,7 @@ Body:
         Rate: 10
       - Item: Dirk_
         Rate: 10
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Santa's_Hat
         Rate: 10
@@ -11748,7 +11748,7 @@ Body:
         Rate: 3880
       - Item: Petite_DiablOfs_Wing
         Rate: 500
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 2
       - Item: Elven_Bow
         Rate: 5
@@ -12127,7 +12127,7 @@ Body:
         Rate: 50
       - Item: Fruit_Shell
         Rate: 120
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 1
       - Item: Rotten_Fish
         Rate: 35
@@ -12268,7 +12268,7 @@ Body:
     Drops:
       - Item: Lip_Of_Ancient_Fish
         Rate: 1300
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 2
       - Item: Lemon
         Rate: 400
@@ -12451,9 +12451,9 @@ Body:
     Drops:
       - Item: Brigan
         Rate: 4850
-      - Item: Elunium
+      - Item: Helm_
         Rate: 45
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 5
       - Item: Strong_Shield
         Rate: 62
@@ -12841,7 +12841,7 @@ Body:
     Drops:
       - Item: Brigan
         Rate: 4656
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Claire_Suits
         Rate: 5
@@ -13501,7 +13501,7 @@ Body:
         Rate: 4413
       - Item: Wedding_Veil
         Rate: 10
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 8
       - Item: Red_Gemstone
         Rate: 700
@@ -13656,7 +13656,7 @@ Body:
         Rate: 25
       - Item: Nail_Of_Loki
         Rate: 1
-      - Item: Oridecon
+      - Item: Mirror_Shield_
         Rate: 1
       - Item: Killer_Mantis_Card
         Rate: 1
@@ -13894,7 +13894,7 @@ Body:
         Rate: 120
       - Item: Goblin_Mask_04
         Rate: 50
-      - Item: Elunium
+      - Item: Shield_
         Rate: 2
       - Item: Yellow_Herb
         Rate: 650
@@ -14186,7 +14186,7 @@ Body:
         Rate: 4413
       - Item: Zargon
         Rate: 2500
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 9
       - Item: Bowman_Scarf
         Rate: 5
@@ -14576,7 +14576,7 @@ Body:
         Rate: 3
       - Item: Blue_Jewel
         Rate: 4559
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Melon
         Rate: 500
@@ -14768,7 +14768,7 @@ Body:
         Rate: 4365
       - Item: Blue_Herb
         Rate: 250
-      - Item: Elunium
+      - Item: Coat_
         Rate: 5
       - Item: Cyfar
         Rate: 1200
@@ -15087,13 +15087,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15147,13 +15147,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15181,7 +15181,7 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Oridecon
+      - Item: Mirror_Shield_
         Rate: 1000
       - Item: War_Axe
         Rate: 75
@@ -15207,13 +15207,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15241,7 +15241,7 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Elunium
+      - Item: Guard_
         Rate: 834
       - Item: Corsair
         Rate: 100
@@ -15267,13 +15267,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15305,7 +15305,7 @@ Body:
         Rate: 500
       - Item: Mage_Coat
         Rate: 125
-      - Item: Elunium
+      - Item: Earring_
         Rate: 9
         StealProtected: true
   - Id: 1332
@@ -15327,13 +15327,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15361,9 +15361,9 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 500
-      - Item: Elunium
+      - Item: Tights_
         Rate: 150
       - Item: Necklace_
         Rate: 10
@@ -15387,13 +15387,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15447,13 +15447,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15507,13 +15507,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15567,13 +15567,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15627,13 +15627,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15687,13 +15687,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15723,9 +15723,9 @@ Body:
         Rate: 7275
       - Item: Ragamuffin_Cape
         Rate: 1000
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 69
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 20
         StealProtected: true
   - Id: 1346
@@ -15747,13 +15747,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15781,7 +15781,7 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Elunium
+      - Item: Shield_
         Rate: 1000
       - Item: Muramasa
         Rate: 50
@@ -15807,13 +15807,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15867,13 +15867,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15927,13 +15927,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -15963,7 +15963,7 @@ Body:
         Rate: 7275
       - Item: Cape_Of_Ancient_Lord
         Rate: 500
-      - Item: Oridecon
+      - Item: Brooch_
         Rate: 38
       - Item: Magician_Hat
         Rate: 34
@@ -15987,13 +15987,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -16025,7 +16025,7 @@ Body:
         Rate: 429
       - Item: Centimental_Flower
         Rate: 250
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 35
         StealProtected: true
   - Id: 1356
@@ -16047,13 +16047,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -16083,7 +16083,7 @@ Body:
         Rate: 7275
       - Item: Memorize_Book
         Rate: 300
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 273
       - Item: Sharp_Gear
         Rate: 38
@@ -16107,13 +16107,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -16167,13 +16167,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -16227,13 +16227,13 @@ Body:
         Rate: 3000
       - Item: Yggdrasilberry
         Rate: 2500
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 800
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 800
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 800
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 800
       - Item: Old_Card_Album
         Rate: 1000
@@ -16261,7 +16261,7 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 43
       - Item: Angelic_Chain
         Rate: 43
@@ -16342,7 +16342,7 @@ Body:
         Rate: 5
       - Item: Destroyer_
         Rate: 1
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 20
       - Item: Runstone_Ancient
         Rate: 100
@@ -16385,7 +16385,7 @@ Body:
         Rate: 4559
       - Item: Burning_Heart
         Rate: 3686
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 1
       - Item: Plate_Armor
         Rate: 2
@@ -16763,7 +16763,7 @@ Body:
         Rate: 5500
       - Item: Inccubus_Horn
         Rate: 1
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Gold_Ring
         Rate: 500
@@ -17392,7 +17392,7 @@ Body:
         Rate: 1500
       - Item: Angelic_Chain
         Rate: 5
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 3
       - Item: Turquoise
         Rate: 1500
@@ -17844,7 +17844,7 @@ Body:
         Rate: 1500
       - Item: Herald_Of_GOD
         Rate: 500
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1720
       - Item: Magestic_Goat
         Rate: 1550
@@ -17936,7 +17936,7 @@ Body:
         Rate: 700
       - Item: Shinobi's_Sash
         Rate: 100
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 1
       - Item: Black_Mask
         Rate: 2000
@@ -20810,7 +20810,7 @@ Body:
         Rate: 1000
       - Item: Worm_Peelings
         Rate: 500
-      - Item: Elunium
+      - Item: Guard_
         Rate: 1
       - Item: Kind_Of_Beetle_Card
         Rate: 1
@@ -21210,7 +21210,7 @@ Body:
         Rate: 1
       - Item: Manteau
         Rate: 13
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 1
       - Item: Nab_Cloth
         Rate: 10
@@ -21311,7 +21311,7 @@ Body:
         Rate: 100
       - Item: Ragamuffin_Cape
         Rate: 50
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 2
       - Item: Rider_Insignia
         Rate: 5
@@ -21603,7 +21603,7 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 10
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 1
       - Item: Munak_Doll
         Rate: 300
@@ -23774,7 +23774,7 @@ Body:
         Rate: 3000
       - Item: Bastard_Sword_
         Rate: 8
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 3
       - Item: Runstone_Mystic
         Rate: 300
@@ -23910,7 +23910,7 @@ Body:
         Rate: 3000
       - Item: Leaflet_Of_Aloe
         Rate: 1000
-      - Item: Elunium
+      - Item: Guard_
         Rate: 1
       - Item: Bamboo_Basket
         Rate: 4850
@@ -24971,7 +24971,7 @@ Body:
         Rate: 2500
       - Item: Dark_Red_Jewel
         Rate: 1500
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 500
       - Item: Ungoliant_Card
         Rate: 1
@@ -25591,7 +25591,7 @@ Body:
         Rate: 3000
       - Item: Violet_Jewel
         Rate: 100
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 1
       - Item: Bloody_Roar
         Rate: 1
@@ -26599,7 +26599,7 @@ Body:
         Rate: 20
       - Item: Padded_Armor_
         Rate: 10
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 1
       - Item: Silent_Energy_Particle
         Rate: 1000
@@ -26655,7 +26655,7 @@ Body:
         Rate: 1
       - Item: Adventurere's_Suit_
         Rate: 40
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Ring_Of_Rogue
         Rate: 1
@@ -26708,7 +26708,7 @@ Body:
     Drops:
       - Item: Armlet_Of_Prisoner
         Rate: 1000
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 1
       - Item: Mink_Coat
         Rate: 10
@@ -26766,9 +26766,9 @@ Body:
     Drops:
       - Item: Armlet_Of_Prisoner
         Rate: 500
-      - Item: Elunium
+      - Item: Biretta_
         Rate: 5
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 5
       - Item: Scapulare_
         Rate: 10
@@ -26826,11 +26826,11 @@ Body:
         Rate: 2000
       - Item: Steel_Arrow_Container
         Rate: 100
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 5
       - Item: Sandals_
         Rate: 30
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 2
       - Item: Silent_Energy_Particle
         Rate: 1000
@@ -26884,9 +26884,9 @@ Body:
         Rate: 1000
       - Item: Staff_Of_Wing
         Rate: 1
-      - Item: Elunium
+      - Item: Guard_
         Rate: 5
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 10
       - Item: Silver_Robe_
         Rate: 30
@@ -27919,7 +27919,7 @@ Body:
         Rate: 50
       - Item: Karvodailnirol
         Rate: 100
-      - Item: Oridecon
+      - Item: Fedora_
         Rate: 6
       - Item: Removal_Card
         Rate: 1
@@ -28635,9 +28635,9 @@ Body:
         Rate: 1
       - Item: Gift_Box
         Rate: 50
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 5
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 1
       - Item: Fricco_Shoes
         Rate: 10
@@ -28680,7 +28680,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 500
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Cursed_Seal
         Rate: 100
@@ -28776,13 +28776,13 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
       - Item: Cardinal_Jewel
         Rate: 1000
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 5
       - Item: Cursed_Seal
         Rate: 50
@@ -28826,7 +28826,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 200
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -30744,9 +30744,9 @@ Body:
         Rate: 1000
       - Item: Red_Gemstone
         Rate: 1000
-      - Item: Elunium
+      - Item: Earring_
         Rate: 3
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 10
       - Item: Elunium_Stone
         Rate: 500
@@ -30796,7 +30796,7 @@ Body:
         Rate: 25
       - Item: Rune_Of_Darkness
         Rate: 1000
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 100
       - Item: Odin's_Blessing
         Rate: 100
@@ -30844,7 +30844,7 @@ Body:
         Rate: 25
       - Item: Rune_Of_Darkness
         Rate: 1000
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 100
       - Item: Odin's_Blessing
         Rate: 100
@@ -31508,7 +31508,7 @@ Body:
         Rate: 1000
       - Item: Will_Of_Darkness
         Rate: 1000
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 2
       - Item: Sticky_Mucus
         Rate: 1000
@@ -33609,10 +33609,10 @@ Body:
         Rate: 1
       - Item: Berserk_Guitar
         Rate: 50
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
-      - Item: Oridecon
-        Rate: 200
+      - Item: Meteo_Plate_Armor
+        Rate: 20
       - Item: Salamander_Card
         Rate: 1
         StealProtected: true
@@ -38392,7 +38392,7 @@ Body:
         Rate: 9000
       - Item: Fin_Helm
         Rate: 2
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 20
       - Item: Skyblue_Jewel
         Rate: 20
@@ -39627,7 +39627,7 @@ Body:
     Modes:
       Detector: true
     Drops:
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 9
       - Item: Crystal_Jewel__
         Rate: 50
@@ -42205,7 +42205,7 @@ Body:
     Drops:
       - Item: Burning_Horse_Shoe
         Rate: 4000
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 5
       - Item: Burning_Heart
         Rate: 1000
@@ -42213,7 +42213,7 @@ Body:
         Rate: 1000
       - Item: Inverse_Scale
         Rate: 1
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 1
       - Item: Jamadhar_
         Rate: 2
@@ -43294,7 +43294,7 @@ Body:
         Rate: 5
       - Item: Cape_Of_Ancient_Lord
         Rate: 15
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 4
       - Item: Book_Of_The_Apocalypse
         Rate: 4
@@ -43344,7 +43344,7 @@ Body:
       - Item: Blue_Potion
         Rate: 1
     Drops:
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 250
       - Item: Broad_Sword_
         Rate: 220
@@ -43525,7 +43525,7 @@ Body:
         Rate: 5
       - Item: Splendid_Box
         Rate: 100
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 2
       - Item: Shine_Spear_Blade
         Rate: 10
@@ -46188,7 +46188,7 @@ Body:
         Rate: 400
       - Item: Elunium_Stone
         Rate: 27
-      - Item: Elunium
+      - Item: Shield_
         Rate: 3
       - Item: Solid_Shell
         Rate: 500
@@ -46478,7 +46478,7 @@ Body:
         Rate: 5
       - Item: Carga_Mace
         Rate: 3
-      - Item: Oridecon
+      - Item: Brooch_
         Rate: 1
       - Item: Oridecon
         Rate: 67
@@ -46521,7 +46521,7 @@ Body:
         Rate: 7
       - Item: Heart_Of_Mermaid
         Rate: 4500
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 5
       - Item: Skyblue_Jewel
         Rate: 5
@@ -53725,7 +53725,7 @@ Body:
         Rate: 170
       - Item: Mementos
         Rate: 2
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 1
       - Item: Stiletto
         Rate: 10
@@ -53904,7 +53904,7 @@ Body:
         Rate: 5
       - Item: Chain_Mail
         Rate: 500
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -53948,7 +53948,7 @@ Body:
         Rate: 5
       - Item: Ninja_Suit
         Rate: 500
-      - Item: Elunium
+      - Item: Ninja_Suit_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -53991,7 +53991,7 @@ Body:
         Rate: 100
       - Item: Berdysz
         Rate: 5
-      - Item: Elunium
+      - Item: Coat_
         Rate: 500
       - Item: Clothes_Of_The_Lord
         Rate: 5
@@ -54038,7 +54038,7 @@ Body:
         Rate: 5
       - Item: Tights
         Rate: 500
-      - Item: Elunium
+      - Item: Tights_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54083,7 +54083,7 @@ Body:
         Rate: 5
       - Item: Robe_Of_Casting
         Rate: 500
-      - Item: Elunium
+      - Item: Mage_Coat_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54126,9 +54126,9 @@ Body:
         Rate: 100
       - Item: Slash
         Rate: 5
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 500
-      - Item: Oridecon
+      - Item: Holy_Robe_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54173,7 +54173,7 @@ Body:
         Rate: 5
       - Item: Plate_Armor
         Rate: 500
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54218,7 +54218,7 @@ Body:
         Rate: 5
       - Item: Thief_Clothes
         Rate: 500
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54261,7 +54261,7 @@ Body:
         Rate: 100
       - Item: Cleaver
         Rate: 5
-      - Item: Elunium
+      - Item: Coat_
         Rate: 500
       - Item: Clothes_Of_The_Lord
         Rate: 5
@@ -54308,7 +54308,7 @@ Body:
         Rate: 5
       - Item: Tights
         Rate: 500
-      - Item: Elunium
+      - Item: Tights_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54353,7 +54353,7 @@ Body:
         Rate: 5
       - Item: Tights
         Rate: 500
-      - Item: Elunium
+      - Item: Tights_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54398,7 +54398,7 @@ Body:
         Rate: 5
       - Item: Robe_Of_Casting
         Rate: 500
-      - Item: Elunium
+      - Item: Mage_Coat_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -54441,9 +54441,9 @@ Body:
         Rate: 100
       - Item: Kaiser_Knuckle
         Rate: 5
-      - Item: Oridecon
+      - Item: Saint_Robe_
         Rate: 500
-      - Item: Oridecon
+      - Item: Holy_Robe_
         Rate: 5
       - Item: Old_Blue_Box
         Rate: 2
@@ -56317,7 +56317,7 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Elunium
+      - Item: Biretta_
         Rate: 10
       - Item: Lich_Bone_Wand
         Rate: 1
@@ -56363,7 +56363,7 @@ Body:
         Rate: 4400
       - Item: Wedding_Veil
         Rate: 10
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 5
       - Item: Red_Gemstone
         Rate: 750
@@ -58671,7 +58671,7 @@ Body:
         Rate: 20
       - Item: Claw_Of_Wolves
         Rate: 9000
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 10
       - Item: Wing_Of_Fly
         Rate: 650
@@ -58816,7 +58816,7 @@ Body:
         Rate: 50
       - Item: Fruit_Shell
         Rate: 120
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 1
       - Item: Rotten_Fish
         Rate: 35
@@ -59430,7 +59430,7 @@ Body:
         Rate: 2500
       - Item: Dark_Red_Jewel
         Rate: 1500
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 500
       - Item: Ungoliant_Card
         Rate: 1
@@ -59874,7 +59874,7 @@ Body:
         Rate: 3000
       - Item: Bastard_Sword_
         Rate: 8
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 3
       - Item: Runstone_Mystic
         Rate: 300
@@ -60300,7 +60300,7 @@ Body:
         Rate: 700
       - Item: Wing_Of_Fly
         Rate: 10
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 1
       - Item: Stiletto
         Rate: 50
@@ -60347,7 +60347,7 @@ Body:
         Rate: 700
       - Item: Wing_Of_Fly
         Rate: 10
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 1
       - Item: Stiletto
         Rate: 50
@@ -60387,7 +60387,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 200
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -60441,7 +60441,7 @@ Body:
         Rate: 50
       - Item: Nurse_Cap
         Rate: 1
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 5
       - Item: Stiletto_
         Rate: 5
@@ -61053,7 +61053,7 @@ Body:
         Rate: 700
       - Item: Shinobi's_Sash
         Rate: 100
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 1
       - Item: Black_Mask
         Rate: 2000
@@ -61575,7 +61575,7 @@ Body:
         Rate: 1
       - Item: Berserk_Guitar
         Rate: 50
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Meteo_Plate_Armor
         Rate: 20
@@ -61970,13 +61970,13 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
       - Item: Cardinal_Jewel
         Rate: 1000
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 5
       - Item: Cursed_Seal
         Rate: 50
@@ -62019,13 +62019,13 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
       - Item: Cardinal_Jewel
         Rate: 1000
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 5
       - Item: Cursed_Seal
         Rate: 50
@@ -62068,13 +62068,13 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
       - Item: Cardinal_Jewel
         Rate: 1000
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 5
       - Item: Cursed_Seal
         Rate: 50
@@ -62124,7 +62124,7 @@ Body:
         Rate: 3500
       - Item: Mementos
         Rate: 1500
-      - Item: Oridecon
+      - Item: Mantle_
         Rate: 10
       - Item: Cookbook06
         Rate: 1
@@ -62173,7 +62173,7 @@ Body:
         Rate: 50
       - Item: Karvodailnirol
         Rate: 100
-      - Item: Oridecon
+      - Item: Fedora_
         Rate: 6
       - Item: Removal_Card
         Rate: 1
@@ -62259,7 +62259,7 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Two_Hand_Sword_
         Rate: 2
@@ -62306,7 +62306,7 @@ Body:
         Rate: 106
       - Item: Iron_Cane
         Rate: 1
-      - Item: Elunium
+      - Item: Chain_Mail_
         Rate: 2
       - Item: Two_Hand_Sword_
         Rate: 2
@@ -62355,7 +62355,7 @@ Body:
         Rate: 1
       - Item: Lab_Staff_Record
         Rate: 5
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 10
       - Item: Silver_Robe_
         Rate: 30
@@ -63928,7 +63928,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 500
-      - Item: Oridecon
+      - Item: Ring_
         Rate: 1
       - Item: Cursed_Seal
         Rate: 100
@@ -65304,7 +65304,7 @@ Body:
     Drops:
       - Item: Lip_Of_Ancient_Fish
         Rate: 1300
-      - Item: Oridecon
+      - Item: Plate_Armor_
         Rate: 2
       - Item: Lemon
         Rate: 400
@@ -66470,7 +66470,7 @@ Body:
         Rate: 25
       - Item: Thief_Clothes
         Rate: 2500
-      - Item: Elunium
+      - Item: Thief_Clothes_
         Rate: 25
         StealProtected: true
       - Item: Old_Blue_Box
@@ -66518,7 +66518,7 @@ Body:
         Rate: 25
       - Item: Ninja_Suit
         Rate: 2500
-      - Item: Elunium
+      - Item: Ninja_Suit_
         Rate: 25
         StealProtected: true
       - Item: Old_Blue_Box
@@ -66611,7 +66611,7 @@ Body:
         Rate: 25
       - Item: Gladius_
         Rate: 2
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Kobold_Card
         Rate: 1
@@ -66703,7 +66703,7 @@ Body:
         Rate: 1000
       - Item: Worm_Peelings
         Rate: 500
-      - Item: Elunium
+      - Item: Guard_
         Rate: 1
       - Item: Kind_Of_Beetle_Card
         Rate: 1
@@ -66837,7 +66837,7 @@ Body:
     Drops:
       - Item: Scales_Shell
         Rate: 5335
-      - Item: Oridecon
+      - Item: Circlet_
         Rate: 5
       - Item: Necklace
         Rate: 1
@@ -67117,7 +67117,7 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 10
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 1
       - Item: Munak_Doll
         Rate: 300
@@ -67353,7 +67353,7 @@ Body:
         Rate: 1000
       - Item: Will_Of_Darkness
         Rate: 1000
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 2
       - Item: Sticky_Mucus
         Rate: 1000
@@ -67903,7 +67903,7 @@ Body:
         Rate: 3
       - Item: Dirk_
         Rate: 10
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Red_Herb
         Rate: 1800
@@ -67950,7 +67950,7 @@ Body:
         Rate: 3
       - Item: Dirk_
         Rate: 10
-      - Item: Oridecon
+      - Item: Buckler_
         Rate: 5
       - Item: Red_Herb
         Rate: 1800
@@ -68497,7 +68497,7 @@ Body:
         Rate: 3880
       - Item: Petite_DiablOfs_Wing
         Rate: 500
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 2
       - Item: Elven_Bow
         Rate: 5
@@ -68546,7 +68546,7 @@ Body:
         Rate: 3880
       - Item: Petite_DiablOfs_Wing
         Rate: 500
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 2
       - Item: Elven_Bow
         Rate: 5
@@ -68635,7 +68635,7 @@ Body:
         Rate: 4365
       - Item: Wing_Of_Fly
         Rate: 250
-      - Item: Elunium
+      - Item: Coat_
         Rate: 5
       - Item: Cyfar
         Rate: 1200
@@ -69049,7 +69049,7 @@ Body:
     DamageMotion: 336
     Ai: 21
     Drops:
-      - Item: Elunium
+      - Item: Biretta_
         Rate: 10
       - Item: Bone_Wand
         Rate: 1
@@ -69708,7 +69708,7 @@ Body:
         Rate: 100
       - Item: Ragamuffin_Cape
         Rate: 50
-      - Item: Oridecon
+      - Item: Muffler_
         Rate: 2
       - Item: Rider_Insignia
         Rate: 5
@@ -70219,7 +70219,7 @@ Body:
     Drops:
       - Item: Powder_Of_Butterfly
         Rate: 9000
-      - Item: Elunium
+      - Item: Silk_Robe_
         Rate: 10
       - Item: Honey
         Rate: 150
@@ -70272,7 +70272,7 @@ Body:
         Rate: 800
       - Item: Elunium_Stone
         Rate: 53
-      - Item: Elunium
+      - Item: Shield_
         Rate: 5
       - Item: Solid_Shell
         Rate: 1000
@@ -70908,7 +70908,7 @@ Body:
     Drops:
       - Item: Porcupine_Spike
         Rate: 9000
-      - Item: Elunium
+      - Item: Coat_
         Rate: 5
       - Item: Animal's_Skin
         Rate: 5500
@@ -71517,7 +71517,7 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 5
       - Item: Green_Herb
         Rate: 1500
@@ -71564,7 +71564,7 @@ Body:
         Rate: 1200
       - Item: Elunium_Stone
         Rate: 175
-      - Item: Oridecon
+      - Item: Boots_
         Rate: 5
       - Item: Green_Herb
         Rate: 1500
@@ -71707,7 +71707,7 @@ Body:
         Rate: 5
       - Item: Destroyer_
         Rate: 1
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 20
       - Item: Runstone_Ancient
         Rate: 100
@@ -71883,7 +71883,7 @@ Body:
         Rate: 10
       - Item: Carga_Mace
         Rate: 1
-      - Item: Oridecon
+      - Item: Brooch_
         Rate: 1
       - Item: Oridecon
         Rate: 134
@@ -72062,9 +72062,9 @@ Body:
         Rate: 1
       - Item: Gift_Box
         Rate: 50
-      - Item: Elunium
+      - Item: Shoes_
         Rate: 5
-      - Item: Oridecon
+      - Item: Manteau_
         Rate: 1
       - Item: Fricco_Shoes
         Rate: 10
@@ -74514,7 +74514,7 @@ Body:
         Rate: 100
       - Item: Shadow_Walk_
         Rate: 3
-      - Item: Oridecon
+      - Item: Brooch_
         Rate: 1
       - Item: Fire_Scroll_3_5
         Rate: 50
