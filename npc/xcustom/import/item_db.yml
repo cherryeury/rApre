@@ -1910,7 +1910,83 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bBaseAtk,6;   
+      if (getrefine()>6)  {
+      bonus bBaseAtk,5;} 
+  - Id: 2440
+    AegisName: Sprint_Shoes
+    Name: Sprint Shoes
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+      bonus bSPrecovRate,5;
+      if (getrefine()>6)  {
+      bonus bDex,2;} 
+  - Id: 2424
+    AegisName: Tidal_Shoes
+    Name: Tidal Shoes
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 13
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus2 bSubEle,Ele_Water,5;   
+      if (getrefine()>6)  {
+      bonus2 bSubEle,Ele_Water,10;   }       
+  - Id: 2426
+    AegisName: Shadow_Walk
+    Name: Shadow Walk
+    Type: Armor
+    Buy: 20
+    Weight: 2000
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bMdef,10;
+      if (getrefine()>6)  {
+      bonus bFlee,10;}       
+      bonus5 bAutoSpellWhenHit,"AS_CLOAKING",max(2,getskilllv("AS_CLOAKING")),100,BF_MAGIC,0;      
   - Id: 23256
     AegisName: Elixir_Bandage
     Name: Elixir Bandage
@@ -2165,7 +2241,142 @@ Body:
     Script: |
       bonus2 bSubEle,Ele_All,2;
       if (getrefine()>6)  {
-      bonus2 bSubEle,Ele_All,2;}  
+      bonus2 bSubEle,Ele_All,2;}
+  - Id: 2514
+    AegisName: Pauldron
+    Name: Pauldron
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 25
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 80
+    Refineable: true      
+    Script: |
+      if (getrefine()>6)  {
+      bonus2 bSubEle,Ele_All,4;} 
+  - Id: 2433
+    AegisName: Diabolus_Boots
+    Name: Diabolus Boots
+    Type: Armor
+    Buy: 20
+    Weight: 250
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bMaxHP,(BaseLevel*10); 
+      if (getrefine()>6)  {
+      bonus bMaxHPRate,2;}         
+  - Id: 2417
+    AegisName: Fricco_Shoes
+    Name: Fricco's Shoes
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 12
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Shoes: true
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      bonus2 bAddItemGroupHealRate,IG_Potion,20;   
+      if (getrefine()>6)  {
+      bonus bAgi,1;}        
+  - Id: 2419
+    AegisName: Goibne's_Combat_Boots
+    Name: Goibne's Greaves
+    Type: Armor
+    Buy: 30000
+    Weight: 700
+    Defense: 13
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Shoes: true
+    EquipLevelMin: 54
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      bonus bMaxHPrate,5;
+      bonus bMaxSPrate,5;     
+      if (getrefine()>6)  {
+      bonus bMaxHPrate,2;
+      bonus bMaxSPrate,1;}        
+  - Id: 2407
+    AegisName: Chrystal_Pumps
+    Name: Crystal Pumps
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 5
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Shoes: true
+    Refineable: true
+    Script: |
+      bonus bMdef,10;
+      bonus bLuk,5;    
+      if (getrefine()>6)  {
+      bonus bLuk,1;}       
+  - Id: 2420
+    AegisName: Angel's_Arrival
+    Name: Angel's Reincarnation
+    Type: Armor
+    Buy: 10000
+    Weight: 300
+    Defense: 8
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 25
+    Refineable: true
+    Script: |
+      bonus bMaxHP,100;      
+      if (getrefine()>6)  {
+      bonus bMaxHp,150;}      
   - Id: 2355
     AegisName: Angel's_Protection
     Name: Angelic Protection
@@ -2312,7 +2523,31 @@ Body:
     Script: |
       bonus bMdef,10; 
       if (getrefine()>6)  {
-      bonus bMdef,5;}        
+      bonus bMdef,5;}      
+  - Id: 2422
+    AegisName: High_Fashion_Sandals
+    Name: High Fashion Sandals
+    Type: Armor
+    Buy: 24000
+    Weight: 200
+    Defense: 7
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMdef,10;      
+      if (getrefine()>6)  {
+      bonus bMdef,5;}       
   - Id: 2117
     AegisName: Arm_Guard
     Name: Arm Guard
@@ -2414,6 +2649,217 @@ Body:
     Script: |
       bonus bVit,2;
       bonus bMdef,2;
+      if (getrefine()>6)  {
+      bonus2 bSubDefEle,Ele_Dark,4;
+      bonus2 bMagicSubDefEle,Ele_Dark,4;}
+  - Id: 2134
+    AegisName: Shield_Of_Naga
+    Name: Shield of Naga
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 35
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 2
+    Script: |
+      .@r = getrefine();
+      bonus bMdef,3;
+      if (.@r<11) {
+         autobonus2 "{ bonus bShortWeaponDamageReturn,("+.@r+"*3); }",20,5000,BF_WEAPON,"{ specialeffect2 EF_GUARD; }";
+      }
+      else {
+         autobonus2 "{ bonus bShortWeaponDamageReturn,("+.@r+"*3); }",20,5000+(.@r/2*1000),BF_WEAPON,"{ specialeffect2 EF_GUARD; }";
+      }      
+  - Id: 2125
+    AegisName: Strong_Shield
+    Name: Strong Shield
+    Type: Armor
+    Buy: 20
+    Weight: 2500
+    Defense: 90
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 75
+    Refineable: true
+    View: 4
+    Script: |
+      bonus2 bSubEle,Ele_All,-20;
+      bonus bNoKnockback;      
+      if (getrefine()>6)  {
+      bonus2 bSubEle,Ele_All,5; }       
+  - Id: 2135
+    AegisName: Shadow_Guard
+    Name: Shadow Guard
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 52
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 2
+    Script: |
+      if (getrefine()>6)  {
+      bonus bFlee,10; }     
+  - Id: 2130
+    AegisName: Cross_Shield
+    Name: Cross Shield
+    Type: Armor
+    Buy: 20
+    Weight: 2000
+    Defense: 130
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 80
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bStr,1;
+      bonus2 bSkillAtk,"PA_SHIELDCHAIN",30;
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",30;
+      bonus bUseSPrate,10;  
+      if (getrefine()>6)  {
+      bonus bStr,2; }         
+  - Id: 2537
+    AegisName: Diabolus_Manteau
+    Name: Diabolus Manteau
+    Type: Armor
+    Buy: 20
+    Weight: 250
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      if (getrefine()>6)  {
+      bonus bMaxHP,200; }      
+      bonus2 bSubEle,Ele_Neutral,5;
+      bonus bMaxHP,100;
+      bonus2 bAddDamageClass,1916,10;
+      bonus2 bAddDamageClass,1917,10;
+      bonus2 bAddDamageClass,1922,10;
+      bonus2 bAddDamageClass,1923,10;
+      bonus2 bAddDamageClass,1924,10;
+      bonus2 bAddDamageClass,1925,10;   
+  - Id: 2544
+    AegisName: Leather_Of_Tendrilion
+    Name: Leather of Tendrilion
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 14
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus2 bSubEle,Ele_Water,5;
+      bonus2 bSubEle,Ele_Earth,5;
+      bonus2 bSubRace,RC_Plant,5;
+      bonus2 bSubRace,RC_Brute,5;
+      bonus2 bSubRace,RC_Player_Doram,5;  
+      if (getrefine()>6)  {
+      bonus2 bSubEle,Ele_Water,2;
+      bonus2 bSubEle,Ele_Earth,2;
+      bonus2 bSubRace,RC_Plant,2;
+      bonus2 bSubRace,RC_Brute,2;
+      bonus2 bSubRace,RC_Player_Doram,2;   }         
+  - Id: 2131
+    AegisName: Magic_Study_Vol1
+    Name: Magic Bible Vol1
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 18
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 5
+    Script: |
+      bonus bMdef,3;
+      bonus bInt,2;
+      bonus2 bAddEffWhenHit,Eff_Stun,1000;     
+      if (getrefine()>6)  {
+      bonus2 bAddEffWhenHit,Eff_Stun,500; }      
   - Id: 2147
     AegisName: Round_Buckler
     Name: Round Buckleer
@@ -4548,7 +4994,36 @@ Body:
     Script: |
       bonus bMagicAtkDef,6;    
       if (getrefine()>6){
-         bonus bMagicAtkDef,4;  }       
+         bonus bMagicAtkDef,4;  }
+  - Id: 2532
+    AegisName: Mithril_Magic_Cape
+    Name: Mithril Magic Cape
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 8
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      bonus5 bAutoSpellWhenHit,"NPC_ANTIMAGIC",6,200,BF_MAGIC,0;  
+      if (getrefine()>6){
+         bonus bMagicAtkDef,4;  }      
   - Id: 5007
     AegisName: Loard_Circlet
     Name: Grand Circlet
@@ -5628,8 +6103,154 @@ Body:
     EquipLevelMin: 40
     Refineable: true
     Script: |
+      if (getrefine()>6){
       bonus bMaxHPrate,4;   
-      bonus bMaxHPrate,3;  }        
+      bonus bMaxHPrate,3;  }    
+  - Id: 2129
+    AegisName: Exorcism_Bible
+    Name: Exorcism Bible
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 80
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 5
+    Script: |
+      bonus bHPrecovRate,3;
+      bonus bSPrecovRate,3;
+      bonus bInt,1;     
+      if (getrefine()>6){
+      bonus bHPrecovRate,4;
+      bonus bSPrecovRate,4; }  
+  - Id: 2133
+    AegisName: Tournament_Shield
+    Name: Tournament Shield
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 105
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 4
+    Script: |
+      bonus2 bAddClass,Class_All,1;
+      if (Class == Job_Lord_Knight )
+         bonus bAspdRate,-5;  
+      if (getrefine()>6){
+      bonus2 bAddClass,Class_All,1; }  
+  - Id: 2138
+    AegisName: Bradium_Shield
+    Name: Bradium Shield
+    Type: Armor
+    Buy: 20
+    Weight: 1800
+    Defense: 98
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 3
+    Script: |
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",60;
+      bonus bAgi,-1;
+      bonus bMaxHP,500;      
+      if (getrefine()>6){
+      bonus bMaxHPRate,2; }        
+  - Id: 2124
+    AegisName: Thorny_Buckler
+    Name: Thorny Buckler
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 85
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 2
+    Script: |
+      bonus bMdef,2;      
+      if (getrefine()>6){
+      bonus bShortWeaponDamageReturn,3;}       
+  - Id: 2116
+    AegisName: Angel's_Safeguard
+    Name: Angelic Guard
+    Type: Armor
+    Buy: 10000
+    Weight: 400
+    Defense: 30
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 20
+    Refineable: true
+    View: 1
+    Script: |
+      bonus2 bSubRace,RC_Demon,5;    
+      if (getrefine()>6){
+      bonus2 bSubRace,RC_Demon,10; }    
+  - Id: 2545
+    AegisName: Musika
+    Name: Musika
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Priest: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      bonus3 bAutoSpellwhenhit,"AL_HEAL",max(1,getskilllv("AL_HEAL")),20;      
+      if (getrefine()>6){
+      bonus2 bSubRace,RC_Demon,5; }          
   - Id: 2335
     AegisName: Thief_Clothes
     Name: Thief Clothes
@@ -5669,6 +6290,54 @@ Body:
       bonus bAgi,1; 
       if (getrefine()>6){
       bonus bAspdRate,5;}  
+  - Id: 2450
+    AegisName: Vital_Tree_Shoes
+    Name: Vital Tree Shoes
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 16
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Shoes: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,10;
+      bonus2 bHPRegenRate,30,10000;
+      bonus bHealpower2,5;
+      bonus bAddItemHealRate,5;
+      bonus bMdef,3;
+      bonus bVit,2;      
+      if (getrefine()>6){
+      bonus bHealpower2,20;
+      bonus bAddItemHealRate,20;}       
+  - Id: 2418
+    AegisName: Vidar's_Boots
+    Name: Vidar's Boots
+    Type: Armor
+    Buy: 30000
+    Weight: 650
+    Defense: 13
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Shoes: true
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,9;
+      bonus bMaxSPrate,9;   
+      if (getrefine()>6){
+      bonus bMaxHPrate,2;
+      bonus bMaxSPrate,2;  }       
   - Id: 2391
     AegisName: Life_Link
     Name: Life Link
@@ -5777,7 +6446,80 @@ Body:
       bonus2 bResEff,Eff_Stun,3000;
       bonus2 bResEff,Eff_Freeze,3000;   
       if (getrefine()>6){
-      bonus4 bAutoSpellWhenHit,"MG_FIREBALL",5,500,1;}         
+      bonus4 bAutoSpellWhenHit,"MG_FIREBALL",5,500,1;}  
+  - Id: 2123
+    AegisName: Orleans_Server
+    Name: Orleans's Server
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 75
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bMdef,2;
+      bonus bMagicDamageReturn,5;   
+      if (getrefine()>6){
+      bonus bInt,2;}
+  - Id: 2115
+    AegisName: Valkyrja's_Shield
+    Name: Valkyrja's Shield
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 80
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 4
+    Script: |
+      bonus2 bSubEle,Ele_Water,20;
+      bonus2 bSubEle,Ele_Fire,20;
+      bonus2 bSubEle,Ele_Dark,20;
+      bonus2 bSubEle,Ele_Undead,20;
+      if (getrefine()>6){
+      bonus2 bSubEle,Ele_Water,5;
+      bonus2 bSubEle,Ele_Fire,5;
+      bonus2 bSubEle,Ele_Dark,5;
+      bonus2 bSubEle,Ele_Undead,5;}      
+      bonus bMdef,5;      
+  - Id: 2114
+    AegisName: Stone_Buckler
+    Name: Stone Buckler
+    Type: Armor
+    Buy: 30000
+    Weight: 1500
+    Defense: 45
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 2
+    Script: |
+      bonus2 bSubSize,Size_Large,5;   
+      if (getrefine()>6){
+      bonus2 bSubSize,Size_Large,5;  }         
   - Id: 2365
     AegisName: Orleans_Gown
     Name: Orleans's Gown
@@ -6235,6 +6977,279 @@ Body:
       bonus bMdef,10;      
       if (getrefine()>6)  {
       bonus bMdef,5;}
+  - Id: 2508
+    AegisName: Ragamuffin_Cape
+    Name: Ragamuffin Manteau
+    Type: Armor
+    Buy: 56000
+    Weight: 500
+    Defense: 4
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    Refineable: true
+    Script: |
+      bonus bUnbreakableGarment;
+      bonus bMdef,10;      
+      if (getrefine()>6)  {
+      bonus bMdef,5;}
+  - Id: 2521
+    AegisName: Angel's_Warmth
+    Name: Angelic Cardigan
+    Type: Armor
+    Buy: 10000
+    Weight: 400
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bHPrecovRate,5;   
+      if (getrefine()>6)  {
+      bonus bHPrecovRate,10; }  
+  - Id: 2527
+    AegisName: Dragon_Breath
+    Name: Dragon Breath
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 16
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 48
+    Refineable: true
+    Script: |
+      bonus2 bSubRace,RC_Dragon,15;
+      if (getrefine()>6)  {
+      bonus2 bSubRace,RC_Dragon,10;}    
+  - Id: 2529
+    AegisName: Rider_Insignia
+    Name: Rider Insignia
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 13
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAgi,2;   
+      if (getrefine()>6)  {
+      bonus bAgi,1;}        
+  - Id: 2530
+    AegisName: Rider_Insignia_
+    Name: Rider Insignia
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 13
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      if (getrefine()>6)  {
+      bonus bAgi,1;}       
+  - Id: 2520
+    AegisName: Goibne's_Shoulder_Arms
+    Name: Goibne's Spaulders
+    Type: Armor
+    Buy: 30000
+    Weight: 700
+    Defense: 11
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 54
+    Refineable: true
+    Script: |
+      bonus bLongAtkDef,10;
+      bonus bMdef,2;
+      bonus bVit,1;  
+      if (getrefine()>6)  {
+      bonus bLongAtkDef,4;}        
+  - Id: 2528
+    AegisName: Wool_Scarf
+    Name: Wool Scarf
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 11
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bMdef,4;   
+      if (getrefine()>6)  {
+      bonus bHPrecovRate,10;}  
+  - Id: 2536
+    AegisName: Skin_Of_Ventus
+    Name: Skin of Ventus
+    Type: Armor
+    Buy: 20
+    Weight: 250
+    Defense: 7
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+      bonus bMaxHP,200;
+      bonus bFlee,10;      
+      if (getrefine()>6)  {
+      bonus bAgi,1;}   
+  - Id: 2542
+    AegisName: Flame_Manteau
+    Name: Flame Manteau of Naght Sieger
+    Type: Armor
+    Buy: 20
+    Weight: 700
+    Defense: 16
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Garment: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,5;
+      bonus bMdef,2;
+      bonus bMatkRate,1;
+      bonus2 bAddEle,Ele_Fire,2;    
+      if (getrefine()>6)  {
+      bonus bMatkRate,1;
+      bonus2 bAddEle,Ele_Fire,2;  }         
+  - Id: 2517
+    AegisName: Vali's_Manteau
+    Name: Vali's Manteau
+    Type: Armor
+    Buy: 30000
+    Weight: 600
+    Defense: 13
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus2 bSubEle,Ele_Neutral,15; 
+      if (getrefine()>6)  {
+      bonus bVit,2;}      
+  - Id: 2516
+    AegisName: Falcon_Robe
+    Name: Falcon Muffler
+    Type: Armor
+    Buy: 30000
+    Weight: 400
+    Defense: 8
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bFlee2,5;      
+      if (getrefine()>6)  {
+      bonus bFlee,10;}        
+  - Id: 2519
+    AegisName: Morrigane's_Manteau
+    Name: Morrigane's Manteau
+    Type: Armor
+    Buy: 30000
+    Weight: 600
+    Defense: 9
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 61
+    Refineable: true
+    Script: |
+      bonus bLuk,2;
+      bonus bFlee2,8; 
+      if (getrefine()>6)  {
+      bonus bLuk,2;}        
+  - Id: 2518
+    AegisName: Morpheus's_Shawl
+    Name: Morpheus's Shawl
+    Type: Armor
+    Buy: 30000
+    Weight: 600
+    Defense: 8
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 33
+    Refineable: true
+    Script: |
+      bonus bMaxSPrate,10;
+      bonus bMdef,3;      
+      if (getrefine()>6)  {
+      bonus bMaxSPrate,2;}       
   - Id: 2322
     AegisName: Silk_Robe_
     Name: Silk Robe
@@ -9624,8 +10639,8 @@ Body:
     Refineable: true
     Script: |
       .@r = getrefine();
-      bonus bMaxHPrate,20-.@r;
-      bonus bMaxSPrate,20-.@r;
+      bonus bMaxHPrate,22-.@r;
+      bonus bMaxSPrate,22-.@r;
       bonus bDef,.@r/20;
   - Id: 4409
     AegisName: Agav_Card
