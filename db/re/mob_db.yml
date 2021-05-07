@@ -33611,8 +33611,8 @@ Body:
         Rate: 50
       - Item: Oridecon
         Rate: 1
-      - Item: Meteo_Plate_Armor
-        Rate: 20
+      - Item: Oridecon
+        Rate: 200
       - Item: Salamander_Card
         Rate: 1
         StealProtected: true
