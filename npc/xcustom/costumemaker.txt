@@ -128,6 +128,7 @@ OnInit:
 	setarray .Shops$[2],"Quest Headgears C-G";
 	setarray .Shops$[3],"Quest Headgears H-P";
 	setarray .Shops$[4],"Quest Headgears R-Z";
+	setarray .Shops$[5],"Special Headgears";
 	// set .Shops$,"n/a";
 
 // Add(<shop number>,<reward ID>,<reward amount>,<Zeny cost>,<point cost>,
@@ -231,7 +232,8 @@ OnInit:
 	Add(4,19984,1,1,0,6494,1,5115,1,6242,100); // Winter Hat
 	Add(4,20387,1,1,0,6494,1,5079,1,6242,100); // X Hairpin
 	Add(4,20244,1,1,0,6494,1,5121,1,6242,100); // Zealotus
-	
+	sleep 10;
+//	Add(5,19549,1,1,0,6494,1,5160,1,6242,100); // Majestic Goat
 	
 // --------------------------------------------------
 	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1)
@@ -239,6 +241,7 @@ OnInit:
 		npcshopdelitem "chatmaker2"+.@i,909;
 		npcshopdelitem "chatmaker3"+.@i,909;
 		npcshopdelitem "chatmaker4"+.@i,909;
+		npcshopdelitem "chatmaker5"+.@i,909;
 	end;
 }
 
@@ -247,3 +250,4 @@ OnInit:
 -	shop	chatmaker2	-1,909:-1
 -	shop	chatmaker3	-1,909:-1
 -	shop	chatmaker4	-1,909:-1
+-	shop	chatmaker5	-1,909:-1
