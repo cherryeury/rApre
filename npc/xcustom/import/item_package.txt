@@ -433,3 +433,10 @@ IG_BPoring,29150,20,1,1	//  Capri
 IG_BPoring,29151,20,1,1	//  Aq
 IG_BPoring,29152,20,1,1	//  Scorpio
 IG_BPoring,29153,20,1,1	//  Taurus
+
+IG_BShadow,24012,20,1,1	// Poring Boots
+IG_BShadow,24013,20,1,1	//  Leo
+IG_BShadow,24014,20,1,1	//  Pisces
+IG_BShadow,24015,20,1,1	//  Capri
+IG_BShadow,24016,20,1,1	//  Aq
+IG_BShadow,24017,20,1,1	//  Scorpio

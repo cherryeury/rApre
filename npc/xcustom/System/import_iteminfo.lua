@@ -8845,7 +8845,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A light, comfortable suit made just for young adventurers.",
 			"________________________",
-			"FLEE +1",
+			"FLEE +2",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
@@ -8891,7 +8891,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A light, comfortable suit made just for young adventurers.",
 			"________________________",
-			"FLEE +1",
+			"FLEE +2",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 20",
@@ -12734,7 +12734,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A cloak that is simple, yet elegant.",
 			"________________________",
-			"HIT +3",
+			"HIT +4",
 			"________________________",			
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
@@ -12758,7 +12758,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A cloak that is simple, yet elegant.",
 			"________________________",
-			"HIT +3",
+			"HIT +4",
 			"________________________",
 			"^0000CCType:^000000 Armor",
 			"^0000CCDefense:^000000 27",
@@ -14496,7 +14496,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A brimless hat that offers very little in the way of fashion, but does provide decent defense.",
 			"________________________",
-			"ATK +2",
+			"ATK +3",
 			"________________________",
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 7",
@@ -17172,7 +17172,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A brimless hat that offers very little in the way of fashion, but does provide decent defense.",
 			"________________________",
-			"ATK +2",
+			"ATK +3",
 			"________________________",			
 			"^0000CCType:^000000 Headgear",
 			"^0000CCDefense:^000000 7",
@@ -18131,7 +18131,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A wrist protector, designed exclusively for the Ninja class, that is padded with a steel plate for increased defense and durability.",
 			"________________________",
-			"FLEE +2",
+			"FLEE +3",
 			"________________________",
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 50",
@@ -18177,7 +18177,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A wrist protector, designed exclusively for the Ninja class, that is padded with a steel plate for increased defense and durability.",
 			"________________________",
-			"FLEE +2",
+			"FLEE +3",
 			"________________________",			
 			"^0000CCType:^000000 Shield",
 			"^0000CCDefense:^000000 50",

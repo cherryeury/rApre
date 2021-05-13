@@ -77,6 +77,78 @@ Header:
   Version: 2
 
 Body:
+  - Id: 1096
+    AegisName: ANGELING
+    Name: Angeling
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1388
+    AegisName: ARCHANGELING
+    Name: Archangeling
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1307
+    AegisName: CAT_O_NINE_TAIL
+    Name: Cat o' Nine Tails
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1582
+    AegisName: DEVILING
+    Name: Deviling
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1091
+    AegisName: DRAGON_FLY
+    Name: Dragon Fly
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1093
+    AegisName: ECLIPSE
+    Name: Eclipse
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1120
+    AegisName: GHOSTRING
+    Name: Ghostring
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1090
+    AegisName: MASTERING
+    Name: Mastering
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1289
+    AegisName: MAYA_PUPLE
+    Name: Maya Purple
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500   
+  - Id: 1089
+    AegisName: TOAD
+    Name: Toad
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500   
+  - Id: 1092
+    AegisName: VAGABOND_WOLF
+    Name: Vagabond Wolf
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500
+  - Id: 1088
+    AegisName: VOCAL
+    Name: Vocal
+    Drops:
+      - Item: Basic_Shadow_Box
+        Rate: 500        
   - Id: 1416
     AegisName: WICKED_NYMPH
     Name: Evil Nymph

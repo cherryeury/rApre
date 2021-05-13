@@ -8,7 +8,7 @@ moc_para01,35,17,5	script	Christopher#C	731,{
 		mes "[^FF6600Christopher^000000]";
 		mes "I prepare every Metal, and only the highest quality ones o'course. Now then, which one do ye need?";
 		next;
-		switch(select("Oridecon - 25000z.:Elunium - 25000z.:Cancel.")) {
+		switch(select("Oridecon - 50000z.:Elunium - 50000z.:Cancel.")) {
 			case 1:
 				mes "[^FF6600Christopher^000000]";
 				mes "So, How many do ye wish to buy? If ye dont want anything, just type the number as '0.'";
@@ -31,7 +31,7 @@ moc_para01,35,17,5	script	Christopher#C	731,{
 						break;
 					}
 				}
-				.@sellx = .@input * 20000;
+				.@sellx = .@input * 50000;
 				if (Zeny < .@sellx) {
 					mes "[^FF6600Christopher^000000]";
 					mes "Ye don't have enough money. Ye know I can't sell this at a lower price... You know how the wifey nags about Zeny.";
@@ -69,7 +69,7 @@ moc_para01,35,17,5	script	Christopher#C	731,{
 						break;
 					}
 				}
-				.@sellx = .@input * 25000;
+				.@sellx = .@input * 50000;
 				if (Zeny < .@sellx) {
 					mes "[^FF6600Christopher^000000]";
 					mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";

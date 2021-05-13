@@ -1,0 +1,63 @@
+//===== rAthena Script =======================================
+//= Euphy's Quest Shop
+//===== By: ==================================================
+//= Euphy
+//===== Update HG-Upgrader By: ==================================================
+//= Boy
+//===== Current Version: =====================================
+//= 1.4a
+//===== Compatible With: =====================================
+//= rAthena SVN r15340+
+//===== Description: =========================================
+//= A dynamic quest shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//============================================================
+					
+moc_para01,52,32,1	script	Shadow Cat	10242,{
+	mes "[^FF6600Eileen^000000]";
+	mes "Psst";
+	mes "Do you wanna know?";
+	mes "There's new equipment called shadow in midgard";
+	next;
+	switch( select( "Shadow?:Who drops it again?:Bye." ) ) {
+	case 1: 	
+		mes "[^FF6600Eileen^000000]";
+		mes "Yeah! Shadow!";
+		mes "The power of the items are still unknown,";
+		mes "but you can use it in your Costume slots!";
+		goto L_Location;
+		
+	case 2:
+		goto L_Location;
+		
+		L_Location:
+		next;
+		mes "[^FF6600Eileen^000000]";
+		mes "How do you get 'em?";
+		mes "There's 5% chance to get it from certain monsters.";
+		mes "I've seen some monsters carrying those stuffs..";
+		mes "Ok take your note, the monsters i saw are..";	
+		next;
+		mes "[^FF6600Eileen^000000]";
+		mes "Angeling";	
+		mes "ArchAngeling";	
+		mes "Cat'O Nine Tails";	
+		mes "Deviling";	
+		mes "Dragon Fly";	
+		mes "Eclipse";	
+		mes "Ghostring";	
+		mes "Mastering";	
+		mes "Maya Purple";	
+		mes "Toad";	
+		mes "Vagabond Wolf";	
+		mes "Vocal";	
+		close;
+		
+	case 3:	
+		mes "[^FF6600Eileen^000000]";
+		mes "!";
+		mes "..";
+		close;
+	}
+}

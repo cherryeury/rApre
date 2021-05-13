@@ -24,3 +24,4 @@ IG_Costamax2 2003
 IG_Costamax3 2004
 IG_Costamax4 2005
 IG_BPoring 2006
+IG_BShadow 2007
