@@ -24,7 +24,7 @@
 //Headgear 
 //Top
 
-0,5131,4 // Close Helmet 
+
 //0,5690,3 // Red Wing Hat
 0,5568,8 // Rabbit Bonnet
 0,5183,8 // Bird Nest
@@ -52,32 +52,31 @@
 0,18631,22 // Ribbon Chef
 //0,5790,14 // Mother
 //0,5380,17 // Fish Head
-0,5260,25 // Cookie
-0,5527,25 // Lunatic Hat
-0,5387,25 // Neko Mimi
+0,5260,23 // Cookie
+0,5527,23 // Lunatic Hat
+0,5387,23 // Neko Mimi
 //0,18681,22 // Puppy Ears
-0,5509,25 // Sting Hat
-0,5304,25 // Blindness 
-0,18595,25 // Ancient Horn
-0,5457,25 
-0,18646,25 // Cow Hat
+0,5509,23 // Sting Hat
+0,5304,23 // Blindness 
+0,18595,23 // Ancient Horn
+0,5457,23 
+0,18646,23 // Cow Hat
 0,5137,25 // Alice
 //0,5561,25 // Rabbit Magic Hat
-0,5656,30 // Scooter
-
-0,18694,30 // Red Hood
+//0,5131,30 // Close Helmet 
+0,5357,32 // Wings of Victory
+0,5396,32 // Jasper Crest
 //0,18575,25 // Wunderkammer
 //0,18847,12 // Jolly Roger
-0,18653,30 // Deviruchi
-0,5357,30 // Wings of Victory
-0,5660,30 // Gryphon
-0,5396,30 // Jasper Crest
-0,5520,35 // Rabbit Earplug
-0,5579,35 // Wanderer's Sakkat
+0,18653,32 // Deviruchi
+0,5660,32 // Gryphon
+0,5520,32 // Rabbit Earplug
+0,5579,32 // Wanderer's Sakkat
 
 //0,18738,8 // White Student
 
 //0,5975,30 // Zealotus
+0,18694,40 // Red Hood
 0,18574,50 // Lord of Death
 //0,18801,50 // Gale Hair Or
 0,5467,50 // Dragon Helm
@@ -243,11 +242,11 @@
 //3,20800,1000
 
 // Armor
-3,15040,5 // Prison Uniform
+3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15057,7 // Apron 
-3,15058,10 // Rider Suit
-3,15060,13 // Azure Smock
+3,15057,10 // Apron 
+3,15058,20 // Rider Suit
+3,15060,30 // Azure Smock
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -302,8 +301,8 @@
 //Shoes
 3,2481,5 // Rune Boots
 3,2466,10 // Training Shoes
-3,22064,25 // Thorn Boots
-3,22042,40 // Talaria
+3,22064,40 // Thorn Boots
+3,22042,55 // Talaria
 //3,22075,35 // Rift Shoes
 //3,22132,1250 // Lightning God
 //3,22171,600 // Ancient Hero's Boots
@@ -349,7 +348,7 @@
 5,7776,3
 5,17106,20
 5,13583,1 // Convex
-5,6635,3 // Blacksmith Bless
+//5,6635,3 // Blacksmith Bless
 //5,6396,20
 5,12901,2 // Insurance Package 
 
@@ -738,7 +737,7 @@
 //7,12026,20 // Classic Headgear Box
 7,12623,5 // High Weapon Box
 7,23073,75 // Poring Boots
-7,12391,250 // Top Costume
-7,12403,250 // Mid Costume
-7,12416,250 // Low Costume
+//7,12391,250 // Top Costume
+//7,12403,250 // Mid Costume
+//7,12416,250 // Low Costume
 7,12493,500 // Garment Costume

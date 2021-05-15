@@ -14,7 +14,7 @@
 //= Item Preview script by ToastOfDoom.
 //============================================================
 					
-moc_para01,52,32,1	script	Shadow Cat	10242,{
+moc_para01,52,32,2	script	Shadow Cat	10242,{
 	mes "[^FF6600Eileen^000000]";
 	mes "Psst";
 	mes "Do you wanna know?";
@@ -26,16 +26,16 @@ moc_para01,52,32,1	script	Shadow Cat	10242,{
 		mes "Yeah! Shadow!";
 		mes "The power of the items are still unknown,";
 		mes "but you can use it in your Costume slots!";
+		next;
 		goto L_Location;
 		
 	case 2:
 		goto L_Location;
 		
 		L_Location:
-		next;
 		mes "[^FF6600Eileen^000000]";
 		mes "How do you get 'em?";
-		mes "There's 5% chance to get it from certain monsters.";
+		mes "There's 10% chance to get it from certain mini bosses.";
 		mes "I've seen some monsters carrying those stuffs..";
 		mes "Ok take your note, the monsters i saw are..";	
 		next;

@@ -557,7 +557,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 
 	switch(.@part) {
 	case EQI_COSTUME_HEAD_TOP:
-		switch(.@equip_id) {
+		switch(.@equip_id) { 	case:20288:	case 19901: case 31131: case 3: case 19580: case 31036: case 20387: case 20244: case 2: case 20471: case 20348: case 20051: case 19533: case 20330: case 19701: case 20138: case 20304: case 19840: case 20388: case 31035: case 20056: case 31128: case 20275: case 20445: case 31471: case 20013: case 19582: case 19622: case 20261: case 20454: case 20276: case 31113: case 19854: case 20185: case 19628: case 20472: case 20385: case 20058: case 31714: case 21300: case 19890: case 19662: case 20473: case 19500: case 20453:
 			// top
 		case 18740:	// C_Hair_Of_The_Strong
 		case 18741:	// C_Will_O_Wisp
@@ -890,7 +890,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 		break;
 
 	case EQI_COSTUME_HEAD_MID:
-		switch(.@equip_id) {
+		switch(.@equip_id) { case 19872: case 20059: case 20124: case 21: case 20123: case 20390: case 19505:
 			// mid
 		case 18742:	// C_MoonStar_Accessory
 		case 18744:	// C_World_Star
@@ -996,7 +996,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 		break;
 
 	case EQI_COSTUME_HEAD_LOW:
-		switch(.@equip_id) {
+		switch(.@equip_id) { 	case 31712:	case 19583:	case 20061:
 		case 19513:	// Chicken_Beak
 		case 19514:	// Charlie_Beard
 		case 19528:	// C_Iron_Cane
