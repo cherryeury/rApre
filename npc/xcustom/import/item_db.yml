@@ -4804,8 +4804,8 @@ Body:
     EquipLevelMin: 70
     View: 158
     Script: |
-      bonus bDex,1;
-      bonus bInt,1;    
+      bonus bAgi,1;
+      bonus bLuk,1;    
   - Id: 18518
     AegisName: Ear_Of_Angel's_Wing_
     Name: Angel Wing Ears
@@ -4820,8 +4820,8 @@ Body:
     View: 158
     Script: |
     Script: |
-      bonus bDex,1;
-      bonus bInt,1;  
+      bonus bAgi,1;
+      bonus bLuk,1;  
   - Id: 5068
     AegisName: Ear_Of_Devil's_Wing
     Name: Evil Wing Ears
@@ -4835,7 +4835,7 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bAgi,1;     
+      bonus bInt,1;     
   - Id: 18519
     AegisName: Ear_Of_Devil's_Wing_
     Name: Evil Wing Ears
@@ -4850,7 +4850,7 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bAgi,1;
+      bonus bInt,1;
   - Id: 22132
     AegisName: Lighting_God's_Shoes
     Name: Lightning God's Shoes
@@ -5521,34 +5521,6 @@ Body:
       NoAuction: true
     Script: |
       getgroupitem(IG_Costamax4);   
-  - Id: 18766
-    AegisName: Enhanced_Helm_Of_Angel
-    Name: Enhanced Helm of Angel
-    Type: Armor
-    Buy: 20
-    Weight: 1600
-    Defense: 10
-    Slots: 1
-    Jobs:
-      All: true
-      Novice: false
-      SuperNovice: false
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 99
-    Refineable: true
-    View: 110
-    Script: |
-      bonus bDex,1;
-      bonus bInt,1;
-      bonus bMdef,3;
-      .@r = getrefine();
-      if (.@r>=7) {
-         bonus bInt,2;
-         bonus bDex,2;
-      }
-      if (.@r>=9)
-         bonus2 bAddClass,Class_All,2; 
   - Id: 5038
     AegisName: Deviruchi_Cap
     Name: Deviruchi Hat
@@ -5566,9 +5538,9 @@ Body:
     Refineable: true
     View: 123
     Script: |
-      bonus bStr,2;
-      bonus bInt,2;
-      bonus bFlee,3;
+      bonus bStr,1;
+      bonus bInt,1;
+      bonus bMdef,3;
   - Id: 5025
     AegisName: Helm_Of_Angel
     Name: Helm of Angel
@@ -5586,8 +5558,8 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bAgi,2;
-      bonus bLuk,2;
+      bonus bAgi,1;
+      bonus bLuk,1;
       bonus bMdef,3;      
   - Id: 5281
     AegisName: Deviruchi_Cap_C
@@ -5605,15 +5577,16 @@ Body:
     View: 123
     Script: |
       bonus bStr,1;
-      bonus bAgi,1;
+      bonus bInt,1;
       bonus bFlee,3;
       .@r = getrefine();
       if (.@r>6){
       bonus bStr,2;
-      bonus bAgi,2;
+      bonus bInt,2;
       }
       if (.@r>8){
-      bonus2 bAddClass,Class_All,2;
+      bonus2 bAddClass,Class_All,3;
+      bonus bMatkRate,3;
       }      
   - Id: 1162
     AegisName: Broad_Sword_

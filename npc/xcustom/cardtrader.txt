@@ -11,19 +11,19 @@
 //============================================================
 
 moc_para01,25,20,5	script	Card Trader	90,{
-	mes "[Cardy]";
+	mes "[^FF6600Cardy^000000]";
 	mes "Hi, "+strcharinfo(0)+"!";
 	mes "What can I do for you?";
 	next;
 	switch(select(" > Information: > Trade in cards: > Point shop (^0055FF"+getd(.Points$)+"^000000): > Leave")) {
 	case 1:
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "Do you find that you've got";
 		mes "useless cards lying around?";
 		mes "I'll be glad to take them off";
 		mes "your hands!";
 		next;
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "I'll give you ^0055FF"+.Points[0]+" Point"+((.Points[0] == 1)?"":"s")+"^000000 for each";
 		mes "card you give me, and";
 		mes "^0055FF"+.Points[1]+" Points^000000 for MVP cards.";
@@ -33,7 +33,7 @@ moc_para01,25,20,5	script	Card Trader	90,{
 		emotion ET_MONEY;
 		close;
 	case 2:
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "Select the cards you";
 		mes "want to trade in.";
 		if (.Level) {
@@ -47,13 +47,13 @@ moc_para01,25,20,5	script	Card Trader	90,{
 		npcshopattach "card_shop";
 		end;
 	case 3:
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "You have ^0055FF"+getd(.Points$)+"^000000 Point"+((getd(.Points$) == 1)?".":"s.");
 		callshop "card_shop",1;
 		npcshopattach "card_shop";
 		end;
 	case 4:
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "*yawn*";
 		mes "See you later!";
 		emotion ET_SLEEPY;
@@ -89,7 +89,7 @@ OnSellItem:
 	mes "---------- Total: ^0055FF"+.@card_total+" pt.^000000 -------";
 	next;
 	if(select(" > ^0055FFComplete trade...^000000: > ^777777Cancel^000000") == 2) {
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "Oh, okay...";
 		emotion ET_SCRATCH;
 		close;
@@ -97,7 +97,7 @@ OnSellItem:
 	for(set .@i,0; .@i<getarraysize(.@card_id); set .@i,.@i+1)
 		delitem .@card_id[.@i],.@card_amt[.@i];
 	set #CASHPOINTS, #CASHPOINTS +.@card_total;
-	mes "[Cardy]";
+	mes "[^FF6600Cardy^000000]";
 	mes "All done!";
 	emotion ET_DELIGHT;
 	close;
@@ -110,7 +110,7 @@ OnBuyItem:
 				break;
 			}
 	if (.@cost > getd(.Points$)) {
-		mes "[Cardy]";
+		mes "[^FF6600Cardy^000000]";
 		mes "You don't have enough Points.";
 		emotion ET_HUK;
 	}
@@ -123,7 +123,7 @@ OnBuyItem:
 		mes " ";
 		mes "---------- Total: ^0055FF"+.@cost+" pt.^000000 -------";
 			if(select(" > ^0055FFComplete trade...^000000: > ^777777Cancel^000000") == 2) {
-				mes "[Cardy]";
+				mes "[^FF6600Cardy^000000]";
 				mes "Oh, okay...";
 				emotion ET_SCRATCH;
 				close;
