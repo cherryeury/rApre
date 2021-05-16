@@ -75,7 +75,7 @@ function Add; function Chk; function Slot; function A_An;
 	mes "[^FF6600Reno^000000]";
 	mes "Hi? I am ^FF6600Reno^000000 from the Energy Crystal Research Association, or ECRA.";
 	next;
-	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Headgear")) {
+	switch(select("ECRA?:Quest to get Energy Crystals:Energy Crystal Buffs:Compress Energy Crystals:Exchange Crystals for Equipments")) {
 	case 1:
 		mes "[^FF6600Reno^000000]";
 		mes "ECRA is the institute that researches '^0000FFEnergy Crystals^000000' that shall be used as an alternative energy source in the Rune-Midgarts Kingdom, which suffers from a shortage of energy.";
@@ -604,6 +604,7 @@ OnInit:
 // Shop number corresponds with order above (default is 1).
 // Note: Do NOT use a reward item more than once!
 	
+	Add(1,15040,1,1,0,5049,1,6623,100); // prison
 	Add(1,18760,1,1,0,5027,1,6623,100); // mage hat
 	Add(1,18761,1,1,0,5045,1,6623,100); // magician hat
 	Add(1,18762,1,1,0,5069,1,6623,100); // kitsune
@@ -612,8 +613,7 @@ OnInit:
 	Add(1,18769,1,1,0,5167,1,6623,100); // Munak
 	Add(1,18770,1,1,0,5168,1,6623,100); // Bongun
 	Add(1,18771,1,1,0,5043,1,6623,100); // Opera
-	
-		
+			
 	Add(2,18772,1,1,0,2296,1,6624,200); // Bino
 	Add(2,18773,1,1,0,5014,1,6624,200); // Fin
 	Add(2,18774,1,1,0,5096,1,6624,200); // Assassin
@@ -626,6 +626,7 @@ OnInit:
 	Add(3,20710,1,1,0,2521,1,6625,20); // Angelic Cardigan
 	Add(3,18776,1,1,0,5125,1,6625,20);	 // Angel's kiss
 	
+	Add(3,11,1,1,0,5160,1,6625,300);
 	Add(3,18766,1,1,0,5025,1,6625,300);
 	Add(3,5281,1,1,0,5038,1,6625,300);
 	Add(3,18765,1,1,0,5019,1,6625,300);

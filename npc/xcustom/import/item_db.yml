@@ -1494,7 +1494,7 @@ Body:
     Type: Armor
     Buy: 44000
     Weight: 600
-    Defense: 13
+    Defense: 10
     Jobs:
       Crusader: true
       Knight: true
@@ -1511,7 +1511,7 @@ Body:
     Type: Armor
     Buy: 44000
     Weight: 600
-    Defense: 13
+    Defense: 10
     Slots: 1
     Jobs:
       Crusader: true
@@ -1529,7 +1529,7 @@ Body:
     Type: Armor
     Buy: 12000
     Weight: 400
-    Defense: 7
+    Defense: 10
     Jobs:
       Alchemist: true
       Archer: true
@@ -1548,14 +1548,32 @@ Body:
     Refineable: true
     View: 14
     Script: |
-      bonus bBaseAtk,3;     
+      bonus bMaxHP,20;     
+  - Id: 5003
+    AegisName: Joker_Jester
+    Name: Joker Jester
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 89
+    Script: |
+      bonus bLuk,2;
+      bonus bMdef,5;
   - Id: 2227
     AegisName: Cap_
     Name: Cap
     Type: Armor
     Buy: 12000
     Weight: 400
-    Defense: 7
+    Defense: 10
     Slots: 1
     Jobs:
       Alchemist: true
@@ -1575,14 +1593,14 @@ Body:
     Refineable: true
     View: 14      
     Script: |
-      bonus bBaseAtk,3;  
+      bonus bMaxHP,20;     
   - Id: 5032
     AegisName: Picnic_Hat
     Name: Sunday Hat
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 20
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -1592,8 +1610,8 @@ Body:
     Refineable: true
     View: 117
     Script: |
-      bonus bMaxHP,100; 
-      bonus bMaxSP,20;
+      bonus bMaxHP,120;
+      bonus bMaxSP,120;
   - Id: 2230
     AegisName: Gemmed_Sallet
     Name: Gemmed Sallet
@@ -1645,13 +1663,16 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 97    
     Script: |
-      bonus bHit,6;   
+      bonus2 bAddRace,RC_Brute,2;   
+      bonus2 bAddRace,RC_DemiHuman,2;   
+      bonus2 bAddRace,RC_Plant,2;   
+      bonus2 bAddRace,RC_Insect,2;   
   - Id: 2251
     AegisName: Holy_Bonnet
     Name: Monk Hat
@@ -1668,15 +1689,14 @@ Body:
     Refineable: true
     View: 35
     Script: |
-      bonus bMdef,2;
-      bonus2 bSubEle,Ele_Dark,3;
+      bonus bMdef,3;
   - Id: 2299
     AegisName: Viking_Helm
     Name: Orc Helm
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 9
+    Defense: 0
     Jobs:
       Alchemist: true
       Assassin: true
@@ -1699,7 +1719,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 9
+    Defense: 0
     Slots: 1
     Jobs:
       Alchemist: true
@@ -1723,7 +1743,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -1734,7 +1754,43 @@ Body:
     Refineable: true
     View: 115
     Script: |
-      bonus2 bAddEffWhenHit,Eff_Freeze,300;  
+      bonus2 bAddEffWhenHit,Eff_Freeze,400;  
+  - Id: 2277
+    AegisName: Nurse_Cap
+    Name: Nurse Cap
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 5
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 64
+    Script: |
+      bonus bInt,1;      
+  - Id: 5127
+    AegisName: Morrigane's_Helm
+    Name: Morrigane's Helm
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 61
+    Refineable: true
+    View: 257
+    Script: |
+      bonus bLuk,2;
+      bonus bBaseAtk,3;      
   - Id: 5037
     AegisName: Fruit_Shell
     Name: Nut Shell
@@ -1745,7 +1801,25 @@ Body:
     Locations:
       Head_Top: true
     EquipLevelMin: 5
-    View: 122      
+    View: 122    
+  - Id: 5126
+    AegisName: Morpheus's_Hood
+    Name: Morpheus's Hood
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Defense: 5
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 33
+    Refineable: true
+    View: 256
+    Script: |
+      bonus bInt,2;    
   - Id: 5158
     AegisName: Holy_Bonnet_
     Name: Monk Hat
@@ -1763,8 +1837,7 @@ Body:
     Refineable: true
     View: 35
     Script: |
-      bonus bMdef,3;
-      bonus2 bSubEle,Ele_Dark,3;     
+      bonus bMdef,3;   
   - Id: 2210
     AegisName: Hair_Band
     Name: Hair Band
@@ -1777,32 +1850,46 @@ Body:
     View: 9      
     Script: |
       bonus bMaxSPrate,1;   
+  - Id: 5083
+    AegisName: Red_Tailed_Ribbon
+    Name: Red Ribbon
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 0
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 45
+    Refineable: true
+    View: 167
+    Script: |
+      bonus bMdef,11;      
   - Id: 2293
     AegisName: Pretend_Murdered
     Name: Pretend Murdered
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     View: 80      
     Script: |
-      bonus bFlee2,3;
+      bonus bFlee2,2;
   - Id: 5109
     AegisName: Red_Bonnet
     Name: Red Bonnet
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 4
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 190      
     Script: |
-      bonus bMaxHP,150;
-      bonus bMaxSP,30;
+      bonus bMaxHP,120;
+      bonus bMaxSP,120;
   - Id: 5108
     AegisName: Detective_Hat
     Name: Renown Detective's Cap
@@ -1882,22 +1969,96 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      bonus bStr,1;     
+      bonus bStr,1;    
+  - Id: 2292
+    AegisName: Welding_Mask
+    Name: Welding Mask
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 10
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    EquipLevelMin: 50
+    View: 79
+    Script: |
+      bonus2 bSubEle,Ele_Fire,10; 
+  - Id: 5121
+    AegisName: Zherlthsh_Mask
+    Name: Zealotus Mask
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 15
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 200
+    Script: |
+      bonus2 bAddRace,RC_DemiHuman,5;
+      bonus2 bAddRace,RC_Player_Human,5;
+      bonus2 bSubRace,RC_DemiHuman,5;
+      bonus2 bSubRace,RC_Player_Human,5;      
+  - Id: 5115
+    AegisName: Winter_Hat
+    Name: Winter Hat
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 0
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 196
+    Script: |
+      bonus bVit,2;
+      bonus2 bResEff,Eff_Freeze,1000;      
+  - Id: 18775
+    AegisName: Improved_Welding_Mask
+    Name: Advanced Welding Mask
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 10
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    EquipLevelMin: 50
+    View: 79
+    Script: |
+      bonus2 bSubEle,Ele_Fire,10;
+      bonus bDex,5;
+      bonus bLuk,5;      
   - Id: 5059
     AegisName: Brown_Bear_Cap
     Name: Teddybear Hat
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 0
     Locations:
       Head_Top: true
     EquipLevelMin: 50
     Refineable: true
     View: 143   
     Script: |
-      bonus bBaseAtk,14; 
-      bonus bSPDrainValue,-1;
+      bonus bBaseAtk,12; 
+      bonus bLuk,1;
   - Id: 13990
     AegisName: Job_Manual50_Box
     Name: JOB Battle Manual Box
@@ -1923,13 +2084,13 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 161      
     Script: |
-      bonus bMaxSP,35;     
+      bonus bMaxSP,25;     
   - Id: 5078
     AegisName: Sea_Otter_Cap
     Name: Sea-Otter Hat
@@ -1943,40 +2104,154 @@ Body:
     Refineable: true
     View: 162
     Script: |
-      bonus bVit,1;      
+      bonus bVit,1;   
+  - Id: 18761
+    AegisName: Remodel_Magician_Hat
+    Name: Improved Magician Hat
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 130
+    Script: |
+      bonus bDex,1;
+      bonus bAgi,1;
+      bonus bMaxSP,50;
+      .@r = getrefine();
+      bonus bMaxSP,.@r*5;
+      if (.@r>=7)
+         bonus bDex,.@r-6;      
+  - Id: 5045
+    AegisName: Magician_Hat
+    Name: Magician Hat
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 10
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 130
+    Script: |
+      bonus bDex,1;
+      bonus bAgi,1;
+      bonus bMaxSP,50;      
+  - Id: 18760
+    AegisName: Remodel_Wizardry_Hat
+    Name: Improved Mage Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 112
+    Script: |
+      bonus bInt,2;
+      bonus bMaxSP,150;
+      .@r = getrefine();
+      bonus bMatk,.@r;
+      if (.@r>=7)
+         bonus bInt,.@r-6;      
+  - Id: 5027
+    AegisName: Wizardry_Hat
+    Name: Mage Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 112
+    Script: |
+      bonus bInt,2;
+      bonus bMaxSP,150;      
   - Id: 2259
     AegisName: Mini_Propeller
     Name: Mini Propeller
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 2
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 46      
     Script: |
-      bonus bFlee2,5;       
+      bonus bFlee2,4;       
   - Id: 2213
     AegisName: Cat_Hairband
     Name: Kitty Band
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 2   
     Script: |
       bonus bFleeRate,2;    
+  - Id: 5122
+    AegisName: Magni_Cap
+    Name: Magni's Cap
+    Type: Armor
+    Buy: 30000
+    Weight: 1000
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 250
+    Script: |
+      bonus bStr,2;      
   - Id: 2245
     AegisName: Sweet_Gents
     Name: Sweet Gent
     Type: Armor
     Buy: 15000
     Weight: 400
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -1986,28 +2261,46 @@ Body:
     Refineable: true
     View: 29      
     Script: |
-      bonus bFlee,2;
-      bonus bMaxSP,10;
+      bonus bFlee,6;
+      bonus bMdef,3;
+  - Id: 2252
+    AegisName: Star_Sparkling
+    Name: Wizard Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 36
+    Script: |
+      bonus bMaxSP,100;      
   - Id: 2257
     AegisName: Snowy_Horn
     Name: Unicorn Horn
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 4
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 42
     Script: |
-      bonus2 bIgnoreMdefClassRate,Class_All,1;  
+      bonus bMaxHP,100;  
   - Id: 2248
     AegisName: Western_Grace
     Name: Western Grace
     Type: Armor
     Buy: 15000
     Weight: 400
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2017,23 +2310,23 @@ Body:
     Refineable: true
     View: 32      
     Script: |
-      bonus bBaseAtk,4;
-      bonus bFlee,2;
+      bonus bBaseAtk,3;
+      bonus bFlee,3;
   - Id: 5075
     AegisName: Cowboy_Hat
     Name: Cowboy Hat
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 8
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 159
     Script: |
-      bonus bBaseAtk,4;
-      bonus bFlee,2;
-      bonus2 bSubDefEle,Ele_Neutral,1;
+      bonus bBaseAtk,6;
+      bonus bFlee,3;
+      bonus bHit,6;
   - Id: 5110
     AegisName: Baby_Pacifier
     Name: Baby Pacifier
@@ -2062,13 +2355,13 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 166
     Script: |
-      bonus2 bResEff,Eff_DPoison,3000;
+      bonus2 bResEff,Eff_DPoison,2500;
   - Id: 1223
     AegisName: Forturn_Sword
     Name: Fortune Sword
@@ -2126,13 +2419,26 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_Dragon;
       bonus2 bAddRace,RC_Dragon,15;      
+  - Id: 2214
+    AegisName: Bunny_Band
+    Name: Bunny Band
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 0
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 15
+    Script: |
+      bonus bLuk,2;      
   - Id: 5057
     AegisName: Ear_Of_Black_Cat
     Name: Black Cat Ears
     Type: Armor
     Buy: 16000
     Weight: 200
-    Defense: 4
+    Defense: 0
     Locations:
       Head_Top: true
     EquipLevelMin: 45
@@ -2146,7 +2452,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2181,7 +2487,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 32
+    Defense: 5
     Jobs:
       All: true
       Novice: false
@@ -2190,26 +2496,29 @@ Body:
       Head_Top: true
     Refineable: true
     View: 71      
+    Script: |
+      bonus2 bSubRace,RC_Brute,5;        
   - Id: 5010
     AegisName: Indian_Hair_Piece
     Name: Indian Fillet
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 96 
     Script: |
-      bonus bHitRate,1;      
+      bonus bHitRate,1;
+      bonus bHit,1;
   - Id: 2256
     AegisName: Magestic_Goat
     Name: Majestic Goat
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 9
+    Defense: 0
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -2231,7 +2540,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 9
+    Defense: 0
     Slots: 1
     Jobs:
       Alchemist: true
@@ -2254,12 +2563,12 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Top: true
     View: 85      
     Script: |
-      bonus bHit,4;       
+      bonus bBaseAtk,3;       
   - Id: 5042
     AegisName: Hair_Protector
     Name: Bao Bao
@@ -2276,27 +2585,38 @@ Body:
     Refineable: true
     View: 127
     Script: |
-      bonus bFlee2Rate,10; 
+      bonus bLuk,2;
+      bonus bCritical,3;
   - Id: 2279
     AegisName: Bomb_Wick
     Name: Bomb Wick
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 2
+    Defense: 0
     Locations:
       Head_Top: true
     View: 66
     Script: |
-      bonus bMaxHPrate,-1;
-      bonus bLuk,1;
+      bonus2 bExpAddRace,RC_Plant,2;
+  - Id: 5037
+    AegisName: Fruit_Shell
+    Name: Nut Shell
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Defense: 15
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 5
+    View: 122      
   - Id: 2246
     AegisName: Golden_Gear
     Name: Golden Gear
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 40
+    Defense: 30
     Jobs:
       All: true
       Novice: false
@@ -2314,7 +2634,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 40
+    Defense: 30
     Slots: 1
     Jobs:
       All: true
@@ -2394,27 +2714,27 @@ Body:
     Type: Armor
     Buy: 6000
     Weight: 300
-    Defense: 6
+    Defense: 5
     Locations:
       Head_Top: true
     Refineable: true
     View: 195
     Script: |
-      bonus bHit,7;    
+      bonus bHit,5;    
   - Id: 5120
     AegisName: Fedora_
     Name: Bucket Hat
     Type: Armor
     Buy: 6000
     Weight: 300
-    Defense: 6
+    Defense: 5
     Slots: 1
     Locations:
       Head_Top: true
     Refineable: true
     View: 195    
     Script: |
-      bonus bHit,7;    
+      bonus bHit,5;    
   - Id: 2216
     AegisName: Biretta
     Name: Biretta
@@ -2452,7 +2772,7 @@ Body:
     Type: Armor
     Buy: 15000
     Weight: 200
-    Defense: 3
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2469,7 +2789,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -2480,14 +2800,16 @@ Body:
     Refineable: true
     View: 98
     Script: |
-      bonus bMatkRate,2;
+      bonus bMaxHP,50;
+      bonus bMaxSP,10;
+      bonus bInt,1; 
   - Id: 5035
     AegisName: Poring_Hat
     Name: Poring Hat
     Type: Armor
     Buy: 20
     Weight: 700
-    Defense: 3
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2505,20 +2827,47 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 199      
     Script: |
-      bonus bCritical,3;  
+      bonus bCritAtkRate,5; 
+  - Id: 2208
+    AegisName: Ribbon
+    Name: Ribbon
+    Type: Armor
+    Buy: 800
+    Weight: 100
+    Defense: 0
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 17
+    Script: |
+      bonus bMdef,3;
+  - Id: 2209
+    AegisName: Ribbon_
+    Name: Ribbon
+    Type: Armor
+    Buy: 800
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 17
+    Script: |
+      bonus bMdef,3;      
   - Id: 5008
     AegisName: Puppy_Love
     Name: Puppy Love
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2528,7 +2877,6 @@ Body:
     View: 94
     Script: |
       bonus bMagicDamageReturn,5;
-      bonus bMdef,3;
   - Id: 5080
     AegisName: Headgear_Of_Queen
     Name: Crown of Ancient Queen
@@ -2542,14 +2890,15 @@ Body:
     Refineable: true
     View: 164
     Script: |
-      bonus bMagicHPGainValue,75;
+      bonus bMdef,5;
+      bonus bMagicDamageReturn,3;
   - Id: 5171
     AegisName: Valkyrie_Helm
     Name: Valkyrie Helm
     Type: Armor
     Buy: 100000
     Weight: 1000
-    Defense: 10
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -2562,15 +2911,28 @@ Body:
     Refineable: true
     View: 225
     Script: |
-      bonus bMdef,5;
-      bonus bAllStats,1;
+      bonus bMdef,20;
+      bonus bMaxHP,600;
+  - Id: 5028
+    AegisName: Candle
+    Name: Candle
+    Type: Armor
+    Buy: 20
+    Weight: 150
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 113
+    Script: |
+      bonus3 bAutoSpellWhenHit,"AL_HEAL",1,50;    
   - Id: 5094
     AegisName: Orc_Hero_Helm
     Name: Helmet of Orc Hero
     Type: Armor
     Buy: 500000
     Weight: 900
-    Defense: 50
+    Defense: 0
+    Slots: 1
     Jobs:
       All: true
       Novice: false
@@ -2583,8 +2945,8 @@ Body:
     View: 178
     Script: |
       bonus bStr,2;
-      bonus bVit,1;      
-      bonus bMaxHPRate,10;
+      bonus bVit,2;  
+      bonus bShortAtkRate,10;
   - Id: 5073
     AegisName: Cap_Of_Concentration
     Name: Model Training Hat
@@ -2608,7 +2970,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 2
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2619,8 +2981,10 @@ Body:
     Refineable: true
     View: 165
     Script: |
-      bonus bUseSPRate,6;
-      bonus bUnbreakableHelm;      
+      bonus bInt,2;
+      bonus bMaxSP,100;
+      bonus bMdef,5;
+      bonus bUnbreakableHelm;
   - Id: 5079
     AegisName: Crossed_Hair_Band
     Name: X Hairpin
@@ -2633,7 +2997,9 @@ Body:
     Refineable: true
     View: 163      
     Script: |
-      bonus bMaxSPRate,3; 
+      bonus2 bSubEle,Ele_Ghost,3;
+      bonus bFlee,3;
+      bonus bAgi,1;
   - Id: 5063
     AegisName: Plaster
     Name: Giant Band Aid
@@ -2650,14 +3016,14 @@ Body:
     Refineable: true
     View: 147      
     Script: |
-      bonus bHPrecovRate,15;    
+      bonus bHPrecovRate,25;    
   - Id: 2247
     AegisName: Oldman's_Romance
     Name: Romantic Gent
     Type: Armor
     Buy: 15000
     Weight: 400
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2667,15 +3033,15 @@ Body:
     Refineable: true
     View: 31      
     Script: |
-      bonus bMdef,1;
-      bonus bFlee,2;
+      bonus bMdef,3;
+      bonus bFlee,3;
   - Id: 2258
     AegisName: Sharp_Gear
     Name: Spiky Band
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 12
+    Defense: 0
     Jobs:
       Acolyte: true
       Alchemist: true
@@ -2697,7 +3063,7 @@ Body:
     Refineable: true
     View: 43      
     Script: |
-      bonus bShortWeaponDamageReturn,5;   
+      bonus bShortWeaponDamageReturn,2;   
   - Id: 5782
     AegisName: Hoplite_Helmet
     Name: Hoplite Helmet
@@ -2721,7 +3087,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 12
+    Defense: 0
     Slots: 1
     Jobs:
       Acolyte: true
@@ -2744,14 +3110,14 @@ Body:
     Refineable: true
     View: 43      
     Script: |
-      bonus bShortWeaponDamageReturn,5;
+      bonus bShortWeaponDamageReturn,2;
   - Id: 5141
     AegisName: Marionette_Doll
     Name: Marionette Doll
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 1
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -2829,7 +3195,7 @@ Body:
     Type: Armor
     Buy: 8500
     Weight: 400
-    Defense: 28
+    Defense: 15
     Jobs:
       Novice: true
       SuperNovice: true
@@ -2846,7 +3212,7 @@ Body:
     Type: Armor
     Buy: 8500
     Weight: 400
-    Defense: 28
+    Defense: 15
     Slots: 1
     Jobs:
       Novice: true
@@ -3096,28 +3462,91 @@ Body:
     View: 84      
     Script: |
       bonus2 bAddRace,RC_Brute,2; 
+  - Id: 5071
+    AegisName: Indian_Headband
+    Name: Indian Headband
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 155
+    Script: |
+      bonus bDex,3;      
+  - Id: 5117
+    AegisName: Mistic_Rose
+    Name: Mystic Rose
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 198
+    Script: |
+      bonus2 bSubRace,RC_Plant,5;      
+  - Id: 5070
+    AegisName: Headband_Of_Power
+    Name: Hot-blooded Headband
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 5
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 154
+    Script: |
+      bonus bStr,2;      
   - Id: 2283
     AegisName: Ear_Mufs
     Name: Ear Muffs
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 4
+    Defense: 5
     Locations:
       Head_Top: true
     Refineable: true
     View: 70
     Script: |
-      bonus2 bAddClass,Class_All,1;
-      bonus bMatkRate,1;
-      bonus2 bResEff,Eff_Curse,1000;  
+      bonus2 bResEff,Eff_Curse,1500;  
+  - Id: 5170
+    AegisName: Feather_Beret
+    Name: Feather Beret
+    Type: Armor
+    Buy: 30000
+    Weight: 600
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 224
+    Script: |
+      bonus bMdef,1;
+      bonus2 bSubRace,RC_DemiHuman,10;
+      bonus2 bSubRace,RC_Player_Human,10;      
   - Id: 5001
     AegisName: Headset
     Name: Headset
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 6
+    Defense: 5
     Jobs:
       All: true
       Novice: false
@@ -3128,8 +3557,7 @@ Body:
     Refineable: true
     View: 87
     Script: |
-      bonus2 bAddClass,Class_All,1;
-      bonus bMatkRate,1;    
+      bonus2 bResEff,Eff_Curse,1000;    
   - Id: 5088
     AegisName: Goblin_Mask_02
     Name: Surprised Mask
@@ -3256,7 +3684,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 4
+    Defense: 0
     Jobs:
       Crusader: true
       Knight: true
@@ -3286,7 +3714,7 @@ Body:
       Head_Low: true
     View: 49
     Script: |
-      bonus2 bResEff,Eff_Confusion,1500; 
+      bonus bBaseAtk,2; 
   - Id: 2241
     AegisName: Granpa_Beard
     Name: Grampa Beard
@@ -3345,7 +3773,7 @@ Body:
     EquipLevelMin: 45
     View: 169
     Script: |
-      bonus bFlee,3;
+      bonus bFlee,4;
   - Id: 19781
     AegisName: C_Ear_Of_Angel's_Wing_
     Name: Costume Angel Wing Ears
@@ -3505,7 +3933,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 27
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3519,14 +3947,14 @@ Body:
       bonus bStr,1;
       bonus bInt,1;
       bonus bLuk,1;
-      bonus bMdef,4;      
+      bonus bMdef,5;      
   - Id: 5002
     AegisName: Gemmed_Crown
     Name: Jewel Crown
     Type: Armor
     Buy: 20
     Weight: 600
-    Defense: 39
+    Defense: 0
     Jobs:
       Alchemist: true
       Assassin: true
@@ -3545,14 +3973,34 @@ Body:
     Script: |
       bonus bInt,2;
       bonus bLuk,1;
-      bonus bMdef,3;      
+      bonus bMdef,5;     
+  - Id: 5123
+    AegisName: Ulle_Cap
+    Name: Ulle's Cap
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 0
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 254
+    Script: |
+      bonus bDex,2;
+      bonus bAgi,1;      
   - Id: 2234
     AegisName: Tiara
     Name: Tiara
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 7
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3570,7 +4018,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 7
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -3589,20 +4037,21 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 81      
     Script: |
-      bonus2 bSubEle,Ele_Ghost,4; 
+      bonus2 bSubEle,Ele_Ghost,3;
+      bonus bFlee,3;
   - Id: 5061
     AegisName: Flower_Hairpin
     Name: Flower Hairpin
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 10
     Locations:
       Head_Top: true
     Refineable: true
@@ -3615,12 +4064,13 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 59
     Script: |
+      bonus bLuk,-2;
       .@r = getrefine();
       if (.@r>6){
       bonus bNoKnockback;
@@ -3631,7 +4081,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 27
+    Defense: 10
     Jobs:
       All: true
       Novice: false
@@ -3643,13 +4093,48 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus bUnbreakableHelm;
+  - Id: 2287
+    AegisName: Pirate_Bandana
+    Name: Pirate Bandana
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 5
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 74
+    Script: |
+      bonus bStr,1;   
+  - Id: 5350
+    AegisName: Pirate_Bandana_
+    Name: Pirate Bandana
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 5
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 74
+    Script: |
+      bonus bStr,1;      
   - Id: 5012
     AegisName: Ph.D_Hat
     Name: Ph.D Hat
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3659,14 +4144,16 @@ Body:
     Refineable: true
     View: 98      
     Script: |
-      bonus bMatkRate,2;   
+      bonus bMaxHP,50;
+      bonus bMaxSP,10;
+      bonus bInt,1;   
   - Id: 5348
     AegisName: Big_Sis'_Ribbon_
     Name: Big Ribbon
     Type: Armor
     Buy: 15000
     Weight: 200
-    Defense: 3
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -3684,7 +4171,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 3
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3695,7 +4182,7 @@ Body:
     Refineable: true
     View: 111
     Script: |
-      bonus2 bAddMonsterDropItem,539,200;
+      bonus2 bAddMonsterDropItem,539,300;
   - Id: 18533
     AegisName: Honeybee_Hat
     Name: Honey Bee Hat
@@ -3734,13 +4221,13 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
+    Defense: 10
     Locations:
       Head_Top: true
     Refineable: true
     View: 132 
     Script: |
-      bonus bMaxHPRate,2;
-      bonus bMaxSPRate,1;
+      bonus bMaxHPRate,5;
   - Id: 5041
     AegisName: Heart_Hair_Pin
     Name: Heart Hairpin
@@ -3752,7 +4239,7 @@ Body:
     Refineable: true
     View: 126
     Script: |
-      bonus bMaxHPRate,2;
+      bonus bMaxHPRate,4;
   - Id: 5047
     AegisName: Fashion_Sunglass
     Name: Fashionable Glasses
@@ -3768,14 +4255,74 @@ Body:
     Refineable: true
     View: 131
     Script: |
-      bonus bHitRate,2;
+      bonus bLuk,3;
+  - Id: 5084
+    AegisName: Lazy_Raccoon
+    Name: Lazy Smokie
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 168
+    Script: |
+      bonus2 bResEff,Eff_Sleep,10000;  
+  - Id: 5031
+    AegisName: Mine_Helm
+    Name: Mine Hat
+    Type: Armor
+    Buy: 20
+    Weight: 1500
+    Defense: 10
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 116
+    Script: |
+      bonus bMdef,3;
+      bonus bUnbreakableHelm;
+      bonus3 bAutoSpellWhenHit,"AL_HEAL",1,50;  
+  - Id: 5065
+    AegisName: Fish_On_Head
+    Name: Blue Fish
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 0
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 149
+    Script: |
+      bonus2 bAddRace,RC_Fish,12;      
   - Id: 2273
     AegisName: Doctor_Cap
     Name: Doctor Band
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3785,14 +4332,32 @@ Body:
     Refineable: true
     View: 60
     Script: |
-      bonus bHealPower,4; 
+      bonus bHealPower,3; 
+  - Id: 5058
+    AegisName: Drooping_Kitty
+    Name: Drooping Cat
+    Type: Armor
+    Buy: 250000
+    Weight: 500
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 142
+    Script: |
+      bonus bMdef,15;
+      bonus2 bResEff,Eff_Curse,3000;      
   - Id: 5064
     AegisName: Leaf_Headgear
     Name: Smokie Leaf
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
@@ -3823,7 +4388,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1200
-    Defense: 8
+    Defense: 0
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -3841,20 +4406,20 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 8
+    Defense: 10
     Locations:
       Head_Top: true
     EquipLevelMin: 19
     View: 124
     Script: |
-      bonus2 bSubSize,Size_Small,6;
+      bonus2 bSubSize,Size_Small,5;
   - Id: 5029
     AegisName: Spore_Hat
     Name: Spore Hat
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 6
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3865,35 +4430,35 @@ Body:
     Refineable: true
     View: 114
     Script: |
-      bonus2 bAddEff,Eff_Poison,300;
+      bonus2 bAddEff,Eff_Poison,2500;
   - Id: 5050
     AegisName: Mystery_Fruit_Shell
     Name: Wonder Nutshell
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 20
+    Defense: 10
     Locations:
       Head_Top: true
     EquipLevelMin: 30
     View: 134      
     Script: |
       bonus bVit,1;
-      bonus bFlee,4;
+      bonus bFlee,5;
   - Id: 5062
     AegisName: Straw_Hat
     Name: Straw Hat
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 6
+    Defense: 0
     Locations:
       Head_Top: true
     EquipLevelMin: 50
     Refineable: true
     View: 146
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,2;
       bonus2 bResEff,Eff_Confusion,2000;
   - Id: 5067
     AegisName: Sombrero
@@ -3901,7 +4466,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 350
-    Defense: 8
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3911,9 +4476,9 @@ Body:
     Refineable: true
     View: 151
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,2;
       bonus2 bResEff,Eff_Confusion,2000;
-      bonus bHPrecovRate,4;
+      bonus bHPrecovRate,10;
   - Id: 5091
     AegisName: Big_Golden_Bell
     Name: Decorative Golden Bell
@@ -3932,20 +4497,20 @@ Body:
     Refineable: true
     View: 175      
     Script: |
-      bonus bMdef,20;    
+      bonus bMagicAtkDef,10;   
   - Id: 5076
     AegisName: Fur_Hat
     Name: Beanie
     Type: Armor
     Buy: 20
     Weight: 350
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 160
     Script: |
-      bonus2 bAddClass,Class_All,1;
+      bonus bAgi,1;
       bonus bLuk,1;      
   - Id: 5033
     AegisName: Smokie_Hat
@@ -3964,7 +4529,7 @@ Body:
     Refineable: true
     View: 118
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,2;
       bonus bFlee2,2;
   - Id: 5043
     AegisName: Opera_Ghost_Mask
@@ -4039,13 +4604,26 @@ Body:
     Script: |
       bonus3 bAddMonsterDropItem,551,RC_Fish,300;
       bonus3 bAddMonsterDropItem,544,RC_Fish,300;
+  - Id: 2280
+    AegisName: Sahkkat
+    Name: Sakkat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 0
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 67
+    Script: |
+      bonus bAgi,2;      
   - Id: 5018
     AegisName: Feather_Bonnet
     Name: Feather Bonnet
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 8
+    Defense: 0
     Jobs:
       Archer: true
       BardDancer: true
@@ -4056,7 +4634,8 @@ Body:
     View: 104
     Script: |
       bonus bAgi,1;
-      bonus bMdef,2;
+      bonus bMdef,3;
+      bonus bFlee,3;
   - Id: 5034
     AegisName: Light_Bulb_Band
     Name: Bulb Band
@@ -4072,7 +4651,10 @@ Body:
     Refineable: true
     View: 119
     Script: |
-      bonus2 bAddEff,Eff_Blind,300;   
+      bonus2 bSubEle,Ele_Dark,10;
+      skill "MG_SIGHT",1;
+    UnEquipScript: |
+      sc_end SC_SIGHT;  
   - Id: 5049
     AegisName: Stripe_Band
     Name: Striped Hairband
@@ -4091,26 +4673,27 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 150
-    Defense: 2
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 136
     Script: |
-      bonus2 bAddEff,Eff_Blind,300; 
+      bonus bLongAtkDef,3;
+      bonus bDex,1;
   - Id: 5024
     AegisName: Hat_Of_Cake
     Name: Cake Hat
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 2
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 109
     Script: |
-      bonus bAddItemHealRate,10;   
+      bonus bAddItemHealRate,15;   
   - Id: 5040
     AegisName: Blush
     Name: Blush
@@ -4121,7 +4704,7 @@ Body:
       Head_Mid: true
     View: 125
     Script: |
-      bonus3 bAutoSpellWhenHit,"DC_WINKCHARM",1,10;
+      bonus3 bAutoSpellWhenHit,"DC_WINKCHARM",1,20;
   - Id: 2320
     AegisName: Formal_Suit
     Name: Formal Suit
@@ -4569,7 +5152,7 @@ Body:
     Type: Armor
     Buy: 1000
     Weight: 200
-    Defense: 2
+    Defense: 10
     Locations:
       Head_Top: true
     Refineable: true   
@@ -4580,14 +5163,12 @@ Body:
     Type: Armor
     Buy: 1000
     Weight: 200
-    Defense: 2
+    Defense: 10
     Slots: 1
     Locations:
       Head_Top: true
     Refineable: true
-    View: 16      
-    Script: |
-      bonus bSoftDef,3;      
+    View: 16           
   - Id: 2341
     AegisName: Full_Plate_Armor
     Name: Legion Plate Armor
@@ -4683,7 +5264,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -4710,7 +5291,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1200
-    Defense: 25
+    Defense: 10
     Slots: 1
     Jobs:
       Alchemist: true
@@ -4798,21 +5379,113 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Mid: true
     EquipLevelMin: 70
     View: 158
     Script: |
       bonus bAgi,1;
-      bonus bLuk,1;    
+      bonus bLuk,1;   
+  - Id: 5177
+    AegisName: Guardian_Lion_Mask
+    Name: Mythical Lion Mask
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 40
+    Refineable: true
+    View: 231
+    Script: |
+      if (BaseClass == Job_Taekwon) {
+         bonus bDex,3;
+         bonus bBaseAtk,2*getrefine();
+         bonus3 bAddEff,Eff_Stun,1000,ATF_SHORT;
+      }      
+  - Id: 5169
+    AegisName: Bride_Mask
+    Name: Bride Mask
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 40
+    Refineable: true
+    View: 223
+    Script: |
+      if (BaseClass == Job_Taekwon) {
+         bonus bLuk,3;
+         bonus bCritical,5;
+      }      
+  - Id: 5173
+    AegisName: Satto_Hat
+    Name: Magistrate Hat
+    Type: Armor
+    Buy: 30000
+    Weight: 400
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 60
+    Refineable: true
+    View: 227
+    Script: |
+      if (BaseClass == Job_Taekwon) {
+         bonus bAgi,2;
+         bonus bHPrecovRate,3;
+      }
+  - Id: 5174
+    AegisName: Ayam
+    Name: Ayam
+    Type: Armor
+    Buy: 30000
+    Weight: 400
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 60
+    Refineable: true
+    View: 228
+    Script: |
+      if (BaseClass == Job_Taekwon) {
+         bonus bInt,2;
+         bonus bSPrecovRate,3;
+      }      
+  - Id: 5176
+    AegisName: Hahoe_Mask
+    Name: Hahoe Mask
+    Type: Armor
+    Buy: 30000
+    Weight: 100
+    Defense: 0
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    EquipLevelMin: 30
+    View: 230
+    Script: |
+      if (BaseClass == Job_Taekwon) {
+         bonus bLuk,2;
+         bonus bFlee2,2;
+      }     
   - Id: 18518
     AegisName: Ear_Of_Angel's_Wing_
     Name: Angel Wing Ears
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Slots: 1
     Locations:
       Head_Mid: true
@@ -4828,7 +5501,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Locations:
       Head_Mid: true
     EquipLevelMin: 70
@@ -4842,7 +5515,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 3
+    Defense: 0
     Slots: 1
     Locations:
       Head_Mid: true
@@ -5547,7 +6220,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1600
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -5560,13 +6233,15 @@ Body:
     Script: |
       bonus bAgi,1;
       bonus bLuk,1;
-      bonus bMdef,3;      
+      bonus bMdef,3;
+      bonus bFlee,3;
   - Id: 5281
     AegisName: Deviruchi_Cap_C
-    Name: Refined Deviruchi Hat
+    Name: Modified Deviruchi Hat
     Type: Armor
-    Buy: 2
-    Defense: 10
+    Buy: 20
+    Weight: 1600
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -5578,6 +6253,7 @@ Body:
     Script: |
       bonus bStr,1;
       bonus bInt,1;
+      bonus bMdef,3;
       bonus bFlee,3;
       .@r = getrefine();
       if (.@r>6){
@@ -5585,8 +6261,8 @@ Body:
       bonus bInt,2;
       }
       if (.@r>8){
-      bonus2 bAddClass,Class_All,3;
-      bonus bMatkRate,3;
+      bonus2 bIgnoreMdefClassRate,Class_All,6;
+      bonus2 bIgnoreDefClassRate,Class_All,6;
       }      
   - Id: 1162
     AegisName: Broad_Sword_
@@ -5666,7 +6342,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 2
+    Defense: 10
     Slots: 1
     Jobs:
       All: true
@@ -6099,7 +6775,7 @@ Body:
     Type: Armor
     Buy: 7500
     Weight: 300
-    Defense: 6
+    Defense: 0
     Jobs:
       Acolyte: true
       Mage: true
@@ -6113,14 +6789,14 @@ Body:
     Refineable: true
     View: 18
     Script: |
-      bonus bMdef,4;
+      bonus bMdef,5;
   - Id: 2233
     AegisName: Circlet_
     Name: Circlet
     Type: Armor
     Buy: 7500
     Weight: 300
-    Defense: 6
+    Defense: 0
     Slots: 1
     Jobs:
       Acolyte: true
@@ -6135,7 +6811,7 @@ Body:
     Refineable: true
     View: 18
     Script: |
-      bonus bMdef,4;      
+      bonus bMdef,5;      
   - Id: 2
     AegisName: C_Coif_
     Name: Costume Coif
@@ -6180,27 +6856,69 @@ Body:
       bonus bMdef,5;
       bonus bAllStats,2;      
   - Id: 11
-    AegisName: Shadow_Ring_
-    Name: Shadow Ring
-    Type: Shadowgear
+    AegisName: Modified_Magestic_Goat_
+    Name: Modified Majestic Goat
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 0
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
     Locations:
-      Shadow_Right_Accessory: true
-      Shadow_Left_Accessory: true
-    EquipLevelMin: 90
+      Head_Top: true
     Refineable: true
+    View: 41
     Script: |
-      bonus bStr,2;     
+      bonus bStr,1; 
+      if (.@r>6){
+      bonus2 bIgnoreDefClassRate,Class_All,10;
+      }
+      if (.@r>8){
+      bonus2 bIgnoreDefClassRate,Class_All,10;
+      }            
   - Id: 12
-    AegisName: Shadow_Earring_
-    Name: Shadow Earring
-    Type: Shadowgear
+    AegisName: Modified_Sharp_Gear_
+    Name: Modified Spiky Band
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 0
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      StarGladiator: true
+      Swordman: true
+      Taekwon: true
+      Thief: true
     Locations:
-      Shadow_Right_Accessory: true
-      Shadow_Left_Accessory: true
-    EquipLevelMin: 90
+      Head_Top: true
+    EquipLevelMin: 50
     Refineable: true
+    View: 43      
     Script: |
-      bonus bInt,2;
+      bonus bShortWeaponDamageReturn,2; 
+      if (.@r>6){
+      bonus bDef,20;
+      }
+      if (.@r>8){
+      bonus bShortWeaponDamageReturn,4; 
+      }            
   - Id: 13
     AegisName: Shadow_Brooch_
     Name: Shadow Brooch
@@ -6316,7 +7034,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 25
+    Defense: 30
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -6337,7 +7055,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 25
+    Defense: 30
     Slots: 1
     Jobs:
       Alchemist: true
