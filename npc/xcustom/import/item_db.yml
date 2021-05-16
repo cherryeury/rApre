@@ -3016,7 +3016,7 @@ Body:
     Refineable: true
     View: 147      
     Script: |
-      bonus bHPrecovRate,25;    
+      bonus bHPrecovRate,35;    
   - Id: 2247
     AegisName: Oldman's_Romance
     Name: Romantic Gent
@@ -3137,7 +3137,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 7
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3414,7 +3414,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 3000
-    Defense: 25
+    Defense: 20
     Jobs:
       Crusader: true
       Knight: true
@@ -3432,7 +3432,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 3000
-    Defense: 25
+    Defense: 20
     Slots: 1
     Jobs:
       Crusader: true
@@ -3852,7 +3852,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 7
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -6234,7 +6234,6 @@ Body:
       bonus bAgi,1;
       bonus bLuk,1;
       bonus bMdef,3;
-      bonus bFlee,3;
   - Id: 5281
     AegisName: Deviruchi_Cap_C
     Name: Modified Deviruchi Hat
@@ -6254,7 +6253,6 @@ Body:
       bonus bStr,1;
       bonus bInt,1;
       bonus bMdef,3;
-      bonus bFlee,3;
       .@r = getrefine();
       if (.@r>6){
       bonus bStr,2;
@@ -6920,27 +6918,71 @@ Body:
       bonus bShortWeaponDamageReturn,4; 
       }            
   - Id: 13
-    AegisName: Shadow_Brooch_
-    Name: Shadow Brooch
-    Type: Shadowgear
+    AegisName: Modified_Tiara_
+    Name: Modified Tiara
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
     Locations:
-      Shadow_Right_Accessory: true
-      Shadow_Left_Accessory: true
-    EquipLevelMin: 90
+      Head_Top: true
+    EquipLevelMin: 45
     Refineable: true
+    View: 19
     Script: |
-      bonus bAgi,2;    
+      bonus bInt,1;  
+      if (.@r>6){
+      bonus bInt,2;
+      }
+      if (.@r>8){
+      bonus2 bIgnoreMDefClassRate,Class_All,10;
+      }                  
   - Id: 14
-    AegisName: Shadow_Bow_Thimble_
-    Name: Shadow Bow Thimble
-    Type: Shadowgear
+    AegisName: Modified_Crown_
+    Name: Modified Crown
+    Type: Armor
+    Buy: 20
+    Weight: 400
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
     Locations:
-      Shadow_Right_Accessory: true
-      Shadow_Left_Accessory: true
-    EquipLevelMin: 90
+      Head_Top: true
+    EquipLevelMin: 45
     Refineable: true
+    View: 45
     Script: |
-      bonus bLongAtkRate,3;       
+      bonus bInt,1;  
+      if (.@r>6){
+      bonus bInt,2;
+      }
+      if (.@r>8){
+      bonus2 bIgnoreMDefClassRate,Class_All,10;
+      }                     
+  - Id: 15
+    AegisName: Modified_Spinx_Helm_
+    Name: Modified Sphinx Hat
+    Type: Armor
+    Buy: 20
+    Weight: 3000
+    Defense: 20
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Head_Low: true
+      Head_Top: true
+    EquipLevelMin: 65
+    View: 137
+    Script: |
+      bonus bStr,5;      
   - Id: 19796
     AegisName: C_Bone_Helm
     Name: Costume Bone Helm
@@ -6950,7 +6992,6 @@ Body:
     Locations:
       Costume_Head_Top: true
     EquipLevelMin: 1
-    Refineable: true
   - Id: 19840
     AegisName: C_Helm_Of_Sun
     Name: Costume Hat of the Sun God

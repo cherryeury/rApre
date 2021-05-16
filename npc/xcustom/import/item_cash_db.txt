@@ -242,7 +242,7 @@
 //3,20800,1000
 
 // Armor
-3,15040,10 // Prison Uniform
+//3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
 3,15057,10 // Apron 
 3,15058,20 // Rider Suit
