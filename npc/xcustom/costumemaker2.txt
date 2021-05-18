@@ -293,6 +293,16 @@ OnInit:
 	end;
 
 OnMenu:
+
+	mes "[^FF6600Myan^000000]";
+	mes "Hello, I am Myan.";
+	mes "I have the list of weapons that can be enchanted-";
+	mes "by my sister Mayomayo.";
+	next;
+	mes "[^FF6600Myan^000000]";
+	mes "Remind you, this is just a catalogue.";
+	mes "You can find the weapons spread in rune midgard";	
+	
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
 	else if (.@size == 1) set @shop_index, @i[0];
@@ -307,6 +317,7 @@ OnMenu:
 		end;
 	}
 	dispbottom "Select one item at a time.";
+	dispbottom "This is a catalogue, you can't actually buy the items.";
 	callshop "mshop"+@shop_index,1;
 	npcshopattach "mshop"+@shop_index;
 	end;

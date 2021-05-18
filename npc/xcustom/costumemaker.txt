@@ -26,8 +26,8 @@
 //	callfunc "kwhshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-moc_para01,41,167,5	script	Kyewolhyang	77,{ callfunc "kwhshop"; }
-// prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "kwhshop",1,2; }	// call the shop 1 and 2 defined below
+moc_para01,41,167,5	script	Kyewolhyang	77,{ callfunc "kwhshop",1,2,3,4,5,6; }
+//moc_para01,41,165,5	script	Eurynome	76,{ callfunc "kwhshop",7,8,9,10; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
 
@@ -47,7 +47,7 @@ OnInit:
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
 	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
 	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
-	set .MaxStack,100;	// Max number of quest items purchased at one time.
+	set .MaxStack,1;	// Max number of quest items purchased at one time.
 
 // -----------------------------------------------------------
 //  Points variable -- optional quest requirement.
@@ -73,7 +73,7 @@ OnInit:
 		"Quest HG 3",	//
 		"Quest HG 4",	//
 		"Drop U",	//
-		"Drop M-L";	//
+		"Drop M-L";	//	
 
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -108,6 +108,7 @@ OnInit:
 	Add(2,31471,1,1,0,5437,1,6242,500,6625,500); // Celestial Flower
 	Add(2,20245,1,1,0,5446,1,6242,500,6625,500); // Catfoot Hairpin
 //	Add(2,19951,1,1,0,5449,1,6242,500,6625,500); // Cardboard Box
+	Add(2,20389,1,1,0,5175,1,6242,500,6625,500); // Censor Bar
 	Add(2,20013,1,1,0,5026,1,6242,500,6625,500); // Chef Hat
 	Add(2,19582,1,1,0,5075,1,6242,500,6625,500); // Cowboy Hat
 	Add(2,19622,1,1,0,5048,1,6242,500,6625,500); // Crescent Hairpin
@@ -132,7 +133,7 @@ OnInit:
 	Add(2,19554,1,1,0,5176,1,6242,1500,6625,500); // Hahoe
 	
 	Add(3,19628,1,1,0,5001,1,6242,500,6625,500); // Headset	
-	Add(3,19861,1,1,0,5091,1,6242,500,6625,500); // Heart Hairpin
+	Add(3,19861,1,1,0,5041,1,6242,500,6625,500); // Heart Hairpin
 	Add(3,20472,1,1,0,5025,1,6242,500,6625,500); // Helm of Angel
 	Add(3,20385,1,1,0,5094,1,6242,750,6625,500); // Helmet of Orc Hero
 	Add(3,20058,1,1,0,5070,1,6242,500,6625,500); // Hot Blooded
@@ -223,6 +224,7 @@ OnInit:
 	Add(6,19528,1,1,0,2266,1,6242,500,6625,500); // Cain
 	Add(6,20091,1,1,0,2268,1,6242,500,6625,500); // Pipe
 
+
 // -----------------------------------------------------------
 
 //=====================================================================================
@@ -238,18 +240,6 @@ OnInit:
 	end;
 
 OnMenu:
-
-	mes "[^FF6600Kyewolhyang^000000]";
-	mes "Hello, I am Kyewolhyang.";
-	mes "I can exchange normal hat in the list to a costume..";
-	mes "In the cost of that headgear, and Midgard Coins.";
-	next;
-	mes "[^FF6600Kyewolhyang^000000]";
-	mes "You know cardy in the first floor eden sell enchant stone ?";
-	mes "I got a rumor that these costumes actually can-";
-	mes "be enchanted by those stones..";
-	mes "Oh sorry, here's the costume list.";
-
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
 	else if (.@size == 1) set @shop_index, @i[0];
@@ -264,6 +254,7 @@ OnMenu:
 		end;
 	}
 	dispbottom "Select one item at a time.";
+	dispbottom "Discount Skill won't work at this shop, you'll have to pay the full price if there's one.";
 	callshop "kwhshop"+@shop_index,1;
 	npcshopattach "kwhshop"+@shop_index;
 	end;
@@ -386,3 +377,7 @@ function	script	kwhshop	{
 -	shop	kwhshop4	-1,909:-1
 -	shop	kwhshop5	-1,909:-1
 -	shop	kwhshop6	-1,909:-1
+-	shop	kwhshop7	-1,909:-1
+-	shop	kwhshop8	-1,909:-1
+-	shop	kwhshop9	-1,909:-1
+-	shop	kwhshop10	-1,909:-1

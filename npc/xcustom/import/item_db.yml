@@ -956,7 +956,6 @@ Body:
     Refineable: true
     Script: |
       bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;
   - Id: 2339
     AegisName: G_Strings
     Name: Pantie
@@ -1863,7 +1862,7 @@ Body:
     Refineable: true
     View: 167
     Script: |
-      bonus bMdef,11;      
+      bonus bMdef,12;      
   - Id: 2293
     AegisName: Pretend_Murdered
     Name: Pretend Murdered
@@ -1994,7 +1993,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 400
-    Defense: 15
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2006,10 +2005,10 @@ Body:
     Refineable: true
     View: 200
     Script: |
-      bonus2 bAddRace,RC_DemiHuman,5;
-      bonus2 bAddRace,RC_Player_Human,5;
-      bonus2 bSubRace,RC_DemiHuman,5;
-      bonus2 bSubRace,RC_Player_Human,5;      
+      bonus2 bAddRace,RC_DemiHuman,8;
+      bonus2 bAddRace,RC_Player_Human,8;
+      bonus2 bSubRace,RC_DemiHuman,8;
+      bonus2 bSubRace,RC_Player_Human,8;      
   - Id: 5115
     AegisName: Winter_Hat
     Name: Winter Hat
@@ -2057,8 +2056,23 @@ Body:
     Refineable: true
     View: 143   
     Script: |
-      bonus bBaseAtk,12; 
+      bonus bBaseAtk,10; 
       bonus bLuk,1;
+  - Id: 5243
+    AegisName: Chullos
+    Name: Shafka
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    View: 287
+    Script: | 
+      bonus2 bResEff,Eff_Freeze,3000;      
   - Id: 13990
     AegisName: Job_Manual50_Box
     Name: JOB Battle Manual Box
@@ -2090,21 +2104,7 @@ Body:
     Refineable: true
     View: 161      
     Script: |
-      bonus bMaxSP,25;     
-  - Id: 5078
-    AegisName: Sea_Otter_Cap
-    Name: Sea-Otter Hat
-    Type: Armor
-    Buy: 20
-    Weight: 800
-    Defense: 26
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 50
-    Refineable: true
-    View: 162
-    Script: |
-      bonus bVit,1;   
+      bonus bMaxSP,25;      
   - Id: 18761
     AegisName: Remodel_Magician_Hat
     Name: Improved Magician Hat
@@ -2312,6 +2312,75 @@ Body:
     Script: |
       bonus bBaseAtk,3;
       bonus bFlee,3;
+  - Id: 4163
+    AegisName: Gryphon_Card
+    Name: Gryphon Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bFlee,10;
+      bonus bCritical,5;
+      if (BaseClass == Job_Swordman)
+         bonus3 bAutoSpell,"KN_BOWLINGBASH",5,30;      
+  - Id: 4183
+    AegisName: Vagabond_Wolf_Card
+    Name: Vagabond Wolf Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bStr,4;      
+  - Id: 4423
+    AegisName: Galion_Card
+    Name: Galion Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bHit,10;
+      bonus2 bAddEle,Ele_Water,5;      
+  - Id: 4179
+    AegisName: Dragon_Fly_Card
+    Name: Dragon Fly Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bAgi,4;    
+  - Id: 4306
+    AegisName: Toad_Card
+    Name: Toad Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bDex,4;      
   - Id: 5075
     AegisName: Cowboy_Hat
     Name: Cowboy Hat
@@ -2324,9 +2393,35 @@ Body:
     Refineable: true
     View: 159
     Script: |
-      bonus bBaseAtk,6;
-      bonus bFlee,3;
-      bonus bHit,6;
+      bonus bBaseAtk,4;
+      bonus bFlee,4;
+      bonus bHit,4;
+  - Id: 4266
+    AegisName: Eclipse_Card
+    Name: Eclipse Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bVit,4;      
+  - Id: 4197
+    AegisName: Mastering_Card
+    Name: Mastering Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bLuk,4;      
   - Id: 5110
     AegisName: Baby_Pacifier
     Name: Baby Pacifier
@@ -2991,15 +3086,15 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 163      
     Script: |
-      bonus2 bSubEle,Ele_Ghost,3;
-      bonus bFlee,3;
+      bonus2 bSubEle,Ele_Ghost,5;
       bonus bAgi,1;
+      bonus bFlee,5;
   - Id: 5063
     AegisName: Plaster
     Name: Giant Band Aid
@@ -3332,7 +3427,16 @@ Body:
       Costume_Head_Mid: true
       Costume_Head_Low: true
     EquipLevelMin: 1
-    View: 174         
+    View: 174    
+  - Id: 20389
+    AegisName: C_Censor_Bar_
+    Name: Costume Censor Bar
+    Type: Armor
+    Buy: 10
+    Locations:
+      Costume_Head_Mid: true
+    EquipLevelMin: 1
+    View: 229         
   - Id: 20390
     AegisName: C_Goblin_Mask__
     Name: Costume Goblin Mask
@@ -4044,7 +4148,7 @@ Body:
     View: 81      
     Script: |
       bonus2 bSubEle,Ele_Ghost,3;
-      bonus bFlee,3;
+      bonus bFlee,4;
   - Id: 5061
     AegisName: Flower_Hairpin
     Name: Flower Hairpin
@@ -4430,7 +4534,8 @@ Body:
     Refineable: true
     View: 114
     Script: |
-      bonus2 bAddEff,Eff_Poison,2500;
+      bonus2 bAddEff,Eff_Poison,2000;
+      bonus2 bResEff,Eff_Poison,2000;
   - Id: 5050
     AegisName: Mystery_Fruit_Shell
     Name: Wonder Nutshell
@@ -4459,7 +4564,7 @@ Body:
     View: 146
     Script: |
       bonus bAgi,2;
-      bonus2 bResEff,Eff_Confusion,2000;
+      bonus2 bResEff,Eff_Confusion,3000;
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
@@ -4477,7 +4582,7 @@ Body:
     View: 151
     Script: |
       bonus bAgi,2;
-      bonus2 bResEff,Eff_Confusion,2000;
+      bonus2 bResEff,Eff_Confusion,3000;
       bonus bHPrecovRate,10;
   - Id: 5091
     AegisName: Big_Golden_Bell
@@ -4510,8 +4615,8 @@ Body:
     Refineable: true
     View: 160
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;      
+      bonus bLuk,1;
+      bonus2 bResEff,Eff_Freeze,1500;      
   - Id: 5033
     AegisName: Smokie_Hat
     Name: Raccoon Hat
@@ -4595,15 +4700,15 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 0
     Locations:
       Head_Top: true
     EquipLevelMin: 50
     Refineable: true
     View: 162
     Script: |
-      bonus3 bAddMonsterDropItem,551,RC_Fish,300;
-      bonus3 bAddMonsterDropItem,544,RC_Fish,300;
+      bonus3 bAddMonsterDropItem,551,RC_Fish,500;
+      bonus3 bAddMonsterDropItem,544,RC_Fish,500;
   - Id: 2280
     AegisName: Sahkkat
     Name: Sakkat
@@ -4679,8 +4784,8 @@ Body:
     Refineable: true
     View: 136
     Script: |
-      bonus bLongAtkDef,3;
-      bonus bDex,1;
+      bonus bLongAtkDef,2;
+      bonus bDex,2;
   - Id: 5024
     AegisName: Hat_Of_Cake
     Name: Cake Hat
@@ -4745,7 +4850,6 @@ Body:
     Refineable: true  
     Script: |
       bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;
   - Id: 2314
     AegisName: Chain_Mail
     Name: Chain Mail
@@ -4767,8 +4871,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;    
+      bonus bMaxHPrate,2;    
   - Id: 2315
     AegisName: Chain_Mail_
     Name: Chain Mail
@@ -4791,8 +4894,7 @@ Body:
       Armor: true
     Refineable: true   
     Script: |
-      bonus bMaxHPrate,1; 
-      bonus bMaxSpRate,1;
+      bonus bMaxHPrate,2; 
   - Id: 2316
     AegisName: Plate_Armor
     Name: Full Plate
@@ -4809,8 +4911,7 @@ Body:
     EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus bMaxHPrate,2; 
-      bonus bMaxSpRate,1;    
+      bonus bMaxHPrate,3;     
   - Id: 2317
     AegisName: Plate_Armor_
     Name: Full Plate
@@ -4828,8 +4929,7 @@ Body:
     EquipLevelMin: 40
     Refineable: true    
     Script: |
-      bonus bMaxHPrate,2; 
-      bonus bMaxSpRate,1;    
+      bonus bMaxHPrate,2;     
   - Id: 2323
     AegisName: Scapulare
     Name: Scapulare
@@ -5183,7 +5283,7 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Script: |
-      bonus bMaxHPrate,5;     
+      bonus bMaxHPrate,4;     
   - Id: 2342
     AegisName: Full_Plate_Armor_
     Name: Legion Plate Armor
@@ -5199,7 +5299,7 @@ Body:
     EquipLevelMin: 70
     Refineable: true     
     Script: |
-      bonus bMaxHPrate,5;      
+      bonus bMaxHPrate,4;      
   - Id: 2309
     AegisName: Coat
     Name: Coat
@@ -6200,7 +6300,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -6211,8 +6311,8 @@ Body:
     Refineable: true
     View: 123
     Script: |
-      bonus bStr,1;
-      bonus bInt,1;
+      bonus bStr,2;
+      bonus bInt,2;
       bonus bMdef,3;
   - Id: 5025
     AegisName: Helm_Of_Angel
@@ -6231,8 +6331,8 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;
+      bonus bAgi,2;
+      bonus bLuk,2;
       bonus bMdef,3;
   - Id: 5281
     AegisName: Deviruchi_Cap_C
@@ -6351,10 +6451,10 @@ Body:
     Refineable: true
     View: 153
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;
+      bonus bAgi,2;
+      bonus bLuk,2;
       if (getrefine()>6)
-         bonus bFlee2,4;      
+         bonus bFlee2,2;      
   - Id: 13400
     AegisName: Cutlas_
     Name: Cutlus
@@ -6540,6 +6640,24 @@ Body:
       bonus bDef,30;
       bonus bFlee,5;
       bonus bFlee2,2;      
+  - Id: 5069
+    AegisName: Mask_Of_Fox
+    Name: Kitsune Mask
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 153
+    Script: |
+      bonus bAgi,1;
+      bonus bLuk,2;      
   - Id: 1266
     AegisName: Infiltrator_
     Name: Infiltrator
