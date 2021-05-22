@@ -14,7 +14,7 @@
 //= 1.2a Added 'disable_items' command. [Euphy]
 //============================================================
 
-moc_para01,25,23,5	script	Card Remover#eAcustom	78,{
+moc_para01,25,23,4	script	Card Remover#eAcustom	78,{
 
 	set .zenycost,0;    // base cost of the card remover services (in Zeny)
 	set .percardcost,0;  // cost per card of the card remover services (in Zeny)

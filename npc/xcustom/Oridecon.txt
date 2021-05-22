@@ -1,4 +1,4 @@
-moc_para01,35,17,5	script	Christopher#C	731,{
+moc_para01,52,35,5	script	Christopher#C	731,{
 	mes "[^FF6600Christopher^000000]";
 	mes "Yo. Ye can get all yer stuff for refining from me. Unlike ma old man,";
 	mes "I sell things everyday.";

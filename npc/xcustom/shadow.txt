@@ -10,7 +10,7 @@ moc_para01,52,32,2	script	Shanyan	10242,{ callfunc "shshop",1; }
 
 // Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
 //============================================================
--	script	quest_shop1	-1,{
+-	script	quest_shopsh	-1,{
 function Add; function Chk; function Slot;
 OnInit:
 	freeloop(1);
@@ -22,7 +22,7 @@ OnInit:
 	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
 	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
-	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
 	set .MaxStack,100;	// Max number of quest items purchased at one time.
 
 // -----------------------------------------------------------
@@ -53,12 +53,12 @@ OnInit:
 //	    <required item ID>,<required item amount>{,...});
 // -----------------------------------------------------------
 
-	Add(1,24012,1,1,0,5069,1,7619,1);
-	Add(1,24013,1,1,0,5069,1,7619,1);
-	Add(1,24014,1,1,0,5086,1,7619,1);
-	Add(1,24015,1,1,0,5069,1,7619,1);
-	Add(1,24016,1,1,0,5107,1,7619,1);
-	Add(1,24017,1,1,0,5107,1,7619,1);
+	Add(1,24012,1,0,0,201,2);
+	Add(1,24013,1,0,0,201,2);
+	Add(1,24014,1,0,0,201,2);
+	Add(1,24015,1,0,0,201,2);
+	Add(1,24016,1,0,0,201,2);
+	Add(1,24017,1,0,0,201,2);
 
 
 // -----------------------------------------------------------
@@ -77,15 +77,6 @@ OnInit:
 
 OnMenu:
 	mes "[^FF6600Shanyan^000000]";
-		if (shadow_q == 2) {
-			mes "Hey!";
-			mes "It's you again";
-			mes "Thanks for the samples";
-			mes "But i don't have any quests to give you yet.";
-			close;
-			}
-			
-			
 	mes "Psst";
 	mes "Do you wanna know?";
 	mes "There's new equipment called shadow in midgard";
@@ -99,43 +90,60 @@ OnMenu:
 		next;
 		mes "[^FF6600Shanyan^000000]";
 		mes "Here, i'll show you the goods.";
-		mes "You can't buy these, this is just an example.";
-		mes "I can give you, if you do something for me.";
+		mes "You can't really buy these.";
+		mes "But i can give these to you-";
+		mes "only if you do something for me.";
 		goto L_Shop;
 		
 	case 2: 	
+		if (shadow_q == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Hey!";
+			mes "Thanks for the samples";
+			mes "But i don't have any quests to give you yet.";
+			close;
+			}	
+			
 		if (checkquest(2,HUNTING) == 2) {
-			mes "[Timid Cat]";
+			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Vocal ?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 2,3;
 			close;
 		}	
 		if (checkquest(3,HUNTING) == 2) {
-			mes "[Timid Cat]";
+			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Toad?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 3,4;
 			close;
 		}			
 		if (checkquest(4,HUNTING) == 2) {
-			mes "[Timid Cat]";
+			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Eclipse?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 4,5;
 			close;
 		}				
 		if (checkquest(5,HUNTING) == 2) {
-			mes "[Timid Cat]";
+			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Mastering?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 5,6;
 			close;
@@ -144,7 +152,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Dragon Fly?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 6,7;
 			close;
@@ -153,7 +163,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Deviling?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 7,8;
 			close;
@@ -162,7 +174,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Angeling?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 8,9;
 			close;
@@ -171,7 +185,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Cat'o Nine Tails?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 9,10;
 			close;
@@ -180,7 +196,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Maya Purple?";
-			mes "Ok, I'll give you the next quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 10,11;
 			close;
@@ -189,7 +207,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Arc Angeling?";
-			mes "Ok, I'll give you the last quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 11,12;
 			close;
@@ -198,7 +218,9 @@ OnMenu:
 			mes "[^FF6600Shanyan^000000]";
 			mes "Oh!";
 			mes "You're done hunting Ghostring?";
-			mes "Ok, I'll give you the last quest";
+			next;
+			mes "[^FF6600Shanyan^000000]";
+			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 12,13;
 			close;
@@ -216,6 +238,7 @@ OnMenu:
 		}				
 		
 		if (shadow_q == 1) {
+			mes "[^FF6600Shanyan^000000]";
 			mes "Nyanya!";
 			mes "Is my mission too hard for you?";
 			mes ":3";
@@ -229,7 +252,7 @@ OnMenu:
 		switch( select( "Say no more.:I'll think about this." ) ) {
 			case 1:
 				mes "[^FF6600Shanyan^000000]";
-				mes "Ok, i already registered the quest in your system";
+				mes "i already registered the quest in your system";
 				mes "You can see what you have to do in it!";
 				setquest 2; // Vocal
 				set shadow_q,1;
@@ -240,14 +263,14 @@ OnMenu:
 				mes "Come again if you've changed your mind.";
 				close;
 		}
-	}
 	case 3:
 		mes "[^FF6600Shanyan^000000]";
-		mes "Ok, Bye";
+		mes "Bye!";
 		close;
 		}
 		
 L_Shop:	
+	dispbottom "This is a catalogue, you can't actually buy the items.";
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
 	else if (.@size == 1) set @shop_index, @i[0];
@@ -262,14 +285,15 @@ L_Shop:
 		end;
 	}
 	dispbottom "Select one item at a time.";
-	dispbottom "This is a catalogue, you can't actually buy the items.";
 	callshop "shshop"+@shop_index,1;
 	npcshopattach "shshop"+@shop_index;
 	end;
 
 OnBuyItem:
+	mes "[^FF6600Shanyan^000000]";
 	mes "You cannot buy this, this is just a catalogue.";
 	close;
+	
 	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
 	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
 	copyarray .@q[3],getd(".q_"+@shop_index+"_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+@shop_index+"_"+.@q[0]));
@@ -278,7 +302,7 @@ OnBuyItem:
 		message strcharinfo(0),"You can't purchase that many "+getitemname(.@q[0])+".";
 		end;
 	}
-	mes "[Quest Shop]";
+	mes "[^FF6600Shanyan^000000]";
 	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
 	mes "Requirements:";
 	disable_items;
@@ -295,12 +319,12 @@ OnBuyItem:
 		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
 		case 1:
 			if (@qe[0]) {
-				mes "[Quest Shop]";
+				mes "[^FF6600Shanyan^000000]";
 				mes "You're missing one or more quest requirements.";
 				close;
 			}
 			if (!checkweight(.@q[0],.@q[2])) {
-				mes "[Quest Shop]";
+				mes "[^FF6600Shanyan^000000]";
 				mes "^FF0000You need "+(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
 				close;
 			}
@@ -374,7 +398,7 @@ function	script	shshop	{
 	deletearray @i[0],getarraysize(@i);
 	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
 		set @i[.@i],getarg(.@i);
-	doevent "quest_shop1::OnMenu";
+	doevent "quest_shopsh::OnMenu";
 	end;
 }
 

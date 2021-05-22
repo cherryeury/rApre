@@ -9502,3 +9502,9 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus bDef,30;
+  - Id: 201
+    AegisName: Shadowshard_Box
+    Name: Shadowshard Box
+    Type: Etc
+    Sell: 10
+    Weight: 10

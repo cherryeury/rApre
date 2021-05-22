@@ -1,7 +1,7 @@
 // Written by me, Cydh
 // For rathena.org
 // Autoload atcommand for players on login
-moc_para01,25,17,5	script	Kafra#saveyouratcmd	4_F_KAFRA4,{
+moc_para01,19,19,5	script	Kafra#saveyouratcmd	4_F_KAFRA4,{
 	mes .npc$;
 	mes "Hi, you can select command that auto enable when you login.";
 	next;
