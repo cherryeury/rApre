@@ -1445,7 +1445,7 @@ new_5-3,96,30,4	duplicate(NvBradeB)	Brade#nv5b	733
 				mes "I'll give you some potions as a reward.";
 				completequest 7123;
 				getitem 569,20; //Novice_Potion
-				getexp 5000,100;
+				getexp 5000,150;
 				close;
 			} else {
 				mes "[Swordman Guildsman]";
@@ -1674,7 +1674,7 @@ new_5-3,101,41,3	duplicate(NvAcolyte)	Acolyte Guide#nv5	95
 				mes "These are not many but let me give you a reward for your effort.";
 				completequest 7127;
 				getitem 12323,20; //N_Fly_Wing
-				getexp 5000,100;
+				getexp 5000,150;
 				close;
 			} else {
 				mes "[Thief Guild Member]";
@@ -1822,7 +1822,7 @@ new_5-3,105,41,3	duplicate(NvThief)	Thief Guide#nv5	118
 				mes "Phracon is a metallic element which you can use for refining weapons.";
 				completequest 7126;
 				getitem 1010,3; //Phracon
-				getexp 5000,100;
+				getexp 5000,150;
 				close;
 			} else {
 				mes "[Merchant Guildsman]";
@@ -2076,7 +2076,7 @@ new_5-3,113,41,3	duplicate(NvArcher)	Archer Guide#nv5	727
 				mes "Here are Novice Butterfly Wings, please take them.";
 				completequest 7124;
 				getitem 12324,5; //N_Butterfly_Wing
-				getexp 5000,100;
+				getexp 5000,150;
 				close;
 			} else {
 				mes "[Mage Guild Member]";

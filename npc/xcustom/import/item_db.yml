@@ -1317,7 +1317,7 @@ Body:
     Refineable: true
     View: 2
     Script: |
-      bonus2 bSubEle,Ele_Neutral,1;
+      bonus2 bSubEle,Ele_Neutral,2;
   - Id: 2104
     AegisName: Buckler_
     Name: Buckler
@@ -1345,7 +1345,7 @@ Body:
     Refineable: true
     View: 2
     Script: |
-      bonus2 bSubEle,Ele_Neutral,1;
+      bonus2 bSubEle,Ele_Neutral,2;
   - Id: 2105
     AegisName: Shield
     Name: Shield
@@ -1362,7 +1362,7 @@ Body:
     Refineable: true
     View: 3
     Script: |
-      bonus2 bSubEle,Ele_Neutral,2;    
+      bonus2 bSubEle,Ele_Neutral,3;    
   - Id: 2106
     AegisName: Shield_
     Name: Shield
@@ -1380,7 +1380,7 @@ Body:
     Refineable: true
     View: 3      
     Script: |
-      bonus2 bSubEle,Ele_Neutral,2;    
+      bonus2 bSubEle,Ele_Neutral,3;    
   - Id: 2117
     AegisName: Arm_Guard
     Name: Arm Guard
@@ -2605,8 +2605,8 @@ Body:
     Refineable: true
     View: 96 
     Script: |
-      bonus bHitRate,1;
-      bonus bHit,1;
+      bonus bDex,2;
+      bonus bHit,3;
   - Id: 2256
     AegisName: Magestic_Goat
     Name: Majestic Goat
@@ -2663,7 +2663,8 @@ Body:
       Head_Top: true
     View: 85      
     Script: |
-      bonus bBaseAtk,3;       
+      bonus bHit,2;
+      bonus bFlee,2;
   - Id: 5042
     AegisName: Hair_Protector
     Name: Bao Bao
@@ -2815,7 +2816,7 @@ Body:
     Refineable: true
     View: 195
     Script: |
-      bonus bHit,5;    
+      bonus bHitRate,2;    
   - Id: 5120
     AegisName: Fedora_
     Name: Bucket Hat
@@ -2829,7 +2830,7 @@ Body:
     Refineable: true
     View: 195    
     Script: |
-      bonus bHit,5;    
+      bonus bHitRate,2;    
   - Id: 2216
     AegisName: Biretta
     Name: Biretta
@@ -3048,7 +3049,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 700
-    Defense: 15
+    Defense: 20
     Jobs:
       All: true
       Novice: false
@@ -3582,7 +3583,8 @@ Body:
     Refineable: true
     View: 155
     Script: |
-      bonus bDex,3;      
+      bonus bDex,3; 
+      bonus bHit,5;
   - Id: 5117
     AegisName: Mistic_Rose
     Name: Mystic Rose
@@ -3726,7 +3728,12 @@ Body:
     Buy: 20000
     Weight: 10     
     Script: |
-      getgroupitem(IG_BShadow);        
+      getitem 24012,1;       
+      getitem 24013,1;       
+      getitem 24014,1;       
+      getitem 24015,1;       
+      getitem 24016,1;       
+      getitem 24017,1;              
   - Id: 5414
     AegisName: Campfire_Hat
     Name: Camp Fire Hat
@@ -6299,7 +6306,7 @@ Body:
     Name: Deviruchi Hat
     Type: Armor
     Buy: 20
-    Weight: 800
+    Weight: 1600
     Defense: 0
     Jobs:
       All: true
@@ -6348,6 +6355,8 @@ Body:
       SuperNovice: false
     Locations:
       Head_Top: true
+    EquipLevelMin: 64
+    Refineable: true      
     View: 123
     Script: |
       bonus bStr,1;

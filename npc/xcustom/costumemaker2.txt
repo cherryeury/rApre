@@ -323,10 +323,7 @@ OnMenu:
 	end;
 
 OnBuyItem:
-	mes "[^FF6600Myan^000000]";
-	mes "Deal! Eh ? but..";
 	mes "You cannot buy this, this is just a catalogue.";
-	mes "I almost forgot.";
 	close;
 	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
 	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);

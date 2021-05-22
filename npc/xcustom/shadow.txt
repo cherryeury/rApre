@@ -1,63 +1,384 @@
-//===== rAthena Script =======================================
-//= Euphy's Quest Shop
-//===== By: ==================================================
-//= Euphy
-//===== Update HG-Upgrader By: ==================================================
-//= Boy
-//===== Current Version: =====================================
-//= 1.4a
-//===== Compatible With: =====================================
-//= rAthena SVN r15340+
-//===== Description: =========================================
-//= A dynamic quest shop based on Lunar's, with easier config.
-//= Includes support for multiple shops & cashpoints.
-//= Item Preview script by ToastOfDoom.
+// Shop NPCs -- supplying no argument displays entire menu.
+//	callfunc "shshop"{,<shop ID>{,<shop ID>{,...}}};
+//  ADD YOUR NPC HERE
 //============================================================
-					
-moc_para01,52,32,2	script	Shadow Cat	10242,{
-	mes "[^FF6600Eileen^000000]";
+moc_para01,52,32,2	script	Shanyan	10242,{ callfunc "shshop",1; }
+// prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "shshop",1,2; }	// call the shop 1 and 2 defined below
+// etc.. Add your Shop NPCs 'Quest Shop#XXX' here
+//============================================================
+
+
+// Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
+//============================================================
+-	script	quest_shop1	-1,{
+function Add; function Chk; function Slot;
+OnInit:
+	freeloop(1);
+
+// -----------------------------------------------------------
+//  Basic shop settings.
+// -----------------------------------------------------------
+
+	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .MaxStack,100;	// Max number of quest items purchased at one time.
+
+// -----------------------------------------------------------
+//  Points variable -- optional quest requirement.
+//	setarray .Points$[0],"<variable name>","<display name>";
+// -----------------------------------------------------------
+
+	setarray .Points$[0],
+		"#CASHPOINTS", "Cash Points";
+
+
+//=====================================================================================
+// ------------------- ADD YOUR SHOPS NAME AND ITEMS SHOPS STARTING HERE --------------
+//=====================================================================================
+
+// -----------------------------------------------------------
+//  Shop IDs -- to add shops, copy dummy data at bottom of file.
+//	setarray .Shops$[1],"<Shop 1>","<Shop 2>"{,...};
+// -----------------------------------------------------------
+
+	setarray .Shops$[1],
+		"Shadow Catalogue";
+
+// -----------------------------------------------------------
+//  Quest items -- do NOT use a reward item more than once!
+//	Add(<shop ID>,<reward ID>,<reward amount>,
+//	    <Zeny cost>,<point cost>,
+//	    <required item ID>,<required item amount>{,...});
+// -----------------------------------------------------------
+
+	Add(1,24012,1,1,0,5069,1,7619,1);
+	Add(1,24013,1,1,0,5069,1,7619,1);
+	Add(1,24014,1,1,0,5086,1,7619,1);
+	Add(1,24015,1,1,0,5069,1,7619,1);
+	Add(1,24016,1,1,0,5107,1,7619,1);
+	Add(1,24017,1,1,0,5107,1,7619,1);
+
+
+// -----------------------------------------------------------
+
+//=====================================================================================
+// ------------------- YOUR SHOPS AND ITEMS SHOPS HAVE BEEN ADDED ---------------------
+//=====================================================================================
+
+	freeloop(0);
+	set .menu$,"";
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
+		set .menu$, .menu$+.Shops$[.@i]+":";
+		npcshopdelitem "shshop"+.@i,909;
+	}
+	end;
+
+OnMenu:
+	mes "[^FF6600Shanyan^000000]";
+		if (shadow_q == 2) {
+			mes "Hey!";
+			mes "It's you again";
+			mes "Thanks for the samples";
+			mes "But i don't have any quests to give you yet.";
+			close;
+			}
+			
+			
 	mes "Psst";
 	mes "Do you wanna know?";
 	mes "There's new equipment called shadow in midgard";
 	next;
-	switch( select( "Shadow?:Who drops it again?:Bye." ) ) {
+	switch( select( "Shadow?:About the quests.:Bye." ) ) {
 	case 1: 	
-		mes "[^FF6600Eileen^000000]";
+		mes "[^FF6600Shanyan^000000]";
 		mes "Yeah! Shadow!";
 		mes "The power of the items are still unknown,";
 		mes "but you can use it in your Costume slots!";
 		next;
-		goto L_Location;
+		mes "[^FF6600Shanyan^000000]";
+		mes "Here, i'll show you the goods.";
+		mes "You can't buy these, this is just an example.";
+		mes "I can give you, if you do something for me.";
+		goto L_Shop;
 		
-	case 2:
-		goto L_Location;
+	case 2: 	
+		if (checkquest(2,HUNTING) == 2) {
+			mes "[Timid Cat]";
+			mes "Oh!";
+			mes "You're done hunting Vocal ?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 2,3;
+			close;
+		}	
+		if (checkquest(3,HUNTING) == 2) {
+			mes "[Timid Cat]";
+			mes "Oh!";
+			mes "You're done hunting Toad?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 3,4;
+			close;
+		}			
+		if (checkquest(4,HUNTING) == 2) {
+			mes "[Timid Cat]";
+			mes "Oh!";
+			mes "You're done hunting Eclipse?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 4,5;
+			close;
+		}				
+		if (checkquest(5,HUNTING) == 2) {
+			mes "[Timid Cat]";
+			mes "Oh!";
+			mes "You're done hunting Mastering?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 5,6;
+			close;
+		}				
+		if (checkquest(6,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Dragon Fly?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 6,7;
+			close;
+		}					
+		if (checkquest(7,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Deviling?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 7,8;
+			close;
+		}					
+		if (checkquest(8,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Angeling?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 8,9;
+			close;
+		}					
+		if (checkquest(9,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Cat'o Nine Tails?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 9,10;
+			close;
+		}					
+		if (checkquest(10,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Maya Purple?";
+			mes "Ok, I'll give you the next quest";
+			mes "Check it on your quest menu";
+			changequest 10,11;
+			close;
+		}					
+		if (checkquest(11,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Arc Angeling?";
+			mes "Ok, I'll give you the last quest";
+			mes "Check it on your quest menu";
+			changequest 11,12;
+			close;
+		}		
+		if (checkquest(12,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Oh!";
+			mes "You're done hunting Ghostring?";
+			mes "Ok, I'll give you the last quest";
+			mes "Check it on your quest menu";
+			changequest 12,13;
+			close;
+		}				
+		if (checkquest(13,HUNTING) == 2) {
+			mes "[^FF6600Shanyan^000000]";
+			mes "Hey, you did it!";
+			mes "Congratulation, and thank you!";
+			mes "I already have the monster data thanks to you.";
+			mes "Here's the promised shadow items!";
+			erasequest 12;
+			getitem 1,1;
+			set shadow_q,2;
+			close;
+		}				
 		
-		L_Location:
-		mes "[^FF6600Eileen^000000]";
-		mes "How do you get 'em?";
-		mes "There's 10% chance to get it from certain mini bosses.";
-		mes "I've seen some monsters carrying those stuffs..";
-		mes "Ok take your note, the monsters i saw are..";	
+		if (shadow_q == 1) {
+			mes "Nyanya!";
+			mes "Is my mission too hard for you?";
+			mes ":3";
+			close;
+			}
+			
+		mes "[^FF6600Shanyan^000000]";
+		mes "Hmm, i need you to kill 13 type of monsters..";
+		mes "They're all quite tough for me, so..";
 		next;
-		mes "[^FF6600Eileen^000000]";
-		mes "Angeling";	
-		mes "ArchAngeling";	
-		mes "Cat'O Nine Tails";	
-		mes "Deviling";	
-		mes "Dragon Fly";	
-		mes "Eclipse";	
-		mes "Ghostring";	
-		mes "Mastering";	
-		mes "Maya Purple";	
-		mes "Toad";	
-		mes "Vagabond Wolf";	
-		mes "Vocal";	
+		switch( select( "Say no more.:I'll think about this." ) ) {
+			case 1:
+				mes "[^FF6600Shanyan^000000]";
+				mes "Ok, i already registered the quest in your system";
+				mes "You can see what you have to do in it!";
+				setquest 2; // Vocal
+				set shadow_q,1;
+				close;
+			case 2:
+				mes "[^FF6600Shanyan^000000]";
+				mes "Okay.";
+				mes "Come again if you've changed your mind.";
+				close;
+		}
+	}
+	case 3:
+		mes "[^FF6600Shanyan^000000]";
+		mes "Ok, Bye";
 		close;
+		}
 		
-	case 3:	
-		mes "[^FF6600Eileen^000000]";
-		mes "!";
-		mes "..";
-		close;
+L_Shop:	
+	set .@size, getarraysize(@i);
+	if (!.@size) set @shop_index, select(.menu$);
+	else if (.@size == 1) set @shop_index, @i[0];
+	else {
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1)
+			set .@menu$, .@menu$+.Shops$[@i[.@j]]+":";
+		set @shop_index, @i[select(.@menu$)-1];
+	}
+	deletearray @i[0],getarraysize(@i);
+	if (.Shops$[@shop_index] == "") {
+		message strcharinfo(0),"An error has occurred.";
+		end;
+	}
+	dispbottom "Select one item at a time.";
+	dispbottom "This is a catalogue, you can't actually buy the items.";
+	callshop "shshop"+@shop_index,1;
+	npcshopattach "shshop"+@shop_index;
+	end;
+
+OnBuyItem:
+	mes "You cannot buy this, this is just a catalogue.";
+	close;
+	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
+	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
+	copyarray .@q[3],getd(".q_"+@shop_index+"_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+@shop_index+"_"+.@q[0]));
+	set .@q[2],.@q[1]*.@q[3];
+	if (!.@q[2] || .@q[2] > 30000) {
+		message strcharinfo(0),"You can't purchase that many "+getitemname(.@q[0])+".";
+		end;
+	}
+	mes "[Quest Shop]";
+	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	disable_items;
+	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+	next;
+	setarray @qe[1], getiteminfo(.@q[0], ITEMINFO_LOCATIONS), getiteminfo(.@q[0], ITEMINFO_VIEW);
+	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
+		set .@preview,1;
+	addtimer 1000, strnpcinfo(0)+"::OnEnd";
+	while(1) {
+		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
+		case 1:
+			if (@qe[0]) {
+				mes "[Quest Shop]";
+				mes "You're missing one or more quest requirements.";
+				close;
+			}
+			if (!checkweight(.@q[0],.@q[2])) {
+				mes "[Quest Shop]";
+				mes "^FF0000You need "+(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
+				close;
+			}
+			if (.@q[4]) set Zeny, Zeny-(.@q[4]*.@q[1]);
+			if (.@q[5]) setd .Points$[0], getd(.Points$[0])-(.@q[5]*.@q[1]);
+			if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+				delitem .@q[.@i],.@q[.@i+1]*.@q[1];
+			getitem .@q[0],.@q[2];
+			if (.Announce) announce strcharinfo(0)+" has created "+((.@q[2] > 1)?.@q[2]+"x "+getitemname(.@q[0]):callfunc("F_InsertArticle",getitemname(.@q[0])))+"!",0;
+			specialeffect2 EF_FLOWERLEAF;
+			close;
+		case 2:
+			setarray @qe[3], getlook(LOOK_HEAD_BOTTOM), getlook(LOOK_HEAD_TOP), getlook(LOOK_HEAD_MID), getlook(LOOK_ROBE), 1;
+			if ((@qe[1] & 1) || (@qe[1] & 4096)) changelook LOOK_HEAD_BOTTOM, @qe[2];
+			else if ((@qe[1] & 256) || (@qe[1] & 1024)) changelook LOOK_HEAD_TOP, @qe[2];
+			else if ((@qe[1] & 512) || (@qe[1] & 2048)) changelook LOOK_HEAD_MID, @qe[2];
+			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
+			break;
+		case 3:
+			close;
+		}
+	}
+
+OnEnd:
+	if (@qe[7]) {
+		changelook LOOK_HEAD_BOTTOM, @qe[3];
+		changelook LOOK_HEAD_TOP, @qe[4];
+		changelook LOOK_HEAD_MID, @qe[5];
+		changelook LOOK_ROBE, @qe[6];
+	}
+	deletearray @qe[0],8;
+	end;
+
+function Add {
+	if (getitemname(getarg(1)) == "null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped).";
+		return;
+	}
+	setarray .@j[0],getarg(2),getarg(3),getarg(4);
+	for(set .@i,5; .@i<getargcount(); set .@i,.@i+2) {
+		if (getitemname(getarg(.@i)) == "null") {
+			debugmes "Quest requirement #"+getarg(.@i)+" invalid (skipped).";
+			return;
+		} else
+			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
+	}
+	copyarray getd(".q_"+getarg(0)+"_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
+	npcshopadditem "shshop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return;
+}
+
+function Chk {
+	if (getarg(0) < getarg(1)) {
+		set @qe[0],1;
+		return "^FF0000";
+	} else
+		return "^00FF00";
+}
+
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot) {
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0), ITEMINFO_TYPE) == 4 || getiteminfo(getarg(0), ITEMINFO_TYPE) == 5) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$;
 	}
 }
+}
+
+function	script	shshop	{
+	deletearray @i[0],getarraysize(@i);
+	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
+		set @i[.@i],getarg(.@i);
+	doevent "quest_shop1::OnMenu";
+	end;
+}
+
+
+// Dummy shop data -- copy as needed.
+//============================================================
+-	shop	shshop1	-1,909:-1

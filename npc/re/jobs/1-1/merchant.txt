@@ -90,7 +90,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			mes "[Guildsman Mahnsoo]";
 			mes "Congratulations on becoming a merchant!";
 			mes "Congratulations again for being a member of the merchant guild and one of our colleagues. I expect your active participation from now on!";
-			callfunc "Job_Change",Job_Merchant; JobLevel = JobLevel + 1; erasequest 12307;
+			callfunc "Job_Change",Job_Merchant; JobLevel = JobLevel + 1; //erasequest 12307;
 			getitem 1303,1;	// Axe
 			next;
 			mes "[Guildsman Mahnsoo]";

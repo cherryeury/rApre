@@ -212,9 +212,9 @@
 2,1169,5 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
-2,16051,25 // Valkyrie Hammer
-2,28717,200 // Valkyrie Knife
-2,13049,200 // Lacma
+//2,16051,25 // Valkyrie Hammer
+//2,28717,200 // Valkyrie Knife
+2,28719,200 // Lacma
 
 
 //Shield

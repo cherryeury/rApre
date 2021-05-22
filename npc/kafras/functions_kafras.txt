@@ -285,17 +285,15 @@ function	script	F_KafStor	{
 // Teleport Function
 //===================================================
 function	script	F_KafTele	{
-	mes "[Kafra Employee]";
+	mes "[Kafra Employee]"; if (BaseLevel <40){ mes "[Kafra Employee]"; mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
 	mes "Please choose";
-	mes "your destination.";
-	next;
+	mes "your destination."; 
+	next; 
 	.@j = select( implode(@wrpC$,":") ) - 1;
 	if (@wrpC$[.@j] == "Cancel")
-		return;
+		return; 
 	if (BaseLevel <40){
-	mes "[Kafra Employee]"; mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport freely!"; goto L_Cut; } 
-	if (countitem(7060) > 0 && getarg(0) != 2)
-		delitem 7060,1;
+		goto L_Cut; }
 	else {
 		if (Zeny < @wrpP[.@j]) {
 			mes "[Kafra Employee]";

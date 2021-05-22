@@ -54,6 +54,66 @@ Header:
   Version: 2
 
 Body:
+  - Id: 2
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: VOCAL
+        Count: 1
+  - Id: 3
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: TOAD
+        Count: 1        
+  - Id: 4
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ECLIPSE
+        Count: 1    
+  - Id: 5
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: MASTERING
+        Count: 1
+  - Id: 6
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: DRAGONFLY
+        Count: 1      
+  - Id: 7
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: DEVILING
+        Count: 1   
+  - Id: 8
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ANGELING
+        Count: 1     
+  - Id: 9
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: CAT_O_NINE_TAIL
+        Count: 1      
+  - Id: 10
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: MAYA_PUPLE
+        Count: 1  
+  - Id: 11
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ARCHANGELING
+        Count: 1  
+  - Id: 12
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: GHOSTRING
+        Count: 1
+  - Id: 13
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: VAGABOND_WOLF
+        Count: 1          
   - Id: 62556
     Title: Bounty Board Goat
     Targets:
