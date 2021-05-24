@@ -9374,7 +9374,7 @@ ACMD_FUNC(mount2) {
 		status_change_end(&sd->bl, SC_ALL_RIDING, INVALID_TIMER);
 	}
 	return 0;
-}
+} static int buildin_autoattack_sub(struct block_list *bl,va_list ap) {     int *target_id=va_arg(ap,int *);     *target_id = bl->id;     return 1; }  void autoattack_motion(struct map_session_data* sd) {     int i, target_id;     if( pc_isdead(sd) || !sd->state.autoattack ) return;      for(i=0;i<=9;i++)     {         target_id=0;         map_foreachinarea(buildin_autoattack_sub, sd->bl.m, sd->bl.x-i, sd->bl.y-i, sd->bl.x+i, sd->bl.y+i, BL_MOB, &target_id);         if(target_id){             unit_attack(&sd->bl,target_id,1);             break;         }         target_id=0;     }      return; }  static TIMER_FUNC(autoattack_timer) {     struct map_session_data *sd=NULL;      sd=map_id2sd(id);     if(sd==NULL || pc_isdead(sd) || !sd->state.autoattack )         return 0;      if(sd->state.autoattack)     {         unit_stop_attack(&sd->bl);         autoattack_motion(sd);         if(DIFF_TICK(sd->autoattack_delay,gettick())> 0){             clif_authfail_fd(sd->fd, 15);             return 0;         }         else{             add_timer(gettick()+1000,autoattack_timer,sd->bl.id,0);             sd->autoattack_delay = gettick() + 1000;         }     }     return 0; }  ACMD_FUNC(autoattack) {     nullpo_retr(-1, sd);     if (sd->state.autoattack)     {         sd->state.autoattack = 0;         unit_stop_attack(&sd->bl);         clif_displaymessage(fd, "Auto Attack has been deactivated.");     }     else     {         sd->state.autoattack = 1;         add_timer(gettick()+1000,autoattack_timer,sd->bl.id,0);         clif_displaymessage(fd, "Auto Attack activated.");     }     return 0; }
 
 ACMD_FUNC(accinfo) {
 	char query[NAME_LENGTH];
@@ -10386,7 +10386,7 @@ void atcommand_basecommands(void) {
 	 **/
 	AtCommandInfo atcommand_base[] = {
 #include "../custom/atcommand_def.inc"
-		ACMD_DEF2R("warp", mapmove, ATCMD_NOCONSOLE),
+		ACMD_DEF2R("warp", mapmove, ATCMD_NOCONSOLE), ACMD_DEF(autoattack),
 		ACMD_DEF(where),
 		ACMD_DEF(jumpto),
 		ACMD_DEF(jump),
