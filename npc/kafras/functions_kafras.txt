@@ -80,7 +80,7 @@ function	script	F_Kafra	{
 	// Display Kafra Welcome Message
 	switch(.@welcome) {
 	default:// Default message (obsolete)
-		mes "[Kafra Employee]";
+		mes "[Kafra Employee]"; if (BaseLevel <40){ mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
 		mes "Welcome to the";
 		mes "Kafra Corporation.";
 		mes "The Kafra services";
@@ -285,7 +285,7 @@ function	script	F_KafStor	{
 // Teleport Function
 //===================================================
 function	script	F_KafTele	{
-	mes "[Kafra Employee]"; if (BaseLevel <40){ mes "[Kafra Employee]"; mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
+	mes "[Kafra Employee]";
 	mes "Please choose";
 	mes "your destination."; 
 	next; 

@@ -1,4 +1,11 @@
 function	script	F_StrongEnough	{
 	return (baselevel > 0);
 }
-
+	-	script	atcmd1	-1,{
+	OnInit:
+		bindatcmd "stop",strnpcinfo(3) + "::OnStop";
+		end;
+	OnStop:
+		unitstopattack getcharid(3);
+		end;
+	}

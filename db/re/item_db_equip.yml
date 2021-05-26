@@ -28566,7 +28566,7 @@ Body:
       Garment: true
     Refineable: true
     Script: |
-      bonus bMdef,1;
+      bonus bLuk,1;
   - Id: 2523
     AegisName: Undershirt_
     Name: Undershirt
@@ -28579,7 +28579,7 @@ Body:
       Garment: true
     Refineable: true
     Script: |
-      bonus bMdef,1;
+      bonus bLuk,1;
   - Id: 2524
     AegisName: Valkyrie_Manteau
     Name: Valkyrian Manteau
