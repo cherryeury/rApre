@@ -816,6 +816,44 @@ Body:
       bonus bMaxHP,300;
       bonus bMaxSP,80;
       bonus3 bAddEff,Eff_Blind,100,ATF_LONG;
+  - Id: 2319
+    AegisName: Glittering_Clothes
+    Name: Glittering Jacket
+    Type: Armor
+    Buy: 20
+    Weight: 2500
+    Defense: 58
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Armor: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      bonus2 bAddEff,Eff_Blind,500;      
+  - Id: 2318
+    AegisName: Clothes_Of_The_Lord
+    Name: Lord's Clothes
+    Type: Armor
+    Buy: 20
+    Weight: 2500
+    Defense: 59
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMdef,8;
+      bonus bInt,1;      
   - Id: 2725
     AegisName: Medal_Merchant
     Name: Medal of Honor
@@ -916,6 +954,26 @@ Body:
          bonus2 bMagicAtkEle,Ele_Earth,3;
       }
       bonus2 bMagicAtkEle,Ele_Wind,-10;       
+  - Id: 2367
+    AegisName: Sniping_Suit
+    Name: Sniping Suit
+    Type: Armor
+    Buy: 20
+    Weight: 750
+    Defense: 42
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      bonus bCritical,4+(readparam(bLuk)/10);
+      bonus bDelayrate,-23;      
   - Id: 2311
     AegisName: Mink_Coat
     Name: Mink Coat
@@ -931,9 +989,9 @@ Body:
     Locations:
       Armor: true
     EquipLevelMin: 30
-    Refineable: true      
+    Refineable: true    
     Script: |
-      bonus bCritical,3;
+      bonus bCritical,1;    
   - Id: 2312
     AegisName: Padded_Armor
     Name: Padded Armor
@@ -955,7 +1013,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxHPrate,1; 
+      bonus bMaxHPrate,2;         
   - Id: 2113
     AegisName: Novice_Shield
     Name: Novice Shield
@@ -986,9 +1044,7 @@ Body:
     Defense: 1
     Locations:
       Armor: true
-    Refineable: true
-    Script: |
-      bonus bDex,1;     
+    Refineable: true  
   - Id: 2371
     AegisName: G_Strings_
     Name: Pantie
@@ -1000,8 +1056,6 @@ Body:
     Locations:
       Armor: true
     Refineable: true   
-    Script: |
-      bonus bDex,1;
   - Id: 15013
     AegisName: Claire_Suits
     Name: Claire Suits
@@ -1021,7 +1075,35 @@ Body:
     EquipLevelMin: 22
     Refineable: true      
     Script: |
-      bonus bDefRate,5;    
+      bonus2 bSubEle,Ele_Neutral,2; 
+  - Id: 1124
+    AegisName: Orcish_Sword
+    Name: Orcish Sword
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 800
+    Attack: 150
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Novice: true
+      Rogue: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 5
+    Refineable: true
+    Script: |
+      bonus bUnbreakableWeapon;      
   - Id: 2401
     AegisName: Sandals
     Name: Sandals
@@ -1112,7 +1194,8 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bCritical,2;    
+      bonus bCritical,1;
+      bonus bAspdRate,2;
   - Id: 2406
     AegisName: Boots_
     Name: Boots
@@ -1142,7 +1225,8 @@ Body:
       Shoes: true
     Refineable: true   
     Script: |
-      bonus bCritical,2;    
+      bonus bCritical,1;
+      bonus bAspdRate,2;
   - Id: 2408
     AegisName: Cuffs
     Name: Shackles
@@ -1543,6 +1627,21 @@ Body:
     View: 40      
     Script: |
       bonus2 bSubEle,Ele_Neutral,2;
+  - Id: 15040
+    AegisName: Prison_Uniform
+    Name: Prison Uniform
+    Type: Armor
+    Buy: 10
+    Weight: 1500
+    Defense: 0
+    Locations:
+      Armor: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      .@r = getrefine();
+      bonus bHit,.@r;
+      bonus bFlee,.@r;      
   - Id: 2226
     AegisName: Cap
     Name: Cap
@@ -1568,7 +1667,7 @@ Body:
     Refineable: true
     View: 14
     Script: |
-      bonus bMaxHP,20;     
+      bonus bMaxHP,40;     
   - Id: 5003
     AegisName: Joker_Jester
     Name: Joker Jester
@@ -1613,7 +1712,7 @@ Body:
     Refineable: true
     View: 14      
     Script: |
-      bonus bMaxHP,20;     
+      bonus bMaxHP,40;     
   - Id: 5032
     AegisName: Picnic_Hat
     Name: Sunday Hat
@@ -1732,14 +1831,51 @@ Body:
     Refineable: true
     View: 86
     Script: |
-      bonus2 bSubRace,RC2_Orc,10;  
+      bonus2 bSubRace,RC2_Orc,10; 
+  - Id: 2334
+    AegisName: Mage_Coat
+    Name: Mage Coat
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 40
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bInt,2;      
+  - Id: 2372
+    AegisName: Mage_Coat_
+    Name: Mage Coat
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 40
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 50
+    Refineable: true
+    Script: |
+      bonus bInt,2;      
   - Id: 2507
     AegisName: Cape_Of_Ancient_Lord
     Name: Ancient Cape
     Type: Armor
     Buy: 82000
     Weight: 600
-    Defense: 9
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -1750,6 +1886,24 @@ Body:
     Refineable: true
     Script: |
       bonus bAgi,2;
+  - Id: 2525
+    AegisName: Cape_Of_Ancient_Lord_
+    Name: Ancient Cape
+    Type: Armor
+    Buy: 82000
+    Weight: 600
+    Defense: 0
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Garment: true
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAgi,2;      
   - Id: 5157
     AegisName: Viking_Helm_
     Name: Orc Helm
@@ -1881,12 +2035,12 @@ Body:
     Type: Armor
     Buy: 500
     Weight: 100
-    Defense: 2
+    Defense: 0
     Locations:
       Head_Top: true
     View: 9      
     Script: |
-      bonus bMaxSPrate,1;   
+      bonus bMaxSPrate,2;   
   - Id: 5083
     AegisName: Red_Tailed_Ribbon
     Name: Red Ribbon
@@ -2781,6 +2935,131 @@ Body:
     View: 30
     Script: |
       bonus bUnbreakableHelm;  
+  - Id: 2375
+    AegisName: Diabolus_Armor
+    Name: Diabolus Armor
+    Type: Armor
+    Buy: 20
+    Weight: 600
+    Defense: 79
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bStr,3;
+      bonus bDex,1;
+      bonus bMdef,5;
+      bonus bMaxHP,150;
+      bonus2 bResEff,Eff_Stun,500;
+      bonus2 bResEff,Eff_Stone,500;    
+  - Id: 2374
+    AegisName: Diabolus_Robe
+    Name: Diabolus Robe
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 57
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Mage: true
+      Monk: true
+      Priest: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bMdef,5;
+      bonus bDex,1;
+      bonus bHealPower,6;
+      bonus bDelayrate,-10;      
+  - Id: 2389
+    AegisName: Armor_Of_Naga
+    Name: Armor of Naga
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 45
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+      autobonus "{ bonus bBaseAtk,20; }",10,10000,BF_WEAPON,"{ specialeffect2 EF_ENHANCE; }";      
+  - Id: 2386
+    AegisName: Chameleon_Armor
+    Name: Chameleon Armor
+    Type: Armor
+    Buy: 20
+    Weight: 1700
+    Defense: 55
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bMaxHP,(BaseLevel*8);
+      bonus bMaxSP,(BaseLevel/3);
+      autobonus2 "{ bonus bNoMagicDamage,100; }",10,2000,BF_MAGIC,"{ specialeffect2 EF_ENERGYCOAT; }";
+      if (BaseClass == Job_Mage || BaseClass == Job_Archer || BaseClass == Job_Acolyte)
+         bonus bMdef,5;
+      else if (BaseClass == Job_Swordman || BaseClass == Job_Merchant || BaseClass == Job_Thief)
+         bonus bDef,3;      
   - Id: 5022
     AegisName: Helm_Of_Sun
     Name: Hat of the Sun God
@@ -4871,7 +5150,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bLuk,2;     
+      bonus bLuk,1;     
   - Id: 2313
     AegisName: Padded_Armor_
     Name: Padded Armor
@@ -4894,7 +5173,7 @@ Body:
       Armor: true
     Refineable: true  
     Script: |
-      bonus bMaxHPrate,1; 
+      bonus bMaxHPrate,2;         
   - Id: 2314
     AegisName: Chain_Mail
     Name: Chain Mail
@@ -4916,7 +5195,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxHPrate,2;    
+      bonus bMaxHPrate,3;    
   - Id: 2315
     AegisName: Chain_Mail_
     Name: Chain Mail
@@ -4939,7 +5218,7 @@ Body:
       Armor: true
     Refineable: true   
     Script: |
-      bonus bMaxHPrate,2; 
+      bonus bMaxHPrate,3; 
   - Id: 2316
     AegisName: Plate_Armor
     Name: Full Plate
@@ -4956,7 +5235,7 @@ Body:
     EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus bMaxHPrate,3;     
+      bonus bMaxHPrate,4;     
   - Id: 2317
     AegisName: Plate_Armor_
     Name: Full Plate
@@ -4974,7 +5253,7 @@ Body:
     EquipLevelMin: 40
     Refineable: true    
     Script: |
-      bonus bMaxHPrate,2;     
+      bonus bMaxHPrate,4;     
   - Id: 2323
     AegisName: Scapulare
     Name: Scapulare
@@ -5015,7 +5294,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMdef,12;
+      bonus bMdef,13;
   - Id: 2338
     AegisName: Wedding_Dress
     Name: Wedding Dress
@@ -5031,7 +5310,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMdef,18;  
+      bonus bMdef,15;  
   - Id: 2512
     AegisName: Novice_Manteau
     Name: Novice Manteau
@@ -5074,7 +5353,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMdef,12;      
+      bonus bMdef,13;      
   - Id: 2324
     AegisName: Scapulare_
     Name: Scapulare
@@ -5108,9 +5387,9 @@ Body:
       Swordman: true
     Locations:
       Armor: true
-    Refineable: true
+    Refineable: true    
     Script: |
-      bonus bMaxHPrate,1;     
+      bonus bMaxHPrate,1;         
   - Id: 2329
     AegisName: Wooden_Mail_
     Name: Wooden Mail
@@ -5128,9 +5407,9 @@ Body:
       Swordman: true
     Locations:
       Armor: true
-    Refineable: true      
+    Refineable: true     
     Script: |
-      bonus bMaxHPrate,1;    
+      bonus bMaxHPrate,1;      
   - Id: 2332
     AegisName: Silver_Robe
     Name: Silver Robe
@@ -5147,7 +5426,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxSPrate,1;       
+      bonus bMaxSPrate,2;       
   - Id: 2333
     AegisName: Silver_Robe_
     Name: Silver Robe
@@ -5165,7 +5444,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMaxSPrate,1; 
+      bonus bMaxSPrate,2; 
   - Id: 2340
     AegisName: Novice_Breast
     Name: Novice Breastplate
@@ -5399,7 +5678,7 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Script: |
-      bonus bMaxHPrate,4;     
+      bonus bMaxHPrate,5;     
   - Id: 2342
     AegisName: Full_Plate_Armor_
     Name: Legion Plate Armor
@@ -5415,7 +5694,7 @@ Body:
     EquipLevelMin: 70
     Refineable: true     
     Script: |
-      bonus bMaxHPrate,4;      
+      bonus bMaxHPrate,5;      
   - Id: 2309
     AegisName: Coat
     Name: Coat
@@ -5431,7 +5710,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus2 bResEff,Eff_Freeze,1500;    
+      bonus2 bResEff,Eff_Freeze,3000;           
   - Id: 2310
     AegisName: Coat_
     Name: Coat
@@ -5448,7 +5727,7 @@ Body:
       Armor: true
     Refineable: true     
     Script: |
-      bonus2 bResEff,Eff_Freeze,1500;        
+      bonus2 bResEff,Eff_Freeze,3000;        
   - Id: 2305
     AegisName: Adventure_Suit
     Name: Adventurer's Suit
@@ -5460,7 +5739,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bFlee,2;    
+      bonus bFlee,3;    
   - Id: 2306
     AegisName: Adventurere's_Suit_
     Name: Adventurer's Suit
@@ -5473,7 +5752,18 @@ Body:
       Armor: true
     Refineable: true    
     Script: |
-      bonus bFlee,2;    
+      bonus bFlee,3;    
+  - Id: 2211
+    AegisName: Bandana
+    Name: Bandana
+    Type: Armor
+    Buy: 400
+    Weight: 100
+    Defense: 5
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 6      
   - Id: 5086
     AegisName: Alarm_Mask
     Name: Alarm Mask
@@ -5783,6 +6073,51 @@ Body:
     Script: |
       bonus bMdef,10;
       bonus bUnbreakableHelm;      
+  - Id: 2364
+    AegisName: Meteo_Plate_Armor
+    Name: Meteo Plate Armor
+    Type: Armor
+    Buy: 20
+    Weight: 3000
+    Defense: 85
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus2 bResEff,Eff_Stun,5000;
+      bonus2 bResEff,Eff_Freeze,5000;     
+  - Id: 2365
+    AegisName: Orleans_Gown
+    Name: Orleans's Gown
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 15
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bVariableCastrate,12;
+      bonus bNoCastCancel;      
   - Id: 2307
     AegisName: Mantle
     Name: Mantle
@@ -5798,7 +6133,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bHit,4;      
+      bonus bHit,5;      
   - Id: 2308
     AegisName: Mantle_
     Name: Mantle
@@ -5815,7 +6150,7 @@ Body:
       Armor: true
     Refineable: true     
     Script: |
-      bonus bHit,4;      
+      bonus bHit,5;      
   - Id: 2501
     AegisName: Hood
     Name: Hood
@@ -5944,7 +6279,7 @@ Body:
     EquipLevelMin: 80
     Refineable: true
     Script: |
-      bonus bFlee2,5;
+      bonus bFlee2,6;
   - Id: 2359
     AegisName: Ninja_Suit_
     Name: Ninja Suit
@@ -5965,7 +6300,8 @@ Body:
     Refineable: true
     Script: |
       bonus bAgi,1;
-      bonus bMdef,5;      
+      bonus bMdef,5; 
+      bonus bDex,1;
   - Id: 2337
     AegisName: Ninja_Suit
     Name: Ninja Suit
@@ -5985,7 +6321,81 @@ Body:
     Refineable: true
     Script: |
       bonus bAgi,1;
-      bonus bMdef,5;      
+      bonus bDex,1;
+      bonus bMdef,5;   
+  - Id: 2388
+    AegisName: Kandura
+    Name: Kandura
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 36
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bAspd,1;
+      bonus bFlee,5;
+  - Id: 2387
+    AegisName: Sprint_Mail
+    Name: Sprint Mail
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Defense: 20
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      Wizard: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bVit,1;
+      bonus bHPrecovRate,10;
+      bonus bAddItemHealRate,6;
+      bonus2 bSkillHeal,"AL_HEAL",6;      
+  - Id: 2391
+    AegisName: Life_Link
+    Name: Life Link
+    Type: Armor
+    Buy: 20
+    Weight: 3500
+    Defense: 75
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 82
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+      bonus bMdef,5;
+      bonus bHPrecovRate,50;      
   - Id: 15053
     AegisName: Special_Ninja_Suit
     Name: Special Ninja Suit
@@ -7117,8 +7527,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bAgi,1;
-      bonus bFlee,4;
+      bonus bAgi,2;
   - Id: 2390
     AegisName: Improved_Tights
     Name: Improved Tights
@@ -7157,8 +7566,7 @@ Body:
     EquipLevelMin: 45
     Refineable: true
     Script: |
-      bonus bDex,1;
-      bonus bFlee,4;
+      bonus bDex,2;
   - Id: 2331
     AegisName: Tights_
     Name: Tights
@@ -7176,8 +7584,7 @@ Body:
     EquipLevelMin: 45
     Refineable: true
     Script: |
-      bonus bDex,1;
-      bonus bFlee,4;    
+      bonus bDex,2;  
   - Id: 2336
     AegisName: Thief_Clothes_
     Name: Thief Clothes
@@ -7196,8 +7603,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bAgi,1;
-      bonus bFlee,4;
+      bonus bAgi,2;
   - Id: 2325
     AegisName: Saint_Robe
     Name: Saint's Robe
@@ -7216,7 +7622,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMdef,7;
+      bonus bMdef,8;
   - Id: 2326
     AegisName: Saint_Robe_
     Name: Saint's Robe
@@ -7236,7 +7642,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bMdef,7;      
+      bonus bMdef,8;      
   - Id: 6242
     AegisName: Midgard_Coin
     Name: Midgard Coin
