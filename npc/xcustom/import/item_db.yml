@@ -933,7 +933,7 @@ Body:
     EquipLevelMin: 30
     Refineable: true      
     Script: |
-      bonus bCritical,4;
+      bonus bCritical,3;
   - Id: 2312
     AegisName: Padded_Armor
     Name: Padded Armor
@@ -1033,8 +1033,8 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bMaxHP,20;
-      bonus bMaxSP,2;
+      bonus bMaxHP,30;
+      bonus bMaxSP,3;
   - Id: 2402
     AegisName: Sandals_
     Name: Sandals
@@ -1047,8 +1047,8 @@ Body:
       Shoes: true
     Refineable: true      
     Script: |
-      bonus bMaxHP,20;
-      bonus bMaxSP,2;
+      bonus bMaxHP,30;
+      bonus bMaxSP,3;
   - Id: 2403
     AegisName: Shoes
     Name: Shoes
@@ -1064,8 +1064,8 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bMaxHP,40;
-      bonus bMaxSP,4;    
+      bonus bMaxHP,60;
+      bonus bMaxSP,6;    
   - Id: 2404
     AegisName: Shoes_
     Name: Shoes
@@ -1082,8 +1082,8 @@ Body:
       Shoes: true
     Refineable: true      
     Script: |
-      bonus bMaxHP,40;
-      bonus bMaxSP,4;
+      bonus bMaxHP,60;
+      bonus bMaxSP,6;
   - Id: 2405
     AegisName: Boots
     Name: Boots
@@ -3287,7 +3287,7 @@ Body:
     AegisName: Goggle
     Name: Goggles
     Type: Armor
-    Buy: 20000
+    Buy: 30000
     Weight: 300
     Defense: 5
     Jobs:
@@ -3329,7 +3329,7 @@ Body:
     Type: Armor
     Buy: 8500
     Weight: 400
-    Defense: 15
+    Defense: 10
     Jobs:
       Novice: true
       SuperNovice: true
@@ -3346,7 +3346,7 @@ Body:
     Type: Armor
     Buy: 8500
     Weight: 400
-    Defense: 15
+    Defense: 10
     Slots: 1
     Jobs:
       Novice: true
@@ -3364,7 +3364,7 @@ Body:
     Type: Armor
     Buy: 24000
     Weight: 100
-    Defense: 8
+    Defense: 10
     Locations:
       Head_Mid: true
     View: 26
@@ -3414,8 +3414,8 @@ Body:
       Head_Mid: true
     View: 3
     Script: |
-      bonus bHit,1;
-      bonus bDef,-5;
+      bonus bHit,2;
+      bonus bDef,-10;
   - Id: 2204
     AegisName: Glasses_
     Name: Glasses
@@ -3427,13 +3427,13 @@ Body:
       Head_Mid: true
     View: 3    
     Script: |
-      bonus bHit,1;
-      bonus bDef,-5;    
+      bonus bHit,2;
+      bonus bDef,-10;    
   - Id: 2225
     AegisName: Goggle_
     Name: Goggles
     Type: Armor
-    Buy: 20000
+    Buy: 30000
     Weight: 300
     Defense: 5
     Slots: 1
@@ -5827,8 +5827,8 @@ Body:
       Garment: true
     Refineable: true
     Script: |
-      bonus bMaxHp,20;
-      bonus bMaxSP,2;    
+      bonus bMaxHp,30;
+      bonus bMaxSP,3;    
   - Id: 2502
     AegisName: Hood_
     Name: Hood
@@ -5841,8 +5841,8 @@ Body:
       Garment: true
     Refineable: true 
     Script: |
-      bonus bMaxHp,20;
-      bonus bMaxSP,2;    
+      bonus bMaxHp,30;
+      bonus bMaxSP,3;    
   - Id: 2503
     AegisName: Muffler
     Name: Muffler
@@ -5858,8 +5858,8 @@ Body:
       Garment: true
     Refineable: true
     Script: |
-      bonus bMaxHp,50;
-      bonus bMaxSP,5;
+      bonus bMaxHp,60;
+      bonus bMaxSP,6;
   - Id: 2504
     AegisName: Muffler_
     Name: Muffler
@@ -5876,8 +5876,8 @@ Body:
       Garment: true
     Refineable: true      
     Script: |
-      bonus bMaxHp,50;
-      bonus bMaxSP,5;    
+      bonus bMaxHp,60;
+      bonus bMaxSP,6;    
   - Id: 2505
     AegisName: Manteau
     Name: Manteau
@@ -7037,13 +7037,6 @@ Body:
     Locations:
       Costume_Head_Top: true
     View: 332 
-  - Id: 20385
-    AegisName: C_Orc_Hero_Helm
-    Name: Costume Helmet of Orc Hero
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    View: 178     
   - Id: 2232
     AegisName: Circlet
     Name: Circlet
@@ -7489,7 +7482,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 30
+    Defense: 15
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -7504,13 +7497,14 @@ Body:
     View: 103
     Script: |
       bonus2 bSubEle,Ele_Dark,-15;    
+      bonus2 bSubEle,Ele_Neutral,2;    
   - Id: 5162
     AegisName: Bone_Helm_
     Name: Bone Helm
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 30
+    Defense: 15
     Slots: 1
     Jobs:
       Alchemist: true
@@ -7526,6 +7520,7 @@ Body:
     View: 103
     Script: |
       bonus2 bSubEle,Ele_Dark,-15;    
+      bonus2 bSubEle,Ele_Neutral,2;  
   - Id: 5163
     AegisName: Corsair_
     Name: Corsair

@@ -22,7 +22,7 @@
 
 moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 	mes "[Boya]";
-	if (!callfunc("F_HasEdenGroupMark")) { mes ".."; close;
+	if (!callfunc("F_HasEdenGroupMark")) { mes ".."; close; if (para_suv01 == 12) { goto L_Master;}
 		mes "You are not in my group are you?";
 		mes "I don't have anything to say to outsiders.";
 		mes "If you want something register with my group.";
@@ -174,11 +174,11 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		mes "Get the equipment from the storage manager.";
 		mes "Our uniform is pretty awesome haha.";
 	}
-	else if (para_suv01 == 12) {
+	else if (para_suv01 == 12) { L_Master:
 		mes "Um, did you like the supplies?";
 		mes "I like the red hat.";
 		mes "The red ribbon is really cute.";
-		next;
+		close; end; // next;
 		mes "[Boya]";
 		if (BaseLevel > 25) {
 			mes "And you seem to.";
@@ -383,7 +383,7 @@ moc_para01,25,35,4	script	Instructor Boya#para01	4_M_KNIGHT_GOLD,{
 		mes "[Boya]";
 		mes "There is nothing more I can teach a battle master such as yourself.";
 	}
-	close;
+	close; end;
 S_Quest1:
 	mes "Really? You already seem ready.";
 	mes "We have a total of 3 steps for the training.";
