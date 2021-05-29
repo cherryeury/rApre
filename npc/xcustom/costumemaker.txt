@@ -240,6 +240,16 @@ OnInit:
 	end;
 
 OnMenu:
+
+	mes "[^FF6600Kyewolhyang^000000]";
+	mes "Hey";
+	mes "I can make a costume based on-";
+	mes "headgears listed in catalogue.";
+	next;
+	mes "[^FF6600Kyewolhyang^000000]";
+	mes "The cost is 500 midgard coins";
+	mes "and 500 high energy crystals";
+	
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
 	else if (.@size == 1) set @shop_index, @i[0];

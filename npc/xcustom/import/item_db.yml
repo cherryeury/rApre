@@ -1869,6 +1869,26 @@ Body:
     Refineable: true
     Script: |
       bonus bInt,2;      
+  - Id: 22508
+    AegisName: Para_Team_Mark_
+    Name: Eden Group Mark
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Delay:
+      Duration: 480000
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      specialeffect2 EF_BEGINSPELL; progressbar "0xFFFFFF",3; warp "moc_para01",171,115;      
   - Id: 2507
     AegisName: Cape_Of_Ancient_Lord
     Name: Ancient Cape
@@ -2332,7 +2352,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 10
+    Defense: 0
     Jobs:
       Acolyte: true
       Mage: true
@@ -2380,7 +2400,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 300
-    Defense: 5
+    Defense: 0
     Jobs:
       Mage: true
       Sage: true
@@ -2705,7 +2725,18 @@ Body:
     Refineable: true
     Script: |
       bonus bIgnoreDefRace,RC_Dragon;
-      bonus2 bAddRace,RC_Dragon,15;      
+      bonus2 bAddRace,RC_Dragon,15;     
+  - Id: 2278
+    AegisName: Mr_Smile
+    Name: Mr. Smile
+    Type: Armor
+    Buy: 60
+    Weight: 100
+    Defense: 7
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 65      
   - Id: 2214
     AegisName: Bunny_Band
     Name: Bunny Band
@@ -2718,7 +2749,7 @@ Body:
     Refineable: true
     View: 15
     Script: |
-      bonus bLuk,2;      
+      bonus bLuk,3;      
   - Id: 5057
     AegisName: Ear_Of_Black_Cat
     Name: Black Cat Ears
@@ -3066,7 +3097,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 2400
-    Defense: 4
+    Defense: 0
     Jobs:
       Alchemist: true
       Assassin: true
@@ -3096,7 +3127,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 2400
-    Defense: 4
+    Defense: 0
     Slots: 1
     Jobs:
       Alchemist: true
@@ -3344,7 +3375,7 @@ Body:
     Type: Armor
     Buy: 500000
     Weight: 900
-    Defense: 0
+    Defense: 10
     Slots: 1
     Jobs:
       All: true
@@ -3890,7 +3921,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3920,7 +3951,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3937,7 +3968,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 5
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
@@ -3950,7 +3981,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 600
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -4624,7 +4655,21 @@ Body:
     Refineable: true
     View: 709
     Script: |
-      bonus3 bAddMonsterDropItem,518,RC_Insect,200;  
+      bonus3 bAddMonsterDropItem,518,RC_Insect,200; 
+  - Id: 5436
+    AegisName: Bride's_Corolla
+    Name: Bride's Corolla
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 0
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 437
+    Script: |
+      bonus bLuk,3;
+      bonus bMdef,2;      
   - Id: 5036
     AegisName: Cross_Band
     Name: Cross Hat
@@ -4643,19 +4688,36 @@ Body:
     View: 121
     Script: |
       bonus2 bAddRace,RC_Undead,5; 
+  - Id: 5437
+    AegisName: Flower_Of_Fairy
+    Name: Fairy Flower
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 438
+    Script: |
+      bonus bInt,1;
+      bonus bMdef,1;
+      bonus2 bSubRace,RC_Insect,5;      
   - Id: 5048
     AegisName: First_Moon_Hair_Pin
     Name: Cresent Hairpin
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 10
+    Defense: 0
     Locations:
       Head_Top: true
     Refineable: true
     View: 132 
     Script: |
-      bonus bMaxHPRate,5;
+      bonus bMaxHPRate,3;
+      bonus bMaxSPRate,3;
   - Id: 5041
     AegisName: Heart_Hair_Pin
     Name: Heart Hairpin
@@ -5090,12 +5152,12 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 150
-    Defense: 1
+    Defense: 0
     Locations:
       Head_Top: true
     View: 133
     Script: |
-      bonus bLongAtkDef,3; 
+      bonus2 bExpAddRace,RC_Undead,3;
   - Id: 5052
     AegisName: Blue_Hair_Band
     Name: Blue Hairband
@@ -7003,6 +7065,22 @@ Body:
       skill "SM_BASH",5;
       bonus bStr,2;
       bonus bDef,10;
+  - Id: 5447
+    AegisName: Frog_Cap
+    Name: Frog Hat
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 0
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 448
+    Script: |
+      bonus bMdef,1;
+      bonus2 bAddRace,RC_Insect,12;
+      bonus2 bMagicAddRace,RC_Insect,12;      
   - Id: 18762
     AegisName: Remodel_Mask_Of_Fox
     Name: Improved Kitsune Mask
@@ -7023,7 +7101,7 @@ Body:
       bonus bAgi,2;
       bonus bLuk,2;
       if (getrefine()>6)
-         bonus bFlee2,2;      
+         bonus bFlee2,3;      
   - Id: 13400
     AegisName: Cutlas_
     Name: Cutlus
@@ -7376,6 +7454,38 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,1;
       bonus bMatkRate,1;   
+  - Id: 2281
+    AegisName: Phantom_Of_Opera
+    Name: Opera Masque
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+    View: 68      
+  - Id: 5442
+    AegisName: Necktie
+    Name: Necktie
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Defense: 0
+    Slots: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 443
+    Script: |
+      bonus bVit,1;
+      bonus bHit,-5;
+      bonus bUseSPrate,5;    
   - Id: 23280
     AegisName: N_Fly_Wing_
     Name: Novice Fly Wing
@@ -7805,13 +7915,6 @@ Body:
     Locations:
       Costume_Head_Top: true
     EquipLevelMin: 1
-  - Id: 19840
-    AegisName: C_Helm_Of_Sun
-    Name: Costume Hat of the Sun God
-    Type: Armor
-    Locations:
-      Costume_Head_Top: true
-    View: 138
   - Id: 19890
     AegisName: C_Wizardry_Hat
     Name: Costume Magician Hat
