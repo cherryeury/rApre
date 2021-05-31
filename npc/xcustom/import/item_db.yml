@@ -1866,7 +1866,7 @@ Body:
     Type: Armor
     Buy: 12000
     Weight: 400
-    Defense: 0
+    Defense: 10
     Jobs:
       Alchemist: true
       Archer: true
@@ -1910,7 +1910,7 @@ Body:
     Type: Armor
     Buy: 12000
     Weight: 400
-    Defense: 0
+    Defense: 10
     Slots: 1
     Jobs:
       Alchemist: true
@@ -2375,7 +2375,7 @@ Body:
     Refineable: true
     View: 189
     Script: |
-      bonus2 bAddMonsterDropItem,611,400;
+      skill "MC_IDENTIFY",1; 
   - Id: 24012
     AegisName: S_Promotion_Weapon
     Name: Shadow Weapon
@@ -5743,7 +5743,7 @@ Body:
     Type: Armor
     Buy: 10000
     Weight: 400
-    Defense: 20
+    Defense: 13
     Jobs:
       Acolyte: true
       Alchemist: true
@@ -5801,7 +5801,7 @@ Body:
     Type: Armor
     Buy: 10000
     Weight: 400
-    Defense: 20
+    Defense: 13
     Slots: 1
     Jobs:
       Acolyte: true
@@ -5893,7 +5893,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bInt,1;       
+      bonus bMaxSPRate,2;       
   - Id: 2333
     AegisName: Silver_Robe_
     Name: Silver Robe
@@ -5911,7 +5911,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bInt,1; 
+      bonus bMaxSPRate,2; 
   - Id: 2340
     AegisName: Novice_Breast
     Name: Novice Breastplate

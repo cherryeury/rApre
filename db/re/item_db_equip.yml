@@ -23077,7 +23077,7 @@ Body:
     AegisName: Goggle
     Name: Goggles
     Type: Armor
-    Buy: 20
+    Buy: 30000
     Weight: 300
     Defense: 5
     Jobs:
@@ -23102,7 +23102,7 @@ Body:
     AegisName: Goggle_
     Name: Goggles
     Type: Armor
-    Buy: 20
+    Buy: 30000
     Weight: 300
     Defense: 5
     Slots: 1
