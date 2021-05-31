@@ -3730,16 +3730,20 @@ Body:
     Type: Armor
     Buy: 100000
     Weight: 1000
-    Defense: 10
+    Defense: 0
     Slots: 1
+    Jobs:
+      All: true
+    Classes:
+      All: true
     Locations:
       Head_Top: true
-    EquipLevelMin: 90 
+    EquipLevelMin: 90
     Refineable: true
     View: 225
     Script: |
       bonus bMdef,20;
-      bonus bMaxHP,600;  
+      bonus bMaxHP,600;        
   - Id: 5028
     AegisName: Candle
     Name: Candle

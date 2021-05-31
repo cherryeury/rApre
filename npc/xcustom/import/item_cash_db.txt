@@ -24,7 +24,7 @@
 //Headgear 
 //Top
 
-0,5153,3 // Angeling Hairpin
+//0,5153,3 // Angeling Hairpin
 //0,5690,3 // Red Wing Hat
 //0,5568,3 // Rabbit Bonnet
 0,5183,3 // Bird Nest
@@ -91,18 +91,18 @@
 0,5396,40 // Jasper Crest
 //0,18738,8 // White Student
 
-0,5357,45 // Wings of Victory
+0,5357,40 // Wings of Victory
 0,5495,45 // Thor
 //0,5975,30 // Zealotus
 //0,18694,45 // Red Hood
 0,18574,45 // Lord of Death
 0,18563,45 // Heart wings
 0,5379,60 // Balloon Hat
+0,5283,60 // Chick Hat
 //0,18801,50 // Gale Hair Or
 0,5254,70 // Deviling
 //0,18812,250 // Elder Crown
 //0,18803,70 // Rose Cascade
-0,5283,70 // Chick Hat
 0,5211,80 // Dress Hat
 0,5520,80 // Rabbit Earplug
 0,5481,125 // Hemode
@@ -125,7 +125,7 @@
 //0,18910,250 // Piamette Blue Ears
 //0,18908,250 // Piamette Red Ears
 //0,18909,250 // Piamette Brown Ears
-0,5208,250 // rIDEWORD
+0,5208,275 // rIDEWORD
 0,5585,350 // Rune
 
 //0,5975,750
@@ -257,7 +257,7 @@
 //2,16051,25 // Valkyrie Hammer
 //2,28717,200 // Valkyrie Knife
 //2,13092,25 // RWC
-2,28719,200 // Lacma
+2,13049,200 // Lacma
 2,16039,200 // Spoon
 
 //Shield
@@ -285,7 +285,7 @@
 //3,20800,1000
 
 // Armor
-3,2358,1 // Angel's Dress
+//3,2358,1 // Angel's Dress
 //3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
 3,15057,10 // Apron 
