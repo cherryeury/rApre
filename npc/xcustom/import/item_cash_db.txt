@@ -198,7 +198,6 @@
 //1,18858,250 // Pink Angelring Bubble
 //1,18754,300 // Blood Sucker
 //1,18968,500
-1,19244,400 // Rosary
 1,19097,400 // Piamette Ribbon
 //1,18859,400 // Balloon
 1,19143,400 // Balloon
@@ -209,6 +208,8 @@
 1,19151,400 // Balloon
 1,19153,400 // Balloon
 1,19154,400 // Balloon
+1,19244,1000 // Rosary
+1,19240,1000 // Toy Syringe
 //1,18666,800 // CD in Mouth 
 //1,18564,1000 // Fragment of Love
 //1,19137,2500 // Strawberry in Mouth

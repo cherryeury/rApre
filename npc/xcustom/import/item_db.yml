@@ -3730,7 +3730,7 @@ Body:
     Type: Armor
     Buy: 100000
     Weight: 1000
-    Defense: 0
+    Defense: 10
     Slots: 1
     Locations:
       Head_Top: true
@@ -3739,7 +3739,7 @@ Body:
     View: 225
     Script: |
       bonus bMdef,20;
-      bonus bMaxHP,600;
+      bonus bMaxHP,600;  
   - Id: 5028
     AegisName: Candle
     Name: Candle
