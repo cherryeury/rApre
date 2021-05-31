@@ -440,3 +440,13 @@ IG_BShadow,24014,20,1,1	//  Pisces
 IG_BShadow,24015,20,1,1	//  Capri
 IG_BShadow,24016,20,1,1	//  Aq
 IG_BShadow,24017,20,1,1	//  Scorpio
+
+IG_Balloon,18859,20,1,1	//  Scorpio
+IG_Balloon,19143,20,1,1	//  Scorpio
+IG_Balloon,19146,20,1,1	//  Scorpio
+IG_Balloon,19147,20,1,1	//  Scorpio
+IG_Balloon,19148,20,1,1	//  Scorpio
+IG_Balloon,19150,20,1,1	//  Scorpio
+IG_Balloon,19151,20,1,1	//  Scorpio
+IG_Balloon,19153,20,1,1	//  Scorpio
+IG_Balloon,19154,20,1,1	//  Scorpio

@@ -8874,8 +8874,8 @@ Body:
     Drops:
       - Item: Brood_Axe
         Rate: 400
-      - Item: Ring_
-        Rate: 400
+      - Item: Ring
+        Rate: 500
       - Item: Loard_Circlet
         Rate: 400
       - Item: Doom_Slayer_
@@ -9363,7 +9363,7 @@ Body:
         Rate: 1500
       - Item: Tights_
         Rate: 8
-      - Item: Earring_
+      - Item: Earring
         Rate: 1
       - Item: Queen's_Whip
         Rate: 100
@@ -9693,7 +9693,7 @@ Body:
         Rate: 4850
       - Item: Stone_Arrow
         Rate: 1500
-      - Item: Glove_
+      - Item: Glove
         Rate: 1
       - Item: Coal
         Rate: 130
@@ -11632,8 +11632,8 @@ Body:
         Rate: 3000
       - Item: Old_Violet_Box
         Rate: 4000
-      - Item: Ring_
-        Rate: 200
+      - Item: Ring
+        Rate: 300
       - Item: Manteau_
         Rate: 500
       - Item: Elunium
@@ -12650,8 +12650,8 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 5141
-      - Item: Bone_Helm_
-        Rate: 10
+      - Item: Bone_Helm
+        Rate: 100
       - Item: Dark_Lord_Card
         Rate: 1
         StealProtected: true
@@ -13778,7 +13778,7 @@ Body:
         Rate: 4413
       - Item: Mementos
         Rate: 1800
-      - Item: Glove_
+      - Item: Glove
         Rate: 1
       - Item: Silver_Ring
         Rate: 150
@@ -14560,7 +14560,7 @@ Body:
         Rate: 3
       - Item: Blue_Jewel
         Rate: 4559
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Melon
         Rate: 500
@@ -16698,8 +16698,8 @@ Body:
         Rate: 5
       - Item: House_Auger
         Rate: 10
-      - Item: Ring_
-        Rate: 2
+      - Item: Ring
+        Rate: 100
       - Item: Shine_Spear_Blade
         Rate: 10
       - Item: War_Axe
@@ -16747,7 +16747,7 @@ Body:
         Rate: 5500
       - Item: Inccubus_Horn
         Rate: 1
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Gold_Ring
         Rate: 500
@@ -17433,8 +17433,8 @@ Body:
         Rate: 5
       - Item: Cape_Of_Ancient_Lord
         Rate: 15
-      - Item: Ring_
-        Rate: 4
+      - Item: Ring
+        Rate: 100
       - Item: Book_Of_The_Apocalypse
         Rate: 4
       - Item: Dracula_Card
@@ -28644,7 +28644,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 500
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Cursed_Seal
         Rate: 100
@@ -28740,7 +28740,7 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -28790,7 +28790,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 200
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -30704,8 +30704,8 @@ Body:
         Rate: 1000
       - Item: Red_Gemstone
         Rate: 1000
-      - Item: Earring_
-        Rate: 3
+      - Item: Earring
+        Rate: 1
       - Item: Mantle_
         Rate: 10
       - Item: Elunium_Stone
@@ -32033,7 +32033,7 @@ Body:
         Rate: 7000
       - Item: Seed_Of_Yggdrasil
         Rate: 1000
-      - Item: Ring_
+      - Item: Ring
         Rate: 1000
       - Item: Old_Violet_Box
         Rate: 5000
@@ -33604,7 +33604,7 @@ Body:
         Rate: 1
       - Item: Berserk_Guitar
         Rate: 50
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Meteo_Plate_Armor
         Rate: 20
@@ -35779,8 +35779,8 @@ Body:
     Drops:
       - Item: Old_Violet_Box
         Rate: 4000
-      - Item: Ring_
-        Rate: 200
+      - Item: Ring
+        Rate: 300
       - Item: Int_Dish10
         Rate: 1000
       - Item: Ixion_Wing
@@ -43339,8 +43339,8 @@ Body:
         Rate: 5
       - Item: Cape_Of_Ancient_Lord
         Rate: 15
-      - Item: Ring_
-        Rate: 4
+      - Item: Ring
+        Rate: 100
       - Item: Book_Of_The_Apocalypse
         Rate: 4
       - Item: Splendid_Box
@@ -43513,8 +43513,8 @@ Body:
         Rate: 50
       - Item: Emperium
         Rate: 500
-      - Item: Magestic_Goat_
-        Rate: 10
+      - Item: Magestic_Goat
+        Rate: 100
       - Item: Elunium
         Rate: 5432
       - Item: Oridecon
@@ -43570,8 +43570,8 @@ Body:
         Rate: 5
       - Item: Splendid_Box
         Rate: 100
-      - Item: Ring_
-        Rate: 2
+      - Item: Ring
+        Rate: 1
       - Item: Shine_Spear_Blade
         Rate: 10
       - Item: War_Axe
@@ -52692,8 +52692,8 @@ Body:
         Rate: 4500
       - Item: Mementos
         Rate: 1800
-      - Item: Glove_
-        Rate: 2
+      - Item: Glove
+        Rate: 1
       - Item: Silver_Ring
         Rate: 150
       - Item: Runstone_Ancient
@@ -59896,7 +59896,7 @@ Body:
         Rate: 4850
       - Item: Stone_Arrow
         Rate: 1500
-      - Item: Glove_
+      - Item: Glove
         Rate: 1
       - Item: Coal
         Rate: 130
@@ -60365,7 +60365,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 200
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -61553,7 +61553,7 @@ Body:
         Rate: 1
       - Item: Berserk_Guitar
         Rate: 50
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Meteo_Plate_Armor
         Rate: 20
@@ -61950,7 +61950,7 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -61999,7 +61999,7 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -62048,7 +62048,7 @@ Body:
     Drops:
       - Item: Red_Feather
         Rate: 400
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Stone_Of_Intelligence_
         Rate: 50
@@ -63908,7 +63908,7 @@ Body:
     Drops:
       - Item: Blue_Feather
         Rate: 500
-      - Item: Ring_
+      - Item: Ring
         Rate: 1
       - Item: Cursed_Seal
         Rate: 100
