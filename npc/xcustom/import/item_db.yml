@@ -3732,10 +3732,6 @@ Body:
     Weight: 1000
     Defense: 0
     Slots: 1
-    Jobs:
-      All: true
-    Classes:
-      All_Upper: true
     Locations:
       Head_Top: true
     EquipLevelMin: 90 
@@ -3764,8 +3760,6 @@ Body:
     Weight: 900
     Defense: 0
     Slots: 1
-    Jobs:
-      All: true
     Locations:
       Head_Mid: true
       Head_Top: true

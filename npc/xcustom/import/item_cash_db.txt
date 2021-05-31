@@ -24,7 +24,7 @@
 //Headgear 
 //Top
 
-
+0,5153,3 // Angeling Hairpin
 //0,5690,3 // Red Wing Hat
 //0,5568,3 // Rabbit Bonnet
 0,5183,3 // Bird Nest
@@ -156,12 +156,13 @@
 1,18787,175 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
-//1,18877,500 // Baron Evil Eye
+
 //1,19024,1000 // Protect Feathers
 1,18599,300 // Black Devil Mask
 1,5325,300 // Robo
 1,5397,300 // Scuba
-1,18540,400 // Demon Mask
+1,18540,500 // Demon Mask
+1,18813,750 // New Wave
 //1,5389,500 // Angel's Spirit
 //1,19083,1000 // Mask of Hero
 //1,19141,1500 // Dolor Thanatos
@@ -191,11 +192,13 @@
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
 1,5361,50 // Gangster
+
 1,18868,125 // Assassin mask
 1,18560,125 // Fafnir Mask
 //1,18858,250 // Pink Angelring Bubble
 //1,18754,300 // Blood Sucker
 //1,18968,500
+1,19244,400 // Rosary
 1,19097,400 // Piamette Ribbon
 //1,18859,400 // Balloon
 1,19143,400 // Balloon
@@ -281,6 +284,7 @@
 //3,20800,1000
 
 // Armor
+3,2358,1 // Angel's Dress
 //3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
 3,15057,10 // Apron 
