@@ -1158,6 +1158,7 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
+      bonus bHpRecovRate,4;
       bonus bSpRecovRate,2;
   - Id: 2402
     AegisName: Sandals_
@@ -1171,6 +1172,7 @@ Body:
       Shoes: true
     Refineable: true      
     Script: |
+      bonus bHpRecovRate,4;
       bonus bSpRecovRate,2;
   - Id: 2403
     AegisName: Shoes
@@ -1187,8 +1189,8 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bHpRecovRate,5;
-      bonus bSpRecovRate,2;  
+      bonus bHpRecovRate,8;
+      bonus bSpRecovRate,4;  
   - Id: 2404
     AegisName: Shoes_
     Name: Shoes
@@ -1205,8 +1207,8 @@ Body:
       Shoes: true
     Refineable: true      
     Script: |
-      bonus bHpRecovRate,5;
-      bonus bSpRecovRate,2;   
+      bonus bHpRecovRate,8;
+      bonus bSpRecovRate,4;    
   - Id: 2405
     AegisName: Boots
     Name: Boots
@@ -1266,8 +1268,8 @@ Body:
       Shoes: true
     Refineable: true   
     Script: |
-      bonus bCritical,1;
-      bonus bAspdRate,1;
+      bonus bCritical,2;
+      bonus bAspdRate,2;
   - Id: 2408
     AegisName: Cuffs
     Name: Shackles
@@ -1577,6 +1579,65 @@ Body:
     Script: |
       bonus2 bSubDefEle,Ele_Dark,4;
       bonus2 bMagicSubDefEle,Ele_Dark,4;
+  - Id: 2130
+    AegisName: Cross_Shield
+    Name: Cross Shield
+    Type: Armor
+    Buy: 20
+    Weight: 2000
+    Defense: 130
+    Slots: 1
+    Jobs:
+      Crusader: true  
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 80
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bStr,1;
+      bonus2 bSkillAtk,"PA_SHIELDCHAIN",30;
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",30;
+      bonus bUseSPrate,10;      
+  - Id: 2128
+    AegisName: Herald_Of_GOD_
+    Name: Sacred Mission
+    Type: Armor
+    Buy: 128000
+    Weight: 1600
+    Defense: 120
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 83
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bVit,3;
+      bonus bInt,3;
+      bonus bMdef,3;
+      bonus bUnbreakableShield;
+  - Id: 2111
+    AegisName: Herald_Of_GOD
+    Name: Sacred Mission
+    Type: Armor
+    Buy: 128000
+    Weight: 1600
+    Defense: 120
+    Jobs:
+      Crusader: true
+    Locations:
+      Left_Hand: true
+    EquipLevelMin: 83
+    Refineable: true
+    View: 4
+    Script: |
+      bonus bVit,3;
+      bonus bInt,3;
+      bonus bMdef,3;
+      bonus bUnbreakableShield;      
   - Id: 2110
     AegisName: Holy_Guard
     Name: Holy Guard
@@ -3677,6 +3738,7 @@ Body:
       All_Upper: true
     Locations:
       Head_Top: true
+    EquipLevelMin: 90 
     Refineable: true
     View: 225
     Script: |
@@ -3700,7 +3762,7 @@ Body:
     Type: Armor
     Buy: 500000
     Weight: 900
-    Defense: 5
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -5868,8 +5930,7 @@ Body:
     EquipLevelMin: 10
     Refineable: true
     Script: |
-      bonus bMaxHP,200;
-      bonus bMaxSP,40;
+      bonus bMdef,10;
   - Id: 2107
     AegisName: Mirror_Shield
     Name: Mirror Shield
@@ -6080,14 +6141,14 @@ Body:
     Weight: 5500
     Defense: 79
     Jobs:
-      Crusader: true
+      Crusader: true    
     Locations:
       Armor: true
     EquipLevelMin: 70
     Refineable: true
     Script: |
-      bonus bVit,2;
-      bonus bMaxHPrate,4;     
+      bonus bVit,1;
+      bonus bMaxHPrate,6;     
   - Id: 2342
     AegisName: Full_Plate_Armor_
     Name: Legion Plate Armor
@@ -6103,8 +6164,8 @@ Body:
     EquipLevelMin: 70
     Refineable: true     
     Script: |
-      bonus bVit,2;
-      bonus bMaxHPrate,4;       
+      bonus bVit,1;
+      bonus bMaxHPrate,6;       
   - Id: 2309
     AegisName: Coat
     Name: Coat
@@ -7039,7 +7100,7 @@ Body:
     Refineable: true
     Script: |
       bonus bVit,1;
-      bonus bHpRecovRate,15;  
+      bonus2 bSubEle,Ele_Neutral,2;     
   - Id: 2628
     AegisName: Novice_Armlet
     Name: Novice Armlet
@@ -7071,7 +7132,7 @@ Body:
     Refineable: true   
     Script: |
       bonus bVit,1;
-      bonus bHpRecovRate,15;      
+      bonus2 bSubEle,Ele_Neutral,2;     
   - Id: 1364
     AegisName: Great_Axe
     Name: Great Axe

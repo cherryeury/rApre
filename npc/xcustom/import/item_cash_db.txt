@@ -252,7 +252,7 @@
 //2,1137,25 // Excalibur
 //2,16051,25 // Valkyrie Hammer
 //2,28717,200 // Valkyrie Knife
-2,13092,25 // RWC
+//2,13092,25 // RWC
 2,28719,200 // Lacma
 2,16039,200 // Spoon
 
@@ -338,10 +338,10 @@
 //3,20940,1750 // Violet Halo
 
 //Shoes
-3,2481,15 // Rune Boots
-3,2466,20 // Training Shoes
-3,22064,50 // Thorn Boots
-3,22042,70 // Talaria
+//3,2481,15 // Rune Boots
+//3,2466,20 // Training Shoes
+//3,22064,50 // Thorn Boots
+//3,22042,55 // Talaria
 //3,22075,35 // Rift Shoes
 //3,22132,1250 // Lightning God
 //3,22171,600 // Ancient Hero's Boots
@@ -367,7 +367,7 @@
 4,28342,70 // Critical Anklet
 //4,2799,150 // Ring of Protection
 4,2790,100 // Bradium
-4,2983,400 // Brooch of greed
+//4,2983,400 // Brooch of greed
 
 //4,2984,450 // Glove of Saehrimnir
 4,2881,400 // Orlean's
