@@ -252,6 +252,7 @@
 //2,1137,25 // Excalibur
 //2,16051,25 // Valkyrie Hammer
 //2,28717,200 // Valkyrie Knife
+2,13092,25 // RWC
 2,28719,200 // Lacma
 2,16039,200 // Spoon
 
