@@ -1947,8 +1947,8 @@ Body:
     Refineable: true
     View: 117
     Script: |
-      bonus bMaxHP,110;
-      bonus bMaxSP,110;
+      bonus bVariableCastrate,-4;
+      bonus bMaxSP,60;
   - Id: 2121
     AegisName: Memorize_Book_
     Name: Memory Book
@@ -2225,7 +2225,7 @@ Body:
     Refineable: true
     View: 115
     Script: |
-      bonus2 bAddEffWhenHit,Eff_Freeze,400;  
+      bonus2 bAddEffWhenHit,Eff_Freeze,500;  
   - Id: 2277
     AegisName: Nurse_Cap
     Name: Nurse Cap
@@ -2342,12 +2342,12 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 0
+    Defense: 10
     Locations:
       Head_Top: true
     View: 80      
     Script: |
-      bonus bFlee2,2;
+      bonus bFlee2,3;
   - Id: 5109
     AegisName: Red_Bonnet
     Name: Red Bonnet
@@ -2360,8 +2360,8 @@ Body:
     Refineable: true
     View: 190      
     Script: |
-      bonus bMaxHP,120;
-      bonus bMaxSP,120;
+      bonus bDex,2;
+      bonus bLuk,2;
   - Id: 5108
     AegisName: Detective_Hat
     Name: Renown Detective's Cap
@@ -2529,8 +2529,8 @@ Body:
     Refineable: true
     View: 143   
     Script: |
-      bonus bBaseAtk,10; 
-      bonus bLuk,1;
+      bonus bBaseAtk,8; 
+      bonus bLuk,2;
   - Id: 5243
     AegisName: Chullos
     Name: Shafka
@@ -2739,7 +2739,7 @@ Body:
     Refineable: true
     View: 142
     Script: |
-      bonus bMdef,18;
+      bonus bMdef,15;
       bonus bFlee,3;
       bonus2 bResEff,Eff_Curse,3000;      
   - Id: 5622
@@ -3258,7 +3258,7 @@ Body:
     Refineable: true
     View: 41
     Script: |
-      bonus bStr,2;      
+      bonus bStr,1;      
   - Id: 2298
     AegisName: Green_Feeler
     Name: Green Feeler
@@ -3319,7 +3319,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 30
+    Defense: 20
     Jobs:
       All: true
       Novice: false
@@ -3330,14 +3330,15 @@ Body:
     Refineable: true
     View: 30
     Script: |
-      bonus bUnbreakableHelm;     
+      bonus bUnbreakableHelm;
+      bonus bDefRate,getrefine();   
   - Id: 5159
     AegisName: Golden_Gear_
     Name: Golden Gear
     Type: Armor
     Buy: 20
     Weight: 900
-    Defense: 30
+    Defense: 20
     Slots: 1
     Jobs:
       All: true
@@ -3349,7 +3350,8 @@ Body:
     Refineable: true
     View: 30
     Script: |
-      bonus bUnbreakableHelm;  
+      bonus bUnbreakableHelm;
+      bonus bDefRate,getrefine();
   - Id: 2375
     AegisName: Diabolus_Armor
     Name: Diabolus Armor
@@ -3780,7 +3782,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 700
-    Defense: 20
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3790,7 +3792,8 @@ Body:
     Refineable: true
     View: 157
     Script: |
-      bonus bDex,2;      
+      bonus bVit,3;
+      bonus bMaxHP,100;
   - Id: 5081
     AegisName: Mistress_Crown
     Name: Crown of Mistress
@@ -3953,7 +3956,7 @@ Body:
     Refineable: true
     View: 43      
     Script: |
-      bonus bShortWeaponDamageReturn,3;
+      bonus bShortWeaponDamageReturn,2;
   - Id: 5141
     AegisName: Marionette_Doll
     Name: Marionette Doll
@@ -3996,7 +3999,7 @@ Body:
     AegisName: Goggle
     Name: Goggles
     Type: Armor
-    Buy: 30000
+    Buy: 20000
     Weight: 300
     Defense: 5
     Jobs:
@@ -4018,7 +4021,7 @@ Body:
     Refineable: true
     View: 1    
     Script: |
-      bonus bAspdRate,4;
+      bonus bAgi,1;
   - Id: 18874
     AegisName: One_Eyed_Glass_
     Name: Cyclops Glasses
@@ -4142,9 +4145,9 @@ Body:
     AegisName: Goggle_
     Name: Goggles
     Type: Armor
-    Buy: 30000
+    Buy: 20000
     Weight: 300
-    Defense: 5
+    Defense: 0
     Slots: 1
     Jobs:
       Alchemist: true
@@ -4165,7 +4168,7 @@ Body:
     Refineable: true
     View: 1      
     Script: |
-      bonus bAspdRate,4;
+      bonus bAgi,1;
   - Id: 19732
     AegisName: C_Goblin_Mask_04
     Name: Costume Goblin Leader Mask
@@ -4298,7 +4301,7 @@ Body:
     Refineable: true
     View: 137
     Script: |
-      bonus bStr,2;
+      bonus bStr,1;
       bonus bInt,1;    
   - Id: 2297
     AegisName: Goblini_Mask
@@ -4376,7 +4379,9 @@ Body:
     Refineable: true
     View: 70
     Script: |
-      bonus2 bResEff,Eff_Curse,1500;  
+      bonus2 bResEff,Eff_Curse,1000;
+      bonus bMaxHP,50;
+      bonus bMaxSP,50;
   - Id: 5170
     AegisName: Feather_Beret
     Name: Feather Beret
@@ -4725,7 +4730,7 @@ Body:
     Refineable: true
     View: 45
     Script: |
-      bonus bInt,2;
+      bonus bInt,1;
   - Id: 2230
     AegisName: Gemmed_Sallet
     Name: Gemmed Sallet
@@ -4808,7 +4813,9 @@ Body:
       bonus bStr,1;
       bonus bInt,1;
       bonus bLuk,1;
-      bonus bMdef,5;      
+      if (getrefine()>9){      
+        bonus bMaxHP +500;
+        }
   - Id: 5002
     AegisName: Gemmed_Crown
     Name: Jewel Crown
@@ -4891,7 +4898,7 @@ Body:
     Refineable: true
     View: 19
     Script: |
-      bonus bInt,2;      
+      bonus bInt,1;      
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar
@@ -5488,14 +5495,15 @@ Body:
     Buy: 20
     Weight: 800
     Defense: 0
+    Slots: 0
     Locations:
       Head_Top: true
     EquipLevelMin: 50
     Refineable: true
     View: 162
     Script: |
-      bonus3 bAddMonsterDropItem,551,RC_Fish,500;
-      bonus3 bAddMonsterDropItem,544,RC_Fish,500;
+      bonus bVit,2;
+      bonus2 bAddItemGroupHealRate,IG_Fish,50;
   - Id: 2280
     AegisName: Sahkkat
     Name: Sakkat
@@ -6250,7 +6258,7 @@ Body:
     View: 170
     Script: |
       bonus2 bResEff,Eff_Blind,5000;
-      bonus bCritical,1;
+      bonus bCritical,2;
   - Id: 19791
     AegisName: C_Alarm_Mask
     Name: Costume Alarm Mask
@@ -7447,7 +7455,6 @@ Body:
     Script: |
       bonus bStr,2;
       bonus bInt,2;
-      bonus bMdef,3;
   - Id: 18766
     AegisName: Enhanced_Helm_Of_Angel
     Name: Enhanced Helm of Angel
@@ -7528,14 +7535,13 @@ Body:
     Script: |
       bonus bStr,1;
       bonus bInt,1;
-      bonus bMdef,3;
       if (getrefine()>6){
       bonus bStr,2;
       bonus bInt,2;
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMdefClassRate,Class_All,6;
-      bonus2 bIgnoreDefClassRate,Class_All,6;
+      bonus2 bIgnoreMdefClassRate,Class_All,7;
+      bonus2 bIgnoreDefClassRate,Class_All,7;
       }      
   - Id: 1162
     AegisName: Broad_Sword_
@@ -8350,10 +8356,10 @@ Body:
     Script: |
       bonus bStr,1; 
       if (getrefine()>6){
-      bonus2 bIgnoreDefClassRate,Class_All,10;
+      bonus bStr,2;
       }
       if (getrefine()>8){
-      bonus2 bIgnoreDefClassRate,Class_All,10;
+      bonus2 bIgnoreDefClassRate,Class_All,20;
       }            
   - Id: 12
     AegisName: Modified_Sharp_Gear_
@@ -8385,10 +8391,10 @@ Body:
     Script: |
       bonus bShortWeaponDamageReturn,2; 
       if (getrefine()>6){
-      bonus bDef,20;
+      bonus bShortWeaponDamageReturn,3;
       }
       if (getrefine()>8){
-      bonus bShortWeaponDamageReturn,4; 
+      bonus bShortWeaponDamageReturn,5; 
       }            
   - Id: 13
     AegisName: Modified_Tiara_
@@ -8412,7 +8418,7 @@ Body:
       bonus bInt,2;
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,10;
+      bonus2 bMagicAtkEle,Ele_Earth,15;
       }                  
   - Id: 14
     AegisName: Modified_Crown_
@@ -8436,8 +8442,8 @@ Body:
       bonus bInt,2;
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,10;
-      }                     
+      bonus2 bMagicAtkEle,Ele_Holy,15;
+      }                       
   - Id: 15
     AegisName: Modified_Spinx_Helm_
     Name: Modified Sphinx Hat
@@ -8589,7 +8595,7 @@ Body:
     View: 103
     Script: |
       bonus2 bSubEle,Ele_Dark,-15;    
-      bonus2 bSubEle,Ele_Neutral,2;  
+      bonus2 bSubEle,Ele_Neutral,1;  
   - Id: 5163
     AegisName: Corsair_
     Name: Corsair
@@ -8607,7 +8613,7 @@ Body:
     Refineable: true
     View: 105
     Script: |
-      bonus bVit,2;
+      bonus bVit,1;
   - Id: 5019
     AegisName: Corsair
     Name: Corsair

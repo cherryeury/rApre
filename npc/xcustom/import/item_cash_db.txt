@@ -29,7 +29,7 @@
 //0,5568,3 // Rabbit Bonnet
 0,5183,3 // Bird Nest
 //0,5153,8 // Angeling Hairpin
-0,5482,4 // Dark knight
+0,5482,3 // Dark knight
 0,5324,8 // Little Angel
 0,5138,8 // Magician eyes
 0,18701,8 // Civil Man
@@ -354,8 +354,8 @@
 
 // Acc
 //4,2745,10 // Pinguicula Corsage
-4,2780,4 // Dark knight
-4,2779,4 // Dark knight
+4,2780,3 // Dark knight
+4,2779,3 // Dark knight
 4,2855,15 // Whikebain tail
 4,2948,20 // Devil Wing
 4,2751,30 // Academy Badge
