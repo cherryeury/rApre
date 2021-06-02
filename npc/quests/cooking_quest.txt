@@ -1482,13 +1482,13 @@ L_End:
 }
 
 -	script	Madeleine Chu#cook_	-1,{
-	if (BaseLevel > 0) {
+	if (Baselevel >0) {
 		mes "[Madeleine Chu]";
 		mes "I'm sorry, but right now";
-		mes "i'm too busy.";
-		mes "This orleans is a genius";
-		mes "but he keep giving me extra works";
-		mes "sigh~";
+		mes "you're carrying too many";
+		mes "items. You should put your";
+		mes "extra things in Kafra Storage,";
+		mes "and then talk to me again, okay? ";
 		close2;
 		//EnableItemMove
 		end;

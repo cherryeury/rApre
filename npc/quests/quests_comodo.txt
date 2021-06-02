@@ -262,7 +262,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 				mes "Whew! This is pretty hard!";
 				next;
 				delitem 5009,1;  //Safety_Helmet
-				delitem 18533,1;  //Candle
+				delitem 5028,1;  //Candle
 				delitem 747,1;  //Crystal_Mirror
 				delitem 999,25;  //Steel
 				mes "[Isac Mari]";
@@ -281,7 +281,7 @@ comodo,273,137,4	script	Traveler#head	702,{
 			mes "[Isac Mari]";
 			mes "If you want to make Mine Helmet,";
 			mes "^3355FF1 Safety Helmet^000000";
-			mes "^3355FF1 Honey Bee Hat^000000 ";
+			mes "^3355FF1 Candle^000000 ";
 			mes "^3355FF1 Crystal Mirror^000000";
 			mes "^3355FF25 Steel^000000";
 			mes "is needed to create it.";
