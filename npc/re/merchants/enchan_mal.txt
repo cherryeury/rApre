@@ -79,7 +79,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1225: callsub L_Socket,1,2; case 13032: callsub L_Socket,1,2; 	 // Mail_Breaker
 			case 13002: callsub L_Socket,1,2; case 13019: callsub L_Socket,1,2; // Ginnungagap 
 			case 1227: callsub L_Socket,1,2; case 1229: callsub L_Socket,1,2;  // Weeder_Knife // Mama's_Knife
-			case 13001: callsub L_Socket,1,2; case 13030: callsub L_Socket,1,2; // Dragon_Killer
+			case 13001: callsub L_Socket,1,2; // Dragon_Killer
 			case 1232: callsub L_Socket,1,2;  case 13033: callsub L_Socket,1,2; 	// Assasin_Dagger
 			case 1233: callsub L_Socket,1,2; case 1235: callsub L_Socket,1,2;	// Exercise
 			case 1236: callsub L_Socket,1,2;  case 13018: callsub L_Socket,1,2;	// Sucsamad

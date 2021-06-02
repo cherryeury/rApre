@@ -30,7 +30,7 @@ case 1:
 
 case 2:
 				mes "[^FF6600Silvervine Cat^000000]";
-				mes "I can trade 1 ^FF6600Silvervine^000000, for 300.000 Zeny.";
+				mes "I can trade 1 ^FF6600Silvervine^000000, for 100.000 Zeny.";
 				mes "So, how many do you wish to trade ?";
 				mes "If you've changed your mind, just input '0'.";
 				next;
@@ -52,7 +52,7 @@ case 2:
 						break;
 					}
 				}
-				if (zeny < (300000*.@input)) {
+				if (zeny < (100000*.@input)) {
 					mes "[^FF6600Silvervine Cat^000000]";
 					mes "You don't have enough zeny.";
 					close;
@@ -63,7 +63,7 @@ case 2:
 					close;
 				}
 				getitem 6417,.@input; // Zeny coin
-				set Zeny, Zeny - 300000*.@input; // Zeny bag
+				set Zeny, Zeny - 100000*.@input; // Zeny bag
 				mes "[^FF6600Silvervine Cat^000000]";
 				mes "Thank you ! Here's your Zeny Coins.";
 				close;			
