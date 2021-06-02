@@ -1769,7 +1769,7 @@ iz_dun04,43,46,3	script	Eden Member Callandiva	745,{
 	close;
 }
 
-new_5-1,53,114,3 script	Administrator Michael	4_M_RUSMAN1,{ // moc_para01,112,96,5	script	Administrator Michael	4_M_RUSMAN1,{
+new_5-1,53,114,3	script	Michael	4_M_RUSMAN1,{
 	mes "[Michael]";
 	mes "Why did you come here?";
 	next;
@@ -2155,7 +2155,7 @@ S_Select:
 	close;
 }
 
-new_5-1,53,114,3	script	Chef	820,{  // moc_para01,179,44,3	script	Chef	820,{
+new_5-1,53,114,3	script	Chef	820,{  
 	mes "[Chef]";
 	mes "What's up?";
 	mes "Do you want a Meal? Or do you have other business?";
@@ -3738,7 +3738,7 @@ spl_fild02,377,149,3	script	Dispatched Instructor#08	4_M_DST_MASTER,{
 	close;
 }
 
-new_5-1,53,114,3	moc_para01,111,83,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{  // moc_para01,111,83,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{
+new_5-1,53,114,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{  // moc_para01,111,83,3	script	Blacksmith Thorn#2nd10	2_M_OLDBLSMITH,{
 	if (checkweight(2571,5) == 0) {
 		mes "- You have too many items in your inventory to continue -";
 		close;

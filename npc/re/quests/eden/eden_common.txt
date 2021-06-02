@@ -351,7 +351,7 @@ moc_para01,47,39,3	script	#warp_2_pass	111,{
 //	close;
 //}
 
-moc_para01,182,48,3	script	Eden's Chief#eden	886,{
+new_5-1,53,114,3	script	Eden's Chief#eden	886,{
 	set .@eggf,rand(1,118);
 	set .@eggf_1,.@eggf + 1;
 	set .@eggf_2,.@eggf + 2;
