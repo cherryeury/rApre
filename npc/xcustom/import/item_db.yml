@@ -10692,29 +10692,6 @@ Body:
       bonus bIgnoreDefRace,RC_Player_Human;
       bonus bFlee,-(readparam(bAgi)+BaseLevel);
       bonus bHPrecovRate,-100;
-      bonus bSPrecovRate,-100;      
-  - Id: 1273
-    AegisName: Bloody_Roar
-    Name: Bloody Roar
-    Type: Weapon
-    SubType: Katar
-    Buy: 20
-    Weight: 1000
-    Attack: 120
-    Range: 1
-    Slots: 1
-    Jobs:
-      Assassin: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 75
-    Refineable: true
-    Script: |
-      bonus bIgnoreDefRace,RC_DemiHuman;
-      bonus bIgnoreDefRace,RC_Player_Human;
-      bonus bFlee,-(readparam(bAgi)+BaseLevel);
-      bonus bHPrecovRate,-100;
       bonus bSPrecovRate,-100;            
   - Id: 1229
     AegisName: Mama's_Knife

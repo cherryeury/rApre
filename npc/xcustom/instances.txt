@@ -28,6 +28,11 @@
 //============================================================
 xmas,240,289,3	script	Merchant Master#	4_CAT_MERMASTER,{ callfunc "instanceshop",1;}
 1@gef,129,60,4	script	Merchant Master#2	4_CAT_MERMASTER,{ callfunc "instanceshop",2;}
+malangdo,139,271,3	script	Merchant Master#3	4_CAT_MERMASTER,{ callfunc "instanceshop",3;}
+nyd_dun02,102,192,3	script	Merchant Master#4	4_CAT_MERMASTER,{ callfunc "instanceshop",4;}
+moc_para01,27,97,5	script	Merchant Master#5	4_CAT_MERMASTER,{ callfunc "instanceshop",5;}
+verus04,167,215,3	script	Merchant Master#6	4_CAT_MERMASTER,{ callfunc "instanceshop",6;}
+glast_01,214,292,3	script	Merchant Master#7	4_CAT_MERMASTER,{ callfunc "instanceshop",7;}
 //moc_para01,41,165,5	script	Eurynome	76,{ callfunc "instanceshop",7,8,9,10; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
@@ -44,9 +49,9 @@ OnInit:
 //  Basic shop settings.
 // -----------------------------------------------------------
 
-	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
-	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
 	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
 	set .MaxStack,1;	// Max number of quest items purchased at one time.
 
@@ -70,7 +75,13 @@ OnInit:
 
 	setarray .Shops$[1],
 		"Bloody Coins",	// Horror Toy
-		"Geffen Tournament Coin";	// Geffen magic tournament
+		"Geffen Tournament Coin",	// Geffen magic tournament
+		"Sea God's Anger",	// Malangdo
+		"Nidhoggur Shadow Garb", // Nidhoggur
+		"Tooth of Jitterbug",	// Jitterbug
+		"Charleston Scraps",	// Charleston
+		"Coagulated Spell";	// Glastheim
+		
 
 // -----------------------------------------------------------
 //  Quest items -- do NOT use a reward item more than once!
@@ -80,12 +91,33 @@ OnInit:
 // -----------------------------------------------------------
 	
 	//Costumes
-	Add(1,20232,1,0,0,7642,1500,6242,100); // Costume Celine Ribbon
+	Add(1,20232,1,0,0,7642,1000,6242,200); // Costume Celine Ribbon
 	Add(1,20955,1,0,0,7642,10000,6242,500); // Christmas Tree
 	Add(1,32237,1,0,0,7642,20000,6242,1000); // Celine Brooch
 	
-	Add(2,20943,1,0,0,6671,10000,6242,250); // Geffen Magic Muffler
-	Add(2,20944,1,0,0,6671,10000,6242,250); // Anti Magic Manteau
+	Add(2,20943,1,0,0,6671,20000,6242,500); // Geffen Magic Muffler
+	Add(2,20944,1,0,0,6671,20000,6242,500); // Anti Magic Manteau
+	
+	Add(3,19292,1,0,0,6423,50,6242,200); // Cat Knit
+	Add(3,31151,1,0,0,6423,50,6242,200); // Cat Ears
+//	Add(3,31028,1,0,0,6423,50,6242,200); // Cat Hood
+	Add(3,20499,1,0,0,6423,50,6242,200); // Cat Hat
+	Add(3,31607,1,0,0,6423,50,6242,200); // Cat Witch Hat
+	Add(3,31186,1,0,0,6423,50,6242,200); // Real Black Cat
+	Add(3,31533,1,0,0,6423,50,6242,200); // Black cat Muffler
+	Add(3,31300,1,0,0,6423,50,6242,200); // White Cat Muffler
+	Add(3,20598,1,0,0,6423,150,6242,600); // Cat Bag Black
+	Add(3,20517,1,0,0,6423,150,6242,600); // Cat Bag White
+	
+	Add(4,20212,1,0,0,2554,10,6242,200); // Nidhog & loki
+	Add(4,31149,1,0,0,2554,10,6242,200); // Nidhog
+	
+	Add(5,31674,1,0,0,6719,500,6242,200); // Jitterbug
+	
+	Add(6,20318,1,0,0,6961,100,6962,50,6242,200); // Charleston
+	
+	Add(7,20432,1,0,0,6608,3000,6242,200); // Khalitzburg
+	Add(7,31332,1,0,0,6608,3000,6242,200); // Khalitzburg Black
 
 // -----------------------------------------------------------
 
@@ -240,3 +272,8 @@ function	script	instanceshop	{
 //============================================================
 -	shop	instanceshop1	-1,909:-1
 -	shop	instanceshop2	-1,909:-1
+-	shop	instanceshop3	-1,909:-1
+-	shop	instanceshop4	-1,909:-1
+-	shop	instanceshop5	-1,909:-1
+-	shop	instanceshop6	-1,909:-1
+-	shop	instanceshop7	-1,909:-1
