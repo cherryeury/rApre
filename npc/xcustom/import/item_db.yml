@@ -5032,6 +5032,158 @@ Body:
     View: 28
     Script: |
       bonus bVariableCastrate,-2; 
+  - Id: 2344
+    AegisName: Flame_Sprits_Armor
+    Name: Lucius's Fierce Armor of Volcano
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Fire;
+  - Id: 2345
+    AegisName: Flame_Sprits_Armor_
+    Name: Lucius's Fierce Armor of Volcano
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Fire;
+  - Id: 2346
+    AegisName: Water_Sprits_Armor
+    Name: Saphien's Armor of Ocean
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Water;
+  - Id: 2347
+    AegisName: Water_Sprits_Armor_
+    Name: Saphien's Armor of Ocean
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Water;
+  - Id: 2348
+    AegisName: Wind_Sprits_Armor
+    Name: Aebecee's Raging Typhoon Armor
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Wind;
+  - Id: 2349
+    AegisName: Wind_Sprits_Armor_
+    Name: Aebecee's Raging Typhoon Armor
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Wind;
+  - Id: 2350
+    AegisName: Earth_Sprits_Armor
+    Name: Claytos Cracking Earth Armor
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Earth;
+  - Id: 2351
+    AegisName: Earth_Sprits_Armor_
+    Name: Claytos Cracking Earth Armor
+    Type: Armor
+    Buy: 136000
+    Weight: 2200
+    Defense: 40
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Armor: true
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bDefEle,Ele_Earth;      
   - Id: 5026
     AegisName: Hat_Of_Cook
     Name: Chef Hat
@@ -7357,7 +7509,7 @@ Body:
     EquipLevelMin: 85
     Refineable: true
     Script: |
-      bonus2 bAddEff,Eff_Curse,10000;   
+      bonus2 bAddEff,Eff_Curse,9000;   
   - Id: 1741
     AegisName: Cursed_Lyre
     Name: Cursed Lyre
@@ -8922,9 +9074,31 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Dark;
-      bonus2 bAddEff,Eff_Curse,500;
+      bonus2 bAddEff,Eff_Curse,200;
       bonus bCritical,-1;
       bonus bUnbreakableWeapon;      
+  - Id: 28003
+    AegisName: Unholy_Touch_
+    Name: Unholy Touch
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 1250
+    Attack: 151
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Dark;
+      bonus2 bAddEff,Eff_Curse,200;
+      bonus bCritical,-1;
+      bonus bUnbreakableWeapon;          
   - Id: 1979
     AegisName: Stem_Of_Nepenthes
     Name: Stem of Nepenthes
@@ -9113,7 +9287,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
     Jobs:
       Assassin: true
@@ -9124,7 +9298,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,1000;  
+      bonus2 bAddEff,Eff_Freeze,500;  
   - Id: 1259
     AegisName: Katar_Of_Piercing_Wind
     Name: Katar of Piercing Wind
@@ -9132,7 +9306,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
     Jobs:
       Assassin: true
@@ -9143,7 +9317,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Sleep,1000;   
+      bonus2 bAddEff,Eff_Sleep,500;   
   - Id: 1257
     AegisName: Katar_Of_Thornbush
     Name: Katar of Quaking
@@ -9151,7 +9325,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
     Jobs:
       Assassin: true
@@ -9162,7 +9336,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEff,Eff_Blind,1000; 
+      bonus2 bAddEff,Eff_Blind,500; 
   - Id: 13006
     AegisName: Khukri
     Name: Khukri
@@ -9218,7 +9392,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,8000;      
+      bonus2 bAddEff,Eff_Poison,6000;      
   - Id: 13016
     AegisName: Poison_Knife_
     Name: Poison Knife
@@ -9255,7 +9429,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,8000; 
+      bonus2 bAddEff,Eff_Poison,6000; 
   - Id: 16001
     AegisName: Red_Square_Bag
     Name: Red Square Bag
@@ -9377,7 +9551,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
     Jobs:
       Assassin: true
@@ -9388,7 +9562,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEff,Eff_Silence,1000;   
+      bonus2 bAddEff,Eff_Silence,500;   
   - Id: 1277
     AegisName: Katar_Of_Raging_Blaze_
     Name: Katar of Raging Blaze
@@ -9396,9 +9570,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -9408,7 +9582,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus2 bAddEff,Eff_Silence,1000;      
+      bonus2 bAddEff,Eff_Silence,500;      
   - Id: 1276
     AegisName: Katar_Of_Thornbush_
     Name: Katar of Quaking
@@ -9416,9 +9590,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -9428,7 +9602,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Earth;
-      bonus2 bAddEff,Eff_Blind,1000;      
+      bonus2 bAddEff,Eff_Blind,500;      
   - Id: 1278
     AegisName: Katar_Of_Piercing_Wind_
     Name: Katar of Piercing Wind
@@ -9436,9 +9610,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -9448,7 +9622,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Sleep,1000;      
+      bonus2 bAddEff,Eff_Sleep,500;      
   - Id: 1275
     AegisName: Katar_Of_Cold_Icicle_
     Name: Katar of Frozen Icicle
@@ -9456,9 +9630,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 105
+    Attack: 125
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -9468,7 +9642,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,1000;      
+      bonus2 bAddEff,Eff_Freeze,500;      
   - Id: 1483
     AegisName: Ivory_Lance
     Name: Ivory Lance
@@ -9545,11 +9719,42 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus bMatk,50;
       bonus2 bAddEff,Eff_Freeze,1000;
       bonus2 bAddEff2,Eff_Freeze,20;
       skill "MG_COLDBOLT",3;
-      bonus3 bAutoSpell,"MG_COLDBOLT",3,100;   
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,100; 
+  - Id: 13436
+    AegisName: Ice_Falchon_
+    Name: Ice Falchion
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 600
+    Attack: 100
+    MagicAttack: 0
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus2 bAddEff,Eff_Freeze,1000;
+      bonus2 bAddEff2,Eff_Freeze,20;
+      skill "MG_COLDBOLT",3;
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,100;          
   - Id: 13046
     AegisName: Krieg
     Name: Krierg
@@ -9557,7 +9762,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 500
-    Attack: 110
+    Attack: 120
     Range: 1
     Slots: 2
     Jobs:
@@ -9600,7 +9805,36 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus bMatk,50;
+      skill "MG_FIREBOLT",3;
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;    
+  - Id: 13435
+    AegisName: Fire_Brand_
+    Name: Fireblend
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 500
+    Attack: 100
+    MagicAttack: 0
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
       skill "MG_FIREBOLT",3;
       bonus3 bAutoSpell,"MG_FIREBOLT",3,100;      
   - Id: 13034
@@ -10069,6 +10303,46 @@ Body:
       bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,30;
       bonus4 bAutoSpellOnSkill,"CH_PALMSTRIKE","MO_INVESTIGATE",1,100;
       bonus3 bAutoSpell,"MO_CALLSPIRITS",5,getrefine(); 
+  - Id: 1522
+    AegisName: Stunner
+    Name: Stunner
+    Type: Weapon
+    SubType: Mace
+    Buy: 60000
+    Weight: 2000
+    Attack: 140
+    Range: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus2 bAddEff,Eff_Stun,1500;
+  - Id: 1522
+    AegisName: Stunner
+    Name: Stunner
+    Type: Weapon
+    SubType: Mace
+    Buy: 60000
+    Weight: 2000
+    Attack: 140
+    Range: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus2 bAddEff,Eff_Stun,1500;      
   - Id: 1262
     AegisName: Nail_Of_Loki
     Name: Loki's Nail
@@ -10082,11 +10356,12 @@ Body:
       Assassin: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
+    WeaponLevel: 4
     EquipLevelMin: 55
     Refineable: true
     Script: |
-      bonus2 bAddEff,Eff_Bleeding,3000;    
+      bonus2 bComaClass,Class_Normal,5;    
+      bonus2 bAddEff,Eff_Bleeding,300;    
   - Id: 1227
     AegisName: Weeder_Knife
     Name: Weeder Knife
@@ -10094,7 +10369,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 90
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -10124,6 +10399,45 @@ Body:
       bonus bIgnoreDefRace,RC_Plant;
       bonus2 bAddRace,RC_Plant,15;
       bonus2 bSubRace,RC_Plant,15;      
+  - Id: 13030
+    AegisName: Dragon_Killer_
+    Name: Dragon Killer
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 900
+    Attack: 100
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_Dragon;
+      bonus2 bExpAddRace,RC_Dragon,10;      
   - Id: 1244
     AegisName: Holy_Dagger
     Name: Holy Dagger
@@ -10281,7 +10595,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 90
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -10353,8 +10667,33 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getgroupitem(IG_BPoring);        
-  - Id: 1265
+      getgroupitem(IG_BPoring); 
+  - Id: 28005
+    AegisName: Bloody_Roar_
+    Name: Bloody Roar
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 1000
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_DemiHuman;
+      bonus bIgnoreDefRace,RC_Player_Human;
+      bonus bFlee,-(readparam(bAgi)+BaseLevel);
+      bonus bHPrecovRate,-100;
+      bonus bSPrecovRate,-100;      
+  - Id: 1273
     AegisName: Bloody_Roar
     Name: Bloody Roar
     Type: Weapon
@@ -10363,6 +10702,7 @@ Body:
     Weight: 1000
     Attack: 120
     Range: 1
+    Slots: 1
     Jobs:
       Assassin: true
     Locations:
@@ -10375,7 +10715,7 @@ Body:
       bonus bIgnoreDefRace,RC_Player_Human;
       bonus bFlee,-(readparam(bAgi)+BaseLevel);
       bonus bHPrecovRate,-100;
-      bonus bSPrecovRate,-100;      
+      bonus bSPrecovRate,-100;            
   - Id: 1229
     AegisName: Mama's_Knife
     Name: Kitchen Knife
@@ -10383,7 +10723,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 500
-    Attack: 85
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -10411,7 +10751,50 @@ Body:
     Refineable: true
     Script: |
       bonus bCritical,30;
-      bonus3 bAddMonsterDropItem,517,RC_Brute,5000;      
+      bonus3 bAddMonsterDropItem,517,RC_Brute,5000;
+  - Id: 1269
+    AegisName: Inverse_Scale
+    Name: Inverse Scale
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 1500
+    Attack: 140
+    Range: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Holy;   
+      bonus3 bAutoSpell,"NPC_DRAGONFEAR",1,30;
+  - Id: 1297
+    AegisName: Inverse_Scale_
+    Name: Inverse Scale
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 1500
+    Attack: 140
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Holy;     
+      bonus3 bAutoSpell,"NPC_DRAGONFEAR",1,30;
   - Id: 1240
     AegisName: Princess_Knife
     Name: Princess Knife
@@ -10419,8 +10802,9 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 94
+    Attack: 84
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Archer: true
@@ -10446,7 +10830,7 @@ Body:
     EquipLevelMin: 1
     Refineable: true
     Script: |
-      bonus bAllStats,2;      
+      bonus bAllStats,1;      
   - Id: 4417
     AegisName: Ice_Titan_Card
     Name: Ice Titan Card
@@ -10549,85 +10933,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus2 bSubSize,Size_Small,25;
-      bonus bDef,10;
-  - Id: 13001
-    AegisName: Dragon_Killer
-    Name: Dragon Killer
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 60
-    Refineable: true
-    Script: |
-      bonus bIgnoreDefRace,RC_Dragon;
-      bonus2 bExpAddRace,RC_Dragon,10;
-      bonus2 bAddRace,RC_Dragon,getrefine()*2;
-  - Id: 13030
-    AegisName: Dragon_Killer_
-    Name: Dragon Killer
-    Type: Weapon
-    SubType: Dagger
-    Buy: 20
-    Weight: 900
-    Attack: 110
-    Range: 1
-    Slots: 2
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 4
-    EquipLevelMin: 60
-    Refineable: true
-    Script: |
-      bonus bIgnoreDefRace,RC_Dragon;
-      bonus2 bExpAddRace,RC_Dragon,10;      
+      bonus bDef,10;   
   - Id: 4254
     AegisName: Tirfing_Card
     Name: Ogretooth Card

@@ -273,7 +273,6 @@ OnMenu:
 		message strcharinfo(0),"An error has occurred.";
 		end;
 	}
-	dispbottom "This is a catalogue, you can't actually buy the items.";
 	callshop "iopshop"+@shop_index,1;
 	npcshopattach "iopshop"+@shop_index;
 	end;

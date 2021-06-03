@@ -291,6 +291,10 @@
 3,15057,10 // Apron 
 3,15058,25 // Rider Suit
 3,15060,25 // Azure Smock
+3,2345,500 // Lucius
+3,2347,500 // Sapien
+3,2349,500 // Ebecee
+3,2351,500 // Claytos
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
