@@ -1,0 +1,523 @@
+malangdo,115,154,3	script	Fashion Stone#stone	4_BULLETIN_BOARD2,{ end; }
+
+// Costume enchant (top, mid, low)
+mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
+	disable_items;
+	mes "[Aver De Dosh]";
+	mes "Welcome to Fashion Stone!!";
+	next;
+	mes "[Aver De Dosh]";
+	mes "We take various costume items.";
+	next;
+	mes "[Aver De Dosh]";
+	mes "If you want cool styling for your costume Hat, please come to me 'Aver De Dosh'!";
+	mes "Don't forget to bring ^ff0000your own costume Hat and costume stones^000000~";
+	next;
+	if (select( "Apply ability.", "End Conversation." ) == 2) {
+		mes "[Aver De Dosh]";
+		mes "Please check our other upgrading services~";
+		close;
+	}
+	if (checkweight(1119,3) == 0) {
+		mes "[Aver De Dosh]";
+		mes "Kiaaaaach!!!";
+		mes "I hate bulging bags!";
+		mes "No matter how cool your hat looks, that fat bag of yours is a fashion terror you know!";
+		next;
+		mes "[Aver De Dosh]";
+		mes "It seems you have too many items on you.";
+		mes "Come back after clearing some inventory spaces.";
+		close;
+	}
+	.@eq_top = getequipid(EQI_COSTUME_HEAD_TOP);
+	.@eq_mid = getequipid(EQI_COSTUME_HEAD_MID);
+	.@eq_low = getequipid(EQI_COSTUME_HEAD_LOW);
+
+	if (.@eq_top == -1 && .@eq_mid == -1 && .@eq_low == -1) {
+		mes "[Aver De Dosh]";
+		mes "You must wear item you want to add ability.";
+		mes "Then, I will be able to help you out.";
+		close;
+	}
+	if (.@eq_top > -1) {
+		.@part = EQI_COSTUME_HEAD_TOP;
+		.@equip_id = .@eq_top;
+	}
+	else if (.@eq_mid > -1) {
+		.@part = EQI_COSTUME_HEAD_MID;
+		.@equip_id = .@eq_mid;
+	}
+	else if (.@eq_low > -1) {
+		.@part = EQI_COSTUME_HEAD_LOW;
+		.@equip_id = .@eq_low;
+	}
+
+	switch(.@part) {
+	case EQI_COSTUME_HEAD_TOP:
+		switch(.@equip_id) { 
+		// top
+		case 20232:	// CelineRibbon
+		case 19292:	// Cat Knit
+		case 31028:	// Cat Hood
+		case 20499:	// Cat Hat
+		case 31607:	// Cat Witch Hat
+		case 20212: // Nidhog loki
+		case 31149: // Nidhog
+		case 31674: // Jitterbug
+		case 20318: // Charleston
+		case 20432: // Khalitzburg
+		case 31332: // Khalitzburg Black
+//		case 20288: // Bijou
+		case 19939: // 
+		case 20388: // 
+		case 31035: // 
+		case 19845: // 
+		case 20119: //  
+		case 20159: // 
+		case 20056: // 
+		case 31128: // 
+		case 20157: // 
+		case 20275: // 
+		case 19625: // 
+		case 19545: // 
+		case 20118: // 
+		case 20445: // 
+		case 20245: // 
+		case 20013: // 
+		case 19582: // 
+		case 19622: // 
+		case 19785: // 
+		case 20261: // 
+		case 20454: // 
+		case 19786: // 
+		case 20276: // 
+		case 19547: // 
+		case 31113: // 
+		case 19782: // 
+		case 19941: // 
+		case 19854: // 
+		case 20185: // 
+		case 19585: // 
+		case 20057: // 
+		case 19983: // 
+		case 19548: // 
+		case 20049: // 
+		case 19628: // 
+		case 19861: // 
+		case 20472: // 
+		case 20385: // 
+		case 20058: // 
+		case 31714: // 
+		case 19618: // 
+		case 19931: // 
+		case 19890: // 
+		case 19662: // 
+		case 20473: // 
+		case 19932: // 
+		case 20181: // 
+		case 20208: // 
+		case 20453: // 
+		case 20050: // 
+		case 20304: // 
+		case 20182: // 
+//		case 19701: // red bonnet
+		case 20226: //
+		case 20224: //
+		case 19639: //
+		case 19858: //
+		case 20330: //
+		case 19533: //
+		case 20051: //
+		case 19829: //
+		case 20207: //
+		case 20348: //
+		case 19851: //
+		case 20471: //
+		case 31036: //
+		case 19546: //
+		case 19984: //
+		case 20387: //
+		case 20158: //
+		case 20074: //
+		case 20271: //
+		case 19847: //
+		case 19602: //
+		case 19828: //
+		case 2: //
+		case 19526: //
+		case 19901: //
+		case 31131: //
+		case 19799: //
+		case 3: //
+		case 19549: //
+		case 19527: //
+		case 19796: //
+		case 19619: //
+		case 19630: //
+		case 19629: //
+		// top + mid
+		case 20004: //
+		case 21300: // 
+		case 19840: //
+		case 20244: //
+		case 19578: //
+		// top + low
+		case 19580: //
+		// top + mid + low
+		case 19850: // 
+		case 19849: // 
+			break;
+		default:
+			mes "[Aver De Dosh]";
+			mes "Well...";
+			mes "This hat is currently not available for upgrade.";
+			close;
+		}
+		break;
+
+	case EQI_COSTUME_HEAD_MID:
+		switch(.@equip_id) { 
+			// mid
+		case 31186:	// Real Black Cat
+		case 31533:	// Black Cat Muffler
+		case 31300:	// White Cat Muffler
+		case 31463:	// Drone
+		case 19781:	//		
+		case 19734:	//		
+		case 20389:	//	
+		case 19621: // 		
+		case 19846: // 		
+		case 19551: // 		
+		case 19583: // 		
+		case 19889: // 		
+		case 20124: // 		
+		case 19735: // 		
+		case 21: // 		
+		case 19925: // 		
+		case 20123: // 				
+			// mid + low
+		case 19791: // Alarm
+		case 19554: // 
+		case 19500: // 
+		case 19872: //
+		case 20059: //
+		case 19732: //
+		case 20390: //
+			break;
+		default:
+			mes "[Aver De Dosh]";
+			mes "Well...";
+			mes "This hat is currently not available for upgrade.";
+			close;
+		}
+		break;
+
+	case EQI_COSTUME_HEAD_LOW:
+		switch(.@equip_id) {
+		case 31377:	// Glastheim Obs
+		case 31712:	// 
+		case 20054:	// 
+		case 19553:	// 
+		case 19505:	// 
+		case 19636:	// 
+		case 20061:	// 
+		case 19528:	// 
+		case 20091:	// 
+			break;
+		default:
+			mes "[Aver De Dosh]";
+			mes "Well...";
+			mes "This hat is currently not available for upgrade.";
+			close;
+		}
+		break;
+
+	default:
+		mes "An unknown error has occurred.";
+		close;
+	}
+
+	.@location = getiteminfo(.@equip_id, ITEMINFO_LOCATIONS);
+	.@equip_refine = getequiprefinerycnt(.@part);
+	setarray .@card[0], getequipcardid(.@part, 0), getequipcardid(.@part, 1), getequipcardid(.@part, 2), getequipcardid(.@part, 3);
+
+	mes "[Aver De Dosh]";
+	mes "Wow~ This ^0000FF" + getitemname(.@equip_id) + "^000000!!! looks great on you!!";
+	mes "What kind of stone do you want to use for the upgrade?";
+	next;
+	if (.@part == EQI_COSTUME_HEAD_TOP)
+		.@slot = select( "Upper", "Middle", "Lower", "Cancel" ) - 1;	// the slot enchanted changes according to the location
+	else if (.@part == EQI_COSTUME_HEAD_MID)
+		.@slot = select( "", "Middle", "Lower", "Cancel" ) - 1;
+	else if (.@part == EQI_COSTUME_HEAD_LOW)
+		.@slot = 2;
+
+	switch(.@slot) {
+	case 0:
+		if (!(.@location & 1024)) {
+			mes "[Aver De Dosh]";
+			mes "The costume can't be enhanced at this location.";	// custom
+			close;
+		}
+		setarray .@stone_id[0],
+			6636, 4700,	// STRStone_Top	Strength1
+			6637, 4710,	// INTStone_Top	Inteligence1
+			6638, 4730,	// AGIStone_Top	Agility1
+			6639, 4720,	// DEXStone_Top	Dexterity1
+			6640, 4740,	// VITStone_Top	Vitality1
+			6641, 4750,	// LUKStone_Top	Luck1
+			6716, 4926,	// Cri_Stone	Critical1
+			6740, 4930,	// HealStone_Top	HEAL2
+			6741, 4805,	// HealStone2_Top	Heal_Amount2
+			6790, 4936,	// BigStone_Top	ATK_BIG1
+			6791, 4937,	// MediumStone_Top	ATK_MEDIUM1
+			6792, 4938,	// SmallStone_Top	ATK_SMALL1
+			6943, 29028,	// ATKStone_Top	Atk1p_Top
+			6944, 29030,	// MATKStone_Top	Matk1p_Top
+			6999, 29013,	// HPdrainStone_Top	HPdrain3
+			25000, 29032,	// SPdrainStone_Top	SPdrain1_Top
+			25068, 4807,	// ASPDStone_Top	Atk_Speed1
+			25069, 29053,	// ReloadStone_Top	Skill_Delay1_Top
+			25171, 29159,	// EXPStone_Top	EXP2TOP
+			25172, 29156,	// CastingStone_Top	Casting_Top
+			25304, 29359;	// Critical_Stone_Top	Fatal_Top
+		break;
+	case 1:
+		if (!(.@location & 2048)) {
+			mes "[Aver De Dosh]";
+			mes "The costume can't be enhanced at this location.";	// custom
+			close;
+		}
+		setarray .@stone_id[0],
+			6642, 4882,	// ATKStone_Middle	Atk1p
+			6643, 4883,	// MATKStone_Middle	Matk1p
+			6717, 4927,	// MaxHP_Stone	HP50
+			6742, 4931,	// HealStone_Middle	HEALHP1
+			6743, 4861,	// HPStone_Middle	MHP1
+			6744, 4929,	// SPStone_Middle	MSP1
+			6945, 4700,	// STRStone_Middle	Strength1
+			6946, 4710,	// INTStone_Middle	Inteligence1
+			6947, 4730,	// AGIStone_Middle	Agility1
+			6948, 4720,	// DEXStone_Middle	Dexterity1
+			6949, 4740,	// VITStone_Middle	Vitality1
+			6950, 4750,	// LUKStone_Middle	Luck1
+			25001, 29026,	// DEFStone_Middle	Def20
+			25002, 29024,	// ChangeLUK_Middle	LUK3STR
+			25003, 29014,	// ChangeSTR_Middle	STR3INT
+			25004, 29022,	// ChangeAGI_Middle	AGI3LUK
+			25005, 29016,	// ChangeINT_Middle	INT3DEX
+			25006, 29020,	// ChangeVIT_Middle	VIT3AGI
+			25007, 29018,	// ChangeDEX_Middle	DEX3VIT
+			25060, 29047,	// Critical_Stone	Fatal0
+			25061, 29048,	// Range_Stone	Expert_Archer0
+			25070, 29054,	// ReloadStone_Middle	Skill_Delay1_Middle
+			25141, 29145,	// EXPStone_Middle	EXP2MIDDLE
+			25173, 29157,	// CastingStone_Middle	Casting_Middle
+			25175, 29155;	// LexAeternaStone_Middle	LexAeterna
+		break;
+	case 2:
+		if (!(.@location & 4096)) {
+			mes "[Aver De Dosh]";
+			mes "The costume can't be enhanced at this location.";	// custom
+			close;
+		}
+		setarray .@stone_id[0],
+			6644, 4884,	// HITStone_Bottom	HIT1
+			6645, 4859,	// FLEEStone_Bottom	Evasion1
+			6718, 4928,	// MaxSP_Stone	SP10
+			6745, 4932,	// HealStone_Bottom	HEALSP1
+			6951, 4861,	// HPStone_Bottom	MHP1
+			25008, 29021,	// ChangeVIT_Bottom	VIT3LUK
+			25009, 29023,	// ChangeAGI_Bottom	AGI3STR
+			25010, 29019,	// ChangeDEX_Bottom	DEX3AGI
+			25011, 29025,	// ChangeLUK_Bottom	LUK3INT
+			25012, 29015,	// ChangeSTR_Bottom	STR3DEX
+			25013, 29017,	// ChangeINT_Bottom	INT3VIT
+			25014, 29033,	// MDEFStone_Bottom	Mdef4_Bottom
+			25015, 29027,	// EXPStone_Bottom	EXP2
+			25016, 29029,	// ATKStone_Bottom	Atk1p_Bottom
+			25017, 29031,	// MATKStone_Bottom	Matk1p_Bottom
+			25062, 29046,	// Greed_Stone	Greed
+			25063, 29049,	// MaxHP2_Stone	HP100_
+			25064, 29050,	// MaxSP2_Stone	SP50_
+			25065, 29051,	// Detoxify_Stone	Detoxify
+			25066, 29052,	// Recovery_Stone	Recovery
+			25071, 29055,	// ReloadStone_Bottom	Skill_Delay1_Bottom
+			25072, 29057,	// Kyrie_Stone	Kyrie
+			25139, 29146,	// Identify_Stone	Identify
+			25174, 29158,	// CastingStone_Bottom	Casting_Bottom
+			25227, 29227,	// Heal_Stone	Heal
+			25228, 29229,	// Teleport_Stone	Teleport
+			25229, 29228,	// Steal_Stone	Steal
+			25305, 29360;	// Critical_Stone_Bottom	Fatal_Bottom
+		break;
+	default:
+		mes "[Aver De Dosh]";
+		mes "Please check our other upgrading services~";
+		close;
+	}
+	.@size = getarraysize(.@stone_id);
+	for ( .@i = 0; .@i < .@size; .@i += 2 )
+		.@menu$ += sprintf( "%d. %s [%d] left:", (.@i/2)+1, getitemname(.@stone_id[.@i]), countitem(.@stone_id[.@i]) );
+	.@s = (select(.@menu$) - 1) * 2;
+	.@stone = .@stone_id[.@s];
+	.@enchant = .@stone_id[.@s+1];
+
+	if (getequipid(.@part) < 0 || countitem(.@stone) < 1) {
+		mes "[Aver De Dosh]";
+		mes "Hmm? Think you are lack of ingredients.";
+		mes "You must have both costume item and ability stone for this upgrading work.";
+		close;
+	}
+	mes "^FF0000   !!! Caution !!!^000000";
+	mes "^FF0000This upgrade can be failed.^000000";
+	mes "^FF0000If the item already has extra ability,^000000";
+	mes "^FF0000we will reset item's ability.^000000";
+	mes "^FF0000Are you sure about upgrading this item?^000000";
+	next;
+	if (select( "Yes.", "No." ) == 2) {
+		mes "[Aver De Dosh]";
+		mes "Please check our other upgrading services~";
+		close;
+	}
+	delitem .@stone, 1;
+
+	// anti-hack
+	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine))
+		close;
+
+	delequip .@part;
+	if (rand(1,100) < 51) {
+		mes "[Aver De Dosh]";
+		mes "Wow... Elegance!!";
+		mes "This is perfect... Wow!";
+		.@card[.@slot] = .@enchant;
+	}
+	else {
+		mes "[Aver De Dosh]";
+		mes "History is known for its failure...";
+		mes "History of Fashion also is...";
+		mes "Sorry...to disappoint you..~ LoL.";
+		.@card[.@slot] = 0;
+	}
+	getitem2 .@equip_id,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+	close;
+}
+
+// Costume enchant (garment)
+mal_in01,20,107,3	script	Lace La Zard#cos_ect	4_FROG,{
+	disable_items;
+	mes "[Lace La Zard]";
+	mes "Welcome to Fashion Stone!!";
+	mes "My name is Lace La Zard who will make your 'Power Shoulder' dream come true.";
+	next;
+	mes "[Lace La Zard]";
+	mes "Bring your ^ff0000Costume Garment^000000 and ^ff0000Garment Stone^000000, I will complete the perfect upgrade for you.!";
+	mes "I found this formula while working on my own humble body upgrading!";
+	next;
+	if (select( "Apply ability.", "End Conversation." ) == 2) {
+		mes "[Lace La Zard]";
+		mes "Yes? Your want to look more?";
+		close;
+	}
+	if (checkweight(1119,3) == 0) {
+		mes "[Lace La Zard]";
+		mes "Well... Your shoulder doesn't look possilbe for any more upgrade...!";
+		mes "Don't be cruel to your shoulder!";
+		next;
+		mes "It seems you have too many items on you.";
+		mes "Come back after clearing some inventory spaces.";
+		close;
+	}
+	.@part = EQI_COSTUME_GARMENT;
+	.@equip_id = getequipid(.@part);
+	if (.@equip_id == -1) {
+		mes "[Lace La Zard]";
+		mes "Put the garment on your shoulder.";
+		mes "I need to have a look at it to check for upgrading posibility..";
+		close;
+	}
+
+	// costume garment list allowed (incomplete)
+	switch(.@equip_id) {
+	case 20598: // Cat Bag Black
+	case 20517: // Cat Bag White
+	case 20597: // Scythe
+	case 20590: // Evil Druid
+		break;
+	default:
+		mes "[Lace La Zard]";
+		mes "I need to have a look at it to check for upgrading posibility..";// custom
+		close;
+	}
+
+	.@equip_refine = getequiprefinerycnt(.@part);
+	setarray .@card[0], getequipcardid(.@part, 0), getequipcardid(.@part, 1), getequipcardid(.@part, 2), getequipcardid(.@part, 3);
+
+	mes "[Lace La Zard]";
+	mes "Wow ^0000FF" + getitemname(.@equip_id) + "^000000!!! You got some sense there, aren't you?";
+	mes "Great!! I'm fully ready for this upgrade!!";
+	next;
+	setarray .@data$[0],
+		6908, 4807, "ASPD+1 only",	// ASPDStone_Robe	Atk_Speed1
+		6963, 4992, "Absorption 1% of damage dealt to enemy into HP with 1% chance",	// HPdrainStone_Robe	HPdrain1
+		6964, 4993, "Absorption 1% of damage dealt to enemy into SP with 1% chance";	// SPdrainStone_Robe	SPdrain1
+		// unknown text
+		// 25067, 29056, "",	// CastingStone_Robe	FixedCasting05
+		// 25170, 29154, "",	// MinorCastingStone_Robe	FixedCasting03
+		// 25302, 29362, "",	// DoubleAttack_Stone	DoubleAttack
+		// 25303, 29361, "",	// Critical_Stone_Robe	Fatal_Robe
+		// 25306, 29358, "";	// CastStone_Robe	Casting_Robe
+
+	.@size = getarraysize(.@data$);
+	for ( .@i = 0; .@i < .@size; .@i += 3 ) {
+		.@id = atoi(.@data$[.@i]);
+		.@menu$ += sprintf( "%d. %s (%d) left:", (.@j+1), getitemname(.@id), countitem(.@id) );
+		.@j++;
+	}
+	.@menu$ += "End Conversation.";
+	.@s = (select(.@menu$) - 1) * 3;
+	if (.@s == .@size) {
+		mes "[Lace La Zard]";
+		mes "Yes? Your want to look more?";
+		close;
+	}
+	.@id = atoi(.@data$[.@s]);
+	.@enchant = atoi(.@data$[.@s+1]);
+	if (getequipid(.@part) < 0 || countitem(.@id) < 1) {
+		mes "[Lace La Zard]";
+		mes "You must have both costume item and ability stone for this upgrading work.";
+		close;
+	}
+	mes "^FF0000   !!! Caution !!!^000000";
+	mes "^ff0000This upgrade can be failed.^000000";
+	mes "^ff0000If the item already has extra ability, we will reset item's ability and give " + .@data$[.@s+2] + ".^000000";
+	mes "^ff0000Are you sure about upgrading this item?^000000";
+	next;
+	if (select( "Yes.", "No." ) == 2) {
+		mes "[Lace La Zard]";
+		mes "Yes? Your want to look more?";
+		close;
+	}
+
+	// anti-hack
+	if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipCardHack", .@part, .@card[0], .@card[1], .@card[2], .@card[3]) || callfunc("F_IsEquipRefineHack", .@part, .@equip_refine))
+		close;
+
+	delitem .@id, 1;
+	delequip .@part;
+	if (rand(100) < 50) {
+		mes "[Lace La Zard]";
+		mes "Beautiful!!";
+		mes "Did I really made this myself!!!!";
+		.@card[0] = .@enchant;
+	}
+	else {
+		mes "[Lace La Zard]";
+		mes "Oh no!";
+		mes "Crash!!!!! I cannot show this failure to the World!!!";
+		.@card[0] = 0;
+	}
+	getitem2 .@equip_id,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+	close;
+}

@@ -36,6 +36,8 @@ glast_01,214,292,3	script	Merchant Master#7	4_CAT_MERMASTER,{ callfunc "instance
 rebel_in,76,67,5	script	Merchant Master#8	4_CAT_MERMASTER,{ callfunc "instanceshop",8;}
 sp_cor,110,130,5	script	Merchant Master#9	4_CAT_MERMASTER,{ callfunc "instanceshop",9;}
 ma_fild01,172,219,5	script	Merchant Master#10	4_CAT_MERMASTER,{ callfunc "instanceshop",10;}
+tha_t01,158,77,5	script	Merchant Master#11	4_CAT_MERMASTER,{ callfunc "instanceshop",11;}
+lighthalzen,340,291,4	script	Merchant Master#12	4_CAT_MERMASTER,{ callfunc "instanceshop",12;}
 //moc_para01,41,165,5	script	Eurynome	76,{ callfunc "instanceshop",7,8,9,10; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
@@ -86,7 +88,9 @@ OnInit:
 		"CMagic&CSpell",	// Glastheim
 		"Schwartzvald Honor",	// Rebel
 		"Cor Cores",	// OS
-		"Bangungot Spirits";	// Bangungot
+		"Bangungot Spirits",	// Bangungot
+		"Skeletal Armor Piece",	// Thanatos
+		"Biolab Drops";	// Biolabs
 		
 
 // -----------------------------------------------------------
@@ -98,45 +102,51 @@ OnInit:
 	
 	//Costumes
 //	Add(1,20232,1,0,0,7642,5000,6242,500); // Costume Celine Ribbon
-	Add(1,20590,1,0,0,7642,2000,6242,2000); // Evil Druid Cross
+	Add(1,20590,1,0,0,7642,2000,6242,1000); // Evil Druid Cross
 //	Add(1,20955,1,0,0,7642,6000,6242,750); // Christmas Tree
 	Add(1,32237,1,0,0,7642,5000,6242,5000); // Celine Brooch
-	Add(1,420003,1,0,0,7642,10000,6242,10000); // Cd in mouth
+	Add(1,420003,1,0,0,7642,10000,6242,5000); // Cd in mouth
 	
 //	Add(2,31396,1,0,0,6671,5000,6242,500); // Sorcerer
 //	Add(2,20943,1,0,0,6671,7500,6242,750); // Geffen Magic Muffler
 //	Add(2,20944,1,0,0,6671,7500,6242,750); // Anti Magic Manteau
 //	Add(2,18652,1,0,0,6671,10000,6242,1000); // Vanargrand
 	
-//	Add(3,19292,1,0,0,6423,15,6242,50); // Cat Knit
-	Add(3,31151,1,0,0,6423,20,6242,50); // Cat Ears
-	Add(3,31028,1,0,0,6423,20,6242,50); // Cat Hood
-	Add(3,20499,1,0,0,6423,20,6242,50); // Cat Hat
-	Add(3,31607,1,0,0,6423,20,6242,50); // Cat Witch Hat
-	Add(3,31186,1,0,0,6423,20,6242,50); // Real Black Cat
-	Add(3,31533,1,0,0,6423,20,6242,50); // Black cat Muffler
-	Add(3,31300,1,0,0,6423,20,6242,50); // White Cat Muffler
-	Add(3,20598,1,0,0,6423,80,6242,2000); // Cat Bag Black
-	Add(3,20517,1,0,0,6423,80,6242,2000); // Cat Bag White
+//	Add(3,19292,1,0,0,6423,20,6242,100); // Cat Knit
+	Add(3,31151,1,0,0,6423,20,6242,100); // Cat Ears
+	Add(3,31028,1,0,0,6423,20,6242,100); // Cat Hood
+	Add(3,20499,1,0,0,6423,20,6242,100); // Cat Hat
+	Add(3,31607,1,0,0,6423,20,6242,100); // Cat Witch Hat
+	Add(3,31186,1,0,0,6423,20,6242,100); // Real Black Cat
+	Add(3,31533,1,0,0,6423,20,6242,100); // Black cat Muffler
+	Add(3,31300,1,0,0,6423,20,6242,100); // White Cat Muffler
+	Add(3,20598,1,0,0,6423,80,6242,1000); // Cat Bag Black
+	Add(3,20517,1,0,0,6423,80,6242,1000); // Cat Bag White
 	
-	Add(4,20212,1,0,0,2554,2,6242,50); // Nidhog & loki
-	Add(4,31149,1,0,0,2554,2,6242,50); // Nidhog
+	Add(4,20212,1,0,0,2554,2,6242,100); // Nidhog & loki
+	Add(4,31149,1,0,0,2554,2,6242,100); // Nidhog
 //	Add(4,31406,1,0,0,2554,10,6242,500); // Nidhog w
 	
-	Add(5,31674,1,0,0,6719,50,6242,50); // Jitterbug
-	Add(5,400000,1,0,0,6719,500,6242,10000); // Whistle
+	Add(5,31674,1,0,0,6719,50,6242,100); // Jitterbug
+	Add(5,400000,1,0,0,6719,500,6242,5000); // Whistle
 	
-	Add(6,20318,1,0,0,6752,300,6961,10,6962,5,6242,50); // Charleston
+	Add(6,20318,1,0,0,6752,300,6961,10,6962,5,6242,100); // Charleston
 	
-	Add(7,20432,1,0,0,6755,25,6242,50); // Khalitzburg
-	Add(7,31332,1,0,0,6755,25,6242,50); // Khalitzburg Black
-	Add(7,31377,1,0,0,6608,1200,6242,50); // Glast Obs
+	Add(7,20432,1,0,0,6755,25,6242,100); // Khalitzburg
+	Add(7,31332,1,0,0,6755,25,6242,100); // Khalitzburg Black
+	Add(7,31377,1,0,0,6608,1200,6242,100); // Glast Obs
 	
-	Add(8,20597,1,0,0,25155,2000,13460,1,13461,1,13462,1,6242,2000); // Heart Hunter
+	Add(8,20597,1,0,0,25155,2000,13460,1,13461,1,13462,1,6242,1000); // Heart Hunter
 	
-	Add(9,31463,1,0,0,25723,50,6242,50); // Flying Drone
+	Add(9,31463,1,0,0,25723,50,6242,100); // Flying Drone
 	
-	Add(10,19240,1,0,0,2911,2,6242,10000); // Syringe
+	Add(10,19240,1,0,0,2911,2,6242,5000); // Syringe
+	
+	Add(11,20514,1,0,0,7450,100,6242,1000); // Thanatos Sword
+	
+	Add(12,20405,1,0,0,6471,100,6469,50,6470,35,6242,100); // Eremes Scarf
+	Add(12,20132,1,0,0,6471,100,6469,50,6470,35,6242,100); // Aura
+	Add(12,19244,1,0,0,1528,3,6471,100,6469,50,6470,35,6242,5000); // Aura
 
 // -----------------------------------------------------------
 
@@ -299,3 +309,5 @@ function	script	instanceshop	{
 -	shop	instanceshop8	-1,909:-1
 -	shop	instanceshop9	-1,909:-1
 -	shop	instanceshop10	-1,909:-1
+-	shop	instanceshop11	-1,909:-1
+-	shop	instanceshop12	-1,909:-1
