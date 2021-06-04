@@ -95,10 +95,10 @@
 0,5495,45 // Thor
 //0,5975,30 // Zealotus
 //0,18694,45 // Red Hood
-0,18574,45 // Lord of Death
-0,18563,45 // Heart wings
+//0,18574,45 // Lord of Death
+//0,18563,45 // Heart wings
 0,5379,60 // Balloon Hat
-0,5283,60 // Chick Hat
+//0,5283,60 // Chick Hat
 //0,18801,50 // Gale Hair Or
 0,5254,70 // Deviling
 //0,18812,250 // Elder Crown
@@ -125,8 +125,8 @@
 //0,18910,250 // Piamette Blue Ears
 //0,18908,250 // Piamette Red Ears
 //0,18909,250 // Piamette Brown Ears
-0,5208,275 // rIDEWORD
-0,5585,350 // Rune
+0,5208,250 // rIDEWORD
+0,5585,300 // Rune
 
 //0,5975,750
 //0,19172,750 // Sitting Pope
@@ -138,31 +138,29 @@
 //0,19163,1000
 
 // Middle
-1,5664,15 // Filir Pinion
-1,5288,15 // Red Glasses
-1,5610,15 // Ice Wing Ears
-1,5358,15 // Peco
+1,5664,10 // Filir Pinion
+1,5288,10 // Red Glasses
+1,5610,10 // Ice Wing Ears
+1,5358,10 // Peco
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,25 // Fafnir Skin
-1,5402,25 // Mischievous
-
-1,5786,75 // Ancient elven ear
+1,18559,20 // Fafnir Skin
+1,5402,20 // Mischievous
+1,5786,50 // Ancient elven ear
 //1,18538,200 // Spirit Whisper
 //1,5924,300
-1,5104,100 // Dark Blinkers
-1,5272,150 // Tongue
-1,18787,175 // Goaltender
+1,5104,50 // Dark Blinkers
+1,5272,80 // Tongue
+1,18787,150 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
-
 //1,19024,1000 // Protect Feathers
-1,18599,300 // Black Devil Mask
-1,5325,300 // Robo
-1,5397,300 // Scuba
-1,18540,500 // Demon Mask
-1,18813,750 // New Wave
+1,18599,200 // Black Devil Mask
+1,5325,200 // Robo
+1,5397,400 // Scuba
+1,18540,400 // Demon Mask
+//1,19117,500 // Poring Sunglasses
 //1,5389,500 // Angel's Spirit
 //1,19083,1000 // Mask of Hero
 //1,19141,1500 // Dolor Thanatos
@@ -173,13 +171,13 @@
 
 //Lower
 
+1,18900,3 // Weisswurst
 1,18677,5 // Twig
 1,5483,5 // Odin's Mask
-1,18900,5 // Weisswurst
 //1,5775,10 // Chocolate Donut
-1,5332,10 // Loki's Mask
-1,5403,20 // Fish in Mouth
-1,5574,20 // Well Chewed
+1,5332,5 // Loki's Mask
+1,5403,10 // Fish in Mouth
+1,5574,15 // Well Chewed
 1,5362,25 // Ninja Scroll
 1,18643,25 // Paperhand str
 1,18642,25 // Paperhand int
@@ -208,8 +206,11 @@
 1,19151,400 // Balloon
 1,19153,400 // Balloon
 1,19154,400 // Balloon
-1,19244,1000 // Rosary
-1,19240,1000 // Toy Syringe
+1,19267,750 // Survivor Orb
+//1,18858,600 // Angelring
+//1,18859,750 // Angelring
+//1,19244,1000 // Rosary
+//1,19240,1000 // Toy Syringe
 //1,18666,800 // CD in Mouth 
 //1,18564,1000 // Fragment of Love
 //1,19137,2500 // Strawberry in Mouth
@@ -291,10 +292,10 @@
 3,15057,10 // Apron 
 3,15058,25 // Rider Suit
 3,15060,25 // Azure Smock
-3,2345,500 // Lucius
-3,2347,500 // Sapien
-3,2349,500 // Ebecee
-3,2351,500 // Claytos
+3,2345,300 // Lucius
+3,2347,300 // Sapien
+3,2349,300 // Ebecee
+3,2351,300 // Claytos
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -323,12 +324,12 @@
 3,2511,3 // Skeleton
 3,2553,15 // Dragon Manteau
 3,2597,15 // Bloody Muffler
-3,20726,20 // Fire Dragon Manteau
-3,20728,20 // Water Dragon Manteau
-3,20729,20 // Wind Dragon Manteau
-3,20731,20 // Earth Dragon Manteau
-3,20730,25 // Loyalist Hood
-3,20714,25 // Assassin Muffler
+//3,20726,20 // Fire Dragon Manteau
+//3,20728,20 // Water Dragon Manteau
+//3,20729,20 // Wind Dragon Manteau
+//3,20731,20 // Earth Dragon Manteau
+//3,20730,25 // Loyalist Hood
+//3,20714,25 // Assassin Muffler
 
 //3,20779,35 // Rift Garment
 //3,20778,500 // Crimson Stole
@@ -772,7 +773,8 @@
 //Bundle
 //7,12026,20 // Classic Headgear Box
 7,12623,5 // High Weapon Box
-7,23073,75 // Poring Boots
+7,23073,100 // Poring Boots
+7,23923,150 // Poring Sunglasses 
 //7,12391,250 // Top Costume
 //7,12403,250 // Mid Costume
 //7,12416,250 // Low Costume

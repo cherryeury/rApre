@@ -936,7 +936,17 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Balloon,1);      
+      getrandgroupitem(IG_Balloon,1);  
+  - Id: 23923
+    AegisName: Poring_Sunglasses_Box
+    Name: Poring Sunglasses Box
+    Type: Usable
+    Buy: 1000
+    Weight: 200
+    Flags:
+      Container: true
+    Script: |
+      getrandgroupitem(IG_PorGlass,1);        
   - Id: 5467
     AegisName: Helm_Of_Dragoon
     Name: Helm Of Dragon
@@ -3214,6 +3224,19 @@ Body:
     Script: |
       bonus bDex,2;
       bonus bHit,3;
+  - Id: 19533
+    AegisName: C_Spore_Hat
+    Name: Costume Spore Hat
+    Type: Armor
+    Locations:
+      Costume_Head_Top: true
+    EquipLevelMin: 1
+    View: 114
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bUnbreakableHelm;     
   - Id: 2256
     AegisName: Magestic_Goat
     Name: Majestic Goat

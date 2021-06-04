@@ -450,3 +450,6 @@ IG_Balloon,19150,20,1,1	//  Scorpio
 IG_Balloon,19151,20,1,1	//  Scorpio
 IG_Balloon,19153,20,1,1	//  Scorpio
 IG_Balloon,19154,20,1,1	//  Scorpio
+
+IG_PorGlass,19117,91,1,1	//  Glass
+IG_PorGlass,19118,9,1,1		//  Glass+
