@@ -142,7 +142,7 @@ OnInit:
 	set .Level,0;   		// Minimum monster level to trade corresponding cards.
 //	set .Points$,"#Card_Points";	// Variable to store points.
 	setarray .Shop[0],		// Card Shop items: <ID>,<point cost>
-	  31,20,32,20,33,20,34,100,12246,250,22829,1000;
+	  31,10,32,10,33,10,34,100,12246,250,22829,1000;
 	setarray .Points[0],10,1000;	// Points per <normal card>,<MVP card>
 	set .MVP$,			// List of MVP cards.
 	  "4121,4123,4128,4131,4132,4134,4135,4137,4142,4143,4144,4145,4146,4147,4148,4168,4236,"+

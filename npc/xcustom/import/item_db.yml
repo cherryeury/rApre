@@ -8590,11 +8590,11 @@ Body:
     Script: |
       bonus bInt,1;  
       if (getrefine()>6){
-      bonus bInt,2;
+      bonus2 bAddEle,Ele_Earth,5; 
       }
       if (getrefine()>8){
-      bonus2 bMagicAtkEle,Ele_Earth,15;
-      }                  
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      }                 
   - Id: 14
     AegisName: Modified_Crown_
     Name: Modified Crown
@@ -8614,11 +8614,11 @@ Body:
     Script: |
       bonus bInt,1;  
       if (getrefine()>6){
-      bonus bInt,2;
+      bonus2 bAddEle,Ele_Holy,5; 
       }
       if (getrefine()>8){
-      bonus2 bMagicAtkEle,Ele_Holy,15;
-      }                       
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      }       
   - Id: 15
     AegisName: Modified_Spinx_Helm_
     Name: Modified Sphinx Hat
