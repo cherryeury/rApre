@@ -4831,9 +4831,9 @@ int pc_modifybuyvalue(struct map_session_data *sd,int orig_value)
 {
 	int skill,val = orig_value,rate1 = 0,rate2 = 0;
 	if((skill=pc_checkskill(sd,MC_DISCOUNT))>0)	// merchant discount
-		rate1 = sd->status.base_level*((2+skill)/100);
+		rate1 = ((3+skill)/10)*((sd->status.base_level>200)? (200/10):(sd->status.base_level/10));
 	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	 // rogue discount
-		rate2 = sd->status.base_level*((4+(skill*2))/100);
+		rate2 = ((2+skill*2)/10)*((sd->status.base_level>200)? (200/10):(sd->status.base_level/10));
 	if(rate1 < rate2) rate1 = rate2;
 	if(rate1)
 		val = (int)((double)orig_value*(double)(100-rate1)/100.);
@@ -4850,7 +4850,7 @@ int pc_modifysellvalue(struct map_session_data *sd,int orig_value)
 {
 	int skill,val = orig_value,rate = 0;
 	if((skill=pc_checkskill(sd,MC_OVERCHARGE))>0)	//OverCharge
-		rate = sd->status.base_level*((2+skill)/100);
+		rate = ((2+skill)/10)*((sd->status.base_level>200)? (sd->status.base_level/10):(200/10));
 	if(rate)
 		val = (int)((double)orig_value*(double)(100+rate)/100.);
 	if (val < battle_config.min_shop_sell)
