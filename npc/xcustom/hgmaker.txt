@@ -26,8 +26,8 @@
 //	callfunc "iopshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-aldebaran,145,119,5	script	Nyan#1	4_CAT_SAILOR1,{ callfunc "iopshop",1; }
-rachel,121,147,5	script	Nyan#2	4_CAT_SAILOR1,{ callfunc "iopshop",2; }
+aldebaran,146,119,4	script	Nyan#1	4_CAT_SAILOR1,{ callfunc "iopshop",1; }
+rachel,121,145,4	script	Nyan#2	4_CAT_SAILOR1,{ callfunc "iopshop",2; }
 alberta,30,229,0	script	Nyan#3	4_CAT_SAILOR1,{ callfunc "iopshop",3; }
 lighthalzen,167,102,5	script	Nyan#4	4_CAT_SAILOR1,{ callfunc "iopshop",4; }
 morocc,164,97,5	script	Nyan#5	4_CAT_SAILOR1,{ callfunc "iopshop",5; }
@@ -204,7 +204,7 @@ OnInit:
 	Add(11,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
 	Add(11,5012,1,0,0,710,1,703,1,704,1,708,1); // Ph.D Hat
 	Add(11,5083,1,0,0,2244,1,2209,1,10007,1); // Red Ribbon
-	Add(11,2213,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
+	Add(11,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
 //Lutie
 	Add(12,5078,1,0,0,5033,1,5064,1); // Sea-Otter Hat
 	Add(12,5059,1,0,0,5030,1,7213,100,7217,100,7161,300); // Teddybear Hat

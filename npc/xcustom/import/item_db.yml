@@ -11156,7 +11156,25 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getitem 14592,5;    
+      getitem 14592,5;
+  - Id: 401
+    AegisName: Card_Remover_
+    Name: Card Remover
+    Type: Usable
+    Flags:
+      NoConsume: true    
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      specialeffect2 EF_BEGINSPELL; progressbar "0xFFFFFF",3; callfunc"F_CardRemover";    
   - Id: 4260
     AegisName: Wootan_Shooter_Card
     Name: Wootan Shooter Card

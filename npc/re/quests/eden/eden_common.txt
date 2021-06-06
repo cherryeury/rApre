@@ -116,7 +116,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 					next;
 					mes "[Lime Evenor]";
 					mes "Hopefully you can do great work as an Eden's member.";
-					getitem 22508,1; getitem 5583,1; //Para_Team_Mark_
+					getitem 22508,1; getitem 5583,1; getitem 401,1; //Para_Team_Mark_
 					next;
 					break;
 				case 2:

@@ -2,7 +2,7 @@
 //	callfunc "shshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-moc_para01,52,32,2	script	Shanyan	10242,{ callfunc "shshop",1; }
+moc_para01,52,32,2	script	Everly	859,{ callfunc "shshop",1; }
 // prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "shshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
@@ -76,19 +76,19 @@ OnInit:
 	end;
 
 OnMenu:
-	mes "[^FF6600Shanyan^000000]";
+	mes "[^FF6600Everly^000000]";
 	mes "Psst";
 	mes "Do you wanna know?";
 	mes "There's new equipment called shadow in midgard";
 	next;
 	switch( select( "Shadow?:About the quests.:Bye." ) ) {
 	case 1: 	
-		mes "[^FF6600Shanyan^000000]";
+		mes "[^FF6600Everly^000000]";
 		mes "Yeah! Shadow!";
 		mes "The power of the items are still unknown,";
 		mes "but you can use it in your Costume slots!";
 		next;
-		mes "[^FF6600Shanyan^000000]";
+		mes "[^FF6600Everly^000000]";
 		mes "Here, i'll show you the goods.";
 		mes "You can't really buy these.";
 		mes "But i can give these to you-";
@@ -97,7 +97,7 @@ OnMenu:
 		
 	case 2: 	
 		if (shadow_q == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Hey!";
 			mes "Thanks for the samples";
 			mes "But i don't have any quests to give you yet.";
@@ -105,128 +105,128 @@ OnMenu:
 			}	
 			
 		if (checkquest(2,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Vocal ?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 2,3;
 			close;
 		}	
 		if (checkquest(3,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Toad?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 3,4;
 			close;
 		}			
 		if (checkquest(4,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Eclipse?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 4,5;
 			close;
 		}				
 		if (checkquest(5,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Mastering?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 5,6;
 			close;
 		}				
 		if (checkquest(6,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Dragon Fly?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 6,7;
 			close;
 		}					
 		if (checkquest(7,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Deviling?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 7,8;
 			close;
 		}					
 		if (checkquest(8,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Angeling?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 8,9;
 			close;
 		}					
 		if (checkquest(9,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Cat'o Nine Tails?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 9,10;
 			close;
 		}					
 		if (checkquest(10,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Maya Purple?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 10,11;
 			close;
 		}					
 		if (checkquest(11,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Arc Angeling?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 11,12;
 			close;
 		}		
 		if (checkquest(12,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Oh!";
 			mes "You're done hunting Ghostring?";
 			next;
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "I'll give you the next quest";
 			mes "Check it on your quest menu";
 			changequest 12,13;
 			close;
 		}				
 		if (checkquest(13,HUNTING) == 2) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Hey, you did it!";
 			mes "Congratulation, and thank you!";
 			mes "I already have the monster data thanks to you.";
@@ -238,33 +238,33 @@ OnMenu:
 		}				
 		
 		if (shadow_q == 1) {
-			mes "[^FF6600Shanyan^000000]";
+			mes "[^FF6600Everly^000000]";
 			mes "Nyanya!";
 			mes "Is my mission too hard for you?";
 			mes ":3";
 			close;
 			}
 			
-		mes "[^FF6600Shanyan^000000]";
+		mes "[^FF6600Everly^000000]";
 		mes "Hmm, i need you to kill 13 type of monsters..";
 		mes "They're all quite tough for me, so..";
 		next;
 		switch( select( "Say no more.:I'll think about this." ) ) {
 			case 1:
-				mes "[^FF6600Shanyan^000000]";
+				mes "[^FF6600Everly^000000]";
 				mes "i already registered the quest in your system";
 				mes "You can see what you have to do in it!";
 				setquest 2; // Vocal
 				set shadow_q,1;
 				close;
 			case 2:
-				mes "[^FF6600Shanyan^000000]";
+				mes "[^FF6600Everly^000000]";
 				mes "Okay.";
 				mes "Come again if you've changed your mind.";
 				close;
 		}
 	case 3:
-		mes "[^FF6600Shanyan^000000]";
+		mes "[^FF6600Everly^000000]";
 		mes "Bye!";
 		close;
 		}
@@ -290,7 +290,7 @@ L_Shop:
 	end;
 
 OnBuyItem:
-	mes "[^FF6600Shanyan^000000]";
+	mes "[^FF6600Everly^000000]";
 	mes "You cannot buy this, this is just a catalogue.";
 	close;
 	
@@ -302,7 +302,7 @@ OnBuyItem:
 		message strcharinfo(0),"You can't purchase that many "+getitemname(.@q[0])+".";
 		end;
 	}
-	mes "[^FF6600Shanyan^000000]";
+	mes "[^FF6600Everly^000000]";
 	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
 	mes "Requirements:";
 	disable_items;
@@ -319,12 +319,12 @@ OnBuyItem:
 		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
 		case 1:
 			if (@qe[0]) {
-				mes "[^FF6600Shanyan^000000]";
+				mes "[^FF6600Everly^000000]";
 				mes "You're missing one or more quest requirements.";
 				close;
 			}
 			if (!checkweight(.@q[0],.@q[2])) {
-				mes "[^FF6600Shanyan^000000]";
+				mes "[^FF6600Everly^000000]";
 				mes "^FF0000You need "+(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
 				close;
 			}

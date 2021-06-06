@@ -9,3 +9,29 @@ function	script	F_StrongEnough	{
 		unitstopattack getcharid(3);
 		end;
 	}
+
+function	script	F_CardRemover	{
+
+		disable_items;
+		setarray .@indices[1], EQI_HEAD_TOP, EQI_ARMOR, EQI_HAND_L, EQI_HAND_R, EQI_GARMENT, EQI_SHOES, EQI_ACC_L, EQI_ACC_R, EQI_HEAD_MID, EQI_HEAD_LOW;
+		for( set .@i,1; .@i <= 10; set .@i,.@i+1 ) {
+			if( getequipisequiped(.@indices[.@i]) )
+				set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[" + getequipname(.@indices[.@i]) + "]";
+			set .@menu$, .@menu$ + ":";
+		}	
+		set .@part, .@indices[ select(.@menu$) ];
+		set .@cardcount,getequipcardcnt(.@part);	
+		if(!getequipisequiped(.@part)) {
+			dispbottom "No slotted item detected";
+			end;
+			}
+		if(getequipcardcnt(.@part) == 0) {
+			dispbottom "This item has no cards in it.";
+			end;
+		}
+		set .@cardcount,getequipcardcnt(.@part);
+		next;
+		successremovecards .@part;
+		dispbottom "Card successfully detached.";
+		end;
+}

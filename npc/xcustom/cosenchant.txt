@@ -56,6 +56,7 @@ mal_in01,22,113,3	script	Aver De Dosh#cos_ect	4_WHITETIGER,{
 	case EQI_COSTUME_HEAD_TOP:
 		switch(.@equip_id) { 
 		// top
+		case 20233:
 		case 20232:	// CelineRibbon
 		case 19292:	// Cat Knit
 		case 31028:	// Cat Hood
