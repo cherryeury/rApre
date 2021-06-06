@@ -2,7 +2,7 @@
 //	callfunc "shshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-moc_para01,52,32,2	script	Everly	859,{ callfunc "shshop",1; }
+moc_para01,41,166,2	script	Everly	859,{ callfunc "shshop",1; }
 // prontera,165,203,6	script	Quest Shop#2	998,{ callfunc "shshop",1,2; }	// call the shop 1 and 2 defined below
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================

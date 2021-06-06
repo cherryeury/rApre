@@ -138,28 +138,28 @@
 //0,19163,1000
 
 // Middle
-1,5664,10 // Filir Pinion
-1,5288,10 // Red Glasses
-1,5610,10 // Ice Wing Ears
-1,5358,10 // Peco
+1,5664,2 // Filir Pinion
+1,5288,6 // Red Glasses
+1,5358,6 // Peco
+1,5610,8 // Ice Wing Ears
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,20 // Fafnir Skin
+1,18559,8 // Fafnir Skin
 1,5402,20 // Mischievous
-1,5786,50 // Ancient elven ear
+1,5786,25 // Ancient elven ear
 //1,18538,200 // Spirit Whisper
 //1,5924,300
-1,5104,50 // Dark Blinkers
+1,5104,40 // Dark Blinkers
 1,5272,80 // Tongue
 1,18787,150 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
 //1,19024,1000 // Protect Feathers
-1,18599,200 // Black Devil Mask
-1,5325,200 // Robo
-1,5397,400 // Scuba
-1,18540,400 // Demon Mask
+1,18599,150 // Black Devil Mask
+1,5325,150 // Robo
+1,5397,300 // Scuba
+1,18540,300 // Demon Mask
 //1,19117,500 // Poring Sunglasses
 //1,5389,500 // Angel's Spirit
 //1,19083,1000 // Mask of Hero
@@ -190,9 +190,9 @@
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
 1,5361,50 // Gangster
-
+1,18560,75 // Fafnir Mask
 1,18868,125 // Assassin mask
-1,18560,125 // Fafnir Mask
+
 //1,18858,250 // Pink Angelring Bubble
 //1,18754,300 // Blood Sucker
 //1,18968,500
@@ -224,23 +224,6 @@
 
 
 // Weapons
-2,28604,1
-2,18130,1
-2,28705,1
-2,13327,1
-2,28007,1
-2,1839,1
-2,1498,1
-2,16040,1
-2,1680,1
-2,13127,1
-2,13454,1
-2,1443,1
-2,28106,1
-2,2025,1
-2,21015,1
-2,1939,1
-2,1995,1
 //2,1139,8 // Tirfing
 2,1240,5 // Princess Knife
 2,1244,5 // Holy Dagger
@@ -259,7 +242,7 @@
 //2,28717,200 // Valkyrie Knife
 //2,13092,25 // RWC
 2,13049,200 // Lacma
-2,16039,200 // Spoon
+2,16039,750 // Spoon
 
 //Shield
 //3,2197,25 // Iron Shield

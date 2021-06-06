@@ -17,7 +17,7 @@
 //= 1.5 Added use of F_HasEdenGroupMark function. [Ragno]
 //============================================================
 
-moc_para01,48,177,3	script	91-99 Mission Board	857,{
+moc_para01,52,35,3	script	91-99 Mission Board	857,{
 	if (!callfunc("F_HasEdenGroupMark")) {
 		mes "Wait a minute!";
 		mes "-You need to have an-";

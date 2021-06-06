@@ -2158,7 +2158,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      specialeffect2 EF_BEGINSPELL; progressbar "0xFFFFFF",3; warp "moc_para01",171,115;      
+      specialeffect2 EF_BEGINSPELL; progressbar "0xFFFFFF",3; warp "moc_para01",174,97;      
   - Id: 2507
     AegisName: Cape_Of_Ancient_Lord
     Name: Ancient Cape
@@ -3910,7 +3910,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 0
+    Defense: 10
     Jobs:
       Acolyte: true
       Alchemist: true
@@ -3956,7 +3956,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 0
+    Defense: 10
     Slots: 1
     Jobs:
       Acolyte: true
@@ -6487,8 +6487,8 @@ Body:
     View: 38
     Script: |
       bonus bMdef,3;
-      bonus bAgi,1;
-      bonus bLuk,1;
+      bonus bInt,1;
+      bonus bDex,1;
       bonus2 bSubRace,RC_Demon,3;
   - Id: 5131
     AegisName: Close_Helmet
@@ -6529,7 +6529,7 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus bStr,1;
-      bonus bInt,1;
+      bonus bAgi,1;
       bonus2 bSubRace,RC_Angel,3;      
   - Id: 5074
     AegisName: Ear_Of_Angel's_Wing
@@ -6543,8 +6543,8 @@ Body:
     EquipLevelMin: 70
     View: 158
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;   
+      bonus bInt,1;
+      bonus bDex,1;   
   - Id: 5177
     AegisName: Guardian_Lion_Mask
     Name: Mythical Lion Mask
@@ -6651,8 +6651,8 @@ Body:
     View: 158
     Script: |
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;  
+      bonus bDex,1;
+      bonus bInt,1;  
   - Id: 5068
     AegisName: Ear_Of_Devil's_Wing
     Name: Evil Wing Ears
@@ -6666,7 +6666,7 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bInt,1;     
+      bonus bAgi,1;     
   - Id: 18519
     AegisName: Ear_Of_Devil's_Wing_
     Name: Evil Wing Ears
@@ -6681,7 +6681,7 @@ Body:
     View: 152
     Script: |
       bonus bStr,1;
-      bonus bInt,1;
+      bonus bAgi,1;
   - Id: 22132
     AegisName: Lighting_God's_Shoes
     Name: Lightning God's Shoes
@@ -7628,8 +7628,10 @@ Body:
     Refineable: true
     View: 123
     Script: |
-      bonus bStr,2;
-      bonus bInt,2;
+      bonus bStr,1;
+      bonus bInt,1;
+      bonus bFlee,3;
+      bonus2 bSubRace,RC_Demon,3;
   - Id: 18766
     AegisName: Enhanced_Helm_Of_Angel
     Name: Enhanced Helm of Angel
@@ -7652,32 +7654,6 @@ Body:
       Rebellion: true
       Rogue: true
       Sage: true
-      SoulLinker: true
-      StarGladiator: true
-      Wizard: true
-    Locations:
-      Head_Top: true
-    EquipLevelMin: 99
-    Refineable: true
-    View: 110
-    Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;
-      bonus bMdef,3;
-      if (getrefine()>=7) {
-         bonus bAgi,2;
-         bonus bLuk,2;
-      }
-      if (getrefine()>=9)
-         bonus bAspd,1;      
-  - Id: 5025
-    AegisName: Helm_Of_Angel
-    Name: Helm of Angel
-    Type: Armor
-    Buy: 20
-    Weight: 1600
-    Defense: 0
-    Jobs:
       All: true
       Novice: false
       SuperNovice: false
@@ -7687,9 +7663,49 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bAgi,2;
-      bonus bLuk,2;
+      bonus bDex,1;
+      bonus bInt,1;
       bonus bMdef,3;
+      bonus2 bSubRace,RC_Demon,3;
+      if (getrefine()>6){
+      bonus bDex,2;
+      bonus bInt,2;
+      }
+      bonus bMdef,getrefine();        
+  - Id: 5025
+    AegisName: Helm_Of_Angel
+    Name: Helm of Angel
+    Type: Armor
+    Buy: 20
+    Weight: 1600
+    Defense: 0
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rebellion: true
+      Rogue: true
+      Sage: true
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 64
+    Refineable: true
+    View: 110
+    Script: |
+      bonus bDex,1;
+      bonus bInt,1;
+      bonus bMdef,3;
+      bonus2 bSubRace,RC_Demon,3;
   - Id: 5281
     AegisName: Deviruchi_Cap_C
     Name: Modified Deviruchi Hat
@@ -7709,15 +7725,14 @@ Body:
     View: 123
     Script: |
       bonus bStr,1;
-      bonus bInt,1;
+      bonus bAgi,1;
+      bonus2 bSubRace,RC_Demon,3;
+      bonus bFlee,3;
       if (getrefine()>6){
       bonus bStr,2;
-      bonus bInt,2;
+      bonus bAgi,2;
       }
-      if (getrefine()>8){
-      bonus2 bIgnoreMdefClassRate,Class_All,7;
-      bonus2 bIgnoreDefClassRate,Class_All,7;
-      }      
+      bonus bFlee,getrefine();     
   - Id: 1162
     AegisName: Broad_Sword_
     Name: Broad Sword
@@ -8542,7 +8557,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1000
-    Defense: 0
+    Defense: 10
     Jobs:
       Acolyte: true
       Alchemist: true
@@ -8566,7 +8581,7 @@ Body:
     Script: |
       bonus bShortWeaponDamageReturn,2; 
       if (getrefine()>6){
-      bonus bShortWeaponDamageReturn,3;
+      bonus2 bSubEle,Ele_Neutral,1;
       }
       if (getrefine()>8){
       bonus bShortWeaponDamageReturn,5; 
