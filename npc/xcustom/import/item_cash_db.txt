@@ -42,6 +42,7 @@
 0,5257,8 // Soulless
 //0,5431,8 // chicken
 0,5289,8 // Vanilmirth
+0,5381,25 // Santa Poring
 0,5781,25 // Persica
 0,5382,25 // Bell Ribbon
 0,5256,25 // Valkyrie
@@ -60,14 +61,13 @@
 0,5304,25 // Blindness 
 0,5527,25 // Lunatic Hat
 0,5526,25 // Tanee
-0,5572,30 // Savage Bebe
-0,18637,30 // Legion
-0,5381,30 // Santa Poring
-0,5387,30 // Neko Mimi
+0,5572,25 // Savage Bebe
+//0,18637,30 // Legion
+0,5387,25 // Neko Mimi
 //0,18681,22 // Puppy Ears
-0,5509,30 // Sting Hat
-0,18595,30 // Ancient Horn 
-0,5667,30 // Skull Hood
+0,5509,25 // Sting Hat
+0,18595,25 // Ancient Horn 
+0,5667,25 // Skull Hood
 //0,18646,15 // Cow Hat
 
 
@@ -80,32 +80,32 @@
 
 //0,18575,25 // Wunderkammer
 //0,18847,12 // Jolly Roger
-0,5376,30 // satanic
+//0,5376,30 // satanic
 0,5137,30 // Alice
 0,5584,40 // Majestic
 //0,18653,40 // Deviruchi
 0,5660,40 // Gryphon
 0,5579,40 // Wanderer's Sakkat
-0,5210,40 // Flapp
+//0,5210,40 // Flapp
 0,5561,40 // Rabbit Magic Hat
 0,5396,40 // Jasper Crest
 //0,18738,8 // White Student
 
 0,5357,40 // Wings of Victory
-0,5495,45 // Thor
+0,5495,40 // Thor
 //0,5975,30 // Zealotus
 //0,18694,45 // Red Hood
 //0,18574,45 // Lord of Death
 //0,18563,45 // Heart wings
-0,5379,60 // Balloon Hat
+0,5379,40 // Balloon Hat
 //0,5283,60 // Chick Hat
 //0,18801,50 // Gale Hair Or
 0,5254,70 // Deviling
 //0,18812,250 // Elder Crown
 //0,18803,70 // Rose Cascade
-0,5211,80 // Dress Hat
-0,5520,80 // Rabbit Earplug
-0,5481,125 // Hemode
+0,5520,70 // Rabbit Earplug
+0,5211,95 // Dress Hat
+//0,5481,125 // Hemode
 //0,5226,125 // Mini Propeler
 0,18600,125 // Cat Ear Berret
 0,18601,125 // Red Bread
@@ -119,14 +119,14 @@
 //0,19033,150 // Ancient Deco
 //0,18827,200 // Valkyrie Circlet
 0,5593,175 // Rabbit Bonnet
-0,19098,200 // Piamette Hood
-//0,18756,200 // Black Shiba Inu Hat
 0,18652,200 // Vanargand Helm
+0,19098,225 // Piamette Hood
+//0,18756,200 // Black Shiba Inu Hat
 //0,18910,250 // Piamette Blue Ears
 //0,18908,250 // Piamette Red Ears
 //0,18909,250 // Piamette Brown Ears
-0,5208,250 // rIDEWORD
-0,5585,300 // Rune
+0,5208,275 // rIDEWORD
+0,5585,350 // Rune
 
 //0,5975,750
 //0,19172,750 // Sitting Pope
@@ -151,15 +151,15 @@
 //1,18538,200 // Spirit Whisper
 //1,5924,300
 1,5104,40 // Dark Blinkers
-1,5272,80 // Tongue
-1,18787,150 // Goaltender
+//1,5272,100 // Tongue
+//1,18787,200 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
 //1,19024,1000 // Protect Feathers
-1,18599,150 // Black Devil Mask
-1,5325,150 // Robo
-1,5397,300 // Scuba
+//1,18599,250 // Black Devil Mask
+//1,5325,250 // Robo
 1,18540,300 // Demon Mask
+//1,5397,500 // Scuba
 //1,19117,500 // Poring Sunglasses
 //1,5389,500 // Angel's Spirit
 //1,19083,1000 // Mask of Hero
@@ -171,27 +171,27 @@
 
 //Lower
 
-1,18900,3 // Weisswurst
-1,18677,5 // Twig
-1,5483,5 // Odin's Mask
+1,18900,2 // Weisswurst
+1,18677,3 // Twig
+1,5483,3 // Odin's Mask
 //1,5775,10 // Chocolate Donut
-1,5332,5 // Loki's Mask
+1,5332,3 // Loki's Mask
 1,5403,10 // Fish in Mouth
-1,5574,15 // Well Chewed
-1,5362,25 // Ninja Scroll
-1,18643,25 // Paperhand str
-1,18642,25 // Paperhand int
-1,18644,25 // Paperhand dex
-1,5305,25 // Pirate Dagger
-1,5767,25 // Samurai	
+1,5574,10 // Well Chewed
+1,5362,15 // Ninja Scroll
+1,18643,15 // Paperhand str
+1,18642,15 // Paperhand int
+1,18644,15 // Paperhand dex
+1,5305,17 // Pirate Dagger
+1,5767,20 // Samurai	
 //1,5934,50
 //1,18759,70 // Wood Goblin
 //1,5878,100 // Miracle blue rose
 //1,18965,200 // Shaving Foam
 //1,5880,200 // Cheering Whistle
-1,5361,50 // Gangster
-1,18560,75 // Fafnir Mask
-1,18868,125 // Assassin mask
+1,5361,25 // Gangster
+1,18560,40 // Fafnir Mask
+1,18868,100 // Assassin mask
 
 //1,18858,250 // Pink Angelring Bubble
 //1,18754,300 // Blood Sucker
@@ -206,7 +206,7 @@
 1,19151,400 // Balloon
 1,19153,400 // Balloon
 1,19154,400 // Balloon
-1,19267,750 // Survivor Orb
+//1,19267,750 // Survivor Orb
 //1,18858,600 // Angelring
 //1,18859,750 // Angelring
 //1,19244,1000 // Rosary
@@ -225,24 +225,26 @@
 
 // Weapons
 //2,1139,8 // Tirfing
-2,1240,5 // Princess Knife
-2,1244,5 // Holy Dagger
-2,1227,5 // Weeder Knife
-2,13001,5 // Dragon Killer
+2,1240,6 // Princess Knife
+2,1244,6 // Holy Dagger
+2,1227,6 // Weeder Knife
+2,13001,6 // Dragon Killer
 //2,1134,15 // Caesar Sword
-2,1467,5 // Bill Guisarme
-2,1562,5 // Battlefield Textbook
+2,1467,6 // Bill Guisarme
+2,1562,6 // Battlefield Textbook
 //2,1416,15 // Tjungkuletti
-2,1414,5 // Gelerdria
+2,1414,6 // Gelerdria
 //2,1367,15 // Slaughter
-2,1169,5 // Executioner
+2,1169,6 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
 //2,16051,25 // Valkyrie Hammer
 //2,28717,200 // Valkyrie Knife
-//2,13092,25 // RWC
-2,13049,200 // Lacma
-2,16039,750 // Spoon
+2,13092,10 // RWC
+2,1670,10 // RWC
+2,16026,10 // RWC
+2,13049,250 // Lacma
+//2,16039,1000 // Spoon
 
 //Shield
 //3,2197,25 // Iron Shield
@@ -261,7 +263,7 @@
 //3,28918,70 // Shield of Chaos Boiling
 //3,2177,40 // Shield of Death
 //3,2191,50 // Solomon
-3,2168,125 // Immune
+3,2168,200 // Immune
 //3,28951,500 // Nero Shield 
 //3,28921,500 // Anemos Shield
 //3,28916,500 // Gaia Shield
@@ -761,4 +763,4 @@
 //7,12391,250 // Top Costume
 //7,12403,250 // Mid Costume
 //7,12416,250 // Low Costume
-7,12493,500 // Garment Costume
+//7,12493,500 // Garment Costume

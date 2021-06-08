@@ -23,29 +23,16 @@
 //============================================================
 
 // Shop NPCs -- supplying no argument displays entire menu.
-//	callfunc "instanceshop"{,<shop ID>{,<shop ID>{,...}}};
+//	callfunc "toolsshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-xmas,240,289,3	script	Merchant Master#	4_CAT_MERMASTER,{ callfunc "instanceshop",1;}
-1@gef,129,60,4	script	Merchant Master#2	4_CAT_MERMASTER,{ callfunc "instanceshop",2;}
-malangdo,139,271,3	script	Merchant Master#3	4_CAT_MERMASTER,{ callfunc "instanceshop",3;}
-nyd_dun02,102,192,3	script	Merchant Master#4	4_CAT_MERMASTER,{ callfunc "instanceshop",4;}
-moc_para01,27,97,5	script	Merchant Master#5	4_CAT_MERMASTER,{ callfunc "instanceshop",5;}
-verus04,167,215,3	script	Merchant Master#6	4_CAT_MERMASTER,{ callfunc "instanceshop",6;}
-glast_01,214,292,3	script	Merchant Master#7	4_CAT_MERMASTER,{ callfunc "instanceshop",7;}
-rebel_in,76,67,5	script	Merchant Master#8	4_CAT_MERMASTER,{ callfunc "instanceshop",8;}
-sp_cor,110,130,5	script	Merchant Master#9	4_CAT_MERMASTER,{ callfunc "instanceshop",9;}
-ma_fild01,172,219,5	script	Merchant Master#10	4_CAT_MERMASTER,{ callfunc "instanceshop",10;}
-tha_t01,158,77,5	script	Merchant Master#11	4_CAT_MERMASTER,{ callfunc "instanceshop",11;}
-lighthalzen,340,291,4	script	Merchant Master#12	4_CAT_MERMASTER,{ callfunc "instanceshop",12;}
-//moc_para01,41,165,5	script	Eurynome	76,{ callfunc "instanceshop",7,8,9,10; }	// call the shop 1 and 2 defined below
-// etc.. Add your Shop NPCs 'Quest Shop#XXX' here
+//izlude,123,148,5	script	Tool Seller#18	10242,{ callfunc "toolsshop",18; }
 //============================================================
 
 
 // Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
 //============================================================
--	script	instance_shop	-1,{
+-	script	tools_shop	-1,{
 function Add; function Chk; function Slot;
 OnInit:
 	freeloop(1);
@@ -54,11 +41,11 @@ OnInit:
 //  Basic shop settings.
 // -----------------------------------------------------------
 
-	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
-	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
 	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
-	set .MaxStack,1;	// Max number of quest items purchased at one time.
+	set .MaxStack,100;	// Max number of quest items purchased at one time.
 
 // -----------------------------------------------------------
 //  Points variable -- optional quest requirement.
@@ -79,18 +66,25 @@ OnInit:
 // -----------------------------------------------------------
 
 	setarray .Shops$[1],
-		"Bloody Coins",	// Horror Toy
-		"Geffen Tournament Coin",	// Geffen magic tournament
-		"Sea God's Anger",	// Malangdo
-		"Nidhoggur Shadow Garb", // Nidhoggur
-		"Tooth of Jitterbug",	// Jitterbug
-		"Charleston Scraps",	// Charleston
-		"CMagic&CSpell",	// Glastheim
-		"Schwartzvald Honor",	// Rebel
-		"Cor Cores",	// OS
-		"Bangungot Spirits",	// Bangungot
-		"Skeletal Armor Piece",	// Thanatos
-		"Biolab Drops";	// Biolabs
+		"Aldebaran",	//
+		"Rachel",	//
+		"Alberta",	//
+		"Lighthalzen",	//
+		"Morocc", //
+		"Payon", //
+		"Yuno", //
+		"Geffen", //
+		"Comodo", //
+		"Orc", //
+		"Prontera", //
+		"Lutie", // 
+		"Moscovia", // 
+		"Hugel", // 
+		"Einbech", // 
+		"Glastheim", //
+		"Kunlun", // 
+		"Izlude", //
+		"Forge"; //
 		
 
 // -----------------------------------------------------------
@@ -99,55 +93,134 @@ OnInit:
 //	    <Zeny cost>,<point cost>,
 //	    <required item ID>,<required item amount>{,...});
 // -----------------------------------------------------------
-	
-	//Costumes
-//	Add(1,20232,1,0,0,7642,5000,670,500); // Costume Celine Ribbon
-	Add(1,20590,1,0,0,7642,2000,670,1000); // Evil Druid Cross
-//	Add(1,20955,1,0,0,7642,6000,670,750); // Christmas Tree
-	Add(1,32237,1,0,0,7642,5000,670,5000); // Celine Brooch
-	Add(1,420003,1,0,0,7642,10000,670,5000); // Cd in mouth
-	
-//	Add(2,31396,1,0,0,6671,5000,670,500); // Sorcerer
-//	Add(2,20943,1,0,0,6671,7500,670,750); // Geffen Magic Muffler
-//	Add(2,20944,1,0,0,6671,7500,670,750); // Anti Magic Manteau
-//	Add(2,18652,1,0,0,6671,10000,670,1000); // Vanargrand
-	
-//	Add(3,19292,1,0,0,6423,20,670,100); // Cat Knit
-	Add(3,31151,1,0,0,6423,15,670,100); // Cat Ears
-	Add(3,31028,1,0,0,6423,15,670,100); // Cat Hood
-	Add(3,20499,1,0,0,6423,15,670,100); // Cat Hat
-	Add(3,31607,1,0,0,6423,15,670,100); // Cat Witch Hat
-	Add(3,31186,1,0,0,6423,15,670,100); // Real Black Cat
-	Add(3,31533,1,0,0,6423,15,670,100); // Black cat Muffler
-	Add(3,31300,1,0,0,6423,15,670,100); // White Cat Muffler
-	Add(3,20598,1,0,0,6423,75,670,1000); // Cat Bag Black
-	Add(3,20517,1,0,0,6423,75,670,1000); // Cat Bag White
-	
-	Add(4,20212,1,0,0,2554,2,670,100); // Nidhog & loki
-	Add(4,31149,1,0,0,2554,2,670,100); // Nidhog
-//	Add(4,31406,1,0,0,2554,10,670,500); // Nidhog w
-	
-	Add(5,31674,1,0,0,6719,50,670,100); // Jitterbug
-	Add(5,400000,1,0,0,6719,500,670,5000); // Whistle
-	
-	Add(6,20318,1,0,0,6752,300,6961,10,6962,5,670,100); // Charleston
-	
-	Add(7,20432,1,0,0,6755,25,670,100); // Khalitzburg
-	Add(7,31332,1,0,0,6755,25,670,100); // Khalitzburg Black
-	Add(7,31377,1,0,0,6608,1200,670,100); // Glast Obs
-	
-	Add(8,20597,1,0,0,25155,2500,13460,1,13461,1,13462,1,670,1000); // Heart Hunter
-	
-	Add(9,31463,1,0,0,25723,50,670,100); // Flying Drone
-	
-	Add(10,19240,1,0,0,2911,2,670,5000); // Syringe
-	
-	Add(11,20514,1,0,0,7450,100,670,1000); // Thanatos Sword
-	
-	Add(12,20405,1,0,0,1233,1,6471,100,6469,100,6470,100,670,100); // Eremes Scarf
-	Add(12,20132,1,0,0,6471,300,6469,300,6470,300,670,100); // Aura
-	Add(12,19244,1,0,0,1528,3,6471,1000,6469,1000,6470,1000,670,5000); // Rosary
 
+//Aldebaran
+	Add(1,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(1,19791,1,0,0,5086,1,670,500); // Alarm Mask
+	Add(1,31113,1,0,0,2273,1,670,500); // Doctor Band
+	Add(1,20057,1,0,0,5018,1,670,500); // Feather Bonnet
+	Add(1,19872,1,0,0,2281,1,670,750); // Opera Mask
+	Add(1,19639,1,0,0,2280,1,670,500); // Sakkat
+//Rachel	
+	Add(2,19585,1,0,0,5170,1,670,500); // Feather Beret
+	Add(2,20389,1,0,0,5175,1,670,500); // Censor Bar
+//Alberta
+	Add(3,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(3,19939,1,0,0,2284,1,670,500); // Antler
+	Add(3,19545,1,0,0,5016,1,670,500); // Boy's Cap
+	Add(3,19845,1,0,0,5042,1,670,500); // Bao Bao
+	Add(3,19861,1,0,0,5041,1,670,500); // Heart Hairpin
+	Add(3,20185,1,0,0,5047,1,670,500); // Fashionable Glasses
+	Add(3,19622,1,0,0,5048,1,670,500); // Crescent Hairpin
+	Add(3,19840,1,0,0,5022,1,670,750); // Hat of Sun God
+	Add(3,20348,1,0,0,5032,1,670,500); // Sunday Hat
+	Add(3,19890,1,0,0,5027,1,670,500); // Mage Hat
+	Add(3,19662,1,0,0,5045,1,670,500); // Magician Hat
+	Add(3,20233,1,0,0,5443,1,670,500); // Statue
+	Add(3,19625,1,0,0,2214,1,670,500); // Bunny Band
+//	Add(3,5448,1,0,0,2252,1,1054,450,943,1200); // Solo Hat
+//Lighthalzen
+	Add(4,20054,1,0,0,5110,1,670,500); // Pacifier
+	Add(4,20181,1,0,0,5117,1,670,500); // Mystic Rose
+	Add(4,19701,1,0,0,5109,1,670,500); // Red Bonnet
+	Add(4,20208,1,0,0,5442,1,670,500); // Necktie
+	Add(4,19738,1,0,0,5108,1,670,500); // Renown detective
+//Morocc
+	Add(5,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(5,19734,1,0,0,2296,1,670,500); // Binoculars
+	Add(5,20051,1,0,0,2272,1,670,500); // Stop Post
+	Add(5,19782,1,0,0,5058,1,670,500); // Drooping Cat
+	Add(5,19931,1,0,0,5084,1,670,500); // Lazy Smokie
+	Add(5,19858,1,0,0,5064,1,670,500); // Smokie Leaf	
+	Add(5,20157,1,0,0,5065,1,670,500); // Blue Fish
+	Add(5,19625,1,0,0,2214,1,670,500); // Bunny Band
+//Payon
+	Add(6,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(6,19932,1,0,0,5073,1,670,500); // Model Training Hat
+	Add(6,19854,1,0,0,5057,1,670,500); // Ears of Black Cat
+	Add(6,19941,1,0,0,2283,1,670,500); // Ear Muffs
+	Add(6,19618,1,0,0,5069,1,670,500); // Kitsune mask
+	Add(6,31712,1,0,0,5004,1,670,500); // Oxygen Mask
+//	Add(6,2293,1,0,0,710,1,703,1,704,1,708,1); // Murderer
+	Add(6,20472,1,0,0,5025,1,670,500); // Helm of Angel
+	Add(6,19547,1,0,0,5038,1,670,500); // Deviruchi
+	Add(6,31036,1,0,0,5173,1,670,500); // Magistrate Hat
+	Add(6,20388,1,0,0,5174,1,670,500); // Ayam
+	Add(6,19554,1,0,0,5176,1,670,750); // Hahoe
+	Add(6,21300,1,0,0,5177,1,670,500); // Lion Mask
+	Add(6,31128,1,0,0,5169,1,670,750); // Bride Mask
+	Add(6,19625,1,0,0,2214,1,670,500); // Bunny Band
+//Yuno
+	Add(7,19785,1,0,0,5107,1,670,500); // Crunch Toast
+	Add(7,19781,1,0,0,5074,1,670,500); // Angel Wing Ears
+	Add(7,19621,1,0,0,5068,1,670,500); // Evil Wing Ears
+	Add(7,20004,1,0,0,5091,1,670,750); // Big Golden Bell
+	Add(7,20454,1,0,0,5080,1,670,500); // Crown of Ancient Queen
+	Add(7,19786,1,0,0,5081,1,670,500); // Crown of Mistress
+	Add(7,20058,1,0,0,5070,1,670,500); // Hot Blooded
+//Geffen
+	Add(8,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(8,19628,1,0,0,5001,1,670,500); // Headset	
+	Add(8,20276,1,0,0,5082,1,670,500); // Decorative Mushroom
+	Add(8,20471,1,0,0,5077,1,670,500); // Tulip Hairpin
+	Add(8,20059,1,0,0,2292,1,670,750); // Welding Mask
+	Add(8,20387,1,0,0,5079,1,670,500); // X Hairpin
+	Add(8,20049,1,0,0,5063,1,670,500); // Giant Band Aid
+	Add(8,19983,1,0,0,5061,1,670,500); // Flower Hairpin
+	Add(8,20245,1,0,0,5446,1,670,500); // Catfoot Hairpin 
+	Add(8,19548,1,0,0,5447,1,670,500); // Frog Hat
+	Add(8,19625,1,0,0,2214,1,670,500); // Bunny Band
+//Comodo
+	Add(9,31714,1,0,0,5071,1,670,500); // Indian Headband	
+	Add(9,20261,1,0,0,5036,1,670,500); // Cross Hat
+	Add(9,20275,1,0,0,5034,1,670,500); // Bulb Headband
+	Add(9,20207,1,0,0,5049,1,670,500); // Striped Hairband
+	Add(9,20159,1,0,0,5052,1,670,500); // Blue Hairband
+	Add(9,20473,1,0,0,5031,1,670,500); // Mine Helmet
+	Add(9,20453,1,0,0,5023,1,670,500); // Parcel Hat
+	Add(9,31035,1,0,0,5021,1,670,500); // Bankruptcy for The heart
+	Add(9,19846,1,0,0,5447,1,670,500); // Opera Phantom Mask	
+	Add(9,20226,1,0,0,5444,1,670,500); // Red Comb
+//Orc
+	Add(10,20385,1,0,0,5094,1,670,750); // Helmet of Orc Hero
+	Add(10,20056,1,0,0,5436,1,670,500); // Bride's Corolla
+//Prontera
+	Add(11,19500,1,0,0,2278,1,670,500); // Mr Smile
+	Add(11,20050,1,0,0,5012,1,670,500); // Ph.D Hat
+	Add(11,20224,1,0,0,5083,1,670,500); // Red Ribbon
+	Add(11,19625,1,0,0,2214,1,670,500); // Bunny Band
+//Lutie
+	Add(12,20138,1,0,0,5078,1,670,500); // Sea-Otter Hat
+	Add(12,19851,1,0,0,5059,1,670,500); // Teddybear Hat
+	Add(12,19550,1,0,0,5040,1,670,500); // Teddybear Hat
+	Add(12,20118,1,0,0,5024,1,670,500); // Cake Hat
+	Add(12,20445,1,0,0,5028,1,670,500); // Candle
+	Add(12,20013,1,0,0,5026,1,670,500); // Chef Hat
+	Add(12,20304,1,0,0,5033,1,670,500); // Raccoon Hat
+	Add(12,20182,1,0,0,5039,1,670,500); // Rainbow Eggshell
+	Add(12,19533,1,0,0,5029,1,670,500); // Spore Hat
+//	Add(12,5050,1,0,0,7068,300,7033,850,1015,1); // Wonder	
+	Add(12,19829,1,0,0,5062,1,670,500); // Straw Hat
+	Add(12,19582,1,0,0,5075,1,670,500); // Cowboy Hat
+	Add(12,20330,1,0,0,5067,1,670,500); // Sombrero
+	Add(12,20119,1,0,0,5076,1,670,500); // Beanie	
+//Moscovia
+	Add(13,19626,1,0,0,5243,1,670,500); // Shafka
+//Hugel
+	Add(14,19546,1,0,0,5171,1,670,500); // Valkyrie Helm
+//Einbech
+	Add(15,19984,1,0,0,5115,1,670,500); // Winter Hat
+//Glastheim
+	Add(16,20244,1,0,0,5121,1,670,750); // Zealotus
+//Kunlun	
+	Add(17,31471,1,0,0,5437,1,670,500); // Celestial Flower
+//Izlude	
+	Add(18,19500,1,0,0,2278,1,670,500); // Mr Smile
+//Forge	
+	Add(19,7619,1,0,0,985,5,670,3);
+	Add(19,7620,1,0,0,984,5,670,3);
+	Add(19,6241,1,0,0,7619,2,670,8);
+	Add(19,6240,1,0,0,7620,2,670,8);
 // -----------------------------------------------------------
 
 //=====================================================================================
@@ -158,17 +231,16 @@ OnInit:
 	set .menu$,"";
 	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
 		set .menu$, .menu$+.Shops$[.@i]+":";
-		npcshopdelitem "instanceshop"+.@i,909;
+		npcshopdelitem "toolsshop"+.@i,909;
 	}
 	end;
 
 OnMenu:
-
-	mes "[^FF6600Merchant Master^000000]";
-	mes "Hello";
-	mes "I'm the merchant master.";
-	mes "I can sell you stuff if you have-";
-	mes "something i want.";
+	mes "[^FF6600Tool Seller^000000]";
+	mes "Which one?";
+	mes "I only have two hands, so";
+	mes "you can only select one";
+	mes "at a time.";
 	
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
@@ -183,8 +255,8 @@ OnMenu:
 		message strcharinfo(0),"An error has occurred.";
 		end;
 	}
-	callshop "instanceshop"+@shop_index,1;
-	npcshopattach "instanceshop"+@shop_index;
+	callshop "toolsshop"+@shop_index,1;
+	npcshopattach "toolsshop"+@shop_index;
 	end;
 
 OnBuyItem:
@@ -196,7 +268,7 @@ OnBuyItem:
 		message strcharinfo(0),"You can't purchase that many "+getitemname(.@q[0])+".";
 		end;
 	}
-	mes "[^FF6600Merchant Master^000000]";
+	mes "[^FF6600Tool Seller^000000]";
 	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
 	mes "Requirements:";
 	disable_items;
@@ -213,12 +285,12 @@ OnBuyItem:
 		switch(select(" ~ Purchase ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ Preview...":"")+": ~ ^777777Cancel^000000")) {
 		case 1:
 			if (@qe[0]) {
-				mes "[^FF6600Merchant Master^000000]";
+				mes "[^FF6600Tool Seller^000000]";
 				mes "You're missing one or more quest requirements.";
 				close;
 			}
 			if (!checkweight(.@q[0],.@q[2])) {
-				mes "[^FF6600Merchant Master^000000]";
+				mes "[^FF6600Tool Seller^000000]";
 				mes "^FF0000You need "+(((.@q[2]*getiteminfo(.@q[0], ITEMINFO_WEIGHT))+Weight-MaxWeight)/10)+" additional weight capacity to complete this trade.^000000";
 				close;
 			}
@@ -266,7 +338,7 @@ function Add {
 			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
 	}
 	copyarray getd(".q_"+getarg(0)+"_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
-	npcshopadditem "instanceshop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	npcshopadditem "toolsshop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
 	return;
 }
 
@@ -288,26 +360,33 @@ function Slot {
 }
 }
 
-function	script	instanceshop	{
+function	script	toolsshop	{
 	deletearray @i[0],getarraysize(@i);
 	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
 		set @i[.@i],getarg(.@i);
-	doevent "instance_shop::OnMenu";
+	doevent "tools_shop::OnMenu";
 	end;
 }
 
 
 // Dummy shop data -- copy as needed.
 //============================================================
--	shop	instanceshop1	-1,909:-1
--	shop	instanceshop2	-1,909:-1
--	shop	instanceshop3	-1,909:-1
--	shop	instanceshop4	-1,909:-1
--	shop	instanceshop5	-1,909:-1
--	shop	instanceshop6	-1,909:-1
--	shop	instanceshop7	-1,909:-1
--	shop	instanceshop8	-1,909:-1
--	shop	instanceshop9	-1,909:-1
--	shop	instanceshop10	-1,909:-1
--	shop	instanceshop11	-1,909:-1
--	shop	instanceshop12	-1,909:-1
+-	shop	toolsshop1	-1,909:-1
+-	shop	toolsshop2	-1,909:-1
+-	shop	toolsshop3	-1,909:-1
+-	shop	toolsshop4	-1,909:-1
+-	shop	toolsshop5	-1,909:-1
+-	shop	toolsshop6	-1,909:-1
+-	shop	toolsshop7	-1,909:-1
+-	shop	toolsshop8	-1,909:-1
+-	shop	toolsshop9	-1,909:-1
+-	shop	toolsshop10	-1,909:-1
+-	shop	toolsshop11	-1,909:-1
+-	shop	toolsshop12	-1,909:-1
+-	shop	toolsshop13	-1,909:-1
+-	shop	toolsshop14	-1,909:-1
+-	shop	toolsshop15	-1,909:-1
+-	shop	toolsshop16	-1,909:-1
+-	shop	toolsshop17	-1,909:-1
+-	shop	toolsshop18	-1,909:-1
+-	shop	toolsshop19	-1,909:-1

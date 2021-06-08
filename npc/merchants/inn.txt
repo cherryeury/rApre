@@ -147,8 +147,8 @@ lhz_in02,230,284,4	script	Hotel Employee#01	86,{
 		mes "Royal Dragon.";
 		close2;
 		warp "lhz_in02",219,150;
-		percentheal 100,100;
-		npcskill "AL_BLESSING",10,99,99;
+		percentheal 100,100; 
+		specialeffect2 EF_SPELLBREAKER; bonus_script "{ bonus bBaseAtk,10; bonus bMatk,10; }",3600; dispbottom "You feel rested, Atk & Matk Up for 1 hour !";
 		end;
 	case 3:
 		mes "[Hotel Employee]";
@@ -193,7 +193,7 @@ ve_in,157,219,5	script	Inn Master#Receptionist	709,{
 		mes "Enjoy your stay~";
 		close2;
 		set Zeny,Zeny - 5000;
-		percentheal 100,100;
+		percentheal 100,100; specialeffect2 EF_SPELLBREAKER; bonus_script "{ bonus bBaseAtk,10; bonus bMatk,10; }",3600; dispbottom "You feel rested, Atk & Matk Up for 1 hour !";
 		warp "ve_in",184,228;
 		end;
 	case 3:
@@ -232,7 +232,7 @@ function	script	F_InnMaid	{
 		mes "enjoy your rest~";
 		close2;
 		set Zeny,Zeny - 5000;
-		percentheal 100,100;
+		percentheal 100,100; specialeffect2 EF_SPELLBREAKER; bonus_script "{ bonus bBaseAtk,10; bonus bMatk,10; }",3600; dispbottom "You feel rested, Atk & Matk Up for 1 hour !";
 		return;
 	case 3:
 		close;

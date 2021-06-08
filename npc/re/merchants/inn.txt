@@ -41,7 +41,7 @@ bra_in01,27,24,3	script	Hotel Keeper#bra1	478,{
 			mes "I will show you a great room.";
 			close2;
 			set Zeny, Zeny-5000;
-			percentheal 100,100;
+			percentheal 100,100; specialeffect2 EF_SPELLBREAKER; bonus_script "{ bonus bBaseAtk,10; bonus bMatk,10; }",3600; dispbottom "You feel rested, Atk & Matk Up for 1 hour !";
 			warp "bra_in01",144,69;
 			end;
 		}

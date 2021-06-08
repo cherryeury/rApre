@@ -1839,7 +1839,7 @@ Body:
         Rate: 50
       - Item: Emperium
         Rate: 500
-      - Item: Magestic_Goat_
+      - Item: Crescent_Scythe_
         Rate: 10
       - Item: Elunium
         Rate: 5432
@@ -12650,8 +12650,8 @@ Body:
         Rate: 100
       - Item: Elunium
         Rate: 5141
-      - Item: Bone_Helm_
-        Rate: 10
+      - Item: Bone_Helm
+        Rate: 350
       - Item: Dark_Lord_Card
         Rate: 1
         StealProtected: true

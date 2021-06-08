@@ -3281,7 +3281,13 @@ Body:
     Refineable: true
     View: 41
     Script: |
-      bonus bStr,1;      
+      bonus bStr,1; 
+      if (getrefine()>6){
+      bonus bStr,2;
+      }
+      if (getrefine()>8){
+      bonus2 bIgnoreDefClassRate,Class_All,20;
+      }     
   - Id: 2298
     AegisName: Green_Feeler
     Name: Green Feeler
@@ -3979,7 +3985,13 @@ Body:
     Refineable: true
     View: 43      
     Script: |
-      bonus bShortWeaponDamageReturn,2;
+      bonus bShortWeaponDamageReturn,2; 
+      if (getrefine()>6){
+      bonus2 bSubEle,Ele_Neutral,1;
+      }
+      if (getrefine()>8){
+      bonus bShortWeaponDamageReturn,5; 
+      }            
   - Id: 5141
     AegisName: Marionette_Doll
     Name: Marionette Doll
@@ -4303,8 +4315,16 @@ Body:
     Refineable: true
     View: 137
     Script: |
-      bonus bStr,2;
+      bonus bStr,1;
       bonus bInt,1;
+      if (getrefine()>6){
+      bonus bHpRecovRate,20;
+      bonus bSpRecovRate,20;
+      }
+      if (getrefine()>8){
+      bonus2 bHpRegenRate,(MaxHP*2/100),10000;
+      bonus2 bHpRegenRate,(MaxSP/100),10000;
+      }       
   - Id: 5166
     AegisName: Spinx_Helm_
     Name: Sphinx Hat
@@ -4753,7 +4773,13 @@ Body:
     Refineable: true
     View: 45
     Script: |
-      bonus bInt,1;
+      bonus bInt,1;  
+      if (getrefine()>6){
+      bonus2 bAddEle,Ele_Holy,5; 
+      }
+      if (getrefine()>8){
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      }       
   - Id: 2230
     AegisName: Gemmed_Sallet
     Name: Gemmed Sallet
@@ -4921,7 +4947,13 @@ Body:
     Refineable: true
     View: 19
     Script: |
-      bonus bInt,1;      
+      bonus bInt,1;  
+      if (getrefine()>6){
+      bonus2 bAddEle,Ele_Earth,5; 
+      }
+      if (getrefine()>8){
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      }                 
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar
@@ -5559,7 +5591,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 200
-    Defense: 2
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -5571,7 +5603,7 @@ Body:
     Refineable: true
     View: 175      
     Script: |
-      bonus bMagicAtkDef,10;   
+      bonus bMagicAtkDef,12;   
   - Id: 5076
     AegisName: Fur_Hat
     Name: Beanie
@@ -8503,8 +8535,12 @@ Body:
     AegisName: Midgard_Coin
     Name: Midgard Coin
     Type: Etc
-    Buy: 200000
+    Buy: 100000
     Weight: 10
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoSell: false
   - Id: 2956
     AegisName: Safety_Ring_
     Name: Advanced Safety Ring
@@ -8784,8 +8820,13 @@ Body:
     Refineable: true
     View: 103
     Script: |
-      bonus2 bSubEle,Ele_Dark,-15;    
-      bonus2 bSubEle,Ele_Neutral,1;  
+      bonus2 bSubEle,Ele_Dark,-15;
+      .@j = getrefine();
+      if (.@j>=7)
+         .@i = 1;
+      if (.@j>=9)
+         .@i = 2;
+      bonus2 bSubEle,Ele_Neutral,2+(2*.@i);
   - Id: 5163
     AegisName: Corsair_
     Name: Corsair
@@ -8820,7 +8861,13 @@ Body:
     Refineable: true
     View: 105
     Script: |
-      bonus bVit,2;      
+      bonus bVit,1;
+      bonus bMaxHprate,5;
+      .@r = getrefine();
+      if (.@r>=7)
+         bonus2 bSubEle,Ele_Neutral,1;
+      if (.@r>=9)
+         bonus bMaxHPrate,3;    
   - Id: 19626
     AegisName: C_Shafka
     Name: Costume Shafka

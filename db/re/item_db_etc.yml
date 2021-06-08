@@ -109,7 +109,7 @@ Body:
     AegisName: Silver_Coin_Moneybag
     Name: Bag of Silver Coins
     Type: Etc
-    Buy: 50000
+    Buy: 10000
     Weight: 400
   - Id: 677
     AegisName: White_Gold_Coin
