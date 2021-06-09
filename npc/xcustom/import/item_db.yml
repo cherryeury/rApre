@@ -567,26 +567,6 @@ Body:
     Weight: 130
     Script: |
       itemheal rand(175,235),0;
-  - Id: 601
-    AegisName: Wing_Of_Fly
-    Name: Fly Wing
-    Type: Delayconsume
-    Buy: 250
-    Weight: 50
-    Flags:
-      BuyingStore: true
-    Script: |
-      itemskill "AL_TELEPORT",1;
-  - Id: 602
-    AegisName: Wing_Of_Butterfly
-    Name: Butterfly Wing
-    Type: Delayconsume
-    Buy: 1000
-    Weight: 50
-    Flags:
-      BuyingStore: true
-    Script: |
-      itemskill "AL_TELEPORT",3;
   - Id: 610
     AegisName: Leaf_Of_Yggdrasil
     Name: Yggdrasil Leaf

@@ -16,19 +16,18 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 ###########################################################################
-# Monster Chat Database
+# Homunculus Experience Database
 ###########################################################################
 #
-# Settings
+# Homunculus Experience Settings
 #
 ###########################################################################
-# - Id                      Index of the message.
-#   Color                   Hexadecimal color (Default: 0xFF0000).
-#   Dialog                  Text displayed by the monster.
+# - Level   Level required.
+#   Exp     Experience required for the next level.
 ###########################################################################
 
 Header:
-  Type: MOB_CHAT_DB
+  Type: HOMUN_EXP_DB
   Version: 1
 
 Body:
