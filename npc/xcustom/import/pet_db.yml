@@ -193,14 +193,18 @@ Body:
     ChangeTargetRate: 100
     SupportScript: >
       petskillbonus bAtkRate,1,10,20;
-      petskillbonus bMAtkRate,1,10,20;
+  - Mob: DEVIRUCHI
+    AttackRate: 800
+    RetaliateRate: 200
+    ChangeTargetRate: 100
+    SupportScript: >
+      petskillbonus bMAtkRate,1,10,20;      
   - Mob: BAPHOMET_
     AttackRate: 1000
     RetaliateRate: 100
     ChangeTargetRate: 200
     SupportScript: >
-      petskillbonus bDef,10,10,20;
-      petskillbonus bMDef,1,10,20;
+      petskillbonus bMDef,3,10,20;      
   - Mob: BON_GUN
     AttackRate: 600
     RetaliateRate: 200
@@ -290,7 +294,7 @@ Body:
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillbonus bMaxHP,10,10,0;    
+      petskillbonus bMaxHP,50,10,0;    
   - Mob: MARIONETTE
     AttackRate: 300
     RetaliateRate: 300
@@ -342,7 +346,7 @@ Body:
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillbonus bInt,1,10,20;    
+      petskillbonus bDex,1,10,20;    
   - Mob: WICKED_NYMPH
     AttackRate: 300
     RetaliateRate: 300
@@ -386,7 +390,7 @@ Body:
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillattack2 "NPC_FIREATTACK",150,1,0,1;    
+      petskillbonus bInt,1,10,20;   
   - Mob: E_CRAMP
     AttackRate: 350
     RetaliateRate: 400
@@ -511,111 +515,3 @@ Body:
     AttackRate: 300
     RetaliateRate: 300
     ChangeTargetRate: 800
-Body:
-  - Mob: LITTLE_PORING
-    TameItem: Unripe_Apple2
-    EggItem: Novice_Poring_Egg
-    FoodItem: Apple_Juice
-    Fullness: 3
-    IntimacyFed: 1000
-    IntimacyOverfed: 0
-    IntimacyOwnerDie: 0
-    CaptureRate: 5000
-    SpecialPerformance: false
-    Script: >
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {
-        bonus bHPrecovRate,50;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {
-        bonus bHPrecovRate,25;
-      }
-  - Mob: BAPHOMET_
-    TameItem: Book_Of_Devil
-    EggItem: Bapho_Jr._Egg
-    EquipItem: Skull_Helm
-    FoodItem: Honey
-    Fullness: 2
-    IntimacyFed: 10
-    CaptureRate: 200
-    SpecialPerformance: false
-    Script: >
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {
-        bonus bDef,20;
-        bonus bMdef,2;
-        bonus2 bResEff,Eff_Stun,200;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {
-        bonus bDef,10;
-        bonus bMdef,1;
-        bonus2 bResEff,Eff_Stun,100;
-      }
-  - Mob: CHUNG_E
-    TameItem: Tantanmen
-    EggItem: Chung_E_Egg
-    FoodItem: Bun_
-    Fullness: 3
-    IntimacyFed: 50
-    CaptureRate: 2000
-    SpecialPerformance: false
-    Script: >
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {
-        bonus bDef,20;
-        bonus2 bSubRace,RC_DemiHuman,2;
-        bonus2 bSubRace,RC_Player_Human,2;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {
-        bonus bDef,10;
-        bonus2 bSubRace,RC_DemiHuman,1;
-        bonus2 bSubRace,RC_Player_Human,1;
-      }      
-  - Mob: MUNAK
-    TameItem: No_Recipient
-    EggItem: Munak_Egg
-    EquipItem: Punisher
-    FoodItem: Pet_Food
-    Fullness: 3
-    IntimacyFed: 20
-    CaptureRate: 500
-    SpecialPerformance: false
-    Script: >
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {
-        bonus bInt,2;
-        bonus bDef,20;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {
-        bonus bInt,1;
-        bonus bDef,10;
-      }
-  - Mob: ORK_WARRIOR
-    TameItem: Horror_Of_Tribe
-    EggItem: Orc_Warrior_Egg
-    EquipItem: Wild_Flower
-    FoodItem: Pet_Food
-    Fullness: 5
-    IntimacyFed: 20
-    CaptureRate: 500
-    Script: >
-      .@i = getpetinfo(PETINFO_INTIMATE);
-      
-      if (.@i >= PET_INTIMATE_LOYAL) {  //petloot 100;
-        bonus bAtk,15; bonus bDef,-30;
-      } else if (.@i >= PET_INTIMATE_CORDIAL) {  //petloot 10;
-        bonus bAtk,10; bonus bDef,-20;
-      }
-    Evolution:
-      - Target: HIGH_ORC
-        ItemRequirements:
-          - Item: Horror_Of_Tribe
-            Amount: 3
-          - Item: Orcish_Sword
-            Amount: 1
-          - Item: Orcish_Voucher
-            Amount: 500
-          - Item: Cigar
-            Amount: 1
-          - Item: Orc_Warrior_Card
-            Amount: 1
