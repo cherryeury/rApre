@@ -21,7 +21,7 @@
 
 // Christopher: Geffen Blacksmith
 //============================================================
-new_5-1,53,111,5	script	Christopher#69	63,{
+geffen_in,110,172,0	script	Christopher#1	63,{
 	mes "[Christopher Guillenrow]";
 	mes "Welcome to Christopher's Workshop. Ye can get all yer stuff for forging here. What business";
 	mes "brings ye to me?";
@@ -160,7 +160,7 @@ new_5-1,53,111,5	script	Christopher#69	63,{
 		mes "[Christopher Guillenrow]";
 		mes "I prepare every Metal, and only the high quality ones o'course. Now then, which one do ye need?";
 		next;
-		switch(select("Oridecon - 25000z.:Ellunium - 250000z.:Cancel.")) {
+		switch(select("Phracon - 200z.:Emveretarcon - 1000z.:Cancel.")) {
 		case 1:
 			mes "[Christopher Guillenrow]";
 			mes "So, How many do ye wish to buy? If ye dont want anything, just type the number as '0.'";
@@ -183,18 +183,18 @@ new_5-1,53,111,5	script	Christopher#69	63,{
 					break;
 				}
 			}
-			.@sell = .@input * 25000;
+			.@sell = .@input * 200;
 			if (Zeny < .@sell) {
 				mes "[Christopher Guillenrow]";
 				mes "Ye don't have enough money. Ye know I can't sell this at a lower price... You know how the wifey nags about Zeny.";
 				close;
 			}
-			if (checkweight(984,.@input) == 0) {
+			if (checkweight(1010,.@input) == 0) {
 				mes "[Christopher Guillenrow]";
 				mes "Ye look like you don't have the room to carry anythin' new. Why don't ye put some things into Kafra Storage n' come back.";
 				close;
 			}
-			getitem 984,.@input; // Oridecon
+			getitem 1010,.@input; // Phracon
 			Zeny = Zeny-.@sell;
 			mes "[Christopher Guillenrow]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
@@ -221,7 +221,7 @@ new_5-1,53,111,5	script	Christopher#69	63,{
 					break;
 				}
 			}
-			.@sell = .@input * 25000;
+			.@sell = .@input * 1000;
 			if (Zeny < .@sell) {
 				mes "[Christopher Guillenrow]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
@@ -232,7 +232,7 @@ new_5-1,53,111,5	script	Christopher#69	63,{
 				mes "Me friend... Seems to me ye don't have Inventory space. Why doncha put some things into Kafra Storage first?";
 				close;
 			}
-			getitem 985,.@input; // Ellunium
+			getitem 1011,.@input; // Emveretarcon
 			Zeny = Zeny-.@sell;
 			mes "[Christopher Guillenrow]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need, whenever ye want.";
@@ -428,14 +428,14 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 		mes "I have high quality metal.";
 		mes "So, which metal would you like to buy?";
 		next;
-		switch(select("Oridecon - 25000z.:Ellunium - 25,000z.:Quit.")) {
+		switch(select("Phracon - 200z.:Emveretarcon - 1,000z.:Quit.")) {
 		case 1:
-			.@item = 984;
-			.@item_price = 25000;
+			.@item = 1010;
+			.@item_price = 200;
 			break;
 		case 2:
-			.@item = 985;
-			.@item_price = 25000;
+			.@item = 1011;
+			.@item_price = 1000;
 			break;
 		case 3:
 			mes "[Paul Spanner]";
@@ -959,18 +959,18 @@ function	script	phramain	{
 	mes "["+ .@npc_name$ +"]";
 	mes "I sell 2 kinds of Metal";
 	mes "for tempering weaponry.";
-	mes "I have ^007777Oridecon^000000 for Weapons";
-	mes "Weapons, and ^007777Ellunium^000000";
-	mes "for Armors.";
+	mes "I have ^007777Phracon^000000 for Level 1";
+	mes "Weapons, and ^007777Emveretarcon^000000";
+	mes "for Level 2 Weapons.";
 	next;
-	switch(select("Oridecon - 25000 Zeny:Ellunium - 25000 Zeny:Ask about other Metals")) {
+	switch(select("Phracon - 200 Zeny:Emveretarcon - 1000 Zeny:Ask about other Metals")) {
 	case 1:
-		.@material = 984;
-		.@price = 25000;
+		.@material = 1010;
+		.@price = 200;
 		break;
 	case 2:
-		.@material = 985;
-		.@price = 25000;
+		.@material = 1011;
+		.@price = 1000;
 		break;
 	case 3:
 		mes "["+ .@npc_name$ +"]";
@@ -1130,79 +1130,79 @@ function	script	orimain	{
 
 // Equipment Repairmen
 //============================================================
-alberta_in,31,65,4	shop	Repair Scroll Seller#alb	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+alberta_in,31,65,4	script	Repairman#alb	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-moc_ruins,107,94,4	shop	Repair Scroll Seller#mr	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+moc_ruins,107,94,4	script	Repairman#moc	99,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-payon,143,165,4	shop	Repair Scroll Seller#pay	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+payon,143,165,4	script	Repairman#pay	88,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-prt_in,63,54,2	shop	Repair Scroll Seller#prt	74,14521:500
-//	callfunc "repairmain","Grendal";
-//	end;
-//}
+prt_in,63,54,2	script	Repairman#prt	86,{
+	callfunc "repairmain","Grendal";
+	end;
+}
 
-yuno_in01,175,28,3	shop	Repair Scroll Seller#yun	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+yuno_in01,175,28,3	script	Repairman#juno	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-geffen_in,34,166,3	shop	Repair Scroll Seller#gef	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+geffen_in,34,166,3	script	Repairman#gef	99,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-aldeba_in,38,60,3	shop	Repair Scroll Seller#ald	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+aldeba_in,38,60,3	script	Repairman#alde	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-lhz_in02,284,14,3	shop	Repair Scroll Seller#lhz	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+lhz_in02,284,14,3	script	Repairman#lhz	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-prt_gld,139,117,4	shop	Repair Scroll Seller#prtg	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+prt_gld,139,117,4	script	Repairman#prt_gld	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-gef_fild13,263,117,4	shop	Repair Scroll Seller#geff	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+gef_fild13,263,117,4	script	Repairman#gef_fild	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-pay_gld,295,183,4	shop	Repair Scroll Seller#paygg	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+pay_gld,295,183,4	script	Repairman#pay_gld	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-alde_gld,220,152,4	shop	Repair Scroll Seller#aldeg	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+alde_gld,220,152,4	script	Repairman#alde_gld	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-aru_gld,189,336,4	shop	Repair Scroll Seller#aru	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+aru_gld,189,336,4	script	Repairman#aru_gld	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
-sch_gld,340,80,7	shop	Repair Scroll Seller#sch	74,14521:500
-//	callfunc "repairmain","Repair Scroll Seller";
-//	end;
-//}
+sch_gld,340,80,7	script	Repairman#sch_gld	86,{
+	callfunc "repairmain","Repairman";
+	end;
+}
 
 // Equipment Repair Function
 //============================================================
-function	script	repairmainX	{
+function	script	repairmain	{
 	.@repairprice = 5000;
 	.@npc_name$ = getarg(0);
 	mes "["+ .@npc_name$ +"]";
@@ -1321,9 +1321,9 @@ function	script	repairmainX	{
 //= 2.0a Added weight checks thanks to Neouni [Playtester]
 //= 2.0b Fixed the names of Lighthalzen and Einbroch refiners thanks to Maud_Dib [Kargha]
 //= 2.1 Removed Duplicates [Silent]
-//= 2.2 Changed name from "Emvertacon" to "Ellunium". [Samuray22]
+//= 2.2 Changed name from "Emvertacon" to "Emveretarcon". [Samuray22]
 //=     Thanks to Barron-Monster.
-//= 2.2b Changed name from "Pharacon" to "Oridecon". [Samuray22]
+//= 2.2b Changed name from "Pharacon" to "Phracon". [Samuray22]
 //=     Thanks to Barron-Monster.
 //= 2.3 Corrected NPC names to fall within proper restrictions. [L0ne_W0lf]
 //= 2.4 Updated Refiner function. cleaner, and less dated. [L0ne_w0lf]

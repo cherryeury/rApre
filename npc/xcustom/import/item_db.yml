@@ -2118,7 +2118,7 @@ Body:
     Refineable: true
     Script: |
       bonus bInt,1;
-      bonus bMatkRate,2;   
+      bonus bMatkRate,2;      
   - Id: 22508
     AegisName: Para_Team_Mark_
     Name: Eden Group Mark
@@ -8536,6 +8536,7 @@ Body:
       Both_Accessory: true
     EquipLevelMin: 50
     Script: |
+      bonus bDef,30;
       bonus bMdef,5;
       bonus bAllStats,2;      
   - Id: 11

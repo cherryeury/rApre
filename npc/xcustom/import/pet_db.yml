@@ -352,7 +352,7 @@ Body:
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillbonus bSPRecovRate,3,10,0;      
+      petskillbonus bSPRecovRate,2,10,0;      
   - Mob: STONE_SHOOTER
     AttackRate: 300
     RetaliateRate: 300
@@ -368,13 +368,13 @@ Body:
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillbonus bMaxHPRate,2,10,0;    
+      petskillbonus bMaxHPRate,1,10,0;    
   - Mob: CIVIL_SERVANT
     AttackRate: 300
     RetaliateRate: 300
     ChangeTargetRate: 800
     SupportScript: >
-      petskillbonus bMaxSPRate,2,10,0;     
+      petskillbonus bMaxSPRate,1,10,0;     
   - Mob: LEAF_CAT
     AttackRate: 300
     RetaliateRate: 300
