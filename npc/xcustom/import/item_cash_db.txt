@@ -225,26 +225,26 @@
 
 // Weapons
 //2,1139,8 // Tirfing
-2,1240,6 // Princess Knife
-2,1244,6 // Holy Dagger
-2,1227,6 // Weeder Knife
-2,13001,6 // Dragon Killer
+//2,1240,6 // Princess Knife
+//2,1244,6 // Holy Dagger
+//2,1227,6 // Weeder Knife
+//2,13001,6 // Dragon Killer
 //2,1134,15 // Caesar Sword
-2,1467,6 // Bill Guisarme
-2,1562,6 // Battlefield Textbook
+//2,1467,6 // Bill Guisarme
+//2,1562,6 // Battlefield Textbook
 //2,1416,15 // Tjungkuletti
-2,1414,6 // Gelerdria
+//2,1414,6 // Gelerdria
 //2,1367,15 // Slaughter
-2,1169,6 // Executioner
+//2,1169,6 // Executioner
 //2,1579,30 // Book of the Dead
 //2,1137,25 // Excalibur
 //2,16051,25 // Valkyrie Hammer
 //2,28717,200 // Valkyrie Knife
-2,13092,10 // RWC
-2,1670,10 // RWC
-2,16026,10 // RWC
+//2,13092,10 // RWC
+//2,1670,10 // RWC
+//2,16026,10 // RWC
 2,13049,250 // Lacma
-//2,16039,1000 // Spoon
+2,16039,1500 // Spoon
 
 //Shield
 //3,2197,25 // Iron Shield
@@ -274,13 +274,13 @@
 //3,2358,1 // Angel's Dress
 //3,15040,10 // Prison Uniform
 //3,15072,40 // Nectar Suit
-3,15057,10 // Apron 
-3,15058,25 // Rider Suit
-3,15060,25 // Azure Smock
-3,2345,300 // Lucius
-3,2347,300 // Sapien
-3,2349,300 // Ebecee
-3,2351,300 // Claytos
+//3,15060,10 // Azure Smock
+//3,15057,10 // Apron 
+3,15058,15 // Rider Suit
+3,2345,200 // Lucius
+3,2347,200 // Sapien
+3,2349,200 // Ebecee
+3,2351,200 // Claytos
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -306,9 +306,9 @@
 //3,15204,1500 // Abyss Dress
 
 // Garment
-3,2511,3 // Skeleton
-3,2553,15 // Dragon Manteau
-3,2597,15 // Bloody Muffler
+//3,2511,3 // Skeleton
+//3,2553,10 // Dragon Manteau
+//3,2597,10 // Bloody Muffler
 //3,20726,20 // Fire Dragon Manteau
 //3,20728,20 // Water Dragon Manteau
 //3,20729,20 // Wind Dragon Manteau
@@ -380,11 +380,11 @@
 //3,28561,2500
 
 // Utility
-5,13599,10 // Battle Manual
-5,13990,10 // Job B Manual
-5,13607,10 // Drop
-5,7776,3
-5,17106,20
+5,13599,5 // Battle Manual
+5,13990,5 // Job B Manual
+5,13607,5 // Drop
+5,7776,1
+5,17106,9
 5,13583,1 // Convex
 //5,6635,3 // Blacksmith Bless
 //5,6396,20

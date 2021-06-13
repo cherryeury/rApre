@@ -149,6 +149,6 @@ Body:
     Requires:
       SpCost:
         - Level: 1
-          Amount: 32
+          Amount: 30
         - Level: 2
-          Amount: 29
+          Amount: 27

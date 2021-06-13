@@ -42,9 +42,9 @@ function	script	F_CoolDown	{
 
 -	marketshop	para_key10	FAKE_NPC,7026:100000:10,7027:100000:10 // todo
 
--	marketshop	para_wp00	FAKE_NPC,1181:10000000:1
+-	marketshop	para_wp00	FAKE_NPC,1181:10000000:1,1240:10000000:1,1244:10000000:1,1227:10000000:1,13001:10000000:1,1467:10000000:1,1562:10000000:1,1414:10000000:1,1169:10000000:1,13092:25000000:1,1670:10000000:1,16026:10000000:1
 
--	marketshop	para_arm10	FAKE_NPC,5007:2000000:1
+-	marketshop	para_arm10	FAKE_NPC,2553:5000000:1,2597:5000000:1,5007:7500000:1
 
 -	marketshop	para_ptn00	FAKE_NPC,678:80000:999,12016:50000:9999,525:100000:1000,12422:40000:100,12423:50000:100,12425:40000:100,12426:50000:100
 
@@ -97,8 +97,8 @@ OnClock0000:
 	npcshopupdate "para_hei10",23016,0,1;
 	npcshopupdate "para_key10",7026,10;
 	npcshopupdate "para_key10",7027,10;
-	npcshopupdate "para_wp00",1181,0,1;
-	npcshopupdate "para_arm10",5007,0,1;
+	npcshopupdate "para_wp00",1181,0,1; npcshopupdate "para_wp00",1240,0,1; npcshopupdate "para_wp00",1244,0,1; npcshopupdate "para_wp00",13001,0,1; npcshopupdate "para_wp00",1467,0,1; npcshopupdate "para_wp00",1562,0,1; npcshopupdate "para_wp00",1414,0,1; npcshopupdate "para_wp00",1169,0,1; npcshopupdate "para_wp00",13092,0,1; npcshopupdate "para_wp00",1670,0,1; npcshopupdate "para_wp00",16026,0,1;
+	npcshopupdate "para_arm10",5007,0,1; npcshopupdate "para_arm10",2553,0,1; npcshopupdate "para_arm10",2597,0,1;
 	npcshopupdate "para_ptn00",678,0,999;
 	npcshopupdate "para_ptn00",12016,0,9999;
 	npcshopupdate "para_ptn00",525,0,1000;
@@ -245,7 +245,7 @@ OnClock0000:
 
 -	shop	para_fod01	FAKE_NPC,7482:-1,577:-1,580:-1,7457:-1,581:-1,7453:-1,7455:-1,7454:-1,7456:-1,7452:-1,579:-1
 
--	shop	para_unm01	FAKE_NPC,537:-1,643:-1,10013:-1,10014:-1,6113:-1,6114:-1,6115:-1,6110:-1,6100:-1,6098:-1,6112:-1,6104:-1,6108:-1,6111:-1,6095:-1,7824:-1,6097:-1,6107:-1,6105:-1,6099:-1,25231:1000,25232:1000,25233:1000
+-	shop	para_unm01	FAKE_NPC,537:-1,643:-1,10013:-1,10014:-1,6113:-1,6114:-1,6115:-1,6110:-1,6100:-1,6098:-1,6112:-1,6104:-1,6108:-1,6111:-1,6095:-1,7824:-1,6097:-1,6107:-1,6105:1000,6099:1000,25231:1000,25232:1000,25233:1000
 
 
 // setting map-variable

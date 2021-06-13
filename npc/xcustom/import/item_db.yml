@@ -1270,7 +1270,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 16
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -1283,7 +1283,7 @@ Body:
     Refineable: true
     Script: |
       bonus bMaxHPrate,10;
-      bonus2 bHPRegenRate,30,5000;
+      bonus2 bHPRegenRate,6,1000;
       bonus bHealpower2,5;
       bonus bAddItemHealRate,5;
       bonus bMdef,3;
@@ -1324,7 +1324,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 650
-    Defense: 13
+    Defense: 20
     Jobs:
       All: true
       Novice: false
@@ -1374,13 +1374,33 @@ Body:
     Script: |
       bonus bAgi,(getrefine()>=9?3:1);
       bonus bFlee,7;
+  - Id: 5124
+    AegisName: Fricca_Circlet
+    Name: Fricca's Circlet
+    Type: Armor
+    Buy: 30000
+    Weight: 300
+    Defense: 0
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 65
+    Refineable: true
+    View: 251
+    Script: |
+      bonus bMdef,10;
+      bonus bInt,2;
+      bonus bMaxSP,100;      
   - Id: 2419
     AegisName: Goibne's_Combat_Boots
     Name: Goibne's Greaves
     Type: Armor
     Buy: 30000
     Weight: 700
-    Defense: 10
+    Defense: 13
     Jobs:
       All: true
       Novice: false
@@ -2003,7 +2023,7 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bLuk,7;      
+      bonus bLuk,6;      
   - Id: 2609
     AegisName: Skul_Ring
     Name: Skull Ring
@@ -2465,7 +2485,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 500
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2477,7 +2497,7 @@ Body:
     View: 257
     Script: |
       bonus bLuk,2;
-      bonus bBaseAtk,3;      
+      bonus bCritical,3;      
   - Id: 5037
     AegisName: Fruit_Shell
     Name: Nut Shell
@@ -2495,7 +2515,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 200
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -2507,6 +2527,8 @@ Body:
     View: 256
     Script: |
       bonus bInt,2;    
+      bonus bMaxSPRate,2;
+      bonus bMdef,2;
   - Id: 5158
     AegisName: Holy_Bonnet_
     Name: Monk Hat
@@ -3007,7 +3029,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 1000
-    Defense: 10
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -3366,7 +3388,7 @@ Body:
     EquipLevelMin: 65
     Refineable: true
     Script: |
-      bonus bFlee,20;
+      bonus bFlee,25;
       bonus bFlee2,5;      
   - Id: 5057
     AegisName: Ear_Of_Black_Cat
@@ -5214,7 +5236,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 500
-    Defense: 0
+    Defense: 6
     Slots: 1
     Jobs:
       All: true
@@ -6145,7 +6167,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bLuk,1;     
+      bonus bNearAtkDef,3;     
   - Id: 2313
     AegisName: Padded_Armor_
     Name: Padded Armor
@@ -7037,7 +7059,7 @@ Body:
     Type: Armor
     Buy: 124800
     Weight: 1100
-    Defense: 40
+    Defense: 20
     Jobs:
       Sage: true
       SoulLinker: true
@@ -7047,7 +7069,7 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus bVariableCastrate,-5;
+      bonus bVariableCastrate,-6;
       bonus bMdef,4;      
   - Id: 2360
     AegisName: Robe_Of_Casting_
@@ -7055,7 +7077,7 @@ Body:
     Type: Armor
     Buy: 124800
     Weight: 1100
-    Defense: 40
+    Defense: 20
     Slots: 1
     Jobs:
       Sage: true
@@ -7066,8 +7088,40 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus bVariableCastrate,-5;
+      bonus bVariableCastrate,-6;
       bonus bMdef,4;      
+  - Id: 2650
+    AegisName: Morrigane's_Belt
+    Name: Morrigane's Belt
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 61
+    Script: |
+      bonus bStr,2;
+      bonus bMaxHPRate,3;     
+  - Id: 2651
+    AegisName: Morrigane's_Pendant
+    Name: Morrigane's Pendant
+    Type: Armor
+    Buy: 30000
+    Weight: 200
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 61
+    Script: |
+      bonus bBaseAtk,10;
+      bonus bCritical,3;      
   - Id: 22132
     AegisName: Lighting_God's_Shoes
     Name: Lightning God's Shoes
@@ -7161,7 +7215,7 @@ Body:
     Type: Armor
     Buy: 10000
     Weight: 600
-    Defense: 27
+    Defense: 37
     Jobs:
       All: true
       Novice: false
@@ -7170,14 +7224,14 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bFlee,5;      
+      bonus bLuk,1;      
   - Id: 2308
     AegisName: Mantle_
     Name: Mantle
     Type: Armor
     Buy: 10000
     Weight: 600
-    Defense: 27
+    Defense: 37
     Slots: 1
     Jobs:
       All: true
@@ -7187,7 +7241,7 @@ Body:
       Armor: true
     Refineable: true     
     Script: |
-      bonus bFlee,5;      
+      bonus bLuk,1;      
   - Id: 2501
     AegisName: Hood
     Name: Hood
@@ -7337,7 +7391,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 600
-    Defense: 13
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -7347,7 +7401,7 @@ Body:
     EquipLevelMin: 65
     Refineable: true
     Script: |
-      bonus2 bSubEle,Ele_Neutral,17;
+      bonus2 bSubEle,Ele_Neutral,18;
   - Id: 2524
     AegisName: Valkyrie_Manteau
     Name: Valkyrian Manteau
@@ -7431,7 +7485,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 500
-    Defense: 10
+    Defense: 0
     Slots: 1
     Jobs:
       Priest: true
@@ -7470,7 +7524,7 @@ Body:
     Type: Armor
     Buy: 20000
     Weight: 550
-    Defense: 10
+    Defense: 15
     Jobs:
       Mage: true
       Sage: true
@@ -7481,15 +7535,14 @@ Body:
     EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus bMdef,5;
-      bonus bVit,11;      
+      bonus bVit,10;      
   - Id: 2536
     AegisName: Skin_Of_Ventus
     Name: Skin of Ventus
     Type: Armor
     Buy: 20
     Weight: 250
-    Defense: 10
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -7502,7 +7555,7 @@ Body:
     Script: |
       bonus bMdef,5;
       bonus bMaxHP,300;
-      bonus bFlee,10;      
+      bonus bFlee,15;      
   - Id: 2530
     AegisName: Rider_Insignia_
     Name: Rider Insignia
@@ -7553,7 +7606,7 @@ Body:
     Type: Armor
     Buy: 30000
     Weight: 600
-    Defense: 9
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -7564,7 +7617,7 @@ Body:
     Refineable: true
     Script: |
       bonus bLuk,3;
-      bonus bFlee2,8;      
+      bonus bFlee,15;      
   - Id: 2518
     AegisName: Morpheus's_Shawl
     Name: Morpheus's Shawl
@@ -7581,8 +7634,9 @@ Body:
     EquipLevelMin: 33
     Refineable: true
     Script: |
-      bonus bMaxSPrate,15;
-      bonus bMdef,0;      
+      bonus bMaxSPrate,10;
+      bonus bMdef,3;
+      bonus bVariableCastrate,-2;
   - Id: 2508
     AegisName: Ragamuffin_Cape
     Name: Ragamuffin Manteau
@@ -7639,8 +7693,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAgi,1;
-      bonus bMdef,5; 
-      bonus bDex,1;
+      bonus bLuk,1;
   - Id: 2337
     AegisName: Ninja_Suit
     Name: Ninja Suit
@@ -7660,8 +7713,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAgi,1;
-      bonus bDex,1;
-      bonus bMdef,5;   
+      bonus bLuk,1;  
   - Id: 2388
     AegisName: Kandura
     Name: Kandura
@@ -9165,7 +9217,7 @@ Body:
     Refineable: true
     Script: |
       bonus bVit,1;
-      bonus bMdef,5;
+      bonus bMaxHp,200;
   - Id: 2326
     AegisName: Saint_Robe_
     Name: Saint's Robe
@@ -9186,7 +9238,7 @@ Body:
     Refineable: true
     Script: |
       bonus bVit,1;
-      bonus bMdef,5;   
+      bonus bMaxHp,200;
   - Id: 6242
     AegisName: Midgard_Coin
     Name: Midgard Coin
@@ -9968,7 +10020,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 700
-    Defense: 16
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -9981,12 +10033,12 @@ Body:
     EquipLevelMin: 70
     Refineable: true
     Script: |
-      bonus bMaxHPrate,3;
-      bonus bMdef,3;
-      bonus bMatkRate,3;
-      bonus2 bAddClass,Class_All,3;
-      bonus2 bAddEle,Ele_Fire,3;      
-      bonus2 bMagicAddEle,Ele_Fire,3;      
+      bonus bMaxHPrate,4;
+      bonus bMdef,4;
+      bonus bMatkRate,4;
+      bonus2 bAddClass,Class_All,4;
+      bonus2 bAddEle,Ele_Fire,4;      
+      bonus2 bMagicAddEle,Ele_Fire,4;      
   - Id: 2522
     AegisName: Undershirt
     Name: Undershirt
@@ -11571,9 +11623,9 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 84
+    Attack: 104
     Range: 1
-    Slots: 1
+    Slots: 0
     Jobs:
       Alchemist: true
       Archer: true

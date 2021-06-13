@@ -14,7 +14,7 @@
 //= Item Preview script by ToastOfDoom.
 //============================================================
 					
-malangdo,212,101,4	script	Silvervine Cat	10242,{
+malangdo,212,101,5	script	Silvervine Cat	10242,{
 function Add; function Chk; function Slot; function A_An;
 	mes "[^FF6600Silvervine Cat^000000]";
 	mes "Hello, I am Ellen.";

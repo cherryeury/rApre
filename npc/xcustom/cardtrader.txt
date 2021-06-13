@@ -15,22 +15,13 @@ moc_para01,25,20,5	script	Card Trader	90,{
 	mes "Hi, "+strcharinfo(0)+"!";
 	mes "What can I do for you?";
 	next;
-	switch(select(" > Information: > Trade in cards: > Point shop (^0055FF"+getd(.Points$)+"^000000): > Leave")) {
+	switch(select(" > Information: > Trade in cards: > Leave")) {
 	case 1:
 		mes "[^FF6600Cardy^000000]";
 		mes "Do you find that you've got";
 		mes "useless cards lying around?";
 		mes "I'll be glad to take them off";
 		mes "your hands!";
-		next;
-		mes "[^FF6600Cardy^000000]";
-		mes "I'll give you ^0055FF"+.Points[0]+" Point"+((.Points[0] == 1)?"":"s")+"^000000 for each";
-		mes "card you give me, and";
-		mes "^0055FF"+.Points[1]+" Points^000000 for MVP cards.";
-		mes "You can trade those points";
-		mes "for items later on.";
-		mes "How does that sound?";
-		emotion ET_MONEY;
 		close;
 	case 2:
 		mes "[^FF6600Cardy^000000]";
@@ -47,12 +38,6 @@ moc_para01,25,20,5	script	Card Trader	90,{
 		npcshopattach "card_shop";
 		end;
 	case 3:
-		mes "[^FF6600Cardy^000000]";
-		mes "You have ^0055FF"+getd(.Points$)+"^000000 Point"+((getd(.Points$) == 1)?".":"s.");
-		callshop "card_shop",1;
-		npcshopattach "card_shop";
-		end;
-	case 4:
 		mes "[^FF6600Cardy^000000]";
 		mes "*yawn*";
 		mes "See you later!";
@@ -76,7 +61,8 @@ OnSellItem:
 			set .@card_amt[getarraysize(.@card_amt)], @sold_quantity[.@i];
 			set .@mvp, compare(.MVP$,""+@sold_nameid[.@i]);
 			mes ((.@mvp)?"  ^FF0000":"  ^777777")+@sold_quantity[.@i]+"x "+getitemname(@sold_nameid[.@i])+"^000000";
-			set .@card_total, .@card_total+(@sold_quantity[.@i]*((.@mvp)?.Points[1]:.Points[0]));
+			for(set .@i,0; .@i<getarraysize(@sold_nameid); set .@i,.@i+1)
+			set .@card_total, .@card_total+(@sold_quantity[.@i]*.@mvp)?.@lv*10000000:.@lv*10000;
 		}
 	deletearray @sold_nameid[0], getarraysize(@sold_nameid);
 	deletearray @sold_quantity[0], getarraysize(@sold_quantity);
@@ -86,7 +72,7 @@ OnSellItem:
 		close;
 	}
 	mes " ";
-	mes "---------- Total: ^0055FF"+.@card_total+" pt.^000000 -------";
+	mes "---------- Total: ^0055FF"+.@card_total+" zeny.^000000 -------";
 	next;
 	if(select(" > ^0055FFComplete trade...^000000: > ^777777Cancel^000000") == 2) {
 		mes "[^FF6600Cardy^000000]";
@@ -96,7 +82,7 @@ OnSellItem:
 	}
 	for(set .@i,0; .@i<getarraysize(.@card_id); set .@i,.@i+1)
 		delitem .@card_id[.@i],.@card_amt[.@i];
-	set #CASHPOINTS, #CASHPOINTS +.@card_total;
+	set zeny, zeny +.@card_total;
 	mes "[^FF6600Cardy^000000]";
 	mes "All done!";
 	emotion ET_DELIGHT;
