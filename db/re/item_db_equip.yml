@@ -30651,7 +30651,7 @@ Body:
     AegisName: Exorcize_Sachet
     Name: Sacred Incense
     Type: Armor
-    Buy: 20000
+    Buy: 0
     Weight: 100
     Locations:
       Both_Accessory: true

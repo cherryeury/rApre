@@ -6227,115 +6227,115 @@ OnTouch:
 
 // Shafka Hat :: mos_whale_edq
 //============================================================
-moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
-	if (!checkweight(1201,1)) {
-		mes "Wait a moment!!";
-		mes "You have too many items.";
-		mes "You can't receive this.";
-		mes "Lighten your weight and";
-		mes "try again.";
-		close;
-	}
-	mes "[Irina]";
-	mes "Hello, foreign traveler!";
-	mes "Have you had good day";
-	mes "in Moscovia?";
-	next;
-	mes "[Irina]";
-	mes "A special souvenir for visiting Moscovia...?";
-	next;
-	mes "[Irina]";
-	mes "For you, let's make a Shafka hat.";
-	mes "The Shafka has practicality and";
-	mes "it's spruce! Do you want one?";
-	next;
-	if(select("Learn about the Shafka.:Make a Shafka hat.") == 1) {
-		mes "[Irina]";
-		mes "When I look at you, you seem to";
-		mes "want to put on something of a thick";
-		mes "fur hat on your head, out in this";
-		mes "temperature. A Shafka!";
-		next;
-		mes "[Irina]";
-		mes "If you've come here for the first";
-		mes "time, you might not know... that";
-		mes "winter here is famous for being so";
-		mes "long and cold in Moscovia.";
-		next;
-		mes "[Irina]";
-		mes "A Shafka hat is especially";
-		mes "necessary to live here during the";
-		mes "cold seasons. Without this hat, you";
-		mes "may not endure a winter!";
-		next;
-		mes "[Irina]";
-		mes "Now, the long, long winter has";
-		mes "ended and the sun is shining... But";
-		mes "someday the winter will come again.";
-		mes "So, for preparation, you should";
-		mes "keep a Shafka hat handy.";
-		next;
-		mes "[Irina]";
-		mes "Don't worry about keeping warm if";
-		mes "you're wearing a Shafka hat. Even";
-		mes "during the coldest weather... You";
-		mes "can roll around in the snow and the";
-		mes "Shafka still keeps you warm!";
-		close;
-	}
-	mes "[Irina]";
-	mes "Do you want to make a Shafka hat?";
-	mes "Heheh. Good idea!";
-	mes "That's a good task.";
-	mes "You will be grateful forever.";
-	next;
-	mes "[Irina]";
-	mes "If you bring the materials,";
-	mes "we can make one immediately!";
-	mes "The materials are: ^0000FFNine Tails 20, Yarn 10, Soft Silk 10, Sea-otter Fur 20, Spool 1^000000.";
-	if (isbegin_quest(18121) == 0)
-		setquest 18121;
-	next;
-	if (countitem(1022) > 19 && countitem(7038) > 9 && countitem(7166) > 9 && countitem(7065) > 19 && countitem(7217)) {
-		mes "[Irina]";
-		mes "You did well.";
-		mes "Give me the materials. I will make the Shafka.";
-		next;
-		delitem 1022,20; //Fox_Tail
-		delitem 7038,10; //Yarn
-		delitem 7166,10; //Soft_Silk_Cloth
-		delitem 7065,20; //Sea_Otter_Leather
-		delitem 7217,1; //Spool
-		getitem 5243,1; //Chullos
-		completequest 18121;
-		mes "[Irina]";
-		mes "Good, I made it. So, how about it?";
-		mes "Do you like it?";
-		next;
-		mes "[Irina]";
-		mes "If you need a Shafka hat,";
-		mes "come to me whenever,";
-		mes "with the materials.";
-		mes "I will make it.";
-		next;
-		mes "[Irina]";
-		mes "Okay?";
-		mes "Okay, so... Bye-bye!~";
-		close;
-	}
-	mes "[Irina]";
-	mes "Ah... You lack some materials. We";
-	mes "can't make the Shafka hat with just";
-	mes "these materials.";
-	next;
-	mes "[Irina]";
-	mes "If you bring the right materials, I";
-	mes "will make a Shafka immediately.";
-	next;
-	mes "[Irina]";
-	mes "The materials are: ^0000FFNine Tails 20, Yarn 10, Soft Silk 10, Sea-otter Fur 20, Spool 1^000000.";
-	close;
-}
+//moscovia,211,93,3	script	Irina#edq	4_F_RUSCHILD,{
+//	if (!checkweight(1201,1)) {
+//		mes "Wait a moment!!";
+//		mes "You have too many items.";
+//		mes "You can't receive this.";
+//		mes "Lighten your weight and";
+//		mes "try again.";
+//		close;
+//	}
+//	mes "[Irina]";
+//	mes "Hello, foreign traveler!";
+//	mes "Have you had good day";
+//	mes "in Moscovia?";
+//	next;
+//	mes "[Irina]";
+//	mes "A special souvenir for visiting Moscovia...?";
+//	next;
+//	mes "[Irina]";
+//	mes "For you, let's make a Shafka hat.";
+//	mes "The Shafka has practicality and";
+//	mes "it's spruce! Do you want one?";
+//	next;
+//	if(select("Learn about the Shafka.:Make a Shafka hat.") == 1) {
+//		mes "[Irina]";
+//		mes "When I look at you, you seem to";
+//		mes "want to put on something of a thick";
+//		mes "fur hat on your head, out in this";
+//		mes "temperature. A Shafka!";
+//		next;
+//		mes "[Irina]";
+//		mes "If you've come here for the first";
+//		mes "time, you might not know... that";
+//		mes "winter here is famous for being so";
+//		mes "long and cold in Moscovia.";
+//		next;
+//		mes "[Irina]";
+//		mes "A Shafka hat is especially";
+//		mes "necessary to live here during the";
+//		mes "cold seasons. Without this hat, you";
+//		mes "may not endure a winter!";
+//		next;
+//		mes "[Irina]";
+//		mes "Now, the long, long winter has";
+//		mes "ended and the sun is shining... But";
+//		mes "someday the winter will come again.";
+//		mes "So, for preparation, you should";
+//		mes "keep a Shafka hat handy.";
+//		next;
+//		mes "[Irina]";
+//		mes "Don't worry about keeping warm if";
+//		mes "you're wearing a Shafka hat. Even";
+//		mes "during the coldest weather... You";
+//		mes "can roll around in the snow and the";
+//		mes "Shafka still keeps you warm!";
+//		close;
+//	}
+//	mes "[Irina]";
+//	mes "Do you want to make a Shafka hat?";
+//	mes "Heheh. Good idea!";
+//	mes "That's a good task.";
+//	mes "You will be grateful forever.";
+//	next;
+//	mes "[Irina]";
+//	mes "If you bring the materials,";
+//	mes "we can make one immediately!";
+//	mes "The materials are: ^0000FFNine Tails 20, Yarn 10, Soft Silk 10, Sea-otter Fur 20, Spool 1^000000.";
+//	if (isbegin_quest(18121) == 0)
+//		setquest 18121;
+//	next;
+//	if (countitem(1022) > 19 && countitem(7038) > 9 && countitem(7166) > 9 && countitem(7065) > 19 && countitem(7217)) {
+//		mes "[Irina]";
+//		mes "You did well.";
+//		mes "Give me the materials. I will make the Shafka.";
+//		next;
+//		delitem 1022,20; //Fox_Tail
+//		delitem 7038,10; //Yarn
+//		delitem 7166,10; //Soft_Silk_Cloth
+//		delitem 7065,20; //Sea_Otter_Leather
+//		delitem 7217,1; //Spool
+//		getitem 5243,1; //Chullos
+//		completequest 18121;
+//		mes "[Irina]";
+//		mes "Good, I made it. So, how about it?";
+//		mes "Do you like it?";
+//		next;
+//		mes "[Irina]";
+//		mes "If you need a Shafka hat,";
+//		mes "come to me whenever,";
+//		mes "with the materials.";
+//		mes "I will make it.";
+//		next;
+//		mes "[Irina]";
+//		mes "Okay?";
+//		mes "Okay, so... Bye-bye!~";
+//		close;
+//	}
+//	mes "[Irina]";
+//	mes "Ah... You lack some materials. We";
+//	mes "can't make the Shafka hat with just";
+//	mes "these materials.";
+//	next;
+//	mes "[Irina]";
+//	mes "If you bring the right materials, I";
+//	mes "will make a Shafka immediately.";
+//	next;
+//	mes "[Irina]";
+//	mes "The materials are: ^0000FFNine Tails 20, Yarn 10, Soft Silk 10, Sea-otter Fur 20, Spool 1^000000.";
+//	close;
+//}
 
 // Koshei the Immortal :: mos_request
 //============================================================

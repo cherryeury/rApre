@@ -897,6 +897,29 @@ Body:
       bonus bVit,1;
       if (Class == Job_Swordman)
          bonus bDef,20;      
+  - Id: 2765
+    AegisName: Novice_Figure
+    Name: Novice Figure
+    Type: Armor
+    Weight: 100
+    Jobs:
+      Novice: true
+      SuperNovice: true    
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bMaxHP,70;
+      if (BaseJob == Job_Novice || BaseJob == Job_SuperNovice)
+         bonus bMaxHP,30;              
   - Id: 12026
     AegisName: Egg_Girl
     Name: Dano Festival Egg
@@ -2174,8 +2197,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -2707,8 +2730,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Mid: true
       Head_Top: true
@@ -3413,8 +3436,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3431,8 +3454,8 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3448,8 +3471,8 @@ Body:
     Defense: 5
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3555,8 +3578,8 @@ Body:
     Weight: 150
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 14
@@ -3853,7 +3876,7 @@ Body:
     Weight: 2400
     Defense: 0
     Jobs:
-      Alchemist: true
+      All: true
       Assassin: true
       BardDancer: true
       Blacksmith: true
@@ -3870,6 +3893,7 @@ Body:
     Locations:
       Head_Mid: true
       Head_Top: true
+    EquipLevelMin: 70  
     Refineable: true
     View: 138
     Script: |
@@ -3884,7 +3908,7 @@ Body:
     Defense: 0
     Slots: 1
     Jobs:
-      Alchemist: true
+      All: true
       Assassin: true
       BardDancer: true
       Blacksmith: true
@@ -3901,11 +3925,19 @@ Body:
     Locations:
       Head_Mid: true
       Head_Top: true
+    EquipLevelMin: 70  
     Refineable: true
     View: 138
     Script: |
-      bonus bStr,4;
-      bonus bInt,3;      
+      bonus bStr,3;
+      bonus bInt,2;
+      .@j = getrefine();
+      if (.@j>=7)
+         .@i = 1;
+      if (.@j>=9)
+         .@i = 2;
+      bonus bBaseAtk,10+(15*.@i);
+      bonus bMatk,10+(15*.@i); 
   - Id: 5114
     AegisName: Fedora
     Name: Bucket Hat
@@ -4153,8 +4185,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -4171,8 +4203,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 75
@@ -4425,7 +4457,7 @@ Body:
     Refineable: true
     View: 193
     Script: |
-      bonus bAllStats,1;      
+      bonus bAllStats,1;     
   - Id: 5119
     AegisName: Super_Novice_Hat_
     Name: Super Novice Hat
@@ -4711,8 +4743,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -4764,6 +4796,19 @@ Body:
       bonus2 bResEff,Eff_Curse,1000;
       bonus bMaxHP,50;
       bonus bMaxSP,50;
+  - Id: 5175
+    AegisName: Censor_Bar
+    Name: Censor Bar
+    Type: Armor
+    Buy: 30000
+    Weight: 100
+    Locations:
+      Head_Mid: true
+    View: 229
+    Script: |
+      bonus2 bResEff,Eff_Curse,500;
+      bonus bMdef,5;
+      bonus bHit,-5;      
   - Id: 5170
     AegisName: Feather_Beret
     Name: Feather Beret
@@ -4773,8 +4818,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -4792,8 +4837,8 @@ Body:
     Defense: 5
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 1
@@ -5398,8 +5443,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5587,8 +5632,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -5633,8 +5678,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 10
@@ -5692,8 +5737,8 @@ Body:
     Weight: 100
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5709,8 +5754,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5725,7 +5770,7 @@ Body:
     Weight: 1500
     Defense: 10
     Jobs:
-      Acolyte: true
+      All: true
       Alchemist: true
       Assassin: true
       Blacksmith: true
@@ -5769,8 +5814,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5786,8 +5831,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5866,15 +5911,15 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 20
     Refineable: true
     View: 114
     Script: |
-      bonus2 bAddEff,Eff_Poison,2000;
+      bonus2 bAddEff,Eff_Poison,1000;
       bonus2 bResEff,Eff_Poison,2000;
   - Id: 5050
     AegisName: Mystery_Fruit_Shell
@@ -5914,8 +5959,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -5933,8 +5978,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Mid: true
       Head_Top: true
@@ -5966,8 +6011,8 @@ Body:
     Defense: 6
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -5985,8 +6030,8 @@ Body:
     Defense: 2
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Mid: true
     EquipLevelMin: 20
@@ -6071,7 +6116,7 @@ Body:
     Weight: 300
     Defense: 0
     Jobs:
-      Archer: true
+      All: true
       BardDancer: true
       Hunter: true
     Locations:
@@ -6090,8 +6135,8 @@ Body:
     Weight: 500
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -6739,6 +6784,7 @@ Body:
     Name: Sacred Incense
     Type: Armor
     Buy: 0
+    Sell: 0
     Weight: 100
     Locations:
     Trade:
@@ -6867,8 +6913,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Low: true
       Head_Mid: true
@@ -8431,8 +8477,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 64
@@ -8466,8 +8512,8 @@ Body:
       Rogue: true
       Sage: true
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 64
@@ -8505,8 +8551,8 @@ Body:
       Rogue: true
       Sage: true
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 64
@@ -8527,8 +8573,8 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 64
@@ -8642,8 +8688,8 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -8847,8 +8893,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -9014,8 +9060,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Low: true
       Head_Mid: true
@@ -9287,8 +9333,9 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bVit,1;
-      bonus bMaxHp,200;
+      bonus bMaxHpRate,3;
+      bonus bMaxHpRate,3;
+      bonus bMdef,3;
   - Id: 2326
     AegisName: Saint_Robe_
     Name: Saint's Robe
@@ -9308,8 +9355,9 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bVit,1;
-      bonus bMaxHp,200;
+      bonus bMaxHpRate,3;
+      bonus bMaxHpRate,3;
+      bonus bMdef,3;
   - Id: 6242
     AegisName: Midgard_Coin
     Name: Midgard Coin

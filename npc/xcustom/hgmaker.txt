@@ -112,124 +112,124 @@ OnInit:
 
 //Aldebaran
 	Add(1,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(1,5086,1,0,0,1095,3000,2288,1); // Alarm Mask
-	Add(1,2273,1,0,0,2275,1,998,50,733,1); // Doctor Band
-	Add(1,5018,1,0,0,2247,1,916,300); // Feather Bonnet
-	Add(1,2281,1,0,0,998,20,707,1); // Opera Mask
-	Add(1,2280,1,0,0,1019,120); // Sakkat
+	Add(1,5086,1,0,0,1095,3000,2288,1); // Alarm Mask ]]
+	Add(1,2273,1,0,0,2275,1,998,50,733,1,672,4); // Doctor Band ]]
+	Add(1,5018,1,0,0,2247,1,916,300,672,1); // Feather Bonnet ]]
+	Add(1,2281,1,0,0,998,20,707,1,672,5); // Opera Mask ]]
+	Add(1,2280,1,0,0,1019,120,676,1); // Sakkat ]]
 //Rachel	
-	Add(2,5170,1,0,0,5172,1,7063,100,982,1); // Feather Beret
-	Add(2,5175,1,0,0,938,100,7111,99,983,1); // Censor Bar
+	Add(2,5170,1,0,0,5172,1,7063,100,982,1); // Feather Beret ]]
+	Add(2,5175,1,0,0,938,100,7111,99,983,1,670,1); // Censor Bar ]]
 //Alberta
 	Add(3,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(3,2284,1,0,0,923,20); // Antler
-	Add(3,5016,1,0,0,1030,10); // Boy's Cap
-	Add(3,5042,1,0,0,10007,1,968,50); // Bao Bao
-	Add(3,5041,1,0,0,7200,1200); // Heart Hairpin
-	Add(3,5047,1,0,0,2271,1,975,1); // Fashionable Glasses
-	Add(3,5048,1,0,0,5041,1,999,10); // Crescent Hairpin	
-	Add(3,5022,1,0,0,5022,1,670,750,6625,500); // Hat of Sun God (todo)
-	Add(3,5032,1,0,0,1059,250,2221,1,2227,1,7063,600); // Sunday Hat
-	Add(3,5027,1,0,0,2252,1,1036,400,7001,50,4052,1); // Mage Hat
-	Add(3,5045,1,0,0,2252,1,1054,450,943,1200); // Magician Hat	
-	Add(3,5443,1,0,0,2252,1,1054,450,943,1200); // Statue
+	Add(3,2284,1,0,0,923,20); // Antler ]]
+	Add(3,5016,1,0,0,1030,10); // Boy's Cap ]]
+	Add(3,5042,1,0,0,10007,1,968,50); // Bao Bao ]]
+	Add(3,5041,1,0,0,7200,1200); // Heart Hairpin ]]
+	Add(3,5047,1,0,0,2271,1,975,1); // Fashionable Glasses ]]
+	Add(3,5048,1,0,0,5041,1,999,10); // Crescent Hairpin	]]
+	Add(3,5022,1,0,0,969,10,999,40,1003,50,984,2,670,500); // Hat of Sun God ]]
+	Add(3,5032,1,0,0,1059,250,2221,1,2227,1,7063,600); // Sunday Hat ]]
+	Add(3,5027,1,0,0,2252,1,1036,400,7001,50,4052,1); // Mage Hat ]]
+	Add(3,5045,1,0,0,2252,1,1054,450,943,1200); // Magician Hat ]]	
+	Add(3,5443,1,0,0,916,500,523,1,7292,10,2282,1,640,1); // Statue ]]
 	Add(3,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
-	Add(3,5448,1,0,0,2252,1,1054,450,943,1200); // Solo Hat
+//	Add(3,5448,1,0,0,2252,1,1054,450,943,1200); // Solo Hat ]]
 //Lighthalzen
-	Add(4,5110,1,0,0,941,2,7270,1,526,1,10004,1); // Pacifier
-	Add(4,5117,1,0,0,670,1,731,10,748,3,982,1); // Mystic Rose
-	Add(4,5109,1,0,0,670,1,10015,1,10007,1,975,1,5032,1); // Red Bonnet
-	Add(4,5442,1,0,0,978,1,7151,30,1059,100,7217,20); // Necktie
-	Add(4,5108,1,0,0,2244,1,2209,1,10007,1); // Renown detective
+	Add(4,5110,1,0,0,941,2,7270,1,526,1,10004,1); // Pacifier ]]
+	Add(4,5117,1,0,0,731,10,748,3,982,1,676,5); // Mystic Rose ]]
+	Add(4,5109,1,0,0,10015,1,10007,1,975,1,5032,1,676,5); // Red Bonnet ]]
+	Add(4,5442,1,0,0,978,1,7151,30,1059,100,7217,20); // Necktie ]]
+	Add(4,5108,1,0,0,7301,1887,5120,1,611,10,672,2); // Renown detective ]]
 //Morocc
 	Add(5,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(5,2296,1,0,0,2243,1,999,100); // Binoculars
-	Add(5,2272,1,0,0,670,1,1019,50,983,1); // Stop Post
-	Add(5,5058,1,0,0,2233,1,983,1,7206,300,7030,1); // Drooping Cat
-	Add(5,5084,1,0,0,1026,1000,7065,100,945,10,7030,1); // Lazy Smokie
-	Add(5,5064,1,0,0,945,600,7030,1); // Smokie Leaf	
-	Add(5,5065,1,0,0,624,1,959,300,551,50,1023,1,938,100,7030,1); // Blue Fish
+	Add(5,2296,1,0,0,2243,1,999,100,676,5); // Binoculars
+	Add(5,2272,1,0,0,1019,50,983,1); // Stop Post
+	Add(5,5058,1,0,0,2233,1,983,1,7206,300,7030,1); // Drooping Cat ]]
+	Add(5,5084,1,0,0,1026,1000,7065,100,945,10,7030,1); // Lazy Smokie ]]
+	Add(5,5064,1,0,0,945,600,7030,1); // Smokie Leaf	]]
+	Add(5,5065,1,0,0,624,1,959,300,551,50,1023,1,938,100,7030,1); // Blue Fish ]]
 	Add(5,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
 //Payon
 	Add(6,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(6,5073,1,0,0,2285,1,1550,1); // Model Training Hat
-	Add(6,5057,1,0,0,2213,1,983,1,914,300); // Ears of Black Cat
-	Add(6,2283,1,0,0,724,1,5001,1,949,200); // Ear Muffs
-	Add(6,5069,1,0,0,1022,999); // Kitsune mask
-	Add(6,5004,1,0,0,701,5); // Oxygen Mask
+	Add(6,5073,1,0,0,2285,1,1550,1); // Model Training Hat ]]
+	Add(6,5057,1,0,0,2213,1,983,1,914,300,676,1); // Ears of Black Cat ]]
+	Add(6,2283,1,0,0,724,1,5001,1,949,200,672,5); // Ear Muffs ]]
+	Add(6,5069,1,0,0,1022,999); // Kitsune mask ]]
+	Add(6,5004,1,0,0,701,5); // Oxygen Mask ]]
 	Add(6,2293,1,0,0,710,1,703,1,704,1,708,1); // Murderer
-	Add(6,5025,1,0,0,2229,1,2254,1,7036,5); // Helm of Angel
-	Add(6,5038,1,0,0,1038,600,7048,40); // Deviruchi
-	Add(6,5173,1,0,0,7445,7,7446,7,7447,7,7448,7,954,300,983,1,733,5,2221,1); // Magistrate Hat
-	Add(6,5174,1,0,0,7445,7,7446,7,7447,7,7448,7,954,300,975,1,733,5,7166,1); // Ayam
-	Add(6,5176,1,0,0,706,1,7201,500,7200,10,7015,20,952,100,1028,100); // Hahoe	
-	Add(6,5177,1,0,0,706,1,7201,500,7200,10,1048,500,1053,2,980,1); // Lion Mask
-	Add(6,5169,1,0,0,706,1,7201,500,7200,10,1049,20,1059,500,1054,2,1024,100); // Bride Mask
+	Add(6,5025,1,0,0,2229,1,2254,1,7036,5); // Helm of Angel ]]
+	Add(6,5038,1,0,0,1038,600,7048,40); // Deviruchi ]]
+	Add(6,5173,1,0,0,7445,7,7446,7,7447,7,7448,7,954,300,983,1,733,5,2221,1); // Magistrate Hat ]]
+	Add(6,5174,1,0,0,7445,7,7446,7,7447,7,7448,7,954,300,975,1,733,5,7166,1); // Ayam ]]
+	Add(6,5176,1,0,0,706,1,7201,500,7200,10,7015,20,952,100,1028,100); // Hahoe	]]
+	Add(6,5177,1,0,0,706,1,7201,500,7200,10,1048,500,1053,2,980,1); // Lion Mask ]]
+	Add(6,5169,1,0,0,706,1,7201,500,7200,10,1049,20,1059,500,1054,2,1024,100); // Bride Mask ]]
 	Add(6,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
 //Yuno
-	Add(7,5107,1,0,0,519,50,7031,50,548,50,539,50); // Crunch Toast
-	Add(7,5074,1,0,0,2254,1,2286,1,670,1); // Angel Wing Ears	
-	Add(7,5068,1,0,0,670,1,2255,1,2286,1); // Evil Wing Ears
-	Add(7,5091,1,0,0,10016,1,714,1,969,3); // Big Golden Bell
-	Add(7,5080,1,0,0,10006,1,714,1,969,3); // Crown of Ancient Queen
-	Add(7,5081,1,0,0,2249,1,714,1,969,3); // Crown of Mistress	
-	Add(7,5070,1,0,0,7216,300,7097,300,2211,1,982,1); // Hot Blooded
+	Add(7,5107,1,0,0,519,50,7031,50,548,50,539,50); // Crunch Toast ]]
+	Add(7,5074,1,0,0,2254,1,2286,1,676,2); // Angel Wing Ears ]]	
+	Add(7,5068,1,0,0,2255,1,2286,1,676,2); // Evil Wing Ears ]]
+	Add(7,5091,1,0,0,10016,1,714,1,969,3,676,2); // Big Golden Bell ]]
+	Add(7,5080,1,0,0,10006,1,714,1,969,3,676,2); // Crown of Ancient Queen ]]
+	Add(7,5081,1,0,0,2249,1,714,1,969,3,676,4); // Crown of Mistress	]]
+	Add(7,5070,1,0,0,7216,300,7097,300,2211,1,982,1); // Hot Blooded ]]
 //Geffen
 	Add(8,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(8,5001,1,0,0,999,40,984,1,970,1,1003,1); // Headset	
-	Add(8,5082,1,0,0,921,300); // Decorative Mushroom
-	Add(8,5077,1,0,0,2278,1,975,1); // Tulip Hairpin
-	Add(8,2292,1,0,0,999,50); // Welding Mask
-	Add(8,5079,1,0,0,2294,1,7220,400); // X Hairpin
-	Add(8,5063,1,0,0,970,1,930,500); // Giant Band Aid
-	Add(8,5061,1,0,0,2269,1,999,10); // Flower Hairpin
-	Add(8,5446,1,0,0,5446,1); // Catfoot Hairpin 
-	Add(8,5447,1,0,0,5447,1); // Frog Hat 
-	Add(8,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
+	Add(8,5001,1,0,0,999,40,984,1,970,1,1003,1); // Headset	]]
+	Add(8,5082,1,0,0,921,300); // Decorative Mushroom ]]
+	Add(8,5077,1,0,0,2278,1,975,1); // Tulip Hairpin ]]
+	Add(8,2292,1,0,0,999,50,672,2); // Welding Mask ]]
+	Add(8,5079,1,0,0,2294,1,7220,400); // X Hairpin ]]
+	Add(8,5063,1,0,0,970,1,930,500); // Giant Band Aid ]]
+	Add(8,5061,1,0,0,2269,1,999,10); // Flower Hairpin ]]
+//	Add(8,5446,1,0,0,5446,1); // Catfoot Hairpin ]]
+//	Add(8,5447,1,0,0,5447,1); // Frog Hat ]] 
+	Add(8,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere) 
 //Comodo
-	Add(9,5071,1,0,0,5010,1,5049,1,7101,1); // Indian Headband	
-	Add(9,5036,1,0,0,2608,1,7069,500); // Cross Hat
-	Add(9,5034,1,0,0,2233,1,746,20); // Bulb Headband
-	Add(9,5049,1,0,0,1099,1500); // Striped Hairband
-	Add(9,5052,1,0,0,2211,1,978,1,7003,300); // Blue Hairband
-	Add(9,5031,1,0,0,5009,1,5028,1,747,1,999,25); // Mine Helmet
-	Add(9,5023,1,0,0,1059,150,907,100,978,1); // Parcel Hat	
-	Add(9,5021,1,0,0,2233,1,969,1,999,20,949,80,938,800); // Bankruptcy for The heart
-	Add(9,5447,1,0,0,2281,1,1048,50); // Opera Phantom Mask		
-	Add(9,5444,1,0,0,974,1,975,1,943,50,985,5,1302,1); // Red Comb
+	Add(9,5071,1,0,0,5010,1,5049,1,7101,10,676,1); // Indian Headband ]]	
+	Add(9,5036,1,0,0,2608,1,7069,500); // Cross Hat ]]
+	Add(9,5034,1,0,0,2233,1,746,20); // Bulb Headband ]]
+	Add(9,5049,1,0,0,1099,1500); // Striped Hairband ]]
+	Add(9,5052,1,0,0,2211,1,978,1,7003,300); // Blue Hairband ]]
+	Add(9,5031,1,0,0,5009,1,5028,1,747,1,999,25); // Mine Helmet ]]
+	Add(9,5023,1,0,0,1059,150,907,100,978,1); // Parcel Hat	]]
+	Add(9,5021,1,0,0,2233,1,969,1,999,20,949,80,938,800); // Bankruptcy for The heart ]]
+	Add(9,5043,1,0,0,2281,1,1048,50); // Opera Phantom Mask		]]
+	Add(9,5444,1,0,0,974,1,975,1,943,50,985,5,1302,1); // Red Comb ]]
 //Orc
-	Add(10,5094,1,0,0,5094,1,670,750,6625,500); // Helmet of Orc Hero 
-	Add(10,5436,1,0,0,1032,1000,10007,1); // Bride's Corolla
+//	Add(10,5094,1,0,0,5094,1,670,750,6625,500); // Helmet of Orc Hero ]] 
+//	Add(10,5436,1,0,0,1032,1000,10007,1); // Bride's Corolla ]]
 //Prontera
 	Add(11,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
-	Add(11,5012,1,0,0,710,1,703,1,704,1,708,1); // Ph.D Hat
-	Add(11,5083,1,0,0,2244,1,2209,1,10007,1); // Red Ribbon
+	Add(11,5012,1,0,0,710,1,703,1,704,1,708,1); // Ph.D Hat ]]
+	Add(11,5083,1,0,0,2244,1,2209,1,10007,1); // Red Ribbon ]]
 	Add(11,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
 //Lutie
-	Add(12,5078,1,0,0,5033,1,5064,1); // Sea-Otter Hat
-	Add(12,5059,1,0,0,5030,1,7213,100,7217,100,7161,300); // Teddybear Hat
-	Add(12,5040,1,0,0,5030,1,7213,100,7217,100,7161,300); // Blush
-	Add(12,5024,1,0,0,529,10,530,5,539,20,999,10,538,15); // Cake Hat
-	Add(12,5028,1,0,0,2279,1,7035,50,526,100); // Candle
-	Add(12,5026,1,0,0,1036,450,949,330,539,120,982,1); // Chef Hat
-	Add(12,5033,1,0,0,1036,20,2213,1,7065,300,7012,200); // Raccoon Hat
-	Add(12,5039,1,0,0,7030,1,978,1,5015,1); // Rainbow Eggshell
-	Add(12,5029,1,0,0,7068,300,7033,850,1015,1); // Spore Hat
-	Add(12,5050,1,0,0,7068,300,7033,850,1015,1); // Wonder	
-	Add(12,5062,1,0,0,2280,1,7197,300,7150,300); // Straw Hat
-	Add(12,5075,1,0,0,2248,1,7030,108,7194,108,7120,4); // Cowboy Hat
-	Add(12,5067,1,0,0,5062,1,952,50,1907,1); // Sombrero
-	Add(12,5076,1,0,0,2226,1,7038,500); // Beanie	
+	Add(12,5078,1,0,0,5033,1,5064,1); // Sea-Otter Hat ]]
+	Add(12,5059,1,0,0,5030,1,7213,100,7217,100,7161,300); // Teddybear Hat ]]
+	Add(12,5040,1,0,0,7047,100); // Blush ]]
+	Add(12,5024,1,0,0,529,10,530,5,539,20,999,10,538,15); // Cake Hat ]]
+	Add(12,5028,1,0,0,2279,1,7035,50,526,100); // Candle ]]
+	Add(12,5026,1,0,0,1036,450,949,330,539,120,982,1); // Chef Hat ]]
+	Add(12,5033,1,0,0,1036,20,2213,1,7065,300,7012,200); // Raccoon Hat ]]
+	Add(12,5039,1,0,0,7030,1,978,1,5015,1); // Rainbow Eggshell ]]
+	Add(12,5029,1,0,0,7068,300,7033,850,1015,1); // Spore Hat ]] 
+	Add(12,5050,1,0,0,5037,1,7064,500); // Wonder	]]
+	Add(12,5062,1,0,0,2280,1,7197,300,7150,300); // Straw Hat ]]
+	Add(12,5075,1,0,0,2248,1,7030,108,7194,108,7120,4); // Cowboy Hat ]]
+	Add(12,5067,1,0,0,5062,1,952,50,1907,1); // Sombrero ]]
+	Add(12,5076,1,0,0,2226,1,7038,500); // Beanie ]]
 //Moscovia
-	Add(13,5243,1,0,0,1022,20,7038,10,7166,10,7065,20,7217,1); // Shafka
+	Add(13,5243,1,0,0,1022,20,7038,10,7166,10,7065,20,7217,1); // Shafka ]]
 //Hugel
-	Add(14,5171,1,0,0,670,100,4219,1,4114,1,4177,1,4259,1,4212,1,4073,1,4112,1,4081,1,4251,1,4166,1,7511,1000,7563,1000); // Valkyrie Helm	
+	Add(14,5171,1,0,0,670,100,4219,1,4114,1,4177,1,4259,1,4212,1,4073,1,4112,1,4081,1,4251,1,4166,1,7511,1000,7563,1000); // Valkyrie Helm	]]
 //Einbech
-	Add(15,5115,1,0,0,670,1,983,1,7267,999,749,1); // Winter Hat
+	Add(15,5115,1,0,0,983,1,7267,999,749,1,676,5); // Winter Hat ]]
 //Glastheim
-	Add(16,5121,1,0,0,5121,1,670,750,6625,500); // Zealotus 
+//	Add(16,5121,1,0,0,5121,1,6625,500); // Zealotus 
 //Kunlun	
-	Add(17,5437,1,0,0,7165,100,7166,100,745,1,981,1,2211,1); // Celestial Flower
+	Add(17,5437,1,0,0,7165,100,7166,100,745,1,981,1,2211,1); // Celestial Flower ]]
 //Izlude	
 	Add(18,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
 
@@ -253,12 +253,6 @@ OnMenu:
 	mes "Hello!";
 	mes "I have the list of headgear quests";
 	mes "around in this area!";
-	next;
-	mes "[^FF6600Nyan^000000]";
-	mes "You can't buy from me.";
-	mes "This is just a catalogue.";
-	mes "You have to look around the area to get these.";
-	mes "And there's some quests headgear that's not listed.";
 	
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
@@ -278,10 +272,6 @@ OnMenu:
 	end;
 
 OnBuyItem:
-	mes "[^FF6600Nyan^000000]";
-	mes "Deal! Eh ? but..";
-	mes "You cannot buy this, this is just a catalogue.";
-	close;
 	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
 	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
 	copyarray .@q[3],getd(".q_"+@shop_index+"_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+@shop_index+"_"+.@q[0]));
@@ -411,3 +401,1335 @@ function	script	iopshop	{
 -	shop	iopshop16	-1,909:-1
 -	shop	iopshop17	-1,909:-1
 -	shop	iopshop18	-1,909:-1
+
+// Orc Hero Helmet
+//============================================================
+in_orcs01,31,93,1	script	Orc Warrior#1	1023,2,2,{
+OnTouch_:
+	disable_items;
+	if (checkweight(1201,1) == 0) {
+		mes "- Wait a minute !! -";
+		mes "- Currently you're carrying -";
+		mes "- too many items with you. -";
+		mes "- Please try again -";
+		mes "- after you lose some weight. -";
+		close;
+	}
+	if (orcs_hero_hat < 1) {
+		mes "[Orc Warrior]";
+		mes ".......";
+		mes ".........";
+		mes "Human, what are you doing in my home?!";
+		next;
+		mes "[Orc Warrior]";
+		mes "Hurrumph.";
+		mes "I guess you decided to come inside, thinking no one was around, to rest after killing others of my kind.";
+		next;
+		mes "[Orc Warrior]";
+		mes "Well! We Orcs are a proud race!";
+		mes "So don't expect me to talk to you.";
+		mes "Though, I must admit that you have courage to enter an Orc's home.";
+		next;
+		mes "[Orc Warrior]";
+		mes "I'm too tired to kill you today, but keep silent! If you're wounded, you can bleed quietly on the floor and die with some honor I suppose.";
+		if (rand(1,5) == 5 && BaseLevel >= 55) {
+			next;
+			if (select(".....:Come on, let's talk.") == 1) {
+				close;
+			}
+			mes "[Orc Warrior]";
+			mes "You dare invite an Orc to conversation?! We Orcs are a savage race! Born out suffering, we only live to fight and do battle!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Talk with humans?!";
+			mes "Hah! The only way I will suffer such humiliation would be if you too, lost your dignity.";
+			next;
+			mes "[Orc Warrior]";
+			mes "You can bleed in my house, but I will only talk with you if...";
+			mes "You bring ^FF00001000 Jellopy^000000!";
+			next;
+			if (select("I challenge you to a duel, Orc!:1000 Jellopies it is.") == 1) {
+				mes "[Orc Warrior]";
+				mes "Humans... such annoying bastards!";
+				mes "If you want to fight, go outside!";
+				mes "So get out of my house!";
+				close2;
+				warp "gef_fild10",100,100;
+				end;
+			}
+			set orcs_hero_hat,1;
+			mes "[Orc Warrior]";
+			mes "Hah! It's a promise then!";
+			mes "Bwahahahahhahahahahahaha!";
+			mes "That's 1000 Jellopies!";
+			mes "Are all you humans so foolish?!";
+			close;
+		}
+		close;
+	}
+	else if (orcs_hero_hat == 1) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "WHAT?!";
+			mes "That's so much Jellopy!!";
+			next;
+			mes "[Orc Warrior]";
+			mes "I do not like this joke you have played on me human. Still, I refuse to believe that you have really brought ^FF00001000 Jellopy^000000.";
+			next;
+			mes "[Orc Warrior]";
+			mes "We Orcs are a proud race and do not like to admit when we are wrong.";
+			next;
+			mes "[Orc Warrior]";
+			mes "One...";
+			next;
+			mes "[Orc Warrior]";
+			mes "One... T-two...";
+			next;
+			mes "[Orc Warrior]";
+			mes "One... T-two...";
+			mes "Three...";
+			next;
+			mes "[Orc Warrior]";
+			mes "One... T-two...";
+			mes "Three...";
+			mes "....F-f-fooooour...";
+			next;
+			mes "[Orc Warrior]";
+			mes ".......";
+			next;
+			mes "[Orc Warrior]";
+			mes ".......";
+			mes ".........";
+			next;
+			mes "[Orc Warrior]";
+			mes ".......";
+			mes ".........";
+			mes "............";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-eight...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-eight...";
+			mes "Nine hundred ninety-nine...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-eight...";
+			mes "Nine hundred ninety-nine...";
+			mes "One...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-eight...";
+			mes "Nine hundred ninety-nine...";
+			mes "One... One thousand.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Curse you, human.";
+			mes "You have shall your 'conversation.'";
+			next;
+			mes "[Orc Warrior]";
+			mes "I hate humans! In fact, all Orcs hate humans! Hate you hate you hate you with a passion!";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,2;
+			mes "[Orc Warrior]";
+			mes "So...";
+			mes "Still in the mood to talk?!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Tough!";
+			mes "If you want to";
+			mes "hear more, bring...";
+			mes "^FF00001000 Jellopy^000000!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Now get out of here, you horrible stinking, poor excuse for an animal!!";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?!";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		close;
+	}
+	else if (orcs_hero_hat == 2) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "No.... Not again!!";
+			mes "What are you doing with so much Jellopy?!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Damn...!";
+			mes "I refuse to speak to you until I've finished counting all of this Jellopy.";
+			next;
+			mes "[Orc Warrior]";
+			mes "...";
+			next;
+			mes "[Orc Warrior]";
+			mes "...";
+			mes ".....";
+			next;
+			mes "[Orc Warrior]";
+			mes "...";
+			mes ".....";
+			mes "ONE THOUSAND.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Once again, human, you've managed to infuriate me. But we Orcs are a proud race. I shall fulfill my part of this pathetic deal.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Now, where was I?";
+			mes "Oh right.";
+			mes "How much I hate humans.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Humans are always invading our village, intruding on our land! They kill our warriors not out of honor, but for selfish human reasons!!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Bah! Humans have built their own towns and cities. Do they keep their senseless killing amongst each other?! NO! Humans have to rampage and ravage everything!!";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,3;
+			mes "[Orc Warrior]";
+			mes "Now, if you want";
+			mes "to listen to more,";
+			mes "bring me...";
+			next;
+			mes "[Orc Warrior]";
+			mes "^FF00001000 Jellopy^000000 again!";
+			mes "I do not think that you can endure much more of this torture.";
+			mes "Bwahahahahahha~!";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget!?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		close;
+	}
+	else if (orcs_hero_hat == 3) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes ".....";
+			mes "Again, human, you confound me with your stubborness. I see that humans are masochists. Or just like to annoy Orcs by making them count a thousand Jellopies.";
+			next;
+			mes "[Orc Warrior]";
+			mes "*sigh* Let me count...";
+			next;
+			mes "[Orc Warrior]";
+			mes "...";
+			next;
+			mes "[Orc Warrior]";
+			mes "...";
+			mes ".......";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-nine...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Nine hundred ninety-nine...";
+			mes "...A thousand.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Argh~!";
+			mes "Now where was I?";
+			mes "Oh right, why humans are scum.";
+			next;
+			mes "[Orc Warrior]";
+			mes "How dare humans think they're so great?! We Orcs have also made contributions to the world!";
+			next;
+			mes "[Orc Warrior]";
+			mes "Humans may have built cities and towns, but we Orcs have also created our own cave complexes and canals!";
+			next;
+			mes "[Orc Warrior]";
+			mes "We Orcs have invented many useful things! Of course, now we've had to keep these things to ourselves. Why? Because of the stupidity and greed of humans!!";
+			next;
+			mes "[Orc Warrior]";
+			mes "We Orcs have once constructed a tower for a human, but were then trapped and enslaved there. Needless to say, humans are deserving of our wrath and fury.";
+			next;
+			mes "[Orc Warrior]";
+			mes "*Sigh*";
+			mes "I don't understand why I am sharing this story about my tribe.";
+			mes "That's enough for today!";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,4;
+			mes "[Orc Warrior]";
+			mes "Grrr~! If you want to listen longer go bring me ^FF00001000 Jellopy^000000 again.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget!?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect if";
+		mes "you wish to talk!!";
+		mes "I don't take the 2,000 jellopies you have given to me seriously!!";
+		close;
+	}
+	else if (orcs_hero_hat == 4) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "Oh... it's you again.";
+			mes "I can see the Jellopy in your hands, and I'm pretty sure you've brought a thousand again, so let's get this over with.";
+			next;
+			mes "[Orc Warrior]";
+			mes "*Sigh* I suppose it's time for our conversation.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Once upon a time, Orcs and humans were allies. I... I miss those times. But it's no use to long for old comraderies. It's impossible to clear up such misunderstandings from ages ago...";
+			next;
+			mes "[Orc Warrior]";
+			mes "There are too many wicked humans that have pursued wealth and fame at any cost. They don't understand ideals like honor and loyalty, and use any means to get whatever they want.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Those hateful humans started to get rid of every obstacle that stood between them and what they wanted, not caring if friend or foe stood in their way.";
+			next;
+			mes "[Orc Warrior]";
+			mes "...I've talked too much already.";
+			mes "That's the end of the conversation for today.";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,5;
+			mes "[Orc Warrior]";
+			mes "Now, if you want to listen some more, go bring me";
+			mes "^FF00001000 Jellopy^000000 again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take the 3,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 5) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "*Sigh...*";
+			mes "You're too tough to get rid of.";
+			mes "Do you really want to listen to me so much...?";
+			mes "Okay... I will tell you a little bit more then.";
+			next;
+			mes "[Orc Warrior]";
+			mes "For us Orcs, victory in battle is the greatest honor.";
+			mes "We fight boldly and fearlessly with our opponent, giving our all in hopes of a fair victory. We would die for victory in battle.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Even after death, we never lose the spirit of combat. It is said that some Orcs that have died unfairly will stand from their graves to seek even more battle.";
+			next;
+			mes "[Orc Warrior]";
+			mes "The difference between you humans and us is that we would never tolerate foul play in battle. But more importantly, Orcs never, ever retreat. An Orc will always fight till the last breath...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Orcs never restore health during battle using your silly medicines. Hmpf. Humans can be so weak, drinking bottles of Potion to keep up in a fight. Oh well, though, I'm not sure if you're the same.";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,6;
+			mes "[Orc Warrior]";
+			mes "Now, if you want";
+			mes "to listen to me";
+			mes "some more, go and";
+			mes "bring me ^FF00001000 Jellopy^000000";
+			mes "again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take the 4,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 6) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "What the...! Don't you know when to stop? I do not believe a human would like to hear about Orcs so much. But...";
+			mes "We Orcs are a proud race, and I shall oblige.";
+			next;
+			mes "[Orc Warrior]";
+			mes "We only select the strongest of our tribe to become warriors. When Orcs reach adulthood, they are sent to the forest to survive alone in its environment.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Those Orcs that come back alive are recognized as true members of the tribe. The strongest males are chosen to become Orc Warriors, and the strongest females are chosen as Orc Ladies.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Orcs that have proven to have good sight and dexterity are given bows and arrows and become Orc Archers.";
+			next;
+			mes "[Orc Warrior]";
+			mes "We Orcs have a special training course called 'The Trial of Fire.' If any Orc Warrior passes this course, he will be protected by our fire god...";
+			next;
+			mes "[Orc Warrior]";
+			mes "That Orc will have stronger physical strength and abilities than normal Orc Warriors. These warriors are known as High Orcs.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Hm, well to you humans, we may all look the same, but we Orcs can tell each other apart. How about you, human? Do I look the same as every Warrior outside to you?";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,7;
+			mes "[Orc Warrior]";
+			mes "Now...";
+			mes "If you want to";
+			mes "listen longer,";
+			mes "go bring me";
+			mes "^FF00001000 Jellopy^000000";
+			mes "again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take the 5,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 7) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "I expected you to quit by now. But I was wrong, because you're here once again. We made a deal and I will keep my promise.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Last time, we were";
+			mes "talking about our";
+			mes "warriors...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Sometimes, a few Orcs are born among us, possessing phenomenal strength and talent. It is rumored that they could compete with 10,000 warriors at a time...";
+			next;
+			mes "[Orc Warrior]";
+			mes "They are the best warriors of the Orc tribe, and are known to you as Orc Heroes. Not only are they the strongest ones among us, but they also our leaders in battle.";
+			next;
+			mes "[Orc Warrior]";
+			mes "As proof of their status, Orc Heroes are given Vouchers of Orcish Hero, as well as special swords that are only allowed to be used by our heroes.";
+			next;
+			mes "[Orc Warrior]";
+			mes "That sword can tear the sky, sever the earth and make a waterfall flow backwards.";
+			next;
+			mes "[Orc Warrior]";
+			mes "The special helmet that is only worn by Orc Heroes represents the power and honor of the Orc Warriors.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Well, humans rarely get the chance to see this helmet unless they're in battle with an Orc Hero themselves...";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,8;
+			mes "[Orc Warrior]";
+			mes "Now, if you want";
+			mes "to listen longer,";
+			mes "go and bring me";
+			mes "^FF00001000 Jellopy^000000";
+			mes "again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		next;
+		mes "[Orc Warrior]";
+		mes "I don't take the 6,000 jellopies you have given to me that seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 8) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "Oh, hello. You're back.";
+			mes "Go ahead and put the 1000 Jellopies over there on the table by the skulls.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Ah yes, we were talking about Orc Heroes. Now, unlike Orc Heroes who are blessed with might from the day they were born, there are older, seasoned warriors that have managed to survive many years of combat.";
+			next;
+			mes "[Orc Warrior]";
+			mes "To Orc Warriors, we do not see age as weakness. We look up to old warriors as our trainers due to their experience in battle and their fighting skills.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Those old warriors have shown outstanding fighting abilities, even without the use of weapons.";
+			next;
+			mes "[Orc Warrior]";
+			mes "They could endure in battle for at least few days without axes. When you get to a certain fighting skill level, weapons can actually become a burden...";
+			next;
+			mes "[Orc Warrior]";
+			mes "Among those well-experienced warriors, the greatest one of all is given the title of Orc Lord, and is given our respect as the leader of our tribe.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Every Orc can recognize him by his distinguished helm with the three horns.";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,9;
+			mes "[Orc Warrior]";
+			mes "Now...";
+			mes "If you want to";
+			mes "listen longer,";
+			mes "go bring me";
+			mes "^FF00001000 Jellopy^000000";
+			mes "again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take the 7,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 9) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "It's been a while I've seen such a determined human such as yourself. Just leave the Jellopy near the bed.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Now...";
+			mes "Let me tell you";
+			mes "more about the";
+			mes "Orc Tribe.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Although I don't like to admit it, there are cowardly Orcs that run away from battle, or fight using dishonorable methods.";
+			mes "Needless to say, they have brought shame and disgrace to our tribe.";
+			next;
+			mes "[Orc Warrior]";
+			mes "A curse is placed on those dishonorable Orcs so that they can be singled out by the tribe and banished from the village.";
+			next;
+			mes "[Orc Warrior]";
+			mes "You may recognize those cursed Orcs by their shrunken bodies and long teeth.";
+			next;
+			mes "[Orc Warrior]";
+			mes "We call these cursed Orcs Zenorc. They are forced to live inside of caves or dungeons, away from from honorable Orcs. It's difficult to believe that Zenorcs were once one of us...";
+			next;
+			mes "[Orc Warrior]";
+			mes "I don't think there is a curse which transforms humans into a totally ugly creature depending on their deeds. So it is difficult to tell which humans are honorable...";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,10;
+			mes "[Orc Warrior]";
+			mes "Now...";
+			mes "If you want";
+			mes "to hear more,";
+			mes "go bring me";
+			mes "^FF00001000 Jellopy^000000";
+			mes "again tomorrow.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take the 8,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 10) {
+		if (countitem(909) > 999) {
+			mes "[Orc Warrior]";
+			mes "With these...";
+			mes "You have brought me 10,000 Jellopies. I must say that I am impressed. Since you have shown me your respect, I will repay you with my honesty.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Considering the stories about my tribe, it's enough for me if you just listen. However, merely listening is totally different from having the experience as your own.";
+			next;
+			mes "[Orc Warrior]";
+			mes "I suggest you that you experience more battles with the many different Orcs out there. That's the best way of understanding and learning about the Orc tribe.";
+			next;
+			delitem 909,1000; //Jellopy
+			set orcs_hero_hat,11;
+			getitem 1304,1; //Orcish_Axe
+			mes "[Orc Warrior]";
+			mes "This is a small token of my gratitue. This axe used to aid me in many battles and is very precious to me. I hope you will take care of this.";
+			next;
+			mes "[Orc Warrior]";
+			mes "You have made a lot of effort to show me respect, despite being a human. Now, if you want to learn more about Orcs, feel free to come back anytime, my friend.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Did you already forget?";
+		mes "^FF00001000 Jellopy^000000!";
+		mes "Show me your respect";
+		mes "if you want to talk.";
+		mes "I don't take 9,000 jellopies you have given to me seriously.";
+		close;
+	}
+	else if (orcs_hero_hat == 11) {
+		if (countitem(1304) > 0) {
+			mes "[Orc Warrior]";
+			mes "You have made a lot of effort to show me your respect. Now, if you want to learn more about Orcs, feel free to come back anytime, my friend.";
+			close;
+		}
+		else if (countitem(931) > 99) {
+			if (rand(1,5) == 5) {
+				mes "[Orc Warrior]";
+				mes "Oh, I see you've taken my advice and have been meeting many other Orcs through battle.";
+				mes "You must have learned much about the Orc's spirit of battle by seeing it for yourself firsthand.";
+				next;
+				mes "[Orc Warrior]";
+				mes "These Orchish Vouchers you have been collecting are the true token of Orc warriors. We recognize an Orc who won over 1,000 battles as a true Orc Warrior.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Still...";
+				mes "You're a human, so I don't give we can give you that honor so easily...";
+				next;
+				mes "[Orc Warrior]";
+				mes "Alright...";
+				mes "Go win over 10,000 battles.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Then, I'm sure you can be granted status as a real Orc warrior. But, make sure you are fighting for honorable purposes, and that you have no other motive.";
+				next;
+				mes "[Orc Warrior]";
+				mes "You only achieve honor by winning battles. Even among Orcs, I'm sure you can prove your battle prowess by defeating 10,000 Orc Warriors.";
+				next;
+				if (select("I don't think that is necessary.:I will win 10,000 battles!") == 1) {
+					mes "[Orc Warrior]";
+					mes "I see. I will not force you to choose what I wish to see you do. I respect your decision.";
+					next;
+					mes "[Orc Warrior]";
+					mes "Although...";
+					mes "I wished for other Orcs to see and understand that not all humans are wicked and selfish.";
+					close;
+				}
+				mes "[Orc Warrior]";
+				mes "Ah, spoken like a true warrior. Alright then, go forth and do battle with others of my tribe, and bring me 10,000 Orcish Vouchers.";
+				next;
+				delitem 931,100; //Orcish_Voucher
+				set orcs_hero_hat,13;
+				set orcs_hero_hat2,100;
+				mes "[Orc Warrior]";
+				mes "I took 100 Orcish Voucher from you now. Now, fight and fight until you have defeated 10,000 more Orc Warriors so that the whole tribe will have to recognize you!";
+				close;
+			}
+			mes "[Orc Warrior]";
+			mes "Hm? You don't seem to understand our way of life completely. It's strange that you are so curious about other races, human.";
+			close;
+		}
+		else {
+			if (rand(1,5) == 5) {
+				mes "[Orc Warrior]";
+				mes "The best way of understanding the Orc tribe is to do battle with them. By competing in power and skills, eventually you will understand and respect your opponent.";
+				next;
+				mes "[Orc Warrior]";
+				mes "So, go outside and fight.";
+				mes "Although you may be learning theory by talking with me, you must experience our way of life for yourself.";
+				close;
+			}
+			mes "[Orc Warrior]";
+			mes "Hm? You don't seem to understand our way of life completely. It's strange that you are so curious about other races, human.";
+			close;
+		}
+	}
+	else if (orcs_hero_hat2 > 99 && orcs_hero_hat2 < 10000) {
+		if (countitem(931) > 0) {
+			if (orcs_hero_hat2 > 9999)
+				set orcs_hero_hat2,10000;
+			mes "[Orc Warrior]";
+			mes "You've come back...";
+			mes "It doesn't seem that you've accomplished your goal yet, but I do not expect you to defeat 10,000 Orc Warriors so easily.";
+			next;
+			mes "[Orc Warrrior]";
+			mes "If you wish, you may rest here. " + orcs_hero_hat2 + " victories over Orc Warriors are recognized by our tribe.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Do you wish to";
+			mes "record your current";
+			mes "victory with me?";
+			next;
+			if (select("Yes, I do.:I will do it later.") == 1) {
+				set .@total_vouchers,orcs_hero_hat2+countitem(931);
+				if (.@total_vouchers < 10000) {
+					delitem 931,countitem(931); //Orcish_Voucher
+					set orcs_hero_hat2,.@total_vouchers;
+					mes "[Orc Warrior]";
+					mes "I hope you will";
+					mes "continue your efforts";
+					mes "in understanding the Orc";
+					mes "way of life through battle.";
+					mes "Don't give up.";
+					next;
+					mes "[Orc Warrior]";
+					mes "There are " + (10000-.@total_vouchers) + " battles ahead of you before you reach your goal. I understand the difficulty of this challenge, but I hope you make it.";
+					close;
+				}
+				else {
+					mes "[Orc Warrior]";
+					mes "Now...";
+					mes "You won over";
+					mes "10,000 battles";
+					mes "with Orcs.";
+					next;
+					mes "[Orc Warrior";
+					mes "For a human, accomplishing such a feat is truly astonishing. Through all of that fighting, I'm sure that you have learned both good and bad things about my tribe.";
+					next;
+					mes "[Orc Warrior]";
+					mes "Although you're a";
+					mes "human, you have";
+					mes "demonstrated incredible";
+					mes "bravery and honor...";
+					mes "I shall grant you true";
+					mes "Orc Warrior status!!";
+					next;
+					mes "[Orc Warrior]";
+					mes "You are now...";
+					if (Sex == SEX_MALE)
+						mes "an Orc Warrior!!";
+					else
+						mes "an Orc Lady!!";
+					next;
+					delitem 931,countitem(931); //Orcish_Voucher
+					set orcs_hero_hat,14;
+					set orcs_hero_hat2,10000;
+					getitem 2299,1; //Viking_Helm
+					mes "[Orc Warrior]";
+					mes "This is a present for you. I am not sure if it will fit to your head or not, but try it. If your head is too big to wear this, I suggest that you carry this with you.";
+					next;
+					getitem 931,1; //Orcish_Voucher
+					mes "[Orc Warrior]";
+					mes "As an Orc Warrior,";
+					mes "I will now give you";
+					mes "an Orcish Voucher";
+					mes "of your very own.";
+					next;
+					mes "[Orc Warrior]";
+					mes "Although it doesn't look different from the others, please keep this with care. You can only be recognized as an Orc warrior with this.";
+					next;
+					mes "[Orc Warrior]";
+					mes "Now, you may go back to where you have come from. Come drop by whenever my tribe comes to your mind.";
+					next;
+					mes "[Orc Warrior]";
+					mes "As you are now one who feels the true intent of the opponent after endless battles, I will now return you to the battleground.";
+					close;
+				}
+			}
+			mes "[Orc Warrior]";
+			mes "I see, do as you wish.";
+			mes "I will be really disappointed in you if you quit in a challenge you have undertaken.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "Come take a rest here.";
+		mes "You have won " + orcs_hero_hat2 + " victories over Orc Warriors.";
+		close;
+	}
+	else if (orcs_hero_hat == 14) {
+		if (countitem(931) == 1 && (countitem(2299) > 0 || isequipped(2299))) {
+			mes "[Orc Warrior]";
+			mes "Hm? You don't think you cannot come back to where you originally came, just because now you're an Orc Warrior, do you? Hahahahaha!";
+			close;
+		}
+		else if (countitem(2299) > 0 || isequipped(2299)) {
+			mes "[Orc Warrior]";
+			mes "Warrior...";
+			mes "May a fresh";
+			mes "light be with";
+			mes "you in battle.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Show your opponents your indomitable spirit. Take pride in being a human that has been given the title of Orc Warrior!";
+			close;
+		}
+		else {
+			if (rand(1,10) == 1) {
+				mes "[Orc Warrior]";
+				mes "My my...";
+				mes "Are you still";
+				mes "hungry for blood...?";
+				next;
+				mes "[Orc Warrior]";
+				mes "You don't seem to be satisfied even after being recognized as a warrior. But... I suppose the path of the warrior is to seek new and more difficult challenges.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Okay, would you like to go through another test? It may reduce all your effort in coming here to nothing. Even seasoned Orc Warriors fear taking this test.";
+				next;
+				mes "[Orc Warrior]";
+				mes "But, since you're an exceptional case, it might be possible for you to accomplish...";
+				next;
+				if (select("I am already satisfied.:...I will take this challenge.") == 1) {
+					mes "[Orc Warrior]";
+					mes "Yes, that's a good";
+					mes "attitude. Sometimes,";
+					mes "you must accept your";
+					mes "limitations, or that";
+					mes "you cannot beat";
+					mes "certain opponents.";
+					close;
+				}
+				mes "[Orc Warrior]";
+				mes "Excellent, I admire your enthusiasm. This is a very rare chance to do battle with the strongest Orc Warriors.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Go fight with 100 Orc Heroes and bring me the tokens of the battles you have endured. Even if you're an excellent warrior, I assure you this test will be the hardest one you'll ever get.";
+				next;
+				set orcs_hero_hat,15;
+				mes "[Orc Warrior]";
+				mes "Now, go, warrior! I believe that you have a chance to succeed. Fight with 100 Orc Heroes, and I will grant you, a human, recognition as an Orc Hero!";
+				close;
+			}
+			mes "[Orc Warrior]";
+			mes "Warrior, may a fresh light be with you in battle. Show your opponents your indomitable spirit. Take pride in being a human that has been given the title of Orc Warrior!";
+			close;
+		}
+	}
+	else if (orcs_hero_hat == 15) {
+		if (countitem(968) > 99) {
+			mes "[Orc Warrior]";
+			mes "Ah...";
+			mes "I knew you would succeed!";
+			next;
+			mes "[Orc Warrior]";
+			mes "The Orc Heroes who were defeated by you also must have recognized your courage. Thank you, human, for showing us what is true strength.";
+			next;
+			mes "[Orc Warrior]";
+			mes "On behalf of";
+			mes "the Orc tribe,";
+			mes "let me pay";
+			mes "you homage.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Now, make one last choice. What would you do with those Heroic Emblems? They might not be valuable to you humans, but for Orcs, they are treasured by those who own them.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Since you are the victor of those battles, you have every right to keep them. But you could also return them to the Orc Heroes, meaning that you wish to meet them in battle once again.";
+			next;
+			mes "[Orc Warrior]";
+			mes "Now, what would";
+			mes "you want to do";
+			mes "with the vouchers?";
+			next;
+			switch(select("I want to keep them.:I shall return them to the Orc Heroes.")) {
+			case 1:
+				mes "[Orc Warrior]";
+				mes "Yes, that's";
+				mes "not bad...";
+				mes "Not bad at all.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Nobody has the right to tell you what you can or cannot do. Please keep them as a memory of your victory.";
+				close;
+			case 2:
+				mes "[Orc Warrior]";
+				mes "What a great attitude for a warrior...! It will be a model to other Orcs to show respect to opponents that you have defeated!";
+				next;
+				mes "[Orc Warrior]";
+				mes "You deserve to be an Orc Hero, the most powerful Orc warrior! As of today, you are now an Orc Hero!";
+				next;
+				delitem 968,100; //Voucher_Of_Orcish_Hero
+				set orcs_hero_hat,16;
+				getitem 1124,1; //Orcish_Sword
+				mes "[Orc Warrior]";
+				mes "This is a sword only given to our heroes. I am not sure if you can use this or not, but as an Orc Hero, you're obligated to carry this with you always.";
+				next;
+				getitem 968,1; //Voucher_Of_Orcish_Hero
+				mes "[Orc Warrior]";
+				mes "Now that you";
+				mes "are an Orc Hero,";
+				mes "let me give you";
+				mes "your own Heroic";
+				mes "Emblem.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Although it doesn't look different from the others, I hope you will keep it with care. You can only be recognized as an Orc Hero with this token.";
+				next;
+				mes "[Orc Warrior]";
+				mes "Then, you may leave now....";
+				mes "A human who has a better understanding than other humans. One who showed others power regardless of the race, I leave you to the future of Chaos.";
+				close;
+			}
+		}
+		mes "[Orc Warrior]";
+		mes "Hm...";
+		mes "Struggling, are you?";
+		next;
+		mes "[Orc Warrior]";
+		mes "Well, Orc Hero is held in high regard by other Orcs for their great power. As a human, you will probably have difficulty in dealing with him.";
+		next;
+		mes "[Orc Warrior]";
+		mes "However, you made the decision to go through with this test! Still, there's no need to rush it. Life is an endless series of battles, so the combat will come.";
+		close;
+	}
+	else if (orcs_hero_hat > 15) {
+		if (countitem(968) < 1) {
+			mes "[Orc Warrior]";
+			mes "Warrior, where did you leave your Heroic Emblem? Without the token, I cannot recognize you as an Orc Hero. Please find it and keep it with you anywhere you go.";
+			close;
+		}
+		else if (countitem(1124) < 1 && isequipped(1124) == 0) {
+			mes "[Orc Warrior]";
+			mes "Warrior, where did you leave your sword? Without the sword, I cannot recognize you as an Orc Hero. Please find it and keep it with you anywhere you go.";
+			close;
+		}
+		mes "[Orc Warrior]";
+		mes "The most";
+		mes "powerful warrior...";
+		mes "Orc Hero!";
+		mes "That's who you are!";
+		mes "May God be with you in battle!";
+		close;
+	}
+	else {
+		mes "[Orc Warrior]";
+		mes "....................";
+		close;
+	}
+}
+
+in_orcs01,162,33,1	script	Orc Hero#1	1087,2,2,{
+OnTouch_:
+	if (checkweight(1201,1) == 0) {
+		mes "- Wait a minute !! -";
+		mes "- Currently you're carrying -";
+		mes "- too many items with you. -";
+		mes "- Please try again -";
+		mes "- after you lose some weight. -";
+		close;
+	}
+	if (orcs_hero_hat < 16) {
+		mes "[Orc Hero]";
+		mes "Stop bugging me";
+		mes "and get outta here!";
+		next;
+		mes "[Orc Hero]";
+		mes "If you wish to challenge me, wait inside the forest at the west. I'm not in the mood to deal with humans right now.";
+		next;
+		mes "[Orc Hero]";
+		mes "Now, hurry";
+		mes "up and scram!!";
+		close;
+	}
+	else if (orcs_hero_hat == 16) {
+		if (countitem(968) == 1 && (countitem(1124) > 0 || isequipped(1124) == 1)) {
+			if (rand(1,10) == 1) {
+				mes "[Orc Hero]";
+				mes "Hm, are you the human who was granted status as an Orc Hero?";
+				next;
+				mes "[Orc Hero]";
+				mes "I hope you know the meaning of returning my Emblem. I expect that we will meet again on the battlefield.";
+				if (countitem(2299) > 0) {
+					next;
+					mes "[Orc Hero]";
+					mes "Wait...";
+					mes "Isn't that an Orc Warrior's Helm...?";
+					next;
+					mes "[Orc Hero]";
+					mes "Wait a second...";
+					mes "It's not! Ha...!";
+					mes "Interesting!";
+					mes "That's very";
+					mes "interesting.";
+					next;
+					mes "[Orc Hero]";
+					mes "I guess you don't know what's so special about this particular helm...";
+					next;
+					mes "[Orc Hero]";
+					mes "It actually belonged to one of our Orc Lords who was defeated by a human. He was so furious about losing that he broke the middle horn and threw it away!";
+					next;
+					mes "[Orc Hero]";
+					mes "I was told that it somehow ended in the hands of a human, but I didn't know it was you, the human Orc Hero.";
+					next;
+					mes "[Orc Hero]";
+					mes "Alright, that belongs to the Orc Lord. I mean, even though it's now yours, it was given to you by mistake.";
+					next;
+					mes "[Orc Hero]";
+					mes "Would you mind giving the item back to its owner, my human Orc Hero?";
+					next;
+					if (select("Yes, I mind.:No, I don't mind.") == 1) {
+						mes "[Orc Hero]";
+						mes "Wow, you're so stubborn! Just treat the helm with care, and wear it with respect. Recognize that it has a long history...";
+						close;
+					}
+					mes "[Orc Hero]";
+					mes "Good, that's a good decision. I will give this back to him. Muhahahahaha... I didn't expect to see this thing again.";
+					next;
+					mes "[Orc Hero]";
+					mes "Okay...";
+					mes "Let me give you";
+					mes "something useful!";
+					next;
+					mes "[Orc Hero]";
+					mes "Although you're a human, you're an Orc Hero amongst us now, so you should have a helm suitable for your position...";
+					next;
+					delitem 2299,1; //Viking_Helm
+					set orcs_hero_hat,17;
+					getnameditem 5094,strcharinfo(0); //Orc_Hero_Helm
+					mes "[Orc Hero]";
+					mes "There you go. I marked a small indication on it. So wear this helm from now on. Do you understand? My human Orc Hero.";
+					close;
+				}
+				close;
+			}
+			mes "[Orc Hero]";
+			mes "Hm, are you the human who was granted status as an Orc Hero?";
+			next;
+			mes "[Orc Hero]";
+			mes " I hope you know the meaning of returning my Emblem. I expect that we will meet again on the battlefield.";
+			close;
+		}
+		mes "[Orc Hero]";
+		mes "Hm, are you the human that was granted status as an Orc Hero?";
+		next;
+		mes "[Orc Hero]";
+		mes "Hmpf, I'm not convinced. Are you really the one who gave us our Emblems back? I don't think I can trust you...";
+		next;
+		mes "[Orc Hero]";
+		mes "Yeh, you would think I'd remember getting whupped by an ugly human, but I tend not to remember faces when I'm too busy getting whomped on.";
+		next;
+		mes "[Orc Hero]";
+		mes "I refuse to";
+		mes "acknowledge someone";
+		mes "like you who forgets";
+		mes "our most basic customs!";
+		next;
+		mes "[Orc Hero]";
+		mes "Grrrr...";
+		mes "Come on!";
+		mes "Let's meet outside west of the forest, and I'll test your strength again!";
+		close;
+	}
+	else if (orcs_hero_hat == 17) {
+		mes "[Orc Hero]";
+		mes "Muhahahaha~";
+		mes "You're the";
+		mes "strangest human";
+		mes "I've ever met.";
+		mes "Hahahahaha...";
+		next;
+		mes "[Orc Hero]";
+		mes "I like you,";
+		mes "human, I like you.";
+		close;
+	}
+	mes "[Orc Hero]";
+	mes "....................";
+	close;
+}
+
+gef_fild07,108,161,4	script	Roda Frog#Frog_Cap	1012,1,1,{
+	if (!.Active) end;
+	if (hat_2009 == 0) {
+		mes "[???]";
+		mes "Hmm..Hm..";
+		mes "It seems my transformation into the child's appearance is successful.";
+		next;
+		mes "[" + strcharinfo(0) + "]";
+		mes "... ... ... ...";
+		next;
+		mes "[???]";
+		mes "Human! I am here to ask you some help.";
+		next;
+		if (BaseLevel < 65) {
+			mes "[???]";
+			mes "... ... ...";
+			next;
+			mes "[???]";
+			mes "I am the great King Froggie VII!";
+			next;
+			mes "[King Froggie VII]";
+			mes "but I think you're not strong enough to help us.";
+			mes "Go and train more!";
+			next;
+			mes "[King Froggie VII]";
+			mes "Over lvl 65 human will be fine for us.";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else {
+			mes "[???]";
+			mes "I am the great king, Froggie VII..";
+			mes "I need your help!";
+			next;
+			if(select("Just ignore it.:Let's help him.") == 1) {
+				mes "[" + strcharinfo(0) + "]";
+				mes "Talking frog...";
+				next;
+				mes "[" + strcharinfo(0) + "]";
+				mes "Now I've seen everything.";
+				next;
+				mes "[King Froggie VII]";
+				mes "Croaking...Croaking...";
+				close2;
+				donpcevent "Roda Frog#Frog_Cap::OnDisable";
+				end;
+			}
+			mes "[" + strcharinfo(0) + "]";
+			mes "What can I help you?";
+			next;
+			mes "[King Froggie VII]";
+			mes "Our great frog race is now endangered because many travellers came here and take our eggs as a kind of souvenirs. I even heard there are many left on the ground here and there, so I need your help. Please bring back ^FF0000100 Spawn^000000.";
+			setquest 5000;
+			set hat_2009,1;
+			next;
+			mes "[" + strcharinfo(0) + "]";
+			mes "Sure, I will.";
+			next;
+			mes "[King Froggie VII]";
+			mes "I will be waiting for you!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 1) {
+		if (countitem(908) < 100) {
+			mes "[King Froggie VII]";
+			mes "What are you doing here?";
+			mes "Go and get ^FF0000100 Spawn^000000!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else {
+			mes "[King Froggie VII]";
+			mes "Oh, you brought all of them!";
+			next;
+			mes "[King Froggie VII]";
+			mes "Thank you so much, " + strcharinfo(0) + ".";
+			emotion ET_THANKS;
+			next;
+			mes "[King Froggie VII]";
+			mes "By the way, we have another urgent matter. So I would ask you one more help.";
+			next;
+			mes "[King Froggie VII]";
+			mes "Frogs are healthy food to the snakes.";
+			next;
+			mes "[" + strcharinfo(0) + "]";
+			mes "I know well.";
+			next;
+			mes "[King Froggie VII]";
+			mes "Well, that's good. Aren't you feel sorry for our race?";
+			next;
+			mes "[King Froggie VII]";
+			mes "So, I hereby ask you to take revenge on them. Kill ^FF000050 Side Winders^000000 for us.";
+			delitem 908,100; //Spawn
+			changequest 5000,5001;
+			set hat_2009,2;
+			next;
+			mes "[King Froggie VII]";
+			mes "I'll be waiting for your news!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 2) {
+		set .@hunting, checkquest(5001,HUNTING);
+		if (.@hunting == 0 || .@hunting == 1) {
+			mes "[King Froggie VII]";
+			mes "I'm waiting for your good news.";
+			mes "It would be a piece of cake for you";
+			mes "to kill ^FF000050 Side Winders^000000. Keep it up!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else if (.@hunting == 2) {
+			mes "[" + strcharinfo(0) + "]";
+			mes "I'm back.";
+			next;
+			mes "[King Froggie VII]";
+			mes "You seemingly killed all the Side Winders!";
+			next;
+			mes "[King Froggie VII]";
+			mes "You became an example for the young frogs. Thank you again.";
+			emotion ET_THANKS;
+			next;
+			mes "[King Froggie VII]";
+			mes "Therefore, I'm considering adding your outstanding exploit to our frog's history book. But I need your evidence for your work.";
+			next;
+			mes "[King Froggie VII]";
+			mes "Please bring me ^FF0000 100 ^000000 ^FF0000Venom Canines^000000 from the snakes.";
+			changequest 5001,5002;
+			set hat_2009,3;
+			next;
+			mes "[" + strcharinfo(0) + "]";
+			mes "I'm happy to be added in the history book. I'll go and get them.";
+			next;
+			mes "[King Froggie VII]";
+			mes "Obedient, hard-working... I hope I have a loyal frog like you.";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 3) {
+		if (countitem(937) < 100) {
+			mes "[King Froggie VII]";
+			mes "How about ^FF0000100 Venom Canines^000000?";
+			mes "Hurry, it's a rare opportunity to be added in the frog history book!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else {
+			mes "[King Froggie VII]";
+			mes "Oh, you brought Venom Canines! Now, I'm able to put you in the frog history book officially.";
+			next;
+			mes "[" + strcharinfo(0) + "]";
+			mes "That's good for me.";
+			next;
+			mes "[King Froggie VII]";
+			mes "I have a better news!";
+			next;
+			mes "[King Froggie VII]";
+			mes "I found a great method to keep our race while I was looking up the history book!";
+			next;
+			mes "[King Froggie VII]";
+			mes "The answer was in the frog history book. In the old days, the great King Froggie III made a secret medicine enabling us to use a hiding skill from the snakes.";
+			next;
+			mes "[King Froggie VII]";
+			mes "I should have known this earlier...";
+			mes "Please get me ^FF000050 Scaled Shells^000000.";
+			delitem 937,100; //Posionous_Canine
+			changequest 5002,5003;
+			set hat_2009,4;
+			next;
+			mes "[King Froggie VII]";
+			mes "It's not easy to get, but I'm sure you can do it.";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 4) {
+		if (countitem(936) < 50) {
+			mes "[King Froggie VII]";
+			mes "Still here? Go and get ^FF000050 Scaled Shells^000000! Please hurry!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else {
+			mes "[King Froggie VII]";
+			mes "Excellent!";
+			mes "You're like the great King Froggie III in his young days!";
+			next;
+			mes "[King Froggie VII]";
+			mes "You are already the hero for our frogs! If I have a child, I would marry you up with my child.";
+			next;
+			mes "[" + strcharinfo(0) + "]";
+			mes "Ah... No, thanks.";
+			mes "^FF0000(Are you telling me to marry a frog???)^000000";
+			next;
+			mes "[King Froggie VII]";
+			mes "Thanks to you, the population of frog has increased but we're short of food.";
+			next;
+			mes "[King Froggie VII]";
+			mes "The best food for us is ^FF0000Argiope^000000.";
+			next;
+			mes "[King Froggie VII]";
+			mes "Now, what are you doing, our hero?";
+			mes "Go and get ^FF000050 Argiopes^000000!";
+			delitem 936,50; //Scales_Shell
+			set hat_2009,5;
+			changequest 5003,5004;
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 5) {
+		set .@hunting, checkquest(5004,HUNTING);
+		if (.@hunting == 0 || .@hunting == 1) {
+			mes "[King Froggie VII]";
+			mes "My hero, are you going to starve us to death?";
+			mes "Go and bring us ^FF000050 Argiopes^000000!";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		} else if (.@hunting == 2) {
+			mes "[King Froggie VII]";
+			mes "I think I saw you a while ago, but now you became the hero for the frogs...";
+			next;
+			mes "[King Froggie VII]";
+			mes "It was really lucky for me to ask you a favor.";
+			next;
+			if (MaxWeight - Weight < 500) {
+				mes "[King Froggie VII]";
+				mes "I'd like to give you a reward, our hero. But your bag is now too heavy.";
+				close2;
+				donpcevent "Roda Frog#Frog_Cap::OnDisable";
+				end;
+			}
+			if (checkweight(5447,1) == 0) {
+				mes "- Wait !! -";
+				mes "- You have too many items, so it's -";
+				mes "- impossible to have more. -";
+				mes "- Come to me again -";
+				mes "- after emptying some of it. -";
+				close;
+			}
+			mes "[King Froggie VII]";
+			mes "Frogs, do you have any objection";
+			mes "to give our hero, " + strcharinfo(0) + "";
+			mes "a Frog Hat which is one of our precious treasures?";
+			next;
+			mes "[Sounds from somewhere]";
+			mes "Croak...croak...";
+			mes "croooooaaaaak~~~";
+			mes "Croak croak";
+			next;
+			mes "[King Froggie VII]";
+			mes "Hmm, there is no objection.";
+			next;
+			mes "[King Froggie VII]";
+			mes "I hereby give " + strcharinfo(0) + ", our hero, this Frog Hat.";
+			specialeffect2 EF_MAPPILLAR2;
+			specialeffect2 EF_BLESSING;
+			erasequest 5004;
+			set hat_2009,6;
+			getitem 5447,1; //Frog_Cap
+			next;
+			mes "[King Froggie VII]";
+			mes "You are always welcome.";
+			mes "Visit here at any time.";
+			close2;
+			donpcevent "Roda Frog#Frog_Cap::OnDisable";
+			end;
+		}
+	} else if (hat_2009 == 6) {
+		mes "[King Froggie VII]";
+		mes "All the frogs in the world, praise " + strcharinfo(0) + ", our eternal hero!";
+		emotion ET_THANKS;
+		close2;
+		donpcevent "Roda Frog#Frog_Cap::OnDisable";
+		end;
+	}
+	end;
+//OnInit:
+//	setnpcdisplay "Roda Frog#Frog_Cap",1012; //RODA_FROG
+//	end;
+OnEnable:
+	setnpcdisplay "Roda Frog#Frog_Cap",716; //4_M_KID2
+	set .Active,1;
+	end;
+OnDisable:
+	set .Active,0;
+	disablenpc "Roda Frog#Frog_Cap";
+	initnpctimer;
+	end;
+OnReset:
+	setnpcdisplay "Roda Frog#Frog_Cap",1012; //RODA_FROG
+	enablenpc "Roda Frog#Frog_Cap";
+	end;
+OnTimer2000:
+	donpcevent "Roda Frog#Frog_Cap::OnReset";
+	stopnpctimer;
+	end;
+OnTouch:
+	if (.Active) end;
+	mes "There is a frog. What should I do?";
+	next;
+	switch(select("Throw it a stone.:Have a conversation.")) {
+	case 1:
+		donpcevent "Roda Frog#Frog_Cap::OnDisable";
+		mes "Ouch~";
+		close;
+	case 2:
+		donpcevent "Roda Frog#Frog_Cap::OnEnable";
+		if (hat_2009 > 0) {
+			emotion ET_THINK, playerattached();
+			mes "[" + strcharinfo(0) + "]";
+			mes "It's so amazing to see";
+			mes "the frog which transforms itself.";
+			close;
+		} else {
+			emotion ET_HUK, playerattached();
+			mes "[" + strcharinfo(0) + "]";
+			mes "Oh my.. the frog transformed into a child...";
+			close;
+		}
+	}
+	end;
+}
