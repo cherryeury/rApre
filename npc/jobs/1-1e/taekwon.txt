@@ -372,7 +372,7 @@
 			completequest 6002; completequest 13101;
 			callfunc "Job_Change",Job_Taekwon;
 			callfunc "F_ClearJobVar"; JobLevel = JobLevel + 1;
-			getitem 2101,1; // Guard[0]
+			getitem 2638,1; getitem 2101,1; // Guard[0]
 			mes "[Phoenix]";
 			mes "You are still young, so";
 			mes "I assume you'll want a job";

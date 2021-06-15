@@ -6733,7 +6733,27 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus2 bResEff,Eff_Freeze,3000;           
+      bonus2 bResEff,Eff_Freeze,3000;   
+  - Id: 2638
+    AegisName: Exorcize_Sachet
+    Name: Sacred Incense
+    Type: Armor
+    Buy: 0
+    Weight: 100
+    Locations:
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true    
+      Both_Accessory: true
+    Script: |
+      bonus bDex,1;
+      bonus bHit,5;      
   - Id: 2310
     AegisName: Coat_
     Name: Coat
@@ -6750,32 +6770,83 @@ Body:
       Armor: true
     Refineable: true     
     Script: |
-      bonus2 bResEff,Eff_Freeze,3000;        
+      bonus2 bResEff,Eff_Freeze,3000; 
+  - Id: 2617
+    AegisName: Mitten_Of_Presbyter
+    Name: Celebrant's Mitten
+    Type: Armor
+    Buy: 2
+    Weight: 100
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 35
+    Script: |
+      bonus bInt,1;      
+  - Id: 2618
+    AegisName: Matyr's_Flea_Guard
+    Name: Matyr's Leash
+    Type: Armor
+    Buy: 2
+    Weight: 100
+    Defense: 10
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Both_Accessory: true
+    EquipLevelMin: 35
+    Script: |
+      bonus bAgi,1;      
+  - Id: 2771
+    AegisName: Merchant_Figure
+    Name: Merchant Figure
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bLuk,1;
+      if (Class == Job_Merchant)
+         bonus bCritical,5;      
   - Id: 2305
     AegisName: Adventure_Suit
     Name: Adventurer's Suit
     Type: Armor
     Buy: 1000
     Weight: 300
-    Defense: 20
+    Defense: 15
     Locations:
       Armor: true
     Refineable: true
     Script: |
-      bonus bFlee,3;    
+      bonus bFlee,4;    
   - Id: 2306
     AegisName: Adventurere's_Suit_
     Name: Adventurer's Suit
     Type: Armor
     Buy: 1000
     Weight: 300
-    Defense: 20
+    Defense: 15
     Slots: 1
     Locations:
       Armor: true
     Refineable: true    
     Script: |
-      bonus bFlee,3;    
+      bonus bFlee,4;    
   - Id: 2211
     AegisName: Bandana
     Name: Bandana

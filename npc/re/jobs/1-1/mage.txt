@@ -104,7 +104,7 @@ geffen_in,164,124,4	script	Mage Guildsman#mage	123,{
 			mes "'Welcome to the Mage Guild~'";
 			mes "Congratulations on becoming a member of the Mage Guild! Go for it!";
 			callfunc "Job_Change",Job_Mage; JobLevel = JobLevel + 1; erasequest 9266;
-//			getitem 1606,1;	// Wand
+			getitem 2768,1;	// Wand
 			close;
 		case 2:
 			mes "[Mage Guildsman]";

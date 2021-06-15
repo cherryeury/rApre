@@ -184,7 +184,7 @@ que_ng,152,167,3	script	Master Miller	901,{
 			set GUNS_Q,6; JobLevel = JobLevel + 1;
 			completequest 6024;
 //			if (rand(1,2) == 1) {
-				getitem 13118,1; getitem 13200,500; // Fading Flame
+				getitem 2638,1; getitem 13118,1; getitem 13200,500; // Fading Flame
 //			} else {
 //				getitem 13150,1; // Branch
 //			}

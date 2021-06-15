@@ -26,7 +26,7 @@
 //	callfunc "couestshop"{,<shop ID>{,<shop ID>{,...}}};
 //  ADD YOUR NPC HERE
 //============================================================
-mal_in01,17,113,5	script	Vernyan#99	10242,{ callfunc "couestshop",99; }
+
 aldebaran,145,117,4	script	Vernyan#1	10242,{ callfunc "couestshop",1; }
 rachel,121,147,4	script	Vernyan#2	10242,{ callfunc "couestshop",2; }
 alberta,32,229,0	script	Vernyan#3	10242,{ callfunc "couestshop",3; }
@@ -45,6 +45,7 @@ einbech,182,138,5	script	Vernyan#15	10242,{ callfunc "couestshop",15; }
 glast_01,364,308,5	script	Vernyan#16	10242,{ callfunc "couestshop",16; }
 gonryun,156,122,5	script	Vernyan#17	10242,{ callfunc "couestshop",17; }
 izlude,123,148,5	script	Vernyan#18	10242,{ callfunc "couestshop",18; }
+mal_in01,17,113,5	script	Vernyan#19	10242,{ callfunc "couestshop",19; }
 //============================================================
 
 
@@ -84,7 +85,6 @@ OnInit:
 // -----------------------------------------------------------
 
 	setarray .Shops$[1],
-		"Malangdo",	//
 		"Aldebaran",	//
 		"Rachel",	//
 		"Alberta",	//
@@ -102,7 +102,8 @@ OnInit:
 		"Einbech", // 
 		"Glastheim", //
 		"Kunlun", // 
-		"Izlude"; // 
+		"Izlude", // 
+		"Malangdo";	//
 		
 
 // -----------------------------------------------------------
@@ -112,11 +113,7 @@ OnInit:
 //	    <required item ID>,<required item amount>{,...});
 // -----------------------------------------------------------
 
-//Malangdo
-	Add(1,31,1,0,0,6417,100); // Up
-	Add(1,32,1,0,0,6417,100); // Mid
-	Add(1,33,1,0,0,6417,100); // Low
-	Add(1,34,1,0,0,6417,1000); // Garment
+
 //Aldebaran
 	Add(1,19500,1,0,0,2278,1,670,100); // Mr Smile
 	Add(1,19791,1,0,0,5086,1,670,100); // Alarm Mask
@@ -239,7 +236,12 @@ OnInit:
 	Add(17,31471,1,0,0,5437,1,670,100); // Celestial Flower
 //Izlude	
 	Add(18,19500,1,0,0,2278,1,670,100); // Mr Smile
-
+//Malangdo
+	Add(19,31,1,0,0,6417,100); // Up
+	Add(19,32,1,0,0,6417,100); // Mid
+	Add(19,33,1,0,0,6417,100); // Low
+	Add(19,34,1,0,0,6417,1000); // Garment
+	
 // -----------------------------------------------------------
 
 //=====================================================================================
@@ -257,10 +259,8 @@ OnInit:
 OnMenu:
 
 	mes "[^FF6600Vernyan^000000]";
-	mes "Hey";
-	mes "I'm taking care of all of the-";
-	mes "costume stuffs listed in catalogue.";
-	mes "It will cost you some tho.";
+	mes "Welcome!";
+	mes "Anything you need from the list?";
 	
 	set .@size, getarraysize(@i);
 	if (!.@size) set @shop_index, select(.menu$);
@@ -409,4 +409,4 @@ function	script	couestshop	{
 -	shop	couestshop16	-1,909:-1
 -	shop	couestshop17	-1,909:-1
 -	shop	couestshop18	-1,909:-1
--	shop	couestshop99	-1,909:-1
+-	shop	couestshop19	-1,909:-1

@@ -337,7 +337,7 @@ que_ng,30,65,3	script	Kuuga Gai#nq	730,{
 			set NINJ_Q,5; JobLevel = JobLevel + 1;
 			delitem 7053,5; // Cyfar
 			delitem 1010,1; // Phracon
-			getitem 1206,1;	// Cutter
+			getitem 2638,1; getitem 1206,1;	// Cutter
 			completequest 6018;
 			close;
 		}

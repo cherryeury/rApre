@@ -117,7 +117,7 @@ izlude_in,74,172,4	script	Swordman#swd	119,{
 			mes "[Swordman Guildsman]";
 			mes "Congratulations again for being a Swordman and I hope that you participate in many activities for the revival of our guild.";
 			callfunc "Job_Change",Job_Swordman; JobLevel = JobLevel + 1;
-			getitem 1106,1; // Falchion
+			getitem 2766,1; getitem 1106,1; // Falchion
 			close;
 		}
 	case 3:
