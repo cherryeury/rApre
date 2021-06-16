@@ -62,7 +62,7 @@ OnSellItem:
 			set .@mvp, compare(.MVP$,""+@sold_nameid[.@i]);
 			mes ((.@mvp)?"  ^FF0000":"  ^777777")+@sold_quantity[.@i]+"x "+getitemname(@sold_nameid[.@i])+"^000000";
 			for(set .@i,0; .@i<getarraysize(@sold_nameid); set .@i,.@i+1)
-			set .@card_total, .@card_total+(@sold_quantity[.@i]*.@mvp)?.@lv*10000000:.@lv*20000;
+			set .@card_total, .@card_total+(@sold_quantity[.@i]*.@mvp)?.@lv*10000000:.@lv*10000;
 		}
 	deletearray @sold_nameid[0], getarraysize(@sold_nameid);
 	deletearray @sold_quantity[0], getarraysize(@sold_quantity);

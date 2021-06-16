@@ -58,9 +58,9 @@ OnInit:
 //  Basic shop settings.
 // -----------------------------------------------------------
 
-	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
-	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
 	set .ShowZeny,1;	// Show Zeny cost, if any? (1: yes / 0: no)
 	set .MaxStack,100;	// Max number of quest items purchased at one time.
 
@@ -111,7 +111,7 @@ OnInit:
 // -----------------------------------------------------------
 
 //Aldebaran
-	Add(1,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
+	Add(1,2278,1,0,0,705,10,909,10,914,10); // Mr Smile (everywhere)
 	Add(1,5086,1,0,0,1095,3000,2288,1); // Alarm Mask ]]
 	Add(1,2273,1,0,0,2275,1,998,50,733,1,672,4); // Doctor Band ]]
 	Add(1,5018,1,0,0,2247,1,916,300,672,1); // Feather Bonnet ]]
@@ -142,7 +142,7 @@ OnInit:
 	Add(4,5442,1,0,0,978,1,7151,30,1059,100,7217,20); // Necktie ]]
 	Add(4,5108,1,0,0,7301,1887,5120,1,611,10,672,2); // Renown detective ]]
 //Morocc
-	Add(5,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
+	Add(5,2278,1,0,0,705,10,909,10,914,10); // Mr Smile (everywhere)
 	Add(5,2296,1,0,0,2243,1,999,100,676,5); // Binoculars
 	Add(5,2272,1,0,0,1019,50,983,1); // Stop Post
 	Add(5,5058,1,0,0,2233,1,983,1,7206,300,7030,1); // Drooping Cat ]]
@@ -151,7 +151,7 @@ OnInit:
 	Add(5,5065,1,0,0,624,1,959,300,551,50,1023,1,938,100,7030,1); // Blue Fish ]]
 	Add(5,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
 //Payon
-	Add(6,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
+	Add(6,2278,1,0,0,705,10,909,10,914,10); // Mr Smile (everywhere)
 	Add(6,5073,1,0,0,2285,1,1550,1); // Model Training Hat ]]
 	Add(6,5057,1,0,0,2213,1,983,1,914,300,676,1); // Ears of Black Cat ]]
 	Add(6,2283,1,0,0,724,1,5001,1,949,200,672,5); // Ear Muffs ]]
@@ -201,7 +201,7 @@ OnInit:
 //	Add(10,5094,1,0,0,5094,1,670,750,6625,500); // Helmet of Orc Hero ]] 
 //	Add(10,5436,1,0,0,1032,1000,10007,1); // Bride's Corolla ]]
 //Prontera
-	Add(11,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
+	Add(11,2278,1,0,0,705,10,909,10,914,10); // Mr Smile (everywhere)
 	Add(11,5012,1,0,0,710,1,703,1,704,1,708,1); // Ph.D Hat ]]
 	Add(11,5083,1,0,0,2244,1,2209,1,10007,1); // Red Ribbon ]]
 	Add(11,2214,1,0,0,949,100,706,1,722,1,2213,1); // Bunny Band (everywhere)
@@ -231,7 +231,7 @@ OnInit:
 //Kunlun	
 	Add(17,5437,1,0,0,7165,100,7166,100,745,1,981,1,2211,1); // Celestial Flower ]]
 //Izlude	
-	Add(18,2278,1,0,0,949,100,706,1,722,1,2213,1); // Mr Smile (everywhere)
+	Add(18,2278,1,0,0,705,10,909,10,914,10); // Mr Smile (everywhere)
 
 // -----------------------------------------------------------
 

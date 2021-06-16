@@ -7476,7 +7476,7 @@ Body:
     Name: Pike
     Type: Weapon
     SubType: 1hSpear
-    Buy: 3450
+    Buy: 53450
     Weight: 1000
     Attack: 60
     Range: 3
@@ -7495,7 +7495,7 @@ Body:
     Name: Pike
     Type: Weapon
     SubType: 1hSpear
-    Buy: 3450
+    Buy: 53450
     Weight: 1000
     Attack: 60
     Range: 3
@@ -20009,7 +20009,7 @@ Body:
     Name: Vellum Arc Wand
     Type: Weapon
     SubType: 2hStaff
-    Buy: 20
+    Buy: 50000
     Weight: 800
     Attack: 110
     MagicAttack: 220
