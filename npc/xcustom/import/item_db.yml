@@ -1254,8 +1254,8 @@ Body:
       Shoes: true
     Refineable: true
     Script: |
-      bonus bCritical,2;
-      bonus bAspdRate,2;
+      bonus bCritical,1;
+      bonus bAspdRate,3;
   - Id: 2406
     AegisName: Boots_
     Name: Boots
@@ -1285,8 +1285,8 @@ Body:
       Shoes: true
     Refineable: true   
     Script: |
-      bonus bCritical,2;
-      bonus bAspdRate,2;
+      bonus bCritical,1;
+      bonus bAspdRate,3;
   - Id: 2450
     AegisName: Vital_Tree_Shoes
     Name: Vital Tree Shoes
@@ -2395,7 +2395,7 @@ Body:
     Flags:
       NoConsume: true
     Delay:
-      Duration: 9000000
+      Duration: 1200000
     Trade:
       Override: 100
       NoDrop: true

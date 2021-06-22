@@ -2645,7 +2645,7 @@ int mob_dead(struct mob_data *md, struct block_list *src, int type)
 
 			if(battle_config.zeny_from_mobs && md->level) {
 				 // zeny calculation moblv + random moblv [Valaris]
-				zeny=(int) (1+(md->level/2)); // zeny=(int) ((md->level+rnd()%md->level)*per*bonus/100.);
+				zeny=(int) (md->level); // zeny=(int) ((md->level+rnd()%md->level)*per*bonus/100.);
 				if( md->get_bosstype() == BOSSTYPE_MVP )
 					zeny=(int) (md->level*100); // zeny*=rnd()%250;
 			}
