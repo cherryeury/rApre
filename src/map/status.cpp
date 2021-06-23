@@ -4353,7 +4353,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 #endif
 			if(sd->inventory.u.items_inventory[index].card[0] == CARD0_FORGE) { // Forged weapon
 				wd->star += (sd->inventory.u.items_inventory[index].card[1]>>8);
-				if(wd->star >= 30) wd->star = 80; // 3 Star Crumbs now give +40 dmg
+				if(wd->star >= 15) wd->star = 80; // 3 Star Crumbs now give +80 dmg
 				if(pc_famerank(MakeDWord(sd->inventory.u.items_inventory[index].card[2],sd->inventory.u.items_inventory[index].card[3]) ,MAPID_BLACKSMITH))
 					wd->star += 20;
 				if (!wa->ele) // Do not overwrite element from previous bonuses.
@@ -4600,8 +4600,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->dex += 10;
 		base_status->luk += 10;
 	}
-
-	// Absolute modifiers from passive skills
+	if((skill=pc_checkskill(sd,MC_VENDING))>0)
+		base_status->luk += skill;
 	if(pc_checkskill(sd,BS_HILTBINDING)>0)
 		base_status->str++;
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)
@@ -4612,8 +4612,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->int_ += skill;
 	if (pc_checkskill(sd, SU_POWEROFLAND) > 0)
 		base_status->int_ += 20;
-
-	// Bonuses from cards and equipment as well as base stat, remember to avoid overflows.
+	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
+		base_status->str += skill;
 	i = base_status->str + sd->status.str + sd->indexed_bonus.param_bonus[0] + sd->indexed_bonus.param_equip[0];
 	base_status->str = cap_value(i,0,USHRT_MAX);
 	i = base_status->agi + sd->status.agi + sd->indexed_bonus.param_bonus[1] + sd->indexed_bonus.param_equip[1];

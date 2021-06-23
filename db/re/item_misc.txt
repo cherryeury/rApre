@@ -240,18 +240,18 @@ IG_Quiver,12015,1	// Rusty Arrow Quiver
 IG_Quiver,12183,2	// Holy Arrow Quiver
 // Wrapped Mask
 IG_Mask,2278,10	// Mr. Smile
-IG_Mask,2281,10	// Opera Masque
+//IG_Mask,2281,10	// Opera Masque
 IG_Mask,2288,10	// Mr. Scream
-IG_Mask,2292,10	// Welding Mask
+//IG_Mask,2292,1	// Welding Mask
 IG_Mask,2297,10	// Goblin Mask
 IG_Mask,5005,10	// Gas Mask
-IG_Mask,5086,10	// Alarm Mask
+//IG_Mask,5086,1	// Alarm Mask
 IG_Mask,5087,10	// Poker Face
 IG_Mask,5088,10	// Surprised Mask
 IG_Mask,5089,10	// Annoyed Mask
-IG_Mask,5090,10	// Goblin Leader Mask
-IG_Mask,5121,1	// Zherlthsh Mask
-IG_Mask,5176,2	// Hahoe Mask
+//IG_Mask,5090,1	// Goblin Leader Mask
+//IG_Mask,5121,1	// Zherlthsh Mask
+//IG_Mask,5176,2	// Hahoe Mask
 // Accessory Box
 IG_Accesory,2601,10	// Ring
 IG_Accesory,2602,11	// Earring
