@@ -895,7 +895,7 @@ Body:
       NoAuction: true
     Script: |
       bonus bVit,1;
-      if (Class == Job_Swordman)
+      if (BaseJob == Job_Swordman)
          bonus bDef,20;      
   - Id: 2765
     AegisName: Novice_Figure
@@ -3304,6 +3304,19 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bLuk,4;      
+  - Id: 4073
+    AegisName: Pirate_Skel_Card
+    Name: Pirate Skeleton Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      skill "SM_BASH",6;      
   - Id: 5110
     AegisName: Baby_Pacifier
     Name: Baby Pacifier
@@ -4687,7 +4700,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 0
+    Defense: 7
     Jobs:
       All: true
       Novice: false
@@ -4698,7 +4711,6 @@ Body:
     View: 75
     Script: |
       bonus bCritical,1;
-      bonus bDef,-10;
   - Id: 5808
     AegisName: Diabolus_Helmet
     Name: Dark Bacilium
@@ -4916,7 +4928,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 7
     Locations:
       Head_Low: true
       Head_Mid: true
@@ -4929,7 +4941,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 7
     Locations:
       Head_Low: true
       Head_Mid: true
@@ -4942,7 +4954,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 1
+    Defense: 7
     Locations:
       Head_Low: true
       Head_Mid: true
@@ -7724,7 +7736,7 @@ Body:
       NoAuction: true
     Script: |
       bonus bLuk,1;
-      if (Class == Job_Merchant)
+      if (BaseJob == Job_Merchant)
          bonus bCritical,5;      
   - Id: 2305
     AegisName: Adventure_Suit
@@ -7768,7 +7780,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 0
+    Defense: 7
     Jobs:
       All: true
       Novice: true
