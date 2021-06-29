@@ -2989,7 +2989,7 @@ Body:
     View: 51
     Script: |
       bonus2 bSubRace,RC_Undead,10;
-      bonus2 bAddRace,RC_Undead,3+getrefine();
+      bonus2 bAddRace,RC_Undead,2+getrefine();
   - Id: 18770
     AegisName: Remodel_Bongun_Hat
     Name: Improved Bongun Hat
@@ -3006,7 +3006,7 @@ Body:
     View: 139
     Script: |
       bonus2 bSubRace,RC_Demon,10;
-      bonus2 bAddRace,RC_Demon,3+getrefine();
+      bonus2 bAddRace,RC_Demon,2+getrefine();
   - Id: 18761
     AegisName: Remodel_Magician_Hat
     Name: Improved Magician Hat
