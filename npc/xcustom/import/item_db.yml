@@ -5383,7 +5383,7 @@ Body:
       bonus2 bAddEle,Ele_Holy,5; 
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      bonus2 bIgnoreMDefClassRate,Class_All,10;
       }       
   - Id: 2230
     AegisName: Gemmed_Sallet
@@ -5574,8 +5574,80 @@ Body:
       bonus2 bAddEle,Ele_Earth,5; 
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,15;
+      bonus2 bIgnoreMDefClassRate,Class_All,10;
       }                 
+  - Id: 1234
+    AegisName: Moonlight_Sword
+    Name: Moonlight Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 700
+    Attack: 100
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bMaxSPrate,10;
+      bonus bSPDrainValue,3;     
+  - Id: 13053
+    AegisName: F_Moonlight_Sword_C
+    Name: Moonlight Sword
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Attack: 100
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bSPDrainValue,3;
+      bonus bMaxSPrate,10;      
   - Id: 2294
     AegisName: Star_Dust
     Name: Stellar
