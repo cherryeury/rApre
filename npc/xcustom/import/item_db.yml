@@ -2226,6 +2226,30 @@ Body:
     View: 14
     Script: |
       bonus bMaxHP,75;     
+  - Id: 18767
+    AegisName: Enhanced_Helm_Of_Sun
+    Name: Enhanced Hat of the Sun God
+    Type: Armor
+    Buy: 20
+    Weight: 2400
+    Defense: 4
+    Slots: 1
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 99
+    Refineable: true
+    View: 138
+    Script: |
+      bonus bStr,3;
+      bonus bInt,2;
+      .@j = getrefine();
+      if (.@j>=7)
+         .@i = 1;
+      if (.@j>=9)
+         .@i = 2;
+      bonus bBaseAtk,10+(15*.@i);
+      bonus bMatk,10+(15*.@i);      
   - Id: 5003
     AegisName: Joker_Jester
     Name: Joker Jester
@@ -2235,8 +2259,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3022,9 +3046,9 @@ Body:
       Mage: true
       Monk: true
       Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -3049,9 +3073,9 @@ Body:
       Mage: true
       Monk: true
       Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -3071,9 +3095,9 @@ Body:
     Slots: 1
     Jobs:
       Mage: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3093,9 +3117,9 @@ Body:
     Defense: 0
     Jobs:
       Mage: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     Refineable: true
@@ -3715,11 +3739,12 @@ Body:
       Crusader: true
       Knight: true
       Merchant: true
-      StarGladiator: true
-      Swordman: true
-      Taekwon: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
+    EquipLevelMin: 45  
     Refineable: true
     View: 41
     Script: |
@@ -3738,11 +3763,12 @@ Body:
       Crusader: true
       Knight: true
       Merchant: true
-      StarGladiator: true
-      Swordman: true
-      Taekwon: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
+    EquipLevelMin: 45  
     Refineable: true
     View: 41
     Script: |
@@ -4496,9 +4522,9 @@ Body:
       Priest: true
       Rogue: true
       StarGladiator: true
-      Swordman: true
-      Taekwon: true
-      Thief: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -4588,8 +4614,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 45
@@ -5344,8 +5370,8 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 45
@@ -5516,8 +5542,8 @@ Body:
     Defense: 0
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 45
@@ -5535,8 +5561,8 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 45
@@ -9684,8 +9710,8 @@ Body:
     Refineable: true
     View: 153
     Script: |
-      bonus bLuk,1;
-      bonus bAgi,2;  
+      bonus bLuk,2;
+      bonus bAgi,1;  
       bonus bFlee,getrefine();       
       if (getrefine()>6)
          bonus bFlee2,2;   
@@ -10426,9 +10452,9 @@ Body:
       Priest: true
       Rogue: true
       StarGladiator: true
-      Swordman: true
-      Taekwon: true
-      Thief: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
     EquipLevelMin: 50
@@ -10608,12 +10634,12 @@ Body:
       Alchemist: true
       Blacksmith: true
       Crusader: true
-      Knight: true
-      Merchant: true
-      Swordman: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
-    EquipLevelMin: 70
+    EquipLevelMin: 45
     Refineable: true
     View: 103
     Script: |
@@ -10631,12 +10657,12 @@ Body:
       Alchemist: true
       Blacksmith: true
       Crusader: true
-      Knight: true
-      Merchant: true
-      Swordman: true
+      All: true
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
-    EquipLevelMin: 70
+    EquipLevelMin: 45
     Refineable: true
     View: 103
     Script: |
@@ -10657,10 +10683,11 @@ Body:
     Slots: 1
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
+    EquipLevelMin: 45
     Refineable: true
     View: 105
     Script: |
@@ -10674,10 +10701,11 @@ Body:
     Defense: 11
     Jobs:
       All: true
-      Novice: false
-      SuperNovice: false
+      Novice: true
+      SuperNovice: true
     Locations:
       Head_Top: true
+    EquipLevelMin: 45
     Refineable: true
     View: 105
     Script: |
