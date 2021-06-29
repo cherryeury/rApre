@@ -2951,7 +2951,7 @@ Body:
     Script: |
       bonus bLuk,2;
       if (getrefine()>=3)
-         bonus bCritical,getrefine()-2;       
+         bonus bCritical,getrefine()-3;       
   - Id: 18763
     AegisName: Remodel_Joker_Jester
     Name: Improved Joker Jester
@@ -2972,7 +2972,7 @@ Body:
       bonus bLuk,2;
       bonus bMdef,3;
       if (getrefine()>=3)
-         bCritAtkRate,getrefine()-2;   
+      bonus bCritAtkRate,(getrefine()*2)-6;    
   - Id: 18769
     AegisName: Remodel_Munak_Turban
     Name: Improved Munak Hat
@@ -9682,7 +9682,7 @@ Body:
     Refineable: true
     View: 153
     Script: |
-      bonus bLuk,1;
+      bonus bLuk,2;
       bonus bAgi,1;  
       bonus bFlee,getrefine();       
       if (getrefine()>6)
