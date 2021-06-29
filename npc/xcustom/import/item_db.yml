@@ -8000,7 +8000,7 @@ Body:
     Refineable: true
     View: 39
     Script: |
-      bonus bMdef,3;
+      bonus bFlee,3;
       bonus bStr,1;
       bonus bAgi,1;
       bonus2 bSubRace,RC_Angel,3;      
@@ -9473,7 +9473,7 @@ Body:
       bonus bStr,1;
       bonus bInt,1;
       bonus bFlee,3;
-      bonus2 bSubRace,RC_Demon,3;
+      bonus2 bSubRace,RC_Angel,3;
   - Id: 18766
     AegisName: Enhanced_Helm_Of_Angel
     Name: Enhanced Helm of Angel
@@ -9509,11 +9509,12 @@ Body:
       bonus bInt,1;
       bonus bMdef,3;
       bonus2 bSubRace,RC_Demon,3;
-      if (getrefine()>6){
-      bonus bDex,2;
-      bonus bInt,2;
-      }
-      bonus bMdef,getrefine();        
+      if (getrefine()>6)
+          bonus bDex,2;
+          bonus bInt,2;
+      if (getrefine()>9)
+          bonus bDex,2;
+          bonus bInt,2;            
   - Id: 5025
     AegisName: Helm_Of_Angel
     Name: Helm of Angel
@@ -9568,13 +9569,14 @@ Body:
     Script: |
       bonus bStr,1;
       bonus bAgi,1;
-      bonus2 bSubRace,RC_Demon,3;
+      bonus2 bSubRace,RC_Angel,3;
       bonus bFlee,3;
-      if (getrefine()>6){
-      bonus bStr,2;
-      bonus bAgi,2;
-      }
-      bonus bFlee,getrefine();     
+      if (getrefine()>6)
+          bonus bStr,2;
+          bonus bAgi,2;
+      if (getrefine()>9)
+          bonus bStr,2;
+          bonus bAgi,2;       
   - Id: 1162
     AegisName: Broad_Sword_
     Name: Broad Sword
@@ -9681,10 +9683,9 @@ Body:
     View: 153
     Script: |
       bonus bLuk,1;
-      bonus bAgi,1; 
-      if (getrefine()>=3)
-         bonus bFlee,-2;  
-      if (getrefine()>=7)
+      bonus bAgi,1;  
+      bonus bFlee,getrefine();       
+      if (getrefine()>6)
          bonus bFlee2,2;   
   - Id: 13400
     AegisName: Cutlas_
