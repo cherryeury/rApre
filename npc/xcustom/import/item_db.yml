@@ -2950,7 +2950,7 @@ Body:
     View: 15
     Script: |
       bonus bLuk,2;
-      if (getrefine()>=3)
+      if (getrefine()>=4)
          bonus bCritical,getrefine()-3;       
   - Id: 18763
     AegisName: Remodel_Joker_Jester
@@ -2971,7 +2971,7 @@ Body:
     Script: |
       bonus bLuk,2;
       bonus bMdef,3;
-      if (getrefine()>=3)
+      if (getrefine()>=4)
       bonus bCritAtkRate,(getrefine()*2)-6;    
   - Id: 18769
     AegisName: Remodel_Munak_Turban
@@ -2990,7 +2990,7 @@ Body:
     Script: |
       bonus2 bSubRace,RC_Undead,10;
       if (getrefine()>=3)        
-      bonus2 bAddRace,RC_Undead,-6(getrefine()*2);
+      bonus2 bAddRace,RC_Undead,(getrefine()*2)-6;
   - Id: 18770
     AegisName: Remodel_Bongun_Hat
     Name: Improved Bongun Hat
@@ -3008,7 +3008,7 @@ Body:
     Script: |
       bonus2 bSubRace,RC_Demon,10;
       if (getrefine()>=3)        
-      bonus2 bAddRace,RC_Demon,-6(getrefine()*2);
+      bonus2 bAddRace,RC_Demon,(getrefine()*2)-6;
   - Id: 18761
     AegisName: Remodel_Magician_Hat
     Name: Improved Magician Hat
@@ -9684,8 +9684,8 @@ Body:
     Refineable: true
     View: 153
     Script: |
-      bonus bLuk,2;
-      bonus bAgi,1;  
+      bonus bLuk,1;
+      bonus bAgi,2;  
       bonus bFlee,getrefine();       
       if (getrefine()>6)
          bonus bFlee2,2;   
