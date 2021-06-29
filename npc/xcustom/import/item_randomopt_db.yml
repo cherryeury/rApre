@@ -1,5 +1,5 @@
 # This file is a part of rAthena.
-#   Copyright(C) 2019 rAthena Development Team
+#   Copyright(C) 2021 rAthena Development Team
 #   https://rathena.org - https://github.com/rathena
 #
 # This program is free software: you can redistribute it and/or modify
@@ -32,31 +32,4 @@ Header:
   Version: 1
 
 Body:
-  - Id: 401
-    Option: VAR_ALLSTATS
-    Script: |
-      bonus bAllstats,getrandomoptinfo(ROA_VALUE);
-  - Id: 222
-    Option: ADDSKILLMDAMAGE_WATER
-    Script: |
-      bonus2 bMagicEle,Ele_Water,getrandomoptinfo(ROA_VALUE);
-  - Id: 223
-    Option: ADDSKILLMDAMAGE_GROUND
-    Script: |
-      bonus2 bMagicAtkEle,Ele_Earth,getrandomoptinfo(ROA_VALUE);
-  - Id: 224
-    Option: ADDSKILLMDAMAGE_FIRE
-    Script: |
-      bonus2 bMagicAtkEle,Ele_Fire,getrandomoptinfo(ROA_VALUE);
-  - Id: 225
-    Option: ADDSKILLMDAMAGE_WIND
-    Script: |
-      bonus2 bMagicAtkEle,Ele_Wind,getrandomoptinfo(ROA_VALUE);
-  - Id: 406
-    Option: DEF_MAGIC
-    Script: |
-      bonus bMagicAtkDef,getrandomoptinfo(ROA_VALUE);
-  - Id: 407
-    Option: DEF_LONG
-    Script: |
-      bonus bLongAtkDef,getrandomoptinfo(ROA_VALUE);        
+  []

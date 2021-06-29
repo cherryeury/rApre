@@ -877,7 +877,18 @@ Body:
       Override: 100
       NoDrop: true
     Script: |
-      autobonus "{ bonus bAspdRate,2; }",10,5000,BF_NORMAL,"{ specialeffect2 EF_ENHANCE; }";      
+      autobonus "{ bonus bAspdRate,2; }",10,5000,BF_NORMAL,"{ specialeffect2 EF_ENHANCE; }";           
+  - Id: 2765
+    AegisName: Novice_Figure
+    Name: Novice Figure
+    Type: Armor
+    Weight: 100
+    Locations:
+      Both_Accessory: true
+    Script: |
+      bonus bMaxHP,70;
+      if (BaseClass == Job_Novice || BaseClass == Job_SuperNovice)
+         bonus bMaxHP,30;
   - Id: 2766
     AegisName: Swordman_Figure
     Name: Swordman Figure
@@ -895,16 +906,12 @@ Body:
       NoAuction: true
     Script: |
       bonus bVit,1;
-      if (BaseJob == Job_Swordman)
-         bonus bDef,20;      
-  - Id: 2765
-    AegisName: Novice_Figure
-    Name: Novice Figure
+      if (BaseClass == Job_Swordman)
+         bonus bDef,20;
+  - Id: 2767
+    AegisName: Acolyte_Figure
+    Name: Acolyte Figure
     Type: Armor
-    Weight: 100
-    Jobs:
-      Novice: true
-      SuperNovice: true    
     Locations:
       Both_Accessory: true
     Trade:
@@ -917,9 +924,85 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      bonus bMaxHP,70;
-      if (BaseJob == Job_Novice || BaseJob == Job_SuperNovice)
-         bonus bMaxHP,30;              
+      bonus bInt,1;
+      if (BaseClass == Job_Acolyte)
+         bonus bMaxSP,50;
+  - Id: 2768
+    AegisName: Mage_Figure
+    Name: Mage Figure
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bInt,1;
+      if (BaseClass == Job_Mage)
+         bonus bSPrecovRate,5;
+  - Id: 2769
+    AegisName: Archer_Figure
+    Name: Archer Figure
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bDex,1;
+      if (BaseClass == Job_Archer)
+         bonus bBaseAtk,10;
+  - Id: 2770
+    AegisName: Thief_Figure
+    Name: Thief Figure
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bAgi,1;
+      if (BaseClass == Job_Thief)
+         bonus bAspdRate,3;
+  - Id: 2771
+    AegisName: Merchant_Figure
+    Name: Merchant Figure
+    Type: Armor
+    Locations:
+      Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bLuk,1;
+      if (BaseClass == Job_Merchant)
+         bonus bCritical,5; 
   - Id: 12026
     AegisName: Egg_Girl
     Name: Dano Festival Egg
@@ -2867,8 +2950,8 @@ Body:
     View: 15
     Script: |
       bonus bLuk,2;
-      if (getrefine()>=7)
-         bonus bCritical,5;      
+      if (getrefine()>=3)
+         bonus bCritical,getrefine()-2;       
   - Id: 18763
     AegisName: Remodel_Joker_Jester
     Name: Improved Joker Jester
@@ -2887,9 +2970,43 @@ Body:
     View: 89
     Script: |
       bonus bLuk,2;
-      bonus bMdef,6;
-      if (getrefine()>=7)
-         bonus bCritAtkRate,5;      
+      bonus bMdef,3;
+      if (getrefine()>=3)
+         bCritAtkRate,getrefine()-2;   
+  - Id: 18769
+    AegisName: Remodel_Munak_Turban
+    Name: Improved Munak Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Slots: 1
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    View: 51
+    Script: |
+      bonus2 bSubRace,RC_Undead,10;
+      bonus2 bAddRace,RC_Undead,3+getrefine();
+  - Id: 18770
+    AegisName: Remodel_Bongun_Hat
+    Name: Improved Bongun Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 5
+    Slots: 1
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    Refineable: true
+    View: 139
+    Script: |
+      bonus2 bSubRace,RC_Demon,10;
+      bonus2 bAddRace,RC_Demon,3+getrefine();
   - Id: 18761
     AegisName: Remodel_Magician_Hat
     Name: Improved Magician Hat
@@ -7719,25 +7836,6 @@ Body:
     EquipLevelMin: 35
     Script: |
       bonus bAgi,1;      
-  - Id: 2771
-    AegisName: Merchant_Figure
-    Name: Merchant Figure
-    Type: Armor
-    Locations:
-      Both_Accessory: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      bonus bLuk,1;
-      if (BaseJob == Job_Merchant)
-         bonus bCritical,5;      
   - Id: 2305
     AegisName: Adventure_Suit
     Name: Adventurer's Suit
@@ -9565,10 +9663,10 @@ Body:
     Refineable: true
     View: 153
     Script: |
-      bonus bAgi,2;
-      bonus bLuk,2;
-      if (getrefine()>6)
-         bonus bFlee2,3;      
+      bonus bLuk,1;
+      bonus bAgi,1;      
+      if (getrefine()>=7)
+         bonus bFlee2,getrefine()-6;   
   - Id: 13400
     AegisName: Cutlas_
     Name: Cutlus
