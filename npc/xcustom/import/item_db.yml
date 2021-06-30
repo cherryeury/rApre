@@ -13226,6 +13226,54 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Holy;
       bonus2 bAddRace,RC_Demon,5;  
+  - Id: 13052
+    AegisName: Holy_Dagger__
+    Name: Holy Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 800
+    Attack: 100
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: false
+      Archer: false
+      Assassin: true
+      BardDancer: false
+      Blacksmith: false
+      Crusader: false
+      Hunter: false
+      KagerouOboro: true
+      Knight: false
+      Mage: false
+      Merchant: false
+      Ninja: true
+      Novice: false
+      Rogue: true
+      Sage: false
+      SoulLinker: false
+      SuperNovice: false
+      Swordman: false
+      Thief: true
+      Wizard: false
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bAtkEle,Ele_Holy;
+      bonus2 bAddRace,RC_Demon,5;   
   - Id: 13050
     AegisName: Holy_Dagger__
     Name: Holy Dagger
@@ -13735,7 +13783,7 @@ Body:
     Attack: 158
     MagicAttack: 70
     Range: 1
-    Slots: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -13824,7 +13872,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 104
+    Attack: 84
     Range: 1
     Slots: 0
     Jobs:
