@@ -12937,6 +12937,52 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_Plant;
       bonus2 bAddRace,RC_Plant,15;
+      bonus2 bSubRace,RC_Plant,15;    
+  - Id: 13029
+    AegisName: Weeder_Knife__
+    Name: Weeder Knife
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Attack: 100
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bIgnoreDefRace,RC_Plant;
+      bonus2 bAddRace,RC_Plant,15;
       bonus2 bSubRace,RC_Plant,15;      
   - Id: 13030
     AegisName: Dragon_Killer_
@@ -12976,7 +13022,187 @@ Body:
     Refineable: true
     Script: |
       bonus bIgnoreDefRace,RC_Dragon;
-      bonus2 bExpAddRace,RC_Dragon,10;      
+      bonus2 bExpAddRace,RC_Dragon,10;
+  - Id: 1422
+    AegisName: Hunting_Spear
+    Name: Hunting Spear
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 20
+    Weight: 4200
+    Attack: 180
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_Brute;
+      bonus bIgnoreDefRace,RC_Player_Doram;
+      bonus3 bAddMonsterDropItem,517,RC_Brute,1000;
+      bonus3 bAutoSpell,"LK_JOINTBEAT",3,100;      
+  - Id: 1429
+    AegisName: Hunting_Spear_M
+    Name: Hunting Spear
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 20
+    Weight: 4200
+    Attack: 180
+    Range: 3
+    Slots: 2
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bIgnoreDefRace,RC_Brute;
+      bonus bIgnoreDefRace,RC_Player_Doram;
+      bonus3 bAddMonsterDropItem,517,RC_Brute,1000;
+      bonus3 bAutoSpell,"LK_JOINTBEAT",3,100;      
+  - Id: 1399
+    AegisName: Slaughter
+    Name: Slaughter
+    Type: Weapon
+    SubType: 2hAxe
+    Buy: 20
+    Weight: 2500
+    Attack: 120
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 44
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+      bonus bIgnoreDefRace,RC_Brute;
+      bonus2 bComaRace,RC_Brute,40;
+      bonus bIgnoreDefRace,RC_Player_Doram;
+      bonus2 bComaRace,RC_Player_Doram,40;     
+  - Id: 1399
+    AegisName: Slaughter__
+    Name: Slaughter
+    Type: Weapon
+    SubType: 2hAxe
+    Buy: 20
+    Weight: 2500
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 44
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+      bonus bIgnoreDefRace,RC_Brute;
+      bonus2 bComaRace,RC_Brute,40;
+      bonus bIgnoreDefRace,RC_Player_Doram;
+      bonus2 bComaRace,RC_Player_Doram,40;     
+  - Id: 1134
+    AegisName: Scissores_Sword
+    Name: Caesar's Sword
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 700
+    Attack: 140
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_Plant,25;
+      bonus bIgnoreDefRace,RC_Plant;      
+  - Id: 13433
+    AegisName: Scissores_Sword__
+    Name: Caesar's Sword
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 700
+    Attack: 140
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_Plant,25;
+      bonus bIgnoreDefRace,RC_Plant;    
   - Id: 1244
     AegisName: Holy_Dagger
     Name: Holy Dagger
@@ -12984,7 +13210,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 800
-    Attack: 110
+    Attack: 100
     Range: 1
     Jobs:
       Assassin: true
@@ -12999,7 +13225,55 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Holy;
-      bonus2 bAddRace,RC_Demon,5;     
+      bonus2 bAddRace,RC_Demon,5;  
+  - Id: 13050
+    AegisName: Holy_Dagger__
+    Name: Holy Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 800
+    Attack: 100
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: false
+      Archer: false
+      Assassin: true
+      BardDancer: false
+      Blacksmith: false
+      Crusader: false
+      Hunter: false
+      KagerouOboro: true
+      Knight: false
+      Mage: false
+      Merchant: false
+      Ninja: true
+      Novice: false
+      Rogue: true
+      Sage: false
+      SoulLinker: false
+      SuperNovice: false
+      Swordman: false
+      Thief: true
+      Wizard: false
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false 
+    Script: |
+      bonus bAtkEle,Ele_Holy;
+      bonus2 bAddRace,RC_Demon,5;        
   - Id: 1478
     AegisName: Ahlspiess
     Name: Ahlspiess
@@ -13022,7 +13296,40 @@ Body:
       bonus bIgnoreDefClass,Class_Boss;
       bonus2 bAddRace,RC_DemiHuman,10;
       bonus2 bAddRace,RC_Player_Human,10;
-      bonus3 bAutoSpell,"KN_PIERCE",5,30;    
+      bonus3 bAutoSpell,"KN_PIERCE",5,30;  
+  - Id: 1488
+    AegisName: Ahlspiess_C
+    Name: Ahlspiess
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 20
+    Weight: 1000
+    Attack: 120
+    Range: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 65
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bIgnoreDefClass,Class_Normal;
+      bonus bIgnoreDefClass,Class_Boss;
+      bonus2 bAddRace,RC_DemiHuman,10;
+      bonus2 bAddRace,RC_Player_Human,10;
+      bonus3 bAutoSpell,"KN_PIERCE",5,30;       
   - Id: 1415
     AegisName: Skewer
     Name: Brocca
@@ -13030,7 +13337,7 @@ Body:
     SubType: 1hSpear
     Buy: 20
     Weight: 850
-    Attack: 110
+    Attack: 100
     Range: 3
     Jobs:
       Crusader: true
@@ -13044,6 +13351,38 @@ Body:
     Script: |
       bonus bIgnoreDefClass,Class_Normal;
       bonus2 bAddEle,Ele_Neutral,25; 
+  - Id: 1424
+    AegisName: Skewer_C
+    Name: Brocca
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 20
+    Weight: 850
+    Attack: 100
+    Range: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 48
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bIgnoreDefClass,Class_Normal;
+      bonus2 bAddEle,Ele_Neutral,25;     
   - Id: 1724
     AegisName: Dragon_Wing
     Name: Dragon Wing
@@ -13051,7 +13390,7 @@ Body:
     SubType: Bow
     Buy: 20
     Weight: 1200
-    Attack: 110
+    Attack: 100
     Range: 5
     Jobs:
       Archer: true
@@ -13066,7 +13405,40 @@ Body:
     Refineable: true
     Script: |
       bonus3 bAddMonsterDropItem,1765,RC_Dragon,300;
-      bonus bIgnoreDefRace,RC_Dragon;      
+      bonus bIgnoreDefRace,RC_Dragon;  
+  - Id: 18118
+    AegisName: Dragon_Wing__
+    Name: Dragon Wing
+    Type: Weapon
+    SubType: Bow
+    Buy: 20
+    Weight: 1200
+    Attack: 100
+    Range: 5
+    Slots: 2
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 60
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: true
+    Script: |
+      bonus3 bAddMonsterDropItem,1765,RC_Dragon,300;
+      bonus bIgnoreDefRace,RC_Dragon;     
   - Id: 1233
     AegisName: Exercise
     Name: Exorciser
@@ -13076,6 +13448,44 @@ Body:
     Weight: 700
     Attack: 100
     Range: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bIgnoreDefRace,RC_Demon;
+      bonus2 bSubRace,RC_Demon,5;
+      bonus2 bSubRace,RC_DemiHuman,-10;
+      bonus2 bSubRace,RC_Player_Human,-10;   
+  - Id: 13054
+    AegisName: Exercise___
+    Name: Exorciser
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Attack: 100
+    Range: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -13165,7 +13575,56 @@ Body:
       bonus bIgnoreDefRace,RC_Player_Human;
       bonus2 bSubRace,RC_DemiHuman,10;
       bonus2 bSubRace,RC_Player_Human,10;
-      bonus2 bSubRace,RC_Demon,-10;      
+      bonus2 bSubRace,RC_Demon,-10; 
+  - Id: 13021
+    AegisName: Combat_Knife_C
+    Name: Combat Knife
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Attack: 100
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bIgnoreDefRace,RC_DemiHuman;
+      bonus bIgnoreDefRace,RC_Player_Human;
+      bonus2 bSubRace,RC_DemiHuman,10;
+      bonus2 bSubRace,RC_Player_Human,10;
+      bonus2 bSubRace,RC_Demon,-10;     
   - Id: 1471
     AegisName: Hell_Fire
     Name: Hellfire
@@ -13268,6 +13727,53 @@ Body:
     Script: |
       bonus bCritical,30;
       bonus3 bAddMonsterDropItem,517,RC_Brute,5000;
+  - Id: 13051
+    AegisName: Mama's_Knife__
+    Name: Kitchen Knife
+    Type: Weapon
+    SubType: Dagger
+    Attack: 158
+    MagicAttack: 70
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: false
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true      
+    Script: |
+      bonus bCritical,30;
+      bonus3 bAddMonsterDropItem,517,RC_Brute,5000;      
   - Id: 1269
     AegisName: Inverse_Scale
     Name: Inverse Scale
@@ -13347,6 +13853,53 @@ Body:
     Refineable: true
     Script: |
       bonus bAllStats,1;      
+  - Id: 13083
+    AegisName: Princess_Knife__
+    Name: Princess Knife
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 400
+    Attack: 84
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: false
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: false
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 1
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      bonus bAllStats,1;   
   - Id: 4417
     AegisName: Ice_Titan_Card
     Name: Ice Titan Card

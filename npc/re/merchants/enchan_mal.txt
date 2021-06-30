@@ -74,17 +74,17 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 	// callsub L_Socket,<cost multiplier>,<4-x enchants possible>;
 	switch(.@equip_type) {	//  Check weapon type first to speed up the checks.
 	case 1:	// Daggers
-		switch(@mal_equip_id) {
-			case 1224: callsub L_Socket,1,2; case 13031: callsub L_Socket,1,2;     // Sword_Breaker
+		switch(@mal_equip_id) { case 1224: callsub L_Socket,1,2; case 13031: callsub L_Socket,1,2;     // Sword_Breaker
 			case 1225: callsub L_Socket,1,2; case 13032: callsub L_Socket,1,2; 	 // Mail_Breaker
-			case 13002: callsub L_Socket,1,2; case 13019: callsub L_Socket,1,2; // Ginnungagap 
-			case 1227: callsub L_Socket,1,2; case 1229: callsub L_Socket,1,2;  // Weeder_Knife // Mama's_Knife
+			case 13002: callsub L_Socket,1,2; // Ginnungagap 
+			case 1227: callsub L_Socket,1,2;  // Weeder_Knife 
+			case 1229: callsub L_Socket,1,2;  // Mama's_Knife
 			case 13001: callsub L_Socket,1,2; // Dragon_Killer
-			case 1232: callsub L_Socket,1,2;  case 13033: callsub L_Socket,1,2; 	// Assasin_Dagger
-			case 1233: callsub L_Socket,1,2; case 1235: callsub L_Socket,1,2;	// Exercise
-			case 1236: callsub L_Socket,1,2;  case 13018: callsub L_Socket,1,2;	// Sucsamad
+			case 1232: callsub L_Socket,1,2; 	// Assasin_Dagger
+			case 1233: callsub L_Socket,1,2; case 1235: callsub L_Socket,1,2;	// Exercise // Azoth
+			case 1236: callsub L_Socket,1,2; 	// Sucsamad
 			case 1237: callsub L_Socket,1,2; case 13009: callsub L_Socket,1,2;	// Grimtooth_ // Kamaitachi
-			case 1240: callsub L_Socket,1,2;	// Princess_Knife
+			case 1240: callsub L_Socket,1,2; 	// Princess_Knife
 			case 1241: callsub L_Socket,1,2;	// Cursed_Dagger
 			case 1242: callsub L_Socket,1,2;	// Counter_Dagger
 			case 1244: callsub L_Socket,1,2;	// Holy_Dagger
@@ -94,7 +94,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1223: callsub L_Socket,2,2;	// Forturn_Sword
 			case 1228: callsub L_Socket,2,2;	// Combat_Knife
 			case 1234: callsub L_Socket,2,2;	// Moonlight_Sword
-			case 1230: callsub L_Socket,4,2; case 13017: callsub L_Socket,4,2;	// House_Auger
+			case 1230: callsub L_Socket,4,2; 	// House_Auger
 			case 1231: callsub L_Socket,4,2;	// Bazerald
 			case 13062: callsub L_Socket,4,2;	// Ancient_Dagger
 		}
@@ -102,13 +102,13 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 	case 16:	// Katars
 		switch(@mal_equip_id) {
 			case 1271: callsub L_Socket,1,2;	// Blood_Tears
-			case 1263: callsub L_Socket,1,2;	// Unholy_Touch
+			case 1263: callsub L_Socket,1,2; case 28003: callsub L_Socket,1,2;	// Unholy_Touch
 			case 1270: callsub L_Socket,1,2;	// Drill_Katar
 			case 1284: callsub L_Socket,1,2;	// Krishna
 			case 1285: callsub L_Socket,1,2;	// Cakram
 			case 1268: callsub L_Socket,2,2;	// Wild_Beast_Claw
 			case 1269: callsub L_Socket,2,2; case 1297: callsub L_Socket,2,2;	// Inverse_Scale
-			case 1265: callsub L_Socket,2,2;	// Bloody_Roar
+			case 1265: callsub L_Socket,2,2; case 28005: callsub L_Socket,2,2;	// Bloody_Roar
 			case 1261: callsub L_Socket,4,2;	// Infiltrator
 			case 1266: callsub L_Socket,4,2;	// Infiltrator_
 			case 28010: callsub L_Socket,4,2;	// Juliette_D._Rachel
@@ -125,7 +125,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1364: callsub L_Socket,1,2;	// Great_Axe
 			case 1365: callsub L_Socket,1,2;	// Sabbath
 			case 1385: callsub L_Socket,1,2;	// Bradium_Stonehammer
-			case 1367: callsub L_Socket,1,2;	// Slaughter
+			case 1367: callsub L_Socket,1,2; case 1399: callsub L_Socket,1,2;	// Slaughter
 			case 1368: callsub L_Socket,1,2;	// Tomahawk
 			case 1387: callsub L_Socket,2,2;	// Giant_Axe
 			case 1369: callsub L_Socket,2,2;	// Guillotine
@@ -139,9 +139,9 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		break;
 	case 2:	// 1-H Swords
 		switch(@mal_equip_id) {
-			case 1131: callsub L_Socket,1,2;	// Ice_Falchon
-			case 1133: callsub L_Socket,1,2;	// Fire_Brand
-			case 1134: callsub L_Socket,1,2;	// Scissores_Sword
+			case 1131: callsub L_Socket,1,2; case 13436: callsub L_Socket,1,2;	// Ice_Falchon
+			case 1133: callsub L_Socket,1,2; case 13435: callsub L_Socket,1,2;	// Fire_Brand
+			case 1134: callsub L_Socket,1,2; case 13433: callsub L_Socket,1,2;	// Scissores_Sword
 			case 1135: callsub L_Socket,1,2;	// Cutlas
 			case 13400: callsub L_Socket,1,2;	// Cutlas_
 			case 1136: callsub L_Socket,1,2;	// Solar_Sword
@@ -195,9 +195,9 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1416: callsub L_Socket,1,2;	// Tjungkuletti
 			case 1418: callsub L_Socket,1,2;	// Gungnir_
 			case 1433: callsub L_Socket,2,2;	// Imperial_Spear
-			case 1415: callsub L_Socket,2,2;	// Skewer
+			case 1415: callsub L_Socket,2,2; case 1424: callsub L_Socket,2,2;	// Skewer
 			case 1421: callsub L_Socket,2,2;	// Battle_Hook
-			case 1422: callsub L_Socket,4,2;	// Hunting_Spear
+			case 1422: callsub L_Socket,4,2; case 1429: callsub L_Socket,4,2;	// Hunting_Spear
 			// case 1447: callsub L_Socket,?,3;	// Poison_Forged_Spear
 		}
 		break;
@@ -212,7 +212,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 			case 1474: callsub L_Socket,1,2;	// Gae_Bolg
 			case 1476: callsub L_Socket,1,2;	// Crescent_Scythe_
 			case 1477: callsub L_Socket,1,2;	// Spectral_Spear
-			case 1478: callsub L_Socket,1,2;	// Ahlspiess
+			case 1478: callsub L_Socket,1,2; case 1488: callsub L_Socket,1,2;	// Ahlspiess
 			case 1479: callsub L_Socket,1,2;	// Spectral_Spear_
 			case 1480: callsub L_Socket,1,2;	// Gae_Bolg_
 			case 1481: callsub L_Socket,1,3;	// Zephyrus_
@@ -263,7 +263,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		switch(@mal_equip_id) {
 			case 1557: callsub L_Socket,1,2;	// Book_Of_The_Apocalypse
 			case 1558: callsub L_Socket,1,2;	// Girl's_Diary
-			case 1559: callsub L_Socket,1,2;	// Legacy_Of_Dragon
+			case 1559: callsub L_Socket,1,2; case 1589: callsub L_Socket,1,2;	// Legacy_Of_Dragon
 			case 1561: callsub L_Socket,1,2;	// Hardback
 			case 1562: callsub L_Socket,1,2;	// Bible_Of_Battlefield
 			case 1565: callsub L_Socket,4,2;	// Death_Note
@@ -282,7 +282,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		switch(@mal_equip_id) {
 			case 1719: callsub L_Socket,1,2;	// Bow_Of_Roguemaster
 			case 1722: callsub L_Socket,1,2;	// Balistar
-			case 1724: callsub L_Socket,1,2;	// Dragon_Wing
+			case 1724: callsub L_Socket,1,2; case 18118: callsub L_Socket,1,2;	// Dragon_Wing
 			case 1725: callsub L_Socket,1,2;	// Bow_Of_Minstrel
 			case 1727: callsub L_Socket,1,2;	// Balistar_
 			case 1737: callsub L_Socket,1,2;	// Ixion_Wing
