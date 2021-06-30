@@ -11068,7 +11068,7 @@ Body:
     SubType: Katar
     Buy: 20
     Weight: 1250
-    Attack: 151
+    Attack: 140
     Range: 1
     Jobs:
       Assassin: true
@@ -11089,7 +11089,7 @@ Body:
     SubType: Katar
     Buy: 20
     Weight: 1250
-    Attack: 151
+    Attack: 140
     Range: 1
     Slots: 1
     Jobs:
@@ -11342,8 +11342,8 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
-    Range: 1
+    Attack: 130
+    Range: 2
     Jobs:
       Assassin: true
     Locations:
@@ -11361,7 +11361,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -11380,7 +11380,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -11599,6 +11599,178 @@ Body:
          bonus3 bAddMonsterDropItem,12043,RC_Brute,500;
          bonus3 bAddMonsterDropItem,12069,RC_Fish,500;
       }      
+  - Id: 1553
+    AegisName: Book_Of_Billows
+    Name: Book of Billows
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus bMatk,90;
+  - Id: 1554
+    AegisName: Book_Of_Mother_Earth
+    Name: Book of Mother Earth
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+      bonus bMatk,90;
+  - Id: 1555
+    AegisName: Book_Of_Blazing_Sun
+    Name: Book of the Blazing Sun
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+      bonus bMatk,90;
+  - Id: 1556
+    AegisName: Book_Of_Gust_Of_Wind
+    Name: Book of Gust of Wind
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;   
+      bonus bMatk,90;
+  - Id: 1568
+    AegisName: Book_Of_Billows_
+    Name: Book of Billows
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      bonus bMatk,90;
+  - Id: 1569
+    AegisName: Book_Of_Mother_Earth_
+    Name: Book of Mother Earth
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+      bonus bMatk,90;
+  - Id: 1570
+    AegisName: Book_Of_Blazing_Sun_
+    Name: Book of Blazing Sun
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+      bonus bMatk,90;
+  - Id: 1571
+    AegisName: Book_Of_Gust_Of_Wind_
+    Name: Book of Gust of Wind
+    Type: Weapon
+    SubType: Book
+    Buy: 35000
+    Weight: 750
+    Attack: 90
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;      
+      bonus bMatk,90;
   - Id: 1258
     AegisName: Katar_Of_Raging_Blaze
     Name: Katar of Raging Blaze
@@ -11606,7 +11778,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -11625,7 +11797,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Slots: 2
     Jobs:
@@ -11645,7 +11817,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Slots: 2
     Jobs:
@@ -11665,7 +11837,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Slots: 2
     Jobs:
@@ -11685,7 +11857,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 125
+    Attack: 130
     Range: 1
     Slots: 2
     Jobs:
@@ -11698,6 +11870,79 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Water;
       bonus2 bAddEff,Eff_Freeze,500;      
+  - Id: 28004
+    AegisName: Ghoul_Leg_
+    Name: Sharpened Legbone of Ghoul
+    Type: Weapon
+    SubType: Katar
+    Buy: 52500
+    Weight: 1700
+    Attack: 150
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Undead;  
+  - Id: 1123
+    AegisName: Haedonggum
+    Name: Haedonggum
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 50000
+    Weight: 900
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bStr,2;      
+  - Id: 1128
+    AegisName: Hae_Dong_Gum_
+    Name: Haedonggum
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 50000
+    Weight: 900
+    Attack: 120
+    Range: 1
+    Slots: 2
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bStr,2;      
   - Id: 1483
     AegisName: Ivory_Lance
     Name: Ivory Lance
@@ -11786,9 +12031,8 @@ Body:
     Buy: 20
     Weight: 600
     Attack: 100
-    MagicAttack: 0
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Alchemist: true
       Assassin: true
@@ -11810,6 +12054,86 @@ Body:
       bonus2 bAddEff2,Eff_Freeze,20;
       skill "MG_COLDBOLT",3;
       bonus3 bAutoSpell,"MG_COLDBOLT",3,100;          
+  - Id: 1818
+    AegisName: Magma_Fist
+    Name: Magma Fist
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 650
+    Attack: 105
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"SA_FLAMELAUNCHER",5,10;
+  - Id: 1819
+    AegisName: Icicle_Fist
+    Name: Icicle Fist
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 650
+    Attack: 105
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"SA_FROSTWEAPON",5,10;
+  - Id: 1820
+    AegisName: Electric_Fist
+    Name: Electric Fist
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 650
+    Attack: 105
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"SA_LIGHTNINGLOADER",5,10;
+  - Id: 1821
+    AegisName: Seismic_Fist
+    Name: Seismic Fist
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 650
+    Attack: 105
+    Range: 1
+    Slots: 2
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus3 bAutoSpell,"SA_SEISMICWEAPON",5,10;      
   - Id: 13046
     AegisName: Krieg
     Name: Krierg
@@ -11861,7 +12185,8 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       skill "MG_FIREBOLT",3;
-      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;    
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;  
+      bonus bMatk,75;
   - Id: 13435
     AegisName: Fire_Brand_
     Name: Fireblend
@@ -11870,9 +12195,8 @@ Body:
     Buy: 20
     Weight: 500
     Attack: 100
-    MagicAttack: 0
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Alchemist: true
       Assassin: true
@@ -11891,7 +12215,167 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       skill "MG_FIREBOLT",3;
-      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;      
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;   
+  - Id: 1914
+    AegisName: Guitar_Of_Passion
+    Name: Burning Passion Guitar
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 900
+    Attack: 80
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+  - Id: 1915
+    AegisName: Guitar_Of_Blue_Solo
+    Name: Loner's Guitar
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 900
+    Attack: 80
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+  - Id: 1916
+    AegisName: Guitar_Of_Vast_Land
+    Name: Green Acre Guitar
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 900
+    Attack: 80
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+  - Id: 1917
+    AegisName: Guitar_Of_Gentle_Breeze
+    Name: Gentle Breeze Guitar
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 900
+    Attack: 80
+    Range: 1
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;   
+  - Id: 1965
+    AegisName: Whip_Of_Red_Flame
+    Name: Red Flame Whip
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 80
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+  - Id: 1966
+    AegisName: Whip_Of_Ice_Piece
+    Name: Icicle Whip
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 80
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+  - Id: 1967
+    AegisName: Whip_Of_Earth
+    Name: Gaia Whip
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 80
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Earth;
+  - Id: 1971
+    AegisName: Electric_Wire
+    Name: Electric Wire
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 700
+    Attack: 80
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 30
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;      
   - Id: 13034
     AegisName: Twilight_Desert
     Name: Desert Twilight
