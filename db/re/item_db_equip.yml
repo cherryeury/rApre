@@ -5305,6 +5305,7 @@ Body:
       Novice: true
       SuperNovice: true
       Swordman: true
+      Thief: true
     Locations:
       Right_Hand: true
     WeaponLevel: 1
@@ -5330,6 +5331,7 @@ Body:
       Novice: true
       SuperNovice: true
       Swordman: true
+      Thief: true
     Locations:
       Right_Hand: true
     WeaponLevel: 1
@@ -5354,6 +5356,7 @@ Body:
       Novice: true
       SuperNovice: true
       Swordman: true
+      Thief: true
     Locations:
       Right_Hand: true
     WeaponLevel: 1

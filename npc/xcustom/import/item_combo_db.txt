@@ -29,3 +29,11 @@
 18540:5066,{ bonus bAspd,1; bonus bAspdRate,9; bonus2 bSPLossRate,3,2000; }
 13034:13035,{ bonus bHit,getequiprefinerycnt(EQI_HAND_R)+getequiprefinerycnt(EQI_HAND_L); }
 1720:1751,{ bonus bLongAtkRate,5; }
+1612:2235,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1614:2235,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1612:5165,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1614:5165,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1612:2234,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1614:2234,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1612:5164,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1614:5164,{ bonus2 bMagicAddEle,Ele_earth,10; }
