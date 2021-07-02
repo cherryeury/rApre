@@ -3470,6 +3470,7 @@ Body:
     Weight: 900
     Attack: 140
     Range: 1
+    Slots: 0
     Jobs:
       Alchemist: true
       Assassin: true
@@ -3489,17 +3490,17 @@ Body:
       bonus bAtkEle,Ele_Ghost;
       bonus3 bSPVanishRate,3,30,BF_WEAPON;
       bonus bSPDrainValue,-1;
-      bonus bUnbreakableWeapon;      
-  - Id: 13409
-    AegisName: Immaterial_Sword___
-    Name: Immaterial Sword
+      bonus bUnbreakableWeapon;     
+      bonus2 bAddEff,Eff_Silence,1500;
+  - Id: 13469
+    AegisName: Illusion_Immaterial_Sword
+    Name: Illusion Immaterial Sword
     Type: Weapon
     SubType: 1hSword
-    Buy: 20
     Weight: 900
-    Attack: 140
+    Attack: 180
     Range: 1
-    Slots: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Assassin: true
@@ -3513,23 +3514,18 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 40
+    EquipLevelMin: 120
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: false
-      NoTrade: false
-      NoSell: false
-      NoCart: false
-      NoStorage: false
-      NoGuildStorage: false
-      NoMail: false
-      NoAuction: false
     Script: |
-      bonus bAtkEle,Ele_Ghost;
-      bonus3 bSPVanishRate,3,30,BF_WEAPON;
+      .@r = getrefine();
       bonus bSPDrainValue,-1;
-      bonus bUnbreakableWeapon;       
+      bonus bUnbreakableWeapon;
+      if (.@r >= 12) {
+         .@val = 20;
+      }
+      bonus2 bSPVanishRate,(80+(20*.@r)),(30+.@val);
+      bonus bAtkEle,Ele_Ghost;     
+      bonus2 bAddEff,Eff_Silence,1500;
   - Id: 1526
     AegisName: Slash
     Name: Slash
@@ -10309,7 +10305,7 @@ Body:
     Range: 3
     Slots: 2
     Jobs:
-     Crusader: true
+      Crusader: true
       Knight: true
       Swordman: true
     Classes:
