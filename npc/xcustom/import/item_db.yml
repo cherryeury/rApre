@@ -3836,9 +3836,10 @@ Body:
     SubType: 2hStaff
     Buy: 50000
     Weight: 800
-    Attack: 90
-    MagicAttack: 125
+    Attack: 125
+    MagicAttack: 180
     Range: 1
+    Slots: 1
     Jobs:
       Acolyte: true
       Mage: true
@@ -11678,6 +11679,27 @@ Body:
     Locations:
       Costume_Head_Top: true
     View: 108      
+  - Id: 1551
+    AegisName: Bible
+    Name: Bible
+    Type: Weapon
+    SubType: Book
+    Buy: 60000
+    Weight: 1000
+    Attack: 115
+    Range: 1
+    Slots: 2
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus bMatk,55;    
   - Id: 5017
     AegisName: Bone_Helm
     Name: Bone Helm

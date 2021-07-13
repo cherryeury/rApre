@@ -1394,9 +1394,9 @@ Body:
         Rate: 100
       - Item: Posionous_Canine
         Rate: 4500
-      - Item: Scarlet_Lance
+      - Item: Lance_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Scale_Of_Snakes
         Rate: 750
       - Item: Scales_Shell
@@ -4770,7 +4770,7 @@ Body:
         Rate: 2425
       - Item: Star_Sparkling
         Rate: 2
-      - Item: Scarlet_Rod
+      - Item: Arc_Wand_
         Rate: 50
       - Item: Star_Crumb
         Rate: 15
@@ -4964,9 +4964,9 @@ Body:
         Rate: 1
       - Item: Oridecon_Stone
         Rate: 27
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Desert_Wolf_Card
         Rate: 1
         StealProtected: true
@@ -5502,9 +5502,9 @@ Body:
         Rate: 1
       - Item: Ragamuffin_Cape
         Rate: 1
-      - Item: Scarlet_Bible
+      - Item: Bible
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Elixir_Bandage
         Rate: 5
       - Item: Cookbook07
@@ -6374,9 +6374,9 @@ Body:
         Rate: 2668
       - Item: Zargon
         Rate: 100
-      - Item: Scarlet_Twohand_Axe
+      - Item: Two_Handed_Axe_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Doram_Only_Cape
         Rate: 20
       - Item: Doram_Only_Suit
@@ -6749,9 +6749,9 @@ Body:
         Rate: 1
       - Item: Fire_Scroll_3_5
         Rate: 50
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Chrystal_Pumps
         Rate: 1
       - Item: Marionette_Doll
@@ -7281,12 +7281,12 @@ Body:
         Rate: 1250
       - Item: Elunium_Stone
         Rate: 10
-      - Item: Scarlet_Saber
+      - Item: Flamberge_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Dagger
+        StealProtected: true
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Undershirt
         Rate: 50
       - Item: Pasana_Card
@@ -7330,9 +7330,9 @@ Body:
         Rate: 70
       - Item: White_Herb
         Rate: 500
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Petti_Tail
         Rate: 50
       - Item: Aloebera
@@ -9506,15 +9506,15 @@ Body:
         Rate: 1
       - Item: Biotite
         Rate: 750
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Saber
+        StealProtected: true
+      - Item: Flamberge_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Twohand_Sword
+        StealProtected: true
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Runstone_Mystic
         Rate: 150
       - Item: Oridecon
@@ -9562,12 +9562,12 @@ Body:
         Rate: 25
       - Item: Muscovite
         Rate: 750
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Saber
+        StealProtected: true
+      - Item: Flamberge_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Steel
         Rate: 60
       - Item: Oridecon
@@ -9616,9 +9616,9 @@ Body:
         Rate: 40
       - Item: Scimiter_
         Rate: 30
-      - Item: Scarlet_Saber
+      - Item: Flamberge_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Steel
         Rate: 60
       - Item: Oridecon
@@ -10100,9 +10100,9 @@ Body:
         Rate: 58
       - Item: Great_Nature
         Rate: 3
-      - Item: Scarlet_Spear
+      - Item: Pike_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Seed_Of_Yggdrasil
         Rate: 5
       - Item: Stem_Worm_Card
@@ -10198,9 +10198,9 @@ Body:
         Rate: 1
       - Item: Battle_Hook
         Rate: 13
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Elunium
         Rate: 185
       - Item: Ebone_Armor
@@ -11933,9 +11933,9 @@ Body:
         Rate: 1
       - Item: Prohibition_Red_Candle
         Rate: 1
-      - Item: Scarlet_Katar
+      - Item: Jamadhar_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Injustice_Card
         Rate: 1
         StealProtected: true
@@ -12024,9 +12024,9 @@ Body:
         Rate: 2668
       - Item: Soft_Feather
         Rate: 60
-      - Item: Scarlet_Lance
+      - Item: Lance_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Pole_Axe
         Rate: 1
       - Item: Oridecon
@@ -13446,9 +13446,9 @@ Body:
         Rate: 80
       - Item: Sg_White_Potion_Box
         Rate: 2
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Velum_Claymore
         Rate: 1
       - Item: Sandstorm
@@ -13687,7 +13687,7 @@ Body:
         Rate: 1750
       - Item: Soft_Feather
         Rate: 1250
-      - Item: Scarlet_Bow
+      - Item: Kakkung_
         Rate: 50
       - Item: Staff_Of_Soul
         Rate: 1
@@ -13738,9 +13738,9 @@ Body:
         Rate: 3153
       - Item: Zargon
         Rate: 600
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Mighty_Staff
         Rate: 1
       - Item: Panacea
@@ -13978,9 +13978,9 @@ Body:
         Rate: 2275
       - Item: Elunium_Stone
         Rate: 125
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Gold
         Rate: 1
       - Item: Spirit_Chain
@@ -14035,9 +14035,9 @@ Body:
         Rate: 60
       - Item: White_Herb
         Rate: 775
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Dark_Illusion_Card
         Rate: 1
         StealProtected: true
@@ -14081,7 +14081,7 @@ Body:
         Rate: 5
       - Item: Fruit_Of_Mastela
         Rate: 6
-      - Item: Scarlet_Staff
+      - Item: Mage_Wand_
         Rate: 50
       - Item: Scarlet_Jewel
         Rate: 10
@@ -14409,9 +14409,9 @@ Body:
     Drops:
       - Item: Nose_Ring
         Rate: 2207
-      - Item: Scarlet_Twohand_Axe
+      - Item: Two_Handed_Axe_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Beef_Head_Meat
         Rate: 500
       - Item: Oridecon
@@ -14716,9 +14716,9 @@ Body:
         Rate: 20
       - Item: Honey
         Rate: 425
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Solider_Card
         Rate: 1
         StealProtected: true
@@ -14903,10 +14903,10 @@ Body:
         Rate: 50
       - Item: Crystal_Mirror
         Rate: 1
-      - Item: Scarlet_Lance
+      - Item: Lance_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Staff
+        StealProtected: true
+      - Item: Mage_Wand_
         Rate: 50
       - Item: Magician_Hat
         Rate: 1
@@ -17295,9 +17295,9 @@ Body:
         Rate: 1250
       - Item: Oridecon_Stone
         Rate: 150
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Hypnotist's_Staff_
         Rate: 3
       - Item: Fine_Sand
@@ -17494,9 +17494,9 @@ Body:
         Rate: 700
       - Item: Water_Of_Darkness
         Rate: 500
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Violy_Card
         Rate: 1
         StealProtected: true
@@ -18090,9 +18090,9 @@ Body:
         Rate: 5
       - Item: Hakujin
         Rate: 3
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Miyabi_Ningyo_Card
         Rate: 1
         StealProtected: true
@@ -18132,9 +18132,9 @@ Body:
         Rate: 1750
       - Item: Broken_Wine_Vessel
         Rate: 2750
-      - Item: Scarlet_Huuma
+      - Item: Huuma_Giant_Wheel_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Fruit_Of_Mastela
         Rate: 75
       - Item: Huuma_Giant_Wheel_
@@ -18239,9 +18239,9 @@ Body:
         Rate: 1250
       - Item: Powder_Of_Butterfly
         Rate: 2750
-      - Item: Scarlet_Knuckle
+      - Item: Claw_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Lariat
         Rate: 1
       - Item: Strange_Foxtail
@@ -18442,9 +18442,9 @@ Body:
         Rate: 2400
       - Item: Mandragora_Flowerpot
         Rate: 400
-      - Item: Scarlet_Wire
+      - Item: Whip_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Strawberry
         Rate: 500
       - Item: Wild_Ginseng_Card
@@ -18540,12 +18540,12 @@ Body:
         Rate: 690
       - Item: Oridecon
         Rate: 5
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 50
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Wire
+        StealProtected: true
+      - Item: Whip_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Holy_Scroll_1_5
         Rate: 50
       - Item: Oriental_Lute
@@ -21827,9 +21827,9 @@ Body:
         Rate: 2250
       - Item: Little_Blacky_Ghost
         Rate: 200
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Spike
         Rate: 1
       - Item: Li_Me_Mang_Ryang_Card
@@ -23790,9 +23790,9 @@ Body:
         Rate: 2425
       - Item: Broken_Armor_Piece
         Rate: 1500
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Bastard_Sword_
         Rate: 4
       - Item: Chain_Mail_
@@ -24722,7 +24722,7 @@ Body:
         Rate: 500
       - Item: Screw
         Rate: 100
-      - Item: Scarlet_Revolver
+      - Item: Jungle_Carbine_
         Rate: 50
       - Item: Jubilee
         Rate: 2500
@@ -24999,9 +24999,9 @@ Body:
     Drops:
       - Item: Jubilee
         Rate: 2500
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Insect_Feeler
         Rate: 500
       - Item: Single_Cell
@@ -25392,7 +25392,7 @@ Body:
         Rate: 2500
       - Item: Super_Novice_Hat_
         Rate: 25
-      - Item: Scarlet_Revolver
+      - Item: Jungle_Carbine_
         Rate: 50
       - Item: Mole_Card
         Rate: 1
@@ -25529,9 +25529,9 @@ Body:
         Rate: 2100
       - Item: Stuffed_Doll
         Rate: 50
-      - Item: Scarlet_Knuckle
+      - Item: Claw_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Honey
         Rate: 250
       - Item: Tantanmen
@@ -26869,9 +26869,9 @@ Body:
       - Item: Crystal_Jewel__
         Rate: 2000
     Drops:
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 500
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Gift_Box
         Rate: 2500
       - Item: Old_Blue_Box
@@ -28704,9 +28704,9 @@ Body:
         Rate: 500
       - Item: Manteau_
         Rate: 3
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 25
       - Item: Retribution_Card
@@ -28754,9 +28754,9 @@ Body:
         Rate: 500
       - Item: Harp_
         Rate: 25
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 25
       - Item: Solace_Card
@@ -30062,9 +30062,9 @@ Body:
         Rate: 5
       - Item: Smoke_Powder
         Rate: 100
-      - Item: Scarlet_Knuckle
+      - Item: Claw_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Elunium
         Rate: 5
       - Item: Curved_Sword
@@ -33492,9 +33492,9 @@ Body:
         Rate: 1500
       - Item: Doom_Slayer
         Rate: 15
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Zweihander
         Rate: 1
       - Item: Platinum_Shield
@@ -33541,7 +33541,7 @@ Body:
         Rate: 1500
       - Item: Luna_Bow
         Rate: 15
-      - Item: Scarlet_Bow
+      - Item: Kakkung_
         Rate: 50
       - Item: Sniping_Suit
         Rate: 10
@@ -39398,9 +39398,9 @@ Body:
         Rate: 1750
       - Item: Forest_Orb
         Rate: 5
-      - Item: Scarlet_Spear
+      - Item: Pike_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Naga_Card
         Rate: 1
         StealProtected: true
@@ -42228,9 +42228,9 @@ Body:
         Rate: 1
       - Item: Plate_Armor_
         Rate: 1
-      - Item: Scarlet_Katar
+      - Item: Jamadhar_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Headless_Mule_Card
         Rate: 1
         StealProtected: true
@@ -42272,9 +42272,9 @@ Body:
         Rate: 500
       - Item: Oridecon_Stone
         Rate: 20
-      - Item: Scarlet_Knuckle
+      - Item: Claw_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Jaguar_Card
         Rate: 1
         StealProtected: true
@@ -47243,9 +47243,9 @@ Body:
         Rate: 500
       - Item: Twilight_Desert
         Rate: 1
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Siorava_Card
         Rate: 1
         StealProtected: true
@@ -52629,9 +52629,9 @@ Body:
         Rate: 10
       - Item: Beef_Head_Meat
         Rate: 100
-      - Item: Scarlet_Twohand_Axe
+      - Item: Two_Handed_Axe_
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Lemon
         Rate: 300
       - Item: Grave_Minorous_Card
@@ -53024,9 +53024,9 @@ Body:
         Rate: 3800
       - Item: Old_Card_Album
         Rate: 400
-      - Item: Scarlet_Bible
+      - Item: Bible
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Yggdrasilberry
         Rate: 3000
       - Item: Grave_Amon_Ra_Card
@@ -59307,12 +59307,12 @@ Body:
         Rate: 3450
       - Item: Oridecon
         Rate: 25
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Wire
+        StealProtected: true
+      - Item: Whip_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Holy_Scroll_1_5
         Rate: 250
       - Item: Oriental_Lute
@@ -59494,9 +59494,9 @@ Body:
         Rate: 3500
       - Item: Water_Of_Darkness
         Rate: 2500
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Violy_Card
         Rate: 5
         StealProtected: true
@@ -59542,9 +59542,9 @@ Body:
         Rate: 3500
       - Item: Water_Of_Darkness
         Rate: 2500
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Violy_Card
         Rate: 5
         StealProtected: true
@@ -59590,9 +59590,9 @@ Body:
         Rate: 3500
       - Item: Water_Of_Darkness
         Rate: 2500
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Violy_Card
         Rate: 5
         StealProtected: true
@@ -60328,9 +60328,9 @@ Body:
         Rate: 10000
       - Item: Broken_Armor_Piece
         Rate: 7500
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Bastard_Sword_
         Rate: 20
       - Item: Chain_Mail_
@@ -60427,9 +60427,9 @@ Body:
         Rate: 290
       - Item: Great_Nature
         Rate: 15
-      - Item: Scarlet_Spear
+      - Item: Pike_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Seed_Of_Yggdrasil
         Rate: 25
       - Item: Stem_Worm_Card
@@ -60712,9 +60712,9 @@ Body:
         Rate: 100
       - Item: Honey
         Rate: 2125
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Solider_Card
         Rate: 5
         StealProtected: true
@@ -60853,9 +60853,9 @@ Body:
         Rate: 2500
       - Item: Harp_
         Rate: 125
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 125
       - Item: Solace_Card
@@ -61088,9 +61088,9 @@ Body:
         Rate: 6250
       - Item: Oridecon_Stone
         Rate: 750
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Hypnotist's_Staff_
         Rate: 15
       - Item: Fine_Sand
@@ -61136,9 +61136,9 @@ Body:
         Rate: 6250
       - Item: Oridecon_Stone
         Rate: 750
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Hypnotist's_Staff_
         Rate: 15
       - Item: Fine_Sand
@@ -61231,9 +61231,9 @@ Body:
         Rate: 400
       - Item: Sg_White_Potion_Box
         Rate: 10
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Velum_Claymore
         Rate: 5
       - Item: Sandstorm
@@ -61279,9 +61279,9 @@ Body:
         Rate: 400
       - Item: Sg_White_Potion_Box
         Rate: 10
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Velum_Claymore
         Rate: 5
       - Item: Sandstorm
@@ -62448,9 +62448,9 @@ Body:
         Rate: 2500
       - Item: Manteau_
         Rate: 15
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 125
       - Item: Retribution_Card
@@ -62497,9 +62497,9 @@ Body:
         Rate: 2500
       - Item: Manteau_
         Rate: 15
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 125
       - Item: Retribution_Card
@@ -62546,9 +62546,9 @@ Body:
         Rate: 2500
       - Item: Manteau_
         Rate: 15
-      - Item: Scarlet_Twohand_Sword
+      - Item: Two_Hand_Sword_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cursed_Seal
         Rate: 125
       - Item: Retribution_Card
@@ -62825,7 +62825,7 @@ Body:
         Rate: 5
       - Item: Goast_Chill
         Rate: 5
-      - Item: Scarlet_Rod
+      - Item: Arc_Wand_
         Rate: 250
       - Item: Silk_Robe_
         Rate: 25
@@ -63189,9 +63189,9 @@ Body:
     Drops:
       - Item: Jubilee
         Rate: 10000
-      - Item: Scarlet_Dagger
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Insect_Feeler
         Rate: 2500
       - Item: Single_Cell
@@ -63848,9 +63848,9 @@ Body:
         Rate: 350
       - Item: White_Herb
         Rate: 2500
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Petti_Tail
         Rate: 250
       - Item: Aloebera
@@ -63896,9 +63896,9 @@ Body:
         Rate: 350
       - Item: White_Herb
         Rate: 2500
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Petti_Tail
         Rate: 250
       - Item: Aloebera
@@ -64080,12 +64080,12 @@ Body:
         Rate: 6250
       - Item: Elunium_Stone
         Rate: 50
-      - Item: Scarlet_Saber
+      - Item: Flamberge_
         Rate: 250
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Dagger
+        StealProtected: true
+      - Item: Damascus_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Undershirt
         Rate: 250
       - Item: Pasana_Card
@@ -64177,10 +64177,10 @@ Body:
         Rate: 250
       - Item: Crystal_Mirror
         Rate: 5
-      - Item: Scarlet_Lance
+      - Item: Lance_
         Rate: 250
-        RandomOptionGroup: Group_5
-      - Item: Scarlet_Staff
+        StealProtected: true
+      - Item: Mage_Wand_
         Rate: 250
       - Item: Magician_Hat
         Rate: 5
@@ -65247,7 +65247,7 @@ Body:
         Rate: 10000
       - Item: Super_Novice_Hat_
         Rate: 125
-      - Item: Scarlet_Revolver
+      - Item: Jungle_Carbine_
         Rate: 250
       - Item: Mole_Card
         Rate: 5
@@ -65296,9 +65296,9 @@ Body:
         Rate: 25
       - Item: Hakujin
         Rate: 15
-      - Item: Scarlet_Viollin
+      - Item: Guh_Moon_Goh_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Miyabi_Ningyo_Card
         Rate: 5
         StealProtected: true
@@ -65707,7 +65707,7 @@ Body:
         Rate: 2500
       - Item: Screw
         Rate: 500
-      - Item: Scarlet_Revolver
+      - Item: Jungle_Carbine_
         Rate: 250
       - Item: Jubilee
         Rate: 10000
@@ -65754,7 +65754,7 @@ Body:
         Rate: 2500
       - Item: Screw
         Rate: 500
-      - Item: Scarlet_Revolver
+      - Item: Jungle_Carbine_
         Rate: 250
       - Item: Jubilee
         Rate: 10000
@@ -65984,9 +65984,9 @@ Body:
         Rate: 5
       - Item: Fire_Scroll_3_5
         Rate: 250
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Chrystal_Pumps
         Rate: 5
       - Item: Marionette_Doll
@@ -66261,9 +66261,9 @@ Body:
     Drops:
       - Item: Nose_Ring
         Rate: 10000
-      - Item: Scarlet_Twohand_Axe
+      - Item: Two_Handed_Axe_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Beef_Head_Meat
         Rate: 2500
       - Item: Oridecon
@@ -66765,9 +66765,9 @@ Body:
         Rate: 10000
       - Item: Little_Blacky_Ghost
         Rate: 1000
-      - Item: Scarlet_Mace
+      - Item: Stunner_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Spike
         Rate: 5
       - Item: Li_Me_Mang_Ryang_Card
@@ -67423,9 +67423,9 @@ Body:
         Rate: 5
       - Item: Prohibition_Red_Candle
         Rate: 5
-      - Item: Scarlet_Katar
+      - Item: Jamadhar_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Injustice_Card
         Rate: 5
         StealProtected: true
@@ -68759,7 +68759,7 @@ Body:
         Rate: 25
       - Item: Fruit_Of_Mastela
         Rate: 30
-      - Item: Scarlet_Staff
+      - Item: Mage_Wand_
         Rate: 250
       - Item: Scarlet_Jewel
         Rate: 50
@@ -69544,9 +69544,9 @@ Body:
         Rate: 5
       - Item: Ragamuffin_Cape
         Rate: 5
-      - Item: Scarlet_Bible
+      - Item: Bible
         Rate: 50
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Cookbook07
         Rate: 10
       - Item: White_Herb
@@ -71626,12 +71626,12 @@ Body:
         Rate: 6250
       - Item: Powder_Of_Butterfly
         Rate: 10000
-      - Item: Scarlet_Knuckle
+      - Item: Claw_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Lariat
         Rate: 5
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Strange_Foxtail
         Rate: 30
       - Item: Detail_Model_Foxtail
@@ -71720,7 +71720,7 @@ Body:
         Rate: 10000
       - Item: Star_Sparkling
         Rate: 10
-      - Item: Scarlet_Rod
+      - Item: Arc_Wand_
         Rate: 250
       - Item: Star_Crumb
         Rate: 75
@@ -72591,9 +72591,9 @@ Body:
         Rate: 500
       - Item: Posionous_Canine
         Rate: 10000
-      - Item: Scarlet_Lance
+      - Item: Lance_
         Rate: 250
-        RandomOptionGroup: Group_5
+        StealProtected: true
       - Item: Scale_Of_Snakes
         Rate: 3750
       - Item: Scales_Shell
