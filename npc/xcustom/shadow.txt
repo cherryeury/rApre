@@ -231,7 +231,7 @@ OnMenu:
 			mes "Congratulation, and thank you!";
 			mes "I already have the monster data thanks to you.";
 			mes "Here's the promised shadow items!";
-			erasequest 12;
+			erasequest 13;
 			getitem 1,1;
 			set shadow_q,2;
 			close;

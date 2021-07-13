@@ -4601,7 +4601,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->luk += 10;
 	}
 	if((skill=pc_checkskill(sd,MC_VENDING))>0)
-		base_status->luk += skill;
+		base_status->cri += skill;
 	if(pc_checkskill(sd,BS_HILTBINDING)>0)
 		base_status->str++;
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)

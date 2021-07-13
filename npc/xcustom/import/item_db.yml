@@ -883,8 +883,20 @@ Body:
     Name: Novice Figure
     Type: Armor
     Weight: 100
+    Jobs:
+      Novice: true
+      SuperNovice: true    
     Locations:
       Both_Accessory: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true      
     Script: |
       bonus bMaxHP,70;
       if (BaseClass == Job_Novice || BaseClass == Job_SuperNovice)
