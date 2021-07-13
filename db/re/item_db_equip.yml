@@ -81708,6 +81708,7 @@ Body:
     Buy: 20
     Locations:
       Costume_Head_Top: true
+      Costume_Head_Mid: true
     EquipLevelMin: 1
     View: 468
     Script: |
@@ -81720,7 +81721,6 @@ Body:
     Locations:
       Costume_Head_Top: true
       Costume_Head_Mid: true
-      Costume_Head_Low: true
     EquipLevelMin: 1
     View: 515
     Script: |
