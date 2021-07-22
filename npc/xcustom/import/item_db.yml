@@ -8450,10 +8450,11 @@ Body:
     Name: Kindle Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 10000
+    Buy: 50000
     Weight: 600
-    Attack: 39
+    Attack: 55
     Range: 1
+    Slots: 3
     Jobs:
       Alchemist: true
       Archer: true
@@ -8482,16 +8483,17 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus bMatk,20;         
+      bonus bMatk,28;         
   - Id: 1248
     AegisName: Obsidian_Dagger
     Name: Obsidian Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 10000
+    Buy: 50000
     Weight: 600
-    Attack: 39
+    Attack: 55
     Range: 1
+    Slots: 3
     Jobs:
       Alchemist: true
       Archer: true
@@ -8526,10 +8528,11 @@ Body:
     Name: Fisherman's Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 10000
+    Buy: 50000
     Weight: 600
-    Attack: 39
+    Attack: 55
     Range: 1
+    Slots: 3
     Jobs:
       Alchemist: true
       Archer: true
@@ -8564,10 +8567,11 @@ Body:
     Name: Jujube Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 10000
+    Buy: 50000
     Weight: 600
-    Attack: 39
+    Attack: 55
     Range: 1
+    Slots: 3
     Jobs:
       Alchemist: true
       Archer: true
@@ -12604,7 +12608,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 2
     Jobs:
       Assassin: true
@@ -12623,7 +12627,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -12642,7 +12646,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -12932,9 +12936,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -12946,7 +12950,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1554
     AegisName: Book_Of_Mother_Earth
     Name: Book of Mother Earth
@@ -12954,9 +12958,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -12968,7 +12972,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Earth;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1555
     AegisName: Book_Of_Blazing_Sun
     Name: Book of the Blazing Sun
@@ -12976,9 +12980,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -12990,7 +12994,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1556
     AegisName: Book_Of_Gust_Of_Wind
     Name: Book of Gust of Wind
@@ -13000,7 +13004,7 @@ Body:
     Weight: 750
     Attack: 90
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -13012,7 +13016,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;   
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1568
     AegisName: Book_Of_Billows_
     Name: Book of Billows
@@ -13108,7 +13112,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
     Jobs:
       Assassin: true
@@ -13127,9 +13131,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Assassin: true
     Locations:
@@ -13147,9 +13151,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Assassin: true
     Locations:
@@ -13167,9 +13171,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Assassin: true
     Locations:
@@ -13187,9 +13191,9 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 140
+    Attack: 130
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Assassin: true
     Locations:
@@ -13740,7 +13744,7 @@ Body:
     Weight: 900
     Attack: 80
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Male
@@ -13760,7 +13764,7 @@ Body:
     Weight: 900
     Attack: 80
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Male
@@ -13780,7 +13784,7 @@ Body:
     Weight: 900
     Attack: 80
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Male
@@ -13800,7 +13804,7 @@ Body:
     Weight: 900
     Attack: 80
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Male
@@ -13818,9 +13822,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 120
+    Attack: 80
     Range: 2
-    Slots: 0
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13838,9 +13842,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 120
+    Attack: 80
     Range: 2
-    Slots: 0
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13858,9 +13862,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 120
+    Attack: 80
     Range: 2
-    Slots: 0
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13878,9 +13882,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 120
+    Attack: 80
     Range: 2
-    Slots: 0
+    Slots: 3
     Jobs:
       BardDancer: true
     Gender: Female
