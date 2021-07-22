@@ -12609,7 +12609,8 @@ Body:
     Buy: 45000
     Weight: 1200
     Attack: 130
-    Range: 2
+    Range: 1
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -12629,6 +12630,7 @@ Body:
     Weight: 1200
     Attack: 130
     Range: 1
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -12648,6 +12650,7 @@ Body:
     Weight: 1200
     Attack: 130
     Range: 1
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
@@ -12938,7 +12941,7 @@ Body:
     Weight: 750
     Attack: 45
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12960,7 +12963,7 @@ Body:
     Weight: 750
     Attack: 45
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12982,7 +12985,7 @@ Body:
     Weight: 750
     Attack: 45
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -13002,9 +13005,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -13024,9 +13027,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -13038,7 +13041,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1569
     AegisName: Book_Of_Mother_Earth_
     Name: Book of Mother Earth
@@ -13046,9 +13049,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -13060,7 +13063,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Earth;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1570
     AegisName: Book_Of_Blazing_Sun_
     Name: Book of Blazing Sun
@@ -13068,9 +13071,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -13082,7 +13085,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1571
     AegisName: Book_Of_Gust_Of_Wind_
     Name: Book of Gust of Wind
@@ -13090,9 +13093,9 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 90
+    Attack: 45
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Priest: true
       Sage: true
@@ -13104,7 +13107,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;      
-      bonus bMatk,90;
+      bonus bMatk,45;
   - Id: 1258
     AegisName: Katar_Of_Raging_Blaze
     Name: Katar of Raging Blaze
@@ -13114,6 +13117,7 @@ Body:
     Weight: 1200
     Attack: 130
     Range: 1
+    Slots: 2
     Jobs:
       Assassin: true
     Locations:
