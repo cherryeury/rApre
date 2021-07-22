@@ -31,3 +31,6 @@
 Header:
   Type: CREATE_ARROW_DB
   Version: 1
+
+Body:
+  []

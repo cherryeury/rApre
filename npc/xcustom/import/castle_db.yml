@@ -16,21 +16,20 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 ###########################################################################
-# Summonable Monsters Database
+# Guild Castles Database
 ###########################################################################
 #
-# Summonable Monsters Settings
+# Guild Castles Settings
 #
 ###########################################################################
-# - Group                   Monster random group name. "MOBG_" is appended to the name during the parsing.
-#   Default                 Monster AegisName summoned by default when the summon fails.
-#   Summon:                 List of Summonable Monsters.
-#     - Mob                 Monster AegisName.
-#       Rate                Summon rate of Mob (from [0-1000000]).
+# - Id                Unique ID of the castle.
+#   Map               Map name to be considered as the castle map.
+#   Name              Name of the castle (used by scripts and guardian name tags).
+#   Npc               NPC unique name to invoke ::OnGuildBreak on, when a occupied castle is abandoned during guild break.
 ###########################################################################
 
 Header:
-  Type: MOB_SUMMONABLE_DB
+  Type: CASTLE_DB
   Version: 1
 
 Body:

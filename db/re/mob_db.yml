@@ -14081,7 +14081,7 @@ Body:
         Rate: 5
       - Item: Fruit_Of_Mastela
         Rate: 6
-      - Item: Mage_Wand_
+      - Item: Velum_Arc_Wand
         Rate: 50
       - Item: Scarlet_Jewel
         Rate: 10
@@ -14906,7 +14906,7 @@ Body:
       - Item: Lance_
         Rate: 50
         StealProtected: true
-      - Item: Mage_Wand_
+      - Item: Velum_Arc_Wand
         Rate: 50
       - Item: Magician_Hat
         Rate: 1
@@ -64180,7 +64180,7 @@ Body:
       - Item: Lance_
         Rate: 250
         StealProtected: true
-      - Item: Mage_Wand_
+      - Item: Velum_Arc_Wand
         Rate: 250
       - Item: Magician_Hat
         Rate: 5
@@ -68759,7 +68759,7 @@ Body:
         Rate: 25
       - Item: Fruit_Of_Mastela
         Rate: 30
-      - Item: Mage_Wand_
+      - Item: Velum_Arc_Wand
         Rate: 250
       - Item: Scarlet_Jewel
         Rate: 50

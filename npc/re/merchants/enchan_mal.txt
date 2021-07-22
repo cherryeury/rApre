@@ -101,7 +101,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		break;
 	case 16:	// Katars
 		switch(@mal_equip_id) {
-			case 1271: callsub L_Socket,1,2;	// Blood_Tears
+			case 1271: callsub L_Socket,1,2; case 28004: callsub L_Socket,1,2; 	// Blood_Tears // Legbone
 			case 1263: callsub L_Socket,1,2; case 28003: callsub L_Socket,1,2;	// Unholy_Touch
 			case 1270: callsub L_Socket,1,2;	// Drill_Katar
 			case 1284: callsub L_Socket,1,2;	// Krishna
@@ -261,7 +261,7 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		break;
 	case 15:	// Books
 		switch(@mal_equip_id) {
-			case 1557: callsub L_Socket,1,2;	// Book_Of_The_Apocalypse
+			case 1557: callsub L_Socket,1,2; case 1552: callsub L_Socket,1,2;	// Book_Of_The_Apocalypse // Tablet
 			case 1558: callsub L_Socket,1,2;	// Girl's_Diary
 			case 1559: callsub L_Socket,1,2; case 1589: callsub L_Socket,1,2;	// Legacy_Of_Dragon
 			case 1561: callsub L_Socket,1,2;	// Hardback

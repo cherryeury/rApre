@@ -3195,7 +3195,7 @@ Body:
     Script: |
       bonus bCritical,10;
       if (readparam(bStr)>=80)
-         bonus bBreakArmorRate,500;
+         bonus bCritical,10;
   - Id: 21006
     AegisName: Altas_Weapon__
     Name: Atlas Weapon
@@ -3227,7 +3227,7 @@ Body:
     Script: |
       bonus bCritical,10;
       if (readparam(bStr)>=80)
-         bonus bBreakArmorRate,500;   
+         bonus bCritical,10; 
   - Id: 1237
     AegisName: Grimtooth_
     Name: Grimtooth
@@ -3482,7 +3482,7 @@ Body:
     Weight: 900
     Attack: 140
     Range: 1
-    Slots: 0
+    Slots: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -3829,8 +3829,53 @@ Body:
       bonus bAgi,2;
       bonus bFlee,10;
       bonus bVariableCastrate,-getrefine(); 
+      bonus3 bAutoSpell,"SA_SEISMICWEAPON",5,10;
+  - Id: 1822
+    AegisName: Combo_Battle_Glove
+    Name: Combo Battle Glove
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 500
+    Attack: 60
+    Range: 1
+    Slots: 4
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"MO_TRIPLEATTACK",15;
+      bonus2 bSkillAtk,"MO_CHAINCOMBO",15;
+      bonus2 bSkillAtk,"MO_COMBOFINISH",20; 
+  - Id: 13303
+    AegisName: Huuma_Blaze
+    Name: Huuma Blaze Shuriken
+    Type: Weapon
+    SubType: Huuma
+    Buy: 78000
+    Weight: 1500
+    Attack: 185
+    Range: 1
+    Jobs:
+      KagerouOboro: true
+      Ninja: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+      bonus bDex,-2;
+      bonus3 bAutoSpell,"MG_FIREBALL",5,30;
+      bonus bMatk,50;
   - Id: 2016
-    AegisName: Mage_Wand_
+    AegisName: Velum_Arc_Wand
     Name: Mage Wand
     Type: Weapon
     SubType: 2hStaff
@@ -10023,6 +10068,8 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       bonus3 bAutoSpell,"MG_FIREBALL",5,100;
+      bonus bStr,3;    
+      bonus bMatk,50;
   - Id: 1614
     AegisName: Blessed_Wand
     Name: Wand of Occult
@@ -10408,6 +10455,33 @@ Body:
       bonus bAtkEle,Ele_Dark;
       bonus bMaxHPrate,-2;
       bonus2 bAddEff,Eff_Bleeding,2000;      
+  - Id: 1830
+    AegisName: Sura_Rampage
+    Name: Sura Rampage
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 500
+    Attack: 142
+    Range: 1
+    Slots: 1
+    Jobs:
+      Monk: true
+    Classes:
+      All_Third: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 102
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"SR_EARTHSHAKER",25;
+      bonus2 bSkillAtk,"SR_SKYNETBLOW",25;
+      bonus bUseSPrate,5;
+      .@r = getrefine();
+      if (.@r>6) {
+         bonus bUseSPrate,-1*(.@r-6);
+      }      
   - Id: 13405
     AegisName: Curved_Sword
     Name: Curved Sword
@@ -10828,7 +10902,7 @@ Body:
     SubType: 2hSword
     Buy: 20
     Weight: 1600
-    Attack: 160
+    Attack: 120
     Range: 1
     Jobs:
       Crusader: true
@@ -10841,8 +10915,10 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus bDef,10;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,100;    
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,1000; 
+      skill "MG_LIGHTNINGBOLT",3;
+      bonus bInt,5;
+      bonus bMatk,50;  
   - Id: 1178
     AegisName: Schweizersabel_
     Name: Schweizersabel
@@ -10850,7 +10926,7 @@ Body:
     SubType: 2hSword
     Buy: 20
     Weight: 1600
-    Attack: 160
+    Attack: 120
     Range: 1
     Slots: 2
     Jobs:
@@ -10864,8 +10940,47 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus bDef,10;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,100;      
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,1000; 
+      skill "MG_LIGHTNINGBOLT",3;
+      bonus bInt,5;
+      bonus bMatk,50;      
+  - Id: 13414
+    AegisName: Elemental_Sword
+    Name: Elemental Sword
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 1200
+    Attack: 105
+    MagicAttack: 95
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bStr,2;
+      bonus bInt,4;
+      bonus bDex,1;
+      bonus2 bAddEle,Ele_Neutral,10;
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,50;
+      bonus4 bAutoSpellOnSkill,"MG_COLDBOLT","MG_FIREBOLT",3,1000;
+      bonus4 bAutoSpellOnSkill,"MG_FIREBOLT","MG_LIGHTNINGBOLT",3,1000;
+      bonus4 bAutoSpellOnSkill,"MG_LIGHTNINGBOLT","WZ_EARTHSPIKE",3,1000;      
   - Id: 13003
     AegisName: Coward
     Name: Cowardice Blade
@@ -12346,6 +12461,7 @@ Body:
       bonus bAtkEle,Ele_Wind;
       bonus2 bAddEff,Eff_Silence,500;
       bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100; 
+      bonus bMatk,50;
   - Id: 2514
     AegisName: Pauldron
     Name: Pauldron
@@ -12488,7 +12604,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 2
     Jobs:
       Assassin: true
@@ -12507,7 +12623,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Jobs:
       Assassin: true
@@ -12526,7 +12642,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Jobs:
       Assassin: true
@@ -12715,7 +12831,46 @@ Body:
     Refineable: true
     Script: |
       bonus3 bAddEffOnSkill,"RG_RAID",Eff_Poison,2000;
-      autobonus "{ bonus2 bAddClass,Class_All,10; }",5,5000,BF_WEAPON|BF_SHORT,"{ specialeffect2 EF_POTION_BERSERK; }";         
+      autobonus "{ bonus2 bAddClass,Class_All,10; }",5,5000,BF_WEAPON|BF_SHORT,"{ specialeffect2 EF_POTION_BERSERK; }";     
+  - Id: 1814
+    AegisName: Berserk
+    Name: Berserk
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 500
+    Attack: 120
+    Range: 1
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bAspdRate,15;  
+  - Id: 1816
+    AegisName: Berserk_
+    Name: Berserk
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 500
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bAspdRate,15;      
   - Id: 1544
     AegisName: Lunakaligo
     Name: Lunakaligo
@@ -12745,6 +12900,31 @@ Body:
          bonus3 bAddMonsterDropItem,12043,RC_Brute,500;
          bonus3 bAddMonsterDropItem,12069,RC_Fish,500;
       }      
+  - Id: 1552
+    AegisName: Tablet
+    Name: Tablet
+    Type: Weapon
+    SubType: Book
+    Buy: 51000
+    Weight: 800
+    Attack: 125
+    Range: 1
+    Slots: 1
+    Jobs:
+      Priest: true
+      Sage: true
+      StarGladiator: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 27
+    Refineable: true
+    Script: |
+      bonus2 bAddEle,Ele_Shadow,5;
+      bonus2 bAddEle,Ele_Ghost,5;
+      bonus2 bAddEle,Ele_Poison,5;
+      bonus2 bAddEle,Ele_Undead,5;
+      bonus2 bSubEle,Ele_Shadow,15;
   - Id: 1553
     AegisName: Book_Of_Billows
     Name: Book of Billows
@@ -12754,6 +12934,7 @@ Body:
     Weight: 750
     Attack: 90
     Range: 1
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12775,6 +12956,7 @@ Body:
     Weight: 750
     Attack: 90
     Range: 1
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12796,6 +12978,7 @@ Body:
     Weight: 750
     Attack: 90
     Range: 1
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12817,6 +13000,7 @@ Body:
     Weight: 750
     Attack: 90
     Range: 1
+    Slots: 2
     Jobs:
       Priest: true
       Sage: true
@@ -12924,7 +13108,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Jobs:
       Assassin: true
@@ -12943,7 +13127,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Slots: 2
     Jobs:
@@ -12963,7 +13147,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Slots: 2
     Jobs:
@@ -12983,7 +13167,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Slots: 2
     Jobs:
@@ -13003,7 +13187,7 @@ Body:
     SubType: Katar
     Buy: 45000
     Weight: 1200
-    Attack: 130
+    Attack: 140
     Range: 1
     Slots: 2
     Jobs:
@@ -13015,7 +13199,25 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,500;      
+      bonus2 bAddEff,Eff_Freeze,500;  
+  - Id: 1260
+    AegisName: Ghoul_Leg
+    Name: Sharpened Legbone of Ghoul
+    Type: Weapon
+    SubType: Katar
+    Buy: 52500
+    Weight: 1700
+    Attack: 160
+    Range: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Undead;      
   - Id: 28004
     AegisName: Ghoul_Leg_
     Name: Sharpened Legbone of Ghoul
@@ -13023,7 +13225,7 @@ Body:
     SubType: Katar
     Buy: 52500
     Weight: 1700
-    Attack: 150
+    Attack: 160
     Range: 1
     Slots: 2
     Jobs:
@@ -13138,7 +13340,8 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Wind;
       bonus2 bAddEff,Eff_Silence,500;
-      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100;      
+      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100;    
+      bonus bMatk,50;      
   - Id: 1131
     AegisName: Ice_Falchon
     Name: Ice Falchion
@@ -13146,7 +13349,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 600
-    Attack: 100
+    Attack: 120
     Range: 1
     Jobs:
       Alchemist: true
@@ -13165,10 +13368,34 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,1000;
-      bonus2 bAddEff2,Eff_Freeze,20;
       skill "MG_COLDBOLT",3;
-      bonus3 bAutoSpell,"MG_COLDBOLT",3,100; 
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,1000;
+      bonus bInt,5;
+      bonus bMatk,50;  
+  - Id: 1813
+    AegisName: Kaiser_Knuckle
+    Name: Kaiser Knuckle
+    Type: Weapon
+    SubType: Knuckle
+    Buy: 20
+    Weight: 450
+    Attack: 110
+    Range: 1
+    Jobs:
+      Monk: true
+      Priest: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;
+      bonus2 bAddRace,RC_Undead,10;
+      bonus2 bAddEle,Ele_Water,15;
+      bonus2 bAddEle,Ele_Earth,15;
+      bonus2 bAddEle,Ele_Fire,15;
+      bonus2 bAddEle,Ele_Wind,15;      
   - Id: 13436
     AegisName: Ice_Falchon_
     Name: Ice Falchion
@@ -13176,7 +13403,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 600
-    Attack: 100
+    Attack: 120
     Range: 1
     Slots: 2
     Jobs:
@@ -13196,10 +13423,10 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Water;
-      bonus2 bAddEff,Eff_Freeze,1000;
-      bonus2 bAddEff2,Eff_Freeze,20;
       skill "MG_COLDBOLT",3;
-      bonus3 bAutoSpell,"MG_COLDBOLT",3,100;          
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,1000;
+      bonus bInt,5;
+      bonus bMatk,50;          
   - Id: 1818
     AegisName: Magma_Fist
     Name: Magma Fist
@@ -13207,9 +13434,9 @@ Body:
     SubType: Knuckle
     Buy: 20
     Weight: 650
-    Attack: 105
+    Attack: 100
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Monk: true
       Priest: true
@@ -13227,9 +13454,9 @@ Body:
     SubType: Knuckle
     Buy: 20
     Weight: 650
-    Attack: 105
+    Attack: 100
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Monk: true
       Priest: true
@@ -13247,9 +13474,9 @@ Body:
     SubType: Knuckle
     Buy: 20
     Weight: 650
-    Attack: 105
+    Attack: 100
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Monk: true
       Priest: true
@@ -13267,9 +13494,9 @@ Body:
     SubType: Knuckle
     Buy: 20
     Weight: 650
-    Attack: 105
+    Attack: 100
     Range: 1
-    Slots: 2
+    Slots: 3
     Jobs:
       Monk: true
       Priest: true
@@ -13303,7 +13530,146 @@ Body:
     Refineable: true
     Script: |
       bonus3 bAddEffOnSkill,"RG_BACKSTAP",Eff_Bleeding,2000;
-      bonus2 bSkillAtk,"RG_BACKSTAP",15;      
+      bonus2 bSkillAtk,"RG_BACKSTAP",15;   
+  - Id: 1913
+    AegisName: Electronic_Guitar
+    Name: Electric Guitar
+    Type: Weapon
+    SubType: Musical
+    Buy: 20
+    Weight: 1800
+    Attack: 110
+    Range: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      skill "WZ_JUPITEL",1;
+      bonus3 bAutoSpell,"WZ_JUPITEL",1,100;
+      bonus bAtkEle,Ele_Wind;
+      bonus bInt,2;
+      bonus bAgi,1;
+      bonus bMatk,60;
+  - Id: 1270
+    AegisName: Drill_Katar
+    Name: Drill Katar
+    Type: Weapon
+    SubType: Katar
+    Buy: 20
+    Weight: 1400
+    Attack: 110
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bHit,30;
+      bonus2 bIgnoreDefClassRate,Class_All,20;      
+  - Id: 1972
+    AegisName: Electric_Eel
+    Name: Electric Eel
+    Type: Weapon
+    SubType: Whip
+    Buy: 20
+    Weight: 2000
+    Attack: 100
+    Range: 2
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Classes:
+      All_Upper: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 70
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Wind;
+      bonus bInt,2;
+      bonus bAgi,2;
+      bonus3 bAutoSpell,"WZ_JUPITEL",3,20;
+      .@r = getrefine();
+      if (.@r>0)
+         bonus3 bAutoSpell,"CG_ARROWVULCAN",.@r,50;  
+      bonus bMatk,40;         
+  - Id: 13412
+    AegisName: Twin_Edge_B
+    Name: Twin Edge of Naght Sieger
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 1500
+    Attack: 150
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Water;
+      skill "MG_FROSTDIVER",5;
+      autobonus "{ bonus bIgnoreDefClass,Class_Normal; }",50,5000,BF_NORMAL,"{ specialeffect2 EF_ENHANCE; }";
+      bonus bMatk,60; 
+  - Id: 13413
+    AegisName: Twin_Edge_R
+    Name: Twin Edge of Naght Sieger
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 1500
+    Attack: 160
+    Range: 1
+    Slots: 3
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Classes:
+      All_Upper: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 75
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Fire;
+      skill "WZ_METEOR",3;
+      autobonus "{ bonus bIgnoreDefClass,Class_Normal; }",50,5000,BF_NORMAL,"{ specialeffect2 EF_ENHANCE; }";
+      bonus bMatk,70;       
   - Id: 1133
     AegisName: Fire_Brand
     Name: Fireblend
@@ -13311,7 +13677,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 500
-    Attack: 100
+    Attack: 120
     Range: 1
     Jobs:
       Alchemist: true
@@ -13331,8 +13697,9 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       skill "MG_FIREBOLT",3;
-      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;  
-      bonus bMatk,75;
+      bonus3 bAutoSpell,"MG_FIREBOLT",3,100;
+      bonus bInt,5;
+      bonus bMatk,50;  
   - Id: 13435
     AegisName: Fire_Brand_
     Name: Fireblend
@@ -13340,7 +13707,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 500
-    Attack: 100
+    Attack: 120
     Range: 1
     Slots: 2
     Jobs:
@@ -13362,6 +13729,8 @@ Body:
       bonus bAtkEle,Ele_Fire;
       skill "MG_FIREBOLT",3;
       bonus3 bAutoSpell,"MG_FIREBOLT",3,100;   
+      bonus bInt,5;
+      bonus bMatk,50;      
   - Id: 1914
     AegisName: Guitar_Of_Passion
     Name: Burning Passion Guitar
@@ -13449,9 +13818,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 80
+    Attack: 120
     Range: 2
-    Slots: 2
+    Slots: 0
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13469,9 +13838,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 80
+    Attack: 120
     Range: 2
-    Slots: 2
+    Slots: 0
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13489,9 +13858,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 80
+    Attack: 120
     Range: 2
-    Slots: 2
+    Slots: 0
     Jobs:
       BardDancer: true
     Gender: Female
@@ -13509,9 +13878,9 @@ Body:
     SubType: Whip
     Buy: 20
     Weight: 700
-    Attack: 80
+    Attack: 120
     Range: 2
-    Slots: 2
+    Slots: 0
     Jobs:
       BardDancer: true
     Gender: Female
@@ -14035,7 +14404,7 @@ Body:
     SubType: Katar
     Buy: 20
     Weight: 1200
-    Attack: 115
+    Attack: 125
     Range: 1
     Jobs:
       Assassin: true
@@ -14765,7 +15134,8 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       bonus3 bAutoSpell,"MG_FIREBALL",5,100;
-      bonus bStr,3;      
+      bonus bStr,3;    
+      bonus bMatk,50;
   - Id: 23073
     AegisName: Angel_Poring_Boots_Box
     Name: Angel Poring Boots Box

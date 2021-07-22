@@ -16,22 +16,16 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
 ###########################################################################
-# Summonable Monsters Database
+# Guild Experience Database
 ###########################################################################
 #
-# Summonable Monsters Settings
+# Guild Experience Settings
 #
 ###########################################################################
-# - Group                   Monster random group name. "MOBG_" is appended to the name during the parsing.
-#   Default                 Monster AegisName summoned by default when the summon fails.
-#   Summon:                 List of Summonable Monsters.
-#     - Mob                 Monster AegisName.
-#       Rate                Summon rate of Mob (from [0-1000000]).
+# - Level                Level required.
+#   Exp                  Experience required to level up.
 ###########################################################################
 
 Header:
-  Type: MOB_SUMMONABLE_DB
+  Type: GUILD_EXP_DB
   Version: 1
-
-Body:
-  []
