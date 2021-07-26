@@ -3882,9 +3882,9 @@ Body:
     Buy: 50000
     Weight: 800
     Attack: 125
-    MagicAttack: 180
+    MagicAttack: 175
     Range: 1
-    Slots: 1
+    Slots: 2
     Jobs:
       Acolyte: true
       Mage: true
@@ -3895,11 +3895,11 @@ Body:
       Wizard: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 4
+    WeaponLevel: 3
     EquipLevelMin: 95
     Refineable: true
     Script: |
-      bonus bInt,3;
+      bonus bInt,5;
   - Id: 1407
     AegisName: Pike
     Name: Pike
@@ -8450,9 +8450,9 @@ Body:
     Name: Kindle Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 50000
+    Buy: 80000
     Weight: 600
-    Attack: 55
+    Attack: 60
     Range: 1
     Slots: 3
     Jobs:
@@ -8478,7 +8478,7 @@ Body:
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
     Script: |
@@ -8489,9 +8489,9 @@ Body:
     Name: Obsidian Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 50000
+    Buy: 80000
     Weight: 600
-    Attack: 55
+    Attack: 60
     Range: 1
     Slots: 3
     Jobs:
@@ -8517,7 +8517,7 @@ Body:
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
     Script: |
@@ -8528,9 +8528,9 @@ Body:
     Name: Fisherman's Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 50000
+    Buy: 80000
     Weight: 600
-    Attack: 55
+    Attack: 60
     Range: 1
     Slots: 3
     Jobs:
@@ -8556,7 +8556,7 @@ Body:
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
     Script: |
@@ -8567,9 +8567,9 @@ Body:
     Name: Jujube Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 50000
+    Buy: 80000
     Weight: 600
-    Attack: 55
+    Attack: 60
     Range: 1
     Slots: 3
     Jobs:
@@ -8595,7 +8595,7 @@ Body:
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
+    WeaponLevel: 3
     EquipLevelMin: 1
     Refineable: true
     Script: |
@@ -12939,7 +12939,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 2
     Jobs:
@@ -12961,7 +12961,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 2
     Jobs:
@@ -12983,7 +12983,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 2
     Jobs:
@@ -13005,7 +13005,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 2
     Jobs:
@@ -13027,7 +13027,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 3
     Jobs:
@@ -13049,7 +13049,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 3
     Jobs:
@@ -13071,7 +13071,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 3
     Jobs:
@@ -13093,7 +13093,7 @@ Body:
     SubType: Book
     Buy: 35000
     Weight: 750
-    Attack: 45
+    Attack: 90
     Range: 1
     Slots: 3
     Jobs:
@@ -13906,9 +13906,9 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 600
-    Attack: 130
+    Attack: 120
     Range: 1
-    Slots: 1
+    Slots: 2
     Jobs:
       Assassin: true
     Classes:
