@@ -98,7 +98,7 @@ moc_para01,52,37,3	script	86-90 Mission Board	857,{
 				mes ":: You've got a";
 				mes ":: salutary experience.";
 				erasequest .@quest;
-				getexp .@exp[.@quest-4167],0;
+				getexp .@exp[.@quest-4167],0; set Zeny,(Zeny + .@exp[.@quest-4167]/4);
 				close;
 			}
 		}
@@ -173,7 +173,7 @@ L_Quest:
 		erasequest .@quest1;
 		if (.@playtime > -1) erasequest .@quest2;
 		setquest .@quest2;
-		getexp getarg(2),0;
+		getexp getarg(2),0; set Zeny,Zeny+(getarg(2)/4);
 		close;
 	}/* else if (.@hunting == 3) {
 //		recall_completequest .@quest1

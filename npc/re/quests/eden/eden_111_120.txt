@@ -1095,7 +1095,7 @@ S_Quest:
 		erasequest getarg(0);
 	setquest getarg(1);
 	if (getarg(2,0))
-		getexp getarg(2),getarg(3);
+		getexp getarg(2),getarg(3); set zeny,zeny + getarg(2)/4;
 	return;
 S_Hunting:
 	.@total = getargcount();
@@ -1109,7 +1109,7 @@ S_Hunting:
 		case 2:
 			mes "[Mingmin]";
 			mes "You finished researching about "+ getarg(.@i+2) +". Thank you.";
-			getexp 700000,getarg(.@i+1);
+			getexp getarg(.@i+1)+100000,getarg(.@i+1); set zeny, zeny (getarg(.@i+1)+100000)/4;
 			break;
 		case 0:
 		case 1:
@@ -1134,7 +1134,7 @@ S_Gathering:
 			delitem getarg(3),getarg(4);
 			if (getarg(5,0))
 				delitem getarg(5),getarg(6);
-			getexp 700000,getarg(1);
+			getexp getarg(.@i+1)+100000,getarg(.@i+1); set zeny, zeny (getarg(.@i+1)+100000)/4;
 		}
 		else {
 			if (getarg(5,0))

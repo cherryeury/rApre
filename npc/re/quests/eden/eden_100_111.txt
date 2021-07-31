@@ -925,21 +925,21 @@ moc_para01,37,95,5	script	Gelkah#1	4_F_GELKA,{
 			mes strcharinfo(0) +"! You did a good job! There are more requests but reserve them for the other adventurers.";
 		if (para_100lv02 < 101)
 			mes "I do not think you are suitable to the request I can give. Please find other adventures.";
-		callsub S_Hunting,13003,106000,148000,"Carat";// <quest id>, <job exp if joblevel < 6>, <job exp>, <quest name>
-		callsub S_Hunting,13005,106000,148000,"Arclouse";
-		callsub S_Hunting,13007,112000,186500,"Anolian";
-		callsub S_Hunting,13009,112000,186500,"Sting";
-		callsub S_Hunting,13011,112000,252000,"Majoruros";
-		callsub S_Hunting,13013,106000,148000,"Pinguicula";
-		callsub S_Hunting,13015,112000,186500,"Luciola Vespa";
-		callsub S_Hunting,13017,106000,148000,"Desert Wolf";
-		callsub S_Hunting,13019,106000,148000,"Snowier";
-		callsub S_Hunting,13021,112000,186500,"Ice Titan";
-		callsub S_Hunting,13023,106000,148000,"Nightmare Terror";
-		callsub S_Hunting,13025,106000,148000,"Flying Deleter";
-		callsub S_Hunting,13040,112000,186500,"Loli Ruri";
-		callsub S_Hunting,13042,106000,148000,"Medusa";
-		callsub S_Hunting,13044,112000,186500,"Anubis";
+		callsub S_Hunting,13003,154000,148000,"Carat";// <quest id>, <job exp if joblevel < 6>, <job exp>, <quest name>
+		callsub S_Hunting,13005,154000,148000,"Arclouse";
+		callsub S_Hunting,13007,198400,186500,"Anolian";
+		callsub S_Hunting,13009,198400,186500,"Sting";
+		callsub S_Hunting,13011,252000,252000,"Majoruros";
+		callsub S_Hunting,13013,154000,148000,"Pinguicula";
+		callsub S_Hunting,13015,198400,186500,"Luciola Vespa";
+		callsub S_Hunting,13017,154000,148000,"Desert Wolf";
+		callsub S_Hunting,13019,198400,148000,"Snowier";
+		callsub S_Hunting,13021,154000,186500,"Ice Titan";
+		callsub S_Hunting,13023,154000,148000,"Nightmare Terror";
+		callsub S_Hunting,13025,154000,148000,"Flying Deleter";
+		callsub S_Hunting,13040,198400,186500,"Loli Ruri";
+		callsub S_Hunting,13042,154000,148000,"Medusa";
+		callsub S_Hunting,13044,198400,186500,"Anubis";
 		setarray .@quest_id[0],13004,13006,13008,130010,13012,13014,13016,13018,13020,13022,13024,13026,13041,13043,13045;
 		for ( .@i = 0; .@i < 15; .@i++ ) {
 			if (checkquest(.@quest_id[.@i],PLAYTIME) == 2) {
@@ -956,9 +956,9 @@ S_Quest:
 		getitem 6549,1;// Courtesy_Ticket
 		para_100lv02 += 1;
 		if (JobLevel < 6)
-			getexp 550000,getarg(1);
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
 		else
-			getexp 550000,getarg(2);
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
 	}
 	else {
 		next;
@@ -990,9 +990,9 @@ S_Hunting:
 		mes "I will mark you down as having completed this request.";
 		para_100lv02 += 1;
 		if (JobLevel < 6)
-			getexp 550000,getarg(1);
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
 		else
-			getexp 550000,getarg(2);
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
 		break;
 	case 0:
 	case 1:// untranslated these cases

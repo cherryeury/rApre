@@ -123,7 +123,7 @@ L_Quest:
 			mes "[Sponiac]";
 			mes "Here it is. Thank you very much. God bless you!";
 			getitem 569,getarg(4); //Novice_Potion
-			getexp getarg(2),getarg(3);
+			getexp getarg(2),getarg(3); set Zeny,Zeny +getarg(2)/4;
 			erasequest .@quest_id;
 			close;
 		}

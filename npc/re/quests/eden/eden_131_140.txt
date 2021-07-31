@@ -568,15 +568,15 @@ S_Erasequest:
 			switch( getarg(.@i+1) ) {
 			case 1:
 				mes "Did you hear the story of "+ getarg(.@i+2) +"? Thanks you. I promise to make a good song.";
-				getexp 1100000,300000;
+				getexp 800000,200000; set zeny, zeny + 800000/4;
 				break;
 			case 2:
 				mes "Is Morocc's story good enough for songs? You did a good job.";
-				getexp 1100000,200000;
+				getexp 800000,200000; zset zeny, zeny + 800000/4;
 				break;
 			case 3:
 				mes "How was your adventure? Was it fun? Please let me hear your adventure story someday.";
-				getexp 1100000,200000;
+				getexp 800000,200000; set zeny, zeny + 800000/4;
 				break;
 			}
 		}

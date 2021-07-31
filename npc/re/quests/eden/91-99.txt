@@ -100,7 +100,7 @@ moc_para01,52,35,3	script	91-99 Mission Board	857,{
 				mes ":: You've got a";
 				mes ":: salutary experience.";
 				erasequest .@quest;
-				getexp .@exp[.@quest-4181],0;
+				getexp .@exp[.@quest-4181],0; set zeny, zeny +.@exp[.@quest-4181]/4;
 				close;
 			}
 		}
@@ -190,7 +190,7 @@ L_Quest:
 		else if (JobLevel > 65 && JobLevel < 69) set .@jexp,212000;
 		else if (JobLevel == 69) set .@jexp,311000;
 
-		getexp getarg(2),.@jexp;
+		getexp getarg(2),.@jexp; set Zeny,Zeny+(getarg(2)/4);
 		close;
 	}/* else if (.@hunting == 3) {
 //		recall_completequest .@quest1

@@ -526,7 +526,7 @@ S_Quest:
 		erasequest getarg(0);
 	setquest getarg(1);
 	if (getarg(2,0))
-		getexp 900000,200000;
+		getexp 500000,200000; set zeny, zeny + 125000;
 	return;
 S_Erasequest:
 	.@total = getargcount();
@@ -545,7 +545,7 @@ S_Erasequest:
 		case 2:
 			mes "[Melody-Jack]";
 			mes getarg(.@i+1) +" is cleared. A deal is a deal. I need to get paid.";
-			getexp 900000,200000;
+			getexp 500000,200000; set zeny, zeny + 125000;
 			break;
 		}
 		erasequest .@quest_id;
@@ -719,8 +719,8 @@ moc_para01,17,77,5	script	Aigu#1	4_F_IU,{
 			callsub S_Erasequest2,
 				13111,"Thanatos Tower",1250000,300000,
 				13112,"Rachel Shrine",1000000,300000,
-				13113,"Nameless Island",900000,300000,
-				13114,"Abyss Lake",900000,200000;
+				13113,"Nameless Island",800000,300000,
+				13114,"Abyss Lake",500000,300000;
 			for ( .@i = 13115; .@i <= 13118; .@i++ )
 				if (isbegin_quest(.@i)) erasequest .@i;
 		}
@@ -733,7 +733,7 @@ S_Quest:
 		erasequest getarg(0);
 	setquest getarg(1);
 	if (getarg(2,0))
-		getexp getarg(2),getarg(3);
+		getexp getarg(2),getarg(3); set zeny, zeny + getarg(2)/4;
 	return;
 S_Erasequest:
 	.@total = getargcount();
@@ -754,7 +754,7 @@ S_Erasequest2:
 			mes "[Aigu]";
 			mes "Oh, you've already finished "+ getarg(.@i+1) +" Adventure. Thank you for helping me out with this task!.";
 			erasequest getarg(.@i);
-			getexp getarg(.@i+2),getarg(.@i+3);
+			getexp getarg(.@i+2),getarg(.@i+3); set zeny, zeny + getarg(.@i+2)/4;
 		}
 	}
 	return;
