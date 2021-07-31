@@ -20,17 +20,11 @@ function	script	F_CardRemover	{
 			set .@menu$, .@menu$ + ":";
 		}	
 		set .@part, .@indices[ select(.@menu$) ];
-		set .@cardcount,getequipcardcnt(.@part);	
-		if(!getequipisequiped(.@part)) {
-			dispbottom "No slotted item detected";
-			end;
-			}
 		if(getequipcardcnt(.@part) == 0) {
 			dispbottom "This item has no cards in it.";
 			end;
 		}
 		set .@cardcount,getequipcardcnt(.@part);
-		next;
 		successremovecards .@part;
 		dispbottom "Card successfully detached.";
 		end;

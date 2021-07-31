@@ -8450,7 +8450,8 @@ Body:
     Name: Kindle Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 80000
+    Buy: 100000
+    Sell: 50000
     Weight: 600
     Attack: 60
     Range: 1
@@ -8489,7 +8490,8 @@ Body:
     Name: Obsidian Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 80000
+    Buy: 100000
+    Sell: 50000
     Weight: 600
     Attack: 60
     Range: 1
@@ -8528,7 +8530,8 @@ Body:
     Name: Fisherman's Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 80000
+    Buy: 100000
+    Sell: 50000
     Weight: 600
     Attack: 60
     Range: 1
@@ -8567,7 +8570,8 @@ Body:
     Name: Jujube Dagger
     Type: Weapon
     SubType: Dagger
-    Buy: 80000
+    Buy: 100000
+    Sell: 50000
     Weight: 600
     Attack: 60
     Range: 1
