@@ -10,7 +10,7 @@ function	script	F_KafTeleDoram	{
 	.@menu_choice = getarg(0);
 
 	cutin "kafra_do01", 2;
-	mes "[Kafra Employee]";if (BaseLevel <40){ mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
+	mes "[Kafra Employee]";
 	mes "Welcome.";
 	mes "The Kafra services are always on your side.";
 	mes "Please choose your destination.";
@@ -224,7 +224,7 @@ S_Zone:
 
 moc_para01,35,23,3	script	Kafra Teleportation#eden	4_F_DRKAFRA01,{
 	cutin "kafra_do01", 2;
-	mes "[Kafra Employee]"; if (BaseLevel <40){ mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
+	mes "[Kafra Employee]";
 	mes "Welcome.";
 	mes "The Kafra services are always on your side.";
 	next;

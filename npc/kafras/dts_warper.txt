@@ -533,11 +533,11 @@ function	script	F_VoteKafra	{
 			mes "apply in this special service.";
 			next;
 			if ($DTS_KafraWins == 0) {
-				switch(select("Toy Factory, Level 2 -> 8,000 z:Cancel")) {
+				switch(select("Toy Factory, Level 2 -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
+					if (Zeny >= 4000) {
 						cutin "",255;
-						set Zeny, Zeny-8000;
+						set Zeny, Zeny-4000;
 						warp "xmas_dun02",130,123;
 						end;
 					}
@@ -545,7 +545,7 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Toy Factory. Please";
 						mes "check your funds again.";
 					}
@@ -558,10 +558,10 @@ function	script	F_VoteKafra	{
 				}
 			}
 			else if ($DTS_KafraWins == 1) {
-				switch(select("Toy Factory, Level 2 -> 8,000 z:Clock Tower, Level 3 -> 8,000 z:Cancel")) {
+				switch(select("Toy Factory, Level 2 -> 4,000 z:Clock Tower, Level 3 -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "kafra_09",255;
 						warp "xmas_dun02",130,123;
 						end;
@@ -570,14 +570,14 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Toy Factory. Please";
 						mes "check your funds again.";
 					}
 					break;
 				case 2:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "kafra_09",255;
 						warp "alde_dun03",265,22;
 						end;
@@ -586,7 +586,7 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Clock Tower. Please";
 						mes "check your funds again.";
 					}
@@ -599,10 +599,10 @@ function	script	F_VoteKafra	{
 				}
 			}
 			else {
-				switch(select("Toy Factory, Level 2 -> 8,000 z:Clock Tower, Level 3 -> 8,000 z:Lava Dungeon, Level 2 -> 8,000 z:Cancel")) {
+				switch(select("Toy Factory, Level 2 -> 4,000 z:Clock Tower, Level 3 -> 4,000 z:Lava Dungeon, Level 2 -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "kafra_09",255;
 						warp "xmas_dun02",130,123;
 						end;
@@ -611,14 +611,14 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Toy Factory. Please";
 						mes "check your funds again.";
 					}
 					break;
 				case 2:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "kafra_09",255;
 						warp "alde_dun03",265,22;
 						end;
@@ -627,14 +627,14 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Clock Tower. Please";
 						mes "check your funds again.";
 					}
 					break;
 				case 3:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "kafra_09",255;
 						warp "mag_dun02",47,40;
 						end;
@@ -643,7 +643,7 @@ function	script	F_VoteKafra	{
 						mes "[Kafra Voting Staff]";
 						mes "I'm sorry, but you don't";
 						mes "have enough money to pay";
-						mes "the 8,000 zeny fee to teleport";
+						mes "the 4,000 zeny fee to teleport";
 						mes "to the Lava Dungeon. Please";
 						mes "check your funds again.";
 					}
@@ -933,10 +933,10 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 			mes "choose your destination.";
 			next;
 			if ($DTS_JondaWins == 0) {
-				switch(select("Byalan Dungeon, Level 3 -> 8,000 z:Cancel")) {
+				switch(select("Byalan Dungeon, Level 3 -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "iz_dun02",234,206;
 						end;
@@ -946,7 +946,7 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 2:
@@ -961,10 +961,10 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 				}
 			}
 			else if ($DTS_JondaWins == 1) {
-				switch(select("Byalan Dungeon, Level 3 -> 8,000 z:Clock Tower, 3rd Floor -> 8,000 z:Cancel")) {
+				switch(select("Byalan Dungeon, Level 3 -> 4,000 z:Clock Tower, 3rd Floor -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "iz_dun02",234,206;
 						end;
@@ -974,12 +974,12 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 2:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "c_tower3",64,143;
 						end;
@@ -989,7 +989,7 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 3:
@@ -1011,10 +1011,10 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 				mes "for this service. Now, please";
 				mes "choose your destination.";
 				next;
-				switch(select("Byalan Dungeon, Level 3 -> 8,000 z:Clock Tower, 3rd Floor -> 8,000 z:Glast Heim Entrance -> 8,000 z:Cancel")) {
+				switch(select("Byalan Dungeon, Level 3 -> 4,000 z:Clock Tower, 3rd Floor -> 4,000 z:Glast Heim Entrance -> 4,000 z:Cancel")) {
 				case 1:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "iz_dun02",234,206;
 						end;
@@ -1024,12 +1024,12 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 2:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "c_tower3",64,143;
 						end;
@@ -1039,12 +1039,12 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 3:
-					if (Zeny >= 8000) {
-						set Zeny, Zeny-8000;
+					if (Zeny >= 4000) {
+						set Zeny, Zeny-4000;
 						cutin "zonda_01",255;
 						warp "glast_01",368,303;
 						end;
@@ -1054,7 +1054,7 @@ lighthalzen,163,60,4	script	Kafra Voting Staff#lght	861,{
 						mes "I'm sorry, but you do";
 						mes "not have enough zeny to";
 						mes "teleport to this destination.";
-						mes "The teleport fee is 8,000 zeny.";
+						mes "The teleport fee is 4,000 zeny.";
 					}
 					break;
 				case 4:
