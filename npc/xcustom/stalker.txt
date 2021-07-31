@@ -1,22 +1,24 @@
 in_rogue,353,116,5	script	StalkerNpc	757,{
 	if(BaseJob==Job_Rogue||BaseJob==Job_ShadowChaser){
 	set .@skill_level,getskilllv( "RG_PLAGIARISM" );
-	mes "[Copy Cat]";
+	mes "[^FF6600Copy Cat^000000]";
 	mes "I provide skill to Stalker Class.";
 	if( !.@skill_level ){
-	mes "[Copy Cat]";
+	mes "[^FF6600Copy Cat^000000]";
 	mes "But only who have ^FF0000Plagiarism skill^000000 can use this services.";
 
 	}else{
 		mes "";
 		mes "Select which skill you want to be copy, your existing one will be overwrite";
+		mes "Anything below ^0033CCFlip Tatami^777777 is a 3rd class skills";
+		mes "and can be learned through stalker's ^0033CCReproduce^777777.";
 		next;
 		set .@menu, select(.menu$) -1;
 		if ( getskilllv(.skill$[.@menu * 3 +1]) ) {
 			mes "you already copied that skill";
 			close;
 		}
-		mes "[Copy Cat]";
+		mes "[^FF6600Copy Cat^000000]";
 		mes "are you sure you want to copy "+ .skill$[.@menu * 3] +"?";
 		mes "you'll need to relogin again";
 		next;
@@ -29,17 +31,38 @@ in_rogue,353,116,5	script	StalkerNpc	757,{
 
 	OnInit:
 		setarray .skill$, 
-		"Flying Side Kick", 421, 7,
-		"Fire Bolt", 19, 10,
-		"Cold Bolt", 14, 10,
-		"Lightning Bolt", 20, 10,
-		"Jupitel Thunder", 84, 5,
+		"Magnum Break", 7, 10,
+		"Bowling Bash", 62, 10,
+		"Holy Cross", 253, 10,
+		"Grand Cross", 254, 10,
+		"Fire Ball", 17, 10,
+		"Fire Wall", 18, 10,
+		"Earth Spike", 90, 10,
+		"Fire Pillar", 80, 10,
+		"Frost Nova", 88, 10,
+		"Water Ball", 86, 10,
+		"Jupitel Thunder", 84, 10,
 		"Lord Of Vermillion", 85, 10,
-		"Storm Gust", 89, 10,
 		"Meteor Storm", 83, 10,
-		"First Wind", 542, 5,
-		"Crimson Petal", 534, 10,
-		"Freezing Ice Spear", 537, 10;
+		"Storm Gust", 89, 10,
+		"Venom Splasher", 141, 10,
+		"Aspersio", 68, 5,
+		"Turn Undead", 77, 10,
+		"Triple Attack", 263, 10,
+		"Flying Side Kick", 421, 7,
+		"Flip Tatami", 527, 5,
+		"Ignition Break", 2006, 5,
+		"Shield Spell", 2315, 3,
+		"Arrow Storm", 2233, 10,
+		"Chain Lightning", 2214, 10,
+		"Crimson Rock", 2211, 5,
+		"Severe Rainstorm", 2211, 5,
+		"Magma Eruption", 5006, 5,
+		"Crazy Vines", 2483, 10,
+		"Thorn Trap", 2479, 5,
+		"Cross Impact", 2022, 5,
+		"Dark Claw", 5001, 5,
+		"Duple Light", 2054, 10;
 		set .@skillsize, getarraysize(.skill$);
 		for ( set .@i,0; .@i < .@skillsize; set .@i, .@i +3 )
 			set .menu$, .menu$ + .skill$[.@i] +":";
