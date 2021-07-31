@@ -59,7 +59,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 	mes "Hello. Can I help you?";
 	next;
 	while (1) {
-		switch (select("What is Eden group?:Join the Eden Group.:Register new mission.:Search for missions.:Cancel.")) {
+		switch (select("What is Eden group?:Join the Eden Group.:Cancel.")) {
 		case 1:
 			mes "[Lime Evenor]";
 			mes "Eden Group is a group that helps people who are suffering from distresses in Midgard.";
@@ -69,7 +69,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 			next;
 			mes "[Lime Evenor]";
 			mes "Eden members will review the missions and help those who post them up.";
-			mes "Members do these missions for rewards.";
+			mes "Members do these missions for exp and zeny rewards.";
 			next;
 			mes "[Lime Evenor]";
 			mes "If you are not too familiar with Midgard, this is a great way to explore the world.";
@@ -131,7 +131,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 				next;
 			}
 			break;
-		case 3:
+		case 7:
 			mes "[Lime Evenor]";
 			mes "Do you want to register some missions that you want us to do?";
 			next;
@@ -188,7 +188,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 				next;
 			}
 			break;
-		case 4:
+		case 8:
 			if (callfunc("F_HasEdenGroupMark")) {
 				mes "[Lime Evenor]";
 				mes "Would like to try some missions as an Eden member?";
@@ -204,7 +204,7 @@ moc_para01,27,35,5	script	Secretary Lime Evenor	4_F_EDEN_OFFICER,{
 				close;
 			}
 			break;
-		case 5:
+		case 3:
 			mes "[Lime Evenor]";
 			mes "If you have any questions please come back again.";
 			close;
