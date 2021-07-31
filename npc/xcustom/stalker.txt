@@ -1,71 +1,71 @@
-in_rogue,353,116,5	script	StalkerNpc	757,{
-	if(BaseJob==Job_Rogue||BaseJob==Job_ShadowChaser){
-	set .@skill_level,getskilllv( "RG_PLAGIARISM" );
-	mes "[^FF6600Copy Cat^000000]";
-	mes "I provide skill to Stalker Class.";
-	if( !.@skill_level ){
-	mes "[^FF6600Copy Cat^000000]";
-	mes "But only who have ^FF0000Plagiarism skill^000000 can use this services.";
-
-	}else{
-		mes "";
-		mes "Select which skill you want to be copy, your existing one will be overwrite";
-		mes "Anything below ^0033CCFlip Tatami^777777 is a 3rd class skills";
-		mes "and can be learned through stalker's ^0033CCReproduce^777777.";
-		next;
-		set .@menu, select(.menu$) -1;
-		if ( getskilllv(.skill$[.@menu * 3 +1]) ) {
-			mes "you already copied that skill";
-			close;
+in_rogue,353,116,5	script	Casey	481,{
+set .@skill_level,getskilllv( "RG_PLAGIARISM" );
+mes "[^FF6600Casey^000000]";
+mes "I can show some skills to Rogue Class.";
+mes "...";
+if( !.@skill_level ){
+	mes "But i'll only show it to someone who has ^FF0000Plagiarism^000000 skill.";
+	close;
+}else{
+	if( select( ( CLONE_SKILL && CLONE_SKILL_LV )?"Un-Learn Skill":"Learn Skill","Close" ) == 1 ){
+		if( CLONE_SKILL && CLONE_SKILL_LV ){
+			mes "Unlearned Copied Skill";
+			set CLONE_SKILL_LV,0;
+			skill CLONE_SKILL,CLONE_SKILL_LV,0;
+			set P_SKILL,0;
+		}else{
+	mes "Which skill you need me to cast on you ?";
+	set .@SkillID, select( implode( .SkillName$, ":" ) ) - 1;
+	mes "Selected "+ .Skillname$[ .@SkillID ];
+	close2;
+	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 99, 99;
+	if( .SkillID[ .@SkillID ] == 421 ) {
+		sleep 3000;
+		movenpc strnpcinfo(0),48,180;
+	}	
+	end;
 		}
-		mes "[^FF6600Copy Cat^000000]";
-		mes "are you sure you want to copy "+ .skill$[.@menu * 3] +"?";
-		mes "you'll need to relogin again";
-		next;
-		if ( select ( "Yes", "No" ) == 2 ) close;
-		set CLONE_SKILL, .skill$[.@menu * 3 +1];
-		set CLONE_SKILL_LV, .skill$[.@menu * 3 +2];
-		atcommand "@kick "+ strcharinfo(0);
-		end;
 	}
+OnInit:
+	setarray .SkillID,7,62,253,254,14,20,19,13,17,18,90,80,88,86,84,85,83,89,230,141,28,68,77,263,421,527;
+	setarray .SkillLv,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,5,10,10,5,10,10,7,5;
+	setarray .SkillName$,"Magnum Break","Bowling Bash","Holy Cross","Grand Cross","Cold Bolt","Lightning Bolt","Fire Bolt","Soul Strike","Fire Ball","Fire Wall","Earth Spike","Fire Pillar","Frost Nova","Water Ball","Jupitel Thunder","Lord of Vermillion","Meteor Storm","Storm Gust","Acid Terror","Venom Splasher","Heal","Aspersio","Turn Undead","Triple Attack","Flying Side Kick","Flip Tatami";
+	end;
+	}
+}
 
-	OnInit:
-		setarray .skill$, 
-		"Magnum Break", 7, 10,
-		"Bowling Bash", 62, 10,
-		"Holy Cross", 253, 10,
-		"Grand Cross", 254, 10,
-		"Fire Ball", 17, 10,
-		"Fire Wall", 18, 10,
-		"Earth Spike", 90, 10,
-		"Fire Pillar", 80, 10,
-		"Frost Nova", 88, 10,
-		"Water Ball", 86, 10,
-		"Jupitel Thunder", 84, 10,
-		"Lord Of Vermillion", 85, 10,
-		"Meteor Storm", 83, 10,
-		"Storm Gust", 89, 10,
-		"Venom Splasher", 141, 10,
-		"Aspersio", 68, 5,
-		"Turn Undead", 77, 10,
-		"Triple Attack", 263, 10,
-		"Flying Side Kick", 421, 7,
-		"Flip Tatami", 527, 5,
-		"Ignition Break", 2006, 5,
-		"Shield Spell", 2315, 3,
-		"Arrow Storm", 2233, 10,
-		"Chain Lightning", 2214, 10,
-		"Crimson Rock", 2211, 5,
-		"Severe Rainstorm", 2211, 5,
-		"Magma Eruption", 5006, 5,
-		"Crazy Vines", 2483, 10,
-		"Thorn Trap", 2479, 5,
-		"Cross Impact", 2022, 5,
-		"Dark Claw", 5001, 5,
-		"Duple Light", 2054, 10;
-		set .@skillsize, getarraysize(.skill$);
-		for ( set .@i,0; .@i < .@skillsize; set .@i, .@i +3 )
-			set .menu$, .menu$ + .skill$[.@i] +":";
-		end;
+in_rogue,350,116,5	script	Chessie	482,{
+set .@skill_level,getskilllv( "RG_PLAGIARISM" );
+mes "[^FF6600Casey^000000]";
+mes "I can show some skills to Shadow Chaser Class.";
+mes "...";
+if( !.@skill_level ){
+	mes "But i'll only show it to someone who has ^FF0000Produce^000000 skill.";
+	close;
+}else{
+	if( select( ( CLONE_SKILL && CLONE_SKILL_LV )?"Un-Learn Skill":"Learn Skill","Close" ) == 1 ){
+		if( CLONE_SKILL && CLONE_SKILL_LV ){
+			mes "Unlearned Copied Skill";
+			set CLONE_SKILL_LV,0;
+			skill CLONE_SKILL,CLONE_SKILL_LV,0;
+			set P_SKILL,0;
+		}else{
+	mes "Which skill you need me to cast on you ?";
+	set .@SkillID, select( implode( .SkillName$, ":" ) ) - 1;
+	mes "Selected "+ .Skillname$[ .@SkillID ];
+	close2;
+	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 99, 99;
+	if( .SkillID[ .@SkillID ] == 2022 ) {
+		sleep 3000;
+		movenpc strnpcinfo(0),48,183;
+	}		
+	end;
+		}
+	}
+OnInit:
+	setarray .SkillID,2006,2315,2233,2214,2211,2418,5006,2483,2479,2022,5001,2051,2054;
+	setarray .SkillLv,5,3,10,10,5,5,5,10,5,5,5,5,10;
+	setarray .SkillName$,"Ignition Break","Shield Spell","Arrow Storm","Chain Lightning","Crimson Rock","Severe Rainstorm","Magma Eruption","Crazy Vines","Thorn Trap","Cross Impact","Dark Claw","High Heal","Duple Light";
+	end;
 	}
 }
