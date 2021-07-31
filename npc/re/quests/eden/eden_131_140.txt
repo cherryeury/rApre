@@ -20,7 +20,7 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 	mes "[Ragi]";
 	if (!callfunc("F_HasEdenGroupMark")) {
 		mes "Only adventurers from Eden Group are welcome here.";
-		mes "I'm giving requests to base level ^FF0000130-140^000000 adventurers only.";
+		mes "I'm giving requests to base level ^FF0000130^000000 and above adventurers only.";
 	}
 	else if (para_130lv01 == 0) {
 		mes "Hi. I'm the new member of the Dandelion band Ragi. I am making songs on behalf of Aigu. Are you interested in a story?";
@@ -41,7 +41,7 @@ moc_para01,41,76,3	script	Ragi#1	4_M_RAGI,{
 				cutin "ragi02",0;
 				mes "This is the request of Aigu but it is dangerous. You should grow up more.";
 			}
-			else if (BaseLevel < 141) {
+			else if (BaseLevel < 300) {
 				mes "This song and story is about monsters. ^FF0000Tell me the story about how you felt while you were fighting with them.^000000";
 				next;
 				switch( select( "The story of the lost", "Story of devil", "Story from far away distance" ) ) {
@@ -572,7 +572,7 @@ S_Erasequest:
 				break;
 			case 2:
 				mes "Is Morocc's story good enough for songs? You did a good job.";
-				getexp 800000,200000; zset zeny, zeny + 800000/4;
+				getexp 800000,200000; set zeny, zeny + 800000/4;
 				break;
 			case 3:
 				mes "How was your adventure? Was it fun? Please let me hear your adventure story someday.";
