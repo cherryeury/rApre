@@ -1312,7 +1312,7 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 					// Gank
 					if(dstmd && sd->status.weapon != W_BOW &&
 						(skill=pc_checkskill(sd,RG_SNATCHER)) > 0 &&
-						(skill*15 + 55 + (pc_checkskill(sd,RG_COMPULSION*10)+20) + pc_checkskill(sd,TF_STEAL)*10 > rnd()%1000) { //cherry
+						(skill*15 + 55) + pc_checkskill(sd,TF_STEAL)*10 > rnd()%1000) {
 						if(pc_steal_item(sd,bl,pc_checkskill(sd,TF_STEAL)))
 							clif_skill_nodamage(src,bl,TF_STEAL,skill,1);
 						else
