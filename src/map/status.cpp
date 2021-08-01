@@ -4599,8 +4599,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->dex += 10;
 		base_status->luk += 10;
 	}
-	if((skill=pc_checkskill(sd,MC_VENDING))>0)
-		base_status->cri += skill;
+//	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
+//		base_status->str += skill;	
 	if(pc_checkskill(sd,BS_HILTBINDING)>0)
 		base_status->str++;
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)
@@ -4611,8 +4611,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->int_ += skill;
 	if (pc_checkskill(sd, SU_POWEROFLAND) > 0)
 		base_status->int_ += 20;
-	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
-		base_status->str += skill+2;
+	if((skill=pc_checkskill(sd,MC_VENDING))>0)
+		base_status->luk += skill;
 	i = base_status->str + sd->status.str + sd->indexed_bonus.param_bonus[0] + sd->indexed_bonus.param_equip[0];
 	base_status->str = cap_value(i,0,USHRT_MAX);
 	i = base_status->agi + sd->status.agi + sd->indexed_bonus.param_bonus[1] + sd->indexed_bonus.param_equip[1];
@@ -4732,7 +4732,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->cri = cap_value(base_status->cri * sd->critical_rate/100,SHRT_MIN,SHRT_MAX);
 	if (pc_checkskill(sd, SU_POWEROFLIFE) > 0)
 		base_status->cri += 200;
-
+	
 	if(sd->flee2_rate < 0)
 		sd->flee2_rate = 0;
 	if(sd->flee2_rate != 100)
