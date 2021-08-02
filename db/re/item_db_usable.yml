@@ -1078,7 +1078,7 @@ Body:
     AegisName: Wing_Of_Fly
     Name: Fly Wing
     Type: Delayconsume
-    Buy: 250
+    Buy: 60
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1088,7 +1088,7 @@ Body:
     AegisName: Wing_Of_Butterfly
     Name: Butterfly Wing
     Type: Delayconsume
-    Buy: 1000
+    Buy: 300
     Weight: 50
     Flags:
       BuyingStore: true
