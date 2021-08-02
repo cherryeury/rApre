@@ -179,7 +179,7 @@ L_Quest:
 		if(select("Turn in quest.:Cancel.") == 1) {
 			if (.@quest == 5057) delitem 7187,30; //Festival_Mask
 			erasequest .@quest;
-			getexp .@exp,0; set Zeny,(Zeny +1000+.@exp/4);
+			getexp .@exp,0; set Zeny,(Zeny +1000+.@exp/5);
 			mes "You've received EXP for finishing the quest.";
 			next;
 			return;
@@ -205,7 +205,7 @@ L_Quest:
 			if(select("Turn in quest.:Cancel.") == 1) {
 				if (.@quest == 5057) delitem 7187,30; //Festival_Mask
 				erasequest .@quest;
-				getexp .@exp,0; set Zeny,(Zeny +.@exp/4); 
+				getexp .@exp,0; set Zeny,(Zeny +.@exp/5); 
 				mes "You've received EXP for finishing the quest.";
 			}
 		}/* else if (.@hunting == 3) {

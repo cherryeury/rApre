@@ -18,54 +18,54 @@ if( !.@skill_level ){
 	set .@SkillID, select( implode( .SkillName$, ":" ) ) - 1;
 	mes "Selected "+ .Skillname$[ .@SkillID ];
 	close2;
-	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 99, 99;
+	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 100, 200;
 	if( .SkillID[ .@SkillID ] == 421 ) {
 		sleep 3000;
-		movenpc strnpcinfo(0),48,180;
+		movenpc strnpcinfo(0),353,116;
 	}	
 	end;
 		}
 	}
 OnInit:
-	setarray .SkillID,7,62,253,254,14,20,19,13,17,18,90,80,88,86,84,85,83,89,230,141,28,68,77,263,421,527;
+	setarray .SkillID,7,62,253,254,14,20,19,13,17,18,90,80,88,86,84,85,83,89,230,141,77,263,421,527;
 	setarray .SkillLv,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,5,10,10,5,10,10,7,5;
-	setarray .SkillName$,"Magnum Break","Bowling Bash","Holy Cross","Grand Cross","Cold Bolt","Lightning Bolt","Fire Bolt","Soul Strike","Fire Ball","Fire Wall","Earth Spike","Fire Pillar","Frost Nova","Water Ball","Jupitel Thunder","Lord of Vermillion","Meteor Storm","Storm Gust","Acid Terror","Venom Splasher","Heal","Aspersio","Turn Undead","Triple Attack","Flying Side Kick","Flip Tatami";
+	setarray .SkillName$,"Magnum Break","Bowling Bash","Holy Cross","Grand Cross","Cold Bolt","Lightning Bolt","Fire Bolt","Soul Strike","Fire Ball","Fire Wall","Earth Spike","Fire Pillar","Frost Nova","Water Ball","Jupitel Thunder","Lord of Vermillion","Meteor Storm","Storm Gust","Acid Terror","Venom Splasher","Turn Undead","Triple Attack","Flying Side Kick","Flip Tatami";
 	end;
 	}
 }
 
 in_rogue,350,116,5	script	Chessie	482,{
-set .@skill_level,getskilllv( "RG_PLAGIARISM" );
-mes "[^FF6600Casey^000000]";
+set .@skill_level,getskilllv( "SC_REPRODUCE" );
+mes "[^FF6600Chessie^000000]";
 mes "I can show some skills to Shadow Chaser Class.";
 mes "...";
 if( !.@skill_level ){
 	mes "But i'll only show it to someone who has ^FF0000Produce^000000 skill.";
 	close;
 }else{
-	if( select( ( CLONE_SKILL && CLONE_SKILL_LV )?"Un-Learn Skill":"Learn Skill","Close" ) == 1 ){
-		if( CLONE_SKILL && CLONE_SKILL_LV ){
+	if( select( ( PRODUCE_SKILL && PRODUCE_SKILL_LV )?"Un-Learn Skill":"Learn Skill","Close" ) == 1 ){
+		if( PRODUCE_SKILL && PRODUCE_SKILL_LV ){
 			mes "Unlearned Copied Skill";
-			set CLONE_SKILL_LV,0;
-			skill CLONE_SKILL,CLONE_SKILL_LV,0;
+			set PRODUCE_SKILL_LV,0;
+			skill PRODUCE_SKILL,PRODUCE_SKILL_LV,0;
 			set P_SKILL,0;
 		}else{
 	mes "Which skill you need me to cast on you ?";
 	set .@SkillID, select( implode( .SkillName$, ":" ) ) - 1;
 	mes "Selected "+ .Skillname$[ .@SkillID ];
 	close2;
-	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 99, 99;
+	npcskill .SkillID[ .@SkillID ], .SkillLv[ .@SkillID ], 100, 200;
 	if( .SkillID[ .@SkillID ] == 2022 ) {
 		sleep 3000;
-		movenpc strnpcinfo(0),48,183;
+		movenpc strnpcinfo(0),350,116;
 	}		
 	end;
 		}
 	}
 OnInit:
-	setarray .SkillID,2006,2315,2233,2214,2211,2418,5006,2483,2479,2022,5001,2051,2054;
+	setarray .SkillID,2006,2315,2233,2214,2211,2418,5006,2483,2479,2022,5001,2055;
 	setarray .SkillLv,5,3,10,10,5,5,5,10,5,5,5,5,10;
-	setarray .SkillName$,"Ignition Break","Shield Spell","Arrow Storm","Chain Lightning","Crimson Rock","Severe Rainstorm","Magma Eruption","Crazy Vines","Thorn Trap","Cross Impact","Dark Claw","High Heal","Duple Light";
+	setarray .SkillName$,"Ignition Break","Shield Spell","Arrow Storm","Chain Lightning","Crimson Rock","Severe Rainstorm","Magma Eruption","Crazy Vines","Thorn Trap","Cross Impact","Dark Claw","Duple Light";
 	end;
 	}
 }

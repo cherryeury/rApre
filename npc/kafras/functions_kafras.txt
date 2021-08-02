@@ -80,7 +80,7 @@ function	script	F_Kafra	{
 	// Display Kafra Welcome Message
 	switch(.@welcome) {
 	default:// Default message (obsolete)
-		mes "[Kafra Employee]";
+		mes "[Kafra Employee]"; if (BaseLevel <40){ mes "Ahh, newbies?"; mes "Anyone with level below than 40 can teleport with free!"; next; }
 		mes "Welcome to the";
 		mes "Kafra Corporation.";
 		mes "The Kafra services";
@@ -292,10 +292,10 @@ function	script	F_KafTele	{
 	.@j = select( implode(@wrpC$,":") ) - 1;
 	if (@wrpC$[.@j] == "Cancel")
 		return;
-	// Consume "Free Ticket for Kafra Transportation" if available.
-	// Do not consume if in Guild castle
-	if (countitem(7060) > 0 && getarg(0) != 2)
-		delitem 7060,1;
+	if (BaseLevel <40){
+		goto L_Cut; }
+
+
 	else {
 		if (Zeny < @wrpP[.@j]) {
 			mes "[Kafra Employee]";
@@ -307,7 +307,7 @@ function	script	F_KafTele	{
 		}
 		Zeny -= @wrpP[.@j];
 		RESRVPTS += (@wrpP[.@j]/16);
-	}
+	} L_Cut:
 	cutin "", 255;
 	if (@wrpD$[.@j] == "Al De Baran") warp "aldebaran",168,112;
 	else if (@wrpD$[.@j] == "Alberta") warp "alberta", 117, 56;

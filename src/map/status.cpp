@@ -4599,8 +4599,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->dex += 10;
 		base_status->luk += 10;
 	}
-//	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
-//		base_status->str += skill;	
+	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
+		base_status->str += skill;	
 	if(pc_checkskill(sd,BS_HILTBINDING)>0)
 		base_status->str++;
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)

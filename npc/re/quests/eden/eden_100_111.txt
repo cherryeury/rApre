@@ -956,9 +956,9 @@ S_Quest:
 		getitem 6549,1;// Courtesy_Ticket
 		para_100lv02 += 1;
 //		if (JobLevel < 6)
-//			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
+//			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/5;
 //		else
-			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/5;
 	}
 	else {
 		next;
@@ -990,9 +990,9 @@ S_Hunting:
 		mes "I will mark you down as having completed this request.";
 		para_100lv02 += 1;
 //		if (JobLevel < 6)
-//			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
+//			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/5;
 //		else
-			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/4;
+			getexp getarg(1),getarg(2); set zeny,zeny + getarg(1)/5;
 		break;
 	case 0:
 	case 1:// untranslated these cases
