@@ -109,8 +109,8 @@ moc_fild11,0,0	monster	Scorpion	1001,41,5000
 moc_fild12,0,0	monster	Picky	1049,65,5000
 moc_fild12,0,0	monster	Picky	1050,65,5000
 moc_fild12,0,0	monster	Peco Peco Egg	1047,45,5000
-moc_fild12,0,0	monster	Drops	1113,39,5000
-moc_fild12,0,0	monster	Condor	1009,39,5000
+moc_fild12,0,0	monster	Drops	1113,65,5000
+moc_fild12,0,0	monster	Condor	1009,65,5000
 moc_fild12,181,336,40,20	monster	Yellow Plant	1081,10,180000,90000
 
 //==================================================
@@ -178,8 +178,8 @@ moc_fild17,359,258	monster	Yellow Plant	1081,1,180000,90000
 // moc_fild18 - Sograt Desert
 //==================================================
 moc_fild18,0,0	monster	Scorpion	1001,160,5000
-moc_fild18,0,0	monster	Condor	1009,34,5000
-moc_fild18,0,0	monster	Baby Desert Wolf	1107,34,5000
+moc_fild18,0,0	monster	Condor	1009,65,5000
+moc_fild18,0,0	monster	Baby Desert Wolf	1107,65,5000
 moc_fild18,0,0	monster	Dragon Fly	1091,1,3600000,1800000
 moc_fild18,143,352	monster	Yellow Plant	1081,1,180000,90000
 moc_fild18,72,333	monster	Yellow Plant	1081,1,180000,90000

@@ -78,7 +78,7 @@ moc_para01,25,21,5	script	Card Trader	90,{
 			mes "[Putty]";
 			mes "For ^CC000010 points^000000: ^0000CC1 Old Card Album^000000.";
 			mes "For ^CC00002 points^000000: ^0000CC10 Yggdrasil Berry^000000.";
-			mes "For ^CC00001 points^000000: ^0000CC200.000 Zeny^000000.";
+			mes "For ^CC00001 points^000000: ^0000CC250.000 Zeny^000000.";
 			next;
 			break;
 		case 2:
@@ -146,7 +146,7 @@ moc_para01,25,21,5	script	Card Trader	90,{
 			mes "[Putty]";
 			mes "These are the items that I have.";
 			next;
-			switch(select("1 Old Card Album - 10 Points","5 Yggdrasil Berry - 2 Points","200.000 Zeny - 1 Points","^777777Nerver mind.^000000")) {
+			switch(select("1 Old Card Album - 10 Points","5 Yggdrasil Berry - 2 Points","250.000 Zeny - 1 Points","^777777Nerver mind.^000000")) {
 				case 1:
 					if (.@points < 10) break;
 					mes "[Putty]";
@@ -170,7 +170,7 @@ moc_para01,25,21,5	script	Card Trader	90,{
 					mes "Blue Potions? Are you sure?";
 					mes "If that's what you want, here they are!";
 					oversea_event9 = .@points - 1;
-					set zeny, zeny+200000;
+					set zeny, zeny+250000;
 					close;
 				case 4:
 					mes "[Putty]";
