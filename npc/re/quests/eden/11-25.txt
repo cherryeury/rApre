@@ -160,7 +160,7 @@ L_Quest:
 			delitem .@item_req,.@req_amount;
 		erasequest .@quest_id;
 		setquest .@quest_id+10;
-		getexp getarg(2),0; set Zeny,Zeny +1000+(getarg(2)/5); 
+		getexp getarg(2),0; set Zeny,Zeny +500+(getarg(2)/5); 
 		close;
 	}
 }

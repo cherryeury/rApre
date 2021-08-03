@@ -1796,7 +1796,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      Zeny += rand(1000,10000);
+      Zeny += 250000;
   - Id: 669
     AegisName: Rice_Cake_Soup
     Name: Tempting Rice-Cake Soup
