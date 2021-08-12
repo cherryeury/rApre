@@ -27,47 +27,47 @@
 //0,5153,3 // Angeling Hairpin
 //0,5690,3 // Red Wing Hat
 //0,5568,3 // Rabbit Bonnet
-0,5183,3 // Bird Nest
+0,5183,1 // Bird Nest
 //0,5153,8 // Angeling Hairpin
-0,5482,3 // Dark knight
-0,5324,8 // Little Angel
-0,5138,8 // Magician eyes
-0,18701,8 // Civil Man
-0,5414,8 // Campfire
+0,5482,1 // Dark knight
+0,5324,5 // Little Angel
+0,5138,5 // Magician eyes
+0,18701,5 // Civil Man
+0,5414,5 // Campfire
 //0,5259,17 // Elephant
 //0,5261,8 // Silver Tiara
 //0,5262,8 // Gold Tiara
 //0,5212,8 // Satellite
-0,5378,8 // Bunny 
-0,5257,8 // Soulless
-//0,5431,8 // chicken
-0,5289,8 // Vanilmirth
-0,5381,25 // Santa Poring
-0,5781,25 // Persica
-0,5382,25 // Bell Ribbon
-0,5256,25 // Valkyrie
-0,18901,25 // Seppl Hat
-0,5768,25 // Sakura Coronet
-0,5271,25 // Phoenix Crown	
-0,18529,25 // Accurate Wild Rose
-0,5457,25 // Moon rabbit
-0,5270,25 // Autumn
-0,5255,25 // Triple Poring
+0,5378,5 // Bunny 
+0,5257,5 // Soulless
+//0,5431,6 // chicken
+0,5289,5 // Vanilmirth
+0,5381,20 // Santa Poring
+0,5781,20 // Persica
+0,5382,20 // Bell Ribbon
+//0,5256,23 // Valkyrie
+0,18901,23 // Seppl Hat
+0,5768,23 // Sakura Coronet
+0,5271,23 // Phoenix Crown	
+0,18529,23 // Accurate Wild Rose
+0,5457,23 // Moon rabbit
+0,5270,23 // Autumn
+0,5255,23 // Triple Poring
 //0,5653,22 // Darkness Helm
 //0,18631,10 // Ribbon Chef
 //0,5790,15 // Mother
 //0,5380,17 // Fish Head
-0,5260,25 // Cookie
-0,5304,25 // Blindness 
-0,5527,25 // Lunatic Hat
-0,5526,25 // Tanee
-0,5572,25 // Savage Bebe
+0,5260,23 // Cookie
+0,5304,23 // Blindness 
+0,5527,23 // Lunatic Hat
+0,5526,23 // Tanee
+0,5572,23 // Savage Bebe
 //0,18637,30 // Legion
-0,5387,25 // Neko Mimi
+0,5387,23 // Neko Mimi
 //0,18681,22 // Puppy Ears
-0,5509,25 // Sting Hat
-0,18595,25 // Ancient Horn 
-0,5667,25 // Skull Hood
+0,5509,23 // Sting Hat
+0,18595,23 // Ancient Horn 
+0,5667,23 // Skull Hood
 //0,18646,15 // Cow Hat
 
 
@@ -81,18 +81,18 @@
 //0,18575,25 // Wunderkammer
 //0,18847,12 // Jolly Roger
 //0,5376,30 // satanic
-0,5137,30 // Alice
-0,5584,40 // Majestic
+0,5137,25 // Alice
+0,5584,25 // Majestic
 //0,18653,40 // Deviruchi
-0,5660,40 // Gryphon
-0,5579,40 // Wanderer's Sakkat
+0,5660,25 // Gryphon
+0,5579,32 // Wanderer's Sakkat
 //0,5210,40 // Flapp
-0,5561,40 // Rabbit Magic Hat
-0,5396,40 // Jasper Crest
+0,5561,32 // Rabbit Magic Hat
+0,5396,32 // Jasper Crest
 //0,18738,8 // White Student
 
-0,5357,40 // Wings of Victory
-0,5495,40 // Thor
+0,5357,32 // Wings of Victory
+0,5495,32 // Thor
 //0,5975,30 // Zealotus
 //0,18694,45 // Red Hood
 //0,18574,45 // Lord of Death
@@ -380,9 +380,9 @@
 //3,28561,2500
 
 // Utility
-5,13599,5 // Battle Manual
-5,13990,5 // Job B Manual
-5,13607,5 // Drop
+5,13599,1 // Battle Manual
+5,13990,1 // Job B Manual
+5,13607,1 // Drop
 5,7776,1
 5,17106,9
 5,13583,1 // Convex
