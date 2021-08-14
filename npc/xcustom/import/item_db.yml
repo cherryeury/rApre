@@ -10303,8 +10303,8 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus2 bAddEle,Ele_Earth,20;
-      bonus2 bAddEle,Ele_Wind,20;
+      bonus2 bAddEle,Ele_Earth,15;
+      bonus2 bAddEle,Ele_Wind,15;
       bonus bUnbreakableWeapon;     
   - Id: 1236
     AegisName: Sucsamad
@@ -15197,8 +15197,6 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_DemiHuman;
       bonus bIgnoreDefRace,RC_Player_Human;
-      bonus2 bSubRace,RC_DemiHuman,10;
-      bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Demon,-10; 
   - Id: 13021
     AegisName: Combat_Knife_C
@@ -15246,8 +15244,6 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_DemiHuman;
       bonus bIgnoreDefRace,RC_Player_Human;
-      bonus2 bSubRace,RC_DemiHuman,10;
-      bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Demon,-10;     
   - Id: 1471
     AegisName: Hell_Fire
