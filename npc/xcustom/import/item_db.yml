@@ -3318,7 +3318,7 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bFlee,10;
+      bonus bFlee,20;
       bonus bFlee2,5;
       bonus bDefRate,-50;
       bonus bDef2Rate,-50;
@@ -3359,7 +3359,7 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bFlee,10;
+      bonus bFlee,20;
       bonus bFlee2,5;
       bonus bDefRate,-50;
       bonus bDef2Rate,-50;    
@@ -3504,7 +3504,50 @@ Body:
       bonus2 bResEff,Eff_Curse,5000;
       bonus2 bResEff,Eff_Silence,5000;
       bonus2 bResEff,Eff_Confusion,5000;
-      bonus2 bResEff,Eff_Blind,5000;     
+      bonus2 bResEff,Eff_Blind,5000;  
+  - Id: 1232
+    AegisName: Assasin_Dagger
+    Name: Assassin Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 600
+    Attack: 140
+    Range: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,8;
+      bonus bMaxSPrate,8;
+      bonus bAspdRate,8;
+      bonus bAtkEle,Ele_Dark;      
+  - Id: 13033
+    AegisName: Assasin_Dagger_
+    Name: Assassin Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 600
+    Attack: 140
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
+    Script: |
+      bonus bMaxHPrate,8;
+      bonus bMaxSPrate,8;
+      bonus bAspdRate,8;
+      bonus bAtkEle,Ele_Dark;         
   - Id: 26002
     AegisName: Longinus's_Spear__
     Name: Longinus's Spear
@@ -10194,7 +10237,7 @@ Body:
     Weight: 700
     Attack: 148
     Range: 1
-    Slots: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -10260,8 +10303,8 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus2 bAddEle,Ele_Earth,15;
-      bonus2 bAddEle,Ele_Wind,15;
+      bonus2 bAddEle,Ele_Earth,20;
+      bonus2 bAddEle,Ele_Wind,20;
       bonus bUnbreakableWeapon;     
   - Id: 1236
     AegisName: Sucsamad
@@ -13417,7 +13460,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 600
-    Attack: 120
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -13471,7 +13514,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 600
-    Attack: 120
+    Attack: 100
     Range: 1
     Slots: 2
     Jobs:
@@ -13745,7 +13788,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 500
-    Attack: 120
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -13775,7 +13818,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 500
-    Attack: 120
+    Attack: 100
     Range: 1
     Slots: 2
     Jobs:
@@ -14791,7 +14834,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 800
-    Attack: 100
+    Attack: 120
     Range: 1
     Jobs:
       Assassin: true
@@ -14814,9 +14857,9 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 800
-    Attack: 100
+    Attack: 120
     Range: 1
-    Slots: 2
+    Slots: 1
     Jobs:
       Alchemist: false
       Archer: false
@@ -15314,8 +15357,8 @@ Body:
     Name: Kitchen Knife
     Type: Weapon
     SubType: Dagger
-    Attack: 158
-    MagicAttack: 70
+    Attack: 100
+    MagicAttack: 0
     Range: 1
     Slots: 1
     Jobs:
@@ -15335,7 +15378,7 @@ Body:
       Rogue: true
       Sage: true
       SoulLinker: true
-      SuperNovice: true
+      SuperNovice: false
       Swordman: true
       Thief: true
       Wizard: true
@@ -15346,13 +15389,13 @@ Body:
     Refineable: true
     Trade:
       Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true      
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false      
     Script: |
       bonus bCritical,30;
       bonus3 bAddMonsterDropItem,517,RC_Brute,5000;      
