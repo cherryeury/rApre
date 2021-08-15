@@ -38286,7 +38286,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 5
     Jobs:
       All: true
       Novice: false
@@ -38297,8 +38297,8 @@ Body:
     Refineable: true
     View: 150
     Script: |
-      bonus bMdef,6;
-      bonus bHPGainValue,60;
+      bonus bMdef,5;
+      bonus bHPGainValue,50;
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
@@ -38387,7 +38387,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 5
     Jobs:
       All: true
       Novice: false
@@ -38398,8 +38398,8 @@ Body:
     Refineable: true
     View: 156
     Script: |
-      bonus bMdef,6;
-      bonus bSPGainValue,6;
+      bonus bMdef,5;
+      bonus bSPGainValue,5;
   - Id: 5073
     AegisName: Cap_Of_Concentration
     Name: Model Training Hat

@@ -2286,6 +2286,9 @@ Body:
     View: 40      
     Script: |
       bonus2 bSubEle,Ele_Neutral,2;
+      if (getrefine()>8){
+      bonus2 bSubEle,Ele_Neutral,2;
+      }          
   - Id: 15040
     AegisName: Prison_Uniform
     Name: Prison Uniform
@@ -2649,7 +2652,7 @@ Body:
     EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus bAgi,2;      
+      bonus bAgi,2;    
   - Id: 5157
     AegisName: Viking_Helm_
     Name: Orc Helm
@@ -2674,6 +2677,9 @@ Body:
     View: 86      
     Script: |
       bonus2 bSubRace,RC2_Orc,10;  
+      if (getrefine()>8){
+      bonus2 bSubRace,RC2_Orc,10;
+      }          
   - Id: 5030
     AegisName: Panda_Cap
     Name: Panda Hat
@@ -2777,7 +2783,11 @@ Body:
     View: 35
     Script: |
       bonus2 bSubRace,RC_Undead,3; 
-      bonus2 bSubRace,RC_Demon,3;   
+      bonus2 bSubRace,RC_Demon,3; 
+      if (getrefine()>9){
+      bonus2 bSubRace,RC_Undead,12; 
+      bonus2 bSubRace,RC_Demon,12;
+      }      
   - Id: 2210
     AegisName: Hair_Band
     Name: Hair Band
@@ -4410,7 +4420,7 @@ Body:
     View: 30
     Script: |
       bonus bUnbreakableHelm;
-      bonus bDefRate,getrefine();   
+      bonus bDefRate,10;   
   - Id: 5159
     AegisName: Golden_Gear_
     Name: Golden Gear
@@ -4430,7 +4440,10 @@ Body:
     View: 30
     Script: |
       bonus bUnbreakableHelm;
-      bonus bDefRate,getrefine();
+      bonus bDefRate,10; 
+      if (getrefine()>8){
+      bonus bDefRate,10;
+      }      
   - Id: 2375
     AegisName: Diabolus_Armor
     Name: Diabolus Armor
@@ -5950,7 +5963,7 @@ Body:
     Type: Armor
     Buy: 50000
     Weight: 500
-    Defense: 8
+    Defense: 3
     Jobs:
       Alchemist: true
       Assassin: true
@@ -5965,14 +5978,15 @@ Body:
       Head_Top: true
     Refineable: true
     Script: |
-      bonus bMdef,7;
+      bonus bMdef,5;  
+      bonus bFlee2,3;
   - Id: 2231
     AegisName: Gemmed_Sallet_
     Name: Gemmed Sallet
     Type: Armor
     Buy: 50000
     Weight: 500
-    Defense: 8
+    Defense: 3
     Slots: 1
     Jobs:
       Alchemist: true
@@ -5988,7 +6002,11 @@ Body:
       Head_Top: true
     Refineable: true
     Script: |
-      bonus bMdef,7;      
+      bonus bMdef,5;  
+      bonus bFlee2,3;
+      if (getrefine()>6){
+      bonus bFlee2,3;
+      }
   - Id: 2249
     AegisName: Coronet
     Name: Coronet
@@ -6274,7 +6292,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -6285,13 +6303,16 @@ Body:
     View: 74
     Script: |
       bonus bStr,1;   
+      if (getrefine()>9){
+      bonus bStr,3;
+      }
   - Id: 5350
     AegisName: Pirate_Bandana_
     Name: Pirate Bandana
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
     Slots: 1
     Jobs:
       All: true
@@ -6841,7 +6862,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 5
     Slots: 1
     Jobs:
       All: true
@@ -6853,15 +6874,15 @@ Body:
     Refineable: true
     View: 150
     Script: |
-      bonus bMdef,6;
-      bonus bHPGainValue,60;
+      bonus bMdef,5;
+      bonus bHPGainValue,50+getrefine()*10;
   - Id: 112
     AegisName: Inccubus_Horn
     Name: Incubus Horn
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 6
+    Defense: 5
     Slots: 1
     Jobs:
       All: true
@@ -6873,8 +6894,8 @@ Body:
     Refineable: true
     View: 156
     Script: |
-      bonus bMdef,6;
-      bonus bSPGainValue,6;
+      bonus bMdef,5;
+      bonus bSPGainValue,5+getrefine();
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
