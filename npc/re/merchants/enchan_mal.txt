@@ -141,12 +141,12 @@ malangdo,213,167,4	script	Mayomayo#mal	555,{
 		switch(@mal_equip_id) {
 			case 1131: callsub L_Socket,1,2; case 13436: callsub L_Socket,1,2;	// Ice_Falchon
 			case 1133: callsub L_Socket,1,2; case 13435: callsub L_Socket,1,2;	// Fire_Brand
-			case 1134: callsub L_Socket,1,2; case 13433: callsub L_Socket,1,2;	// Scissores_Sword
+			case 1134: callsub L_Socket,1,2; case 13434: callsub L_Socket,1,2;	// Scissores_Sword
 			case 1135: callsub L_Socket,1,2;	// Cutlas
 			case 13400: callsub L_Socket,1,2;	// Cutlas_
 			case 1136: callsub L_Socket,1,2;	// Solar_Sword
 			case 1138: callsub L_Socket,1,2;	// Mysteltainn_
-			case 1139: callsub L_Socket,1,2; case 13439: callsub L_Socket,1,2;	// Tale_Fing_
+			case 1139: callsub L_Socket,1,2; case 13440: callsub L_Socket,1,2;	// Tale_Fing_
 			case 1140: callsub L_Socket,1,2; case 13447: callsub L_Socket,1,2;	// Byeorrun_Gum
 			case 1141: callsub L_Socket,1,2;	// Immaterial_Sword
 			case 1148: callsub L_Socket,1,2;	// Star_Dust_Blade

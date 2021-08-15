@@ -1080,7 +1080,7 @@ Body:
     SubType: 1hSword
     Buy: 20
     Weight: 1000
-    Attack: 200
+    Attack: 210
     Range: 1
     Jobs:
       Alchemist: true
@@ -1098,8 +1098,8 @@ Body:
     EquipLevelMin: 40
     Refineable: true
     Script: |
+      bonus2 bHPLossRate,1,100; 
       bonus bAtkEle,Ele_Dark;
-      bonus2 bHPLossRate,35,10000;
   - Id: 1140
     AegisName: Byeorrun_Gum
     Name: Byeollungum
@@ -1460,24 +1460,24 @@ Body:
     WeaponLevel: 2
     EquipLevelMin: 18
     Refineable: true
-  - Id: 1156
-    AegisName: Bastard_Sword__
-    Name: Bastard Sword
-    Type: Weapon
-    SubType: 2hSword
-    Buy: 22500
-    Weight: 1600
-    Attack: 115
-    Range: 1
-    Jobs:
-      Crusader: true
-      Knight: true
-      Swordman: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 18
-    Refineable: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - Id: 1157
     AegisName: Two_Hand_Sword
     Name: Two-Handed Sword
@@ -1699,8 +1699,8 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus bDef,1;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,100;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,1000; 
+      skill "MG_LIGHTNINGBOLT",3; bonus bInt,5; bonus bMatk,50; 
   - Id: 1168
     AegisName: Zweihander
     Name: Zweihander
@@ -1965,8 +1965,8 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus bDef,1;
-      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,100;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",3,1000; 
+      skill "MG_LIGHTNINGBOLT",3; bonus bInt,5; bonus bMatk,50; 
   - Id: 1179
     AegisName: Executioner__
     Name: Executioner
@@ -3483,7 +3483,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 400
-    Attack: 80
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -3512,8 +3512,6 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_DemiHuman;
       bonus bIgnoreDefRace,RC_Player_Human;
-      bonus2 bSubRace,RC_DemiHuman,10;
-      bonus2 bSubRace,RC_Player_Human,10;
       bonus2 bSubRace,RC_Demon,-10;
   - Id: 1229
     AegisName: Mama's_Knife
@@ -3522,7 +3520,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 500
-    Attack: 75
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -3641,9 +3639,9 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bMaxHPrate,20;
-      bonus bMaxSPrate,15;
-      bonus bAspdRate,2;
+      bonus bMaxHPrate,9;
+      bonus bMaxSPrate,9;
+      bonus bAspdRate,9;
       bonus bAtkEle,Ele_Dark;
   - Id: 1233
     AegisName: Exercise
@@ -3652,7 +3650,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 700
-    Attack: 90
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -3771,8 +3769,8 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus2 bAddEle,Ele_Earth,10;
-      bonus2 bAddEle,Ele_Wind,10;
+      bonus2 bAddEle,Ele_Earth,15;
+      bonus2 bAddEle,Ele_Wind,15;
       bonus bUnbreakableWeapon;
   - Id: 1237
     AegisName: Grimtooth_
@@ -3882,7 +3880,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,3000;
+      bonus2 bAddEff,Eff_Poison,6000;
   - Id: 1240
     AegisName: Princess_Knife
     Name: Princess Knife
@@ -3991,7 +3989,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 800
-    Attack: 100
+    Attack: 120
     Range: 1
     Jobs:
       Assassin: true
@@ -5237,7 +5235,7 @@ Body:
     Weight: 1500
     Attack: 140
     Range: 1
-    Slots: 2
+    Slots: 1
     Jobs:
       Assassin: true
     Classes:
@@ -6385,27 +6383,27 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 30
     Refineable: true
-  - Id: 1362
-    AegisName: Two_Handed_Axe__
-    Name: Two-Handed Axe
-    Type: Weapon
-    SubType: 2hAxe
-    Buy: 55000
-    Weight: 2500
-    Attack: 185
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Swordman: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 30
-    Refineable: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - Id: 1363
     AegisName: Brood_Axe
     Name: Bloody Axe
@@ -6609,7 +6607,7 @@ Body:
       bonus bUseSPrate,100;
       if (readparam(bStr)>=95) {
          bonus bBaseAtk,340;
-         bonus2 bAddEff,Eff_Stun,3000;
+         bonus2 bAddEff,Eff_Stun,4000;
          bonus bBreakArmorRate,500;
       }
   - Id: 1371
@@ -6639,7 +6637,7 @@ Body:
       bonus bUseSPrate,100;
       if (readparam(bStr)>=95) {
          bonus bBaseAtk,340;
-         bonus2 bAddEff,Eff_Stun,3000;
+         bonus2 bAddEff,Eff_Stun,4000;
          bonus bBreakArmorRate,500;
       }
   - Id: 1372
@@ -6679,13 +6677,15 @@ Body:
       bonus bSpeedRate,25;
       /*Gold PC Room: bonus bBaseAtk,10; bonus bMatk,10;*/
   - Id: 1373
-    AegisName: Brood_Axe_C
-    Name: Refined Bloody Axe
+    AegisName: Brood_Axe
+    Name: Bloody Axe
     Type: Weapon
     SubType: 2hAxe
-    Buy: 2
-    Attack: 205
+    Buy: 20
+    Weight: 4000
+    Attack: 170
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -6696,20 +6696,18 @@ Body:
     Locations:
       Both_Hand: true
     WeaponLevel: 4
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    EquipLevelMin: 44
+    Refineable: true
     Script: |
-      bonus bStr,20;
-      bonus bMatkRate,20;
-      bonus bAspdRate,5;
+      bonus bStr,10;
+      bonus bSpeedRate,25;
+      
+      
+      
+      
+      
+      
+      
   - Id: 1374
     AegisName: Tomahawk_C
     Name: Tomahawk
@@ -6860,13 +6858,15 @@ Body:
       bonus2 bSkillAtk,"MC_MAMMONITE",20;
       bonus2 bAddEff,Eff_Stun,2000;
   - Id: 1379
-    AegisName: BF_Two_Handed_Axe1
-    Name: Valorous Insane Battle Axe
+    AegisName: Guillotine
+    Name: Guillotine
     Type: Weapon
     SubType: 2hAxe
     Buy: 20
-    Attack: 200
+    Weight: 3000
+    Attack: 215
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -6876,25 +6876,23 @@ Body:
       Swordman: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 80
+    WeaponLevel: 4
+    EquipLevelMin: 44
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
-      bonus bStr,3;
-      bonus2 bAddRace,RC_DemiHuman,55;
-      bonus2 bAddRace,RC_Player_Human,55;
-      bonus2 bIgnoreDefRaceRate,RC_DemiHuman,20;
-      bonus2 bIgnoreDefRaceRate,RC_Player_Human,20;
-      bonus bUnbreakableWeapon;
+      bonus2 bComaRace,RC_DemiHuman,30;
+      bonus2 bComaRace,RC_Player_Human,30;
+      bonus2 bSPDrainValueRace,RC_DemiHuman,2;
+      bonus2 bSPDrainValueRace,RC_Player_Human,2;
+      bonus2 bSPGainRace,RC_DemiHuman,20;
+      bonus2 bSPGainRace,RC_Player_Human,20;
+      
+      
+      
+      
+      
+      
+      
   - Id: 1380
     AegisName: BF_Two_Handed_Axe2
     Name: Brave Insane Battle Axe
@@ -7449,12 +7447,15 @@ Body:
       if (.@i>2)
          bonus bBaseAtk,((.@i-2)*5);
   - Id: 1399
-    AegisName: TE_Woe_Two_Handed_Axe
-    Name: TE Woe Two Handed Axe
+    AegisName: Slaughter
+    Name: Slaughter
     Type: Weapon
     SubType: 2hAxe
-    Attack: 150
+    Buy: 20
+    Weight: 2500
+    Attack: 120
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -7464,23 +7465,20 @@ Body:
       Swordman: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 40
+    WeaponLevel: 4
+    EquipLevelMin: 44
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
-      bonus bUnbreakableWeapon;
-      bonus2 bAddRace,RC_Player_Human,40;
-      bonus2 bAddEff,Eff_Stun,1000;
-      bonus2 bAddRace,RC_Player_Doram,40;
+      bonus bAtkEle,Ele_Earth;
+      bonus bIgnoreDefRace,RC_Brute;
+      bonus2 bComaRace,RC_Brute,40;
+      bonus bIgnoreDefRace,RC_Player_Doram;
+      bonus2 bComaRace,RC_Player_Doram,40;
+      
+      
+      
+      
+      
   - Id: 1400
     AegisName: Sinister_Spear
     Name: Spear of Vicious Mind
@@ -7596,24 +7594,24 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 4
     Refineable: true
-  - Id: 1406
-    AegisName: Spear__
-    Name: Spear
-    Type: Weapon
-    SubType: 1hSpear
-    Buy: 1700
-    Weight: 850
-    Attack: 44
-    Range: 3
-    Jobs:
-      Crusader: true
-      Knight: true
-      Swordman: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 4
-    Refineable: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - Id: 1407
     AegisName: Pike
     Name: Pike
@@ -7992,13 +7990,15 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,50;
   - Id: 1424
-    AegisName: Skewer_C
-    Name: Refined Brocca
+    AegisName: Skewer__
+    Name: Brocca
     Type: Weapon
     SubType: 1hSpear
-    Buy: 1
-    Attack: 149
+    Buy: 20
+    Weight: 850
+    Attack: 100
     Range: 3
+    Slots: 1
     Jobs:
       Crusader: true
       Knight: true
@@ -8006,21 +8006,19 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    EquipLevelMin: 48
+    Refineable: true
     Script: |
       bonus bIgnoreDefClass,Class_Normal;
-      bonus2 bAddSize,Size_Medium,20;
-      bonus2 bAddSize,Size_Large,20;
+      bonus2 bAddEle,Ele_Neutral,25;
+
+
+
+
+
+
+
+      
   - Id: 1425
     AegisName: BF_Spear1
     Name: Assaulter Spear
@@ -8132,7 +8130,7 @@ Body:
       bonus2 bSkillAtk,"SM_MAGNUM",25;
       bonus bStr,2;
   - Id: 1428
-    AegisName: Long_Horn_M
+    AegisName: Long_Horn_
     Name: Long Horn
     Type: Weapon
     SubType: 1hSpear
@@ -8140,7 +8138,7 @@ Body:
     Weight: 1000
     Attack: 150
     Range: 3
-    Slots: 1
+    Slots: 2
     Jobs:
       Crusader: true
       Knight: true
@@ -8152,20 +8150,20 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 65
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       bonus bAtkEle,Ele_Holy;
-      bonus2 bAddEff,Eff_Bleeding,500;
+      bonus2 bAddEff,Eff_Bleeding,1000;
       skill "TF_DETOXIFY",1;
-      bonus bUnbreakableWeapon;
+      bonus bUnbreakableWeapon;  
+      
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 1429
     AegisName: Hunting_Spear_M
     Name: Hunting Spear
@@ -9080,8 +9078,8 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Silence,200;
-      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100;
+      bonus2 bAddEff,Eff_Silence,500;
+      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100; bonus bMatk,50;
   - Id: 1469
     AegisName: Longinus's_Spear
     Name: Longinus's Spear
@@ -9148,7 +9146,7 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       bonus3 bAutoSpell,"MG_FIREBALL",5,100;
-      bonus bStr,3;
+      bonus bStr,3; bonus bMatk,50;    
   - Id: 1472
     AegisName: Staff_Of_Soul
     Name: Soul Staff
@@ -9377,8 +9375,8 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Wind;
-      bonus2 bAddEff,Eff_Silence,200;
-      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100;
+      bonus2 bAddEff,Eff_Silence,500;
+      bonus3 bAutoSpell,"MG_THUNDERSTORM",3,100; bonus bMatk,50;
   - Id: 1482
     AegisName: BF_Lance1
     Name: Assaulter Lance
@@ -9555,37 +9553,37 @@ Body:
     Script: |
       bonus2 bAddSize,Size_All,50;
   - Id: 1488
-    AegisName: Ahlspiess_C
+    AegisName: Ahlspiess
     Name: Ahlspiess
     Type: Weapon
     SubType: 2hSpear
     Buy: 20
-    Attack: 135
+    Weight: 1000
+    Attack: 120
     Range: 3
+    Sots: 1
     Jobs:
       Crusader: true
       Knight: true
     Locations:
       Both_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 1
+    EquipLevelMin: 65
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       bonus bIgnoreDefClass,Class_Normal;
       bonus bIgnoreDefClass,Class_Boss;
-      bonus2 bAddRace,RC_DemiHuman,20;
-      bonus2 bAddRace,RC_Player_Human,20;
-      bonus3 bAutoSpell,"KN_PIERCE",5,30;
+      bonus2 bAddRace,RC_DemiHuman,10;
+      bonus2 bAddRace,RC_Player_Human,10;
+      bonus3 bAutoSpell,"KN_PIERCE",5,30; 
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 1489
     AegisName: Spearfish_
     Name: Marlin
@@ -9836,7 +9834,7 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Fire;
       bonus3 bAutoSpell,"MG_FIREBALL",5,100;
-      bonus bStr,3;
+      bonus bStr,3;  bonus bMatk,50;   
   - Id: 1498
     AegisName: Scarlet_Lance
     Name: Crimson Lance
@@ -12796,31 +12794,31 @@ Body:
     Refineable: true
     Script: |
       bonus bInt,3;
-  - Id: 1612
-    AegisName: Arc_Wand__
-    Name: Arc Wand
-    Type: Weapon
-    SubType: Staff
-    Buy: 45000
-    Weight: 400
-    Attack: 60
-    MagicAttack: 95
-    Range: 1
-    Jobs:
-      Acolyte: true
-      Mage: true
-      Monk: true
-      Priest: true
-      Sage: true
-      SoulLinker: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 24
-    Refineable: true
-    Script: |
-      bonus bInt,3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   - Id: 1613
     AegisName: Mighty_Staff
     Name: Mighty Staff
@@ -12852,7 +12850,7 @@ Body:
     Name: Wand of Occult
     Type: Weapon
     SubType: Staff
-    Buy: 20
+    Buy: 55000
     Weight: 700
     Attack: 75
     MagicAttack: 105
@@ -12871,7 +12869,7 @@ Body:
     EquipLevelMin: 24
     Refineable: true
     Script: |
-      bonus bInt,3;
+      bonus bInt,3;    
   - Id: 1615
     AegisName: Bone_Wand
     Name: Evil Bone Wand
@@ -15897,13 +15895,15 @@ Body:
     Script: |
       bonus bLongAtkRate,20;
   - Id: 1729
-    AegisName: Bow_Of_Rudra_C
+    AegisName: Bow_Of_Rudra
     Name: Rudra Bow
     Type: Weapon
     SubType: Bow
-    Buy: 2
-    Attack: 185
+    Buy: 20
+    Weight: 1200
+    Attack: 150
     Range: 5
+    Slots: 1
     Jobs:
       Archer: true
       BardDancer: true
@@ -15912,27 +15912,25 @@ Body:
     Locations:
       Both_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    EquipLevelMin: 48
+    Refineable: true
     Script: |
       bonus bAtkEle,Ele_Holy;
       bonus bInt,5;
+      skill "AL_CURE",1;
+      skill "AL_HEAL",1;
       bonus2 bResEff,Eff_Poison,5000;
       bonus2 bResEff,Eff_Curse,5000;
       bonus2 bResEff,Eff_Silence,5000;
       bonus2 bResEff,Eff_Confusion,5000;
       bonus2 bResEff,Eff_Blind,5000;
-      skill "AL_CURE",1;
-      skill "AL_HEAL",1;
+      
+      
+      
+      
+      
+      
+      
   - Id: 1730
     AegisName: Burning_Bow
     Name: Burning Bow
@@ -16726,7 +16724,7 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bAspdRate,12;
+      bonus bAspdRate,15;
   - Id: 1815
     AegisName: Claw_Of_Garm
     Name: Hatii Claw
@@ -16768,7 +16766,7 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bAspdRate,12;
+      bonus bAspdRate,15;
   - Id: 1817
     AegisName: Kaiser_Knuckle_C
     Name: Kaiser Knuckle
@@ -37718,9 +37716,9 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;
-      bonus bMdef,3;
+      bonus bDex,2;
+      bonus bInt,2;
+      bonus bMdef,3; bonus2 bSubRace,RC_Demon,10;
   - Id: 5026
     AegisName: Hat_Of_Cook
     Name: Chef Hat
@@ -37932,8 +37930,8 @@ Body:
     Refineable: true
     View: 123
     Script: |
-      bonus bStr,1;
-      bonus bInt,1;
+      bonus bStr,1; bonus bFlee,3;
+      bonus bInt,1; bonus2 bSubRace,RC_Angel,10;
   - Id: 5039
     AegisName: Mottled_Egg_Shell
     Name: Rainbow Eggshell
@@ -41856,10 +41854,10 @@ Body:
       bonus bStr,1;
   - Id: 5281
     AegisName: Deviruchi_Cap_C
-    Name: Refined Deviruchi Hat
+    Name: Modified Deviruchi Hat
     Type: Armor
     Buy: 2
-    Defense: 4
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -41867,19 +41865,19 @@ Body:
     Locations:
       Head_Top: true
     View: 123
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       bonus bStr,1;
-      bonus bInt,1;
+      bonus bAgi,1;
+      bonus bFlee,3; bonus2 bSubRace,RC_Angel,10;
+      .@r = getrefine();
+      if (.@r>=7){
+      bonus bStr,2;
+      bonus bAgi,2;
+      }
+      if (.@r>=9){
+      bonus bStr,2;
+      bonus bAgi,2;
+      }
   - Id: 5282
     AegisName: euRO_Baseball_Cap
     Name: Europe Baseball Cap
@@ -54133,7 +54131,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Dark;
-      bonus2 bAddEff,Eff_Blind,500;
+      bonus2 bAddEff,Eff_Blind,1000;
       bonus2 bAddEff2,Eff_Blind,50;
   - Id: 13003
     AegisName: Coward
@@ -54438,7 +54436,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Poison;
-      bonus2 bAddEff,Eff_Poison,3000;
+      bonus2 bAddEff,Eff_Poison,6000;
   - Id: 13017
     AegisName: House_Auger_
     Name: Ice Pick
@@ -54510,8 +54508,8 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus2 bAddEle,Ele_Earth,10;
-      bonus2 bAddEle,Ele_Wind,10;
+      bonus2 bAddEle,Ele_Earth,15;
+      bonus2 bAddEle,Ele_Wind,15;
       bonus bUnbreakableWeapon;
   - Id: 13019
     AegisName: Ginnungagap_
@@ -54551,7 +54549,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Dark;
-      bonus2 bAddEff,Eff_Blind,500;
+      bonus2 bAddEff,Eff_Blind,1000;
       bonus2 bAddEff2,Eff_Blind,50;
   - Id: 13020
     AegisName: Warrior_Balmung_
@@ -54584,8 +54582,9 @@ Body:
     Name: Combat Knife
     Type: Weapon
     SubType: Dagger
-    Buy: 1
-    Attack: 129
+    Buy: 20
+    Weight: 400
+    Attack: 100
     Range: 1
     Jobs:
       Alchemist: true
@@ -54609,27 +54608,26 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    EquipLevelMin: 36
+    Refineable: true
     Script: |
       bonus bIgnoreDefRace,RC_DemiHuman;
       bonus bIgnoreDefRace,RC_Player_Human;
-      bonus2 bSubRace,RC_DemiHuman,10;
-      bonus2 bSubRace,RC_Player_Human,10;
-      bonus2 bSubRace,RC_Demon,-10;
-      bonus bMaxSPrate,10;
-      bonus bSPDrainValue,3;
-      /*Gold PC Room: bonus bBaseAtk,10;
-      bonus bMatk,10;*/
+      bonus2 bSubRace,RC_Demon,-10; 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 13022
     AegisName: Counter_Dagger_C
     Name: Dagger of Counter
@@ -54892,13 +54890,15 @@ Body:
       } else
          bonus3 bAutoSpell,"NPC_SLOWCAST",1,50;
   - Id: 13029
-    AegisName: Prinsence_Knife
-    Name: Prinsense Knife
+    AegisName: Weeder_Knife__
+    Name: Weeder Knife
     Type: Weapon
     SubType: Dagger
     Buy: 20
-    Attack: 120
+    Weight: 400
+    Attack: 100
     Range: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -54920,18 +54920,17 @@ Body:
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
     Script: |
-      bonus2 bAddClass,Class_All,50;
+      bonus bIgnoreDefRace,RC_Plant;
+      bonus2 bAddRace,RC_Plant,15;
+      bonus2 bSubRace,RC_Plant,15;       
+      
+      
+      
+      
   - Id: 13030
     AegisName: Dragon_Killer_
     Name: Dragon Killer
@@ -54939,7 +54938,7 @@ Body:
     SubType: Dagger
     Buy: 20
     Weight: 900
-    Attack: 110
+    Attack: 100
     Range: 1
     Slots: 2
     Jobs:
@@ -55061,9 +55060,9 @@ Body:
     EquipLevelMin: 36
     Refineable: true
     Script: |
-      bonus bMaxHPrate,20;
-      bonus bMaxSPrate,15;
-      bonus bAspdRate,2;
+      bonus bMaxHPrate,9;
+      bonus bMaxSPrate,9;
+      bonus bAspdRate,9;
       bonus bAtkEle,Ele_Dark;
   - Id: 13034
     AegisName: Twilight_Desert
@@ -55698,55 +55697,15 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 13051
-    AegisName: P_Dagger2
-    Name: Eden Dagger II
+    AegisName: Mama's_Knife__
+    Name: Kitchen Knife
     Type: Weapon
     SubType: Dagger
-    Attack: 158
-    MagicAttack: 70
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Archer: true
-      Assassin: true
-      BardDancer: true
-      Blacksmith: true
-      Crusader: true
-      Hunter: true
-      KagerouOboro: true
-      Knight: true
-      Mage: true
-      Merchant: true
-      Ninja: true
-      Novice: true
-      Rogue: true
-      Sage: true
-      SoulLinker: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-      Wizard: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 40
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-  - Id: 13052
-    AegisName: Tourist_Dagger
-    Name: Tourist Dagger
-    Type: Weapon
-    SubType: Dagger
+    Buy: 20
     Weight: 500
-    Attack: 51
+    Attack: 100
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Archer: true
@@ -55760,29 +55719,69 @@ Body:
       Mage: true
       Merchant: true
       Ninja: true
-      Novice: true
       Rogue: true
       Sage: true
       SoulLinker: true
-      SuperNovice: true
       Swordman: true
       Thief: true
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    WeaponLevel: 4
+    EquipLevelMin: 36
+    Refineable: true
     Script: |
-      bonus bAgi,2;
+      bonus bCritical,30;
+      bonus3 bAddMonsterDropItem,517,RC_Brute,5000;
+      
+      
+      
+      
+      
+  - Id: 13052
+    AegisName: Holy_Dagger__
+    Name: Holy Dagger
+    Type: Weapon
+    SubType: Dagger
+    Buy: 20
+    Weight: 800
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+      KagerouOboro: true
+      Ninja: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 55
+    Refineable: true
+    Script: |
+      bonus bAtkEle,Ele_Holy;
+      bonus2 bAddRace,RC_Demon,5;  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 13053
     AegisName: F_Moonlight_Sword_C
     Name: Moonlight Sword
@@ -55817,13 +55816,14 @@ Body:
       bonus bSPDrainValue,3;
       bonus bMaxSPrate,10;
   - Id: 13054
-    AegisName: F_Combat_Knife_C
-    Name: Combat Knife
+    AegisName: Exercise___
+    Name: Exorciser
     Type: Weapon
     SubType: Dagger
-    Buy: 1
-    Attack: 129
+    Buy: 20
+    Attack: 100
     Range: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -55846,14 +55846,13 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 4
-    EquipLevelMin: 1
+    EquipLevelMin: 36
+    Refineable: true
     Script: |
-      bonus bIgnoreDefRace,RC_DemiHuman;
-      bonus bIgnoreDefRace,RC_Player_Human;
-      bonus2 bSubRace,RC_DemiHuman,10;
-      bonus2 bSubRace,RC_Player_Human,10;
-       bonus bSPDrainValue,3;
-      bonus bMaxSPrate,10;
+      bonus bIgnoreDefRace,RC_Demon;
+      bonus2 bSubRace,RC_Demon,5;
+      bonus2 bSubRace,RC_DemiHuman,-10;
+      bonus2 bSubRace,RC_Player_Human,-10;   
   - Id: 13055
     AegisName: F_Asura_C
     Name: Asura
@@ -56596,13 +56595,14 @@ Body:
       .@r = getrefine();
       bonus bHit,.@r;
   - Id: 13083
-    AegisName: TE_Woe_Knife
-    Name: TE Woe Knife
+    AegisName: Princess_Knife__
+    Name: Princess Knife
     Type: Weapon
     SubType: Dagger
-    Attack: 100
-    MagicAttack: 100
+    Attack: 84
+    MagicAttack: 0
     Range: 1
+    Slots: 2
     Jobs:
       Alchemist: true
       Archer: true
@@ -56616,32 +56616,31 @@ Body:
       Mage: true
       Merchant: true
       Ninja: true
-      Novice: true
+      Novice: false
       Rogue: true
       Sage: true
       SoulLinker: true
-      SuperNovice: true
       Swordman: true
       Thief: true
       Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 40
+    WeaponLevel: 4
+    EquipLevelMin: 1
     Refineable: true
     Trade:
       Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+      NoDrop: false
+      NoTrade: false
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
     Script: |
-      bonus2 bAddRace,RC_Player_Human,40;
-      bonus2 bAddRace,RC_Player_Doram,40;
-      bonus2 bAddEff,Eff_Silence,1000;
+      bonus bAllStats,1;
+
+
   - Id: 13085
     AegisName: Volcano_Knife
     Name: Volcano Knife
@@ -57034,8 +57033,8 @@ Body:
     Slots: 1
     Jobs:
       Rogue: true
-    Classes:
-      All_Third: true
+
+
     Locations:
       Right_Hand: true
     WeaponLevel: 3
@@ -60298,45 +60297,15 @@ Body:
       bonus bAspdRate,10;
       bonus2 bAddEff,Eff_Curse,300;
   - Id: 13406
-    AegisName: Edger
-    Name: Edger
+    AegisName: Edge
+    Name: Edge
     Type: Weapon
     SubType: 1hSword
     Buy: 20
-    Attack: 120
+    Weight: 700
+    Attack: 125
     Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Rogue: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 1
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      bonus2 bAddClass,Class_All,50;
-  - Id: 13407
-    AegisName: Nagan_C
-    Name: Refined Nagan
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 1
-    Attack: 148
-    Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -60350,21 +60319,51 @@ Body:
     Locations:
       Right_Hand: true
     WeaponLevel: 4
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus2 bAddEff,Eff_Curse,500;
+      bonus2 bComaClass,Class_All,10; 
+      
+      
+      
+      
+  - Id: 13407
+    AegisName: Nagan___
+    Name: Nagan
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 20
+    Weight: 500
+    Attack: 120
+    Range: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Rogue: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
     Script: |
       skill "TF_DOUBLE",5;
       bonus bDoubleRate,25;
-      bonus2 bAddRace,RC_DemiHuman,40;
-      bonus2 bAddRace,RC_Player_Human,40;
+      bonus2 bAddRace,RC_DemiHuman,5;
+      bonus2 bAddRace,RC_Player_Human,5;
+      
+      
+      
+      
+      
+      
   - Id: 13408
     AegisName: Fire_Brand_C
     Name: Refined Fireblend
@@ -60436,48 +60435,48 @@ Body:
       bonus bAtkEle,Ele_Ghost;
       bonus3 bSPVanishRate,80,45,BF_WEAPON|BF_MAGIC|BF_MISC;
       bonus bUnbreakableWeapon;
-  - Id: 13410
-    AegisName: BF_Sword1
-    Name: Valorous Gladiator Blade
-    Type: Weapon
-    SubType: 1hSword
-    Buy: 20
-    Attack: 115
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Novice: true
-      Rogue: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 80
-    Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      bonus bStr,1;
-      bonus bDex,1;
-      bonus2 bAddRace,RC_DemiHuman,75;
-      bonus2 bAddRace,RC_Player_Human,75;
-      bonus2 bIgnoreDefRaceRate,RC_DemiHuman,20;
-      bonus2 bIgnoreDefRaceRate,RC_Player_Human,20;
-      bonus bUnbreakableWeapon;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 13411
     AegisName: BF_Sword2
     Name: Brave Gladiator Blade
@@ -60606,7 +60605,7 @@ Body:
       All_Upper: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
+    WeaponLevel: 4
     EquipLevelMin: 70
     Refineable: true
     Script: |
@@ -61184,12 +61183,15 @@ Body:
       bonus bMaxHP,-40*.@b;
       bonus bMaxSP,-20*.@b;
   - Id: 13434
-    AegisName: P_Saber3
-    Name: Eden Saber III
+    AegisName: Scissores_Sword__
+    Name: Caesar's Sword
     Type: Weapon
     SubType: 1hSword
-    Attack: 185
+    Buy: 20
+    Weight: 700
+    Attack: 140
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -61202,17 +61204,14 @@ Body:
       Thief: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 60
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_Plant,25;
+      bonus bIgnoreDefRace,RC_Plant; 
+      
+      
   - Id: 13435
     AegisName: Fire_Brand_
     Name: Fireblend
@@ -61223,7 +61222,7 @@ Body:
     Attack: 100
     MagicAttack: 108
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Alchemist: true
       Assassin: true
@@ -61241,7 +61240,7 @@ Body:
     Refineable: true
     Script: |
       bonus bAtkEle,Ele_Fire;
-      skill "MG_FIREBOLT",3;
+      skill "MG_FIREBOLT",3; bonus bInt,5; bonus bMatk,50;
       bonus3 bAutoSpell,"MG_FIREBOLT",3,100;
   - Id: 13436
     AegisName: Ice_Falchon_
@@ -61251,9 +61250,8 @@ Body:
     Buy: 20
     Weight: 600
     Attack: 100
-    MagicAttack: 108
     Range: 1
-    Slots: 3
+    Slots: 2
     Jobs:
       Alchemist: true
       Assassin: true
@@ -61272,7 +61270,8 @@ Body:
     Script: |
       bonus bAtkEle,Ele_Water;
       skill "MG_COLDBOLT",3;
-      bonus3 bAutoSpell,"MG_COLDBOLT",3,100;
+      bonus3 bAutoSpell,"MG_COLDBOLT",3,1000;
+      bonus bInt,5; bonus bMatk,50; 
   - Id: 13437
     AegisName: Orcish_Sword_
     Name: Orcish Sword
@@ -61330,79 +61329,79 @@ Body:
     WeaponLevel: 4
     EquipLevelMin: 105
     Refineable: true
-  - Id: 13439
-    AegisName: TE_Woe_Sword
-    Name: TE Woe Sword
-    Type: Weapon
-    SubType: 1hSword
-    Attack: 120
-    MagicAttack: 100
-    Range: 1
-    Jobs:
-      Alchemist: true
-      Assassin: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
-      Novice: true
-      Rogue: true
-      SuperNovice: true
-      Swordman: true
-      Thief: true
-    Locations:
-      Right_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 40
-    Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      bonus2 bAddRace,RC_Player_Human,40;
-      bonus2 bAddRace,RC_Player_Doram,40;
-      bonus2 bAddEff,Eff_Poison,1000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
   - Id: 13440
-    AegisName: Ceremonial_Sword
-    Name: Ceremonial Sword
+    AegisName: _Tale_Fing_
+    Name: Tirfing
     Type: Weapon
     SubType: 1hSword
     Buy: 20
-    Weight: 500
-    Attack: 60
+    Weight: 1000
+    Attack: 210
     Range: 1
+    Slots: 1
     Jobs:
       Alchemist: true
-      Archer: true
       Assassin: true
-      BardDancer: true
       Blacksmith: true
       Crusader: true
-      Hunter: true
-      KagerouOboro: true
       Knight: true
-      Mage: true
       Merchant: true
-      Ninja: true
       Rogue: true
-      Sage: true
-      SoulLinker: true
       Swordman: true
       Thief: true
-      Wizard: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 1
-    EquipLevelMin: 1
+    WeaponLevel: 4
+    EquipLevelMin: 40
     Refineable: true
     Script: |
-      bonus bAtkEle,Ele_Holy;
+      bonus2 bHPLossRate,1,100; 
+      bonus bAtkEle,Ele_Dark;
+      
+      
+      
+      
+      
+      
+      
   - Id: 13441
     AegisName: Thanos_Sword
     Name: Thanos Sword
@@ -61548,7 +61547,7 @@ Body:
     Weight: 900
     Attack: 150
     Range: 1
-    Slots: 2
+    Slots: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -61567,7 +61566,7 @@ Body:
     Script: |
       bonus2 bSubClass,Class_Normal,-10;
       bonus2 bAddClass,Class_Boss,50;
-      bonus bAllStats,2;
+      bonus bAllStats,2;   
   - Id: 13448
     AegisName: Magical_Blade_
     Name: Magical Blade
@@ -66940,35 +66939,35 @@ Body:
     EquipLevelMin: 100
     Refineable: true
   - Id: 16004
-    AegisName: P_Mace1
-    Name: Eden Mace I
+    AegisName: Slash__
+    Name: Slash
     Type: Weapon
     SubType: Mace
-    Attack: 142
+    Buy: 20
+    Weight: 1000
+    Attack: 145
     Range: 1
+    Slots: 1
     Jobs:
       Acolyte: true
-      Alchemist: true
-      Blacksmith: true
-      Crusader: true
-      Knight: true
-      Merchant: true
       Monk: true
       Priest: true
-      Swordman: true
     Locations:
       Right_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 26
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    WeaponLevel: 4
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus2 bAddRace,RC_Undead,15;
+      bonus2 bComaRace,RC_Undead,10;
+      bonus2 bExpAddRace,RC_Undead,5;
+      
+      
+      
+      
+      
+      
+      
   - Id: 16005
     AegisName: P_Mace2
     Name: Eden Mace II
@@ -69194,12 +69193,15 @@ Body:
     EquipLevelMin: 105
     Refineable: true
   - Id: 18118
-    AegisName: TE_Woe_Bow
-    Name: TE Woe Bow
+    AegisName: Dragon_Wing__
+    Name: Dragon Wing
     Type: Weapon
     SubType: Bow
-    Attack: 120
+    Buy: 20
+    Weight: 1200
+    Attack: 100
     Range: 5
+    Slots: 2
     Jobs:
       Archer: true
       BardDancer: true
@@ -69208,22 +69210,19 @@ Body:
       Thief: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 40
+    WeaponLevel: 4
+    EquipLevelMin: 60
     Refineable: true
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
-      bonus2 bAddRace,RC_Player_Human,40;
-      bonus2 bAddRace,RC_Player_Doram,40;
-      bonus2 bAddEff,Eff_Curse,1000;
+      bonus3 bAddMonsterDropItem,1765,RC_Dragon,300;
+      bonus bIgnoreDefRace,RC_Dragon;  
+      
+      
+      
+      
+      
+      
+      
   - Id: 18119
     AegisName: Thanos_Bow
     Name: Thanos Bow
@@ -74779,7 +74778,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1600
-    Defense: 10
+    Defense: 0
     Slots: 1
     Jobs:
       Alchemist: true
@@ -74804,16 +74803,16 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bAgi,1;
-      bonus bLuk,1;
-      bonus bMdef,3;
+      bonus bDex,1;
+      bonus bInt,1;
+      bonus bMdef,3; bonus2 bSubRace,RC_Demon,10;
       .@r = getrefine();
       if (.@r>=7) {
-         bonus bAgi,2;
-         bonus bLuk,2;
+      bonus bDex,2;
+      bonus bInt,2;
       }
-      if (.@r>=9)
-         bonus bAspd,1;
+      if (.@r>=9){
+         bonus bDex,2; bonus bInt,2;}
   - Id: 18767
     AegisName: Enhanced_Helm_Of_Sun
     Name: Enhanced Hat of the Sun God
@@ -110484,27 +110483,27 @@ Body:
       bonus bAspdRate,3;
       bonus bUnbreakableWeapon;
   - Id: 28005
-    AegisName: Ru_Blue_Katar
-    Name: Blue Katar
+    AegisName: Bloody_Roar_
+    Name: Bloody Roar
     Type: Weapon
     SubType: Katar
-    Buy: 10
-    Weight: 1200
-    Attack: 190
+    Buy: 20
+    Weight: 1000
+    Attack: 120
     Range: 1
     Slots: 1
     Jobs:
       Assassin: true
     Classes:
-      All_Third: true
+      All: true
     Locations:
       Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 100
+    WeaponLevel: 4
+    EquipLevelMin: 75
     Refineable: true
     Script: |
-      bonus bAgi,5;
-      bonus bStr,5;
+      bonus bIgnoreDefRace,RC_DemiHuman; bonus bHPrecovRate,-100;
+      bonus bIgnoreDefRace,RC_Player_Human; bonus bSPrecovRate,-100; bonus bFlee,-(readparam(bAgi)+BaseLevel);     
   - Id: 28006
     AegisName: Ru_Gold_Katar
     Name: Ru Gold Katar
