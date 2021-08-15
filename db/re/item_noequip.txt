@@ -269,7 +269,7 @@
 13186,8175	// TE_Woe_Shotgun
 13187,8175	// TE_Woe_Grenade
 13317,8175	// TE_Woe_Huuma
-13439,8175	// TE_Woe_Sword
+//13439,8175	// TE_Woe_Sword
 15062,8175	// TE_Woe_Coat
 15063,8175	// TE_Woe_Chain_Mail
 15064,8175	// TE_Woe_Mage_Coat
