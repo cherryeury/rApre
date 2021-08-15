@@ -138,14 +138,14 @@
 //0,19163,1000
 
 // Middle
-1,5664,2 // Filir Pinion
-1,5288,6 // Red Glasses
-1,5358,6 // Peco
-1,5610,8 // Ice Wing Ears
+1,5664,1 // Filir Pinion
+1,5288,3 // Red Glasses
+1,5358,3 // Peco
+1,5610,5 // Ice Wing Ears
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,8 // Fafnir Skin
+1,18559,5 // Fafnir Skin
 1,5402,20 // Mischievous
 1,5786,25 // Ancient elven ear
 //1,18538,200 // Spirit Whisper
