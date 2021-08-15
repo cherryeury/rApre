@@ -38286,7 +38286,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 7
+    Defense: 6
     Jobs:
       All: true
       Novice: false
@@ -38297,8 +38297,8 @@ Body:
     Refineable: true
     View: 150
     Script: |
-      bonus bInt,1;
-      bonus bMdef,10;
+      bonus bMdef,6;
+      bonus bHPGainValue,60;
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
@@ -38387,7 +38387,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 7
+    Defense: 6
     Jobs:
       All: true
       Novice: false
@@ -38398,8 +38398,8 @@ Body:
     Refineable: true
     View: 156
     Script: |
-      bonus bAgi,1;
-      bonus bMdef,10;
+      bonus bMdef,6;
+      bonus bSPGainValue,6;
   - Id: 5073
     AegisName: Cap_Of_Concentration
     Name: Model Training Hat
@@ -85614,21 +85614,21 @@ Body:
     Locations:
       Costume_Head_Top: true
     View: 126
-  - Id: 19862
-    AegisName: C_Horn_Of_Succubus
-    Name: Costume Succubus Horn
-    Type: Armor
-    Buy: 20
-    Locations:
-      Costume_Head_Top: true
-    View: 150
-  - Id: 19863
-    AegisName: C_Inccubus_Horn
-    Name: Costume Incubus Horn
-    Type: Armor
-    Buy: 20
-    Locations:
-      Costume_Head_Top: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     View: 156
   - Id: 19864
     AegisName: C_Dokebi's_Wig

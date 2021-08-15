@@ -6819,6 +6819,62 @@ Body:
     Script: |
       bonus bAgi,2;
       bonus2 bResEff,Eff_Confusion,3000;
+  - Id: 19862
+    AegisName: C_Horn_Of_Succubus
+    Name: Costume Succubus Horn
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    View: 150
+  - Id: 19863
+    AegisName: C_Inccubus_Horn
+    Name: Costume Incubus Horn
+    Type: Armor
+    Buy: 20
+    Locations:
+      Costume_Head_Top: true
+    View: 156      
+  - Id: 111
+    AegisName: Horn_Of_Succubus
+    Name: Succubus Horn
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 6
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 150
+    Script: |
+      bonus bMdef,6;
+      bonus bHPGainValue,60;
+  - Id: 112
+    AegisName: Inccubus_Horn
+    Name: Incubus Horn
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 6
+    Slots: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    Refineable: true
+    View: 156
+    Script: |
+      bonus bMdef,6;
+      bonus bSPGainValue,6;
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
@@ -6837,7 +6893,7 @@ Body:
     Script: |
       bonus bAgi,2;
       bonus2 bResEff,Eff_Confusion,3000;
-      bonus bHPrecovRate,10;
+      bonus bHPrecovRate,20;
   - Id: 5091
     AegisName: Big_Golden_Bell
     Name: Decorative Golden Bell

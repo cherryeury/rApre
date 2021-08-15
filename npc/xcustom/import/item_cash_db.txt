@@ -82,7 +82,7 @@
 //0,18847,12 // Jolly Roger
 //0,5376,30 // satanic
 0,5137,25 // Alice
-0,5584,25 // Majestic
+//0,5584,25 // Majestic
 //0,18653,40 // Deviruchi
 0,5660,25 // Gryphon
 0,5579,32 // Wanderer's Sakkat
@@ -140,14 +140,14 @@
 // Middle
 1,5664,1 // Filir Pinion
 1,5288,3 // Red Glasses
-1,5358,3 // Peco
+1,5358,5 // Peco
 1,5610,5 // Ice Wing Ears
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
 1,18559,5 // Fafnir Skin
-1,5402,20 // Mischievous
-1,5786,25 // Ancient elven ear
+1,5402,10 // Mischievous
+1,5786,20 // Ancient elven ear
 //1,18538,200 // Spirit Whisper
 //1,5924,300
 1,5104,40 // Dark Blinkers
@@ -158,7 +158,7 @@
 //1,19024,1000 // Protect Feathers
 //1,18599,250 // Black Devil Mask
 //1,5325,250 // Robo
-1,18540,300 // Demon Mask
+//1,18540,200 // Demon Mask
 //1,5397,500 // Scuba
 //1,19117,500 // Poring Sunglasses
 //1,5389,500 // Angel's Spirit
