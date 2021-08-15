@@ -4849,7 +4849,7 @@ int pc_modifysellvalue(struct map_session_data *sd,int orig_value)
 {
 	int skill,val = orig_value,rate = 0;
 	if((skill=pc_checkskill(sd,MC_OVERCHARGE))>0)	//OverCharge
-		rate = (4+(skill*2))+((sd->battle_status.luk>100)? (100/10):(sd->battle_status.luk/10));
+		rate = (skill*2)+((sd->battle_status.luk>100)? (100/10):(sd->battle_status.luk/10));
 	if(rate)
 		val = (int)((double)orig_value*(double)(100+rate)/100.);
 	if (val < battle_config.min_shop_sell)
