@@ -1696,11 +1696,11 @@ Body:
   - Id: 37
     Name: MC_DISCOUNT
     Description: Discount
-    MaxLevel: 10
+    MaxLevel: 5
   - Id: 38
     Name: MC_OVERCHARGE
     Description: Overcharge
-    MaxLevel: 10
+    MaxLevel: 5
   - Id: 39
     Name: MC_PUSHCART
     Description: Pushcart

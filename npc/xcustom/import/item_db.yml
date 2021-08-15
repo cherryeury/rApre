@@ -3135,6 +3135,44 @@ Body:
       bonus bAspd,2;
       bonus bDefRate,-66;
       bonus bDef2Rate,-66;
+  - Id: 13439
+    AegisName: TE_Woe_Sword
+    Name: TE Woe Sword
+    Type: Weapon
+    SubType: 1hSword
+    Attack: 120
+    MagicAttack: 100
+    Range: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Novice: true
+      Rogue: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 40
+    Refineable: true
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus2 bAddRace,RC_Player_Human,40;
+      bonus2 bAddRace,RC_Player_Doram,40;
+      bonus2 bAddEff,Eff_Poison,1000;      
   - Id: 1156
     AegisName: Masamune___
     Name: Masamune
