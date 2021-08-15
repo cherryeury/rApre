@@ -38298,7 +38298,7 @@ Body:
     View: 150
     Script: |
       bonus bMdef,4;
-      bonus bHPGainValue,30;
+      bonus bHPGainValue,20;
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
@@ -38399,7 +38399,7 @@ Body:
     View: 156
     Script: |
       bonus bMdef,4;
-      bonus bSPGainValue,3;
+      bonus bSPGainValue,2;
   - Id: 5073
     AegisName: Cap_Of_Concentration
     Name: Model Training Hat

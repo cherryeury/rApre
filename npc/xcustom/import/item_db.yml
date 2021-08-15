@@ -6875,7 +6875,7 @@ Body:
     View: 150
     Script: |
       bonus bMdef,4;
-      bonus bHPGainValue,10+getrefine()*10;
+      bonus bHPGainValue,getrefine()*10;
   - Id: 112
     AegisName: Inccubus_Horn
     Name: Incubus Horn
@@ -6895,7 +6895,7 @@ Body:
     View: 156
     Script: |
       bonus bMdef,4;
-      bonus bSPGainValue,1+getrefine();
+      bonus bSPGainValue,getrefine();
   - Id: 5067
     AegisName: Sombrero
     Name: Sombrero
