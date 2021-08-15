@@ -15109,7 +15109,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1326
@@ -15169,7 +15169,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1328
@@ -15229,7 +15229,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1330
@@ -15289,7 +15289,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1332
@@ -15349,7 +15349,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1334
@@ -15409,7 +15409,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1336
@@ -15469,7 +15469,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1338
@@ -15529,7 +15529,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1340
@@ -15589,7 +15589,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1342
@@ -15649,7 +15649,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1344
@@ -15709,7 +15709,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1346
@@ -15769,7 +15769,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1348
@@ -15829,7 +15829,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1350
@@ -15889,7 +15889,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1352
@@ -15949,7 +15949,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1354
@@ -16009,7 +16009,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1356
@@ -16069,7 +16069,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1358
@@ -16129,7 +16129,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1360
@@ -16189,7 +16189,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1362
@@ -16249,7 +16249,7 @@ Body:
         Rate: 20
       - Item: Old_Card_Album
         Rate: 250
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 5
         StealProtected: true
   - Id: 1364
@@ -49335,7 +49335,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 500
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 3000
       - Item: Sg_White_Potion_Box
         Rate: 2000
@@ -49382,7 +49382,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 50
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 50
       - Item: Sg_White_Potion_Box
         Rate: 500
@@ -49439,7 +49439,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 500
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 3000
       - Item: Sg_White_Potion_Box
         Rate: 2000
@@ -49485,7 +49485,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 50
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 50
       - Item: Sg_White_Potion_Box
         Rate: 500
@@ -49543,7 +49543,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 500
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 3000
       - Item: Sg_White_Potion_Box
         Rate: 2000
@@ -49590,7 +49590,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 50
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 50
       - Item: Sg_White_Potion_Box
         Rate: 500
@@ -49648,7 +49648,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 500
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 3000
       - Item: Sg_White_Potion_Box
         Rate: 2000
@@ -49694,7 +49694,7 @@ Body:
         Rate: 3000
       - Item: Old_Card_Album
         Rate: 50
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 50
       - Item: Sg_White_Potion_Box
         Rate: 500
@@ -50597,7 +50597,7 @@ Body:
         Rate: 1000
       - Item: Woe_Blue_Potion
         Rate: 1000
-      - Item: Sg_Weapon_Supply_Box
+      - Item: High_Weapon_Box
         Rate: 50
       - Item: Treasure_Box
         Rate: 50
