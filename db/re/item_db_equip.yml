@@ -24049,7 +24049,7 @@ Body:
       Head_Top: true
     View: 37
     Script: |
-      bonus2 bSubRace,RC_Insect,10;
+      bonus2 bSubRace,RC_Insect,15;
   - Id: 2254
     AegisName: Angelic_Chain
     Name: Angel Wing
@@ -43177,7 +43177,7 @@ Body:
       Head_Top: true
     View: 37
     Script: |
-      bonus2 bSubRace,RC_Insect,10;
+      bonus2 bSubRace,RC_Insect,15;
   - Id: 5352
     AegisName: Poporing_Cap
     Name: Poporing Cap

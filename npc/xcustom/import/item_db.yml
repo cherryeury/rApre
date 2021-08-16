@@ -4775,7 +4775,7 @@ Body:
     Refineable: true
     View: 11
     Script: |
-      bonus bHealPower2,3;     
+      bonus bHealPower2,4;     
   - Id: 2217
     AegisName: Biretta_
     Name: Biretta
@@ -4793,7 +4793,7 @@ Body:
     Refineable: true
     View: 11      
     Script: |
-      bonus bHealPower2,3;    
+      bonus bHealPower2,4;    
   - Id: 2244
     AegisName: Big_Sis'_Ribbon
     Name: Big Ribbon
@@ -4828,8 +4828,8 @@ Body:
     Refineable: true
     View: 98
     Script: |
-      bonus bMaxHP,50;
-      bonus bMaxSP,10;
+      bonus bMaxHP,100;
+      bonus bMaxSP,20;
       bonus bInt,1; 
   - Id: 5035
     AegisName: Poring_Hat
@@ -5955,7 +5955,7 @@ Body:
       bonus2 bAddEle,Ele_Holy,5; 
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,10;
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
       }       
   - Id: 2230
     AegisName: Gemmed_Sallet
@@ -6151,7 +6151,7 @@ Body:
       bonus2 bAddEle,Ele_Earth,5; 
       }
       if (getrefine()>8){
-      bonus2 bIgnoreMDefClassRate,Class_All,10;
+      bonus2 bIgnoreMDefClassRate,Class_All,15;
       }                 
   - Id: 1234
     AegisName: Moonlight_Sword
@@ -6340,8 +6340,8 @@ Body:
     Refineable: true
     View: 98      
     Script: |
-      bonus bMaxHP,50;
-      bonus bMaxSP,10;
+      bonus bMaxHP,100;
+      bonus bMaxSP,20;
       bonus bInt,1;   
   - Id: 5348
     AegisName: Big_Sis'_Ribbon_
@@ -10646,6 +10646,7 @@ Body:
     Refineable: true
     View: 18
     Script: |
+      bonus bInt,1;
       bonus bMdef,5;
   - Id: 2233
     AegisName: Circlet_
@@ -10668,7 +10669,8 @@ Body:
     Refineable: true
     View: 18
     Script: |
-      bonus bMdef,5;      
+      bonus bInt,1;
+      bonus bMdef,5;     
   - Id: 2
     AegisName: C_Coif_
     Name: Costume Coif
@@ -11119,7 +11121,7 @@ Body:
     View: 103
     Script: |
       bonus2 bSubEle,Ele_Dark,-15;    
-      bonus2 bSubEle,Ele_Neutral,2;    
+      bonus2 bSubEle,Ele_All,2;    
   - Id: 5162
     AegisName: Bone_Helm_
     Name: Bone Helm
@@ -11142,12 +11144,14 @@ Body:
     View: 103
     Script: |
       bonus2 bSubEle,Ele_Dark,-15;
-      .@j = getrefine();
-      if (.@j>=7)
-         .@i = 1;
-      if (.@j>=9)
-         .@i = 2;
-      bonus2 bSubEle,Ele_Neutral,2+(2*.@i);
+      bonus2 bSubEle,Ele_All,1;
+      .@r = getrefine();
+      if (.@r>=7){
+         bonus2 bSubEle,Ele_All,2;
+      }
+      if (.@r>=9){
+         bonus2 bSubEle,Ele_All,2;
+      }
   - Id: 5163
     AegisName: Corsair_
     Name: Corsair
@@ -11187,10 +11191,12 @@ Body:
       bonus bVit,1;
       bonus bMaxHprate,5;
       .@r = getrefine();
-      if (.@r>=7)
+      if (.@r>=7){
          bonus2 bSubEle,Ele_Neutral,1;
-      if (.@r>=9)
-         bonus bMaxHPrate,3;    
+      }
+      if (.@r>=9){
+         bonus bMaxHPrate,5;
+      }
   - Id: 19626
     AegisName: C_Shafka
     Name: Costume Shafka
