@@ -15938,9 +15938,9 @@ Body:
     SubType: Bow
     Buy: 20
     Weight: 1400
-    Attack: 95
+    Attack: 120
     Range: 5
-    Slots: 1
+    Slots: 2
     Jobs:
       Archer: true
       BardDancer: true
@@ -15960,9 +15960,9 @@ Body:
     SubType: Bow
     Buy: 20
     Weight: 1400
-    Attack: 100
+    Attack: 120
     Range: 5
-    Slots: 1
+    Slots: 2
     Jobs:
       Archer: true
       BardDancer: true
@@ -15982,9 +15982,9 @@ Body:
     SubType: Bow
     Buy: 20
     Weight: 1400
-    Attack: 105
+    Attack: 120
     Range: 5
-    Slots: 1
+    Slots: 2
     Jobs:
       Archer: true
       BardDancer: true
@@ -16002,9 +16002,9 @@ Body:
     SubType: Bow
     Buy: 20
     Weight: 1400
-    Attack: 95
+    Attack: 120
     Range: 5
-    Slots: 1
+    Slots: 2
     Jobs:
       Archer: true
       BardDancer: true
@@ -16015,27 +16015,17 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 55
     Refineable: true
-  - Id: 1734
-    AegisName: Orc_Archer_Bow
-    Name: Orc Archer Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 20
-    Weight: 1600
-    Attack: 120
-    Range: 5
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 3
-    EquipLevelMin: 65
-    Refineable: true
-    Script: |
-      bonus2 bAddMonsterDropItem,1753,200;
+
+
+
+
+
+
+
+
+
+
+
   - Id: 1735
     AegisName: Kkakkung
     Name: Kkakkung

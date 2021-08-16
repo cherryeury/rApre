@@ -6152,7 +6152,29 @@ Body:
       }
       if (getrefine()>8){
       bonus2 bIgnoreMDefClassRate,Class_All,15;
-      }                 
+      }             
+  - Id: 1734
+    AegisName: Orc_Archer_Bow
+    Name: Orc Archer Bow
+    Type: Weapon
+    SubType: Bow
+    Buy: 20
+    Weight: 1600
+    Attack: 120
+    Range: 5
+    Slots: 2
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Rogue: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 65
+    Refineable: true
+    Script: |
+      bonus2 bAddMonsterDropItem,1753,200;      
   - Id: 1234
     AegisName: Moonlight_Sword
     Name: Moonlight Dagger
