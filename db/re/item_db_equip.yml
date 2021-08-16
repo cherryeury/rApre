@@ -15940,7 +15940,7 @@ Body:
     Weight: 1400
     Attack: 120
     Range: 5
-    Slots: 2
+    Slots: 1
     Jobs:
       Archer: true
       BardDancer: true
@@ -15962,7 +15962,7 @@ Body:
     Weight: 1400
     Attack: 120
     Range: 5
-    Slots: 2
+    Slots: 1
     Jobs:
       Archer: true
       BardDancer: true
@@ -15984,7 +15984,7 @@ Body:
     Weight: 1400
     Attack: 120
     Range: 5
-    Slots: 2
+    Slots: 1
     Jobs:
       Archer: true
       BardDancer: true
@@ -16004,7 +16004,7 @@ Body:
     Weight: 1400
     Attack: 120
     Range: 5
-    Slots: 2
+    Slots: 1
     Jobs:
       Archer: true
       BardDancer: true
