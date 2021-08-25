@@ -25193,7 +25193,7 @@ Body:
     Type: Armor
     Buy: 71000
     Weight: 500
-    Defense: 27
+    Defense: 17
     Jobs:
       Archer: true
       BardDancer: true
@@ -25203,14 +25203,14 @@ Body:
     EquipLevelMin: 45
     Refineable: true
     Script: |
-      bonus bDex,1;
+      bonus bDex,1; bonus2 bAddClass,Class_All,4;
   - Id: 2331
     AegisName: Tights_
     Name: Tights
     Type: Armor
     Buy: 71000
     Weight: 500
-    Defense: 27
+    Defense: 17
     Slots: 1
     Jobs:
       Archer: true
@@ -25221,7 +25221,7 @@ Body:
     EquipLevelMin: 45
     Refineable: true
     Script: |
-      bonus bDex,1;
+      bonus bDex,1; bonus2 bAddClass,Class_All,4;
   - Id: 2332
     AegisName: Silver_Robe
     Name: Silver Robe
@@ -25278,7 +25278,7 @@ Body:
     Type: Armor
     Buy: 74000
     Weight: 100
-    Defense: 40
+    Defense: 20
     Jobs:
       Assassin: true
       KagerouOboro: true
@@ -25289,14 +25289,14 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,1; bonus2 bAddClass,Class_All,4;
   - Id: 2336
     AegisName: Thief_Clothes_
     Name: Thief Clothes
     Type: Armor
     Buy: 74000
     Weight: 100
-    Defense: 40
+    Defense: 20
     Slots: 1
     Jobs:
       Assassin: true
@@ -25308,7 +25308,7 @@ Body:
       Armor: true
     Refineable: true
     Script: |
-      bonus bAgi,1;
+      bonus bAgi,1; bonus2 bAddClass,Class_All,4;
   - Id: 2337
     AegisName: Ninja_Suit
     Name: Ninja Suit
@@ -37629,7 +37629,8 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 2400
-    Defense: 4
+    Defense: 20
+    Slots: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -37684,7 +37685,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 1600
-    Defense: 10
+    Defense: 0
     Jobs:
       Alchemist: true
       Assassin: true
@@ -37706,8 +37707,8 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bDex,2;
-      bonus bInt,2;
+      bonus bDex,1;
+      bonus bInt,1;
       bonus bMdef,3; bonus2 bSubRace,RC_Demon,10;
   - Id: 5026
     AegisName: Hat_Of_Cook
@@ -37909,7 +37910,7 @@ Body:
     Type: Armor
     Buy: 20
     Weight: 800
-    Defense: 4
+    Defense: 0
     Jobs:
       All: true
       Novice: false
@@ -38019,7 +38020,7 @@ Body:
     Script: |
       bonus bDex,1;
       bonus bAgi,1;
-      bonus bMaxSP,50;
+      bonus bMaxSP,0;
   - Id: 5046
     AegisName: Bongun_Hat
     Name: Bongun Hat
@@ -41856,9 +41857,9 @@ Body:
       Head_Top: true
     View: 123
     Script: |
-      bonus bStr,1;
-      bonus bAgi,1;
-      bonus bFlee,3; bonus2 bSubRace,RC_Angel,10;
+      bonus bStr,2;
+      bonus bAgi,2;
+      bonus bFlee,2; bonus2 bSubRace,RC_Angel,4;
       .@r = getrefine();
       if (.@r>=7){
       bonus bStr,2;
@@ -74794,9 +74795,9 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bDex,1;
-      bonus bInt,1;
-      bonus bMdef,3; bonus2 bSubRace,RC_Demon,10;
+      bonus bDex,2;
+      bonus bInt,2;
+      bonus bMdef,2; bonus2 bSubRace,RC_Demon,4;
       .@r = getrefine();
       if (.@r>=7) {
       bonus bDex,2;

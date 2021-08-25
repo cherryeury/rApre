@@ -35,13 +35,13 @@ payon,183,103,5	script	Nyan#6	4_CAT_SAILOR1,{ callfunc "iopshop",6; }
 yuno,150,187,5	script	Nyan#7	4_CAT_SAILOR1,{ callfunc "iopshop",7; }
 geffen,112,64,5	script	Nyan#8	4_CAT_SAILOR1,{ callfunc "iopshop",8; }
 comodo,200,149,5	script	Nyan#9	4_CAT_SAILOR1,{ callfunc "iopshop",9; }
-gef_fild10,76,340,5	script	Nyan#10	4_CAT_SAILOR1,{ callfunc "iopshop",10; }
+//gef_fild10,76,340,5	script	Nyan#10	4_CAT_SAILOR1,{ callfunc "iopshop",10; }
 prontera,160,189,5	script	Nyan#11	4_CAT_SAILOR1,{ callfunc "iopshop",11; }
 xmas,150,136,5	script	Nyan#12	4_CAT_SAILOR1,{ callfunc "iopshop",12; }
 moscovia,220,191,5	script	Nyan#13	4_CAT_SAILOR1,{ callfunc "iopshop",13; }
 hugel,85,168,5	script	Nyan#14	4_CAT_SAILOR1,{ callfunc "iopshop",14; }
 einbech,182,136,5	script	Nyan#15	4_CAT_SAILOR1,{ callfunc "iopshop",15; }
-glast_01,366,308,5	script	Nyan#16	4_CAT_SAILOR1,{ callfunc "iopshop",16; }
+//glast_01,366,308,5	script	Nyan#16	4_CAT_SAILOR1,{ callfunc "iopshop",16; }
 gonryun,156,122,5	script	Nyan#17	4_CAT_SAILOR1,{ callfunc "iopshop",17; }
 izlude,125,148,5	script	Nyan#18	4_CAT_SAILOR1,{ callfunc "iopshop",18; }
 //============================================================
@@ -92,13 +92,13 @@ OnInit:
 		"Yuno", //
 		"Geffen", //
 		"Comodo", //
-		"Orc", //
+//		"Orc", //
 		"Prontera", //
 		"Lutie", // 
 		"Moscovia", // 
 		"Hugel", // 
 		"Einbech", // 
-		"Glastheim", //
+//		"Glastheim", //
 		"Kunlun", // 
 		"Izlude"; // 
 		
