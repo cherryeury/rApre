@@ -2785,7 +2785,7 @@ Body:
     Script: |
       bonus2 bSubRace,RC_Undead,3; 
       bonus2 bSubRace,RC_Demon,3; 
-      if (getrefine()>6{
+      if (getrefine()>6){
       bonus2 bSubRace,RC_Undead,10; 
       bonus2 bSubRace,RC_Demon,10;
       }      
@@ -4946,13 +4946,167 @@ Body:
     Script: |
       bonus bMdef,3;
       bonus bMagicDamageReturn,3;
+  - Id: 5183
+    AegisName: Bird_Nest_Hat
+    Name: Bird Nest Hat
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 4
+    Slot: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 10
+    Refineable: true
+    View: 235
+    Script: |
+      bonus bDex,1;
+      bonus bAgi,1;
+      bonus2 bResEff,Eff_Stun,1000; 
+  - Id: 5482
+    AegisName: Dark_Knight_Mask
+    Name: Dark Knight Mask
+    Type: Armor
+    Buy: 20
+    Weight: 3000
+    Defense: 5
+    Slot: 1
+    Locations:
+      Head_Low: true
+      Head_Mid: true
+      Head_Top: true
+    EquipLevelMin: 1
+    Refineable: true
+    View: 479
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bStr,3; 
+  - Id: 18701
+    AegisName: Ancient_Civil_Man
+    Name: Ancient Civil Man
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 2
+    Slot: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 70
+    View: 846
+    Script: |
+      bonus bInt,3;
+      bonus bDex,2;
+      bonus bLuk,1;
+      if (getiteminfo(getequipid(EQI_HAND_R), II_VIEW) == W_BOOK)
+         bonus bVariableCastrate,-3;    
+  - Id: 5378
+    AegisName: Rabbit_Ear_Hat
+    Name: Bunny Top Hat
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Slot: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 384
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bAgi,3;
+      bonus3 bAutoSpellWhenHit,"AL_INCAGI",5,50;
+  - Id: 5289
+    AegisName: Vanilmirth_Hat
+    Name: Vanilmirth Hat
+    Type: Armor
+    Buy: 20
+    Weight: 1000
+    Slot: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 30
+    View: 317
+    Script: |
+      bonus bUnbreakableHelm;
+      bonus3 bAutoSpell,"MG_FIREBOLT",1,50;
+      bonus3 bAutoSpell,"MG_COLDBOLT",1,50;
+      bonus3 bAutoSpell,"MG_LIGHTNINGBOLT",1,50;
+      bonus bMdef,5;      
+  - Id: 5257
+    AegisName: Soulless_Wing
+    Name: Soul Ring
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Slot: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 20
+    Refineable: true
+    View: 301
+    Script: |
+      bonus bMdef,2;
+      bonus3 bAutoSpellWhenHit,"HP_ASSUMPTIO",1,20;      
+  - Id: 5138
+    AegisName: Magic_Eyes
+    Name: Magic Eyes
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 3
+    Slot: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      SoulLinker: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 30
+    Refineable: true
+    View: 209
+    Script: |
+      bonus bMdef,5;
+      bonus bVariableCastrate,-10;
+      bonus bUseSPrate,20;      
+  - Id: 5324
+    AegisName: Little_Angel_Doll
+    Name: Little Angel Doll
+    Type: Armor
+    Buy: 20
+    Weight: 300
+    Defense: 4
+    Slot: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 10
+    Refineable: true
+    View: 344
+    Trade:
+      Override: 100
+      NoDrop: true
+    Script: |
+      bonus bDex,3;
+      bonus4 bAutoSpellWhenHit,"CR_GRANDCROSS",3,30,0;      
   - Id: 5171
     AegisName: Valkyrie_Helm
     Name: Valkyrie Helm
     Type: Armor
     Buy: 100000
     Weight: 1000
-    Defense: 0
+    Defense: 10
     Slots: 1
     Jobs:
       All: true
@@ -4965,7 +5119,8 @@ Body:
     View: 225
     Script: |
       bonus bMdef,20;
-      bonus bMaxHP,getrefine()*300;        
+      bonus bAllstats,1;
+      bonus bMaxHP,getrefine()*200;        
   - Id: 5028
     AegisName: Candle
     Name: Candle
@@ -4994,8 +5149,8 @@ Body:
     Refineable: true
     View: 178
     Script: |
-      bonus bStr,2;
-      bonus bVit,2;
+      bonus bStr,3;
+      bonus bVit,3;
       bonus bShortAtkRate,getrefine();
   - Id: 5073
     AegisName: Cap_Of_Concentration
@@ -5752,6 +5907,7 @@ Body:
     Buy: 20
     Weight: 300
     Defense: 4
+    Slot: 1
     Locations:
       Head_Top: true
     View: 416

@@ -50819,8 +50819,8 @@ Body:
       Head_Top: true
     View: 659
     Script: |
-      bonus bFlee,1;
-      bonus bMaxSP,20;
+      bonus bFlee,3;
+      bonus bMaxSP,30;
   - Id: 5782
     AegisName: Hoplite_Helmet
     Name: Hoplite Helmet
