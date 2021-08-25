@@ -41859,7 +41859,7 @@ Body:
     Script: |
       bonus bStr,2;
       bonus bAgi,2;
-      bonus bFlee,2; bonus2 bSubRace,RC_Angel,4;
+      bonus bFlee,2; bonus2 bAddRace,RC_Angel,10;
       .@r = getrefine();
       if (.@r>=7){
       bonus bStr,2;
@@ -74797,7 +74797,7 @@ Body:
     Script: |
       bonus bDex,2;
       bonus bInt,2;
-      bonus bMdef,2; bonus2 bSubRace,RC_Demon,4;
+      bonus bMdef,2; bonus2 bAddRace,RC_Demon,10;
       .@r = getrefine();
       if (.@r>=7) {
       bonus bDex,2;

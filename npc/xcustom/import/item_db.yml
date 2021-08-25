@@ -1555,6 +1555,7 @@ Body:
     Buy: 30000
     Weight: 300
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -2501,6 +2502,20 @@ Body:
     Refineable: true
     Script: |
       bonus bMdef,5; bonus bFlee2,3;
+  - Id: 5116
+    AegisName: Banana_Hat
+    Name: Banana Hat
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 3
+    Slot: 1
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 197
+    Script: |
+      bonus3 bAutoSpell,"SM_PROVOKE",1,30;      
   - Id: 5011
     AegisName: Antenna
     Name: Aerial
@@ -2508,6 +2523,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     Refineable: true
@@ -2688,6 +2704,7 @@ Body:
     Buy: 20
     Weight: 800
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -2698,14 +2715,15 @@ Body:
     Refineable: true
     View: 115
     Script: |
-      bonus2 bAddEffWhenHit,Eff_Freeze,500;  
+      bonus2 bAddEffWhenHit,Eff_Freeze,400;  
   - Id: 2277
     AegisName: Nurse_Cap
     Name: Nurse Cap
     Type: Armor
     Buy: 20
     Weight: 100
-    Defense: 5
+    Defense: 0
+    Slot: 1
     Jobs:
       Acolyte: true
       Monk: true
@@ -2723,6 +2741,7 @@ Body:
     Buy: 30000
     Weight: 500
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -2733,7 +2752,7 @@ Body:
     Refineable: true
     View: 257
     Script: |
-      bonus bLuk,3;
+      bonus bStr,2;
       bonus bCritical,3;      
   - Id: 5037
     AegisName: Fruit_Shell
@@ -2753,6 +2772,7 @@ Body:
     Buy: 30000
     Weight: 200
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -2765,7 +2785,6 @@ Body:
     Script: |
       bonus bInt,2;    
       bonus bMaxSPRate,2;
-      bonus bMdef,2;
   - Id: 5158
     AegisName: Holy_Bonnet_
     Name: Monk Hat
@@ -2801,7 +2820,19 @@ Body:
     Refineable: true
     View: 445
     Script: |
-      bonus bCritical,3;      
+      bonus bCritical,3;    
+  - Id: 2282
+    AegisName: Spirit_Chain
+    Name: Halo
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Slot: 1
+    Locations:
+      Head_Top: true
+    View: 69
+    Script: |
+      bonus2 bSubEle,Ele_Holy,20;      
   - Id: 2210
     AegisName: Hair_Band
     Name: Hair Band
@@ -2809,6 +2840,7 @@ Body:
     Buy: 500
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     View: 9      
@@ -3576,6 +3608,41 @@ Body:
       bonus2 bSubRace,RC_Demon,10;
       if (getrefine()>=3)        
       bonus2 bAddRace,RC_Demon,(getrefine()*2)-6;
+  - Id: 5128
+    AegisName: Goibne's_Helmet
+    Name: Goibne's Helm
+    Type: Armor
+    Buy: 30000
+    Weight: 500
+    Defense: 10
+    Slot: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 54
+    Refineable: true
+    View: 258
+    Script: |
+      bonus bVit,3;
+      bonus bMdef,10;      
+  - Id: 5111
+    AegisName: Galapago_Cap
+    Name: Galapago Cap
+    Type: Armor
+    Buy: 20
+    Weight: 500
+    Defense: 4
+    Slot: 1
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 55
+    Refineable: true
+    View: 192
+    Script: |
+      bonus2 bAddMonsterDropItem,605,100;      
   - Id: 18761
     AegisName: Remodel_Magician_Hat
     Name: Improved Magician Hat
@@ -3601,7 +3668,7 @@ Body:
       bonus bDex,1;
       bonus bAgi,1;
       bonus bMaxSP,50;
-      bonus bMaxSP,getrefine()*5;
+      bonus bMaxSP,getrefine()*10;
       if (getrefine()>=7)
          bonus bDex,getrefine()-6;      
   - Id: 5045
@@ -3669,7 +3736,7 @@ Body:
     View: 112
     Script: |
       bonus bInt,1;
-      bonus bMaxSP,75; 
+      bonus bMaxSP,100; 
   - Id: 5058
     AegisName: Drooping_Kitty
     Name: Drooping Cat
@@ -3821,13 +3888,13 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     Refineable: true
     View: 46      
     Script: |
-      bonus bAgi,1;       
-      bonus bDex,1;       
+      bonus bFlee,6;             
   - Id: 2213
     AegisName: Cat_Hairband
     Name: Kitty Band
@@ -3848,6 +3915,7 @@ Body:
     Buy: 30000
     Weight: 1000
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -3866,6 +3934,7 @@ Body:
     Buy: 15000
     Weight: 400
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -3875,8 +3944,8 @@ Body:
     Refineable: true
     View: 29      
     Script: |
-      bonus bFlee,6;
-      bonus bMdef,3;
+      bonus bFlee,4;
+      bonus bMdef,2;
   - Id: 2252
     AegisName: Star_Sparkling
     Name: Wizard Hat
@@ -3884,6 +3953,7 @@ Body:
     Buy: 20
     Weight: 300
     Defense: 5
+    Slot: 1
     Jobs:
       Mage: true
       Sage: true
@@ -3902,6 +3972,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     Refineable: true
@@ -3915,6 +3986,7 @@ Body:
     Buy: 15000
     Weight: 400
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -4143,6 +4215,24 @@ Body:
     Script: |
       bonus bIgnoreDefRace,RC_Dragon;
       bonus2 bAddRace,RC_Dragon,15; 
+  - Id: 2274
+    AegisName: Ghost_Bandana
+    Name: Ghost Bandana
+    Type: Armor
+    Buy: 20
+    Weight: 100
+    Slot: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    Refineable: true
+    View: 61
+    Script: |
+      bonus bAgi,1;
+      bonus2 bSubEle,Ele_Ghost,15;      
   - Id: 2250
     AegisName: Fillet
     Name: Cute Ribbon
@@ -4150,6 +4240,7 @@ Body:
     Buy: 500
     Weight: 100
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -4159,7 +4250,7 @@ Body:
     Refineable: true  
     View: 34
     Script: |
-      bonus bMaxSP,25;   
+      bonus bMaxSP,20;   
   - Id: 5583
     AegisName: Para_Team_Hat
     Name: Eden Team Hat I
@@ -4402,7 +4493,7 @@ Body:
     Refineable: true
     View: 127
     Script: |
-      bonus bLuk,2;
+      bonus bFlee,4;
       bonus bCritical,3;
   - Id: 2279
     AegisName: Bomb_Wick
@@ -4411,11 +4502,12 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     View: 66
     Script: |
-      bonus2 bExpAddRace,RC_Plant,2;
+      bonus2 bExpAddRace,RC_Plant,1;
   - Id: 5037
     AegisName: Fruit_Shell
     Name: Nut Shell
@@ -4863,6 +4955,7 @@ Body:
     Buy: 20
     Weight: 700
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -4886,7 +4979,7 @@ Body:
     Refineable: true
     View: 199      
     Script: |
-      bonus bCritAtkRate,5; 
+      bonus2 bCriticalAddRace,RC_Plant,getrefine(); 
   - Id: 2208
     AegisName: Ribbon
     Name: Ribbon
@@ -4921,6 +5014,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -4929,7 +5023,7 @@ Body:
       Head_Top: true
     View: 94
     Script: |
-      bonus bMagicDamageReturn,5;
+      bonus bMagicDamageReturn,4;
   - Id: 5080
     AegisName: Headgear_Of_Queen
     Name: Crown of Ancient Queen
@@ -4963,6 +5057,30 @@ Body:
       bonus bDex,1;
       bonus bAgi,1;
       bonus2 bResEff,Eff_Stun,1000; 
+  - Id: 5357
+    AegisName: Wings_Of_Victory
+    Name: Wings Of Victory
+    Type: Armor
+    Buy: 20
+    Weight: 200
+    Defense: 100
+    Slot: 1
+    Locations:
+      Head_Mid: true
+      Head_Top: true
+    View: 365
+    Trade:
+      Override: 100
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      bonus bMdef,10;
+      bonus bUnbreakableHelm;      
   - Id: 5482
     AegisName: Dark_Knight_Mask
     Name: Dark Knight Mask
@@ -5231,6 +5349,7 @@ Body:
     Buy: 15000
     Weight: 400
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -5441,7 +5560,6 @@ Body:
     Type: Armor
     Buy: 8500
     Weight: 400
-    Defense: 10
     Slots: 1
     Jobs:
       Novice: true
@@ -5452,7 +5570,27 @@ Body:
     Refineable: true
     View: 193
     Script: |
-      bonus bAllStats,1;      
+      bonus bAllStats,1;
+      bonus bMaxHPRate,3;
+      bonus bMaxSPRate,3;
+  - Id: 5125
+    AegisName: Kiss_Of_Angel
+    Name: Angel's Kiss
+    Type: Armor
+    Buy: 10000
+    Weight: 300
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 50
+    Refineable: true
+    View: 255
+    Script: |
+      bonus bSPrecovRate,5;      
   - Id: 2242
     AegisName: Luxury_Sunglasses
     Name: Purple Glasses
@@ -6223,6 +6361,7 @@ Body:
     Buy: 20
     Weight: 200
     Defense: 0
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -6237,7 +6376,7 @@ Body:
       bonus bInt,1;
       bonus bLuk,1;
       if (getrefine()>9)     
-        bonus bMaxHP +500;
+        bonus bMaxHP +400;
   - Id: 18776
     AegisName: Improved_Kiss_Of_Angel
     Name: Advanced Angel's Kiss
@@ -6263,6 +6402,7 @@ Body:
     Buy: 20
     Weight: 600
     Defense: 0
+    Slot: 1
     Jobs:
       Alchemist: true
       Assassin: true
@@ -6281,7 +6421,7 @@ Body:
     Script: |
       bonus bInt,2;
       bonus bLuk,1;
-      bonus bMdef,5;     
+      bonus bMdef,3;     
   - Id: 5123
     AegisName: Ulle_Cap
     Name: Ulle's Cap
@@ -6302,6 +6442,9 @@ Body:
     Script: |
       bonus bDex,2;
       bonus bAgi,1;      
+      if (getrefine()>6){
+      bonus2 bAddRace,RC_Brute,10;
+      }      
   - Id: 2234
     AegisName: Tiara
     Name: Tiara
@@ -6446,13 +6589,14 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 0
+    Slot: 1
     Locations:
       Head_Top: true
     Refineable: true
     View: 81      
     Script: |
-      bonus2 bSubEle,Ele_Ghost,3;
-      bonus bFlee,4;
+      bonus2 bSubEle,Ele_Ghost,5;
+      bonus bFlee,2;
   - Id: 5061
     AegisName: Flower_Hairpin
     Name: Flower Hairpin
@@ -8939,8 +9083,8 @@ Body:
     Script: |
       bonus bStr,2;
       bonus bMdef,5;
-      bonus2 bResEff,Eff_Stun,500;
-      bonus2 bResEff,Eff_Bleeding,500;   
+      bonus2 bResEff,Eff_Stun,1500;
+      bonus2 bResEff,Eff_Bleeding,1500;   
   - Id: 2254
     AegisName: Angelic_Chain
     Name: Angel Wing
@@ -8948,6 +9092,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 4
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -8957,7 +9102,6 @@ Body:
     Refineable: true
     View: 38
     Script: |
-      bonus bMdef,3;
       bonus bInt,1;
       bonus bDex,1;
       bonus2 bSubRace,RC_Demon,3;
@@ -8981,7 +9125,59 @@ Body:
     View: 203
     Script: |
       bonus bVit,3;
-      bonus bMaxHPrate,3;      
+      bonus bMaxHPrate,3;   
+  - Id: 5025
+    AegisName: Helm_Of_Angel
+    Name: Helm of Angel
+    Type: Armor
+    Buy: 20
+    Weight: 1600
+    Defense: 0
+    Slot: 1
+    Jobs:
+      Alchemist: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      Knight: true
+      Monk: true
+      Priest: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      StarGladiator: true
+      Wizard: true
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 74
+    Refineable: true
+    View: 110
+    Script: |
+      bonus bDex,1;
+      bonus bInt,1;
+      bonus bMdef,1; bonus2 bAddRace,RC_Demon,10;    
+  - Id: 5038
+    AegisName: Deviruchi_Cap
+    Name: Deviruchi Hat
+    Type: Armor
+    Buy: 20
+    Weight: 800
+    Defense: 0
+    Slot: 1
+    Jobs:
+      All: true
+      Novice: false
+      SuperNovice: false
+    Locations:
+      Head_Top: true
+    EquipLevelMin: 64
+    Refineable: true
+    View: 123
+    Script: |
+      bonus bStr,1; bonus bFlee,1;
+      bonus bInt,1; bonus2 bAddRace,RC_Angel,10;      
   - Id: 2255
     AegisName: Satanic_Chain
     Name: Evil Wing
@@ -8989,6 +9185,7 @@ Body:
     Buy: 20
     Weight: 100
     Defense: 4
+    Slot: 1
     Jobs:
       All: true
       Novice: false
@@ -8998,7 +9195,6 @@ Body:
     Refineable: true
     View: 39
     Script: |
-      bonus bFlee,3;
       bonus bStr,1;
       bonus bAgi,1;
       bonus2 bSubRace,RC_Angel,3;      
@@ -9240,30 +9436,7 @@ Body:
       bonus2 bMagicAddEle,Ele_Earth,2*getrefine(); 
       bonus2 bAddEle,Ele_Neutral,2*getrefine(); 
       bonus2 bAddEle,Ele_Undead,2*getrefine();
-      bonus2 bAddEle,Ele_Ghost,2*getrefine();      
-  - Id: 5357
-    AegisName: Wings_Of_Victory
-    Name: Wings Of Victory
-    Type: Armor
-    Buy: 20
-    Weight: 200
-    Defense: 100
-    Locations:
-      Head_Mid: true
-      Head_Top: true
-    View: 365
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      bonus bMdef,10;
-      bonus bUnbreakableHelm;      
+      bonus2 bAddEle,Ele_Ghost,2*getrefine();          
   - Id: 2364
     AegisName: Meteo_Plate_Armor
     Name: Meteo Plate Armor
