@@ -41857,9 +41857,9 @@ Body:
       Head_Top: true
     View: 123
     Script: |
-      bonus bStr,2;
-      bonus bAgi,2;
-      bonus bFlee,2; bonus2 bAddRace,RC_Angel,10;
+      bonus bStr,1;
+      bonus bAgi,1;
+      bonus bFlee,10; bonus2 bAddRace,RC_Angel,10;
       .@r = getrefine();
       if (.@r>=7){
       bonus bStr,2;
@@ -74795,9 +74795,9 @@ Body:
     Refineable: true
     View: 110
     Script: |
-      bonus bDex,2;
-      bonus bInt,2;
-      bonus bMdef,2; bonus2 bAddRace,RC_Demon,10;
+      bonus bDex,1;
+      bonus bInt,1;
+      bonus bMdef,10; bonus2 bAddRace,RC_Demon,10;
       .@r = getrefine();
       if (.@r>=7) {
       bonus bDex,2;

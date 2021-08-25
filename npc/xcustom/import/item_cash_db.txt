@@ -139,24 +139,24 @@
 
 // Middle
 1,5664,1 // Filir Pinion
-1,5288,4 // Red Glasses
+1,5288,3 // Red Glasses
 1,5358,3 // Peco
-1,5610,4 // Ice Wing Ears
+1,5610,3 // Ice Wing Ears
 //1,5916,100 // Demon Glass
 //1,5921,100 // Gills
 //1,5924,100 // Dragon Knight
-1,18559,4 // Fafnir Skin
-1,5402,10 // Mischievous
-1,5786,20 // Ancient elven ear
+1,18559,3 // Fafnir Skin
+1,5402,7 // Mischievous
+1,5786,15 // Ancient elven ear
 //1,18538,200 // Spirit Whisper
 //1,5924,300
-1,5104,40 // Dark Blinkers
+1,5104,20 // Dark Blinkers
 //1,5272,100 // Tongue
 //1,18787,200 // Goaltender
 //1,18787,500 // Goaltender Mask
 //1,5916,1000
 //1,19024,1000 // Protect Feathers
-//1,18599,250 // Black Devil Mask
+1,18599,250 // Black Devil Mask
 //1,5325,250 // Robo
 //1,18540,200 // Demon Mask
 //1,5397,500 // Scuba
@@ -244,7 +244,7 @@
 //2,1670,10 // RWC
 //2,16026,10 // RWC
 2,13049,250 // Lacma
-2,16039,1500 // Spoon
+//2,16039,1500 // Spoon
 
 //Shield
 //3,2197,25 // Iron Shield
@@ -276,11 +276,11 @@
 //3,15072,40 // Nectar Suit
 //3,15060,10 // Azure Smock
 //3,15057,10 // Apron 
-3,15058,15 // Rider Suit
-3,2345,200 // Lucius
-3,2347,200 // Sapien
-3,2349,200 // Ebecee
-3,2351,200 // Claytos
+//3,15058,15 // Rider Suit
+3,2345,50 // Lucius
+3,2347,50 // Sapien
+3,2349,50 // Ebecee
+3,2351,50 // Claytos
 //3,19048,1000
 //3,2584,100 // Wanderer Coat
 //3,15141,35 // Rift Armor
@@ -330,7 +330,7 @@
 //3,20773,1250 // Excellion Wing
 //3,20859,1000 // Phreeoni Wings
 //3,20932,1000 // Old Morocc Shawl
-//3,20940,1750 // Violet Halo
+//3,20940,1500 // Violet Halo
 
 //Shoes
 //3,2481,15 // Rune Boots
