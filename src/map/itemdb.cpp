@@ -24,8 +24,8 @@
 
 using namespace rathena;
 
-static std::map<uint32, std::shared_ptr<s_item_combo>> itemdb_combo; /// Item Combo DB
 
+ComboDatabase itemdb_combo;
 ItemGroupDatabase itemdb_group;
 
 struct s_roulette_db rd;
@@ -65,6 +65,10 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 		if (!this->asString(node, "AegisName", name))
 			return 0;
 
+		if (name.length() > ITEM_NAME_LENGTH) {
+			this->invalidWarning(node["AegisName"], "AegisName \"%s\" exceeds maximum of %d characters, capping...\n", name.c_str(), ITEM_NAME_LENGTH - 1);
+		}
+
 		std::shared_ptr<item_data> id = item_db.search_aegisname( name.c_str() );
 
 		if (id != nullptr && id->nameid != nameid) {
@@ -72,8 +76,24 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 			return 0;
 		}
 
+		if( exists ){
+			// Create a copy
+			std::string aegisname = item->name;
+			// Convert it to lower
+			util::tolower( aegisname );
+			// Remove old AEGIS name from lookup
+			this->aegisNameToItemDataMap.erase( aegisname );
+		}
+
 		item->name.resize(ITEM_NAME_LENGTH);
 		item->name = name.c_str();
+
+		// Create a copy
+		std::string aegisname = name;
+		// Convert it to lower
+		util::tolower( aegisname );
+
+		this->aegisNameToItemDataMap[aegisname] = item;
 	}
 
 	if (this->nodeExists(node, "Name")) {
@@ -82,8 +102,28 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 		if (!this->asString(node, "Name", name))
 			return 0;
 
+		if (name.length() > ITEM_NAME_LENGTH) {
+			this->invalidWarning(node["Name"], "Name \"%s\" exceeds maximum of %d characters, capping...\n", name.c_str(), ITEM_NAME_LENGTH - 1);
+		}
+
+		if( exists ){
+			// Create a copy
+			std::string ename = item->ename;
+			// Convert it to lower
+			util::tolower( ename );
+			// Remove old name from lookup
+			this->nameToItemDataMap.erase( ename );
+		}
+
 		item->ename.resize(ITEM_NAME_LENGTH);
 		item->ename = name.c_str();
+
+		// Create a copy
+		std::string ename = name;
+		// Convert it to lower
+		util::tolower( ename );
+
+		this->nameToItemDataMap[ename] = item;
 	}
 
 	if (this->nodeExists(node, "Type")) {
@@ -132,6 +172,16 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 			}
 
 			item->subtype = static_cast<e_ammo_type>(constant);
+		} else if (item->type == IT_CARD) {
+			std::string type_constant = "CARD_" + type;
+			int64 constant;
+
+			if (!script_get_constant(type_constant.c_str(), &constant) || constant < CARD_NORMAL || constant >= MAX_CARD_TYPE) {
+				this->invalidWarning(node["SubType"], "Invalid card type %s, defaulting to CARD_NORMAL.\n", type.c_str());
+				item->subtype = CARD_NORMAL;
+			}
+
+			item->subtype = static_cast<e_card_type>(constant);
 		} else
 			this->invalidWarning(node["SubType"], "Item sub type is not supported for this item type.\n");
 	} else {
@@ -327,7 +377,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 			int64 constant;
 
 			if (!script_get_constant(className_constant.c_str(), &constant)) {
-				this->invalidWarning(classNode[className], "Invalid class upper %s, defaulting to All.\n", className.c_str());
+				this->invalidWarning(classNode[className], "Invalid class %s, defaulting to All.\n", className.c_str());
 				item->class_upper |= ITEMJ_ALL;
 				break;
 			}
@@ -416,18 +466,42 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 
 		if (lv > MAX_WEAPON_LEVEL) {
 			this->invalidWarning(node["WeaponLevel"], "Invalid weapon level %d, defaulting to 0.\n", lv);
-			lv = REFINE_TYPE_ARMOR;
+			lv = 0;
 		}
 
 		if (item->type != IT_WEAPON) {
 			this->invalidWarning(node["WeaponLevel"], "Item type is not a weapon, defaulting to 0.\n");
-			lv = REFINE_TYPE_ARMOR;
+			lv = 0;
 		}
 
-		item->wlv = lv;
+		item->weapon_level = lv;
 	} else {
 		if (!exists)
-			item->wlv = REFINE_TYPE_ARMOR;
+			item->weapon_level = 0;
+	}
+
+	if( this->nodeExists( node, "ArmorLevel" ) ){
+		uint16 level;
+
+		if( !this->asUInt16( node, "ArmorLevel", level ) ){
+			return 0;
+		}
+
+		if( level > MAX_ARMOR_LEVEL ){
+			this->invalidWarning( node["ArmorLevel"], "Invalid armor level %d, defaulting to 0.\n", level );
+			level = 0;
+		}
+
+		if( item->type != IT_ARMOR ){
+			this->invalidWarning( node["ArmorLevel"], "Item type is not an armor, defaulting to 0.\n" );
+			level = 0;
+		}
+
+		item->armor_level = level;
+	}else{
+		if( !exists ){
+			item->armor_level = 0;
+		}
 	}
 
 	if (this->nodeExists(node, "EquipLevelMin")) {
@@ -782,7 +856,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 			item->item_usage.override = override;
 		} else {
 			if (!exists)
-				item->item_usage.override = 0;
+				item->item_usage.override = 100;
 		}
 
 		if (this->nodeExists(nouseNode, "Sitting")) {
@@ -798,7 +872,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 		}
 	} else {
 		if (!exists) {
-			item->item_usage.override = 0;
+			item->item_usage.override = 100;
 			item->item_usage.sitting = false;
 		}
 	}
@@ -820,7 +894,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 			item->gm_lv_trade_override = override;
 		} else {
 			if (!exists)
-				item->gm_lv_trade_override = 0;
+				item->gm_lv_trade_override = 100;
 		}
 
 		if (this->nodeExists(tradeNode, "NoDrop")) {
@@ -932,7 +1006,7 @@ uint64 ItemDatabase::parseBodyNode(const YAML::Node &node) {
 		}
 	} else {
 		if (!exists) {
-			item->gm_lv_trade_override = 0;
+			item->gm_lv_trade_override = 100;
 			item->flag.trade_restriction.drop = false;
 			item->flag.trade_restriction.trade = false;
 			item->flag.trade_restriction.trade_partner = false;
@@ -1014,6 +1088,38 @@ void ItemDatabase::loadingFinished(){
 			item->flag.delay_consume &= ~DELAYCONSUME_TEMP; // Remove delayed consumption flag if switching types
 		}
 
+		if( item->type == IT_WEAPON ){
+			if( item->weapon_level == 0 ){
+				ShowWarning( "Item %s is a weapon, but does not have a weapon level. Consider adding it. Defaulting to 1.\n", item->name.c_str() );
+				item->weapon_level = 1;
+			}
+
+			if( item->armor_level != 0 ){
+				ShowWarning( "Item %s is a weapon, but has an armor level. Defaulting to 0.\n", item->name.c_str() );
+				item->armor_level = 0;
+			}
+		}else if( item->type == IT_ARMOR ){
+			if( item->armor_level == 0 ){
+				ShowWarning( "Item %s is an armor, but does not have an armor level. Consider adding it. Defaulting to 1.\n", item->name.c_str() );
+				item->armor_level = 1;
+			}
+
+			if( item->weapon_level != 0 ){
+				ShowWarning( "Item %s is an armor, but has a weapon level. Defaulting to 0.\n", item->name.c_str() );
+				item->weapon_level = 0;
+			}
+		}else{
+			if( item->weapon_level != 0 ){
+				ShowWarning( "Item %s is not a weapon, but has a weapon level. Defaulting to 0.\n", item->name.c_str() );
+				item->weapon_level = 0;
+			}
+
+			if( item->armor_level != 0 ){
+				ShowWarning( "Item %s is not an armor, but has an armor level. Defaulting to 0.\n", item->name.c_str() );
+				item->armor_level = 0;
+			}
+		}
+
 		// When a particular price is not given, we should base it off the other one
 		if (item->value_buy == 0 && item->value_sell > 0)
 			item->value_buy = item->value_sell * 2;
@@ -1023,6 +1129,12 @@ void ItemDatabase::loadingFinished(){
 		if (item->value_buy / 124. < item->value_sell / 75.) {
 			ShowWarning("Buying/Selling [%d/%d] price of %s (%u) allows Zeny making exploit through buying/selling at discounted/overcharged prices! Defaulting Sell to 1 Zeny.\n", item->value_buy, item->value_sell, item->name.c_str(), item->nameid);
 			item->value_sell = 1;
+		}
+
+		// Shields need to have a view ID to be able to be recognized by ST_SHIELD check in skill.cpp
+		if( item->type == IT_ARMOR && ( item->equip & EQP_SHIELD ) != 0 && item->look == 0 ){
+			ShowWarning( "Item %s (%u) is a shield and should have a view id. Defaulting to Guard...\n", item->name.c_str(), item->nameid );
+			item->look = 1;
 		}
 	}
 
@@ -1039,27 +1151,6 @@ void ItemDatabase::loadingFinished(){
 		dummy_item->view_id = UNKNOWN_ITEM_ID;
 
 		item_db.put( ITEMID_DUMMY, dummy_item );
-	}
-
-	// Prepare the container size to not allocate often
-	this->nameToItemDataMap.reserve( this->size() );
-	this->aegisNameToItemDataMap.reserve( this->size() );
-
-	// Build the name lookup maps
-	for( const auto& entry : *this ){
-		// Create a copy
-		std::string ename = entry.second->ename;
-		// Convert it to lower
-		util::tolower( ename );
-
-		this->nameToItemDataMap[ename] = entry.second;
-
-		// Create a copy
-		std::string aegisname = entry.second->name;
-		// Convert it to lower
-		util::tolower( aegisname );
-
-		this->aegisNameToItemDataMap[aegisname] = entry.second;
 	}
 }
 
@@ -1095,7 +1186,7 @@ e_sex ItemDatabase::defaultGender( const YAML::Node &node, std::shared_ptr<item_
 	return static_cast<e_sex>( id->sex );
 }
 
-std::shared_ptr<item_data> ItemDatabase::searchname( const char* name ){
+std::shared_ptr<item_data> ItemDatabase::search_aegisname( const char* name ){
 	// Create a copy
 	std::string lowername = name;
 	// Convert it to lower
@@ -1104,7 +1195,7 @@ std::shared_ptr<item_data> ItemDatabase::searchname( const char* name ){
 	return util::umap_find( this->aegisNameToItemDataMap, lowername );
 }
 
-std::shared_ptr<item_data> ItemDatabase::search_aegisname( const char *name ){
+std::shared_ptr<item_data> ItemDatabase::searchname( const char *name ){
 	// Create a copy
 	std::string lowername = name;
 	// Convert it to lower
@@ -1120,21 +1211,6 @@ std::shared_ptr<item_data> ItemDatabase::search_aegisname( const char *name ){
 }
 
 ItemDatabase item_db;
-
-/**
- * Check if combo exists
- * @param combo_id
- * @return s_item_combo or nullptr if it does not exist
- */
-s_item_combo *itemdb_combo_exists(uint32 combo_id) {
-	auto item = util::map_find(itemdb_combo, combo_id);
-
-	if( item == nullptr ){
-		return nullptr;
-	}
-
-	return item.get();
-}
 
 /**
  * Check if an item exists in a group
@@ -1847,142 +1923,154 @@ static bool itemdb_read_noequip(char* str[], int columns, int current) {
 	return true;
 }
 
-/**
- * @return: amount of retrieved entries.
- **/
-static int itemdb_combo_split_atoi (char *str, t_itemid *val) {
-	int i;
+const std::string ComboDatabase::getDefaultLocation() {
+	return std::string(db_path) + "/item_combos.yml";
+}
 
-	for (i=0; i<MAX_ITEMS_PER_COMBO; i++) {
-		if (!str) break;
-
-		val[i] = strtoul(str, nullptr, 10);
-
-		str = strchr(str,':');
-
-		if (str)
-			*str++=0;
+uint16 ComboDatabase::find_combo_id( const std::vector<t_itemid>& items ){
+	for (const auto &it : *this) {
+		if (it.second->nameid == items) {
+			return it.first;
+		}
 	}
 
-	if( i == 0 ) //No data found.
-		return 0;
-
-	return i;
+	return 0;
 }
 
 /**
- * <combo{:combo{:combo:{..}}}>,<{ script }>
- **/
-static void itemdb_read_combos(const char* basedir, bool silent) {
-	uint32 lines = 0, count = 0;
-	char line[1024];
+ * Reads and parses an entry from the item_combos.
+ * @param node: YAML node containing the entry.
+ * @return count of successfully parsed rows
+ */
+uint64 ComboDatabase::parseBodyNode(const YAML::Node &node) {
+	std::vector<std::vector<t_itemid>> items_list;
 
-	char path[256];
-	FILE* fp;
-
-	sprintf(path, "%s/%s", basedir, "item_combo_db.txt");
-
-	if ((fp = fopen(path, "r")) == NULL) {
-		if(silent==0) ShowError("itemdb_read_combos: File not found \"%s\".\n", path);
-		return;
+	if( !this->nodesExist( node, { "Combos" } ) ){
+		return 0;
 	}
 
-	// process rows one by one
-	while(fgets(line, sizeof(line), fp)) {
-		char *str[2], *p;
+	const YAML::Node &combosNode = node["Combos"];
 
-		lines++;
+	for (const auto &comboit : combosNode) {
+		static const std::string nodeName = "Combo";
 
-		if (line[0] == '/' && line[1] == '/')
-			continue;
-
-		memset(str, 0, sizeof(str));
-
-		p = line;
-
-		p = trim(p);
-
-		if (*p == '\0')
-			continue;// empty line
-
-		if (!strchr(p,','))
-		{
-			/* is there even a single column? */
-			ShowError("itemdb_read_combos: Insufficient columns in line %d of \"%s\", skipping.\n", lines, path);
-			continue;
+		if (!this->nodesExist(comboit, { nodeName })) {
+			return 0;
 		}
 
-		str[0] = p;
-		p = strchr(p,',');
-		*p = '\0';
-		p++;
+		const YAML::Node &comboNode = comboit[nodeName];
 
-		str[1] = p;
-		p = strchr(p,',');
-		p++;
-
-		if (str[1][0] != '{') {
-			ShowError("itemdb_read_combos(#1): Invalid format (Script column) in line %d of \"%s\", skipping.\n", lines, path);
-			continue;
+		if (!comboNode.IsSequence()) {
+			this->invalidWarning(comboNode, "%s should be a sequence.\n", nodeName.c_str());
+			return 0;
 		}
-		/* no ending key anywhere (missing \}\) */
-		if ( str[1][strlen(str[1])-1] != '}' ) {
-			ShowError("itemdb_read_combos(#2): Invalid format (Script column) in line %d of \"%s\", skipping.\n", lines, path);
-			continue;
-		} else {
-			t_itemid items[MAX_ITEMS_PER_COMBO];
-			int v = 0, retcount = 0;
 
-			if((retcount = itemdb_combo_split_atoi(str[0], items)) < 2) {
-				ShowError("itemdb_read_combos: line %d of \"%s\" doesn't have enough items to make for a combo (min:2), skipping.\n", lines, path);
-				continue;
+		std::vector<t_itemid> items = {};
+
+		for (const auto &it : comboNode) {
+			std::string item_name = it.as<std::string>();
+
+			std::shared_ptr<item_data> item = item_db.search_aegisname(item_name.c_str());
+
+			if (item == nullptr) {
+				this->invalidWarning(it, "Invalid item %s, skipping.\n", item_name.c_str());
+				return 0;
 			}
-			/* validate */
-			for(v = 0; v < retcount; v++) {
-				if( !itemdb_exists(items[v]) ) {
-					ShowError("itemdb_read_combos: line %d of \"%s\" contains unknown item ID %" PRIu32 ", skipping.\n", lines, path,items[v]);
-					break;
+
+			items.push_back(item->nameid);
+		}
+
+		if (items.empty()) {
+			this->invalidWarning(comboNode, "Empty combo, skipping.\n");
+			return 0;
+		}
+
+		if (items.size() < 2) {
+			this->invalidWarning(comboNode, "Not enough item to make a combo (need at least 2). Skipping.\n");
+			return 0;
+		}
+
+		std::sort(items.begin(), items.end());
+		items_list.push_back(items);
+	}
+
+	if (items_list.empty()) {
+		this->invalidWarning(combosNode, "No combos defined, skipping.\n");
+		return 0;
+	}
+
+	if (this->nodeExists(node, "Clear")) {
+		bool clear = false;
+
+		if (!this->asBool(node, "Clear", clear))
+			return 0;
+
+		// Remove the combo (if exists)
+		if (clear) {
+			for (const auto& itemsit : items_list) {
+				uint16 id = this->find_combo_id(itemsit);
+
+				if (id == 0) {
+					this->invalidWarning(node["Clear"], "Unable to clear the combo.\n");
+					return 0;
 				}
-			}
-			/* failed at some item */
-			if( v < retcount )
-				continue;
 
-			// Create combo data
-			auto entry = std::make_shared<s_item_combo>();
-
-			entry->nameid = {};
-			entry->script = parse_script(str[1], path, lines, 0);
-			entry->id = count;
-
-			// Store into first item
-			item_data *id = itemdb_exists(items[0]);
-
-			id->combos.push_back(entry);
-
-			size_t idx = id->combos.size() - 1;
-
-			// Populate nameid field
-			for (v = 0; v < retcount; v++)
-				id->combos[idx]->nameid.push_back(items[v]);
-
-			// Populate the children to refer to this combo
-			for (v = 1; v < retcount; v++) {
-				item_data *it = itemdb_exists(items[v]);
-
-				// Copy to other combos in list
-				it->combos.push_back(id->combos[idx]);
+				this->erase(id);
 			}
 
-			itemdb_combo.insert({ id->combos[idx]->id, id->combos[idx] });
+			return 1;
 		}
+	}
+
+	uint64 count = 0;
+
+	for (const auto &itemsit : items_list) {
+		// Find the id when the combo exists
+		uint16 id = this->find_combo_id(itemsit);
+		std::shared_ptr<s_item_combo> combo = this->find(id);
+		bool exists = combo != nullptr;
+
+		if (!exists) {
+			combo = std::make_shared<s_item_combo>();
+
+			combo->nameid.insert(combo->nameid.begin(), itemsit.begin(), itemsit.end());
+			combo->id = ++this->combo_num;
+		}
+
+		if (this->nodeExists(node, "Script")) {
+			std::string script;
+
+			if (!this->asString(node, "Script", script))
+				return 0;
+
+			if (exists) {
+				script_free_code(combo->script);
+				combo->script = nullptr;
+			}
+			combo->script = parse_script(script.c_str(), this->getCurrentFile().c_str(), node["Script"].Mark().line + 1, SCRIPT_IGNORE_EXTERNAL_BRACKETS);
+		} else {
+			if (!exists) {
+				combo->script = nullptr;
+			}
+		}
+
+		if (!exists)
+			this->put( combo->id, combo );
+
 		count++;
 	}
-	fclose(fp);
 
-	ShowStatus("Done reading '" CL_WHITE "%u" CL_RESET "' entries in '" CL_WHITE "%s" CL_RESET "'.\n",count,path);
+	return count;
+}
 
-	return;
+void ComboDatabase::loadingFinished() {
+	// Populate item_data to refer to the combo
+	for (const auto &combo : *this) {
+		for (const auto &itm : combo.second->nameid) {
+			item_data *it = itemdb_exists(itm);
+			it->combos.push_back(combo.second);
+		}
+	}
 }
 
 /**
@@ -2110,9 +2198,12 @@ static bool itemdb_read_sqldb_sub(std::vector<std::string> str) {
 	int32 index = -1;
 
 	node["Id"] = std::stoul(str[++index], nullptr, 10);
-	node["AegisName"] = str[++index];
-	node["Name"] = str[++index];
-	node["Type"] = str[++index];
+	if (!str[++index].empty())
+		node["AegisName"] = str[index];
+	if (!str[++index].empty())
+		node["Name"] = str[index];
+	if (!str[++index].empty())
+		node["Type"] = str[index];
 	if (!str[++index].empty())
 		node["SubType"] = str[index];
 	if (!str[++index].empty())
@@ -2248,6 +2339,8 @@ static bool itemdb_read_sqldb_sub(std::vector<std::string> str) {
 	if (!str[++index].empty())
 		node["WeaponLevel"] = std::stoi(str[index]);
 	if (!str[++index].empty())
+		node["ArmorLevel"] = std::stoi(str[index]);
+	if (!str[++index].empty())
 		node["EquipLevelMin"] = std::stoi(str[index]);
 	if (!str[++index].empty())
 		node["EquipLevelMax"] = std::stoi(str[index]);
@@ -2349,6 +2442,8 @@ static bool itemdb_read_sqldb_sub(std::vector<std::string> str) {
 	if (!str[++index].empty())
 		classes["Third_Baby"] = std::stoi(str[index]) ? "true" : "false";
 	if (!str[++index].empty())
+		classes["Fourth"] = std::stoi(str[index]) ? "true" : "false";
+	if (!str[++index].empty())
 		jobs["KagerouOboro"] = std::stoi(str[index]) ? "true" : "false";
 	if (!str[++index].empty())
 		jobs["Rebellion"] = std::stoi(str[index]) ? "true" : "false";
@@ -2379,12 +2474,12 @@ static int itemdb_read_sqldb(void) {
 			"`class_all`,`class_normal`,`class_upper`,`class_baby`,`gender`,"
 			"`location_head_top`,`location_head_mid`,`location_head_low`,`location_armor`,`location_right_hand`,`location_left_hand`,`location_garment`,`location_shoes`,`location_right_accessory`,`location_left_accessory`,"
 			"`location_costume_head_top`,`location_costume_head_mid`,`location_costume_head_low`,`location_costume_garment`,`location_ammo`,`location_shadow_armor`,`location_shadow_weapon`,`location_shadow_shield`,`location_shadow_shoes`,`location_shadow_right_accessory`,`location_shadow_left_accessory`,"
-			"`weapon_level`,`equip_level_min`,`equip_level_max`,`refineable`,`view`,`alias_name`,"
+			"`weapon_level`,`armor_level`,`equip_level_min`,`equip_level_max`,`refineable`,`view`,`alias_name`,"
 			"`flag_buyingstore`,`flag_deadbranch`,`flag_container`,`flag_uniqueid`,`flag_bindonequip`,`flag_dropannounce`,`flag_noconsume`,`flag_dropeffect`,"
 			"`delay_duration`,`delay_status`,`stack_amount`,`stack_inventory`,`stack_cart`,`stack_storage`,`stack_guildstorage`,`nouse_override`,`nouse_sitting`,"
 			"`trade_override`,`trade_nodrop`,`trade_notrade`,`trade_tradepartner`,`trade_nosell`,`trade_nocart`,`trade_nostorage`,`trade_noguildstorage`,`trade_nomail`,`trade_noauction`,`script`,`equip_script`,`unequip_script`"
 #ifdef RENEWAL
-			",`magic_attack`,`class_third`,`class_third_upper`,`class_third_baby`,`job_kagerouoboro`,`job_rebellion`,`job_summoner`"
+			",`magic_attack`,`class_third`,`class_third_upper`,`class_third_baby`,`class_fourth`,`job_kagerouoboro`,`job_rebellion`,`job_summoner`"
 #endif
 			" FROM `%s`", item_db_name[fi]) ) {
 			Sql_ShowDebug(mmysql_handle);
@@ -2806,13 +2901,13 @@ static void itemdb_read(void) {
 			safesnprintf(dbsubpath2,n1,"%s%s",db_path,dbsubpath[i]);
 		}
 
-		itemdb_read_combos(dbsubpath2,i > 0); //TODO change this to sv_read ? id#script ?
 		sv_readdb(dbsubpath2, "item_noequip.txt",       ',', 2, 2, -1, &itemdb_read_noequip, i > 0);
 		aFree(dbsubpath1);
 		aFree(dbsubpath2);
 	}
 
 	itemdb_group.load();
+	itemdb_combo.load();
 	random_option_db.load();
 	random_option_group.load();
 }
