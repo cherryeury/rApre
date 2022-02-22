@@ -29,3 +29,6 @@
 Header:
   Type: GUILD_EXP_DB
   Version: 1
+
+Body:
+  []

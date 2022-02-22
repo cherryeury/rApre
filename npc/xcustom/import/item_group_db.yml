@@ -32,6 +32,7 @@
 #          Duration            Makes the item a rental item which will expire within the given amount in minutes. Not intended for use with stackable items. (Default: 0)
 #          Announced           If player obtains this item it will be broadcasted to the server. (Default: false)
 #          UniqueId            Makes the given item(s) have a Unique ID. (Default: UniqueId from item_db)
+#          Stacked             Whether stackable items are given stacked or not. (Default: true)
 #          Named               Inscribes the item with the obtainer's name. (Default: false)
 #          Bound               Binds the obtained item. (Default: None)
 #          Clear               Remove the given item. (Optional)
@@ -41,3 +42,866 @@
 Header:
   Type: ITEM_GROUP_DB
   Version: 1
+
+Body:
+  - Group: BALLOON
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Angeling_Bubble
+            Rate: 20
+          - Item: Poring_Balloon
+            Rate: 20
+          - Item: Marin_Balloon
+            Rate: 20
+          - Item: Drops_Balloon
+            Rate: 20
+          - Item: Santa_Poring_Balloon
+            Rate: 20
+          - Item: Metalring_Balloon
+            Rate: 20
+          - Item: Devilring_Balloon
+            Rate: 20
+          - Item: Ghostring_Balloon
+            Rate: 20
+          - Item: Arch_Angelring_Balloon
+            Rate: 20
+  - Group: BPORING
+    SubGroups:
+      - SubGroup: 0
+        List:
+          - Item: Angel_Poring_Boots
+      - SubGroup: 1
+        List:
+          - Item: Leo_Stone
+            Rate: 20
+          - Item: Pisces_Stone
+            Rate: 20
+          - Item: Capricorn_Stone
+            Rate: 20
+          - Item: Aquarius_Stone
+            Rate: 20
+          - Item: Scorpio_Stone
+            Rate: 20
+          - Item: Taurus_Stone
+            Rate: 20
+  - Group: BSHADOW
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: S_Promotion_Weapon
+            Rate: 20
+          - Item: S_Promotion_Armor
+            Rate: 20
+          - Item: S_Promotion_Shoes
+            Rate: 20
+          - Item: S_Promotion_Shield
+            Rate: 20
+          - Item: S_Promotion_Earring
+            Rate: 20
+          - Item: S_Promotion_Pendant
+            Rate: 20
+  - Group: CLASSIC_
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Majestic_Goat_Repl
+            Rate: 20
+          - Item: Cat_Hat
+            Rate: 20
+          - Item: Starfish_Headband
+            Rate: 20
+          - Item: Notation_Hairband
+            Rate: 20
+          - Item: Hermose_Cap
+            Rate: 20
+          - Item: Hibiscus
+            Rate: 20
+          - Item: Charming_Ribbon
+            Rate: 20
+          - Item: Crescent_Helm
+            Rate: 20
+          - Item: Kabuki_Mask
+            Rate: 20
+          - Item: Chinese_Crown
+            Rate: 20
+          - Item: Helm_Of_Darkness
+            Rate: 20
+          - Item: Puppy_Hat
+            Rate: 20
+          - Item: Twin_Ribbon
+            Rate: 20
+          - Item: Strawberry_Hat
+            Rate: 20
+          - Item: Helm_Of_Abyss
+            Rate: 20
+          - Item: Dragon_Skull
+            Rate: 20
+          - Item: Hoplite_Helmet
+            Rate: 20
+          - Item: Whisper_Mask
+            Rate: 20
+          - Item: Sting_Hat
+            Rate: 20
+          - Item: Laurel_Wreath
+            Rate: 20
+          - Item: Geographer_Band
+            Rate: 20
+          - Item: Helm_Of_Dragoon
+            Rate: 20
+          - Item: Sloth_Hat
+            Rate: 20
+          - Item: Satellite_Hairband
+            Rate: 20
+          - Item: Savage_Baby_Hat
+            Rate: 20
+          - Item: Vanilmirth_Hat
+            Rate: 20
+          - Item: Sleepr_Hat
+            Rate: 20
+          - Item: Imp_Hat
+            Rate: 20
+          - Item: Fish_Head_Hat
+            Rate: 20
+          - Item: Duneyrr_Helm
+            Rate: 20
+          - Item: Bell_Ribbon
+            Rate: 20
+          - Item: Elephant_Hat_
+            Rate: 20
+          - Item: Campfire_Hat
+            Rate: 20
+          - Item: Drooping_Boto
+            Rate: 20
+          - Item: Horn_Of_Ancient
+            Rate: 20
+          - Item: Little_Angel_Doll
+            Rate: 20
+          - Item: Pirate's_Pride
+            Rate: 20
+  - Group: COSTAMAX1
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Hair_Of_The_Strong
+            Rate: 20
+          - Item: C_Will_O_Wisp
+            Rate: 20
+          - Item: C_CatEars_Cyber_HeadP_R
+            Rate: 20
+          - Item: Yellow_Hat
+            Rate: 20
+          - Item: Rainbow
+            Rate: 20
+          - Item: Lightning_Cloud
+            Rate: 20
+          - Item: Rain_Cloud
+            Rate: 20
+          - Item: Charlie_Hat
+            Rate: 20
+          - Item: Mini_Crown1
+            Rate: 20
+          - Item: Donation_Ribbon
+            Rate: 20
+          - Item: Oliver_Wolf_Hood
+            Rate: 20
+          - Item: C_Tare_Neko_Cru
+            Rate: 20
+          - Item: C_Ascension_Black_Dragon
+            Rate: 20
+          - Item: C_King_Poring_Hat
+            Rate: 20
+          - Item: Drooping_Kiehl
+            Rate: 20
+          - Item: Drooping_Aliot
+            Rate: 20
+          - Item: C_Invisible_Cap
+            Rate: 20
+          - Item: C_Ramen_Hat
+            Rate: 20
+          - Item: C_Rainbow_Feather_Deco
+            Rate: 20
+          - Item: C_J_Captain_Hat
+            Rate: 20
+          - Item: C_Tiraya_Bonnet
+            Rate: 20
+          - Item: C_Minstrel_Hat
+            Rate: 20
+          - Item: C_Captain_Hat
+            Rate: 20
+          - Item: C_Brown_Beanie
+            Rate: 20
+          - Item: C_Poring_Cake_Hat
+            Rate: 20
+          - Item: C_Wind_Milestone
+            Rate: 20
+          - Item: C_Soulless_Wing
+            Rate: 20
+          - Item: C_Santa_Poring_Hat
+            Rate: 20
+          - Item: C_Happy_Wig
+            Rate: 20
+          - Item: C_Vane_Hairpin
+            Rate: 20
+          - Item: C_Santa_Hat_1
+            Rate: 20
+          - Item: C_Red_Dress_Hat
+            Rate: 20
+          - Item: C_Scarf
+            Rate: 20
+          - Item: C_Sacred_Torch_Coronet
+            Rate: 20
+          - Item: C_Tare_Zonda
+            Rate: 20
+          - Item: C_Saint_Frill_Ribbon
+            Rate: 20
+          - Item: C_Frog_King_Hat
+            Rate: 20
+          - Item: C_White_Lily
+            Rate: 20
+          - Item: C_Happy_Peace_Proof
+            Rate: 20
+          - Item: C_Leaf_Cat_Hat
+            Rate: 20
+          - Item: C_Butterfly_Hairpin
+            Rate: 20
+          - Item: C_Fedora
+            Rate: 20
+          - Item: C_Filir_Hat
+            Rate: 20
+          - Item: C_Blue_Pajamas_Hat
+            Rate: 20
+          - Item: C_Carnival_Circlet
+            Rate: 20
+          - Item: C_Rabbit_Ear_Hat
+            Rate: 20
+          - Item: C_Drooping_Bunny
+            Rate: 20
+          - Item: C_Angel_Mini_Silk_Hat
+            Rate: 20
+          - Item: C_10Gallon_Hat_Of_Flame
+            Rate: 20
+          - Item: C_Hunting_Cap_Of_Gust
+            Rate: 20
+          - Item: C_Knit_Cap_Of_Water
+            Rate: 20
+          - Item: C_Silk_Hat_Of_Earth
+            Rate: 20
+          - Item: C_Parade_Cap
+            Rate: 20
+          - Item: C_Mini_Tree_J
+            Rate: 20
+          - Item: C_Golden_Exclamation
+            Rate: 20
+          - Item: C_Silver_Exclamation
+            Rate: 20
+          - Item: C_Golden_Question
+            Rate: 20
+          - Item: C_Silver_Question
+            Rate: 20
+          - Item: C_Decoration_bluerose
+            Rate: 20
+          - Item: C_Yellow_Brain_Hat
+            Rate: 20
+          - Item: C_Alpaca_Hood
+            Rate: 20
+          - Item: C_Sales_Signboard
+            Rate: 20
+          - Item: C_Funeral_Costume
+            Rate: 20
+          - Item: C_Whisper_Tall_Hat
+            Rate: 20
+          - Item: C_Poring_Mascot_Costume
+            Rate: 20
+          - Item: C_Prontera_Army_Cap
+            Rate: 20
+          - Item: C_Diabolic_Headphone
+            Rate: 20
+          - Item: C_Monkey_On_Fur_Hat
+            Rate: 20
+          - Item: C_Rabbit_Head_Dress
+            Rate: 20
+          - Item: C_Hunting_Cap
+            Rate: 20
+          - Item: C_Snowman_Hat
+            Rate: 20
+          - Item: C_Blue_Drooping_Kitty
+            Rate: 20
+          - Item: C_Snownow_Hat
+            Rate: 20
+          - Item: C_Black_Strong_Hair
+            Rate: 20
+          - Item: C_Red_Strong_Hair
+            Rate: 20
+          - Item: C_Droopy_Alice_Doll
+            Rate: 20
+          - Item: C_Ribbon_Yellow
+            Rate: 20
+          - Item: C_Blue_Head_Dress
+            Rate: 20
+          - Item: C_Hat_Of_Drowsy_Cat
+            Rate: 20
+          - Item: C_Secret_Zipper
+            Rate: 20
+          - Item: C_White_Fox_Ear_Ribbon
+            Rate: 20
+          - Item: C_Man_Medal
+            Rate: 20
+          - Item: C_Over_Protector
+            Rate: 20
+          - Item: C_Magicdecoy_Doll
+            Rate: 20
+          - Item: C_Louise_Red_Hat
+            Rate: 20
+          - Item: C_Small_Poring_Band
+            Rate: 20
+          - Item: C_Crown_of_Strawberry_Prince
+            Rate: 20
+          - Item: C_Wild_Poring_Rider
+            Rate: 20
+          - Item: C_Two_Tone_Beret
+            Rate: 20
+          - Item: C_Monochrome_RibbonHat
+            Rate: 20
+          - Item: C_Elemental_Crown
+            Rate: 20
+          - Item: C_Butterfly_Barrettes
+            Rate: 20
+          - Item: C_Pope_Crown
+            Rate: 20
+          - Item: C_Full_Blossom_Sakura_Hairpin_Blue
+            Rate: 20
+          - Item: C_Laser_of_Eagle
+            Rate: 20
+          - Item: C_Quati_Hat_J
+            Rate: 20
+          - Item: C_Poster_Girl_Hat
+            Rate: 20
+          - Item: C_Pretty_Bear
+            Rate: 20
+          - Item: C_Tare_Pope_Casual
+            Rate: 20
+          - Item: C_Tare_Luwmin
+            Rate: 20
+          - Item: C_Magical_Feather
+            Rate: 20
+          - Item: C_Eleanor_Wig
+            Rate: 20
+          - Item: C_Ghostring_Tall_Hat
+            Rate: 20
+          - Item: C_QueenAnzRevenge
+            Rate: 20
+          - Item: C_Blue_Rose_Ornament
+            Rate: 20
+          - Item: C_White_Rabbit_Ear
+            Rate: 20
+          - Item: C_Tare_Domovoi
+            Rate: 20
+          - Item: C_Nydhog_Wig
+            Rate: 20
+          - Item: C_Chasher_Ear
+            Rate: 20
+          - Item: C_Squirrel_Ear_Hat
+            Rate: 20
+          - Item: C_Looking
+            Rate: 20
+          - Item: C_Tail_Hat
+            Rate: 20
+          - Item: C_Shura_King_Pledge
+            Rate: 20
+          - Item: C_Wrapping_Ribbon
+            Rate: 20
+          - Item: C_Drooping_White_Cat
+            Rate: 20
+          - Item: C_Rabbit_Hopping
+            Rate: 20
+          - Item: C_Cat_Ear_Hat_White
+            Rate: 20
+          - Item: C_Jirant_Circlet_Red
+            Rate: 20
+          - Item: C_Ghost_Holiday
+            Rate: 20
+          - Item: C_Gerhard_Von_Devi
+            Rate: 20
+          - Item: C_Alice_Wig
+            Rate: 20
+          - Item: C_Chung_E_Shinyon_Cap
+            Rate: 20
+          - Item: Khalitzburg_KN_Helm_BL
+            Rate: 20
+          - Item: C_Straight_Long_YLK
+            Rate: 20
+          - Item: C_Binit_Doll_Hat
+            Rate: 20
+          - Item: C_Jirant_Circlet
+            Rate: 20
+          - Item: C_Cat_Ears_Punkish
+            Rate: 20
+          - Item: C_Gothic_Pumpkin_Head
+            Rate: 20
+          - Item: C_Sorcerer_Hood
+            Rate: 20
+          - Item: C_Pope_Sitting_Head
+            Rate: 20
+          - Item: C_Eleanor_Wig_YL
+            Rate: 20
+          - Item: C_Nydhog_Wig_WH
+            Rate: 20
+          - Item: C_Alice_Wig_PK
+            Rate: 20
+          - Item: C_Virgo_Crown
+            Rate: 20
+          - Item: C_Cancer_Diadem
+            Rate: 20
+          - Item: C_Seppl_Hat_TW
+            Rate: 20
+          - Item: C_Curupira_Hat_TW
+            Rate: 20
+          - Item: C_Astro_Circle
+            Rate: 20
+          - Item: C_Fluffy_Heart_Earmuffs
+            Rate: 20
+          - Item: C_Snow_Bear_Food
+            Rate: 20
+          - Item: C_Blue_Frill_Ribbon
+            Rate: 20
+          - Item: C_Baby_Leopard_Cat
+            Rate: 20
+          - Item: C_Husky_Hat
+            Rate: 20
+          - Item: C_Straight_Long_BL
+            Rate: 20
+          - Item: C_Black_Fox_Ear_Ribbon
+            Rate: 20
+          - Item: C_CatCoffeeCup_TW
+            Rate: 20
+          - Item: C_Bouquet_Hat
+            Rate: 20
+          - Item: C_Starving_Fish_Hat
+            Rate: 20
+          - Item: C_Fawn_Ear
+            Rate: 20
+          - Item: C_Happy_Rabbit_Ribbon
+            Rate: 20
+          - Item: C_Clock_Casket_RD
+            Rate: 20
+          - Item: C_Variant_Veil
+            Rate: 20
+          - Item: C_Princess_Ribbon_Crown
+            Rate: 20
+          - Item: C_Mecha_Cat_Ears
+            Rate: 20
+          - Item: C_Forest_Guide
+            Rate: 20
+          - Item: C_HeartOfCat_TW
+            Rate: 20
+          - Item: C_Bogy_Cap_TW
+            Rate: 20
+          - Item: C_Rainbow_Veil
+            Rate: 20
+          - Item: C_Marvelous_Wig
+            Rate: 20
+          - Item: C_White_Cat_Hood
+            Rate: 20
+          - Item: C_Gothic_Heart_Wing
+            Rate: 20
+          - Item: C_Holy_Klobuk
+            Rate: 20
+          - Item: C_Wing_Headphone
+            Rate: 20
+          - Item: C_Arabian_Veil
+            Rate: 20
+          - Item: C_Cap_Of_Blindness
+            Rate: 20
+          - Item: C_Barrel_Helm
+            Rate: 20
+  - Group: COSTAMAX2
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_World_Star
+            Rate: 20
+          - Item: C_Shiba_Inu
+            Rate: 20
+          - Item: Butterfly_Wing_Ear
+            Rate: 20
+          - Item: Nut_On_Head
+            Rate: 20
+          - Item: Heart_Eye_Patch1
+            Rate: 20
+          - Item: Heart_Eye_Patch2
+            Rate: 20
+          - Item: C_Invisible_Sunglasses
+            Rate: 20
+          - Item: C_Round_Eyes
+            Rate: 20
+          - Item: C_Shelter_Wing_Ears
+            Rate: 20
+          - Item: C_YinYang_Earring
+            Rate: 20
+          - Item: C_Devoted_Eyes
+            Rate: 20
+          - Item: C_Music_Decoration
+            Rate: 20
+          - Item: C_Luxury_Sunglasses
+            Rate: 20
+          - Item: C_Cat_Eye
+            Rate: 20
+          - Item: C_3D_Glasses
+            Rate: 20
+          - Item: C_Mouton_Life
+            Rate: 20
+          - Item: C_Under_Rim_Glasses
+            Rate: 20
+          - Item: C_Mini_Glasses
+            Rate: 20
+          - Item: C_Bell_Pigeon
+            Rate: 20
+          - Item: C_Hexagon_Spectacles
+            Rate: 20
+          - Item: C_Eyes_Of_Ifrit
+            Rate: 20
+          - Item: C_Love_Cheek
+            Rate: 20
+          - Item: C_Gryphon_Wing_Ears
+            Rate: 20
+          - Item: C_Poring_Sunglasses
+            Rate: 20
+          - Item: C_Happy_Lunatic_Ear
+            Rate: 20
+          - Item: C_Charleston_Antenna
+            Rate: 20
+          - Item: C_Little_Aquarium
+            Rate: 20
+          - Item: C_Blessing_Of_Angels
+            Rate: 20
+          - Item: C_Morocc_Kid_Servant
+            Rate: 20
+          - Item: C_First_Love_Cheek
+            Rate: 20
+          - Item: C_Bloody_Stop_Bandage
+            Rate: 20
+          - Item: C_Lunatic_Hanging_Ear_BL
+            Rate: 20
+          - Item: C_Mouton_Life_BL
+            Rate: 20
+          - Item: C_Black_Cat
+            Rate: 20
+          - Item: C_White_Rabbit
+            Rate: 20
+          - Item: C_Black_Magenta_Ribbon
+            Rate: 20
+          - Item: C_Protect_Feathers
+            Rate: 20
+          - Item: C_Stretched_Nose_M
+            Rate: 20
+          - Item: C_Floating_Stone_Of_Int
+            Rate: 20
+          - Item: C_Blinking_Thin_Eyes
+            Rate: 20
+          - Item: C_Baby_Penguin
+            Rate: 20
+          - Item: C_White_Cat
+            Rate: 20
+          - Item: C_Flying_Drone
+            Rate: 20
+          - Item: C_Fairy_Feathers
+            Rate: 20
+          - Item: C_CatEarRibbon_TW
+            Rate: 20
+          - Item: C_MVP
+            Rate: 20
+          - Item: C_Panda_Rabbit
+            Rate: 20
+          - Item: C_Sheep_Horn
+            Rate: 20
+          - Item: C_Floating_Ball_TW
+            Rate: 20
+          - Item: C_Cyber_Income
+            Rate: 20
+          - Item: C_Kishu_Inu
+            Rate: 20
+          - Item: C_Fox
+            Rate: 20
+          - Item: C_Picnic_Basket
+            Rate: 20
+          - Item: C_Poring_On_Shoulder
+            Rate: 20
+          - Item: C_Smiling_Eyes
+            Rate: 20
+          - Item: C_Dragon_Arhat_Mask
+            Rate: 20
+          - Item: C_Tiger_Arhat_Mask
+            Rate: 20
+          - Item: C_Flowerpot_Mask
+            Rate: 20
+          - Item: C_Hockey_Mask
+            Rate: 20
+          - Item: C_Scratching_Cat
+            Rate: 20
+          - Item: C_Mask_Of_Bankrupt
+            Rate: 20
+          - Item: C_Face_Crusher
+            Rate: 20
+          - Item: C_Falcon_Mask
+            Rate: 20
+  - Group: COSTAMAX3
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Chicken_Beak
+            Rate: 20
+          - Item: Charlie_Beard
+            Rate: 20
+          - Item: C_Invisible_Mask
+            Rate: 20
+          - Item: C_Poring_Letter
+            Rate: 20
+          - Item: C_Jack_Castle_Bat
+            Rate: 20
+          - Item: C_Worg_In_Mouth
+            Rate: 20
+          - Item: C_Subject_Aura
+            Rate: 20
+          - Item: C_Fan_in_Mouth
+            Rate: 20
+          - Item: C_Long_Tongue
+            Rate: 20
+          - Item: C_Banshee_Master_Kiss
+            Rate: 20
+          - Item: C_Deviruchi_Balloon
+            Rate: 20
+          - Item: C_Centimental_Leaf
+            Rate: 20
+          - Item: C_Large_Ribbon_Muffler
+            Rate: 20
+          - Item: C_Gift_Of_Snow
+            Rate: 20
+          - Item: C_NettyHeart_BalloonGum
+            Rate: 20
+          - Item: C_Straight_Pony_Black
+            Rate: 20
+          - Item: C_Loose_Wave_Twin
+            Rate: 20
+          - Item: C_Happy_Balloon_J
+            Rate: 20
+          - Item: C_Straight_Pony_YL
+            Rate: 20
+          - Item: C_Straight_Pony_GN
+            Rate: 20
+          - Item: C_Straight_Pony_PP
+            Rate: 20
+          - Item: C_Straight_Pony_RD
+            Rate: 20
+          - Item: C_Straight_Pony_OM
+            Rate: 20
+          - Item: C_Straight_Pony_BU
+            Rate: 20
+          - Item: C_Straight_Pony_WH
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_YL
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_GN
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_PP
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_RD
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_OM
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_BU
+            Rate: 20
+          - Item: C_Loose_Wave_Twin_WH
+            Rate: 20
+          - Item: C_Eremes_Scarf
+            Rate: 20
+          - Item: C_Subject_Aura_Red
+            Rate: 20
+          - Item: C_Piamette_Bowtie
+            Rate: 20
+          - Item: C_Tone_of_Gold
+            Rate: 20
+          - Item: C_Cons_Of_Water
+            Rate: 20
+          - Item: C_Cat_Ears_Cape
+            Rate: 20
+          - Item: C_Umbala_Spirit
+            Rate: 20
+          - Item: GrimReaper_Protection
+            Rate: 20
+          - Item: C_Pig_Nose
+            Rate: 20
+          - Item: C_Blue_Rear_Ribbon
+            Rate: 20
+          - Item: C_Eremes_Scarf_Black
+            Rate: 20
+          - Item: C_Hair_Bun_BU
+            Rate: 20
+          - Item: C_Hair_Bun_RD
+            Rate: 20
+          - Item: C_Hair_Bun_YL
+            Rate: 20
+          - Item: C_Hair_Bun_GN
+            Rate: 20
+          - Item: C_Hair_Bun_BL
+            Rate: 20
+          - Item: C_Hair_Bun_WH
+            Rate: 20
+          - Item: C_Hair_Bun_OM
+            Rate: 20
+          - Item: C_Hair_Bun_PP
+            Rate: 20
+          - Item: C_Long_Pony_BU
+            Rate: 20
+          - Item: C_Long_Pony_RD
+            Rate: 20
+          - Item: C_Long_Pony_YL
+            Rate: 20
+          - Item: C_Long_Pony_GN
+            Rate: 20
+          - Item: C_Long_Pony_BL
+            Rate: 20
+          - Item: C_Long_Pony_WH
+            Rate: 20
+          - Item: C_Long_Pony_OM
+            Rate: 20
+          - Item: C_Long_Pony_PP
+            Rate: 20
+          - Item: C_Piamette_BowTie_Red
+            Rate: 20
+          - Item: C_Flame_Muffler
+            Rate: 20
+          - Item: C_Cat_Ears_Cape_Red
+            Rate: 20
+          - Item: C_Side_Pigtail_BU
+            Rate: 20
+          - Item: C_Side_Pigtail_RD
+            Rate: 20
+          - Item: C_Side_Pigtail_YL
+            Rate: 20
+          - Item: C_Side_Pigtail_GN
+            Rate: 20
+          - Item: C_Side_Pigtail_BL
+            Rate: 20
+          - Item: C_Side_Pigtail_WH
+            Rate: 20
+          - Item: C_Side_Pigtail_OM
+            Rate: 20
+          - Item: C_Side_Pigtail_PP
+            Rate: 20
+          - Item: C_Long_Twin_BU
+            Rate: 20
+          - Item: C_Long_Twin_RD
+            Rate: 20
+          - Item: C_Long_Twin_YL
+            Rate: 20
+          - Item: C_Long_Twin_GN
+            Rate: 20
+          - Item: C_Long_Twin_BL
+            Rate: 20
+          - Item: C_Long_Twin_WH
+            Rate: 20
+          - Item: C_Long_Twin_OM
+            Rate: 20
+          - Item: C_Long_Twin_PP
+            Rate: 20
+          - Item: C_Cat_Mouth
+            Rate: 20
+          - Item: C_Strawberry_in_Mouth
+            Rate: 20
+          - Item: C_Warm_Cat_Muffler
+            Rate: 20
+          - Item: C_Stall_Of_Angel
+            Rate: 20
+          - Item: C_Fallen_Angel_Valletta
+            Rate: 20
+          - Item: C_Diabolic_Lapel
+            Rate: 20
+          - Item: C_Volume_Low_Twin
+            Rate: 20
+          - Item: C_Vajra
+            Rate: 20
+          - Item: C_Book_Of_Magic
+            Rate: 20
+          - Item: C_Poring_Traffic_Light
+            Rate: 20
+          - Item: C_Leek_In_Mouth
+            Rate: 20
+          - Item: C_Luwmin_Ice
+            Rate: 20
+          - Item: C_Fluffy_Angel_Cape
+            Rate: 20
+          - Item: C_Lolita_Two_Side_Up
+            Rate: 20
+          - Item: C_L_RibbonMuff_Black
+            Rate: 20
+          - Item: C_Blessing_Sky_Lantern
+            Rate: 20
+          - Item: C_Tipsy
+            Rate: 20
+          - Item: C_Poring_Muffler
+            Rate: 20
+          - Item: C_Cat_Ears_Cape_Brown
+            Rate: 20
+          - Item: C_Volume_Low_Twin_WH
+            Rate: 20
+          - Item: C_Elephangel_TH
+            Rate: 20
+          - Item: C_Warm_Cat_Muffler_BL
+            Rate: 20
+          - Item: C_Eremes_Scarf_BU
+            Rate: 20
+          - Item: C_Mobile_Pursuit_System
+            Rate: 20
+          - Item: C_Poporing_Muffler
+            Rate: 20
+          - Item: C_Dark_Snake_Lord_Stall
+            Rate: 20
+          - Item: C_Sleep_Sheep_TW
+            Rate: 20
+          - Item: C_Protect_Cloth
+            Rate: 20
+          - Item: C_Pigtail_Red_Hood
+            Rate: 20
+  - Group: COSTAMAX4
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Devil_Wing
+            Rate: 20
+          - Item: C_Cupid_Wing_Pink
+            Rate: 20
+          - Item: Invisible_Manteau
+            Rate: 20
+          - Item: C_Poring_Bag
+            Rate: 20
+          - Item: C_Wings_of_Uriel
+            Rate: 20
+          - Item: C_SwordWing
+            Rate: 20
+          - Item: C_Blue_Fairy_Wing
+            Rate: 20
+          - Item: Brilliant_Golden_Wings
+            Rate: 20
+          - Item: C_Kirin_Wing
+            Rate: 20
+          - Item: C_Rudra_Wing
+            Rate: 20
+          - Item: C_Wing_Of_Happiness
+            Rate: 20
+          - Item: C_GreatDevilWing
+            Rate: 20
+          - Item: C_Amistr_Bag
+            Rate: 20
+          - Item: C_Fallen_Angel_Wing
+            Rate: 20
+          - Item: C_Archangel_Wing
+            Rate: 20
+  - Group: PORGLASS
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Poring_Sunglasses_
+            Rate: 91
+          - Item: Poring_Sunglasses__
+            Rate: 9

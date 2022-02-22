@@ -65,12 +65,10 @@
 //11547,1		// Woe_Violet_Potion
 //12600,1		// Treasure_Box_Scroll
 //
-<<<<<<< HEAD
 ////----------------------------------------------------------------------------
 //// PVP
 ////----------------------------------------------------------------------------
 //14529,2		// Greed_Scroll
-=======
 // Legend for 'Flag' field (bitmask):
 // 1    - restricted in normal maps
 // 2    - restricted in PVP
@@ -87,7 +85,6 @@
 // 2048 - restricted in zone 7
 // 4096 - restricted in zone 8
 // 8192 - restricted in zone 9
->>>>>>> 7eb125d5f1cd5a4efce0762c6e1a1cc72eba7d69
 //
 ////----------------------------------------------------------------------------
 //// GVG
@@ -97,7 +94,6 @@
 //14529,4		// Greed_Scroll
 //14590,4		// Pty_Assumptio_Scroll
 //
-<<<<<<< HEAD
 ////----------------------------------------------------------------------------
 //// Battlegrounds
 ////----------------------------------------------------------------------------
@@ -303,7 +299,6 @@
 //20704,8175	// TE_Woe_Magic_Manteau
 //21006,8175	// TE_Woe_Two_Hand_Sword
 //
-=======
 // Examples:
 // 1201,1   // Knife can't be worn on normal maps
 // 608,4    // Yggdrasil Seed can't be consumed in both GvG and WoE Castles
@@ -551,7 +546,7 @@
 13186,16367	// TE_Woe_Shotgun
 13187,16367	// TE_Woe_Grenade
 13317,16367	// TE_Woe_Huuma
-13439,16367	// TE_Woe_Sword
+//13439,16367	// TE_Woe_Sword
 15062,16367	// TE_Woe_Coat
 15063,16367	// TE_Woe_Chain_Mail
 15064,16367	// TE_Woe_Mage_Coat
@@ -564,4 +559,3 @@
 20703,16367	// TE_Woe_Manteau
 20704,16367	// TE_Woe_Magic_Manteau
 21006,16367	// TE_Woe_Two_Hand_Sword
->>>>>>> 7eb125d5f1cd5a4efce0762c6e1a1cc72eba7d69

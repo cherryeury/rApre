@@ -6731,7 +6731,7 @@ Body:
       bonus bSpeedRate,25;
       /*Gold PC Room: bonus bBaseAtk,10; bonus bMatk,10;*/
   - Id: 1373
-    AegisName: Brood_Axe
+    AegisName: Brood_Axe_
     Name: Bloody Axe
     Type: Weapon
     SubType: 2hAxe
@@ -6910,7 +6910,7 @@ Body:
       bonus2 bSkillAtk,"MC_MAMMONITE",20;
       bonus2 bAddEff,Eff_Stun,2000;
   - Id: 1379
-    AegisName: Guillotine
+    AegisName: Guillotine_
     Name: Guillotine
     Type: Weapon
     SubType: 2hAxe
@@ -7490,7 +7490,7 @@ Body:
       if (.@i>2)
          bonus bBaseAtk,((.@i-2)*5);
   - Id: 1399
-    AegisName: Slaughter
+    AegisName: Slaughter_
     Name: Slaughter
     Type: Weapon
     SubType: 2hAxe
@@ -9588,7 +9588,7 @@ Body:
     Script: |
       bonus2 bAddSize,Size_All,50;
   - Id: 1488
-    AegisName: Ahlspiess
+    AegisName: Ahlspiess_
     Name: Ahlspiess
     Type: Weapon
     SubType: 2hSpear
@@ -15891,7 +15891,7 @@ Body:
     Script: |
       bonus bLongAtkRate,20;
   - Id: 1729
-    AegisName: Bow_Of_Rudra
+    AegisName: Bow_Of_Rudra_
     Name: Rudra Bow
     Type: Weapon
     SubType: Bow
@@ -58635,7 +58635,7 @@ Body:
       Rogue: true
 
 
-      Fourth: true
+      
     Locations:
       Right_Hand: true
     WeaponLevel: 3
@@ -61882,7 +61882,7 @@ Body:
       bonus bAspdRate,10;
       bonus2 bAddEff,Eff_Curse,300;
   - Id: 13406
-    AegisName: Edge
+    AegisName: Edge____
     Name: Edge
     Type: Weapon
     SubType: 1hSword
