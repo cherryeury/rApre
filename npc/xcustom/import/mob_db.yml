@@ -339,3 +339,27 @@ Body:
     Drops:
       - Item: Stinky_Rotten_Meat
         Rate: 5   
+  - Id: 1010
+    AegisName: WILOW
+    Name: Willow
+    Drops:
+      - Item: Axe_
+        Rate: 100
+  - Id: 2615
+    AegisName: C3_WILOW
+    Name: Willow Ringleader
+    Drops:
+      - Item: Axe_
+        Rate: 100    
+  - Id: 1175
+    AegisName: TAROU
+    Name: Tarou
+    Drops:
+      - Item: Main_Gauche_
+        Rate: 25
+  - Id: 2638
+    AegisName: C3_TAROU
+    Name: Tarou Ringleader 
+    Drops:
+      - Item: Main_Gauche_
+        Rate: 25    

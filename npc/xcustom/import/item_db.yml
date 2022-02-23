@@ -8772,7 +8772,157 @@ Body:
     EquipLevelMin: 12
     Refineable: true      
     Script: |
-      bonus bMatk,30;      
+      bonus bMatk,30;   
+  - Id: 1212
+    AegisName: Dirk__
+    Name: Dirk
+    Type: Weapon
+    SubType: Dagger
+    Buy: 8500
+    Weight: 500
+    Attack: 59
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 12
+    Refineable: true      
+    Script: |
+      bonus bMatk,30;   
+  - Id: 13103
+    AegisName: Crimson_Bolt_
+    Name: Crimson Bolt
+    Type: Weapon
+    SubType: Revolver
+    Buy: 20000
+    Weight: 450
+    Attack: 45
+    Range: 7
+    Slots: 3
+    Jobs:
+      Gunslinger: true
+      Rebellion: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 35
+    Refineable: true
+    Script: |
+      bonus bHit,-10;      
+  - Id: 1606
+    AegisName: Wand__
+    Name: Wand
+    Type: Weapon
+    SubType: Staff
+    Buy: 2500
+    Weight: 400
+    Attack: 25
+    MagicAttack: 45
+    Range: 1
+    Slots: 3
+    Jobs:
+      Acolyte: true
+      Mage: true
+      Monk: true
+      Novice: true
+      Priest: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 12
+    Refineable: true
+    Script: |
+      bonus bInt,1;  
+  - Id: 1986
+    AegisName: P_Tail1
+    Name: True Wire
+    Type: Weapon
+    SubType: Whip
+    Buy: 17500
+    Weight: 1000
+    Attack: 70
+    Range: 2
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 16
+    Refineable: true   
+  - Id: 1709
+    AegisName: Great_Bow__
+    Name: Great Bow
+    Type: Weapon
+    SubType: Bow
+    Buy: 10000
+    Weight: 1000
+    Attack: 50
+    Range: 5
+    Slots: 3
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 18
+    Refineable: true      
+  - Id: 1515
+    AegisName: Morning_Star__
+    Name: Morning Star
+    Type: Weapon
+    SubType: Mace
+    Buy: 41000
+    Weight: 1500
+    Attack: 110
+    Range: 1
+    Slots: 3
+    Jobs:
+      Acolyte: true
+      Alchemist: true
+      Blacksmith: true
+      Crusader: true
+      Knight: true
+      Merchant: true
+      Monk: true
+      Priest: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 27
+    Refineable: true      
   - Id: 1213
     AegisName: Dagger
     Name: Dagger
@@ -8924,6 +9074,44 @@ Body:
     EquipLevelMin: 12
     Refineable: true   
     Script: |
+      bonus bMatk,44;  
+  - Id: 1218
+    AegisName: Stiletto__
+    Name: Stiletto
+    Type: Weapon
+    SubType: Dagger
+    Buy: 19500
+    Weight: 700
+    Attack: 87
+    Range: 1
+    Slots: 4
+    Jobs:
+      Alchemist: true
+      Archer: true
+      Assassin: true
+      BardDancer: true
+      Blacksmith: true
+      Crusader: true
+      Hunter: true
+      KagerouOboro: true
+      Knight: true
+      Mage: true
+      Merchant: true
+      Ninja: true
+      Novice: true
+      Rogue: true
+      Sage: true
+      SoulLinker: true
+      SuperNovice: true
+      Swordman: true
+      Thief: true
+      Wizard: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 12
+    Refineable: true     
+    Script: |
       bonus bMatk,44;     
   - Id: 1219
     AegisName: Gladius
@@ -9004,7 +9192,7 @@ Body:
     SubType: Dagger
     Buy: 49000
     Weight: 800
-    Attack: 118
+    Attack: 122
     Range: 1
     Slots: 1
     Jobs:
@@ -9031,9 +9219,8 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 24
     Refineable: true
-    Script: |
-      bonus bUnbreakableWeapon;   
-      bonus bMatk,59;
+    Script: |  
+      bonus bMatk,61;
   - Id: 1226
     AegisName: Damascus_
     Name: Damascus
@@ -9041,7 +9228,7 @@ Body:
     SubType: Dagger
     Buy: 49000
     Weight: 800
-    Attack: 118
+    Attack: 122
     Range: 1
     Slots: 2
     Jobs:
@@ -9068,9 +9255,8 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 24
     Refineable: true
-    Script: |
-      bonus bUnbreakableWeapon;   
-      bonus bMatk,59;
+    Script: | 
+      bonus bMatk,61;
   - Id: 1245
     AegisName: Cinquedea
     Name: Cinquedea

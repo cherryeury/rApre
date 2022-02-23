@@ -15497,26 +15497,26 @@ Body:
     WeaponLevel: 2
     EquipLevelMin: 18
     Refineable: true
-  - Id: 1709
-    AegisName: Great_Bow__
-    Name: Great Bow
-    Type: Weapon
-    SubType: Bow
-    Buy: 10000
-    Weight: 1000
-    Attack: 50
-    Range: 5
-    Jobs:
-      Archer: true
-      BardDancer: true
-      Hunter: true
-      Rogue: true
-      Thief: true
-    Locations:
-      Both_Hand: true
-    WeaponLevel: 2
-    EquipLevelMin: 18
-    Refineable: true
+#  - Id: 1709
+#    AegisName: Great_Bow__
+#    Name: Great Bow
+#    Type: Weapon
+#    SubType: Bow
+#    Buy: 10000
+#    Weight: 1000
+#    Attack: 50
+#    Range: 5
+#    Jobs:
+#      Archer: true
+#      BardDancer: true
+#      Hunter: true
+#      Rogue: true
+#      Thief: true
+#    Locations:
+#      Both_Hand: true
+#    WeaponLevel: 2
+#    EquipLevelMin: 18
+#    Refineable: true
   - Id: 1710
     AegisName: CrossBow
     Name: Crossbow

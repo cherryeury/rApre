@@ -18,86 +18,86 @@
 //= 3.4 Added VIP features. [Euphy]
 //============================================================
 
-// Christopher: Geffen Blacksmith
+// Guillenrow: Geffen Blacksmith
 //============================================================
-geffen_in,110,172,0	script	Smithy#1	63,{
-	mes "[Christopher Guillenrow]";
-	mes "Welcome to Christopher's Workshop. Ye can get all yer stuff for forging here. What business";
+moc_para01,111,90,3	script	Smithy#1	813,{
+	mes "[^FF6600Guillenrow^000000]";
+	mes "Welcome to Guillenrow's Workshop. Ye can get all yer stuff for forging here. What business";
 	mes "brings ye to me?";
 	next;
-	switch(select("Purchase Anvil:Purchase Forging Item:Purchase Metal:Purify Rough Ores:Cancel")) {
+	switch(select("Purchase Anvil:Purchase Forging Item:Purify Rough Ores:Cancel")) {
 	case 1:
-		mes "[Christopher Guillenrow]";
+		mes "[^FF6600Guillenrow^000000]";
 		mes "A better Anvil gives ye a greeeater chance to make better weapons, ye know? But they'll cost ye more zeny. Just get it off yer chest and buy what fits your purposes best, laddy.";
 		next;
 		switch(select("Anvil - 30,000 zeny:Oridecon Anvil - 120,000 zeny:Golden Anvil - 300,000 zeny:Emperium Anvil - 600,000 zeny:Cancel.")) {
 		case 1:
 			if (Zeny < 30000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 986,1; // Anvil
 			Zeny = Zeny-30000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "This is the cheapest one, but efficient enough to forge most items. Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
 			close;
 		case 2:
 			if (Zeny < 120000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 987,1; // Oridecon_Anvil
 			Zeny = Zeny-120000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Aye, friend ye have an eye for the anvil. This must be the proper anvil for a Blacksmith, eh? Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
 			close;
 		case 3:
 			if (Zeny < 300000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 988,1; // Golden_Anvil
 			Zeny = Zeny-300000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "This one is the best among all me stuffs in me workshop! With this, ye can rule the Blacksmith world! Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
 			close;
 		case 4:
 			if (Zeny < 300000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 988,1; // Golden_Anvil
 			Zeny = Zeny-300000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "This one is the best among all me stuffs in me workshop! With this, ye can rule the Blacksmith world! Thank ye fer shopping at me workshop.  Feel free to come anytime, whenever ye need.";
 			close;
 		case 5:
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Okay, feel free to come anytime, whenever ye need. Fare ye well.";
 			close;
 		}
 	case 2:
-		mes "[Christopher Guillenrow]";
+		mes "[^FF6600Guillenrow^000000]";
 		mes "A respectable blacksmith uses fine tools. Ye can become one o'those with me Stuff. Choose anything ye want.";
 		next;
 		switch(select("Mini-Furnace - 150 zeny:Iron Hammer - 1000 zeny:Golden Hammer - 3000 zeny:Oridecon Hammer - 5000 zeny:Cancel.")) {
 		case 1:
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "It's a much needed tool fer refining metal! So, How many do ye wish to buy? If ye want to quit, just type the number '0.'";
 			next;
 			while(1) {
 				input .@input;
 				if (.@input == 0) {
-					mes "[Christopher Guillenrow]";
+					mes "[^FF6600Guillenrow^000000]";
 					mes "Aye, the deal is canceled. Fare ye well.";
 					close;
 				}
 				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[Christopher Guillenrow]";
+					mes "[^FF6600Guillenrow^000000]";
 					mes "Ye can buy 500, er less.";
 					next;
 				}
@@ -107,182 +107,96 @@ geffen_in,110,172,0	script	Smithy#1	63,{
 			}
 			.@sell = .@input * 150;
 			if (Zeny < .@sell) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			if (checkweight(612,.@input) == 0) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "Ye look like you don't got enough room in yer inventory. Put some stuff into your Kafra Storage, why don't ye?";
 				close;
 			}
 			getitem 612,.@input; // Portable_Furnace
 			Zeny = Zeny-.@sell;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
 			close;
 		case 2:
 			if (Zeny < 1000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 613,1; // Iron_Hammer
 			Zeny = Zeny-1000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
 			close;
 		case 3:
 			if (Zeny < 3000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 614,1; // Golden_Hammer
 			Zeny = Zeny-3000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
 			close;
 		case 4:
 			if (Zeny < 5000) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
 				close;
 			}
 			getitem 615,1; // Oridecon_Hammer
 			Zeny = Zeny-5000;
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
 			close;
 		case 5:
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Feel free to come anytime, whenever ye need. Fare ye well.";
 			close;
 		}
 	case 3:
-		mes "[Christopher Guillenrow]";
-		mes "I prepare every Metal, and only the high quality ones o'course. Now then, which one do ye need?";
-		next;
-		switch(select("Oridecon - 25000z.:Ellunium - 250000z.:Cancel.")) {
-		case 1:
-			mes "[Christopher Guillenrow]";
-			mes "So, How many do ye wish to buy? If ye dont want anything, just type the number as '0.'";
-			next;
-			while(1) {
-				input .@input;
-				if (.@input == 0) {
-					mes "[Christopher Guillenrow]";
-					mes "Deal has";
-					mes "been canceled.";
-					mes "Fare ye well.";
-					close;
-				}
-				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[Christopher Guillenrow]";
-					mes "Ye can buy 500, er less.";
-					next;
-				}
-				else {
-					break;
-				}
-			}
-			.@sell = .@input * 25000;
-			if (Zeny < .@sell) {
-				mes "[Christopher Guillenrow]";
-				mes "Ye don't have enough money. Ye know I can't sell this at a lower price... You know how the wifey nags about Zeny.";
-				close;
-			}
-			if (checkweight(984,.@input) == 0) {
-				mes "[Christopher Guillenrow]";
-				mes "Ye look like you don't have the room to carry anythin' new. Why don't ye put some things into Kafra Storage n' come back.";
-				close;
-			}
-			getitem 984,.@input; // Oridecon
-			Zeny = Zeny-.@sell;
-			mes "[Christopher Guillenrow]";
-			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need.";
-			close;
-		case 2:
-			mes "[Christopher Guillenrow]";
-			mes "So, how many do ye wish to buy? If ye dont want anything at all, just type the number as '0.'";
-			next;
-			while(1) {
-				input .@input;
-				if (.@input == 0) {
-					mes "[Christopher Guillenrow]";
-					mes "Deal has";
-					mes "been canceled.";
-					mes "Fare ye well.";
-					close;
-				}
-				else if ((.@input < 0) || (.@input > 500)) {
-					mes "[Christopher Guillenrow]";
-					mes "Ye can buy 500, er less.";
-					next;
-				}
-				else {
-					break;
-				}
-			}
-			.@sell = .@input * 25000;
-			if (Zeny < .@sell) {
-				mes "[Christopher Guillenrow]";
-				mes "I don't think I can let ye have this with the zeny ye have. I can't lose me money because of ye.";
-				close;
-			}
-			if (checkweight(1011,.@input) == 0) {
-				mes "[Christopher Guillenrow]";
-				mes "Me friend... Seems to me ye don't have Inventory space. Why doncha put some things into Kafra Storage first?";
-				close;
-			}
-			getitem 985,.@input; // Ellunium
-			Zeny = Zeny-.@sell;
-			mes "[Christopher Guillenrow]";
-			mes "Thank ye fer shopping at me workshop. Feel free to come anytime, whenever ye need, whenever ye want.";
-			close;
-		case 3:
-			mes "[Christopher Guillenrow]";
-			mes "Feel free to come anytime, whenever ye need. Fare ye well.";
-			close;
-		}
-	case 4:
-		mes "[Christopher Guillenrow]";
+		mes "[^FF6600Guillenrow^000000]";
 		mes "I can purify yer Oridecon and Elunium. I make a refined Ore out of 5 o'each rough ones. Well... Which one do ye want to make?";
 		next;
 		switch(select("Make Oridecon:Make Elunium:Cancel.")) {
 		case 1:
 			if (countitem(756) < 5) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I told ye, I need 5 o'the rough Oridecons fer one Oridecon.";
 				close;
 			}
 			else {
 				delitem 756,5;  //Oridecon_Stone
 				getitem 984,1; // Oridecon
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "Here's an Oridecon fer ye. Ye will be always welcome here, I'll be waitin' for ye.";
 				close;
 			}
 		case 2:
 			if (countitem(757) < 5) {
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "I told ye, I need 5 rough Eluniums fer one Elunium.";
 				close;
 			}
 			else {
 				delitem 757,5;  //Elunium_Stone
 				getitem 985,1; // Elunium
-				mes "[Christopher Guillenrow]";
+				mes "[^FF6600Guillenrow^000000]";
 				mes "Arrr, here's yer Elunium. Yer business is always welcome here, so feel free to come again.";
 				close;
 			}
 		case 3:
-			mes "[Christopher Guillenrow]";
+			mes "[^FF6600Guillenrow^000000]";
 			mes "Feel free to come anytime, whenever ye need. Fare ye well.";
 			close;
 		}
-	case 5:
-		mes "[Christopher Guillenrow]";
+	case 4:
+		mes "[^FF6600Guillenrow^000000]";
 		mes "Feel free to come anytime, whenever ye need and whenever ye want. Fare ye well.";
 		close;
 	}

@@ -205,7 +205,7 @@ if( strcharinfo(3) == "sec_pri"){
 	sc_start SC_COMA,-1,0;
 	sc_start SC_CRITICALWOUND,-1,5;
 	sleep2 2000;
-	dispbottom "You hear someone's footstep getting closer";
+	dispbottom "You hear something's getting closer";
 	sleep2 1000;
 	dispbottom "Tap";
 	sleep2 1000;
