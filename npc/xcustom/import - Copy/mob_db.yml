@@ -1,0 +1,365 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2019 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Monster Database
+###########################################################################
+#
+# Monster Settings
+#
+###########################################################################
+# - Id                      Monster ID.
+#   AegisName               Server name to reference the monster in scripts and lookups, should use no spaces.
+#   Name                    Name in English.
+#   JapaneseName            Name in Japanese. (Default: 'Name' value)
+#   Level                   Level. (Default: 1)
+#   Hp                      Total HP. (Default: 1)
+#   Sp                      Total SP. (Default: 1)
+#   BaseExp                 Base experience gained. (Default: 0)
+#   JobExp                  Job experience gained. (Default: 0)
+#   MvpExp                  MVP experience gained. (Default: 0)
+#   Attack                  Minimum attack in pre-renewal and base attack in renewal. (Default: 0)
+#   Attack2                 Maximum attack in pre-renewal and base magic attack in renewal. (Default: 0)
+#   Defense                 Physical defense of the monster, reduces melee and ranged physical attack/skill damage. (Default: 0)
+#   MagicDefense            Magic defense of the monster, reduces magical skill damage. (Default: 0)
+#   Str                     Strength which affects attack. (Default: 1)
+#   Agi                     Agility which affects flee. (Default: 1)
+#   Vit                     Vitality which affects defense. (Default: 1)
+#   Int                     Intelligence which affects magic attack. (Default: 1)
+#   Dex                     Dexterity which affects hit rate. (Default: 1)
+#   Luk                     Luck which affects perfect dodge/lucky flee/lerfect flee/lucky dodge rate. (Default: 1)
+#   AttackRange             Attack range. (Default: 0)
+#   SkillRange              Skill cast range. (Default: 0)
+#   ChaseRange              Chase range. (Default: 0)
+#   Size                    Size. (Default: Small)
+#   Race                    Race. (Default: Formless)
+#   RaceGroups:             List of secondary groups the monster may be part of. (Optional)
+#     <group>: <value>      Group to toggle.
+#   Element                 Element. (Default: Neutral)
+#   ElementLevel            Level of element. (Default: 1)
+#   WalkSpeed               Walk speed. (Default: DEFAULT_WALK_SPEED)
+#   AttackDelay             Attack speed. (Default: 0)
+#   AttackMotion            Attack animation speed. (Default: 0)
+#   DamageMotion            Damage animation speed. (Default: 0)
+#   Ai                      Aegis monster type AI behavior. (Default: 06)
+#   Class                   Aegis monster class. (Default: Normal)
+#   Modes:                  List of unique behavior not defined by AI, Class, or Attribute. (Optional)
+#     <mode>: <value>       Mode to toggle.
+#   MvpDrops:               List of possible MVP prize items. Max of MAX_MVP_DROP. (Optional)
+#     - Item                Item name.
+#       Rate                Drop rate of item.
+#       RandomOptionGroup   Random Option Group applied to item on drop. (Default: None)
+#       Index               Index used for overwriting item. (Optional)
+#   Drops:                  List of possible normal item drops. Max of MAX_MOB_DROP. (Optional)
+#     - Item                Item name.
+#       Rate                Drop rate of item.
+#       StealProtected      If the item is shielded from TF_STEAL. (Default: false)
+#       RandomOptionGroup   Random Option Group applied to item on drop. (Default: None)
+#       Index               Index used for overwriting item. (Optional)
+###########################################################################
+
+Header:
+  Type: MOB_DB
+  Version: 3
+
+Body:
+  - Id: 1416
+    AegisName: WICKED_NYMPH
+    Name: Evil Nymph
+    JapaneseName: Wicked Nymph
+    Drops:
+      - Item: Charming_Lotus
+        Rate: 50
+  - Id: 1143
+    AegisName: MARIONETTE
+    Name: Marionette
+    Drops:
+      - Item: Delicious_Shaved_Ice
+        Rate: 20
+  - Id: 2761
+    AegisName: C3_MARIONETTE
+    Name: Marionette Ringleader        
+    Drops:
+      - Item: Delicious_Shaved_Ice
+        Rate: 20
+  - Id: 2740
+    AegisName: C2_MUMMY
+    Name: Solid Mummy 
+    Drops:
+      - Item: Elixir_Bandage
+        Rate: 20 
+  - Id: 2739
+    AegisName: C1_MUMMY
+    Name: Swift Mummy   
+    Drops:
+      - Item: Elixir_Bandage
+        Rate: 20
+  - Id: 1041
+    AegisName: MUMMY
+    Name: Mummy        
+    Drops:
+      - Item: Elixir_Bandage
+        Rate: 20
+  - Id: 1513
+    AegisName: CIVIL_SERVANT
+    Name: Mao Guai
+    JapaneseName: Civil Servant
+    Drops:
+      - Item: Fan_Of_Wind
+        Rate: 20   
+  - Id: 1179
+    AegisName: WHISPER
+    Name: Whisper
+    Drops:
+      - Item: Fit_Pipe
+        Rate: 20   
+  - Id: 1185
+    AegisName: WHISPER_
+    Name: Whisper        
+    Drops:
+      - Item: Fit_Pipe
+        Rate: 20 
+  - Id: 1404
+    AegisName: MIYABI_NINGYO
+    Name: Miyabi Doll
+    JapaneseName: Miyabi Ningyo       
+    Drops:
+      - Item: Gril_Doll
+        Rate: 20        
+  - Id: 2746
+    AegisName: C3_MIYABI_NINGYO
+    Name: Miyabi Doll Ringleader
+    Drops:
+      - Item: Gril_Doll
+        Rate: 20 
+  - Id: 1374
+    AegisName: INCUBUS
+    Name: Incubus
+    Drops:
+      - Item: Gril's_Naivety
+        Rate: 1
+  - Id: 1379
+    AegisName: NIGHTMARE_TERROR
+    Name: Nightmare Terror
+    Drops:
+      - Item: Hell_Contract
+        Rate: 20
+  - Id: 2732
+    AegisName: C4_NIGHTMARE_TERROR
+    Name: Furious Nightmare Terror        
+    Drops:
+      - Item: Hell_Contract
+        Rate: 20       
+  - Id: 1188
+    AegisName: BON_GUN
+    Name: Bongun
+    Drops:
+      - Item: Heart_Of_Her
+        Rate: 20      
+  - Id: 1401
+    AegisName: SHINOBI
+    Name: Shinobi  
+    Drops:
+      - Item: Kuloren
+        Rate: 20        
+  - Id: 2664
+    AegisName: C4_SHINOBI
+    Name: Furious Shinobi        
+    Drops:
+      - Item: Kuloren
+        Rate: 20          
+  - Id: 2398
+    AegisName: LITTLE_PORING
+    Name: Little Poring
+    Drops:
+      - Item: Unripe_Apple2
+        Rate: 20   
+  - Id: 2776
+    AegisName: C3_LITTLE_PORING
+    Name: Baby Poring Ringleader   
+    Drops:
+      - Item: Unripe_Apple2
+        Rate: 20  
+  - Id: 1504
+    AegisName: DULLAHAN
+    Name: Dullahan
+    Drops:
+      - Item: Luxury_Whisky_Bottle
+        Rate: 20
+  - Id: 1040
+    AegisName: GOLEM
+    Name: Golem
+    Drops:
+      - Item: Magical_Lithography
+        Rate: 20
+  - Id: 2812
+    AegisName: C4_GOLEM
+    Name: Furious Golem
+    Drops:
+      - Item: Magical_Lithography
+        Rate: 20
+  - Id: 1026
+    AegisName: MUNAK
+    Name: Munak       
+    Drops:
+      - Item: No_Recipient
+        Rate: 20    
+  - Id: 1495
+    AegisName: STONE_SHOOTER
+    Name: Stone Shooter
+    Drops:
+      - Item: Oilpalm_Coconut
+        Rate: 20 
+  - Id: 1023
+    AegisName: ORK_WARRIOR
+    Name: Orc Warrior
+    Drops:
+      - Item: Horror_Of_Tribe
+        Rate: 5 
+  - Id: 2722
+    AegisName: C4_ORK_WARRIOR
+    Name: Furious Orc Warrior
+    Drops:
+      - Item: Horror_Of_Tribe
+        Rate: 5
+  - Id: 1382
+    AegisName: DIABOLIC
+    Name: Diabolic    
+    Drops:
+      - Item: Red_Burning_Stone
+        Rate: 5
+  - Id: 1180
+    AegisName: NINE_TAIL
+    Name: Nine Tail
+    Drops:
+      - Item: Sap_Jelly
+        Rate: 5
+  - Id: 1622
+    AegisName: TEDDY_BEAR
+    Name: Teddy Bear        
+    Drops:
+      - Item: Little_Dall_Needle
+        Rate: 5
+  - Id: 2636
+    AegisName: C1_TEDDY_BEAR
+    Name: Swift Teddy Bear        
+    Drops:
+      - Item: Little_Dall_Needle
+        Rate: 5
+  - Id: 1148
+    AegisName: MEDUSA
+    Name: Medusa
+    Drops:
+      - Item: Splendid_Mirror
+        Rate: 5
+  - Id: 2759
+    AegisName: C1_MEDUSA
+    Name: Swift Medusa   
+    Drops:
+      - Item: Splendid_Mirror
+        Rate: 5
+  - Id: 1299
+    AegisName: GOBLIN_LEADER
+    Name: Goblin Leader     
+    Drops:
+      - Item: Staff_Of_Leader
+        Rate: 50
+  - Id: 2313
+    AegisName: TIKBALANG
+    Name: Tikbalang
+    Drops:
+      - Item: Tikbalang_Belt
+        Rate: 5
+  - Id: 1632
+    AegisName: GREMLIN
+    Name: Gremlin
+    Drops:
+      - Item: Airship_Part
+        Rate: 5
+  - Id: 1208
+    AegisName: WANDER_MAN
+    Name: Wanderer
+    JapaneseName: Wander Man        
+    Drops:
+      - Item: Skull_Of_Vagabond
+        Rate: 5
+  - Id: 2620
+    AegisName: C4_WANDER_MAN
+    Name: Furious Wanderer        
+    Drops:
+      - Item: Skull_Of_Vagabond
+        Rate: 5  
+  - Id: 1505
+    AegisName: LOLI_RURI
+    Name: Loli Ruri   
+    Drops:
+      - Item: Very_Red_Juice
+        Rate: 5  
+  - Id: 2774
+    AegisName: C1_LOLI_RURI
+    Name: Swift Loli Ruri
+    Drops:
+      - Item: Very_Red_Juice
+        Rate: 5 
+  - Id: 1586
+    AegisName: LEAF_CAT
+    Name: Leaf Cat
+    Drops:
+      - Item: Very_Soft_Plant
+        Rate: 5   
+  - Id: 2781
+    AegisName: C3_LEAF_CAT
+    Name: Leaf Cat Ringleader
+    Drops:
+      - Item: Very_Soft_Plant
+        Rate: 5
+  - Id: 1782
+    AegisName: ROWEEN
+    Name: Roween  
+    Drops:
+      - Item: Stinky_Rotten_Meat
+        Rate: 5       
+  - Id: 2677
+    AegisName: C2_ROWEEN
+    Name: Solid Roween  
+    Drops:
+      - Item: Stinky_Rotten_Meat
+        Rate: 5   
+  - Id: 1010
+    AegisName: WILOW
+    Name: Willow
+    Drops:
+      - Item: Axe_
+        Rate: 100
+  - Id: 2615
+    AegisName: C3_WILOW
+    Name: Willow Ringleader
+    Drops:
+      - Item: Axe_
+        Rate: 100    
+  - Id: 1175
+    AegisName: TAROU
+    Name: Tarou
+    Drops:
+      - Item: Main_Gauche_
+        Rate: 25
+  - Id: 2638
+    AegisName: C3_TAROU
+    Name: Tarou Ringleader 
+    Drops:
+      - Item: Main_Gauche_
+        Rate: 25    

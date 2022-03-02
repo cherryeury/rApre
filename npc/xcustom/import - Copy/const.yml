@@ -1,0 +1,65 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2021 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Script Constant Database
+###########################################################################
+#
+# Script Constant Settings
+#
+###########################################################################
+# - Name             Unique name for the constant. Must not have same name as script commands, functions, or variables.
+#   Value            Value assigned to the constant. This value cannot be changed during the runtime of the server.
+#   Parameter        Specifies whether the identifier is a parameter. (Default: false)
+#                    Note: Parameters are special in that they retrieve certain runtime values depending on the specified ID
+#                    in field Value. Depending on the implementation values assigned by scripts the parameters will affect
+#                    runtime values, such as Zeny, as well (see pc_readparam/pc_setparam).
+###########################################################################
+
+Header:
+  Type: CONSTANT_DB
+  Version: 1
+
+Body:
+  - Name: RDMOPT_ALLSTATS
+    Value: 401
+  - Name: RDMOPT_ADDSKILLMDAMAGE_WATER
+    Value: 222
+  - Name: RDMOPT_ADDSKILLMDAMAGE_GROUND
+    Value: 223
+  - Name: RDMOPT_ADDSKILLMDAMAGE_FIRE
+    Value: 224
+  - Name: RDMOPT_ADDSKILLMDAMAGE_WIND
+    Value: 225
+  - Name: IG_Classic_
+    Value: 2001
+  - Name: IG_Costamax1
+    Value: 2002
+  - Name: IG_Costamax2
+    Value: 2003
+  - Name: IG_Costamax3
+    Value: 2004
+  - Name: IG_Costamax4
+    Value: 2005
+  - Name: IG_BPoring
+    Value: 2006
+  - Name: IG_BShadow
+    Value: 2007
+  - Name: IG_Balloon
+    Value: 2008
+  - Name: IG_PorGlass
+    Value: 2009

@@ -30,6 +30,3 @@
 Header:
   Type: MOB_CHAT_DB
   Version: 1
-
-Body:
-  []

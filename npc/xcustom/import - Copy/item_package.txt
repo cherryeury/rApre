@@ -1,0 +1,455 @@
+// Item Package Database
+//
+// Structure of Database:
+// GroupID,ItemID,Rate{,Amount,Random,isAnnounced,Duration,GUID,isBound,isNamed}
+IG_Classic_,5683,20,1,1	// 1x Majestic_Goat_Repl
+IG_Classic_,5099,20,1,1; // Cat Hat
+IG_Classic_,18640,20,1,1; // Autumn Headband
+IG_Classic_,5678,20,1,1; // Headphone
+//IG_Classic_,5138,20,1,1; // Magic_Eyes
+IG_Classic_,5481,20,1,1; // Hermode
+IG_Classic_,5139,20,1,1; // Hibiscus
+IG_Classic_,5140,20,1,1; // Charming Ribbon
+IG_Classic_,5142,20,1,1; // Crescent Helm
+IG_Classic_,5143,20,1,1; // Kabuki Mask
+IG_Classic_,5152,20,1,1; // Chinese Crown
+IG_Classic_,5181,20,1,1; // Helm of Darkness
+IG_Classic_,5182,20,1,1; // Puppy Hat
+//IG_Classic_,5183,20,1,1; // Bird Nest Hat
+IG_Classic_,5187,20,1,1; // Twin Ribbon
+IG_Classic_,18589,20,1,1; // Strawberry
+IG_Classic_,5363,20,1,1; // Abyss
+IG_Classic_,5292,20,1,1; // Dragon Skull
+//IG_Classic_,5388,20,1,1; // Snake Head
+IG_Classic_,5782,20,1,1; // Legionnaire
+IG_Classic_,5294,20,1,1; // Whisper
+IG_Classic_,5509,20,1,1; // Sting Hat
+IG_Classic_,5185,20,1,1; // Laurel Wreath
+IG_Classic_,5186,20,1,1; // Geographer Band	
+IG_Classic_,5467,20,1,1; // Dragon Helm
+IG_Classic_,5761,20,1,1; // Sloth
+IG_Classic_,5212,20,1,1; // Satellite		
+//IG_Classic_,5563,20,1,1; // Dolor
+IG_Classic_,5572,20,1,1; // Babe
+//IG_Classic_,5561,20,1,1; // Magician Rabbit
+IG_Classic_,5289,20,1,1; // Vanilmirth
+IG_Classic_,5659,20,1,1; // Sleeper
+IG_Classic_,5658,20,1,1; // Imp
+IG_Classic_,5380,20,1,1; // Fish
+IG_Classic_,5762,20,1,1; // Duneyrr
+IG_Classic_,5382,20,1,1; // Bell Ribbon
+IG_Classic_,5259,20,1,1; // Elephant
+IG_Classic_,5414,20,1,1; // Campfire
+IG_Classic_,5779,20,1,1; // Boto
+IG_Classic_,18595,20,1,1; // Ancient Horn
+IG_Classic_,5324,20,1,1; // Little Angel
+IG_Classic_,5501,20,1,1; // Pirate
+
+//Top
+IG_Costamax1,18740,20,1,1; C_Hair_Of_The_Strong
+IG_Costamax1,18741,20,1,1; C_Will_O_Wisp
+IG_Costamax1,19294,20,1,1; C_CatEars_Cyber_HeadP_R
+IG_Costamax1,19515,20,1,1; Yellow_Hat
+IG_Costamax1,19518,20,1,1; Rainbow
+IG_Costamax1,19519,20,1,1; Lightning_Cloud
+IG_Costamax1,19520,20,1,1; Rain_Cloud
+IG_Costamax1,19521,20,1,1; Charlie_Hat
+IG_Costamax1,19522,20,1,1; Mini_Crown1
+IG_Costamax1,19523,20,1,1; Donation_Ribbon
+IG_Costamax1,19543,20,1,1; Oliver_Wolf_Hood
+IG_Costamax1,19544,20,1,1; C_Tare_Neko_Cru
+//IG_Costamax1,19573,20,1,1; C_Heart_Wing_Hairband
+IG_Costamax1,19575,20,1,1; C_Rising_Black_Dragon
+//IG_Costamax1,19576,20,1,1; C_Tare_Pope
+//IG_Costamax1,19577,20,1,1; 10th_Anni_Poring_Hat
+IG_Costamax1,19587,20,1,1; C_King_Poring_Hat
+IG_Costamax1,19600,20,1,1; Drooping_Kiehl
+IG_Costamax1,19601,20,1,1; Drooping_Aliot
+IG_Costamax1,19602,20,1,1; C_Invisible_Cap
+IG_Costamax1,19646,20,1,1; C_Ramen_Hat
+//IG_Costamax1,19647,20,1,1; C_Red_Deviruchi_Cap
+IG_Costamax1,19650,20,1,1; C_Rainbow_Feather_Deco
+IG_Costamax1,19654,20,1,1; C_J_Captain_Hat
+IG_Costamax1,19655,20,1,1; C_Tiraya_Bonnet
+IG_Costamax1,19656,20,1,1; C_Minstrel_Hat
+IG_Costamax1,19657,20,1,1; C_Captain_Hat
+IG_Costamax1,19659,20,1,1; C_Gray_Fur_Hat
+IG_Costamax1,19665,20,1,1; C_Poring_Cake_Cap
+IG_Costamax1,19668,20,1,1; C_Wind_Milestone
+IG_Costamax1,19677,20,1,1; C_Soulless_Wing
+IG_Costamax1,19682,20,1,1; C_Santa_Poring_Hat
+IG_Costamax1,19684,20,1,1; C_Happy_Wig
+IG_Costamax1,19694,20,1,1; C_Vane_Hairpin
+IG_Costamax1,19702,20,1,1; C_Santa_Hat_1
+IG_Costamax1,19706,20,1,1; C_Red_Dress_Hat
+IG_Costamax1,19715,20,1,1; C_Scarf
+IG_Costamax1,19723,20,1,1; C_Sacred_Torch_Coronet
+IG_Costamax1,19728,20,1,1; C_Tare_Zonda
+IG_Costamax1,19750,20,1,1; C_Saint_Frill_Ribbon
+IG_Costamax1,19758,20,1,1; C_King_Frog_Hat
+IG_Costamax1,19761,20,1,1; C_White_Lily
+IG_Costamax1,19762,20,1,1; C_Happy_Peace_Proof
+IG_Costamax1,19763,20,1,1; C_Leaf_Cat_Hat
+IG_Costamax1,19771,20,1,1; C_Butterfly_Hairpin
+IG_Costamax1,19828,20,1,1; C_Fedora
+IG_Costamax1,19831,20,1,1; C_Filir_Hat
+//IG_Costamax1,19833,20,1,1; C_Fillet
+//IG_Costamax1,19860,20,1,1; C_Cryptura_Hair_Cap
+//IG_Costamax1,19861,20,1,1; C_Heart_Hair_Pin
+IG_Costamax1,19866,20,1,1; C_Blue_Pajamas_Hat
+IG_Costamax1,19874,20,1,1; C_Carnival_Circlet
+IG_Costamax1,19876,20,1,1; C_Rabbit_Ear_Hat
+IG_Costamax1,19878,20,1,1; C_Drooping_Bunny
+//IG_Costamax1,19883,20,1,1; C_Piamette_Hood
+//IG_Costamax1,19884,20,1,1; C_Vanargandr_Helm
+IG_Costamax1,19930,20,1,1; C_Angel_Mini_Silk_Hat
+IG_Costamax1,19934,20,1,1; C_10Gallon_Hat_Of_Flame
+IG_Costamax1,19935,20,1,1; C_Hunting_Cap_Of_Gust
+IG_Costamax1,19936,20,1,1; C_Knit_Cap_Of_Water
+IG_Costamax1,19937,20,1,1; C_Silk_Hat_Of_Earth
+IG_Costamax1,19953,20,1,1; C_Parade_Cap
+IG_Costamax1,19955,20,1,1; C_Mini_Tree_J
+IG_Costamax1,19977,20,1,1; C_Golden_Exclamation
+IG_Costamax1,19978,20,1,1; C_Silver_Exclamation
+IG_Costamax1,19979,20,1,1; C_Golden_Question
+IG_Costamax1,19980,20,1,1; C_Silver_Question
+IG_Costamax1,20046,20,1,1; C_Decoration_bluerose
+IG_Costamax1,20063,20,1,1; C_Yellow_Brain_Hat
+IG_Costamax1,20070,20,1,1; C_Alpaca_Hood
+IG_Costamax1,20092,20,1,1; C_Sales_Signboard
+//IG_Costamax1,20094,20,1,1; C_Fillet_Green
+//IG_Costamax1,20095,20,1,1; C_Fillet_Red
+//IG_Costamax1,20096,20,1,1; C_Fillet_Blue
+//IG_Costamax1,20097,20,1,1; C_Fillet_White
+IG_Costamax1,20114,20,1,1; C_Funeral_Costume
+IG_Costamax1,20130,20,1,1; C_Whisper_Tall_Hat
+IG_Costamax1,20133,20,1,1; C_Poring_Mascot_Costume
+IG_Costamax1,20161,20,1,1; C_Prontera_Army_Cap
+IG_Costamax1,20175,20,1,1; C_Diabolic_Headphone
+IG_Costamax1,20179,20,1,1; C_Monkey_On_Fur_Hat
+IG_Costamax1,20200,20,1,1; C_Rabbit_Head_Dress
+IG_Costamax1,20204,20,1,1; C_Hunting_Cap
+IG_Costamax1,20231,20,1,1; C_Snowman_Hat
+IG_Costamax1,20238,20,1,1; C_Blue_Drooping_Kitty
+IG_Costamax1,20242,20,1,1; C_Snownow_Hat
+IG_Costamax1,20248,20,1,1; C_Black_Strong_Hair
+IG_Costamax1,20249,20,1,1; C_Red_Strong_Hair
+IG_Costamax1,20253,20,1,1; C_Droopy_Alice_Doll
+IG_Costamax1,20254,20,1,1; C_Ribbon_Yellow
+IG_Costamax1,20258,20,1,1; C_Blue_Head_Dress
+IG_Costamax1,20263,20,1,1; C_Hat_Of_Drowsy_Cat
+IG_Costamax1,20266,20,1,1; C_Secret_Zipper
+IG_Costamax1,20269,20,1,1; C_White_Fox_Ear_Ribbon
+//IG_Costamax1,20277,20,1,1; C_Balloon_Hat
+IG_Costamax1,20278,20,1,1; C_Man_Medal
+IG_Costamax1,20283,20,1,1; C_Over_Protector
+IG_Costamax1,20383,20,1,1; C_Magicdecoy_Doll
+IG_Costamax1,20433,20,1,1; C_Louise_Red_Hat
+IG_Costamax1,20447,20,1,1; C_Small_Poring_Band
+IG_Costamax1,20452,20,1,1; C_berry_Prince_Crown
+IG_Costamax1,20458,20,1,1; C_Wild_Poring_Rider
+IG_Costamax1,20463,20,1,1; C_Two_Tone_Beret
+IG_Costamax1,20464,20,1,1; C_Monochrome_RibbonHat
+IG_Costamax1,20467,20,1,1; C_Elemental_Crown
+IG_Costamax1,20483,20,1,1; C_Butterfly_Barrettes
+IG_Costamax1,20489,20,1,1; C_Pope_Crown
+IG_Costamax1,20490,20,1,1; C_Full_Bloom_Hp_Blue
+IG_Costamax1,20491,20,1,1; C_Laser_Of_Eagle
+IG_Costamax1,20495,20,1,1; C_Quati_Hat_J
+IG_Costamax1,20508,20,1,1; C_Poster_Girl_Hat
+IG_Costamax1,31027,20,1,1; C_Pretty_Bear
+IG_Costamax1,31031,20,1,1; C_Tare_Pope_Casual
+IG_Costamax1,31032,20,1,1; C_Tare_Luwmin
+IG_Costamax1,31040,20,1,1; C_Magical_Feather
+IG_Costamax1,31062,20,1,1; C_Eleanor_Wig
+IG_Costamax1,31123,20,1,1; C_Ghostring_Tall_Hat
+IG_Costamax1,31125,20,1,1; C_QueenAnzRevenge
+IG_Costamax1,31137,20,1,1; C_Blue_Rose_Ornament
+IG_Costamax1,31139,20,1,1; C_White_Rabbit_Ear
+IG_Costamax1,31147,20,1,1; C_Tare_Domovoi
+IG_Costamax1,31149,20,1,1; C_Nydhog_Wig
+IG_Costamax1,31151,20,1,1; C_Chasher_Ear
+IG_Costamax1,31158,20,1,1; C_Squirrel_Ear_Hat
+IG_Costamax1,31176,20,1,1; C_Looking
+IG_Costamax1,31177,20,1,1; C_Tail_Hat
+IG_Costamax1,31180,20,1,1; C_Shura_King_Pledge
+IG_Costamax1,31200,20,1,1; C_Wrapping_Ribbon
+IG_Costamax1,31204,20,1,1; C_Drooping_White_Kitty
+IG_Costamax1,31249,20,1,1; C_Rabbit_Hopping
+IG_Costamax1,31252,20,1,1; C_Cat_Ear_Hat_White
+IG_Costamax1,31294,20,1,1; C_Jirant_Circlet_Red
+IG_Costamax1,31314,20,1,1; C_Ghost_Holiday
+IG_Costamax1,31318,20,1,1; C_Gerhard_Von_Devi
+IG_Costamax1,31329,20,1,1; C_Alice_Wig
+IG_Costamax1,31331,20,1,1; C_Chung_E_Shinyon_Cap
+IG_Costamax1,31332,20,1,1; Khalitzburg_KN_Helm_BL
+IG_Costamax1,31370,20,1,1; C_Straight_Long_YLK
+IG_Costamax1,31372,20,1,1; C_Binit_Doll_Hat
+IG_Costamax1,31582,20,1,1; C_Jirant_Circlet
+IG_Costamax1,31382,20,1,1; C_Cat_Ears_Punkish
+IG_Costamax1,31385,20,1,1; C_Gothic_Pumpkin_Head
+IG_Costamax1,31396,20,1,1; C_Sorcerer_Hood
+IG_Costamax1,31397,20,1,1; C_Pope_Sitting_Head
+IG_Costamax1,31405,20,1,1; C_Eleanor_Wig_YL
+IG_Costamax1,31406,20,1,1; C_Nydhog_Wig_WH
+IG_Costamax1,31407,20,1,1; C_Alice_Wig_PK
+IG_Costamax1,31412,20,1,1; C_Virgo_Crown
+IG_Costamax1,31414,20,1,1; C_Cancer_Diadem
+IG_Costamax1,31430,20,1,1; C_Seppl_Hat_TW
+IG_Costamax1,31431,20,1,1; C_Curupira_Hat_TW
+IG_Costamax1,31433,20,1,1; C_Astro_Circle
+IG_Costamax1,31439,20,1,1; C_Fluffy_Heart_Earmuffs
+IG_Costamax1,31440,20,1,1; C_Snow_Bear_Food
+IG_Costamax1,31451,20,1,1; C_Blue_Frill_Ribbon
+IG_Costamax1,31456,20,1,1; C_Baby_Leopard_Cat
+IG_Costamax1,20227,20,1,1; C_Husky_Hat
+IG_Costamax1,31474,20,1,1; C_Straight_Long_BL
+IG_Costamax1,31475,20,1,1; C_Black_Fox_Ear_Ribbon
+IG_Costamax1,31481,20,1,1; C_CatCoffeeCup_TW
+IG_Costamax1,31489,20,1,1; C_Bouquet_Hat
+IG_Costamax1,31504,20,1,1; C_Starving_Fish_Hat
+IG_Costamax1,31509,20,1,1; C_Fawn_Ear
+IG_Costamax1,31529,20,1,1; C_Happy_Rabbit_Ribbon
+IG_Costamax1,31546,20,1,1; C_Clock_Casket_RD
+IG_Costamax1,31564,20,1,1; C_Variant_Veil
+IG_Costamax1,31565,20,1,1; C_Princess_Ribbon_Crown
+IG_Costamax1,31573,20,1,1; C_Mecha_Cat_Ears
+IG_Costamax1,31598,20,1,1; C_Forest_Guide
+IG_Costamax1,31624,20,1,1; C_HeartOfCat_TW
+IG_Costamax1,31628,20,1,1; C_Bogy_Cap_TW
+// top + mid
+//IG_Costamax1,19574,20,1,1; C_Lord_of_Death
+//IG_Costamax1,19710,20,1,1; C_Wings_Of_Victory
+IG_Costamax1,19760,20,1,1; C_Rainbow_Veil
+IG_Costamax1,19775,20,1,1; C_Marvelous_Wig
+IG_Costamax1,19823,20,1,1; C_White_Cat_Hood
+IG_Costamax1,19928,20,1,1; C_Gothic_Heart_Wing
+IG_Costamax1,20402,20,1,1; C_Holy_Klobuk
+IG_Costamax1,20493,20,1,1; C_Wing_Headphone
+// top + low
+IG_Costamax1,20217,20,1,1; C_Arabian_Veil
+// top + mid + low
+IG_Costamax1,19746,20,1,1; C_Cap_Of_Blindness
+IG_Costamax1,31409,20,1,1; C_Barrel_Helm
+
+//mid
+IG_Costamax2,18744,20,1,1 // C_World_Star
+IG_Costamax2,19291,20,1,1 // C_Shiba_Inu
+IG_Costamax2,19509,20,1,1 // Butterfly_Wing_Ear
+IG_Costamax2,19510,20,1,1 // Nut_On_Head
+IG_Costamax2,19511,20,1,1 // Heart_Eye_Patch1
+IG_Costamax2,19512,20,1,1 // Heart_Eye_Patch2
+IG_Costamax2,19603,20,1,1 // C_Invisible_Sunglasses
+IG_Costamax2,19624,20,1,1 // C_Round_Eyes
+IG_Costamax2,19752,20,1,1 // C_Shelter_Wing_Ears
+IG_Costamax2,19755,20,1,1 // C_YinYang_Earring
+IG_Costamax2,19787,20,1,1 // C_Devoted_Eyes
+//IG_Costamax2,19826,20,1,1 // C_Ice_Wing_Ear
+IG_Costamax2,19871,20,1,1 // C_Music_Decoration
+IG_Costamax2,19886,20,1,1 // C_Luxury_Sunglasses
+IG_Costamax2,19912,20,1,1 // C_Cat_Eye
+IG_Costamax2,19954,20,1,1 // C_3D_Glasses
+IG_Costamax2,19989,20,1,1 // C_Mouton_Life
+IG_Costamax2,20115,20,1,1 // C_Under_Rim_Glasses
+IG_Costamax2,20125,20,1,1 // C_Mini_Glasses
+IG_Costamax2,20147,20,1,1 // C_Bell_Pigeon
+IG_Costamax2,20149,20,1,1 // C_Hexagon_Spectacles
+IG_Costamax2,20221,20,1,1 // C_Eyes_Of_Ifrit
+IG_Costamax2,20255,20,1,1 // C_Love_Cheek
+IG_Costamax2,20270,20,1,1 // C_Gryphon_Wing_Ears
+IG_Costamax2,20295,20,1,1 // C_Poring_Sunglasses_J
+IG_Costamax2,20298,20,1,1 // C_Happy_Lunatic_Ear
+IG_Costamax2,20318,20,1,1 // C_Charleston_Antenna
+IG_Costamax2,20325,20,1,1 // C_Little_Aquarium
+IG_Costamax2,20404,20,1,1 // C_Blessing_Of_Angels
+IG_Costamax2,20430,20,1,1 // C_Morocc_Kid_Servant
+IG_Costamax2,31047,20,1,1 // C_First_Love_Cheek
+IG_Costamax2,31122,20,1,1 // C_Bloody_Stop_Bandage
+IG_Costamax2,31167,20,1,1 // C_Lunatic_Ear_Black
+IG_Costamax2,31168,20,1,1 // C_Mouton_Life_BL
+IG_Costamax2,31186,20,1,1 // C_Black_Cat
+IG_Costamax2,31299,20,1,1 // C_White_Rabbit
+IG_Costamax2,31302,20,1,1 // C_Black_Magenta_Ribbon
+IG_Costamax2,31308,20,1,1 // C_Protect_Feathers
+IG_Costamax2,31327,20,1,1 // C_Stretched_Nose_M
+IG_Costamax2,31391,20,1,1 // C_Floating_Stone_Of_Int
+IG_Costamax2,31398,20,1,1 // C_Blinking_Thin_Eyes
+IG_Costamax2,31437,20,1,1 // C_Baby_Penguin
+IG_Costamax2,31452,20,1,1 // C_White_Cat
+IG_Costamax2,31463,20,1,1 // C_Flying_Drone
+IG_Costamax2,31472,20,1,1 // C_Fairy_Feathers
+IG_Costamax2,31483,20,1,1 // C_CatEarRibbon_TW
+IG_Costamax2,31488,20,1,1 // C_Mvp
+IG_Costamax2,31512,20,1,1 // C_Panda_Rabbit
+IG_Costamax2,31567,20,1,1 // C_Sheep_Horn
+IG_Costamax2,31568,20,1,1 // C_Floating_Ball_TW
+IG_Costamax2,31574,20,1,1 // C_Cyber_Income
+IG_Costamax2,31600,20,1,1 // C_Kishu_Inu
+IG_Costamax2,31614,20,1,1 // C_Fox
+IG_Costamax2,31673,20,1,1 // C_Picnic_Basket
+IG_Costamax2,31688,20,1,1 // C_Poring_On_Shoulder
+IG_Costamax2,31699,20,1,1 // C_Smiling_Eyes
+//IG_Costamax2// mid + low
+IG_Costamax2,19563,20,1,1 // C_Dragon_Arhat_Mask
+IG_Costamax2,19564,20,1,1 // C_Tiger_Arhat_Mask
+IG_Costamax2,19882,20,1,1 // C_Flowerpot_Mask
+IG_Costamax2,20166,20,1,1 // C_Hockey_Mask
+IG_Costamax2,20195,20,1,1 // C_Scratching_Cat
+IG_Costamax2,20230,20,1,1 // C_Mask_Of_Bankrupt
+IG_Costamax2,20299,20,1,1 // C_Face_Crusher
+IG_Costamax2,31505,20,1,1 // C_Falcon_Mask
+
+//Low
+IG_Costamax3,19513,20,1,1 // Chicken_Beak
+IG_Costamax3,19514,20,1,1 // Charlie_Beard
+IG_Costamax3,19604,20,1,1 // C_Invisible_Mask
+IG_Costamax3,19672,20,1,1 // C_Poring_Letter
+IG_Costamax3,20034,20,1,1 // C_Jack_Castle_Bat
+IG_Costamax3,20071,20,1,1 // C_Worg_In_Mouth
+IG_Costamax3,20132,20,1,1 // C_Subject_Aura
+IG_Costamax3,20156,20,1,1 // C_Fan_In_Mouth
+IG_Costamax3,20169,20,1,1 // C_Long_Tongue
+IG_Costamax3,20201,20,1,1 // C_Banshee_Master_Kiss
+IG_Costamax3,20202,20,1,1 // C_Deviruchi_Balloon
+IG_Costamax3,20223,20,1,1 // C_Centimental_Leaf
+IG_Costamax3,20239,20,1,1 // C_Large_Ribbon_Muffler
+IG_Costamax3,20240,20,1,1 // C_Gift_Of_Snow
+IG_Costamax3,20305,20,1,1 // C_NettyHeart_BalloonGum
+IG_Costamax3,20340,20,1,1 // C_Straight_Pony_BL
+IG_Costamax3,20342,20,1,1 // C_Loose_Wave_Twin_BL
+IG_Costamax3,20344,20,1,1 // C_Happy_Balloon_J
+IG_Costamax3,20357,20,1,1 // C_Straight_Pony_YL
+IG_Costamax3,20358,20,1,1 // C_Straight_Pony_GN
+IG_Costamax3,20359,20,1,1 // C_Straight_Pony_PP
+IG_Costamax3,20360,20,1,1 // C_Straight_Pony_RD
+IG_Costamax3,20361,20,1,1 // C_Straight_Pony_OM
+IG_Costamax3,20362,20,1,1 // C_Straight_Pony_BU
+IG_Costamax3,20363,20,1,1 // C_Straight_Pony_WH
+IG_Costamax3,20364,20,1,1 // C_Loose_Wave_Twin_YL
+IG_Costamax3,20365,20,1,1 // C_Loose_Wave_Twin_GN
+IG_Costamax3,20366,20,1,1 // C_Loose_Wave_Twin_PP
+IG_Costamax3,20367,20,1,1 // C_Loose_Wave_Twin_RD
+IG_Costamax3,20368,20,1,1 // C_Loose_Wave_Twin_OM
+IG_Costamax3,20369,20,1,1 // C_Loose_Wave_Twin_BU
+IG_Costamax3,20370,20,1,1 // C_Loose_Wave_Twin_WH
+IG_Costamax3,20405,20,1,1 // C_Eremes_Scarf
+IG_Costamax3,20407,20,1,1 // C_Subject_Aura_Red
+IG_Costamax3,20429,20,1,1 // C_Piamette_BowTie
+IG_Costamax3,20440,20,1,1 // C_Tone_Of_Gold
+IG_Costamax3,20448,20,1,1 // C_Cons_Of_Water
+IG_Costamax3,20462,20,1,1 // C_Cat_Ears_Cape
+IG_Costamax3,20497,20,1,1 // C_Umbala_Spirit
+IG_Costamax3,20798,20,1,1 // GrimReaper_Protection
+IG_Costamax3,31029,20,1,1 // C_Pig_Nose
+IG_Costamax3,31045,20,1,1 // C_Blue_Rear_Ribbon
+IG_Costamax3,31057,20,1,1 // C_Eremes_Scarf_Black
+IG_Costamax3,31063,20,1,1 // C_Hair_Bun_BU
+IG_Costamax3,31064,20,1,1 // C_Hair_Bun_RD
+IG_Costamax3,31065,20,1,1 // C_Hair_Bun_YL
+IG_Costamax3,31066,20,1,1 // C_Hair_Bun_GN
+IG_Costamax3,31067,20,1,1 // C_Hair_Bun_BL
+IG_Costamax3,31068,20,1,1 // C_Hair_Bun_WH
+IG_Costamax3,31069,20,1,1 // C_Hair_Bun_OM
+IG_Costamax3,31070,20,1,1 // C_Hair_Bun_PP
+IG_Costamax3,31079,20,1,1 // C_Long_Pony_BU
+IG_Costamax3,31080,20,1,1 // C_Long_Pony_RD
+IG_Costamax3,31081,20,1,1 // C_Long_Pony_YL
+IG_Costamax3,31082,20,1,1 // C_Long_Pony_GN
+IG_Costamax3,31083,20,1,1 // C_Long_Pony_BL
+IG_Costamax3,31084,20,1,1 // C_Long_Pony_WH
+IG_Costamax3,31085,20,1,1 // C_Long_Pony_OM
+IG_Costamax3,31086,20,1,1 // C_Long_Pony_PP
+IG_Costamax3,31152,20,1,1 // C_Piamette_BowTie_Red
+IG_Costamax3,31178,20,1,1 // C_Flame_Muffler
+IG_Costamax3,31189,20,1,1 // C_Cat_Ears_Cape_Red
+IG_Costamax3,31210,20,1,1 // C_Side_Pigtail_BU
+IG_Costamax3,31211,20,1,1 // C_Side_Pigtail_RD
+IG_Costamax3,31212,20,1,1 // C_Side_Pigtail_YL
+IG_Costamax3,31213,20,1,1 // C_Side_Pigtail_GN
+IG_Costamax3,31214,20,1,1 // C_Side_Pigtail_BL
+IG_Costamax3,31215,20,1,1 // C_Side_Pigtail_WH
+IG_Costamax3,31216,20,1,1 // C_Side_Pigtail_OM
+IG_Costamax3,31217,20,1,1 // C_Side_Pigtail_PP
+IG_Costamax3,31226,20,1,1 // C_Long_Twin_BU
+IG_Costamax3,31227,20,1,1 // C_Long_Twin_RD
+IG_Costamax3,31228,20,1,1 // C_Long_Twin_YL
+IG_Costamax3,31229,20,1,1 // C_Long_Twin_GN
+IG_Costamax3,31230,20,1,1 // C_Long_Twin_BL
+IG_Costamax3,31231,20,1,1 // C_Long_Twin_WH
+IG_Costamax3,31232,20,1,1 // C_Long_Twin_OM
+IG_Costamax3,31233,20,1,1 // C_Long_Twin_PP
+IG_Costamax3,31251,20,1,1 // C_Cat_Mouth
+IG_Costamax3,31296,20,1,1 // C_Strawberry_In_Mouth
+IG_Costamax3,31300,20,1,1 // C_Warm_Cat_Muffler
+IG_Costamax3,31315,20,1,1 // C_Stall_Of_Angel
+IG_Costamax3,31330,20,1,1 // C_Fallen_Angel_Valletta
+IG_Costamax3,31381,20,1,1 // C_Diabolic_Lapel
+IG_Costamax3,31383,20,1,1 // C_Volume_Low_Twin
+IG_Costamax3,31393,20,1,1 // C_Vajra
+IG_Costamax3,31395,20,1,1 // C_Book_Of_Magic
+IG_Costamax3,31404,20,1,1 // C_Poring_Traffic_Light
+IG_Costamax3,31418,20,1,1 // C_Leek_In_Mouth
+IG_Costamax3,31432,20,1,1 // C_Luwmin_Ice
+IG_Costamax3,31438,20,1,1 // C_Fluffy_Angel_Cape
+IG_Costamax3,31450,20,1,1 // C_Lolita_Two_Side_Up
+IG_Costamax3,31453,20,1,1 // C_L_RibbonMuff_Black
+IG_Costamax3,31460,20,1,1 // C_Blessing_Sky_Lantern
+IG_Costamax3,31473,20,1,1 // C_Tipsy
+IG_Costamax3,31490,20,1,1 // C_Poring_Muffler
+IG_Costamax3,31492,20,1,1 // C_Cat_Ears_Cape_Brown
+IG_Costamax3,31493,20,1,1 // C_Volume_Low_Twin_WH
+IG_Costamax3,31498,20,1,1 // C_Elephangel_TH
+IG_Costamax3,31533,20,1,1 // C_Warm_Cat_Muffler_BL
+IG_Costamax3,31545,20,1,1 // C_Eremes_Scarf_BU
+IG_Costamax3,31572,20,1,1 // C_Mobile_Pursuit_System
+IG_Costamax3,31586,20,1,1 // C_Poporing_Muffler
+IG_Costamax3,31611,20,1,1 // C_Dark_Snake_Lord_Stall
+IG_Costamax3,31616,20,1,1 // C_Sleep_Sheep_TW
+IG_Costamax3,31625,20,1,1 // C_Protect_Cloth
+IG_Costamax3,31698,20,1,1 // C_Pigtail_Red_Hood
+
+//Garment
+IG_Costamax4,20502,20,1,1	// C_Devil_Wing
+IG_Costamax4,20504,20,1,1	// C_Cupid_Wing_Pink
+//IG_Costamax4,20505,20,1,1	// C_Cupid_Wing_Skyblue
+IG_Costamax4,20506,20,1,1	// C_Invisible_Manteau
+IG_Costamax4,20507,20,1,1	// C_Poring_Bag
+IG_Costamax4,20509,20,1,1	// C_Wings_of_Uriel
+IG_Costamax4,20510,20,1,1	// C_SwordWing
+IG_Costamax4,20511,20,1,1	// C_Blue_Fairy_Wing
+IG_Costamax4,20727,20,1,1	// Brilliant_Golden_Wings
+IG_Costamax4,20737,20,1,1	// C_Kirin_Wing
+IG_Costamax4,20746,20,1,1	// C_Rudra_Wing
+IG_Costamax4,20761,20,1,1	// C_Wing_Of_Happiness
+IG_Costamax4,20762,20,1,1	// C_GreatDevilWing
+IG_Costamax4,20763,20,1,1	// C_Amistr_Bag
+IG_Costamax4,20764,20,1,1	// C_Fallen_Angel_Wing
+IG_Costamax4,20765,20,1,1	// C_Archangel_Wing
+
+IG_BPoring,22101,0,1,0	// Poring Boots
+IG_BPoring,29148,20,1,1	//  Leo
+IG_BPoring,29149,20,1,1	//  Pisces
+IG_BPoring,29150,20,1,1	//  Capri
+IG_BPoring,29151,20,1,1	//  Aq
+IG_BPoring,29152,20,1,1	//  Scorpio
+IG_BPoring,29153,20,1,1	//  Taurus
+
+IG_BShadow,24012,20,1,1	// Poring Boots
+IG_BShadow,24013,20,1,1	//  Leo
+IG_BShadow,24014,20,1,1	//  Pisces
+IG_BShadow,24015,20,1,1	//  Capri
+IG_BShadow,24016,20,1,1	//  Aq
+IG_BShadow,24017,20,1,1	//  Scorpio
+
+IG_Balloon,18859,20,1,1	//  Scorpio
+IG_Balloon,19143,20,1,1	//  Scorpio
+IG_Balloon,19146,20,1,1	//  Scorpio
+IG_Balloon,19147,20,1,1	//  Scorpio
+IG_Balloon,19148,20,1,1	//  Scorpio
+IG_Balloon,19150,20,1,1	//  Scorpio
+IG_Balloon,19151,20,1,1	//  Scorpio
+IG_Balloon,19153,20,1,1	//  Scorpio
+IG_Balloon,19154,20,1,1	//  Scorpio
+
+IG_PorGlass,19117,91,1,1	//  Glass
+IG_PorGlass,19118,9,1,1		//  Glass+

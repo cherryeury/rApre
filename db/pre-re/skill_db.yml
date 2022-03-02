@@ -3262,7 +3262,7 @@ Body:
       IsAutoShadowSpell: true
     Range: 9
     Hit: Multi_Hit
-    HitCount: -10
+    HitCount: -20
     Element: Wind
     CopyFlags:
       Skill:
@@ -4717,9 +4717,8 @@ Body:
     Hit: Multi_Hit
     HitCount: -8
     Element: Weapon
-    AfterCastActDelay: 2000
-    AfterCastWalkDelay: 2000
     Duration2: 5000
+    Cooldown: 1000
     CastDelayFlags:
       IgnoreStatus: true
     Requires:
@@ -4743,9 +4742,7 @@ Body:
         - Level: 9
           Amount: 32
         - Level: 10
-          Amount: 34
-      Weapon:
-        Katar: true
+          Amount: 34        
   - Id: 137
     Name: AS_GRIMTOOTH
     Description: Grimtooth
@@ -5000,9 +4997,9 @@ Body:
           Amount: 28
         - Level: 10
           Amount: 30
-      ItemCost:
-        - Item: Red_Gemstone
-          Amount: 1
+#      ItemCost:
+#        - Item: Red_Gemstone
+#          Amount: 1
   - Id: 142
     Name: NV_FIRSTAID
     Description: First Aid
@@ -5218,6 +5215,7 @@ Body:
       AllowOnMado: true
     Hit: Single
     HitCount: 1
+    SplashArea: -1
     Duration1: 300000
     Requires:
       SpCost: 8
@@ -7583,7 +7581,7 @@ Body:
     Requires:
       SpCost: 40
       ItemCost:
-        - Item: Crystal_Blue
+        - Item: Indigo_Pts
           Amount: 1
   - Id: 282
     Name: SA_LIGHTNINGLOADER
@@ -7616,7 +7614,7 @@ Body:
     Requires:
       SpCost: 40
       ItemCost:
-        - Item: Wind_Of_Verdure
+        - Item: Yellow_Wish_Pts
           Amount: 1
   - Id: 283
     Name: SA_SEISMICWEAPON
@@ -7649,7 +7647,7 @@ Body:
     Requires:
       SpCost: 40
       ItemCost:
-        - Item: Yellow_Live
+        - Item: Lime_Green_Pts
           Amount: 1
   - Id: 284
     Name: SA_DRAGONOLOGY
@@ -7696,7 +7694,7 @@ Body:
         - Level: 5
           Amount: 40
       ItemCost:
-        - Item: Yellow_Gemstone
+        - Item: Scarlet_Pts
           Amount: 1
     Unit:
       Id: Volcano
@@ -7745,7 +7743,7 @@ Body:
         - Level: 5
           Amount: 40
       ItemCost:
-        - Item: Yellow_Gemstone
+        - Item: Blue_Gemstone
           Amount: 1
     Unit:
       Id: Deluge
@@ -7794,7 +7792,7 @@ Body:
         - Level: 5
           Amount: 40
       ItemCost:
-        - Item: Yellow_Gemstone
+        - Item: Blue_Gemstone
           Amount: 1
     Unit:
       Id: Violentgale
@@ -8376,7 +8374,7 @@ Body:
       AllowWhenPerforming: true
     Range: 9
     Hit: Single
-    HitCount: 1
+    HitCount: 2
     Element: Weapon
     CastTime: 1500
     Requires:
@@ -8663,7 +8661,7 @@ Body:
       AllowWhenPerforming: true
     Range: 9
     Hit: Single
-    HitCount: 1
+    HitCount: 2
     Element: Weapon
     CastTime: 1500
     Requires:

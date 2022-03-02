@@ -1,0 +1,1601 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2019 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Quest Database
+###########################################################################
+#
+# Quest Settings
+#
+###########################################################################
+# - Id              Quest ID.
+#   Title           Quest title.
+#   TimeLimit       Amount of time before the quest expires. (Default: 0)
+#                   Use a number following by "d" for day(s), "h" for hour(s), "mn" for minute(s), and "s" for second(s).
+#                   Specify with "+" for how long until the quest expires.
+#                   Specify without "+" for the exact time the quest expires using "d" (optionnal), [0-23]"h" (required), [0-59]"mn" (optionnal), [0-59]"s" (optionnal) format.
+#                   Please note the number before "d" only shift the exact timer to the given day(s).
+#   Targets:        Quest objective target. (Default: null)
+#                   The target can be a couple of node Mob/Count or of Id/Race/Size/Element/MinLevel/MaxLevel.
+#                   If Mob is supplied, Count is required and the other fields are ignored.
+#                   If Id is supplied, at least one other field of Race/Size/Element/MinLevel/MaxLevel is required.
+#                   If Id is supplied, Count is required for each new entry.
+#     - Mob         Monster to kill (aegis monster name).
+#       Count       Amount of monsters to kill. Set to 0 to skip the target on import.
+#       Id          Unique target index for the quest Id. Requires a positive number.
+#       Race        Monster race target (default All). Valids race are Angel, Brute, DemiHuman, Demon, Dragon, Fish, Formless, Insect, Plant, Undead, All.
+#       Size        Monster size target (default All). Valids size are Small, Medium, Large, All.
+#       Element     Monster element target (default All). Valids elements are Dark, Earth, Fire, Ghost, Holy, Neutral, Poison, Undead, Water, Wind, All.
+#       MinLevel    Minimum monster level target. If not supplied but MaxLevel defined, MinLevel is 1. Set to 0 to ignore MinLevel on import. (Default: 0)
+#       MaxLevel    Maximum monster level target. Set to 0 to ignore MaxLevel on import. (Default: 0)
+#   Drops:          Quest item drop targets. (Default: null)
+#     - Mob         Monster to kill. 0 will apply to all monsters. (Default: 0)
+#       Item        Item to drop.
+#       Count       Amount of items that will drop. Non-stackable items default to 1. (Default: 1)
+#       Rate        Item drop rate. (10000 = 100%)
+###########################################################################
+
+Header:
+  Type: QUEST_DB
+  Version: 2
+
+Body:
+  - Id: 2
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: VOCAL
+        Count: 1
+  - Id: 3
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: TOAD
+        Count: 1        
+  - Id: 4
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ECLIPSE
+        Count: 1    
+  - Id: 5
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: MASTERING
+        Count: 1
+  - Id: 5
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: DRAGON_FLY
+        Count: 1    
+  - Id: 7
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: DEVILING
+        Count: 1   
+  - Id: 8
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ANGELING
+        Count: 1     
+  - Id: 9
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: CAT_O_NINE_TAIL
+        Count: 1      
+  - Id: 10
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: MAYA_PUPLE
+        Count: 1  
+  - Id: 11
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: ARCHANGELING
+        Count: 1  
+  - Id: 12
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: GHOSTRING
+        Count: 1
+  - Id: 13
+    Title: Hunt for Shadows!
+    Targets:
+      - Mob: VAGABOND_WOLF
+        Count: 1          
+  - Id: 62556
+    Title: Bounty Board Goat
+    Targets:
+      - Mob: GOAT
+        Count: 100
+  - Id: 62557
+    Title: Bounty Board Harpy
+    Targets:
+      - Mob: HARPY
+        Count: 100
+  - Id: 62558
+    Title: Bounty Board Sleeper
+    Targets:
+      - Mob: SLEEPER
+        Count: 100
+  - Id: 62559
+    Title: Bounty Board Grand Peco
+    Targets:
+      - Mob: GRAND_PECO
+        Count: 100
+  - Id: 62560
+    Title: Bounty Board Skeleton
+    Targets:
+      - Mob: SKELETON
+        Count: 100
+  - Id: 62561
+    Title: Bounty Board Soldier Skeleton
+    Targets:
+      - Mob: SOLDIER_SKELETON
+        Count: 100
+  - Id: 62562
+    Title: Bounty Board Archer Skeleton
+    Targets:
+      - Mob: ARCHER_SKELETON
+        Count: 100
+  - Id: 62563
+    Title: Bounty Board Munak
+    Targets:
+      - Mob: MUNAK
+        Count: 100
+  - Id: 62564
+    Title: Bounty Board Bongun
+    Targets:
+      - Mob: BON_GUN
+        Count: 100
+  - Id: 62565
+    Title: Bounty Board Spore
+    Targets:
+      - Mob: SPORE
+        Count: 100
+  - Id: 62566
+    Title: Bounty Board Snake
+    Targets:
+      - Mob: SNAKE
+        Count: 100
+  - Id: 62567
+    Title: Bounty Board Bigfoot
+    Targets:
+      - Mob: BIGFOOT
+        Count: 100
+  - Id: 62568
+    Title: Bounty Board Elder Willow
+    Targets:
+      - Mob: ELDER_WILOW
+        Count: 100
+  - Id: 62569
+    Title: Bounty Board Greatest General
+    Targets:
+      - Mob: GREATEST_GENERAL
+        Count: 100
+  - Id: 62599
+    Title: Bounty Board Cornus
+    Targets:
+      - Mob: CORNUS
+        Count: 100
+  - Id: 62600
+    Title: Bounty Board Naga
+    Targets:
+      - Mob: NAGA
+        Count: 100
+  - Id: 62601
+    Title: Bounty Board Pinguicula
+    Targets:
+      - Mob: PINGUICULA
+        Count: 100
+  - Id: 62602
+    Title: Bounty Board Luciola Vespa
+    Targets:
+      - Mob: LUCIOLA_VESPA
+        Count: 100
+  - Id: 62603
+    Title: Bounty Board Curupira
+    Targets:
+      - Mob: CURUPIRA
+        Count: 100
+  - Id: 62604
+    Title: Bounty Board Headless Mule
+    Targets:
+      - Mob: HEADLESS_MULE
+        Count: 100
+  - Id: 62605
+    Title: Bounty Board Jaguar
+    Targets:
+      - Mob: JAGUAR
+        Count: 100
+  - Id: 62606
+    Title: Bounty Board Toucan
+    Targets:
+      - Mob: TOUCAN
+        Count: 100
+  - Id: 62607
+    Title: Bounty Board Piranha
+    Targets:
+      - Mob: PIRANHA
+        Count: 100
+  - Id: 62608
+    Title: Bounty Board Iara
+    Targets:
+      - Mob: IARA
+        Count: 100
+  - Id: 62609
+    Title: Bounty Board Wild Rose
+    Targets:
+      - Mob: WILD_ROSE
+        Count: 100
+  - Id: 62610
+    Title: Bounty Board Dryad
+    Targets:
+      - Mob: DRYAD
+        Count: 100
+  - Id: 62611
+    Title: Bounty Board Wootan Fighter
+    Targets:
+      - Mob: WOOTAN_FIGHTER
+        Count: 100
+  - Id: 62612
+    Title: Bounty Board Parasite
+    Targets:
+      - Mob: PARASITE
+        Count: 100
+  - Id: 62613
+    Title: Bounty Board Centipede
+    Targets:
+      - Mob: CENTIPEDE
+        Count: 100
+  - Id: 62614
+    Title: Bounty Board Centipede Larva
+    Targets:
+      - Mob: CENTIPEDE_LARVA
+        Count: 100
+  - Id: 62615
+    Title: Bounty Board Tatacho
+    Targets:
+      - Mob: TATACHO
+        Count: 100
+  - Id: 62616
+    Title: Bounty Board Dolomedes
+    Targets:
+      - Mob: DOLOMEDES
+        Count: 100
+  - Id: 62617
+    Title: Bounty Board Thara Frog
+    Targets:
+      - Mob: THARA_FROG
+        Count: 100
+  - Id: 62618
+    Title: Bounty Board Sea Otter
+    Targets:
+      - Mob: SEE_OTTER
+        Count: 100
+  - Id: 62619
+    Title: Bounty Board Seal
+    Targets:
+      - Mob: FUR_SEAL
+        Count: 100
+  - Id: 62620
+    Title: Bounty Board Raggler
+    Targets:
+      - Mob: RAGGLER
+        Count: 100
+  - Id: 62621
+    Title: Bounty Board Grove
+    Targets:
+      - Mob: GREEN_IGUANA
+        Count: 100
+  - Id: 62622
+    Title: Bounty Board Alligator
+    Targets:
+      - Mob: ALLIGATOR
+        Count: 100
+  - Id: 62623
+    Title: Bounty Board Golem
+    Targets:
+      - Mob: GOLEM
+        Count: 100
+  - Id: 62624
+    Title: Bounty Board Stalactic Golem
+    Targets:
+      - Mob: STALACTIC_GOLEM
+        Count: 100
+  - Id: 62625
+    Title: Bounty Board Medusa
+    Targets:
+      - Mob: MEDUSA
+        Count: 100
+  - Id: 62644
+    Title: Bounty Board Willow
+    Targets:
+      - Mob: WILOW
+        Count: 100
+  - Id: 62645
+    Title: Bounty Board Wolf
+    Targets:
+      - Mob: WOLF
+        Count: 100
+  - Id: 62646
+    Title: Bounty Board Munak
+    Targets:
+      - Mob: MUNAK
+        Count: 100
+  - Id: 62647
+    Title: Bounty Board Bongun
+    Targets:
+      - Mob: BON_GUN
+        Count: 100
+  - Id: 62648
+    Title: Bounty Board Sohee
+    Targets:
+      - Mob: SOHEE
+        Count: 100
+  - Id: 62649
+    Title: Bounty Board Dokebi
+    Targets:
+      - Mob: DOKEBI
+        Count: 100
+  - Id: 62650
+    Title: Bounty Board Nine Tail
+    Targets:
+      - Mob: NINE_TAIL
+        Count: 100
+  - Id: 62660
+    Title: Bounty Board Chonchon
+    Targets:
+      - Mob: CHONCHON
+        Count: 100
+  - Id: 62661
+    Title: Bounty Board Roda Frog
+    Targets:
+      - Mob: RODA_FROG
+        Count: 100
+  - Id: 62662
+    Title: Bounty Board Mandragora
+    Targets:
+      - Mob: MANDRAGORA
+        Count: 100
+  - Id: 62663
+    Title: Bounty Board Ambernite
+    Targets:
+      - Mob: AMBERNITE
+        Count: 100
+  - Id: 62664
+    Title: Bounty Board Creamy
+    Targets:
+      - Mob: CREAMY
+        Count: 100
+  - Id: 62665
+    Title: Bounty Board Caramel
+    Targets:
+      - Mob: CARAMEL
+        Count: 100
+  - Id: 62666
+    Title: Bounty Board Horn
+    Targets:
+      - Mob: HORN
+        Count: 100
+  - Id: 62667
+    Title: Bounty Board Poison Spore
+    Targets:
+      - Mob: POISON_SPORE
+        Count: 100
+  - Id: 62668
+    Title: Bounty Board Orc Warrior
+    Targets:
+      - Mob: ORK_WARRIOR
+        Count: 100
+  - Id: 62669
+    Title: Bounty Board Orc Lady
+    Targets:
+      - Mob: ORC_LADY
+        Count: 100
+  - Id: 62670
+    Title: Bounty Board Knife Goblin
+    Targets:
+      - Mob: GOBLIN_1
+        Count: 100
+  - Id: 62671
+    Title: Bounty Board Goblin Archer
+    Targets:
+      - Mob: GOBLIN_ARCHER
+        Count: 100
+  - Id: 62672
+    Title: Bounty Board Ghoul
+    Targets:
+      - Mob: GHOUL
+        Count: 100
+  - Id: 62673
+    Title: Bounty Board Jakk
+    Targets:
+      - Mob: JAKK
+        Count: 100
+  - Id: 62674
+    Title: Bounty Board Nightmare
+    Targets:
+      - Mob: NIGHTMARE
+        Count: 100
+  - Id: 62675
+    Title: Bounty Board Deviruchi
+    Targets:
+      - Mob: DEVIRUCHI
+        Count: 100
+  - Id: 62676
+    Title: Bounty Board Marionette
+    Targets:
+      - Mob: MARIONETTE
+        Count: 100
+  - Id: 62677
+    Title: Bounty Board Wraith
+    Targets:
+      - Mob: WRAITH
+        Count: 100
+  - Id: 62678
+    Title: Bounty Board Dark Priest
+    Targets:
+      - Mob: DARK_PRIEST
+        Count: 100
+  - Id: 62679
+    Title: Bounty Board Gargoyle
+    Targets:
+      - Mob: GARGOYLE
+        Count: 100
+  - Id: 62680
+    Title: Bounty Board Flying Petite
+    Targets:
+      - Mob: PETIT_
+        Count: 100
+  - Id: 62681
+    Title: Bounty Board Ground Petite
+    Targets:
+      - Mob: PETIT
+        Count: 100
+  - Id: 62682
+    Title: Bounty Board Evil Druid
+    Targets:
+      - Mob: EVIL_DRUID
+        Count: 100
+  - Id: 62683
+    Title: Bounty Board Wind Ghost
+    Targets:
+      - Mob: WIND_GHOST
+        Count: 100
+  - Id: 62684
+    Title: Bounty Board Carat
+    Targets:
+      - Mob: CARAT
+        Count: 100
+  - Id: 62685
+    Title: Bounty Board Wanderer
+    Targets:
+      - Mob: WANDER_MAN
+        Count: 100
+  - Id: 62686
+    Title: Bounty Board Sting
+    Targets:
+      - Mob: STING
+        Count: 100
+  - Id: 62687
+    Title: Bounty Board Arclouse
+    Targets:
+      - Mob: ARCLOUSE
+        Count: 100
+  - Id: 62688
+    Title: Bounty Board Raydric
+    Targets:
+      - Mob: RAYDRIC
+        Count: 100
+  - Id: 62689
+    Title: Bounty Board Khalitzburg
+    Targets:
+      - Mob: KHALITZBURG
+        Count: 100
+  - Id: 62690
+    Title: Bounty Board Anolian
+    Targets:
+      - Mob: ANOLIAN
+        Count: 100
+  - Id: 62691
+    Title: Bounty Board False Angel
+    Targets:
+      - Mob: FAKE_ANGEL
+        Count: 100
+  - Id: 62692
+    Title: Bounty Board Violy
+    Targets:
+      - Mob: VIOLY
+        Count: 100
+  - Id: 62693
+    Title: Bounty Board Mini Demon
+    Targets:
+      - Mob: MINI_DEMON
+        Count: 100
+  - Id: 62710
+    Title: Bounty Board Ground Deleter
+    Targets:
+      - Mob: DELETER_
+        Count: 100
+  - Id: 62711
+    Title: Bounty Board Flying Deleter
+    Targets:
+      - Mob: DELETER
+        Count: 100
+  - Id: 62712
+    Title: Bounty Board Nightmare Terror
+    Targets:
+      - Mob: NIGHTMARE_TERROR
+        Count: 100
+  - Id: 62713
+    Title: Bounty Board Purple Venatu
+    Targets:
+      - Mob: VENATU_1
+        Count: 100
+  - Id: 62714
+    Title: Bounty Board Green Venatu
+    Targets:
+      - Mob: VENATU_2
+        Count: 100
+  - Id: 62715
+    Title: Bounty Board Orange Venatu
+    Targets:
+      - Mob: VENATU_3
+        Count: 100
+  - Id: 62716
+    Title: Bounty Board Blue Venatu
+    Targets:
+      - Mob: VENATU_4
+        Count: 100
+  - Id: 62717
+    Title: Bounty Board Apocalypse
+    Targets:
+      - Mob: APOCALIPS
+        Count: 100
+  - Id: 62722
+    Title: Bounty Board Hornet
+    Targets:
+      - Mob: HORNET
+        Count: 100
+  - Id: 62723
+    Title: Bounty Board Roda Frog
+    Targets:
+      - Mob: RODA_FROG
+        Count: 100
+  - Id: 62724
+    Title: Bounty Board Rocker
+    Targets:
+      - Mob: ROCKER
+        Count: 100
+  - Id: 62725
+    Title: Bounty Board Savage Babe
+    Targets:
+      - Mob: SAVAGE_BABE
+        Count: 100
+  - Id: 62726
+    Title: Bounty Board Thief Bug Egg
+    Targets:
+      - Mob: THIEF_BUG_EGG
+        Count: 100
+  - Id: 62727
+    Title: Bounty Board Thief Bug
+    Targets:
+      - Mob: THIEF_BUG
+        Count: 100
+  - Id: 62728
+    Title: Bounty Board Tarou
+    Targets:
+      - Mob: TAROU
+        Count: 100
+  - Id: 62729
+    Title: Bounty Board Stainer
+    Targets:
+      - Mob: STAINER
+        Count: 100
+  - Id: 62730
+    Title: Bounty Board Peco Peco
+    Targets:
+      - Mob: PECOPECO
+        Count: 100
+  - Id: 62731
+    Title: Bounty Board Coco
+    Targets:
+      - Mob: COCO
+        Count: 100
+  - Id: 62732
+    Title: Bounty Board Yoyo
+    Targets:
+      - Mob: YOYO
+        Count: 100
+  - Id: 62733
+    Title: Bounty Board Female Thief Bug
+    Targets:
+      - Mob: THIEF_BUG_
+        Count: 100
+  - Id: 62734
+    Title: Bounty Board Male Thief Bug
+    Targets:
+      - Mob: THIEF_BUG__
+        Count: 100
+  - Id: 62735
+    Title: Bounty Board Poporing
+    Targets:
+      - Mob: POPORING
+        Count: 100
+  - Id: 62736
+    Title: Bounty Board Elder Willow
+    Targets:
+      - Mob: ELDER_WILOW
+        Count: 100
+  - Id: 62737
+    Title: Bounty Board Argos
+    Targets:
+      - Mob: ARGOS
+        Count: 100
+  - Id: 62738
+    Title: Bounty Board Beetle King
+    Targets:
+      - Mob: KIND_OF_BEETLE
+        Count: 100
+  - Id: 62739
+    Title: Bounty Board Savage
+    Targets:
+      - Mob: SAVAGE
+        Count: 100
+  - Id: 62740
+    Title: Bounty Board Driller
+    Targets:
+      - Mob: DRILLER
+        Count: 100
+  - Id: 62741
+    Title: Bounty Board Hunter Fly
+    Targets:
+      - Mob: HUNTER_FLY
+        Count: 100
+  - Id: 62742
+    Title: Bounty Board Mantis
+    Targets:
+      - Mob: MANTIS
+        Count: 100
+  - Id: 62743
+    Title: Bounty Board Sidewinder
+    Targets:
+      - Mob: SIDE_WINDER
+        Count: 100
+  - Id: 62744
+    Title: Bounty Board Argiope
+    Targets:
+      - Mob: ARGIOPE
+        Count: 100
+  - Id: 62745
+    Title: Bounty Board Metaling
+    Targets:
+      - Mob: METALING
+        Count: 100
+  - Id: 62746
+    Title: Bounty Board Rafflesia
+    Targets:
+      - Mob: RAFFLESIA
+        Count: 100
+  - Id: 62747
+    Title: Bounty Board Stem Worm
+    Targets:
+      - Mob: STEM_WORM
+        Count: 100
+  - Id: 62748
+    Title: Bounty Board Breeze
+    Targets:
+      - Mob: BREEZE
+        Count: 100
+  - Id: 62749
+    Title: Bounty Board Anopheles
+    Targets:
+      - Mob: ANOPHELES
+        Count: 100
+  - Id: 62750
+    Title: Bounty Board Axe Kobold
+    Targets:
+      - Mob: KOBOLD_1
+        Count: 100
+  - Id: 62751
+    Title: Bounty Board Hammer Kobold
+    Targets:
+      - Mob: KOBOLD_2
+        Count: 100
+  - Id: 62752
+    Title: Bounty Board Mace Kobold
+    Targets:
+      - Mob: KOBOLD_3
+        Count: 100
+  - Id: 62753
+    Title: Bounty Board Kobold Archer
+    Targets:
+      - Mob: KOBOLD_ARCHER
+        Count: 100
+  - Id: 62754
+    Title: Bounty Board Remover
+    Targets:
+      - Mob: REMOVAL
+        Count: 100
+  - Id: 62755
+    Title: Bounty Board Laurell Weinder
+    Targets:
+      - Mob: RAWREL
+        Count: 100
+  - Id: 62756
+    Title: Bounty Board Errende Ebecee
+    Targets:
+      - Mob: EREND
+        Count: 100
+  - Id: 62757
+    Title: Bounty Board Armeyer Dinze
+    Targets:
+      - Mob: ARMAIA
+        Count: 100
+  - Id: 62758
+    Title: Bounty Board Wickbine Tres
+    Targets:
+      - Mob: WHIKEBAIN
+        Count: 100
+  - Id: 62759
+    Title: Bounty Board Kavach Icarus
+    Targets:
+      - Mob: KAVAC
+        Count: 100
+  - Id: 62760
+    Title: Bounty Board Egnigem Cenia
+    Targets:
+      - Mob: YGNIZEM
+        Count: 100
+  - Id: 62761
+    Title: Bounty Board Kathryne Keyron
+    Targets:
+      - Mob: KATRINN
+        Count: 100
+  - Id: 62762
+    Title: Bounty Board Margaretha Sorin
+    Targets:
+      - Mob: MAGALETA
+        Count: 100
+  - Id: 62763
+    Title: Bounty Board Cecil Damon
+    Targets:
+      - Mob: SHECIL
+        Count: 100
+  - Id: 62764
+    Title: Bounty Board Eremes Guile
+    Targets:
+      - Mob: EREMES
+        Count: 100
+  - Id: 62765
+    Title: Bounty Board Seyren Windsor
+    Targets:
+      - Mob: SEYREN
+        Count: 100
+  - Id: 62766
+    Title: Bounty Board Howard Alt-Eisen
+    Targets:
+      - Mob: HARWORD
+        Count: 100
+  - Id: 62767
+    Title: Bounty Board Trentini
+    Targets:
+      - Mob: TRENTINI
+        Count: 100
+  - Id: 62768
+    Title: Bounty Board Celia Alde
+    Targets:
+      - Mob: CELIA
+        Count: 100
+  - Id: 62769
+    Title: Bounty Board Alphoccio
+    Targets:
+      - Mob: ALPHOCCIO
+        Count: 100
+  - Id: 62770
+    Title: Bounty Board Gertie
+    Targets:
+      - Mob: GERTIE
+        Count: 100
+  - Id: 62771
+    Title: Bounty Board Chen Lio
+    Targets:
+      - Mob: CHEN
+        Count: 100
+  - Id: 62772
+    Title: Bounty Board Flamel Emure
+    Targets:
+      - Mob: FLAMEL
+        Count: 100
+  - Id: 62773
+    Title: Bounty Board Randel Lawrence
+    Targets:
+      - Mob: RANDEL
+        Count: 100
+  - Id: 62774
+    Title: Bounty Board Baby Desert Wolf
+    Targets:
+      - Mob: DESERT_WOLF_B
+        Count: 100  
+  - Id: 62775
+    Title: Bounty Board Drops
+    Targets:
+      - Mob: DROPS
+        Count: 100 
+  - Id: 62776
+    Title: Bounty Board Picky
+    Targets:
+      - Mob: PICKY
+        Count: 100         
+  - Id: 62777
+    Title: Bounty Board Picky Shell
+    Targets:
+      - Mob: PICKY_
+        Count: 100       
+  - Id: 62778
+    Title: Bounty Board Scorpion
+    Targets:
+      - Mob: SCORPION
+        Count: 100          
+  - Id: 62779
+    Title: Bounty Board Ant Egg
+    Targets:
+      - Mob: ANT_EGG
+        Count: 100             
+  - Id: 62780
+    Title: Bounty Board Andre
+    Targets:
+      - Mob: ANDRE
+        Count: 100              
+  - Id: 62781
+    Title: Bounty Board Deniro
+    Targets:
+      - Mob: DENIRO
+        Count: 100          
+  - Id: 62782
+    Title: Bounty Board Familiar
+    Targets:
+      - Mob: FARMILIAR
+        Count: 100  
+  - Id: 62783
+    Title: Bounty Board Piere
+    Targets:
+      - Mob: PIERE
+        Count: 100
+  - Id: 62784
+    Title: Bounty Board Isis
+    Targets:
+      - Mob: ISIS
+        Count: 100         
+  - Id: 62785
+    Title: Bounty Board Metaller
+    Targets:
+      - Mob: METALLER
+        Count: 100
+  - Id: 62786
+    Title: Bounty Board Minorous
+    Targets:
+      - Mob: MINOROUS
+        Count: 100   
+  - Id: 62787
+    Title: Bounty Board Mummy
+    Targets:
+      - Mob: MUMMY
+        Count: 100
+  - Id: 62788
+    Title: Bounty Board Verit
+    Targets:
+      - Mob: VERIT
+        Count: 100            
+  - Id: 62789
+    Title: Bounty Board Red Novus
+    Targets:
+      - Mob: NOVUS
+        Count: 100
+  - Id: 62790
+    Title: Bounty Board Yellow Novus
+    Targets:
+      - Mob: NOVUS_
+        Count: 100
+  - Id: 62791
+    Title: Bounty Board Ancient Mimic
+    Targets:
+      - Mob: ANCIENT_MIMIC
+        Count: 100
+  - Id: 62792
+    Title: Bounty Board Death Word
+    Targets:
+      - Mob: DEATHWORD
+        Count: 100
+  - Id: 62793
+    Title: Bounty Board Ferus (Red)
+    Targets:
+      - Mob: FERUS
+        Count: 100
+  - Id: 62794
+    Title: Bounty Board Ferus (Green)
+    Targets:
+      - Mob: FERUS_
+        Count: 100
+  - Id: 62795
+    Title: Bounty Board Skogul
+    Targets:
+      - Mob: SKOGUL
+        Count: 100
+  - Id: 62796
+    Title: Bounty Board Frus
+    Targets:
+      - Mob: FRUS
+        Count: 100
+  - Id: 62797
+    Title: Bounty Board Horn
+    Targets:
+      - Mob: HORN
+        Count: 100
+  - Id: 62798
+    Title: Bounty Board Blue Acidus
+    Targets:
+      - Mob: ACIDUS_
+        Count: 100
+  - Id: 62799
+    Title: Bounty Board Gold Acidus
+    Targets:
+      - Mob: ACIDUS
+        Count: 100
+  - Id: 62802
+    Title: Bounty Board Antler Scaraba
+    Targets:
+      - Mob: ANTLER_SCARABA
+        Count: 100
+  - Id: 62803
+    Title: Bounty Board Horn Scaraba
+    Targets:
+      - Mob: HORN_SCARABA2
+        Count: 100
+  - Id: 62804
+    Title: Bounty Board Rake Horn Scaraba
+    Targets:
+      - Mob: RAKE_SCARABA
+        Count: 100
+  - Id: 62805
+    Title: Bounty Board Uni-Horn Scaraba
+    Targets:
+      - Mob: HORN_SCARABA
+        Count: 100
+  - Id: 62806
+    Title: Bounty Board Pinguicula
+    Targets:
+      - Mob: PINGUICULA
+        Count: 100
+  - Id: 62807
+    Title: Bounty Board Dark Pinguicula
+    Targets:
+      - Mob: PINGUICULA_D
+        Count: 100
+  - Id: 62808
+    Title: Bounty Board Nepenthes
+    Targets:
+      - Mob: NEPENTHES
+        Count: 100
+  - Id: 62809
+    Title: Bounty Board Flora
+    Targets:
+      - Mob: FLORA
+        Count: 100
+  - Id: 62810
+    Title: Bounty Board Coco
+    Targets:
+      - Mob: COCO
+        Count: 100
+  - Id: 62811
+    Title: Bounty Board Smokie
+    Targets:
+      - Mob: SMOKIE
+        Count: 100
+  - Id: 62812
+    Title: Bounty Board Martin
+    Targets:
+      - Mob: MARTIN
+        Count: 100
+  - Id: 62813
+    Title: Bounty Board Elder Willow
+    Targets:
+      - Mob: ELDER_WILOW
+        Count: 100
+  - Id: 62814
+    Title: Bounty Board Soldier Skeleton
+    Targets:
+      - Mob: SOLDIER_SKELETON
+        Count: 100
+  - Id: 62815
+    Title: Bounty Board Majoruros
+    Targets:
+      - Mob: MAJORUROS
+        Count: 100
+  - Id: 62816
+    Title: Bounty Board Lunatic
+    Targets:
+      - Mob: LUNATIC
+        Count: 100
+  - Id: 62817
+    Title: Bounty Board Ambernite
+    Targets:
+      - Mob: AMBERNITE
+        Count: 100
+  - Id: 62818
+    Title: Bounty Board Muka
+    Targets:
+      - Mob: MUKA
+        Count: 100
+  - Id: 62819
+    Title: Bounty Board Magnolia
+    Targets:
+      - Mob: MAGNOLIA
+        Count: 100
+  - Id: 62820
+    Title: Bounty Board Skel Worker
+    Targets:
+      - Mob: SKEL_WORKER
+        Count: 100
+  - Id: 62821
+    Title: Bounty Board Miming
+    Targets:
+      - Mob: MIMING
+        Count: 100
+  - Id: 62822
+    Title: Bounty Board Little Fatum
+    Targets:
+      - Mob: LITTLE_FATUM
+        Count: 100
+  - Id: 62823
+    Title: Bounty Board Cenere
+    Targets:
+      - Mob: CENERE
+        Count: 100
+  - Id: 62824
+    Title: Bounty Board Menblatt
+    Targets:
+      - Mob: MENBLATT
+        Count: 100
+  - Id: 62825
+    Title: Bounty Board Petal
+    Targets:
+      - Mob: PETAL
+        Count: 100
+  - Id: 62826
+    Title: Bounty Board Angra Mantis
+    Targets:
+      - Mob: ANGRA_MANTIS
+        Count: 100
+  - Id: 62827
+    Title: Bounty Board Antique Book
+    Targets:
+      - Mob: ANTIQUE_BOOK
+        Count: 100
+  - Id: 62828
+    Title: Bounty Board Yellow Lichtern
+    Targets:
+      - Mob: LICHTERN_Y
+        Count: 100
+  - Id: 62829
+    Title: Bounty Board Blue Lichtern
+    Targets:
+      - Mob: LICHTERN_B
+        Count: 100
+  - Id: 62830
+    Title: Bounty Board Red Lichtern
+    Targets:
+      - Mob: LICHTERN_R
+        Count: 100
+  - Id: 62831
+    Title: Bounty Board Green Lichtern
+    Targets:
+      - Mob: LICHTERN_G
+        Count: 100
+  - Id: 62832
+    Title: Bounty Board Golem
+    Targets:
+      - Mob: GOLEM
+        Count: 100         
+  - Id: 62833
+    Title: Bounty Board Hode
+    Targets:
+      - Mob: HODE
+        Count: 100           
+  - Id: 62834
+    Title: Bounty Board Marduk
+    Targets:
+      - Mob: MARDUK
+        Count: 100   
+  - Id: 62835
+    Title: Bounty Board Pasana
+    Targets:
+      - Mob: PASANA
+        Count: 100      
+  - Id: 62836
+    Title: Bounty Board Sandman
+    Targets:
+      - Mob: SAND_MAN
+        Count: 100             
+  - Id: 62837
+    Title: Bounty Board Zerom
+    Targets:
+      - Mob: ZEROM
+        Count: 100  
+  - Id: 62838
+    Title: Bounty Board Nightmare Minorous
+    Targets:
+      - Mob: N_MINOROUS
+        Count: 100     
+  - Id: 62839
+    Title: Bounty Board Nightmare Mimic
+    Targets:
+      - Mob: N_MIMIC
+        Count: 100  
+  - Id: 62840
+    Title: Bounty Board Nightmare Verit
+    Targets:
+      - Mob: N_VERIT
+        Count: 100     
+  - Id: 62841
+    Title: Bounty Board Marina
+    Targets:
+      - Mob: MARINA
+        Count: 100        
+  - Id: 62842
+    Title: Bounty Board Merman
+    Targets:
+      - Mob: MERMAN
+        Count: 100         
+  - Id: 62843
+    Title: Bounty Board Plankton
+    Targets:
+      - Mob: PLANKTON
+        Count: 100   
+  - Id: 62844
+    Title: Bounty Board Strouf
+    Targets:
+      - Mob: STROUF
+        Count: 100
+  - Id: 62845
+    Title: Bounty Board Vadon
+    Targets:
+      - Mob: VADON
+        Count: 100      
+  - Id: 62846
+    Title: Bounty Board Wormtail
+    Targets:
+      - Mob: WORM_TAIL
+        Count: 100          
+  - Id: 62847
+    Title: Bounty Board Hydra
+    Targets:
+      - Mob: HYDRA
+        Count: 100    
+  - Id: 62848
+    Title: Bounty Board Pirate Skeleton
+    Targets:
+      - Mob: PIRATE_SKEL
+        Count: 100     
+  - Id: 62849
+    Title: Bounty Board Permeter
+    Targets:
+      - Mob: PERMETER
+        Count: 100     
+  - Id: 62850
+    Title: Bounty Board Solider
+    Targets:
+      - Mob: SOLIDER
+        Count: 100        
+  - Id: 62851
+    Title: Bounty Board Freezer
+    Targets:
+      - Mob: FREEZER
+        Count: 100        
+  - Id: 62852
+    Title: Bounty Board Fabre
+    Targets:
+      - Mob: FABRE
+        Count: 100            
+  - Id: 62853
+    Title: Bounty Board Goblin Axe
+    Targets:
+      - Mob: GOBLIN_3
+        Count: 100            
+  - Id: 62854
+    Title: Bounty Board Goblin Flail
+    Targets:
+      - Mob: GOBLIN_2
+        Count: 100     
+  - Id: 62855
+    Title: Bounty Board Goblin Hammer
+    Targets:
+      - Mob: GOBLIN_4
+        Count: 100             
+  - Id: 62856
+    Title: Bounty Board Goblin Mace
+    Targets:
+      - Mob: GOBLIN_5
+        Count: 100           
+  - Id: 62857
+    Title: Bounty Board Nightmare Evil Druid
+    Targets:
+      - Mob: NG_EVIL_DRUID
+        Count: 100       
+  - Id: 62858
+    Title: Bounty Board Nightmare Mimic
+    Targets:
+      - Mob: NG_MIMIC
+        Count: 100           
+  - Id: 62859
+    Title: Bounty Board Nightmare Wanderer
+    Targets:
+      - Mob: NG_WANDER_MAN
+        Count: 100       
+  - Id: 62860
+    Title: Bounty Board Nightmare Wraith Dead
+    Targets:
+      - Mob: NG_WRAITH_DEAD
+        Count: 100                   
+  - Id: 62861
+    Title: Bounty Board Owl Duke
+    Targets:
+      - Mob: OWL_DUKE
+        Count: 100       
+  - Id: 62862
+    Title: Bounty Board Owl Baron
+    Targets:
+      - Mob: OWL_BARON
+        Count: 100   
+  - Id: 62863
+    Title: Bounty Board Drainliar
+    Targets:
+      - Mob: DRAINLIAR
+        Count: 100
+  - Id: 62864
+    Title: Bounty Board Dustiness
+    Targets:
+      - Mob: DUSTINESS        
+        Count: 100      
+  - Id: 62865
+    Title: Bounty Board Geographer
+    Targets:
+      - Mob: GEOGRAPHER
+        Count: 100      
+  - Id: 62866
+    Title: Bounty Board Rideword
+    Targets:
+      - Mob: RIDEWORD
+        Count: 100   
+  - Id: 62867
+    Title: Bounty Board Alarm
+    Targets:
+      - Mob: ALARM
+        Count: 100
+  - Id: 62868
+    Title: Bounty Board Bathory
+    Targets:
+      - Mob: BATHORY
+        Count: 100
+  - Id: 62869
+    Title: Bounty Board Clock
+    Targets:
+      - Mob: CLOCK
+        Count: 100  
+  - Id: 62870
+    Title: Bounty Board High Orc
+    Targets:
+      - Mob: HIGH_ORC
+        Count: 100   
+  - Id: 62871
+    Title: Bounty Board Penomena
+    Targets:
+      - Mob: PENOMENA
+        Count: 100   
+  - Id: 62872
+    Title: Bounty Board Punk
+    Targets:
+      - Mob: PUNK
+        Count: 100              
+  - Id: 62873
+    Title: Bounty Board Arclouse
+    Targets:
+      - Mob: ARCLOUSE
+        Count: 100
+  - Id: 62874
+    Title: Bounty Board Cookie (Green)
+    Targets:
+      - Mob: Cookie
+        Count: 100
+  - Id: 62875
+    Title: Bounty Board Cookie (Red)
+    Targets:
+      - Mob: COOKIE_XMAS
+        Count: 100               
+  - Id: 62876
+    Title: Bounty Board Cruiser
+    Targets:
+      - Mob: CRUISER
+        Count: 100  
+  - Id: 62877
+    Title: Bounty Board Marin
+    Targets:
+      - Mob: MARIN
+        Count: 100
+  - Id: 62878
+    Title: Bounty Board Myst Case
+    Targets:
+      - Mob: MYSTCASE
+        Count: 100   
+  - Id: 62879
+    Title: Bounty Board Stone Shooter
+    Targets:
+      - Mob: STONE_SHOOTER
+        Count: 100             
+  - Id: 62880
+    Title: Bounty Board Disguise
+    Targets:
+      - Mob: DISGUISE
+        Count: 100        
+  - Id: 62881
+    Title: Bounty Board Loli Ruri
+    Targets:
+      - Mob: LOLI_RURI
+        Count: 100         
+  - Id: 62882
+    Title: Bounty Board Red Eruma
+    Targets:
+      - Mob: RED_ERUMA
+        Count: 100         
+  - Id: 62883
+    Title: Bounty Board Siorava
+    Targets:
+      - Mob: SIORAVA
+        Count: 100                 
+  - Id: 62884
+    Title: Bounty Board Wootan Shooter
+    Targets:
+      - Mob: WOOTAN_SHOOTER
+        Count: 100    
+  - Id: 62885
+    Title: Bounty Board Eggring
+    Targets:
+      - Mob: DR_EGGRING
+        Count: 100        
+  - Id: 62886
+    Title: Bounty Board Grass Fabre
+    Targets:
+      - Mob: DR_FABRE
+        Count: 100           
+  - Id: 62887
+    Title: Bounty Board Hunter Desert Wolf
+    Targets:
+      - Mob: DR_DESERT_WOLF_B
+        Count: 100       
+  - Id: 62888
+    Title: Bounty Board Hunter Leaf Lunatic
+    Targets:
+      - Mob: DR_LUNATIC
+        Count: 100     
+  - Id: 62889
+    Title: Bounty Board Sweet Roda Frog
+    Targets:
+      - Mob: DR_RODA_FROG
+        Count: 100         
+  - Id: 62890
+    Title: Bounty Board Wild Hornet
+    Targets:
+      - Mob: DR_HORNET
+        Count: 100
+  - Id: 62891
+    Title: Bounty Board Cursed Book
+    Targets:
+      - Mob: NG_RIDEWORD
+        Count: 100
+  - Id: 62892
+    Title: Bounty Board Big Bell
+    Targets:
+      - Mob: BIG_BELL
+        Count: 100
+  - Id: 62893
+    Title: Bounty Board Big Ben
+    Targets:
+      - Mob: BIG_BEN
+        Count: 100
+  - Id: 62894
+    Title: Bounty Board Neo Punk
+    Targets:
+      - Mob: NEO_PUNK
+        Count: 100
+  - Id: 62895
+    Title: Bounty Board Wild Hornet
+    Targets:
+      - Mob: DR_HORNET
+        Count: 100 
+  - Id: 62896
+    Title: Bounty Board Holden
+    Targets:
+      - Mob: MOLE
+        Count: 100             
+  - Id: 62897
+    Title: Bounty Board Metaling
+    Targets:
+      - Mob: METALING
+        Count: 100     
+  - Id: 62898
+    Title: Bounty Board Noxious
+    Targets:
+      - Mob: NOXIOUS
+        Count: 100  
+  - Id: 62899
+    Title: Bounty Board Porcellio
+    Targets:
+      - Mob: PORCELLIO
+        Count: 100    
+  - Id: 62900
+    Title: Bounty Board Teddy Bear
+    Targets:
+      - Mob: TEDDY_BEAR
+        Count: 100     
+  - Id: 62901
+    Title: Bounty Board Venomous
+    Targets:
+      - Mob: VENOMOUS
+        Count: 100      
+  - Id: 62902
+    Title: Bounty Board Bradium Golem
+    Targets:
+      - Mob: BRADIUM_GOLEM
+        Count: 100        
+  - Id: 62903
+    Title: Bounty Board Centipede Larva
+    Targets:
+      - Mob: CENTIPEDE_LARVA
+        Count: 100         
+  - Id: 62904
+    Title: Bounty Board Hillslion
+    Targets:
+      - Mob: HILLSRION
+        Count: 100         
+  - Id: 62905
+    Title: Bounty Board Tatacho
+    Targets:
+      - Mob: TATACHO
+        Count: 100   
+  - Id: 62906
+    Title: Bounty Board Stapo
+    Targets:
+      - Mob: STAPO
+        Count: 100   
+  - Id: 62907
+    Title: Bounty Board Drosera
+    Targets:
+      - Mob: DROSERA
+        Count: 100 
+  - Id: 62908
+    Title: Bounty Board Galion
+    Targets:
+      - Mob: GALION
+        Count: 100 
+  - Id: 62909
+    Title: Bounty Board Magmaring
+    Targets:
+      - Mob: MAGMARING
+        Count: 100    
+  - Id: 62910
+    Title: Bounty Board Muscipular
+    Targets:
+      - Mob: MUSCIPULAR
+        Count: 100         
+  - Id: 62911
+    Title: Bounty Board Kasa
+    Targets:
+      - Mob: KASA
+        Count: 100
+  - Id: 62912
+    Title: Bounty Board Knocker
+    Targets:
+      - Mob: KNOCKER
+        Count: 100  
+  - Id: 62913
+    Title: Bounty Board Necromancer
+    Targets:
+      - Mob: NECROMANCER
+        Count: 100      
+  - Id: 62914
+    Title: Bounty Board Ragged Zombie
+    Targets:
+      - Mob: RAGGED_ZOMBIE
+        Count: 100        
+  - Id: 62915
+    Title: Bounty Board Salamander
+    Targets:
+      - Mob: SALAMANDER
+        Count: 100     
+  - Id: 62916
+    Title: Bounty Board Zombie Slaughter
+    Targets:
+      - Mob: ZOMBIE_SLAUGHTER
+        Count: 100    
+  - Id: 62917
+    Title: Bounty Board Anacondaq
+    Targets:
+      - Mob: ANACONDAQ
+        Count: 100    
+  - Id: 62918
+    Title: Bounty Board Roween
+    Targets:
+      - Mob: ROWEEN
+        Count: 100
+  - Id: 62919
+    Title: Bounty Board Siroma
+    Targets:
+      - Mob: SIROMA
+        Count: 100
+  - Id: 62920
+    Title: Bounty Board Desert Wolf
+    Targets:
+      - Mob: DESERT_WOLF
+        Count: 100 
+  - Id: 62921
+    Title: Bounty Board Drosera
+    Targets:
+      - Mob: DROSERA
+        Count: 100  
+  - Id: 62922
+    Title: Bounty Board Hill Wind
+    Targets:
+      - Mob: HILL_WIND_1
+        Count: 100     
+  - Id: 62923
+    Title: Bounty Board Ice Titan
+    Targets:
+      - Mob: ICE_TITAN
+        Count: 100    
+  - Id: 62924
+    Title: Bounty Board Snowier
+    Targets:
+      - Mob: SNOWIER
+        Count: 100  
+  - Id: 62925
+    Title: Bounty Board Agav
+    Targets:
+      - Mob: AGAV
+        Count: 100
+  - Id: 62926
+    Title: Bounty Board Echio
+    Targets:
+      - Mob: ECHIO
+        Count: 100           
+  - Id: 62927
+    Title: Bounty Board Hodremlin
+    Targets:
+      - Mob: HODREMLIN
+        Count: 100   
+  - Id: 62928
+    Title: Bounty Board Isilla
+    Targets:
+      - Mob: ISILLA
+        Count: 100
+  - Id: 62929
+    Title: Bounty Board Seeker
+    Targets:
+      - Mob: SEEKER
+        Count: 100
+  - Id: 62930
+    Title: Bounty Board Vanberk
+    Targets:
+      - Mob: VANBERK
+        Count: 100             

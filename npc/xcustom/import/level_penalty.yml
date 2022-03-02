@@ -31,11 +31,3 @@
 Header:
   Type: PENALTY_DB
   Version: 1
-
-Body:
-  - Type: Exp
-    LevelDifferences:
-      []
-  - Type: Drop
-    LevelDifferences:
-      []

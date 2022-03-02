@@ -1542,7 +1542,7 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 #ifdef RENEWAL
 		skill_break_equip(src,bl, EQP_WEAPON, 300 * skill_lv, BCT_ENEMY);
 #else
-		skill_break_equip(src,bl, EQP_WEAPON, 100*skill_lv, BCT_ENEMY);
+		skill_break_equip(src,bl, EQP_WEAPON, 300 *skill_lv, BCT_ENEMY);
 #endif
 		break;
 
@@ -2259,9 +2259,9 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 			if( sc )
 			{
 				if(sc->data[SC_OVERTHRUST])
-					rate += 10;
+					rate += 0;
 				if(sc->data[SC_MAXOVERTHRUST])
-					rate += 10;
+					rate += 0;
 			}
 #endif
 			if( rate )
@@ -2369,10 +2369,10 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 
 			if (skill == PF_SPIDERWEB) //Special case, due to its nature of coding.
 				type = CAST_GROUND;
-#ifndef RENEWAL
-			else if (skill == AS_SONICBLOW)
-				pc_stop_attack(sd); //Special case, Sonic Blow autospell should stop the player attacking.
-#endif
+//#ifndef RENEWAL
+//			else if (skill == AS_SONICBLOW)
+//				pc_stop_attack(sd); //Special case, Sonic Blow autospell should stop the player attacking.
+//#endif
 
 			sd->state.autocast = 1;
 			skill_consume_requirement(sd,skill,autospl_skill_lv,1);
@@ -7454,7 +7454,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 			clif_skill_nodamage(src,bl,skill_id,skill_lv,0);
 			break;
 		}
-#ifdef RENEWAL
+#ifndef RENEWAL
 		clif_skill_nodamage(src, bl, skill_id, skill_lv, sc_start(src, bl, type, 100, skill_lv, skill_get_time(skill_id, skill_lv)));
 #else
 		// 100% success rate at lv4 & 5, but lasts longer at lv5
@@ -19201,7 +19201,7 @@ int skill_autospell(struct map_session_data *sd, uint16 skill_id)
 	if (skill_lv == 0 || lv == 0)
 		return 0; // Player must learn the skill before doing auto-spell [Lance]
 
-#ifdef RENEWAL
+#ifndef RENEWAL
 	if ((skill_id == MG_COLDBOLT || skill_id == MG_FIREBOLT || skill_id == MG_LIGHTNINGBOLT) && sd->sc.data[SC_SPIRIT] && sd->sc.data[SC_SPIRIT]->val2 == SL_SAGE)
 		maxlv = 10; //Soul Linker bonus. [Skotlex]
 	else

@@ -4220,10 +4220,10 @@ static int status_get_hpbonus(struct block_list *bl, enum e_status_bonus type) {
 				bonus += 30;
 			if(sc->data[SC_GLASTHEIM_HPSP])
 				bonus += sc->data[SC_GLASTHEIM_HPSP]->val1;
-#ifdef RENEWAL
+//#ifdef RENEWAL
 			if (sc->data[SC_ANGELUS])
 				bonus += sc->data[SC_ANGELUS]->val1 * 50;
-#endif
+//#endif
 		}
 	} else if (type == STATUS_BONUS_RATE) {
 		struct status_change *sc = status_get_sc(bl);
@@ -5231,7 +5231,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)
 		base_status->int_ += (skill+1)/2; // +1 INT / 2 lv
 	if((skill=pc_checkskill(sd,AC_OWL))>0)
-		base_status->dex += skill;
+		base_status->dex += skill+5;
 	if((skill = pc_checkskill(sd,RA_RESEARCHTRAP))>0)
 		base_status->int_ += skill;
 	if (pc_checkskill(sd, SU_POWEROFLAND) > 0)
@@ -5455,7 +5455,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 	if((skill=pc_checkskill(sd,TF_MISS))>0)
 		base_status->flee += skill*(sd->class_&JOBL_2 && (sd->class_&MAPID_BASEMASK) == MAPID_THIEF? 4 : 3);
 	if((skill=pc_checkskill(sd,MO_DODGE))>0)
-		base_status->flee += (skill*3)>>1;
+		base_status->flee += skill*2;
 	if (pc_checkskill(sd, SU_POWEROFLIFE) > 0)
 		base_status->flee += 20;
 	if ((skill = pc_checkskill(sd, SHC_SHADOW_SENSE)) > 0)
@@ -5466,9 +5466,9 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 #ifdef RENEWAL
 	if ((skill = pc_checkskill(sd, DC_DANCINGLESSON)) > 0)
 		base_status->cri += skill * 10;
+#endif
 	if ((skill = pc_checkskill(sd, PR_MACEMASTERY)) > 0 && (sd->status.weapon == W_MACE || sd->status.weapon == W_2HMACE))
 		base_status->cri += skill * 10;
-#endif
 	if ((skill = pc_checkskill(sd, SHC_SHADOW_SENSE)) > 0)
 	{
 		if (sd->status.weapon == W_DAGGER || sd->status.weapon == W_DOUBLE_DD || 
@@ -7325,7 +7325,7 @@ static unsigned short status_calc_str(struct block_list *bl, struct status_chang
 	if(sc->data[SC_LEADERSHIP])
 		str += sc->data[SC_LEADERSHIP]->val1;
 	if(sc->data[SC_LOUD])
-		str += 4;
+		str += 8;
 	if(sc->data[SC_TRUESIGHT])
 		str += 5;
 	if(sc->data[SC_SPURT])
@@ -7409,7 +7409,7 @@ static unsigned short status_calc_agi(struct block_list *bl, struct status_chang
 	if(sc->data[SC_TRUESIGHT])
 		agi += 5;
 	if(sc->data[SC_INCREASEAGI])
-		agi += sc->data[SC_INCREASEAGI]->val2;
+		agi += ((sc->data[SC_INCREASEAGI]->val2)-2)*2;
 	if(sc->data[SC_INCREASING])
 		agi += 4; // Added based on skill updates [Reddozen]
 	if(sc->data[SC_2011RWC_SCROLL])
@@ -8308,7 +8308,7 @@ static signed short status_calc_hit(struct block_list *bl, struct status_change 
 		hit -= sc->data[SC_ILLUSIONDOPING]->val2;
 	if (sc->data[SC_MTF_ASPD])
 		hit += sc->data[SC_MTF_ASPD]->val2;
-#ifdef RENEWAL
+//#ifdef RENEWAL
 	if (sc->data[SC_BLESSING])
 		hit += sc->data[SC_BLESSING]->val1 * 2;
 	if (sc->data[SC_TWOHANDQUICKEN])
@@ -8317,7 +8317,7 @@ static signed short status_calc_hit(struct block_list *bl, struct status_change 
 		hit += sc->data[SC_ADRENALINE]->val1 * 3 + 5;
 	if (sc->data[SC_NIBELUNGEN] && sc->data[SC_NIBELUNGEN]->val2 == RINGNBL_HIT)
 		hit += 50;
-#endif
+//#endif
 	if (sc->data[SC_SOULFALCON])
 		hit += sc->data[SC_SOULFALCON]->val3;
 	if (sc->data[SC_SATURDAYNIGHTFEVER])
@@ -12098,7 +12098,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 #ifdef RENEWAL
 			val4 = val1 * 2; // Chance of casting
 #else
-			val4 = 5 + val1*2; // Chance of casting
+			val4 = val1 * 2; // Chance of casting
 #endif
 			break;
 		case SC_VOLCANO:
@@ -12702,7 +12702,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 			sc_start(src, bl, SC_ENDURE, 100, 1, tick); // Level 1 Endure effect
 			break;
 		case SC_ANGELUS:
-			val2 = 5*val1; // def increase
+			val2 = 3*val1; // def increase
 			break;
 		case SC_IMPOSITIO:
 			val2 = 5*val1; // WATK/MATK increase

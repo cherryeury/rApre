@@ -2,6 +2,35 @@
 tbl = {
 	--ADD YOUR ITEMS HERE!!
 	--Example
+	[100] = {
+		unidentifiedDisplayName = "Moonlight Flower Hat Combination Scroll",
+		unidentifiedResourceName = "Bs_Item_M_Scroll",
+		unidentifiedDescriptionName = { "" },
+		identifiedDisplayName = "Moonlight Flower Hat Combination Scroll",
+		identifiedResourceName = "Bs_Item_M_Scroll",
+		identifiedDescriptionName = {
+			"Moonlight Flower Hat combination method is explained in this Combination Scroll.",
+			"_______________________",
+			"[Required materials]",
+			"150x Mother's Nightmare",
+			"10x Zelunium",
+			"_______________________",
+			"[Moonlight Flower Hat]",
+			"A hat made after the monster moonflower.",
+			"It is said that 30% of moonflower hair and 70% of tail fox were used. Note that only hand washing is possible",
+			"If you wear it together with a nine tailed neckerchief, your fashion is completed this winter?",
+			"Automatically cast Level 1 Increase Agility by chance when struck by Physical attack.",
+			"DEX +2",
+			"Type: Headgear Defense : 3",
+			"Position: Upper, Middle Weight: 20",
+			"Job: All Jobs",
+			"_______________________",
+			"^0000CCWeight:^000000 1"
+		},
+		slotCount = 0,
+		ClassNum = 0,
+		costume = false
+	},	
 	[2638] = {
 		unidentifiedDisplayName = "Unidentified Accessory",
 		unidentifiedResourceName = "링",
@@ -8499,6 +8528,52 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},	
+	[1515] = {
+		unidentifiedDisplayName = "Unidentified Mace",
+		unidentifiedResourceName = "클럽",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Morning Star",
+		identifiedResourceName = "모닝스타",
+		identifiedDescriptionName = {
+			"A metal club topped with a solid steel ball that's covered in spikes.",
+			"_______________________",
+			"^0000CCType:^000000 Mace",
+			"^0000CCAttack:^000000 110",
+			"^0000CCWeight:^000000 150",
+			"^0000CCWeapon Level:^000000 3",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 27",
+			"Swordman, Acolyte and Merchant"
+		},
+		slotCount = 3,
+		ClassNum = 8,
+		costume = false
+	},
+	[1212] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Dirk",
+		identifiedResourceName = "더크",
+		identifiedDescriptionName = {
+			"An ancient knife used by highlanders in Scotland.",
+			"________________________",
+			"MATK +30",
+			"________________________",				
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 59",
+			"^0000CCWeight:^000000 50",
+			"^0000CCWeapon Level:^000000 2",
+			"________________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 4,
+		ClassNum = 1,
+		costume = false
+	},	
 	[1213] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -8571,6 +8646,28 @@ tbl = {
 		ClassNum = 32,
 		costume = false
 	},
+	[1218] = {
+		unidentifiedDisplayName = "Unidentified Dagger",
+		unidentifiedResourceName = "나이프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "True Stiletto",
+		identifiedResourceName = "스틸레토",
+		identifiedDescriptionName = {
+			"A long, thin blade that is known to be used as a concealed weapon by Assassins.",
+			"_______________________",
+			"^0000CCType:^000000 Dagger",
+			"^0000CCAttack:^000000 87",
+			"^0000CCWeight:^000000 70",
+			"^0000CCWeapon Level:^000000 1",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
+		},
+		slotCount = 4,
+		ClassNum = 32,
+		costume = false
+	},	
 	[1217] = {
 		unidentifiedDisplayName = "Unidentified Dagger",
 		unidentifiedResourceName = "나이프",
@@ -8652,12 +8749,10 @@ tbl = {
 		identifiedDescriptionName = {
 			"A lethal knife made of a special metal that can easily cut straight into the heart of an enemy.",
 			"________________________",
-			"^663399Indestructible in battle^000000",
-			"________________________",
-			"MATK +59",
+			"MATK +61",
 			"________________________",			
 			"^0000CCType:^000000 Dagger",
-			"^0000CCAttack:^000000 118",
+			"^0000CCAttack:^000000 122",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
 			"________________________",
@@ -8678,12 +8773,10 @@ tbl = {
 		identifiedDescriptionName = {
 			"A lethal knife made of a special metal that can easily cut straight into the heart of an enemy.",
 			"________________________",
-			"^663399Indestructible in battle^000000",
-			"________________________",
-			"MATK +59",
+			"MATK +61",
 			"________________________",					
 			"^0000CCType:^000000 Dagger",
-			"^0000CCAttack:^000000 118",
+			"^0000CCAttack:^000000 122",
 			"^0000CCWeight:^000000 80",
 			"^0000CCWeapon Level:^000000 3",
 			"________________________",
@@ -11296,30 +11389,6 @@ tbl = {
 		ClassNum = 1,
 		costume = false
 	},
-	[1226] = {
-		unidentifiedDisplayName = "Unidentified Dagger",
-		unidentifiedResourceName = "나이프",
-		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
-		identifiedDisplayName = "Damascus",
-		identifiedResourceName = "다마스커스",
-		identifiedDescriptionName = {
-			"A lethal knife made of a special metal that can easily cut straight into the heart of an enemy.",
-			"________________________",
-			"^663399Indestructible in battle^000000",
-			"________________________",
-			"^0000CCType:^000000 Dagger",
-			"^0000CCAttack:^000000 118",
-			"^0000CCWeight:^000000 80",
-			"^0000CCWeapon Level:^000000 3",
-			"________________________",
-			"^0000CCRequirement:^000000",
-			"Base Level 24",
-			"Swordman, Magician, Archer, Merchant, Thief, Soul Linker and Ninja classes"
-		},
-		slotCount = 2,
-		ClassNum = 1,
-		costume = false
-	},
 	[1820] = {
 		unidentifiedDisplayName = "Unidentified Knuckle",
 		unidentifiedResourceName = "바그낙",
@@ -11371,6 +11440,28 @@ tbl = {
 		ClassNum = 70,
 		costume = false
 	},	
+	[1986] = {
+		unidentifiedDisplayName = "Unidentified Whip",
+		unidentifiedResourceName = "로프",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "True Wire Whip",
+		identifiedResourceName = "와이어",
+		identifiedDescriptionName = {
+			"A whip made of a flexible wire attached to an iron handle.",
+			"_______________________",
+			"^0000CCType:^000000 Whip",
+			"^0000CCAttack:^000000 70",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 3",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 16",
+			"Dancer classes"
+		},
+		slotCount = 3,
+		ClassNum = 14,
+		costume = false
+	},
 	[1971] = {
 		unidentifiedDisplayName = "Unidentified Whip",
 		unidentifiedResourceName = "로프",
@@ -13223,6 +13314,55 @@ tbl = {
 		ClassNum = 4,
 		costume = false
 	},
+	[13103] = {
+		unidentifiedDisplayName = "Unidentified Revolver",
+		unidentifiedResourceName = "식스슈터",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "True Crimson Bolt",
+		identifiedResourceName = "크림즌볼트",
+		identifiedDescriptionName = {
+			"A bloody red revolver that is rumored to be cursed.",
+			"_______________________",
+			"HIT -10",
+			"_______________________",
+			"^0000CCType:^000000 Revolver",
+			"^0000CCAttack:^000000 45",
+			"^0000CCWeight:^000000 45",
+			"^0000CCWeapon Level:^000000 3",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 35",
+			"Gunslinger"
+		},
+		slotCount = 3,
+		ClassNum = 17,
+		costume = false
+	},	
+	[1606] = {
+		unidentifiedDisplayName = "Unidentified Staff",
+		unidentifiedResourceName = "롯드",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "Elusive Wand",
+		identifiedResourceName = "완드",
+		identifiedDescriptionName = {
+			"A rough-hewn wand that's effective enough for the casting of magic spells.",
+			"_______________________",
+			"INT +1",
+			"MATK +45",
+			"_______________________",
+			"^0000CCType:^000000 One-Handed Staff",
+			"^0000CCAttack:^000000 25",
+			"^0000CCWeight:^000000 40",
+			"^0000CCWeapon Level:^000000 3",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 12",
+			"Novice, Magician, Acolyte and Soul Linker"
+		},
+		slotCount = 3,
+		ClassNum = 10,
+		costume = false
+	},	
 	[1408] = {
 		unidentifiedDisplayName = "Unidentified Spear",
 		unidentifiedResourceName = "쟈벨린",
@@ -15260,6 +15400,28 @@ tbl = {
 		},
 		slotCount = 0,
 		ClassNum = 0,
+		costume = false
+	},	
+	[1707] = {
+		unidentifiedDisplayName = "Unidentified Bow",
+		unidentifiedResourceName = "보우",
+		unidentifiedDescriptionName = { "Can be identified by using a ^990099Magnifier^000000." },
+		identifiedDisplayName = "True Great Bow",
+		identifiedResourceName = "그레이트보우",
+		identifiedDescriptionName = {
+			"A simply constructed bow that offers well balanced performance.",
+			"_______________________",
+			"^0000CCType:^000000 Bow",
+			"^0000CCAttack:^000000 50",
+			"^0000CCWeight:^000000 100",
+			"^0000CCWeapon Level:^000000 3",
+			"_______________________",
+			"^0000CCRequirement:^000000",
+			"Base Level 18",
+			"Archer, Thief and Rogue"
+		},
+		slotCount = 3,
+		ClassNum = 11,
 		costume = false
 	},	
 	[10020] = {

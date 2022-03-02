@@ -1,0 +1,43 @@
+// Items Random Option Database	
+//
+// Structure of Database:
+// ID,{ Bonus Script }
+
+
+//RDMOPT_WEAPON_BURNING,{bonus3 bAddEff,Eff_Burning,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_BLEEDING,{bonus3 bAddEff,Eff_Bleeding,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_BLIND,{bonus3 bAddEff,Eff_Blind,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_SILENCE,{bonus3 bAddEff,Eff_Silence,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_CURSE,{bonus3 bAddEff,Eff_Curse,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_FREEZE,{bonus3 bAddEff,Eff_Freeze,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_SLEEP,{bonus3 bAddEff,Eff_Sleep,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_STUN,{bonus3 bAddEff,Eff_Stun,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_POISON,{bonus3 bAddEff,Eff_Poison,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_CRYSTALIZE,{bonus3 bAddEff,Eff_Crystalize,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_CONFUSION,{bonus3 bAddEff,Eff_Confusion,getrandomoptinfo(ROA_VALUE)*100;}
+
+//RDMOPT_WEAPON_MBURNING,{bonus3 bAddEff,Eff_Burning,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MBLEEDING,{bonus3 bAddEff,Eff_Bleeding,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MBLIND,{bonus3 bAddEff,Eff_Blind,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MSILENCE,{bonus3 bAddEff,Eff_Silence,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MCURSE,{bonus3 bAddEff,Eff_Curse,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MFREEZE,{bonus3 bAddEff,Eff_Freeze,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MSLEEP,{bonus3 bAddEff,Eff_Sleep,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MSTUN,{bonus3 bAddEff,Eff_Stun,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MPOISON,{bonus3 bAddEff,Eff_Poison,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MCRYSTALIZE,{bonus3 bAddEff,Eff_Crystalize,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+//RDMOPT_WEAPON_MCONFUSION,{bonus3 bAddEff,Eff_Confusion,ATF_MAGIC,getrandomoptinfo(ROA_VALUE)*100;}
+
+RDMOPT_VAR_MSPD,{bonus bSpeedAddRate,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_RETURN_MELEE,{bonus bShortWeaponDamageReturn,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_RETURN_MAGIC,{bonus bMagicDamageReturn,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_RETURN_LONG,{bonus bLongWeaponDamageReturn,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_DEF_MELEE,{bonus bNearAtkDef,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_DEF_MAGIC,{bonus bMagicAtkDef,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_DEF_LONG,{bonus bLongAtkDef,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_HP_MELEEKILL,{bonus bHPGainValue,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_SP_MELEEKILL,{bonus bSPGainValue,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_HP_LONGKILL,{bonus bLongHPGainValue,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_SP_LONGKILL,{bonus bLongSPGainValue,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_HP_MAGICKILL,{bonus bMagicHPGainValue,getrandomoptinfo(ROA_VALUE);}
+RDMOPT_SP_MAGICKILL,{bonus bMagicSPGainValue,getrandomoptinfo(ROA_VALUE);}

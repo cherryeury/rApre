@@ -30,7 +30,3 @@
 Header:
   Type: STATPOINT_DB
   Version: 2
-
-Body:
-  - Level: 1
-    Points: 0

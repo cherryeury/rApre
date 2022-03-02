@@ -1,0 +1,41 @@
+// Item Combos Database
+//
+// Structure of Database:
+// ID:ID:ID:ID,{ Script }
+
+2312:2656,{ bonus bDef,45; }
+2313:2656,{ bonus bDef,45; }
+4545:18730,{ bonus bMatk,-5; bonus bBaseAtk,-5; }
+1420:2133,{ bonus bDef,18; }
+1421:2133,{ bonus bDef,18; }
+1422:2133,{ bonus bDef,18; }
+2114:2353:5122,{ bonus bDef,45; if(BaseClass==Job_Swordman) bonus bDef,54; }
+2115:2353:5124,{ bonus bDef,18-getequiprefinerycnt(EQI_HAND_L)-getequiprefinerycnt(EQI_HEAD_TOP); }
+2137:2353:5124,{ bonus bDef,18-getequiprefinerycnt(EQI_HAND_L)-getequiprefinerycnt(EQI_HEAD_TOP); }
+2354:2419:2520:5128,{ bonus bDef,45; }
+4031:4161,{ bonus bDef,27; }
+4191:4208:4258:4309:4325:4327,{ bonus bDef,45; }
+4229:4244:4299:4313,{ bonus bDef,27; }
+4311:4319:4331:4371,{ bonus bDef,18; }
+5782:2125,{ bonus bDef,18; }
+22132:4131,{.@r = getequiprefinerycnt(EQI_SHOES); skill "AL_HEAL",10; if(BaseLevel < 99){ bonus bMatk,.@r*5; bonus bMdef,.*@r; } else { bonus bMatk,.@r*15; bonus bMdef,.@r*10; }}
+4608:4609,{ bonus2 bAddSize,Size_Medium,-10; bonus2 bAddSize,Size_Large,-10; }
+27163:27165,{ bonus bAspdRate,10; bonus bDelayrate,3; }
+2597:28342,{ bonus bCritAtkRate,-5; bonus bCritical,-10; .@r = getequiprefinerycnt(EQI_GARMENT); if(.@r>=5){ bonus bCritAtkRate,-3; } if(.@r>=7){ bonus bCritAtkRate,-4; } }
+2597:2616,{ bonus bCritAtkRate,5; bonus bCritical,10; .@r = getequiprefinerycnt(EQI_GARMENT); if(.@r>=5){ bonus bCritAtkRate,3; } if(.@r>=7){ bonus bCritAtkRate,4; } }
+2597:2943,{ bonus bCritAtkRate,5; bonus bCritical,10; .@r = getequiprefinerycnt(EQI_GARMENT); if(.@r>=5){ bonus bCritAtkRate,3; } if(.@r>=7){ bonus bCritAtkRate,4; } }
+5073:5574,{ bonus bDex,2; bonus bDef,20; }
+18540:5072,{ bonus bAspd,1; bonus bAspdRate,9; bonus2 bSPLossRate,3,2000; }
+18540:5066,{ bonus bAspd,1; bonus bAspdRate,9; bonus2 bSPLossRate,3,2000; }
+13034:13035,{ bonus bHit,getequiprefinerycnt(EQI_HAND_R)+getequiprefinerycnt(EQI_HAND_L); }
+1720:1751,{ bonus bLongAtkRate,5; }
+1612:2235,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1614:2235,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1612:5165,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1614:5165,{ bonus2 bMagicAddEle,Ele_Holy,10; }
+1612:2234,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1614:2234,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1612:5164,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1614:5164,{ bonus2 bMagicAddEle,Ele_earth,10; }
+1720:1772,{ bonus2 bAddEle,Ele_Holy,25; }
+1729:1772,{ bonus2 bAddEle,Ele_Holy,25; }

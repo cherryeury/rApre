@@ -33,33 +33,3 @@
 Header:
   Type: CONSTANT_DB
   Version: 1
-
-Body:
-  - Name: RDMOPT_ALLSTATS
-    Value: 401
-  - Name: RDMOPT_ADDSKILLMDAMAGE_WATER
-    Value: 222
-  - Name: RDMOPT_ADDSKILLMDAMAGE_GROUND
-    Value: 223
-  - Name: RDMOPT_ADDSKILLMDAMAGE_FIRE
-    Value: 224
-  - Name: RDMOPT_ADDSKILLMDAMAGE_WIND
-    Value: 225
-  - Name: IG_Classic_
-    Value: 2001
-  - Name: IG_Costamax1
-    Value: 2002
-  - Name: IG_Costamax2
-    Value: 2003
-  - Name: IG_Costamax3
-    Value: 2004
-  - Name: IG_Costamax4
-    Value: 2005
-  - Name: IG_BPoring
-    Value: 2006
-  - Name: IG_BShadow
-    Value: 2007
-  - Name: IG_Balloon
-    Value: 2008
-  - Name: IG_PorGlass
-    Value: 2009

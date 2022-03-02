@@ -1,0 +1,185 @@
+// Monster Drop Database
+// Add drop item to monster
+//
+// Structure:
+// <mobid>,<itemid>,<rate>{,<randopt_groupid>,<flag>}
+//
+// <mobid>  : Monster ID. See db/[pre-]re/mob_db.txt
+// <itemid> : Item ID.
+// <rate>   : 1 = 0.01%
+//            100 = 1%
+//            10000 = 100%
+//            Just like rate in mob_db.txt, adjusted by battle_config.
+//            To remove original drop from monster, use 0 as rate.
+// Optional:
+// <randopt_groupid> : If set, the dropped item will be modified by Random Option Group based on db/[pre-]re/item_randomopt_group.txt
+// <flag>            : 1 - The item is protected from steal.
+//                     2 - As MVP Reward
+
+1720,13001,10 // HYDRO
+
+// Silvervine
+//=============================================================
+1096,668,10000 // Angeling
+1388,668,10000 // Arc Angeling
+1307,668,10000 // Cat'O
+1582,668,10000 // Deviling
+1091,668,10000 // Dragonfly
+1093,668,10000 // Eclipse
+1120,668,10000 // Ghostring
+1090,668,10000 // Mastering
+1289,668,10000 // Maya
+1089,668,10000 // Toad
+1092,668,10000 // Vagabond
+1088,668,10000 // Vocal
+
+// Card
+//=============================================================
+
+
+
+
+// Quest
+//=============================================================
+//1685,1,10000 // Vesper
+//1087,25568,10000 // Orc Hero
+//1190,25568,10000 // Orc Lord
+//1492,25629,10000 // Samurai Specter
+//1630,25622,10000 // Bacsojin
+
+// Pet Taming
+//=============================================================
+1026,636,20 // No Recipient - Munak
+1188,659,20 // Her Heart - Bongun
+1519,12395,20 // Tantan noodle - Chung E
+1622,23189,20 // Teddy Bear - Doll
+1504,12367,20 // Luxury Bottle -- Dullahan
+1632,23188,20 // Gremlin - Broken part
+1416,12365,20 // Evil Nymph -- Lotus
+2617,12365,20 // Elusive evil nymph
+1299,12364,20 // Goblin Leader -- Staff of leader
+1040,12371,20 // Golem Magical Litography
+2812,12371,20 // Golem
+1837,12364,20 // Imp - Ice Fireworks
+1374,12370,20 // Incubus -- Girl's naivety
+1586,12359,20 // Leaf Cat -- Soft Plant
+2781,12359,20 // Leaf Cat
+1505,12360,20 // Loli ruri - very red juice
+1505,12360,20 // Loli ruri
+1513,12358,20 // Mao Guai
+1143,12361,20 // Marionette - Delicious shaved ice
+2761,12361,20 // Marionette
+1148,12368,20 // Medusa -- Mirror
+2759,12368,20 // 
+1404,12366,20 // Miyabi - Girl Doll
+2746,12366,20 // 
+1379,12372,20 // Nightmare - Hell Contract
+1401,12362,20 // Shinobi -- Kuloren
+2664,12362,20 // Shinobi
+1495,12369,20 // Shooter -- Oilpalm coconut
+1208,14574,20 // Vagabond Skull -- Wanderer
+2620,14574,20 // Vagabond skull -- Wanderer furious
+1179,12363,20 // Ghost coffin -- Whisper
+1180,23187,20 // Nine Tail - Sap Jelly
+
+// new
+//================================================================
+
+1145,2224,1
+1254,2224,1
+1862,2224,1
+2694,2224,1
+2760,2224,1
+
+2398,12846,2 // Little Poring Unripe
+
+1010,2302,150 // willow cotton shirt
+2615,2302,150
+
+1010,1702,150 // fabre bow [4]
+2615,1702,150
+
+1007,1302,100 // fabre axe 2
+1184,1302,100
+1229,1302,100
+2835,1302,100
+2836,1302,100
+
+
+1009,1205,80 // condor bow
+1901,1205,80
+
+1011,2101,100 // chonchon club
+1183,2101,100
+2872,2101,100
+
+1008,1602,80 // Pupa Rod
+
+1012,2303,120 // Jacket Frog
+2678,2303,120
+2679,2303,120
+
+1051,18619,1 // TB Thief Bandana
+2632,18619,1
+2633,18619,1
+2634,18619,1
+
+1051,721,7 // Emerald Thief Bug
+2632,721,7
+2633,721,7
+2634,721,7
+
+1047,1302,100 // peco egg axe
+
+1167,1208,15 // Babe Main Gauche
+2671,1208,15
+
+1004,1302,100 // Hornet Axe
+2798,1302,100
+
+1094,2126,2 // Shield Ambernite
+2905,2126,2
+
+1031,19149,1 // Poporing
+2701,19149,1
+2702,19149,1
+2703,19149,1
+
+2776,4545,1
+
+1002,1501,200 // Poring Knife
+2699,1501,200
+2696,1501,200
+2697,1501,200
+2698,1501,200
+
+1002,1502,80 // Poring Knife
+2699,1502,80
+2696,1502,80
+2697,1502,80
+2698,1502,80
+
+1631,5042,2
+
+1299,5090,15
+
+1622,5113,3
+2636,5113,3
+
+2919,5110,3
+
+1968,2241,25
+
+1497,2270,3
+1692,2270,3
+1881,2270,3
+1995,2270,3
+2711,2270,3
+2843,2270,3
+2880,2270,3
+2881,2270,3
+
+1635,1264,2
+
+1271,1220,1
+1688,2623,1
