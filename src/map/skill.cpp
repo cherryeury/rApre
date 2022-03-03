@@ -14723,8 +14723,8 @@ std::shared_ptr<s_skill_unit_group> skill_unitsetting(struct block_list *src, ui
 		val1 = 25 + 11*skill_lv; //Exp increase bonus.
 		break;
 	case BD_SIEGFRIED:
-		val1 = 55 + skill_lv*5;	//Elemental Resistance
-		val2 = skill_lv*10;	//Status ailment resistance
+		val1 = 3 * skill_lv;	//Elemental Resistance
+		val2 = skill_lv * 5;	//Status ailment resistance
 		break;
 	case WE_CALLPARTNER:
 		if (sd) val1 = sd->status.partner_id;

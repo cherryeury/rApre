@@ -4400,9 +4400,9 @@ static int status_get_spbonus(struct block_list *bl, enum e_status_bonus type) {
 				bonus += i;
 			if((i = pc_checkskill(sd,HW_SOULDRAIN)) > 0)
 				bonus += 2 * i;
-#ifdef RENEWAL
 			if ((i = pc_checkskill(sd, (sd->status.sex ? BA_MUSICALLESSON : DC_DANCINGLESSON))) > 0)
 				bonus += i;
+#ifdef RENEWAL
 			if (sc->data[SC_NIBELUNGEN] && sc->data[SC_NIBELUNGEN]->val2 == RINGNBL_SPRATE)
 				bonus += 30;
 #endif
