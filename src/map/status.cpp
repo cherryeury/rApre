@@ -926,7 +926,7 @@ void initChangeTables(void)
 #else
 			EFST_ASSUMPTIO_BUFF	, SCB_DEF );
 #endif
-#ifdef RENEWAL
+#ifndef RENEWAL
 	set_sc( HP_BASILICA			, SC_BASILICA	, EFST_BASILICA_BUFF	, SCB_ALL );
 #else
 	add_sc( HP_BASILICA		, SC_BASILICA		);
@@ -2258,7 +2258,7 @@ void initChangeTables(void)
 	StatusChangeStateTable[SC_BLADESTOP]			|= SCS_NOMOVE;
 	StatusChangeStateTable[SC_BLADESTOP_WAIT]		|= SCS_NOMOVE;
 	StatusChangeStateTable[SC_GOSPEL]				|= SCS_NOMOVE|SCS_NOMOVECOND;
-#ifndef RENEWAL
+#ifdef RENEWAL
 	StatusChangeStateTable[SC_BASILICA]				|= SCS_NOMOVE|SCS_NOMOVECOND;
 #endif
 	StatusChangeStateTable[SC_WIDEWEB]				|= SCS_NOMOVE;
@@ -2314,8 +2314,8 @@ void initChangeTables(void)
 	StatusChangeStateTable[SC_SILENCE]				|= SCS_NOCAST;
 	StatusChangeStateTable[SC_STEELBODY]			|= SCS_NOCAST;
 	StatusChangeStateTable[SC_BERSERK]				|= SCS_NOCAST;
-#ifdef RENEWAL
 	StatusChangeStateTable[SC_BASILICA_CELL]		|= SCS_NOCAST;
+#ifdef RENEWAL
 	StatusChangeStateTable[SC_ROKISWEIL]			|= SCS_NOCAST;
 	StatusChangeStateTable[SC_ENSEMBLEFATIGUE]		|= SCS_NOCAST;
 #endif
@@ -3216,9 +3216,9 @@ bool status_check_skilluse(struct block_list *src, struct block_list *target, ui
 		) {	// Skills blocked through status changes...
 			if (!flag && ( // Blocked only from using the skill (stuff like autospell may still go through
 				sc->cant.cast ||
-#ifndef RENEWAL
+//#ifdef RENEWAL
 				(sc->data[SC_BASILICA] && (sc->data[SC_BASILICA]->val4 != src->id || skill_id != HP_BASILICA)) || // Only Basilica caster that can cast, and only Basilica to cancel it
-#endif
+//#endif
 				(sc->data[SC_MARIONETTE] && skill_id != CG_MARIONETTE) || // Only skill you can use is marionette again to cancel it
 				(sc->data[SC_MARIONETTE2] && skill_id == CG_MARIONETTE) || // Cannot use marionette if you are being buffed by another
 				(sc->data[SC_ANKLE] && skill_block_check(src, SC_ANKLE, skill_id)) ||
@@ -5722,7 +5722,7 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 			sd->indexed_bonus.subele[ELE_UNDEAD] += i;
 #endif
 		}
-#ifdef RENEWAL
+#ifndef RENEWAL
 		if (sc->data[SC_BASILICA]) {
 			i = sc->data[SC_BASILICA]->val1 * 5;
 			sd->right_weapon.addele[ELE_DARK] += i;
@@ -6435,8 +6435,8 @@ void status_calc_state( struct block_list *bl, struct status_change *sc, enum sc
 		else if(
 				     (sc->data[SC_GOSPEL] && sc->data[SC_GOSPEL]->val4 == BCT_SELF)	// cannot move while gospel is in effect
 #ifndef RENEWAL
-				  || (sc->data[SC_BASILICA] && sc->data[SC_BASILICA]->val4 == bl->id) // Basilica caster cannot move
 				  || (sc->data[SC_GRAVITATION] && sc->data[SC_GRAVITATION]->val3 == BCT_SELF)
+//				  || (sc->data[SC_BASILICA] && sc->data[SC_BASILICA]->val4 == bl->id) // Basilica caster cannot move				  
 #endif
 				  || (sc->data[SC_CAMOUFLAGE] && sc->data[SC_CAMOUFLAGE]->val1 < 3)
 				)
@@ -7415,7 +7415,7 @@ static unsigned short status_calc_agi(struct block_list *bl, struct status_chang
 	if(sc->data[SC_2011RWC_SCROLL])
 		agi += sc->data[SC_2011RWC_SCROLL]->val1;
 	if(sc->data[SC_DECREASEAGI])
-		agi -= sc->data[SC_DECREASEAGI]->val2;
+		agi -= ((sc->data[SC_DECREASEAGI]->val2)-2)*2;
 	if(sc->data[SC_QUAGMIRE])
 		agi -= sc->data[SC_QUAGMIRE]->val2;
 	if(sc->data[SC_SUITON] && sc->data[SC_SUITON]->val3)
@@ -11989,7 +11989,7 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 		case SC_EDP:
 			val2 = val1 + 2; // Chance to Poison enemies.
 #ifndef RENEWAL
-			val3 = 50*(val1+1); // Damage increase (+50 +50*lv%)
+			val3 = -150 + 50*(val1+1); // Damage increase (+50 +50*lv%)
 #endif
 			if (sd) {
 				uint16 poison_level = pc_checkskill(sd, GC_RESEARCHNEWPOISON);
@@ -15218,6 +15218,7 @@ int status_change_end_(struct block_list* bl, enum sc_type type, int tid, const 
 			if(sce->val3 == BCT_SELF)
 				skill_clear_unitgroup(bl);
 			break;
+#endif
 		case SC_BASILICA: // Clear the skill area. [Skotlex]
 				if (sce->val3 && sce->val4 == bl->id) {
 					std::shared_ptr<s_skill_unit_group> group = skill_id2group(sce->val3);
@@ -15227,7 +15228,6 @@ int status_change_end_(struct block_list* bl, enum sc_type type, int tid, const 
 						skill_delunitgroup(group);
 				}
 				break;
-#endif
 		case SC_TRICKDEAD:
 			if (vd) vd->dead_sit = 0;
 			break;

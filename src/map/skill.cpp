@@ -1550,15 +1550,15 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 		sc_start(src,bl,SC_STUN,(15+skill_lv*5),skill_lv,skill_get_time2(skill_id,skill_lv));
 		break;
 
-#ifndef RENEWAL
-	case PA_PRESSURE:
-		status_percent_damage(src, bl, 0, 15+5*skill_lv, false);
-		//Fall through
 	case HW_GRAVITATION:
 		//Pressure and Gravitation can trigger physical autospells
 		attack_type |= BF_NORMAL;
 		attack_type |= BF_WEAPON;
 		break;
+#ifndef RENEWAL
+	case PA_PRESSURE:
+		status_percent_damage(src, bl, 0, 15+5*skill_lv, false);
+		//Fall through
 #endif
 
 	case RG_RAID:
@@ -3522,7 +3522,7 @@ int64 skill_attack (int attack_type, struct block_list* src, struct block_list *
 	if (tsc && tsc->data[SC_TRICKDEAD])
 		return 0;
 
-#ifndef RENEWAL
+#ifdef RENEWAL
 	//When Gravitational Field is active, damage can only be dealt by Gravitational Field and Autospells
 	if(sd && sc && sc->data[SC_GRAVITATION] && sc->data[SC_GRAVITATION]->val3 == BCT_SELF && skill_id != HW_GRAVITATION && !sd->state.autocast)
 		return 0;
@@ -3906,7 +3906,7 @@ int64 skill_attack (int attack_type, struct block_list* src, struct block_list *
 	// Instant damage
 	if( !dmg.amotion ) {
 		if( (!tsc || (!tsc->data[SC_DEVOTION] && skill_id != CR_REFLECTSHIELD && !tsc->data[SC_WATER_SCREEN_OPTION])
-#ifndef RENEWAL
+#ifdef RENEWAL
 			|| skill_id == HW_GRAVITATION
 #endif
 			|| skill_id == NPC_EVILLAND) && !shadow_flag )
@@ -3932,9 +3932,9 @@ int64 skill_attack (int attack_type, struct block_list* src, struct block_list *
 			battle_delay_damage(tick, dmg.amotion,src,bl,dmg.flag,skill_id,skill_lv,damage,dmg.dmg_lv,dmg.dmotion, additional_effects, false);
 	}
 
-	if (tsc  && skill_id != NPC_EVILLAND && skill_id != SP_SOULEXPLOSION && skill_id != SJ_NOVAEXPLOSING
+	if (tsc  && skill_id != NPC_EVILLAND && skill_id != SP_SOULEXPLOSION && skill_id != SJ_NOVAEXPLOSING && skill_id != HW_GRAVITATION
 #ifndef RENEWAL
-		&& skill_id != PA_PRESSURE && skill_id != HW_GRAVITATION
+		&& skill_id != PA_PRESSURE
 #endif
 		) {
 		if (tsc->data[SC_DEVOTION]) {
@@ -4152,7 +4152,7 @@ static int skill_check_unit_range_sub(struct block_list *bl, va_list ap)
 		case HT_BLASTMINE:
 		case HT_CLAYMORETRAP:
 		case HT_TALKIEBOX:
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case HP_BASILICA:
 #endif
 		case RA_ELECTRICSHOCKER:
@@ -4208,7 +4208,7 @@ static int skill_check_unit_range2_sub (struct block_list *bl, va_list ap)
 	if( status_isdead(bl) && skill_id != AL_WARP )
 		return 0;
 
-#ifndef RENEWAL
+#ifdef RENEWAL
 	if( skill_id == HP_BASILICA && bl->type == BL_PC )
 		return 0;
 #endif
@@ -5298,7 +5298,7 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 	case RG_BACKSTAP:
 		{
 			if (!check_distance_bl(src, bl, 0)) {
-#ifdef RENEWAL
+#ifndef RENEWAL
 				uint8 dir = map_calc_dir(src, bl->x, bl->y);
 				short x, y;
 
@@ -5325,7 +5325,7 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 					status_change_end(src, SC_HIDING, INVALID_TIMER);
 					dir = dir < 4 ? dir+4 : dir-4; // change direction [Celest]
 					unit_setdir(bl,dir);
-#ifdef RENEWAL
+#ifndef RENEWAL
 					clif_blown(src);
 #endif
 					skill_attack(BF_WEAPON, src, src, bl, skill_id, skill_lv, tick, flag);
@@ -7568,7 +7568,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case LK_PARRYING:
 	case MS_PARRYING:
 	case LK_CONCENTRATION:
-#ifdef RENEWAL
+#ifndef RENEWAL
 	case HP_BASILICA:
 #endif
 	case WS_CARTBOOST:
@@ -10088,7 +10088,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 				return 0;
 			}
 			if( rnd() % 100 > skill_lv * 8 ||
-#ifndef RENEWAL
+#ifdef RENEWAL
 			(tsc && tsc->data[SC_BASILICA]) ||
 #endif
 			(dstmd && ((dstmd->guardian_data && dstmd->mob_id == MOBID_EMPERIUM) || status_get_class_(bl) == CLASS_BATTLEFIELD)) ) {
@@ -12705,7 +12705,7 @@ static int8 skill_castend_id_check(struct block_list *src, struct block_list *ta
 			break;
 		case RG_BACKSTAP:
 			{
-#ifndef RENEWAL
+#ifdef RENEWAL
 				uint8 dir = map_calc_dir(src,target->x,target->y), t_dir = unit_getdir(target);
 
 				if (map_check_dir(dir, t_dir))
@@ -13500,7 +13500,7 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 	case NJ_HYOUSYOURAKU:
 	case NJ_RAIGEKISAI:
 	case NJ_KAMAITACHI:
-#ifdef RENEWAL
+#ifndef RENEWAL
 	case HW_GRAVITATION:
 #endif
 	case NPC_EVILLAND:
@@ -13588,7 +13588,7 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 		clif_skill_damage(src, src, tick, status_get_amotion(src), 0, -30000, 1, skill_id, skill_lv, DMG_SINGLE);
 		skill_unitsetting(src, skill_id, skill_lv, x, y, 0);
 		break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 	case HP_BASILICA:
 		if( sc->data[SC_BASILICA] ) {
 			status_change_end(src, SC_BASILICA, INVALID_TIMER); // Cancel Basilica and return so requirement isn't consumed again
@@ -13786,7 +13786,7 @@ int skill_castend_pos2(struct block_list* src, int x, int y, uint16 skill_id, ui
 		}
 		break;
 
-#ifndef RENEWAL
+#ifdef RENEWAL
 	case HW_GRAVITATION:
 		if ((sg = skill_unitsetting(src,skill_id,skill_lv,x,y,0)))
 			sc_start4(src,src,type,100,skill_lv,0,BCT_SELF,sg->group_id,skill_get_time(skill_id,skill_lv));
@@ -14561,7 +14561,7 @@ std::shared_ptr<s_skill_unit_group> skill_unitsetting(struct block_list *src, ui
 			val3 = group->val3; //as well as the mapindex to warp to.
 		}
 		break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 	case HP_BASILICA:
 		val1 = src->id; // Store caster id.
 		break;
@@ -14850,7 +14850,7 @@ std::shared_ptr<s_skill_unit_group> skill_unitsetting(struct block_list *src, ui
 			pc_delspiritcharm(sd,sd->spiritcharm,sd->spiritcharm_type);
 		}
 		break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 	case HW_GRAVITATION:
 		if(sc && sc->data[SC_GRAVITATION] && sc->data[SC_GRAVITATION]->val3 == BCT_SELF)
 			link_group_id = sc->data[SC_GRAVITATION]->val4;
@@ -15313,12 +15313,6 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 			}
 			break;
 
-#ifndef RENEWAL
-		case UNT_GRAVITATION:
-			if (!sce)
-				sc_start4(ss, bl,type,100,sg->skill_lv,0,BCT_ENEMY,sg->group_id,sg->limit);
-			break;
-
 		case UNT_BASILICA:
 			{
 				int i = battle_check_target(bl, bl, BCT_ENEMY);
@@ -15331,6 +15325,13 @@ static int skill_unit_onplace(struct skill_unit *unit, struct block_list *bl, t_
 					sc_start4(ss, bl, type, 100, 0, 0, sg->group_id, ss->id, sg->limit);
 			}
 			break;
+			
+#ifndef RENEWAL
+		case UNT_GRAVITATION:
+			if (!sce)
+				sc_start4(ss, bl,type,100,sg->skill_lv,0,BCT_ENEMY,sg->group_id,sg->limit);
+			break;
+
 #endif
 
 		case UNT_MOONLIT:
@@ -15923,7 +15924,7 @@ int skill_unit_onplace_timer(struct skill_unit *unit, struct block_list *bl, t_t
 			}
 			break;
 
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case UNT_BASILICA:
 			{
 				int i = battle_check_target(&unit->bl, bl, BCT_ENEMY);
@@ -16242,7 +16243,7 @@ int skill_unit_onout(struct skill_unit *src, struct block_list *bl, t_tick tick)
 				status_change_end(bl, type, INVALID_TIMER);
 			break;
 
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case UNT_BASILICA:
 			if (sce && sce->val4 != bl->id)
 				status_change_end(bl, type, INVALID_TIMER);
@@ -16332,8 +16333,8 @@ int skill_unit_onleft(uint16 skill_id, struct block_list *bl, t_tick tick)
 		case SA_DELUGE:
 		case SA_VIOLENTGALE:
 		case CG_HERMODE:
-#ifndef RENEWAL
 		case HW_GRAVITATION:
+#ifndef RENEWAL
 		case HP_BASILICA:
 #endif
 		case NJ_SUITON:
@@ -18899,7 +18900,7 @@ int skill_delayfix(struct block_list *bl, uint16 skill_id, uint16 skill_lv)
 				time = 1000;
 			time -= (4 * status_get_agi(bl) + 2 * status_get_dex(bl));
 			break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case HP_BASILICA:
 			if (sc && !sc->data[SC_BASILICA])
 				time = 0; // There is no Delay on Basilica creation, only on cancel
@@ -19777,9 +19778,9 @@ static int skill_cell_overlap(struct block_list *bl, va_list ap)
 			}
 			break;
 		case WZ_ICEWALL:
+		case HW_GRAVITATION:
 #ifndef RENEWAL
 		case HP_BASILICA:
-		case HW_GRAVITATION:
 #endif
 			//These can't be placed on top of themselves (duration can't be refreshed)
 			if (unit->group->skill_id == skill_id)
@@ -20244,7 +20245,7 @@ struct skill_unit *skill_initunit(std::shared_ptr<s_skill_unit_group> group, int
 		case SA_LANDPROTECTOR:
 			skill_unitsetmapcell(unit,SA_LANDPROTECTOR,group->skill_lv,CELL_LANDPROTECTOR,true);
 			break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case HP_BASILICA:
 			skill_unitsetmapcell(unit,HP_BASILICA,group->skill_lv,CELL_BASILICA,true);
 			break;
@@ -20307,7 +20308,7 @@ int skill_delunit(struct skill_unit* unit)
 		case SA_LANDPROTECTOR:
 			skill_unitsetmapcell(unit,SA_LANDPROTECTOR,group->skill_lv,CELL_LANDPROTECTOR,false);
 			break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case HP_BASILICA:
 			skill_unitsetmapcell(unit,HP_BASILICA,group->skill_lv,CELL_BASILICA,false);
 			break;
@@ -20486,7 +20487,7 @@ int skill_delunitgroup_(std::shared_ptr<s_skill_unit_group> group, const char* f
 	i = SC_NONE;
 	switch (group->unit_id) {
 		case UNT_GOSPEL:	i = SC_GOSPEL;		break;
-#ifndef RENEWAL
+#ifdef RENEWAL
 		case UNT_BASILICA:	i = SC_BASILICA;	break;
 #endif
 	}
