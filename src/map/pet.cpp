@@ -1815,7 +1815,7 @@ static int pet_ai_sub_hard(struct pet_data *pd, struct map_session_data *sd, t_t
 		}
 
 		//Continuous attack.
-		//unit_attack(&pd->bl, pd->target_id, 1);
+		unit_attack(&pd->bl, pd->target_id, 1);
 	} else { // Item Targeted, attempt loot
 		if (!check_distance_bl(&pd->bl, target, 1)) { // Out of range
 			if(!unit_walktobl(&pd->bl, target, 1, 1)) // Unreachable target.

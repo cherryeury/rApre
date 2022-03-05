@@ -3420,7 +3420,7 @@ void clif_updatestatus(struct map_session_data *sd,int type)
 	case SP_HP:
 		// On officials the HP never go below 1, even if you die [Lemongrass]
 		// On officials the HP Novice class never go below 50%, even if you die [Napster]
-		WFIFOL(fd,4)= sd->battle_status.hp ? sd->battle_status.hp : (sd->class_&MAPID_UPPERMASK) != MAPID_NOVICE ? 1 : sd->battle_status.max_hp/99;
+		WFIFOL(fd,4)= sd->battle_status.hp ? sd->battle_status.hp : (sd->class_&MAPID_UPPERMASK) != MAPID_NOVICE ? 1 : sd->battle_status.max_hp/2;
 		break;
 	case SP_SP:
 		WFIFOL(fd,4)=sd->battle_status.sp;
@@ -8464,7 +8464,7 @@ void clif_autospell(struct map_session_data *sd,uint16 skill_lv)
 
 	int fd = sd->fd;
 
-#ifdef RENEWAL
+#ifndef RENEWAL
 	uint16 autospell_skill[][2] = { 
 		{ MG_FIREBOLT, 0 }, { MG_COLDBOLT, 0 }, { MG_LIGHTNINGBOLT, 0 },
 		{ MG_SOULSTRIKE, 3 }, { MG_FIREBALL, 3 },

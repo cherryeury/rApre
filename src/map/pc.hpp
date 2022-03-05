@@ -323,7 +323,7 @@ struct map_session_data {
 	struct status_data base_status, battle_status;
 	struct status_change sc;
 	struct regen_data regen;
-	struct regen_data_sub sregen, ssregen; struct autoattack_delay;  // autoattack timer
+	struct regen_data_sub sregen, ssregen;
 	//NOTE: When deciding to add a flag to state or special_state, take into consideration that state is preserved in
 	//status_calc_pc, while special_state is recalculated in each call. [Skotlex]
 	struct s_state {
@@ -357,7 +357,7 @@ struct map_session_data {
 		unsigned int debug_remove_map : 1; // temporary state to track double remove_map's [FlavioJS]
 		unsigned int buyingstore : 1;
 		unsigned int lesseffect : 1;
-		unsigned int vending : 1; unsigned autoattack : 1; // Keitenai
+		unsigned int vending : 1;
 		unsigned int noks : 3; // [Zeph Kill Steal Protection]
 		unsigned int changemap : 1;
 		unsigned int callshop : 1; // flag to indicate that a script used callshop; on a shop
@@ -475,7 +475,7 @@ struct map_session_data {
 	t_tick cantalk_tick;
 	t_tick canskill_tick; // used to prevent abuse from no-delay ACT files
 	t_tick cansendmail_tick; // [Mail System Flood Protection]
-	t_tick ks_floodprotect_tick; t_tick autoattack_delay;    // Keitenai // [Kill Steal Protection]
+	t_tick ks_floodprotect_tick; // [Kill Steal Protection]
 	t_tick equipswitch_tick; // Equip switch
 
 	struct s_item_delay {

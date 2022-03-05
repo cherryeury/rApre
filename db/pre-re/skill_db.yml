@@ -2002,7 +2002,7 @@ Body:
         Reproduce: true
     Duration2: 60000
     Requires:
-      SpCost: 12
+      SpCost: 8
   - Id: 53
     Name: TF_DETOXIFY
     Description: Detoxify
@@ -2310,49 +2310,46 @@ Body:
     Description: Impositio Manus
     MaxLevel: 5
     Type: Magic
-    TargetType: Support
+    TargetType: Self
     DamageFlags:
       NoDamage: true
-    Range: 9
     Hit: Single
     HitCount: 1
+    SplashArea: 18
     CastCancel: true
-    AfterCastActDelay: 3000
-    Duration1: 60000
+    CastTime: 1500
+    AfterCastActDelay: 1000
+    Duration1: 120000
+    Cooldown: 30000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 13
+          Amount: 59
         - Level: 2
-          Amount: 16
+          Amount: 62
         - Level: 3
-          Amount: 19
+          Amount: 65
         - Level: 4
-          Amount: 22
+          Amount: 68
         - Level: 5
-          Amount: 25
+          Amount: 71
   - Id: 67
     Name: PR_SUFFRAGIUM
     Description: Suffragium
     MaxLevel: 3
     Type: Magic
-    TargetType: Support
+    TargetType: Self
     DamageFlags:
       NoDamage: true
-    Flags:
-      NoTargetSelf: true
-    Range: 9
+      Splash: true
     Hit: Single
     HitCount: 1
+    SplashArea: 18
     CastCancel: true
-    AfterCastActDelay: 2000
-    Duration1:
-      - Level: 1
-        Time: 30000
-      - Level: 2
-        Time: 20000
-      - Level: 3
-        Time: 10000
+    CastTime: 1500
+    AfterCastActDelay: 1000
+    Duration1: 60000
+    Cooldown: 30000
     Requires:
       SpCost: 8
   - Id: 68
@@ -3262,7 +3259,7 @@ Body:
       IsAutoShadowSpell: true
     Range: 9
     Hit: Multi_Hit
-    HitCount: -20
+    HitCount: -10
     Element: Wind
     CopyFlags:
       Skill:
@@ -4718,7 +4715,7 @@ Body:
     HitCount: -8
     Element: Weapon
     Duration2: 5000
-    Cooldown: 2000
+    Cooldown: 1000
     CastDelayFlags:
       IgnoreStatus: true
     Requires:
@@ -4742,7 +4739,10 @@ Body:
         - Level: 9
           Amount: 32
         - Level: 10
-          Amount: 34        
+          Amount: 34
+      Weapon:
+        Katar: true
+        Dagger: true
   - Id: 137
     Name: AS_GRIMTOOTH
     Description: Grimtooth
@@ -4921,9 +4921,6 @@ Body:
     Duration2: 60000
     Requires:
       SpCost: 20
-      ItemCost:
-        - Item: Red_Gemstone
-          Amount: 1
     Unit:
       Id: Venomdust
       Layout: -1
@@ -10023,15 +10020,15 @@ Body:
     AfterCastActDelay: 2000
     Duration1:
       - Level: 1
-        Time: 1200000
+        Time: 120000
       - Level: 2
-        Time: 1200000
+        Time: 120000
       - Level: 3
-        Time: 1200000
+        Time: 120000
       - Level: 4
-        Time: 1200000
+        Time: 120000
       - Level: 5
-        Time: 1200000
+        Time: 120000
     Duration2:
       - Level: 1
         Time: 20000
