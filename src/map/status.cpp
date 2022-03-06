@@ -801,7 +801,7 @@ void initChangeTables(void)
 	set_sc( NPC_HALLUCINATION	, SC_HALLUCINATION	, EFST_ILLUSION, SCB_NONE );
 	add_sc( NPC_REBIRTH		, SC_REBIRTH		);
 	add_sc( RG_RAID			, SC_STUN		);
-#ifdef RENEWAL
+#ifndef RENEWAL
 	add_sc( RG_RAID			, SC_RAID		);
 	add_sc( RG_BACKSTAP		, SC_STUN		);
 #endif
@@ -5228,6 +5228,8 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 	// Absolute modifiers from passive skills
 	if(pc_checkskill(sd,BS_HILTBINDING)>0)
 		base_status->str++;
+	if((skill=pc_checkskill(sd,RG_COMPULSION))>0)	
+		base_status->str += skill;		
 	if((skill=pc_checkskill(sd,SA_DRAGONOLOGY))>0)
 		base_status->int_ += (skill+1)/2; // +1 INT / 2 lv
 	if((skill=pc_checkskill(sd,AC_OWL))>0)
@@ -5464,11 +5466,10 @@ int status_calc_pc_sub(struct map_session_data* sd, enum e_status_calc_opt opt)
 		base_status->flee += skill * 10;
 
 // ----- CRITICAL CALCULATION -----
-
+	if ((skill = pc_checkskill(sd, PR_MACEMASTERY)) > 0 && (sd->status.weapon == W_MACE || sd->status.weapon == W_2HMACE))
+		base_status->cri += skill * 10;
 #ifdef RENEWAL
 	if ((skill = pc_checkskill(sd, DC_DANCINGLESSON)) > 0)
-		base_status->cri += skill * 10;
-	if ((skill = pc_checkskill(sd, PR_MACEMASTERY)) > 0 && (sd->status.weapon == W_MACE || sd->status.weapon == W_2HMACE))
 		base_status->cri += skill * 10;
 #endif
 	if ((skill = pc_checkskill(sd, SHC_SHADOW_SENSE)) > 0)

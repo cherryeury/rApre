@@ -1564,13 +1564,13 @@ int skill_additional_effect(struct block_list* src, struct block_list *bl, uint1
 	case RG_RAID:
 		sc_start(src,bl,SC_STUN,(10+3*skill_lv),skill_lv,skill_get_time(skill_id,skill_lv));
 		sc_start(src,bl,SC_BLIND,(10+3*skill_lv),skill_lv,skill_get_time2(skill_id,skill_lv));
-#ifdef RENEWAL
+//#ifdef RENEWAL
 		sc_start(src, bl, SC_RAID, 100, skill_lv, 10000); // Hardcoded to 10 seconds since Duration1 and Duration2 are used
 		break;
 
 	case RG_BACKSTAP:
 		sc_start(src,bl,SC_STUN,(5+2*skill_lv),skill_lv,skill_get_time(skill_id,skill_lv));
-#endif
+//#endif
 		break;
 
 	case BA_FROSTJOKER:
@@ -5298,7 +5298,7 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 	case RG_BACKSTAP:
 		{
 			if (!check_distance_bl(src, bl, 0)) {
-#ifdef RENEWAL
+#ifndef RENEWAL //Gie
 				uint8 dir = map_calc_dir(src, bl->x, bl->y);
 				short x, y;
 
@@ -5325,7 +5325,7 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 					status_change_end(src, SC_HIDING, INVALID_TIMER);
 					dir = dir < 4 ? dir+4 : dir-4; // change direction [Celest]
 					unit_setdir(bl,dir);
-#ifdef RENEWAL
+#ifndef RENEWAL
 					clif_blown(src);
 #endif
 					skill_attack(BF_WEAPON, src, src, bl, skill_id, skill_lv, tick, flag);
@@ -12705,12 +12705,12 @@ static int8 skill_castend_id_check(struct block_list *src, struct block_list *ta
 			break;
 		case RG_BACKSTAP:
 			{
-#ifndef RENEWAL
-				uint8 dir = map_calc_dir(src,target->x,target->y), t_dir = unit_getdir(target);
-
-				if (map_check_dir(dir, t_dir))
-					return USESKILL_FAIL_MAX;
-#endif
+//#ifndef RENEWAL
+//				uint8 dir = map_calc_dir(src,target->x,target->y), t_dir = unit_getdir(target);
+//
+//				if (map_check_dir(dir, t_dir))
+//					return USESKILL_FAIL_MAX;
+//#endif
 
 				if (check_distance_bl(src, target, 0))
 					return USESKILL_FAIL_MAX;

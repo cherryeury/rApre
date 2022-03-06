@@ -681,21 +681,21 @@ Body:
         Requires:
           - Name: HT_ANKLESNARE
             Level: 1
-      - Name: HT_SANDMAN
-        MaxLevel: 5
-        Requires:
-          - Name: HT_FLASHER
-            Level: 1
-      - Name: HT_FLASHER
-        MaxLevel: 5
-        Requires:
-          - Name: HT_SKIDTRAP
-            Level: 1
-      - Name: HT_FREEZINGTRAP
-        MaxLevel: 5
-        Requires:
-          - Name: HT_FLASHER
-            Level: 1
+#      - Name: HT_SANDMAN
+#        MaxLevel: 5
+#        Requires:
+#          - Name: HT_FLASHER
+#            Level: 1
+#      - Name: HT_FLASHER
+#        MaxLevel: 5
+#        Requires:
+#          - Name: HT_SKIDTRAP
+#            Level: 1
+#      - Name: HT_FREEZINGTRAP
+#        MaxLevel: 5
+#        Requires:
+#          - Name: HT_FLASHER
+#            Level: 1
       - Name: HT_BLASTMINE
         MaxLevel: 5
         Requires:
